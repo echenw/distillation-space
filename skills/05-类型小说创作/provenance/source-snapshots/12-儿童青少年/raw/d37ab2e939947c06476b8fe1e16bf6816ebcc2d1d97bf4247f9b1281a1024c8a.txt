@@ -1,4 +1,0 @@
-interface:
-  display_name: "儿童青少年叙事设计"
-  short_description: "核对儿童视角、语言难度、危险与成长伦理"
-  default_prompt: "请先明确孩子的已知事实和实际行动限制，再以适龄而不说教的方式规划故事或审稿，危险与文化偏见要保留合理后果。"

@@ -1,5 +1,0 @@
-interface:
-  display_name: "Sci-Fi Future Craft (Batch 03)"
-  short_description: "Design or diagnose science-fiction and future-set fiction: answerable exposition, alienness by operation triples, single evidence flavour, mechanism ledger, unfixable institutions, endings that admit the cost."
-  brand_color: "#2E6F9E"
-  default_prompt: "帮我校对一部科幻/未来题材小说：先按来源核账确定可引用证据，再定体裁分叉与证据口味，然后补齐设定回答表、异质三联表、机制账本与代价清单。"

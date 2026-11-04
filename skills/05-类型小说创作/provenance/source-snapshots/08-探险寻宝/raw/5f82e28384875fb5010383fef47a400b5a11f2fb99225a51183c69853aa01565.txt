@@ -1,3 +1,0 @@
-interface:
-  display_name: "Adventure & Treasure Craft"
-  short_description: "设计探险目标、藏宝线索、海盗组织、反派、资源折返点和取证。"

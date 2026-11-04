@@ -1,5 +1,0 @@
-interface:
-  display_name: "历史架空权力机器"
-  short_description: "以来源与限制为依据，设计或诊断历史架空小说里的财政、凭证、追捕、构陷与司法机制"
-policy:
-  allow_implicit_invocation: false

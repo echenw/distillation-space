@@ -1,3 +1,0 @@
-interface:
-  display_name: "Castaway Salvage & Stronghold"
-  short_description: "Design or diagnose castaway survival fiction: salvage inventory, measurement, stronghold engineering, contact and signal, group governance."

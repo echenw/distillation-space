@@ -1,3 +1,0 @@
-interface:
-  display_name: "Child Story Craft"
-  short_description: "儿童口述与阅读故事：讲述准备、节奏、道德选择、道具兑现与险境。"

@@ -1,9 +1,0 @@
-interface:
-  display_name: "荒野求生与灾变叙事"
-  short_description: "规划环境压力、资源约束、群体抉择和灾变升级，检查可信因果与结局"
-  version: "0.3.2"
-  round: "round-p4-final-2026-10-30"
-  changelog: "0.3.2（2026-10-31）：13 本台账补齐 run（全本实读、门禁 PASS）知识融入 references 01-07 与 source-index，只增不删；0.3.1：P0-P4 收口。"
-  source_status: "29 份来源已按原文区间门禁达 FULL 29/29；其中 13 本由 2026-10-31 台账补齐 run 全本实读（207 块/522 引文，门禁 PASS），P5/GQ5 未验证"
-  scope_note: "只处理叙事设计，不提供现实野外、救援、医疗或工程操作建议"
-  default_first_read: "references/source-index.md 与 SKILL.md 第 3 节、第 9.5 节"

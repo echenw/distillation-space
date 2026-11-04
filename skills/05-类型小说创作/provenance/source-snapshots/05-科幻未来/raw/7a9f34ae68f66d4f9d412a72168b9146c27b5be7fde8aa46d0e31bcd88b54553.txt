@@ -1,5 +1,0 @@
-interface:
-  display_name: "科幻新奇点与异质世界锻造"
-  short_description: "科幻/未来题材：新奇点后果链、单轴反转的异质社会、自动机授权边界、跨文明接触程序、失败可追溯。"
-policy:
-  allow_implicit_invocation: false

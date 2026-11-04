@@ -1,3 +1,0 @@
-interface:
-  display_name: "求爱冲突与关系演化"
-  short_description: "识别认知误读和制度阻力，设计尊重自主权的关系发展与结局"
