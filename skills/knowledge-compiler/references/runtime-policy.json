@@ -1,0 +1,21 @@
+{
+  "artifact": "release-runtime-policy",
+  "version": "1",
+  "status": "admitted",
+  "decision_id": "user-2026-10-07-first-release-policy",
+  "authority": "Explicit user decisions in the current Codex conversation, 2026-10-07. The user selected the recommended first-release thresholds and task budget category.",
+  "thresholds": {
+    "min_independent_cohorts": 3,
+    "min_distinct_evidence": 3,
+    "min_distinct_tasks": 2,
+    "min_tasks_not_this_session": 1,
+    "min_interval_hours": 24,
+    "pending_ttl_hours": 24
+  },
+  "skill_object_class": "skill_task",
+  "budget_config": "budget-config.json",
+  "budget_authority": "No inherited size ceilings for generic Rule or Skill artifacts. Source-derived SC10 policy figures are historical only; a caller may explicitly supply its own class-specific budget, while provenance, approval and transaction gates remain mandatory.",
+  "evidence_of_optimality": "NOT_PROVEN: user-approved operating policy, not an empirically optimal constant.",
+  "historical_deferred": "NOT_CLOSED: the 52 historical Deferred entries and provisional promotion-config.json remain unchanged.",
+  "activation": "Explicit caller selection only. No human approval, verifier capability, host installation or automatic lifecycle authority is conferred by loading this file."
+}

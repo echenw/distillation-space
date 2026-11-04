@@ -1,0 +1,12 @@
+# Skill 的界面信息与选择策略；宿主是否加载及采用哪些字段，以实际宿主为准。
+# interface 提供显示名称与简短说明，policy 保留现有选择策略。
+# R09 的 ../scripts/kd_material_quality.py 会读取并检查本文件的结构；
+# 结构通过只证明配置格式符合要求，不证明宿主已经执行这些设置。
+# 名称与触发描述见 ../SKILL.md；工具职责见 ../references/runtime-contract.yaml。
+# 运行描述不授予权限，安全约束由实际脚本、Schema、批准与事务门禁执行。
+# 当前模型由宿主选择，见 ../scripts/kd_model_step.py 的 MODEL_IDENTITY_STANCE。
+interface:
+  display_name: "Knowledge Compiler（知识编译器）"
+  short_description: "继承项目需求，逐轮学习并交付可复用的规则或 Skill"
+policy:
+  allow_implicit_invocation: false

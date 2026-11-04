@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/eval-bundle.schema.json",
+  "title": "SC09 eval-bundle.schema.json -- the frozen eval bundle S15 emits and the scored verdict S16 derives from it (08-EVAL-STRATEGY.md §1.6 verified-落库定义 + 五元组审计 + §1.3 四条前置)",
+  "description": "Writer: S15 kd_eval_freeze (stage='freeze'); readers: S16 kd_eval_score (emits a stage='score' document derived from the frozen bundle) and S09 kd_validate as the sole witness (12-SKILL-DESIGN-BRIEF.md:171). Contract rows: 12:123 (S15 冻结语料 + fixture + exam isolation 结果, exit 2 = 隔离被破坏) and 12:124 (S16 verdict + 五元组审计记录, exit 2 = 裁决量具 id 与循环内 metric id 相同), SC09 row 12:185. Two failure modes this field set exists to block, both from Round 1/2 evidence: (1) LEAKAGE -- if the answer is visible to the model under evaluation the score is meaningless (12:244 '语料与 split 由 S15 持有（否则模型能看见答案，eval 失效）', 08:45 prerequisite (d)); that is why `answer_material` is a separate file set with visibility 'adjudicator-only' and why `isolation` must carry the surfaces actually scanned, not an assertion of cleanliness. (2) SELF-GRADING -- the instrument that adjudicates must not be the metric the optimisation loop maximises (08:42 prerequisite (a), 08:92 P-01); that is why `five_tuple.instrument_also_optimised_against` is a required slot, and 08:68 makes it '本文全部硬禁令的落点'. No numeric threshold is defaulted anywhere in this schema: `prerequisites.c.thresholds` slots are nullable, and a null value means prerequisite (c) is unsatisfied, which makes Tier-2 invalid and falls back to Tier-1 or Tier-4 (08:41).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "stage", "at", "dataset_id", "bundle_digest",
+    "subject", "splits", "samples", "answer_material", "isolation",
+    "prerequisites", "five_tuple", "verdict", "provenance", "notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "description": "SC09's own version, bumped only when the field set changes so a stale reader is distinguishable from a new writer."
+    },
+    "stage": {
+      "enum": ["freeze", "score"],
+      "description": "Which of the two documents this is. 'freeze' is S15's frozen corpus (no run has happened, so nothing may be claimed); 'score' is S16's verdict derived from a freeze document plus before/after run results. 08 §1.1 (08:24) is the reason the split exists: a structural/freezing pass produces no verified record, so the discriminator's whole job is to make 'not yet run' unrepresentable as 'passed'."
+    },
+    "at": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Instant captured ONCE per call and reused by every row this document renders (05-DATA-MODEL.md §2 时间戳取一次)."
+    },
+    "dataset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:/-]*$",
+      "description": "Five-tuple slot 2's authority (08:67 样本/数据集 id). S16 must echo it verbatim: a verdict stamped against a different corpus id than the frozen one is not the same measurement."
+    },
+    "bundle_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 over the question side plus every answer-file digest: the immutability claim of 'frozen'. S16 recomputes it and refuses on mismatch, which is the mechanism behind prerequisite (d)'s second half and P-11 (08:102 'DO UPDATE SET expected 改写历史验收')."
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["promoted_from_artifact_id", "original_failure_sample_id", "sample_kind", "reproducible_rerun_claimed"],
+      "description": "CM-48 regression-eval-for-promoted-rule (MUST, 06:266): the eval is tied to the promoted rule/artifact, and it must be able to identify the ORIGINAL defect. An eval with no `promoted_from_artifact_id` measures a corpus, not a promotion; a corpus whose sample set excludes `original_failure_sample_id` cannot fail on the old behaviour and is therefore decorative (08:29 '测试必须咬得住（把被宣称的门删掉，测试必须变红）').",
+      "properties": {
+        "promoted_from_artifact_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The SC04 artifact whose promotion this bundle adjudicates. 12:498 routes M4's 题面 through this bundle, so the tie is what makes the eval a regression eval (CM-48)."
+        },
+        "original_failure_sample_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The sample that reproduced the defect before the change. Tier-1's default standard IS this sample re-run (08:27-08:29), so it must be named at freeze time, before any score exists."
+        },
+        "sample_kind": {
+          "enum": ["reproducible-execution", "generalisable-text-asset", "undecided"],
+          "description": "Decides which tier can grant `verified` per 08:65 (`Tier-1 若样本可复现 ∨ Tier-2 若为可泛化文本资产`). 'undecided' is a legal stored value: 08 §8 D08-3 / DEFERRED id DD-3-sub24 leaves the candidate-kind distribution of Round 3 undetermined, and 08:151 flags '若 candidate 绝大多数是纯 prompt 资产则 Tier-1 失主口径' as ENGINEERING-INFERENCE. `verified` is therefore not grantable from a Tier-1 rerun while this says 'undecided'."
+        },
+        "reproducible_rerun_claimed": {
+          "type": ["boolean", "null"],
+          "description": "Operator-declared, never inferred: whether the original failure can actually be re-run in this environment. null = not stated, and null must render as unverified rather than default to true (08:57 §1.5 forbids promoting without a verifiable sample)."
+        }
+      }
+    },
+    "splits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["train", "val", "holdout"],
+      "description": "The three-split disk contract of CM-46 / `07:rubric-based-eval-split-contract` (08:46), each an array of `samples[].sample_id`. Split membership is frozen here so 'which set was adjudicated' is checkable after the fact.",
+      "properties": {
+        "train": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "val": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "holdout": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "description": "minItems 1 is load-bearing: an empty holdout is the exact shape of 08 §2 rejected alternative 1 and of P-10 (08:101 '.evals/cases/ 为空' while the README claimed an eval loop). The adjudicating set must exist and be non-empty."
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sample" },
+      "description": "The question side of the corpus only. `07:rubric-based-eval-split-contract`'s five fields (task_input / expected_behavior / difficulty / category / source, 08:46) are carried per sample; the gold answer is NOT, it lives in `answer_material`."
+    },
+    "answer_material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visibility", "files"],
+      "description": "The answer side: gold answers plus the adjudication keys, kept in files this schema can name and hash but never embed. `visibility` is const 'adjudicator-only' because a model-visible answer voids the score (08:45 prerequisite (d), 12:244).",
+      "properties": {
+        "visibility": {
+          "const": "adjudicator-only",
+          "description": "No other value is representable: a bundle that declares its answers model-visible is not an eval bundle."
+        },
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/answer_file" },
+          "description": "Each entry is an absolute, symlink-resolved path plus its SHA-256. S15 proves isolation over exactly this list, so an empty list would be a guard with nothing to check (see `isolation.status`'s dead-man)."
+        }
+      }
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "method", "surfaces", "breaches", "checked_at"],
+      "description": "S15's exam-isolation gate result -- the proof, not the claim. `08` never had a runnable implementation of this (11:exam-isolation-gate is UNVERIFIED, 08:159 / DEFERRED id DD-3-sub22), so the field set records WHICH surfaces were resolved and HOW MANY loadable documents were actually read. A clean result over zero scanned documents is not clean, it is unscanned: see the if/then below plus `IsolationBreach` handling in kd_eval_freeze.py.",
+      "properties": {
+        "status": {
+          "enum": ["proven-clean", "breach", "unscanned"],
+          "description": "'proven-clean' requires at least one surface, at least one loadable document read, and zero breaches. 'breach' is S15's exit 2. 'unscanned' is the honest value when a declared surface yielded nothing readable -- S15 refuses with exit 3 rather than emitting a passing bundle."
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How a model-visible surface was resolved (host-loadable document shapes + realpath containment + verbatim answer-substring test) and what it cannot catch: a paraphrased or truncated leak. `11:exam-isolation-gate`'s registered risk is '只查前缀 60 字符的连续原文，改写/截半的泄漏查不到'; this implementation compares the WHOLE normalised answer string rather than its first 60 characters, and still cannot see a rewrite. Recorded as an IMPLEMENTATION_GAP in kd_eval_freeze.py."
+        },
+        "surfaces": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/surface" },
+          "description": "One row per model-visible surface root the operator declared (e.g. a host skills root, a rules root, this package's own references tree). Declaring none is refused by S15 before a bundle exists, so `minItems 1` cannot be satisfied vacuously."
+        },
+        "breaches": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/breach" },
+          "description": "Empty whenever `status` is proven-clean (the if/then below). S15 never publishes a bundle on a breach -- it exits 2 with the rows on stdout -- so a non-empty list here comes from S16's score-time recheck: answer bytes moved or became model-visible after the freeze, which is why slot 4 cannot certify anything. The rows also go to --out / stderr."
+        },
+        "checked_at": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Isolation is a per-run fact, not a one-time stamp: a host skills root gains documents between runs. S16 re-checks and refuses if the result predates the current filesystem state."
+        }
+      },
+      "if": { "properties": { "status": { "const": "proven-clean" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "surfaces": { "minItems": 1 },
+          "breaches": { "maxItems": 0 }
+        }
+      }
+    },
+    "prerequisites": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["a_instrument_separation", "b_floor_ceiling", "c_min_improvement_repeats_tolerance", "d_leakage_and_attribution"],
+      "description": "08 §1.3's four mandatory prerequisites, one field each, 08:41: '缺一即 Tier-2 无效，退回 Tier-1 或 Tier-4'. Encoding them as four required fields is what stops a Tier-2 claim that quietly rests on only (a).",
+      "properties": {
+        "a_instrument_separation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "judge_instrument_id", "loop_metric_ids", "asserted_not_conventional"],
+          "description": "(a) 08:42 量具分离硬断言：裁决所用 metric 的 id 必须 ≠ 循环内优化所用 metric 的 id，且写成断言而非约定. `asserted_not_conventional` is the field that makes the difference explicit: a convention can drift, an assertion is what S16 runs (P-01, 08:92).",
+          "properties": {
+            "status": { "enum": ["satisfied", "unsatisfied"] },
+            "reason": { "type": "string", "minLength": 1 },
+            "judge_instrument_id": { "type": "string", "minLength": 1 },
+            "loop_metric_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+            "asserted_not_conventional": { "const": true }
+          }
+        },
+        "b_floor_ceiling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "baseline_noop", "oracle"],
+          "description": "(b) 08:43 floor / ceiling 双参照：同时报告 baseline-noop 与 oracle (`01:floor-ceiling-bench-corpus`, 08:43). Both slots are nullable: 08 §7 item 4 makes them a HARD constraint only once `01`'s bench solvers reproduce 0/3->3/3, which has not happened (DEFERRED id DD-3-sub23), so an unsatisfied (b) is recorded as unsatisfied rather than faked with a synthesized floor.",
+          "properties": {
+            "status": { "enum": ["satisfied", "unsatisfied"] },
+            "reason": { "type": "string", "minLength": 1 },
+            "baseline_noop": { "type": ["object", "null"] },
+            "oracle": { "type": ["object", "null"] }
+          }
+        },
+        "c_min_improvement_repeats_tolerance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "thresholds"],
+          "description": "(c) 08:44 最小改进量 + 重复次数 + 容差，且变差即 FAILED / 阻断（不允许「只警告不阻断」）. The three numbers are NOT in this schema and NOT in promotion-config.json: Round 2 left them undecided, so nullable slots plus `status: unsatisfied` are the only honest representation until an operator supplies them.",
+          "properties": {
+            "status": { "enum": ["satisfied", "unsatisfied"] },
+            "reason": { "type": "string", "minLength": 1 },
+            "thresholds": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["min_improvement", "repeats", "tolerance", "values_from"],
+              "description": "A null here means 'undecided', never '0' -- defaulting min_improvement to 0 is precisely P-02 (08:93 禁止 improvement > 0 当阈值).",
+              "properties": {
+                "min_improvement": { "type": ["number", "null"] },
+                "repeats": { "type": ["integer", "null"], "minimum": 1 },
+                "tolerance": { "type": ["number", "null"] },
+                "values_from": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Where the numbers came from (an operator-supplied contract file, a config key). 'defaulted by kd_eval_score' is not a legal provenance and does not occur."
+                }
+              }
+            }
+          }
+        },
+        "d_leakage_and_attribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "new_corrections_kept_out_of_train", "acceptance_criteria_immutable"],
+          "description": "(d) 08:45 泄漏与归因前置：新纠正不得只进 train；验收标准（expected）不得被静默改写. Two separate fields because P-11 (08:102) is the second half and 08:159 notes (d) is not yet a MUST gate (DEFERRED id DD-3-sub22) -- so its status is recorded as evidence, not assumed.",
+          "properties": {
+            "status": { "enum": ["satisfied", "unsatisfied"] },
+            "reason": { "type": "string", "minLength": 1 },
+            "new_corrections_kept_out_of_train": { "type": "boolean" },
+            "acceptance_criteria_immutable": {
+              "type": "boolean",
+              "description": "true only when every answer file's digest matches the frozen digest AND no expected value was rewritten between freeze and score. S16 recomputes it; a bundle's own claim is not trusted."
+            }
+          }
+        }
+      }
+    },
+    "five_tuple": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instrument_id", "dataset_id", "threshold", "run_result", "instrument_also_optimised_against"],
+      "description": "08 §1.6 (08:67): 每条 verified 必须携带五元组（量具 id、样本/数据集 id、阈值、运行结果、该量具是否同时被用于优化）. All five are required so a verdict missing one cannot be written at all; 08:68 makes the fifth slot the data-layer detection point for every ban in 08 §3. Slot 4 is what S16 hands to the write path as the SC04 `verification[]` row -- CM-50 gets no script of its own and is enforced jointly by S10 + S16 + S12 (12:140), so this object is the shared contract between them.",
+      "properties": {
+        "instrument_id": { "type": "string", "minLength": 1, "description": "Slot 1 量具 id. S16 refuses (exit 2) if it equals any `prerequisites.a_instrument_separation.loop_metric_ids` entry." },
+        "dataset_id": { "type": "string", "minLength": 1, "description": "Slot 2 样本/数据集 id -- must equal the top-level `dataset_id`." },
+        "threshold": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["min_improvement", "repeats", "tolerance"],
+          "properties": {
+            "min_improvement": { "type": "number" },
+            "repeats": { "type": "integer", "minimum": 1 },
+            "tolerance": { "type": "number", "minimum": 0 }
+          },
+          "description": "Slot 3 阈值 -- the (c) triple as actually applied to this verdict, echoed from `prerequisites...thresholds`. Object only when the numbers exist; null when they were never decided (then Tier-2 cannot grant verified)."
+        },
+        "run_result": {
+          "type": ["object", "null"],
+          "description": "Slot 4 运行结果 -- null at stage 'freeze' (nothing ran; P-10, 08:101 forbids letting the spec's existence stand in for a run) and an object at stage 'score'."
+        },
+        "instrument_also_optimised_against": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["loop_metric_ids", "collision", "checked_by"],
+          "description": "Slot 5: whether the same evaluation instrument was also used for optimization; this is where the prohibition is enforced. `collision` is computed, not declared: kd_eval_score compares instrument_id against loop_metric_ids and exits 2 on equality.",
+          "properties": {
+            "loop_metric_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+            "collision": { "type": "boolean" },
+            "checked_by": { "const": "kd_eval_score", "description": "The one script that may compute this slot, so no other surface can restate the equality check as a note." }
+          }
+        }
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "blocking", "reasons", "verified", "regression_detected"],
+      "description": "S16's adjudication. The `status` enum is the schema-level enforcement of 08:44/P-02 (08:93): there is no 'warning', 'review', 'yellow' or 'needs-attention' member available, so a worse-than-baseline run CANNOT be written as anything but FAILED. A one-token schema edit would reintroduce the bug; `test_verdict_enum_has_no_non_blocking_member` in tests/knowledge-compiler/test_w3c_eval.py reads this enum and fails if a soft member appears.",
+      "properties": {
+        "status": {
+          "enum": ["NOT_RUN", "PASSED", "FAILED", "UNVERIFIED"],
+          "description": "NOT_RUN = stage freeze only. PASSED = Tier-2 (or Tier-1) arithmetic met the recorded threshold. FAILED = worse than baseline, or better by less than min_improvement, or fewer repeats than declared -- always blocking. UNVERIFIED = a legal stored state with no promotion right (08:55-08:59 §1.5)."
+        },
+        "blocking": { "type": "boolean", "description": "true for FAILED and UNVERIFIED. A FAILED with blocking=false is the '只标黄' shape the contract row forbids (12:124), so the pair is checked in code as well as here." },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": [
+            "not_run_frozen_only", "regression_vs_baseline", "below_min_improvement",
+            "repeats_below_declared", "per_sample_regression", "self_grading_collision",
+            "answer_material_breach", "bundle_digest_mismatch", "prerequisite_unsatisfied",
+            "original_failure_not_identified", "thresholds_undecided", "met_threshold",
+            "tier1_rerun_green"
+          ] },
+          "description": "A closed reason vocabulary: an empty reasons array is unrepresentable (minItems 1) so 'FAILED' can never arrive without a nameable cause, and no free-text reason can soften it."
+        },
+        "verified": {
+          "type": "boolean",
+          "description": "08 §1.6 落库定义 (08:64-08:68, 12:458): verified := Tier-0 ∧ (Tier-1 若样本可复现 ∨ Tier-2 若为可泛化文本资产). Computed by kd_eval_score from THIS document's fields, never copied from the bundle: a stage='freeze' document's own claim is structurally false. P-06/P-07 (08:97-08:98) are why this is a derived boolean rather than an input: a stored 'verified' that nothing recomputes is a mood."
+        },
+        "regression_detected": { "type": "boolean", "description": "Slot 4's headline fact: any drop against the frozen baseline, including one unit. `verdict.status` must be FAILED whenever this is true (enforced in kd_eval_score.score_bundle, tested both ways)." }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "regression_detected": { "const": true } }, "required": ["regression_detected"] },
+          "then": { "properties": { "status": { "const": "FAILED" }, "blocking": { "const": true }, "verified": { "const": false } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "PASSED" } }, "required": ["status"] },
+          "then": { "properties": { "blocking": { "const": false } } }
+        },
+        {
+          "if": { "properties": { "verified": { "const": true } }, "required": ["verified"] },
+          "then": { "properties": { "status": { "enum": ["PASSED"] } } }
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["produced_by", "script", "model_id", "contract_row"],
+      "description": "Which deterministic script wrote this document and with what model budget. `model_id` is const 'none': Tier-2's corpus, split and isolation are held by S15 precisely so no model sees the answers (12:244), and 08 §1.4 keeps LLM-as-judge out of Round 3's acceptance path (12:261 judge = DEFERRED).",
+      "properties": {
+        "produced_by": { "enum": ["S15 kd_eval_freeze", "S16 kd_eval_score"] },
+        "script": { "enum": ["kd_eval_freeze.py", "kd_eval_score.py"] },
+        "model_id": { "const": "none" },
+        "contract_row": { "type": "string", "minLength": 1, "description": "The 12-SKILL-DESIGN-BRIEF.md line this document's contract came from (12:123 / 12:124 / 12:185), so a reader can retrace the ruling without searching."
+      }
+      }
+    },
+    "notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["IMPLEMENTATION_GAPS"],
+      "description": "Machine-readable gap register so an undecided parameter is never buried in prose.",
+      "properties": {
+        "IMPLEMENTATION_GAPS": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 4 },
+          "description": "Each entry 'IMPLEMENTATION_GAP: <what> / DEFERRED id <...>'. A gap entry naming no DEFERRED id must say 'DEFERRED id none registered'."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sample_id", "split", "task_input", "expected_behavior", "difficulty", "category", "source", "gold_sha256", "is_original_failure"],
+      "description": "The five contract fields of `07:rubric-based-eval-split-contract` (08:46; reference shape task_input / expected_behavior / difficulty / category / source) plus the two slots this design adds: `gold_sha256` (the answer is hashed, never inlined) and `is_original_failure` (CM-48's bite tie).",
+      "properties": {
+        "sample_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._:/-]*$" },
+        "split": { "enum": ["train", "val", "holdout"] },
+        "task_input": { "type": "string", "minLength": 1, "description": "What the model sees. S15 refuses (exit 2) when this sample's own gold answer appears inside it -- that is the exact defect `11:exam-isolation-gate` names (08:45, 12:244)." },
+        "expected_behavior": { "type": "string", "minLength": 1, "description": "The rubric, not the expected text (08:46 CM-46). Kept model-visible is acceptable ONLY for train/val: `answer_visibility` in the split contract decides, and holdout rubric text is treated as answer material by S15." },
+        "difficulty": { "enum": ["easy", "medium", "hard"] },
+        "category": { "type": "string", "minLength": 1 },
+        "source": { "enum": ["golden", "sessiondb", "synthetic"], "description": "CM-46's provenance field for the sample. 'synthetic' samples bootstrapped from the artifact itself cannot support a verified claim alone (08:53: expected 源自同一条 learning = 用规则证明规则)." },
+        "gold_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$", "description": "Digest of the answer as stored in answer_material. The digest is safe to publish; the answer is not." },
+        "is_original_failure": { "type": "boolean", "description": "Exactly one sample may say true, and it must be in the holdout (CM-48 / 08:29): Tier-1's default standard is 're-run the sample that first failed'." }
+      }
+    },
+    "answer_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes"],
+      "description": "One answer-side file S15 froze. `path` is realpath-resolved because the isolation question is where the bytes actually are, not how the caller spelled them.",
+      "properties": {
+        "path": { "type": "string", "pattern": "^/", "minLength": 2 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bytes": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "root", "loadable_documents_read", "answer_files_inside"],
+      "description": "One model-visible surface root as S15 resolved it.",
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "root": { "type": "string", "pattern": "^/", "description": "Absolute, symlink-resolved." },
+        "loadable_documents_read": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "THE DEAD-MAN FIELD. minimum 1 means a surface row cannot certify cleanliness without having read at least one document a host could load; the reference this comes from is Round 2's two caught guards ('... or True', a regex that matched nothing). A root with nothing loadable gets `isolation.status: unscanned` and S15 exits 3."
+        },
+        "answer_files_inside": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many of `answer_material.files` resolve inside this root. Any value > 0 is a breach (path-level leakage)."
+        }
+      }
+    },
+    "breach": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "surface", "document", "sample_id", "excerpt_chars"],
+      "description": "One isolation breach. `document` and `sample_id` are enough to find the offending bytes without copying the answer into the report (global rule: raw answer material and full private context stay out of logs and reports).",
+      "properties": {
+        "kind": {
+          "enum": ["answer-file-inside-surface", "answer-text-in-loadable-document", "question-carries-own-answer"],
+          "description": "The three shapes S15 detects: the answer file sits where a host loads; some answer's text appears in a host-loadable document; a sample's own gold answer appears in its own task_input."
+        },
+        "surface": { "type": "string", "minLength": 1 },
+        "document": { "type": "string", "minLength": 1, "description": "Absolute path of the offending loadable document (or the answer file, for kind answer-file-inside-surface)." },
+        "sample_id": { "type": "string", "minLength": 1 },
+        "excerpt_chars": { "type": "integer", "minimum": 1, "description": "How much normalised answer text was matched. This implementation matches the whole normalised answer, deliberately not a 60-character prefix (11:exam-isolation-gate's registered risk)." }
+      }
+    }
+  }
+}

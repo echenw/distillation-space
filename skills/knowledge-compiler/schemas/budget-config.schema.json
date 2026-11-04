@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/budget-config.schema.json",
+  "title": "SC10 budget-config (CM-31 context-budget-hard-limit + CM-51 progressive-disclosure-ladder)",
+  "description": "SC10 is the single configuration point for the budget checks this Skill actually implements. Values are provisional, are not universal host limits, and must have an explicit applicable consumer and provenance. Host-specific project-instruction loading caps are not imposed on Skill reference reading. Unadopted values must be null with a reason; independent evidence and explicit authorization remain necessary.",
+  "type": "object",
+  "required": [
+    "artifact",
+    "status",
+    "authority",
+    "provenance_of_values",
+    "must_not_be_cited_as",
+    "unit_policy",
+    "caps",
+    "ordering",
+    "marker_contract",
+    "ladder",
+    "deferred_linkage",
+    "close_condition"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact": {
+      "const": "budget-config"
+    },
+    "schema_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Self-name so a reader of the instance finds the schema without a second registry."
+    },
+    "status": {
+      "const": "provisional",
+      "description": "09 §4 may not be cited as decided policy. `verify_source_lock` refuses to run a verdict against any other status, and kd_budget.validate_shape raises when it drifts (mirrors the promotion-config.json Wave 0 rule; that file is a different Owner's and is never edited from here)."
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "description": "12:186 SC10 row: 配置 Owner（人）. Written out so the single-source claim names who holds the pen."
+    },
+    "authority": {
+      "type": "object",
+      "required": ["doc", "section", "row_pattern", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "doc": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "09-CONTEXT-BUDGET\\.md$",
+          "description": "Repo-relative path of the frozen Round 2 authority. 09 §3 defense 2 is the lint this enables: every documented ceiling must be findable in the runtime constant, checked in both directions."
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The heading the value table sits under (09 §4 recommended_defaults)."
+        },
+        "row_pattern": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How a row of that table is located by item number. kd_budget re-parses the authority file instead of trusting a transcription."
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "provenance_of_values": {
+      "type": "string",
+      "minLength": 1,
+      "description": "09 §4 audit conclusion + 12:622's requirement that Round 3 carry the provenance with the value."
+    },
+    "must_not_be_cited_as": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "final policy",
+          "decided threshold",
+          "evidence-backed constant"
+        ]
+      },
+      "description": "Same prohibition DEFERRED-PARAMETERS.yaml puts on every DD-5 entry; the enum is that prohibition's own wording, so a new claim label must be adjudicated before it can be written here."
+    },
+    "unit_policy": {
+      "type": "object",
+      "required": ["primary", "auxiliary", "not_adopted", "authority"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "const": "bytes",
+          "description": "09 §2: 真 UTF-8 字节为主 (3 distinct projects, 2 of them with the byte figure inside a test assertion)."
+        },
+        "auxiliary": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["lines", "chars", "files", "none"]
+          },
+          "description": "Optional diagnostic units. No inherited universal percentage-growth or description-length ceiling."
+        },
+        "not_adopted": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "const": "tokens"
+          },
+          "description": "09 §6.3 rejects token as a hard-cap judging unit; DD-5-sub37 keeps the unit question open only while token counting is an external binary."
+        },
+        "authority": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "caps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/cap"
+      },
+      "description": "Only limits considered applicable to this Skill belong in the active configuration. Provenance and reasons for declined numbers are recorded where they remain relevant; external project-specific limits do not become universal policy."
+    },
+    "ordering": {
+      "type": "object",
+      "required": ["injection_break_order", "authority_item", "authority_token", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "injection_break_order": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "09 §4 item1's literal key list. The break ORDER is evidence-backed, so it is carried; the single-block cap that would make it a second number is not."
+        },
+        "authority_item": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "authority_token": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "09 §1.3's fixed priority (整块跳过 > 行边界字节前缀 > head + tail + marker) and what stays unimplemented (CM-33 / O09)."
+        }
+      }
+    },
+    "marker_contract": {
+      "type": "object",
+      "required": ["required_fields", "authority_item", "authority_token", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "required_fields": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["kept", "kept_bytes", "budget_bytes", "omitted", "readable_path", "warning_queue", "disposition", "truncation"]
+          },
+          "description": "09 §4 item13: a drop must be visible. 09 §2 row 3 is why: the failure being guarded is not size, it is nobody knowing which rule was lost."
+        },
+        "authority_item": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "authority_token": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ladder": {
+      "type": "object",
+      "required": ["authority", "levels", "degraded_fallback", "tier_defect_status", "tier_defect_note"],
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "type": "string",
+          "minLength": 1,
+          "description": "12-SKILL-DESIGN-BRIEF.md §13 fixes exactly three levels plus a degraded landing point; the ladder is not free to add a fourth."
+        },
+        "levels": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/ladder_level"
+          },
+          "description": "CM-51's whole point: without index -> summary -> full every line of the compiler's output is a resident cost and CM-31's ceiling is unbounded (12:567)."
+        },
+        "degraded_fallback": {
+          "type": "object",
+          "required": ["authority", "target", "caps"],
+          "additionalProperties": false,
+          "properties": {
+            "authority": {
+              "type": "string",
+              "minLength": 1
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "caps": {
+              "type": "array",
+              "maxItems": 0,
+              "description": "Deliberately empty: the landing point is a writing rule, not a size."
+            }
+          }
+        },
+        "tier_defect_status": {
+          "enum": ["adjudicated_with_defect", "clean"],
+          "description": "12 §13 registers CM-51's metadata defect (strongest evidence == simplest implementation, form=prompt-instruction, n_ev=12) and refuses to re-tier it. A Round 3 checker does not erase the registration."
+        },
+        "tier_defect_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "deferred_linkage": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["id", "affects", "disposition"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^DD-5-sub(3[3-9])$",
+            "description": "Exactly the DD-5 group of .distill/round-3/DEFERRED-PARAMETERS.yaml (7 entries). A pattern is used instead of a hand-copied list so adding an id here requires editing the registry first."
+          },
+          "affects": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "disposition": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "description": "Every DD-5 sub-parameter is named even where this slice took no action on it; 12:769 requires DEFERRED ids to stay traceable, and silently dropping one would read as closure."
+    },
+    "close_condition": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "cap": {
+      "type": "object",
+      "required": ["id", "layer", "object_class", "unit", "value", "enforce", "gate",
+                   "authority_item", "authority_token", "basis", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "09 §3 defense 2: a document value must be findable as a same-named runtime constant, so the id is the name both sides grep."
+        },
+        "layer": {
+          "enum": ["write", "injection"],
+          "description": "09 §1's three disposition layers. Disposition is a function of who owns the artifact, not a choice of strength (DD-5 contradictions 1)."
+        },
+        "object_class": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$|^\\*$",
+          "description": "What the cap measures. Generic percentage-growth caps are not adopted by this Skill."
+        },
+        "unit": {
+          "enum": ["bytes", "lines", "chars", "files", "tokens", "none"]
+        },
+        "value": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "null means 'Round 2 did not adjudicate this number and Round 3 refuses to pick one'. Never a placeholder default."
+        },
+        "enforce": {
+          "type": "boolean"
+        },
+        "gate": {
+          "enum": ["hard_refusal", "deterministic_skip", "advisory_mark", "none"],
+          "description": "hard_refusal is a write-side refusal; deterministic_skip is the whole-block injection policy. advisory_mark is a soft notice. This generic Skill does not implement an inherited project-instruction chain-size refusal."
+        },
+        "authority_item": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14,
+          "description": "The 09 §4 row number. 14 is that table's size, so an out-of-range item cannot be written."
+        },
+        "authority_token": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Text quoted verbatim from that row; verify_source_lock fails if it stops appearing there."
+        },
+        "basis": {
+          "enum": ["EVIDENCE-SUPPORTED", "ENGINEERING-INFERENCE", "MIXED"],
+          "description": "Copied from 09 §4's own 标注 column; MIXED is that table's wording for rows whose numbers and corrections split."
+        },
+        "refusal_reason": {
+          "enum": ["DEFERRED", "IMPLEMENTATION_GAP", null],
+          "description": "Required when enforce is false. DEFERRED = a DEFERRED-PARAMETERS.yaml id exists; IMPLEMENTATION_GAP = the value or its consumer is missing in this wave."
+        },
+        "deferred_id": {
+          "type": ["string", "null"],
+          "pattern": "^(DD-[0-9]+-sub[0-9]+|D09-[0-9]+)$"
+        },
+        "gap_ref": {
+          "type": ["string", "null"],
+          "minLength": 1
+        },
+        "linked_deferred": {
+          "type": ["string", "null"],
+          "pattern": "^DD-5-sub3[3-9]$",
+          "description": "Set on enforced caps whose provisional status a measurement could still overturn."
+        },
+        "stricter_alternative": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/alternative_value"
+            }
+          ],
+          "description": "09 §4 item7 records two adjudicated numbers for one gate (20% adopted, 10% stricter alternative). A second enforced constant would be a second source, so the alternative stays data."
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "enforce": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "required": ["value"],
+            "properties": {
+              "value": {
+                "type": "integer"
+              },
+              "gate": {
+                "enum": ["hard_refusal", "deterministic_skip", "advisory_mark"]
+              },
+              "basis": {
+                "enum": ["EVIDENCE-SUPPORTED", "MIXED"]
+              }
+            }
+          },
+          "else": {
+            "required": ["value", "refusal_reason"],
+            "properties": {
+              "value": {
+                "const": null
+              },
+              "gate": {
+                "const": "none"
+              }
+            },
+            "anyOf": [
+              {
+                "required": ["deferred_id"]
+              },
+              {
+                "required": ["gap_ref"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "alternative_value": {
+      "type": "object",
+      "required": ["value", "authority_item", "authority_token"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "authority_item": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "authority_token": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ladder_level": {
+      "type": "object",
+      "required": ["level", "name", "loads", "trigger", "caps", "unbudgeted"],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Fixed to 0..2 by 12 §13's 写死三级."
+        },
+        "name": {
+          "enum": ["index", "summary", "full"]
+        },
+        "loads": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trigger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who loads it (12 §13's 谁加载 column) -- level 0 is the resident cost, so its ceiling is the one Wave 4 must respect first."
+        },
+        "caps": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "description": "Cap ids, never numbers: Wave 4 resolves them through kd_budget so the ladder cannot become a second authority for a threshold."
+        },
+        "unbudgeted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "A level with no resolved cap must say so here instead of inheriting a neighbouring level's number."
+        }
+      }
+    }
+  }
+}

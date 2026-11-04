@@ -1,0 +1,234 @@
+{
+  "artifact": "budget-config",
+  "schema_ref": "budget-config.schema.json",
+  "status": "provisional",
+  "owner": "human (配置 Owner, per 12:186 SC10 row)",
+  "authority": {
+    "doc": ".distill/round-2/09-CONTEXT-BUDGET.md",
+    "section": "## 4. recommended_defaults",
+    "row_pattern": "^\\| <item> \\|",
+    "note": "Every number below is quoted from a row of that table. `verify_source_lock` re-reads the authority file and refuses to decide if the quoted token or the number inside it no longer matches. This file is the single definition point required by 09 §3 defense 1."
+  },
+  "provenance_of_values": "09 §4 rows are EVIDENCE-SUPPORTED reference values with a source path; 12:626 rules that Round 3 may adopt them only with the provenance written next to them in SC10. Rows whose basis contains ENGINEERING-INFERENCE are recorded here with value=null and are NOT enforced.",
+  "must_not_be_cited_as": [
+    "final policy",
+    "decided threshold",
+    "evidence-backed constant"
+  ],
+  "unit_policy": {
+    "primary": "bytes",
+    "auxiliary": ["lines", "chars", "files"],
+    "not_adopted": ["tokens"],
+    "authority": "09 §2 (真 UTF-8 字节为主 + 行数辅助) and §6.3 (token 估算不作硬上限判定单位)"
+  },
+  "caps": [
+    {
+      "id": "cold_start_max_lines",
+      "layer": "injection",
+      "object_class": "cold_start_hook",
+      "unit": "lines",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 3,
+      "authority_token": "RECENT_MEMORY_MAX_LINES=40",
+      "basis": "EVIDENCE-SUPPORTED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "12 §18 O14 (CM-53 session-start-preflight-injection) is an optional adapter and is not implemented; no cold-start hook exists to consume this cap",
+      "notes": "Value deliberately not carried into code: enforcing it would require shipping the unimplemented O14 hook."
+    },
+    {
+      "id": "cold_start_max_bytes",
+      "layer": "injection",
+      "object_class": "cold_start_hook",
+      "unit": "bytes",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 3,
+      "authority_token": "RECENT_MEMORY_MAX_BYTES=1800",
+      "basis": "EVIDENCE-SUPPORTED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "12 §18 O14 not implemented; DD-5-sub33 also leaves the host's real truncation point unmeasured",
+      "notes": "09 §4 item3's 1800 is a second-hand figure from memsearch's hook comments (D09-1)."
+    },
+    {
+      "id": "cold_start_max_files",
+      "layer": "injection",
+      "object_class": "cold_start_hook",
+      "unit": "files",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 3,
+      "authority_token": "文件数 2",
+      "basis": "EVIDENCE-SUPPORTED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "12 §18 O14 not implemented",
+      "notes": "Not carried: no consumer."
+    },
+    {
+      "id": "root_instruction_max_chars",
+      "layer": "write",
+      "object_class": "root_instruction",
+      "unit": "chars",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 5,
+      "authority_token": "ROOT_MAX_CHARS=12_000",
+      "basis": "MIXED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "09 §2 adopted unit is bytes primary + lines auxiliary; 09 §7 forbids merging char-unit caps into one byte verdict. 14's ROOT_MAX_CHARS is a char figure of a different project",
+      "notes": "Refusing this keeps a third measuring unit out of the gate (anti-bloat)."
+    },
+    {
+      "id": "single_block_max_bytes",
+      "layer": "injection",
+      "object_class": "injection_block",
+      "unit": "bytes",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 10,
+      "authority_token": "注入字节帽的 1/4",
+      "basis": "ENGINEERING-INFERENCE",
+      "refusal_reason": "DEFERRED",
+      "deferred_id": "DD-5-sub39",
+      "notes": "09 §4 item10 has no source and no project implements it (D09-6); deriving 2048 from 8192 would still be inventing a cap."
+    },
+    {
+      "id": "advisory_share_fraction",
+      "layer": "injection",
+      "object_class": "advisory_block",
+      "unit": "none",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 12,
+      "authority_token": "advisory ≤ 可选预算的 **1/2**",
+      "basis": "MIXED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "09 §10 D09-3: the compiler's own discretionary budget is undefined, so the half has nothing to divide. Ordering principle is implemented; the number is not.",
+      "notes": "09 §9.3/DD-5-sub36: cross-layer arbitration order remains undecided."
+    },
+    {
+      "id": "advisory_minimum_chars",
+      "layer": "injection",
+      "object_class": "advisory_block",
+      "unit": "chars",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 12,
+      "authority_token": "未取到，须自行定",
+      "basis": "ENGINEERING-INFERENCE",
+      "refusal_reason": "DEFERRED",
+      "deferred_id": "D09-4",
+      "notes": "09 §10 D09-4 says Round 1 never read the value. The all-or-nothing rule (never displace evidence) is implemented; the threshold is not."
+    },
+    {
+      "id": "compiler_prompt_max_chars",
+      "layer": "write",
+      "object_class": "compiler_prompt",
+      "unit": "chars",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 11,
+      "authority_token": "不可直接沿用",
+      "basis": "ENGINEERING-INFERENCE",
+      "refusal_reason": "DEFERRED",
+      "deferred_id": "D09-3",
+      "notes": "09 §4 item11 + §10 D09-3: needs a measurement of our own template and corpus. 12:622 requires treating item11 as 待定项, not an available number."
+    },
+    {
+      "id": "slot_quota_default_size",
+      "layer": "write",
+      "object_class": "quota_slot",
+      "unit": "none",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 8,
+      "authority_token": "默认 **2000**",
+      "basis": "EVIDENCE-SUPPORTED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "no slot entity exists in SC01-SC12 (12:184-186), so the cap has no consumer; 09 §6.8 also rejects adopting agentmemory's 8-slot size table",
+      "notes": "Semantics borrowed (per-kind capped slot, compress-before-append) are documented in the ladder, the number is not carried."
+    },
+    {
+      "id": "token_estimate_budget",
+      "layer": "injection",
+      "object_class": "injection",
+      "unit": "tokens",
+      "value": null,
+      "enforce": false,
+      "gate": "none",
+      "authority_item": 9,
+      "authority_token": "TOKEN_BUDGET=2000",
+      "basis": "MIXED",
+      "refusal_reason": "IMPLEMENTATION_GAP",
+      "gap_ref": "09 §6.3: token as a hard-cap unit is rejected (2 projects, both self-reported distortion); DD-5-sub37 keeps the unit question open until token counting is repo-controlled",
+      "notes": "Ordering for whole-block skip uses 09 §4 item1's (-weight, updated, name), not a token estimate."
+    }
+  ],
+  "ordering": {
+    "injection_break_order": ["-weight", "updated", "name"],
+    "authority_item": 1,
+    "authority_token": "(-weight, updated, name)",
+    "notes": "09 §1.3 priority is fixed: 整块跳过 > 行边界字节前缀 > head + tail + 可见 marker. Only the first disposition is implemented; the truncation ladder belongs to CM-33 = 12 §18 O09, which Round 2 ruled DEFERRED / 禁入 Core (DD-5-sub33, DD-5-sub38)."
+  },
+  "marker_contract": {
+    "required_fields": ["kept", "omitted", "readable_path", "warning_queue"],
+    "authority_item": 13,
+    "authority_token": "kept {head}+{tail} of {total} chars",
+    "notes": "09 §4 item13. The marker must carry the kept/skipped inventory and a drainable warning queue; a silent drop is the failure this contract exists to prevent (09 §2 row 3)."
+  },
+  "ladder": {
+    "authority": "12-SKILL-DESIGN-BRIEF.md §13 (写死三级 + 一个降级落点), 承载簇 CM-51 (CORE/MUST)",
+    "levels": [
+      {
+        "level": 0,
+        "name": "index",
+        "loads": "索引型入口：主流程、脚本清单和阅读指引；本包任务型入口按 skill_task 检查",
+        "trigger": "every invocation (resident cost)",
+        "caps": [],
+        "unbudgeted": ["Skill entry size depends on the actual host context; no inherited hard-line ceiling"]
+      },
+      {
+        "level": 1,
+        "name": "summary",
+        "loads": "references/r01–r18 阅读索引、每份一句话用途和触发条件",
+        "trigger": "on demand, select sections needed for the task and actual host context",
+        "caps": [],
+        "unbudgeted": ["No universal accumulated reference-reading byte cap has been established; select according to the actual host context"]
+      },
+      {
+        "level": 2,
+        "name": "full",
+        "loads": "单份 reference / schema 全文 / 决策树逐节点表",
+        "trigger": "only when the node is actually walked",
+        "caps": [],
+        "unbudgeted": ["09 §1.1 says this level is subject to write-side hard refusal, but no byte/line cap was adjudicated for a single reference file: see compiler_prompt_max_chars (D09-3)"]
+      }
+    ],
+    "degraded_fallback": {
+      "authority": "12 §13 降级落点 + 04 §6",
+      "target": "零模型时抽象只能落到注释 / 引用 / 文档的最低层，不泛化",
+      "caps": []
+    },
+    "tier_defect_status": "adjudicated_with_defect",
+    "tier_defect_note": "12 §13 registers CM-51's strongest evidence and simplest implementation as the same member (08:layered-progressive-disclosure, form=prompt-instruction, n_ev=12) and refuses to re-tier it. Wave 3 adds an enforceable checker, which does not erase the registered Round 1 metadata defect."
+  },
+  "deferred_linkage": [
+    {"id": "DD-5-sub33", "affects": ["retired_fixed_injection_budget", "cold_start_max_bytes", "single_block_max_bytes"], "disposition": "caps stay provisional; a real host measurement that disagrees re-decides them all"},
+    {"id": "DD-5-sub34", "affects": ["retired_host_specific_chain_policy"], "disposition": "HISTORICAL_ONLY: a third-party project-instruction size cap was intentionally removed from this generic Skill; it is not an active gate or pending rollout"},
+    {"id": "DD-5-sub35", "affects": ["source_lock"], "disposition": "AST binding stayed IMPLEMENTATION_DETAIL and was not built; the same-source lock was built instead"},
+    {"id": "DD-5-sub36", "affects": ["advisory_share_fraction"], "disposition": "no cross-layer budget arbitration order implemented or decided"},
+    {"id": "DD-5-sub37", "affects": ["token_estimate_budget"], "disposition": "token unit stays out of the gate"},
+    {"id": "DD-5-sub38", "affects": ["marker_contract", "injection layer audit confidence"], "disposition": "worker 11 coverage still empty; 11:* stays medium-confidence"},
+    {"id": "DD-5-sub39", "affects": ["single_block_max_bytes"], "disposition": "refused to derive a quarter-cap number"}
+  ],
+  "close_condition": "A cap may change from provisional to decided only with the evidence named in .distill/round-3/DEFERRED-PARAMETERS.yaml for its linked id, recorded there and re-audited. Values must be changed HERE and nowhere else; kd_budget re-reads 09 §4 and fails closed when this file and the authority row stop agreeing."
+}

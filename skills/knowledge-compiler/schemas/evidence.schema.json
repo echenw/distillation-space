@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/evidence.schema.json",
+  "title": "SC01 evidence (Evidence entity)",
+  "description": "Field set for the Evidence entity. Round 2 sources, in order of authority: (1) 05-DATA-MODEL.md §6 line 244-245 -- `Evidence  content_hash · scope(S1-S4) · origin.{problem,why,source_refs} · evidence_refs[] · evidence.status + status_basis · generation{...} · record_locator · refs_integrity` and line 246 `（无计数器：Evidence 不参与淘汰）`; (2) 05 §2 lines 40-52 for each field's writer and invalidation rule; (3) 05 §5.2 lines 154-164 for content_hash; (4) 05 §5.3 lines 174-189 for the scope triple; (5) the FROZEN Wave 0 kernel packages/knowledge-compiler/scripts/kd_provenance.py line 67 REQUIRED_EVIDENCE = (evidence_id, source_class, locator, cohort, content, produced_by) plus line 68 source_class enum -- the kernel is the authority for identity/classification, so its required fields are required here too. The field set is closed exactly as 05 §2 states ('11 条最小充分集，原样采纳'), so additionalProperties is false. NO counter columns appear (05 §6 line 246; 05 §4 M7 lines 111-112 forbids one counter serving three carriers).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "source_class",
+    "locator",
+    "cohort",
+    "content",
+    "produced_by",
+    "content_hash",
+    "origin",
+    "evidence_refs",
+    "evidence",
+    "generation",
+    "record_locator"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1"
+      ],
+      "description": "kd_provenance.SCHEMA_VERSION == '1' (kernel line 19); validate_evidence rejects any other value (kernel line 80-81)."
+    },
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Content-addressed id, kernel-required (line 67). 04-DETERMINISTIC-VS-LLM.md §3 row 2 (line 48) adjudicates 'sha256 + 定长前缀 + 内容寻址 id'. Prefix SHORTENING length is 05 §7 DM-1 DEFERRED, so S01 uses the full 64-hex digest -- a fixed length that truncates nothing."
+    },
+    "source_class": {
+      "enum": [
+        "external_event",
+        "human_input",
+        "compiler_artifact",
+        "model_output",
+        "restated_knowledge"
+      ],
+      "description": "Enum is exactly kd_provenance.INDEPENDENT_CLASSES | DERIVED_CLASSES (kernel lines 22-29) and equals 10-PROVENANCE-MODEL.md's source classes as adopted by the kernel. independent = {external_event, human_input}; derived = {compiler_artifact, model_output, restated_knowledge}. No extra value: N5 '不把自身上轮或本轮产物当证据' (12-SKILL-DESIGN-BRIEF.md line 31)."
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Kernel-required (line 67); validate_evidence requires it to look resolvable -- a scheme prefix or a path separator (kernel lines 82-84). is_independent additionally refuses a blank locator (kernel line 133). S01 emits the raw source path here."
+    },
+    "cohort": {
+      "description": "Identity cohort triple {workspace, project, path} -- 05-DATA-MODEL.md line 177 invariant 4, and the exact key set the frozen kernel reads (`rec['cohort']`, kd_provenance.py lines 55-63, 136, 152). This is NOT the SC11 scope object: `layer` does not belong here (see the sibling property `scope`). Wave 1 previously overloaded the two; SC01 now states them separately so support counting and promotion filtering cannot drift apart.",
+      "type": "object",
+      "required": [
+        "workspace",
+        "project",
+        "path"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "workspace": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "path": {
+          "type": "string"
+        }
+      }
+    },
+    "content": {
+      "description": "Kernel-required (line 67); kd_provenance.independent_support hashes it when content_hash is absent (kernel line 153). The post-sanitization body of the observation. Its internal key set is NOT adjudicated in Round 2 -- see S01's IMPLEMENTATION_GAP note; the schema therefore only fixes 'object, non-string body not allowed', no invented enum.",
+      "type": "object"
+    },
+    "produced_by": {
+      "description": "Kernel-required (line 67). is_self_generated signal 2 requires a known external observation producer; model, compiler and unknown producers are excluded (current kernel) -- i.e. who produced the CONTENT, not who serialized the row. The closed vocabulary of `kind` is not decided in Round 2 (05 §2 carries `provenance.actor` for the writer-of-a-change and `created_by` for content ownership, and 05 §4 M2 lines 106-107 keeps them separate; neither is an Evidence column per 05 §6 line 244). S01 emits a provisional value and the gap is marked.",
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detail": {
+          "type": "string"
+        }
+      }
+    },
+    "record_type": {
+      "description": "Optional. is_self_generated signal 4 (kernel lines 120-121) treats a value inside kd_provenance.ARTIFACT_RECORD_TYPES as self-generated. Enum is deliberately NOT narrowed here: the only adjudicated membership set lives in the frozen kernel, and duplicating it in a second place would create a second authority that can drift. Absent means 'not a declared artifact record type'.",
+      "type": "string",
+      "minLength": 1
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "05 §5.2 line 155: `content_hash = sha256(归一化后的正文字节)`, normalization = CRLF->LF, strip trailing whitespace per line, drop trailing blank lines, trim. Line 162 makes it the comparison target that expires verification[].artifact_sha; lines 163-164 forbid treating content_hash as the whole identity and forbid letting a model name the hashed field set. Hash computation is delegated to kd_provenance.content_hash (kernel lines 51-52) -- reused, never re-implemented."
+    },
+    "origin": {
+      "description": "05 §2 lines 42-43. `origin.problem` / `origin.why` answer Q1 and are the reason baseline for Q7; both are non-empty text and the schema validator refuses empty; both are 不可就地改写 (any rewrite must ride a new lifecycle_event). `origin.source_refs[]` answers Q1/Q3 and the Worker fills only ids it actually opened (line 43).",
+      "type": "object",
+      "required": [
+        "problem",
+        "why",
+        "source_refs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "problem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "id"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "issue",
+                  "session",
+                  "fix",
+                  "dd",
+                  "run"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence_refs": {
+      "description": "05 §2 line 44: `evidence_refs[] {project, path, symbol, kind, status}`; path must be a canonical repository-relative path, brace/wildcard shorthand is forbidden (Round 1 measured 132/132 paths missing the `repos/` prefix and 3 brace shorthand). The resolver validates and refuses ingest on failure -- S03 consumes these for the exclusion match, S01 fills them.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "project",
+          "path",
+          "kind"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "VERIFIED",
+              "UNVERIFIED",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "evidence": {
+      "description": "05 §2 line 45: `evidence.status ∈ {VERIFIED, UNVERIFIED, UNKNOWN}` + `status_basis` pointing at a real run record. Writer is bound by adjudication: **only an eval/audit runner may set it**, never a Worker by hand (line 45 and 12-SKILL-DESIGN-BRIEF.md line 79). With no run record the value can only be UNVERIFIED. 05 §4 M5 lines 109-110 keeps `status` (forensic state) separate from `verification[].verdict` (scoring) -- verification[] is a Knowledge Artifact column (05 §6 line 252) and is therefore absent here.",
+      "type": "object",
+      "required": [
+        "status",
+        "status_basis"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "UNVERIFIED",
+            "UNKNOWN"
+          ]
+        },
+        "status_basis": {
+          "description": "Points at one real run record; null means 'no run record exists', which is what forces status UNVERIFIED (05 §2 line 45) and what 05 §5.4 rule (3) line 199 requires -- never render 'never measured' as a value.",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "generation": {
+      "description": "05 §2 line 47: `generation {round_id, pass_id, compiler_version, model_id, config_sha, created_at}` -- stamped by the assembly layer at write time, never self-reported by a Worker, immutable afterwards. Answers Q4/Q5. `model_id` is 'none' on the zero-LLM path (04 §0/1 line 15: Zero-LLM default path is cross-cutting invariant #13, restated at pack 04:115 item 1).",
+      "type": "object",
+      "required": [
+        "round_id",
+        "pass_id",
+        "compiler_version",
+        "model_id",
+        "config_sha",
+        "created_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "round_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compiler_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "config_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "created_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "record_locator": {
+      "type": "string",
+      "minLength": 1,
+      "description": "05 §2 line 51: the body stores only a store-side ledger reference / oid -- authoritative provenance is NOT held by the recorded object itself (also 10-PROVENANCE-MODEL.md §3 and 12 line 107: 出处记录的承载者必须独立于被记录对象). S01 points this at the append-only ledger written by kd_provenance.append_ledger."
+    },
+    "refs_integrity": {
+      "description": "05 §2 line 52: a reference-integrity result bit written by a re-runnable auditor script and recomputed every round, fail-on-unresolved. S01 does NOT write it -- S01 is capture, not the auditor; absent means 'not yet computed by any auditor' (05 §5.4 rule (3) line 199).",
+      "type": "object",
+      "required": [
+        "resolved",
+        "unresolved_refs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "resolved": {
+          "type": "boolean"
+        },
+        "unresolved_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "scope": {
+      "description": "SC11 typed scope triple {workspace, project, layer} -- 05-DATA-MODEL.md line 174. Optional on an Evidence row: the kernel requires `cohort` (REQUIRED_EVIDENCE, kd_provenance.py line 67) but never reads `layer`, and S04 kd_scope_resolve is the contract that resolves and certifies the typed triple, so SC01 types it here without making it a kernel-required field. Where both are present, workspace/project must agree -- S04 rejects a line where they do not.",
+      "type": "object",
+      "required": [
+        "workspace",
+        "project",
+        "layer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "workspace": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "layer": {
+          "enum": [
+            "project",
+            "global",
+            "cohort"
+          ]
+        }
+      }
+    }
+  }
+}

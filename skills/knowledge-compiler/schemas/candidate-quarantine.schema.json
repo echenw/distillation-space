@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/candidate-quarantine.schema.json",
+  "title": "SC08 candidate-quarantine.schema.json -- Stage 2 inert candidate area (06-PROMOTION-POLICY.md §4 five implementation requirements + CM-32)",
+  "description": "The document S11 kd_quarantine emits for one inert candidate area, and the record shape of each quarantined candidate inside it. Writer: S11 (12-SKILL-DESIGN-BRIEF.md:184). Validators: S09 kd_validate (the sole witness, 12:171) and S10 kd_gate in Wave 3. The five requirements of 06:177 each own at least one field here, so a schema that passed without them could not describe a real Stage 2 quarantine: (1) pending storage -> candidates[].pending_file; (2) artifact hash -> candidates[].sha256 + candidates[].artifact_hash; (3) conflict refusal -> conflicts[] rows whose action is const suppressed_by_pending (06:189); (4) approve/apply in one transaction -> there is deliberately NO approval state in a candidate record, because the only carrier is the emitted one-transaction bundle ($defs.apply_bundle, 06:247); (5) Rejected and Failed kept apart -> rejected and failed are two blocks over two different ledger files (06:195).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "at", "root", "inertness", "pending_count", "hint",
+               "candidates", "conflicts", "rejected", "failed", "integrity", "live_pending"],
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "description": "SC08's own version. Bumped only when the field set changes, so a consumer can tell a stale reader from a new writer."
+    },
+    "at": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The instant captured ONCE for this call and reused for every row this document renders (05-DATA-MODEL.md §2: 时间戳取一次). A per-field clock would make the report's own rows disagree."
+    },
+    "root": {
+      "type": "string",
+      "pattern": "^/",
+      "description": "Absolute, symlink-resolved quarantine root. Resolved rather than as-given because 06's placement demand is about where the bytes really are, not about how the caller spelled them: `../` and a symlink must not be able to move a candidate into a skills root."
+    },
+    "inertness": {
+      "$ref": "#/$defs/inertness",
+      "description": "The placement verdict for this root. It is part of the document, not a side log, so a report cannot be forwarded without the evidence that the area is unloadable."
+    },
+    "pending_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "How many candidates are live right now: state pending AND bytes present AND not expired. Derived from disk on every call and never stored, which is what keeps quarantine from becoming a second authority (05 §1 红线 1/2, CM-11/CM-13). Rejected and failed candidates are excluded by definition -- that exclusion is the observable form of 06:195's separation."
+    },
+    "hint": {
+      "type": "string",
+      "description": "The operator-facing notice that goes with the count. Contract S11 pins only the coupling, and the allOf below states it mechanically: an empty queue renders an empty string, a non-empty queue renders a non-empty string. Round 2 nowhere adjudicates the wording, so the emitted string is the plainest possible one and carries no emoji, no severity and no count -- see the IMPLEMENTATION_GAP in the writer's docstring and in W2-C-REPORT.md. A consumer that rendered a default hint over an empty queue would be reproducing the 无写入者字段 rendered as real data defect of 05-DATA-MODEL.md §5.4 (3)."
+    },
+    "candidates": {
+      "type": "array",
+      "description": "Every candidate record in the area, sorted by candidate_id. Includes the non-live ones (rejected, failed, expired, consumed): hiding them would be the 沉默消失 06:197 forbids.",
+      "items": {"$ref": "#/$defs/pending_candidate"}
+    },
+    "conflicts": {
+      "type": "array",
+      "description": "Requirement 3 of 06:177, made visible: every staged candidate that was refused because its target already had something pending. 06:189's instruction is to record the suppression rather than relax the rule, and 06:197 (run-account-anti-silence) is why the refusal reaches the document instead of only the exit code.",
+      "items": {"$ref": "#/$defs/suppression_row"}
+    },
+    "rejected": {
+      "$ref": "#/$defs/rejected_accounting",
+      "description": "Requirement 5, half one: the human decisions. Its own file, its own row shape."
+    },
+    "failed": {
+      "$ref": "#/$defs/failed_accounting",
+      "description": "Requirement 5, half two: the attempts that errored. A different carrier from `rejected` on purpose -- 06:200 says the difference is decisional, so one file for both would erase it."
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_without_bytes", "bytes_without_record"],
+      "description": "The two ways the area can be half-written. Reported, never repaired: a candidate whose draft bytes vanished is not counted as pending and is not silently dropped, and a draft with no record is an orphan the operator can see (the crash window between writing the draft and writing the record is intentional -- a record without verifiable bytes must never exist).",
+      "properties": {
+        "record_without_bytes": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "bytes_without_record": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      }
+    },
+    "live_pending": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "description": "The candidate ids behind pending_count, in the same order the count was computed. Without it the number would be an assertion; with it a reader can recompute it from `candidates` and `integrity`."
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "Contract S11, verbatim: `pending_count<=0` 时 hint 必须为空串. Stated in the schema as well as in the writer so that S09 refuses a report that breaks it, and so a future writer cannot loosen the rule by only editing Python. The reverse arm is the second half of the same clause: pending_count>0 with an empty hint is a silent queue. History of the branch key: it was written as `enum: [0]` when kd_validate._walk compared `maximum` with >=, which made an upper bound accept everything above it (W2-C found this while landing SC08). That comparison is fixed and locked by test_bound_keywords_compare_in_the_right_direction, so the clause is now expressed as the adjudicated `maximum: 0`.",
+      "if": {
+        "required": ["pending_count"],
+        "properties": {"pending_count": {"maximum": 0}}
+      },
+      "then": {
+        "properties": {"hint": {"const": ""}}
+      },
+      "else": {
+        "properties": {"hint": {"type": "string", "minLength": 1}}
+      }
+    }
+  ],
+  "$defs": {
+    "inertness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["placement_check_ran", "requested_root", "resolved_root", "host_skills_root",
+                   "inside_store_root", "corpus_root", "frozen_round", "reason_codes", "ok"],
+      "description": "CM-32's inertness, as data. `placement_check_ran` is const true because this block only exists when the check ran: a quarantine area is never reachable without a verdict, so a report that skipped the check cannot be rendered at all.",
+      "properties": {
+        "placement_check_ran": {"const": true},
+        "requested_root": {"type": "string", "minLength": 1, "description": "What the caller asked for, before resolution, so a refusal names the path as given."},
+        "resolved_root": {"type": "string", "pattern": "^/"},
+        "host_skills_root": {"type": "boolean", "description": "True when a path segment is a host-loaded skills/rules surface. The contract forbids the area being there ('惰性候选区读写（**不在宿主 skills 根**）'), because a quarantined file a host reads is an active instruction with a new name."},
+        "inside_store_root": {"type": "boolean", "description": "True when the root sits under a store that S08 declared (an ancestor holding store-layout.json, or an explicit --store-root). Quarantine bytes inside the store would show up as S08's NON_OWNER_WRITE, which is the right outcome -- and the reason S11 refuses it earlier."},
+        "corpus_root": {"type": "boolean", "description": "True when the path runs through the read-only evidence corpus (repos/)."},
+        "frozen_round": {"type": "boolean", "description": "True when the path is inside .distill/round-1 or .distill/round-2, which are tagged immutable."},
+        "reason_codes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": ["SKILLS_ROOT_TARGET", "STORE_ROOT_TARGET", "CORPUS_ROOT_TARGET", "FROZEN_ROUND_TARGET"]
+          },
+          "description": "NAMED refusals, closed set. A refusal without a name is the 假门 shape again: the operator cannot tell a policy decision from a crash."
+        },
+        "ok": {"type": "boolean", "description": "false only when reason_codes is non-empty; the writer raises instead of producing a report, so an emitted report always has ok true. `not` keeps that link assertible rather than prose."}
+        },
+      "not": {
+        "properties": {"ok": {"const": true}, "reason_codes": {"minItems": 1}},
+        "required": ["ok", "reason_codes"]
+      }
+    },
+    "pending_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "candidate_id", "target", "state", "pending_file",
+                   "sha256", "artifact_hash", "size_bytes", "staged_at"],
+      "description": "One quarantined candidate: 06:180's `_pending/<id>.md + sha256 + artifact hash` (requirements 1 and 2) plus the target that requirement 3 keys on. No approval, verdict or evidence field is required here -- approval arrives with the apply call in the same transaction (see $defs.apply_bundle) and a verdict is S10's to write.",
+      "properties": {
+        "schema_version": {"const": "1"},
+        "candidate_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+          "description": "Doubles as the draft file's name, so the pattern is a path-safety constraint first and an identifier second: no separator, no leading dot, bounded length."
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What the candidate would become. Requirement 3 is per-target (同 target 已有 pending → 拒绝新建), so a candidate without a target cannot be conflict-checked and is refused at the door."
+        },
+        "state": {
+          "enum": ["pending", "rejected", "failed", "consumed", "expired"],
+          "description": "pending is the only state that counts toward pending_count. rejected/failed are the two accounts of requirement 5 and stay distinct here as well as on disk; consumed means a durable commit was reported for it; expired is 06:190's 过期通道 and only fires when the candidate carries its own expires_at."
+        },
+        "pending_file": {
+          "type": "string",
+          "pattern": "^_pending/[A-Za-z0-9][A-Za-z0-9._-]{0,63}\\.md$",
+          "description": "Requirement 1, with 06:180's literal directory name. Relative to the quarantine root, so a record cannot point at a file outside the inert area."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Requirement 2a: the digest of the draft bytes. This is what makes 06:185-186 checkable -- a hand edit to a _pending file is a mismatch, and the tree's requirement on a mismatch is fail-closed refusal plus a failed row."
+        },
+        "artifact_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Requirement 2b: a digest over the canonical artifact triple {target, landing, size_bytes, pending_sha256} via kd_provenance.content_hash. Two digests, not one, because 06:180 names both and they answer different questions: these bytes, versus this proposal. It is also the key of 06:200's re-submission rule."
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "N22b (06:202) requires the model to report the size of what it drafted, and 06:240-242 makes size a budget input that must not be re-guessed later. minimum 1 because an empty draft is refused rather than stored as a placeholder."
+        },
+        "staged_at": {"type": "string", "minLength": 1, "description": "Captured once per call and reused; the same value appears in the rows that call writes."},
+        "updated_at": {"type": "string", "minLength": 1, "description": "Present only when the record left its staged state, so the original staging instant is never overwritten."},
+        "expires_at": {"type": "string", "minLength": 1, "description": "The candidate's own expiry instant (06:190's 过期通道). Absent means it never expires on its own: no default TTL is applied anywhere, because no such value was adjudicated."},
+        "landing": {"type": "string", "minLength": 1, "pattern": "^L-[A-Z][A-Z_-]*$", "description": "N22b's SUGGESTED tier/landing point for a draft. Advisory and hashed, never decided on: the authority for the value set is 06 §5.1's terminal states as emitted by S10 in SC12, and duplicating that enum here would make SC08 a second owner of it. The pattern is structural only."},
+        "decision_digest": {"type": "string", "minLength": 1, "description": "PENDING_CONSUMER: S10 kd_gate's verdict digest over this candidate (SC12 `verdict.schema.json`, 12:188; the same name S12 already binds into a store record at commit time). Written by nobody in Wave 2 and read by nobody in Wave 2: S11 does not invent a reader to make it look consumed. Declared here because SC08 is the carrier that outlives the gate."},
+        "prior_states": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"enum": ["pending", "rejected", "failed", "consumed", "expired"]},
+          "description": "N21's per-item watermark in its visible form: a re-submission records what the item was before, so an attempt cannot reset its own history by re-staging under the same id."
+        }
+      }
+    },
+    "suppression_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seq", "at", "action", "candidate_id", "target", "artifact_hash", "content_hash"],
+      "description": "06:189: 同 target 已有 pending 即拒会挡掉合法连续修正 -- the disposition is to record it, not to widen the rule. `action` is const so this file cannot quietly collect other event kinds.",
+      "properties": {
+        "seq": {"type": "integer", "minimum": 1, "description": "Position in the append-only file: what makes 'nothing overwrote anything' checkable (06:193 forbids a later failure overwriting the most informative earlier sample)."},
+        "at": {"type": "string", "minLength": 1},
+        "action": {"const": "suppressed_by_pending"},
+        "candidate_id": {"type": "string", "minLength": 1},
+        "target": {"type": "string", "minLength": 1},
+        "artifact_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "content_hash": {"$ref": "#/$defs/rowDigest"}
+      }
+    },
+    "rejected_accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ledger", "rows"],
+      "properties": {
+        "ledger": {"const": "_ledger/rejected.jsonl"},
+        "rows": {"type": "array", "items": {"$ref": "#/$defs/rejected_row"}}
+      }
+    },
+    "rejected_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seq", "at", "candidate_id", "target", "artifact_hash", "by", "content_hash"],
+      "description": "A human decision (06:200: rejected = 人的决定, and 无新证据不得再提). `by` is closed to the human members of SC07's attribution enum, so a model cannot fill the queue with refusals attributed to nobody.",
+      "properties": {
+        "seq": {"type": "integer", "minimum": 1},
+        "at": {"type": "string", "minLength": 1},
+        "candidate_id": {"type": "string", "minLength": 1},
+        "target": {"type": "string", "minLength": 1},
+        "artifact_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "by": {"enum": ["human", "user"]},
+        "content_hash": {"$ref": "#/$defs/rowDigest"}
+      }
+    },
+    "failed_accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ledger", "rows"],
+      "properties": {
+        "ledger": {"const": "_ledger/failed.jsonl"},
+        "rows": {"type": "array", "items": {"$ref": "#/$defs/failed_row"}}
+      }
+    },
+    "failed_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seq", "at", "kind", "candidate_id", "target", "artifact_hash", "content_hash"],
+      "description": "An attempt that errored, which 06:200 makes retryable -- the opposite of a rejection. `kind` is closed so the reason a candidate left the queue is always one of the named fail-closed cases. `target` and `artifact_hash` are plain strings here rather than 64-hex because a failure can be recorded about a candidate whose record is itself unreadable, and forcing the digest would delete the only evidence that something went wrong.",
+      "properties": {
+        "seq": {"type": "integer", "minimum": 1},
+        "at": {"type": "string", "minLength": 1},
+        "kind": {
+          "enum": ["sha256_mismatch", "artifact_hash_mismatch", "pending_file_missing", "unreadable_record", "apply_refused"]
+        },
+        "candidate_id": {"type": "string", "minLength": 1},
+        "target": {"type": "string"},
+        "artifact_hash": {"type": "string"},
+        "content_hash": {"$ref": "#/$defs/rowDigest"}
+      }
+    },
+    "rowDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Written by the Wave-0 kernel's append_ledger (kd_provenance.append_ledger prepends a digest over the canonical row), which is the only hook an append-only file offers: it makes an in-place edit of a quarantine account detectable, the same reason SC07 carries it. Declared because SC08's rows ARE the rows that channel writes -- omitting it made this schema refuse the real rows while landing the file, which is the witness doing its job."
+    },
+    "apply_bundle": {
+      "$comment": "Requirement 4 of 06:177 (`06:247` N27: approve 与 apply 同事务, 任一步失败则整批不落). Deliberately NOT an instance shape of this document: kd_quarantine.apply_bundle returns this bundle and writes nothing, and the durable half is S12's commit_batch. That is what keeps approve state out of the inert area -- if quarantine stored an approval, an approved-but-never-applied record would be a second, desynchronisable authority over what was consented to.",
+      "shape": {
+        "single_transaction": "true, always: one txn_id covers both steps",
+        "txn_id": "shared by approve_row and apply_intent; a mismatch is refused APPROVE_APPLY_SPLIT",
+        "approve_row": "{candidate_id, target, by in {human,user}, at, txn_id}",
+        "apply_intent": "handed to S12 kd_write_txn.commit_batch; S11 has no write rights into the store",
+        "pending_release": "{candidate_id, txn_id}: the queue drains only for the transaction that was approved",
+        "durable_write_owner": "S12 kd_write_txn.commit_batch"
+      }
+    },
+    "counter_admission": {
+      "$comment": "05-DATA-MODEL.md §5.4's five conditions, applied to the one counter this schema owns (pending_count): (1) writer = stage_candidate / reject / fail / consume / sweep, each a named call site in kd_quarantine.py; (2) tests = test_w2c_quarantine.py covers 'event happened -> count changed' AND 'count changed -> hint changed' AND 'count changed -> apply refused'; (3) consumer closure = pending_count is rendered into a hint only by hint_for, whose empty branch is the empty string, so a default cannot masquerade as data; (4) lifecycle = 06:190's expiry channel exists per candidate and rejected/failed/consumed leave the count; (5) storage boundary = the count lives in a rendering that is recomputed and deletable, never beside rebuildable index bytes. The count of `rejected`/`failed` rows is not a counter at all: the rows are the account and a consumer counts them if it needs a number."
+    }
+  }
+}

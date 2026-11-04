@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/lifecycle-event-ledger.schema.json",
+  "title": "SC07 lifecycle-event-ledger.schema.json -- append-only ledger row (05-DATA-MODEL.md §2 row lifecycle_event + §4 M1 columns + record_locator)",
+  "description": "One row per batch operation, appended, never rewritten and never deleted by the write path. `detail` is explicitly not a source of truth (05 §2 row 8; CM-66 15 decision_rules: audit detail 不作为事实来源, stated in the code comment). Columns are exactly 05 §4 M1's merged ledger: {at, op, actor, reason, supersedes, superseded_by, entity, entity_id} plus the kernel's content_hash binding, this file's record_locator projection, and `seq`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["seq", "at", "op", "actor", "reason", "entity", "entity_id",
+               "supersedes", "superseded_by", "detail", "record_locator", "content_hash"],
+  "properties": {
+    "seq": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Additive mechanism field, not policy: the row's 1-based position, which is what makes 'append-only' checkable -- S12/recover compares ledger length against the store/_ledger/commit.json commit marker and reports drift instead of repairing it. No YAML parameter in .distill/round-3/DEFERRED-PARAMETERS.yaml covers it (registered in W1-C-REPORT.md)."
+    },
+    "at": {"type": "string", "minLength": 1, "description": "Captured once by the writer and reused for every row of the batch (05 §2: 时间戳取一次)."},
+    "op": {
+      "enum": ["ADD", "MERGE", "UPDATE", "SUPERSEDE", "DELETE", "REINFORCE", "DECAY", "ARCHIVE", "RESTORE"],
+      "description": "07 §2: the original 8 policy actions, plus the user-approved 2026-10-07 RESTORE inverse of committed knowledge through S12. RESTORE is not crash recovery, automatic resurrection or a new storage state. MOVE/AUTOMATE remain restricted UPDATE/ARCHIVE cases. DELETE is still unreachable through S12."
+    },
+    "actor": {
+      "enum": ["curator", "user", "merge", "agent", "human", "import", "shared"],
+      "description": "05 §4 M1: DD-4 {curator, user, merge, agent} union Agent 12 {human, import, shared}. actor/reason are written as a pair, so a move is attributable to a owner or to automation."
+    },
+    "reason": {
+      "type": ["string", "null"],
+      "enum": ["decay-sweep", "archive", "absorbed", "reactivated", "tombstone", null],
+      "description": "05 §4 M1 closed enum. null is legal because Round 2 adjudicated reasons for the archive/merge/decay family only; ADD / UPDATE / SUPERSEDE / REINFORCE have no adjudicated value and S12 writes null rather than inventing one (IMPLEMENTATION_GAP in W1-C-REPORT.md). M4 additionally requires the origin of a tombstone to be recorded here, rejecting 15's 'two ticket sources deliberately indistinguishable'."
+    },
+    "entity": {
+      "enum": ["evidence", "learning", "pattern", "artifact", "lifecycle"],
+      "description": "05 §1: the five entities and their boundaries."
+    },
+    "entity_id": {"type": "string", "minLength": 1},
+    "supersedes": {"type": ["string", "null"], "description": "05 §4 M4: the supersession pair, kept strictly separate from the reversible tombstone ticket -- SUPERSEDE and DELETE must never share a state bit."},
+    "superseded_by": {"type": ["string", "null"]},
+    "detail": {
+      "type": ["string", "null"],
+      "description": "Human-readable only. NEVER authoritative: a consumer that reads `detail` instead of the columns above re-creates the RT-09 shape (a claim in prose with no writer behind it)."
+    },
+    "record_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ledger", "seq"],
+      "description": "Self-describing pointer, per 05 §2 row 10: the authoritative provenance trail is held by the ledger owner, and an artifact body carries only this reference.",
+      "properties": {
+        "ledger": {"type": "string", "minLength": 1},
+        "seq": {"type": "integer", "minimum": 1, "description": "Must equal this row's own seq; a mismatch means the row was copied out of band."}
+      }
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Written by kd_provenance.append_ledger over the canonical row. It is what makes an in-place edit of an appended row detectable, since an append-only file offers no other hook."
+    }
+  },
+  "$defs": {
+    "ledger_invariants": {
+      "description": "Not expressible in a single JSON Schema pass over one row; enforced by kd_write_txn + the integrator's re-run:",
+      "invariants": [
+        "append-only: existing bytes are never rewritten; a row whose seq is not file position is a defect, and deletion-eligibility is a revocable state bit (tombstoned_at), never a ledger action taken here",
+        "one row per batch op: a batch of N intents appends N rows and never a second row for the same op",
+        "sweeping the ledger by byte cap MUST warn loudly -- 05 §2 row 8 records 14's ledger_max_bytes=5MiB as a registered risk of destroying audit evidence; S12 currently performs no sweep and no cap value was adjudicated",
+        "rejected proposals stay visible: a refused batch writes nothing and surfaces a non-zero exit code rather than an empty success"
+      ]
+    }
+  }
+}

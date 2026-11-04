@@ -1,0 +1,122 @@
+# Knowledge Compiler — descriptive runtime contract.
+#
+# WHY THIS IS NOT IN agents/openai.yaml:
+#   agents/openai.yaml is read by the host Skill Runtime picker and may carry ONLY the standard UI
+#   metadata the host actually consumes (interface.display_name / short_description /
+#   policy.allow_implicit_invocation). The keys below are a DESCRIPTIVE contract for a human or CI
+#   reader. NO host enforces them and NO JSON Schema in ../schemas/ validates this file. Shipping
+#   them inside the agent manifest implied a host guarantee that does not exist, so they live here
+#   instead. These descriptions are static observations, not runtime/host enforcement proof.
+#   If this file and a script ever disagree, the script wins: nothing here grants or
+#   widens authority.
+#
+#   Paths are relative to the Skill root (..  = packages/knowledge-compiler/, the dir holding
+#   SKILL.md). "enforced_by" cites a shipped runtime script unless it explicitly says BUILD-TIME.
+#   This describes the bundled knowledge runtime, not the host's authorized source maintenance.
+#   R06 r06-learn.md covers host-side collection/iteration: explicit external
+#   sources and a target may share one repository, but are not guessed from this workspace_root.
+
+contract_version: 1
+status: DESCRIPTIVE_NOT_HOST_ENFORCED
+
+# --- entry point & progressive loading ------------------------------------------------
+entrypoint: ../SKILL.md                    # L0 index; the host loads SKILL.md, never this file
+workspace_root: ..                         # the Skill root (packages/knowledge-compiler/)
+invocation_files:
+  - ../SKILL.md                            # task entrypoint, loaded only on explicit invocation
+on_demand_files:
+  references_dir: ../references/           # selected on demand; no fixed total-reference byte cap
+  schemas_dir: ../schemas/
+
+# --- callable surface (python3, stdlib only) ------------------------------------------
+tools:
+  kind: shell
+  working_directory: ..
+  scripts:                                 # self-describing read-only/conditional CLI entrypoints
+    - scripts/kd_inventory.py              # S02
+    - scripts/kd_ingest.py                 # S01
+    - scripts/kd_selfsource_filter.py      # S03
+    - scripts/kd_scope_resolve.py          # S04
+    - scripts/kd_identity_key.py           # S05
+    - scripts/kd_dedup_exact.py            # S06
+    - scripts/kd_proxy_candidates.py       # S07
+    - scripts/kd_validate.py               # S09
+    - scripts/kd_store_layout.py           # S08
+    - scripts/kd_quarantine.py             # S11
+    - scripts/kd_gate_tree.py              # S10 (--structure / --adjudicate --policy FILE)
+    - scripts/kd_budget.py                 # S18
+    - scripts/kd_write_txn.py              # S12
+    - scripts/kd_provenance_stamp.py       # S13
+    - scripts/kd_refs_audit.py             # S14
+    - scripts/kd_eval_freeze.py            # S15
+    - scripts/kd_eval_score.py             # S16
+    - scripts/kd_lifecycle.py              # S17
+    - scripts/kd_material_audit.py         # R06 批次附件预检
+    - scripts/kd_material_quality.py       # R09 材料、Skill 与新建/更新对照检查
+    - scripts/kd_delivery_preflight.py     # R18 枚举模板、成品与中间证据隔离的只读静态预检
+    - scripts/kd_artifact_quality.py       # R09 GQ1–GQ5 只读成品质量记录、实现/接口/回执 SHA 预检
+    - scripts/kd_task_brief.py             # R01 任务快照建议，工具不写文件
+    - scripts/kd_material_ops.py           # R03 格式转换与阅读范围检查
+    - scripts/kd_candidate_review.py       # 候选草稿、差异与维护提示
+    - scripts/kd_execution_review.py       # 检查调用方提交的运行记录与预算
+    - scripts/kd_incremental.py            # 检查固定输入与依赖变化
+    - scripts/kd_round_output.py           # R01 只读计算/复核当轮最终成果的 SHA 清单与整树指纹
+    - scripts/kd_workspace_audit.py        # R01/R06 只读工作区轮次状态、输入版本及成果清单一致性预检
+  imported_kernels:                        # no argparse CLI; the host imports these
+    - scripts/kd_provenance.py             # S19 kernel + identity/ledger
+    - scripts/kd_gate.py                   # S10 kernel + the unique mutation boundary
+    - scripts/kd_human_gate.py             # G1 criteria (no runtime of its own)
+    - scripts/kd_model_step.py             # M1-M4 envelope, proposal-only
+    - scripts/kd_publish.py                # derived Markdown projector; public S12 snapshot lease, not a host installer
+    - scripts/kd_skill_metadata.py         # shared strings/metadata-map frontmatter contract for audit/publication
+
+# --- bundled knowledge runtime: code checks are not host permissions -----------------
+permissions:
+  read: ["../**"]
+  write: []
+  # The store root is deliberately NOT pre-declared: there is no store/ in the assembled package.
+  # S08 may explicitly bootstrap a safe layout. Only a separately trusted host can inject
+  # the three verifiers needed by S12; these descriptions do not grant that capability.
+  single_writer:
+    enforced_by: "kd_write_txn requires complete replayed S10, per-item S16, admitted policy and separately authenticated human/Eval/source-observation bindings. Its file protocol uses a permanent flock, durable journal and last hash-bound commit marker. S13 produces full SC06; S12 alone persists it in immutable transaction history. kd_publish consumes the public shared snapshot lease and writes only derived generations/current.json. Code guards are not an OS permission sandbox or authentication of a real host."
+  # S02's corpus exclusion remains unchanged. It is not a host-wide ban on reading selected
+  # upstream files under explicit task authorization; R06 never grants whole-corpus execution.
+  forbidden_reads: ["repos/"]
+  forbidden_reads_enforced_by: "kd_inventory.NEVER_ENUMERATE=('repos',) (repos/ can never be an input root, un-configurably); kd_quarantine.CORPUS_SEGMENT='repos'"
+  forbidden_writes: [".distill/round-1/", ".distill/round-2/", ".distill/round-3/"]
+  forbidden_writes_enforced_by: "kd_store_layout.assert_staging_path protects declared stores, package, corpus, frozen Round 1/2/3 and skills/rules paths for derived writers; kd_quarantine.check_placement also rejects host-loaded roots. These are code guards, not a filesystem sandbox or concurrency proof."
+  network: false
+  network_enforced_by: "the bundled core declares no network clients; a host-injected model responder may call a provider under separate authorization. Historical import-closure checks are build-time evidence, not runtime instrumentation or current verification."
+  git_mutation: false
+  git_mutation_enforced_by: "no script invokes git or any VCS; the package performs no version-control operation"
+
+# --- durable-write precondition -------------------------------------------------------
+human_gate: G1
+human_gate_enforced_by: >-
+  kd_write_txn.prepare_commit returns read-only approval/Eval/source-observation bindings.
+  commit_batch requires trusted in-process verifier capabilities, not verifier names in JSON.
+  G1 verifies exact binding digests and distinct actual human identities (two for a global Rule);
+  Eval verifies independence and the exact score/version binding; source observation verifies
+  task counts, retry/pending facts and source bindings. Package, policy, body, revision, target,
+  sources and base snapshot are pinned. N13 consumes complete SC01 forensic status/status_basis,
+  not an Artifact verification label. A bare flag/human label is never consent. Actual host
+  adapters and real runner/source measurements remain caller responsibilities. Synthetic
+  receipts verify protocol behaviour only, not actual humans or source measurements.
+durable_write_status: CONDITIONAL_HOST_CAPABILITIES
+recovery_boundary: RECOGNIZED_UNCOMMITTED_BATCH_ONLY_NOT_BUSINESS_ROLLBACK
+file_transaction_protocol: kd-file-transaction/3
+lifecycle_boundary: S17_SC05_SEMANTICS_S12_ATOMIC_SC04_SC05_SC06_SC07
+provenance_boundary: S13_FULL_SC06_S12_IMMUTABLE_HISTORY_READ_PROVENANCE
+committed_rollback_boundary: >-
+  User-approved explicit RESTORE uses only indexed older active committed content of the same
+  identity/Scope. New full PASSED Eval, G1 R2 confirmation and three newly bound receipts form
+  a new increasing revision and continuous ledger. Global retirement/restoration keeps two
+  authenticated humans. Old scores, crash undo, projection pointer changes and physical
+  deletion cannot substitute for this contract. No automatic legacy-store migration.
+projection_boundary: DERIVED_GENERATIONS_AND_PINNED_READ_PUBLICATION_NOT_HOST_INSTALLATION
+runtime_policy: runtime-policy.json          # explicit caller selection, not auto-approval
+skill_object_class: skill_task               # user-approved on-demand category, no automatic injection
+verification_boundary: >-
+  Runtime and host-consumption evidence must identify the actual package digest and
+  environment. A descriptive contract, earlier green result or synthetic identity cannot
+  substitute for that evidence. All other hosts and production adapters require their own proof.

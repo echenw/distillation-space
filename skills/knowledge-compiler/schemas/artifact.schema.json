@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/artifact.schema.json",
+  "title": "SC04 artifact.schema.json -- Knowledge Artifact (05-DATA-MODEL.md §1, §5.3 scope, §6 Artifact columns) + CM-65 assertion<->evidence binding",
+  "description": "The durable unit that reaches the resident layer (rule / skill / doc / script / test / lint / eval). Written ONLY by S12 kd_write_txn. Field set is closed by 05 §6; CM-65 (evidence-grounded-artifact-claims, MUST) is encoded by `claims[]` + `evidence_refs[]`: every strong identifier asserted in the body must be bound to an evidence ref whose line window contains it verbatim, and S12 re-checks that mechanically before the write (10-PROVENANCE-MODEL.md §1.4 L4).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_id",
+    "kind",
+    "content_hash",
+    "identity",
+    "scope",
+    "body",
+    "claims",
+    "evidence_refs",
+    "provenance",
+    "absorbed_into",
+    "state",
+    "revision",
+    "written_by"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "description": "Store key. No path separators: the record filename is derived from it by S12."
+    },
+    "kind": {
+      "enum": ["rule", "skill", "doc", "script", "test", "lint", "eval"],
+      "description": "05 §1: Knowledge Artifact = 落到常驻层的产物（rule / skill / doc / script / test / lint / eval）."
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "05 §5.2 sha256(normalized body bytes). Consumers: exact-equality dedup, content-equality short-circuit, and the comparison target that makes verification[].artifact_sha expire."
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_key", "pattern_key"],
+      "properties": {
+        "canonical_key": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "05 §5.1 L0: sha256(canonical 字段 NUL-join)[0:40]. L0 is the only layer with automatic counting and write authority."
+        },
+        "pattern_key": {
+          "type": "string",
+          "minLength": 1,
+          "description": "05 §5.1 L0: the explicit Pattern-Key field (CM-25 01:pattern-key-recurrence-dedup)."
+        }
+      },
+      "description": "L1 (near-match) is advisory and L2 (embedding) is 不采用, so neither appears as a stored identity column. The canonical field list itself is DEFERRED (05 §7 DM-1) -- the shape is pinned, the inputs are not."
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workspace", "project", "layer"],
+      "properties": {
+        "workspace": {"type": "string", "minLength": 1},
+        "project": {"type": "string", "minLength": 1},
+        "layer": {"enum": ["project", "global", "cohort"]}
+      },
+      "description": "05 §5.3: typed triple, non-empty and fail-closed (S1) -- no default to global; counters are bucketed per scope (S3); a Project Rule and a Global Rule are two different terminal states (S4). This closes the Round 1 finding that a computed cohort was never consumed (RT-05 / DD-6)."
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1,
+      "description": "正文. 07 §A3 protects the fact body: wording may be updated in place, a factual change must go through SUPERSEDE."
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "description": "CM-65 assertion<->evidence binding. One entry per assertion that carries strong identifiers (filenames, symbols, ids, flags, numbers quoted as fact). Every entry must bind to an evidence ref index; S12 refuses the write when an identifier is not present verbatim inside that ref's line window (10 §1.4). An artifact may not be promoted on prose it cannot re-check.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "text", "strong_identifiers", "evidence_ref_index"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "text": {"type": "string", "minLength": 1},
+          "strong_identifiers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string", "minLength": 1},
+            "description": "Checked as a literal set difference against the cited evidence window; a non-empty stray list means the write is refused (`_unsupported_addresses` shape, CM-47 11:evidence-grounded-identifier-check)."
+          },
+          "evidence_ref_index": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Index into evidence_refs[]. Binding by index keeps this schema self-contained; it is re-checked against the resolved file, not against a remembered string."
+          }
+        }
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "description": "05 §2 row 3. path must be a canonical repository-relative path, brace/glob shorthand forbidden; the resolver (S14) validates it and a failure refuses the write. `lines` is required because S14's contract resolves 'a real file plus a line range inside it' -- Round 2 names the five keys but leaves the range's carrier open (see W1-C-REPORT.md IMPLEMENTATION_GAPS).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["project", "path", "kind", "status", "lines"],
+        "properties": {
+          "project": {"type": "string", "minLength": 1},
+          "path": {
+            "type": "string",
+            "pattern": "^[^/\\\\][^{}\\[\\]*?…]*$",
+            "description": "Single openable path, relative to its registered root: no leading slash, no braces, no glob, no ellipsis. Enforced by S14, expressible here as a pattern."
+          },
+          "symbol": {"type": ["string", "null"]},
+          "kind": {"type": "string", "minLength": 1},
+          "status": {
+            "enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"],
+            "description": "05 §2 row 4: only the eval/audit runner may write VERIFIED; with no run record the value can only be UNVERIFIED."
+          },
+          "lines": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["start", "end"],
+            "properties": {
+              "start": {"type": "integer", "minimum": 1},
+              "end": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generation", "actor", "subject_digest", "stamp_digest"],
+      "description": "The subset of the SC06 minimum-sufficient set that S13 stamps at write time. The rest of the eleven fields is held by the provenance record addressed through record_locator -- 出处记录不得由被记录对象持有 (10 §3).",
+      "properties": {
+        "generation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["round_id", "pass_id", "compiler_version", "model_id", "config_sha", "created_at"],
+          "properties": {
+            "round_id": {"type": "string", "minLength": 1},
+            "pass_id": {"type": "string", "minLength": 1},
+            "compiler_version": {"type": "string", "minLength": 1},
+            "model_id": {"type": ["string", "null"], "description": "null on the zero-LLM path; never a guessed value (12 §16 item 6)."},
+            "config_sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "created_at": {"type": "string", "minLength": 1, "description": "Written once. Any rewrite produces a new entry linked by lifecycle_event (05 §2 row 6)."}
+          }
+        },
+        "actor": {
+          "anyOf": [
+            {"enum": ["human", "curator", "import", "shared"]},
+            {"type": "string", "pattern": "^agent:[A-Za-z0-9._-]+$"}
+          ],
+          "description": "05 §2 row 5: written by the gateway/assembly layer, never self-reported; absence is fail-closed, so there is no 'unknown' value."
+        },
+        "subject_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "stamp_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "Binding digest over the stamp; S12 re-derives it from runtime facts, which is what makes a self-filled block detectable."}
+      }
+    },
+    "absorbed_into": {
+      "type": ["string", "null"],
+      "description": "05 §6 + 07 §3.4: on MERGE/absorb this must be non-empty AND the target must already exist or be created by the same batch; missing means the whole intent is refused fail-closed ('归档了一簇但没归并' was undetectable in incident #29912)."
+    },
+    "state": {
+      "enum": ["candidate", "active", "superseded", "archived", "rejected", "failed"],
+      "description": "The six stored states; physical removal is not a state. SC05 (S17 semantics) owns lifecycle state. S12 writes this SC04 projection from the assembled SC05 in the same transaction and readers check agreement. A proposal may only carry state='candidate'; it cannot self-promote. ARCHIVE remains reversible; RESTORE is an explicitly authorized committed-history inverse, not physical deletion."
+    },
+    "revision": {"type": "integer", "minimum": 0, "description": "Incremented only by kd_gate.apply_mutation; S12 uses it as the stale-write guard."},
+    "written_by": {"const": "kd_write_txn", "description": "CM-30 write-ownership boundary: any record in the store that does not carry this exact value was written by a second write path."},
+    "verification": {
+      "type": "array",
+      "description": "05 §2 row 7: appended by the eval runner, the body may never edit an existing verdict. An empty array is legal and means 'no eval has run' -- it must render as UNKNOWN in reports (D5), never as a pass.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["eval_id", "verdict", "run_at", "run_evidence_hash", "artifact_sha"],
+        "properties": {
+          "eval_id": {"type": "string", "minLength": 1},
+          "verdict": {"type": "string", "minLength": 1},
+          "run_at": {"type": "string", "minLength": 1},
+          "run_evidence_hash": {"type": "string", "minLength": 1},
+          "artifact_sha": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "Mismatch against the current content_hash expires this verdict."}
+        }
+      }
+    },
+    "refs_integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "total_refs", "resolved", "unresolved", "basis"],
+      "description": "05 §2 row 11: recomputed by S14 every round, fail-on-unresolved, exit 2. An empty ref set reports EMPTY_REF_SET, which is not a pass.",
+      "properties": {
+        "status": {"enum": ["PASS", "FAIL_UNRESOLVED", "FAIL_SHORTHAND", "EMPTY_REF_SET", "SCANNED_SET_INCOMPLETE"]},
+        "total_refs": {"type": "integer", "minimum": 0},
+        "resolved": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "basis": {"type": "string", "minLength": 1, "description": "Which run of which script produced this bit -- a self-declared integrity bit is not an integrity bit."}
+      }
+    },
+    "record_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ledger", "seq"],
+      "description": "05 §2 row 10: the body keeps only a pointer into the store-side ledger; the authoritative provenance trail is not held by the recorded object. SYSTEM-OWNED (RH-P0-09 / §15): allocated by S12 after authorisation, never chosen by a proposal -- S12 refuses an intent whose record already carries record_locator (a forged locator must not become the final one).",
+      "properties": {
+        "ledger": {"type": "string", "minLength": 1},
+        "seq": {"type": "integer", "minimum": 1}
+      }
+    },
+    "patch_count": {"type": "integer", "minimum": 0, "description": "05 §3: strictly separated from use; patch earns no support points. SYSTEM-OWNED (RH-P0-09): set by S12/assembly, a proposal carrying it is refused."},
+    "lifecycle_record_id": {"type": ["string", "null"], "minLength": 1, "description": "RH-P1-02 single-owner link: lifecycle state + counters (use_count/view_count/layer_request_count/opportunity_anchor/first_seen_at/pinned/referenced_by_external) live ONLY in the SC05 lifecycle-record, whose sole writer is S17 kd_lifecycle. The artifact keeps this stable reference instead of a second copy, so those SC05-owned columns were removed from SC04 -- one semantic, one authoritative owner."},
+    "produced_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {"kind": {"type": "string", "minLength": 1}, "name": {"type": ["string", "null"]}},
+      "description": "Declares who authored the payload. kd_provenance.is_self_generated consumes it (with locator/record_type as backup signals) so a model payload cannot launder itself into independent support; it is one of several signals, never the only one."
+    }
+  }
+}

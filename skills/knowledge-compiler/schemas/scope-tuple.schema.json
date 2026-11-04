@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/scope-tuple.schema.json",
+  "title": "SC11 scope-tuple (CM-54 typed-scope-partition)",
+  "description": "SC11 declares TWO distinct named scope objects, because Round 2 adjudicated two different triples and Wave 1 must not overload one key with two meanings. (1) `scope` = {workspace, project, layer} -- 05-DATA-MODEL.md line 174, the typed triple behind the promotion tree; `layer` is what makes Project Rule and Global Rule two different terminal states (06-PROMOTION-POLICY). This root schema IS that object. (2) `cohort` = {workspace, project, path} -- 05-DATA-MODEL.md line 177 invariant 4 ('Typed 3-tuple identity (workspace_id, project_id, path) on every domain row'), which is exactly the key set the FROZEN kernel reads: kd_provenance.cohort_key(scope) consumes workspace, project and path and nothing else (scripts/kd_provenance.py lines 55-63), and is_independent / independent_support read rec['cohort'] (lines 136, 152). `path` was REMOVED from this root object: it belongs to `cohort` only. `layer` never belongs to `cohort` -- the kernel ignores it there, which is how the pre-split overload stayed invisible. Hard constraints still apply to `scope`: S1 non-empty and fail-closed, never defaulted to global (line 176); S2 a scope column with zero read points is rejected (lines 178-181) -- S04 kd_scope_resolve proves the read points and reports `layer` as PENDING_CONSUMER until Wave 3's S10 lands. The kernel function and its key names are not renamed or edited: S19's mutation gate depends on them.",
+  "type": "object",
+  "required": [
+    "workspace",
+    "project",
+    "layer"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "workspace": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "05 §5.3 S1 (line 176). First component of BOTH objects: scope.workspace and cohort.workspace must hold the same value, and S04 refuses a line where they disagree."
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "05 §5.3 S1 (line 176). Second component of both objects; missing it makes counts global, the exact `02` defect DD-6 lists as a reopen condition (DEFERRED id DD-6-sub44 -- still deferred, not decided here)."
+    },
+    "layer": {
+      "enum": [
+        "project",
+        "global",
+        "cohort"
+      ],
+      "description": "05 §5.3 line 174: `layer ∈ {project, global, cohort}`. Enum is exactly the adjudicated set. S1 (line 176) forbids defaulting a missing layer to `global`. Wave 1 readers: S05 kd_identity_key (identity field) and the SC02/SC03 rows. Wave 1 has NO promotion-tree reader: S10 arrives in Wave 3, so S04 reports this field PENDING_CONSUMER and, under the stricter exit-code branch, exits 2 until that reader exists. IMPLEMENTATION_GAP: Round 2 never decided whether PENDING_CONSUMER is exit 0 or exit 2 / DEFERRED id unknown (nearest DD-6-sub44, left deferred)."
+    }
+  },
+  "$defs": {
+    "scope_resolution_line": {
+      "type": "object",
+      "description": "One line of S04 `scope.jsonl`. `resolution` distinguishes an adopted triple from a fail-closed rejection so that 'never resolved' is never rendered as a real scope (05 §5.4 admission rule (3), line 199: templates must tell 'never measured' apart from '0').",
+      "required": [
+        "evidence_id",
+        "resolution"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolution": {
+          "enum": [
+            "resolved",
+            "rejected"
+          ]
+        },
+        "scope": {
+          "description": "The SC11 typed triple, present only when resolution == 'resolved' (05 §5.3 S1: reject, do not fabricate a scope).",
+          "anyOf": [
+            {
+              "$ref": "#/$defs/this_tuple"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cohort": {
+          "description": "The kernel identity triple for the same line (05 line 177). Present only when resolution == 'resolved'.",
+          "anyOf": [
+            {
+              "$ref": "#/$defs/cohort_triple"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cohort_key": {
+          "type": "string",
+          "description": "Proof of consumption, not a second authority: the value returned by kd_provenance.cohort_key for this cohort. S04 exists to make the 'computed but unconsumed' defect detectable (05 §5.3 S2), so S04 calls the kernel function itself."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Present only when resolution == 'rejected'."
+        }
+      }
+    },
+    "this_tuple": {
+      "$ref": "#"
+    },
+    "cohort_triple": {
+      "title": "identity cohort triple (05-DATA-MODEL.md line 177 invariant 4)",
+      "description": "The typed 3-tuple identity on every domain row, under the field NAME the frozen kernel reads (`rec['cohort']`, kd_provenance.py lines 55-63, 136, 152). Support counting groups by this object: two events in one cohort with different `path` are two cohorts. `layer` is NOT a member -- putting it here was the Wave 1 overload this split removes. `path` may be the empty string, which means 'whole project' and is an OBSERVED value; a missing key is a partial scope and is refused (fail-closed, invariant 4).",
+      "type": "object",
+      "required": [
+        "workspace",
+        "project",
+        "path"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "workspace": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "Same value as scope.workspace; S04 rejects a mismatch."
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "Same value as scope.project."
+        },
+        "path": {
+          "type": "string",
+          "description": "Third identity coordinate read by kd_provenance.cohort_key (kernel line 62). Key must be present; \"\" means whole-project, an absent key means unobserved and is rejected."
+        }
+      }
+    }
+  }
+}

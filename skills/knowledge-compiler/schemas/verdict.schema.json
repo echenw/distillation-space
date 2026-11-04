@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/verdict.schema.json",
+  "title": "SC12 verdict.schema.json -- one promotion verdict per candidate (06-PROMOTION-POLICY.md 5.1 terminal exits + CM-27 per-item verdict semantics)",
+  "description": "S10 emits one complete SC12 per candidate from the current 38-node / 87-branch tree. The 2026-10-07 user-approved lifecycle route adds ARCHIVE retirement and RESTORE of committed knowledge; no new storage state or physical delete. S12 replays the trace and requires complete per-artifact Eval plus three trusted receipts. A refusal after N25 preserves the actual human decision but never authorizes persistence. Counters stay Pattern-layer only. Global writes retain two distinct human approvers; RESTORE additionally requires R2 confirmation. Historical references document prior policy, not current runtime proof.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "candidate_id",
+    "item_verdict",
+    "terminal_landing",
+    "exit_code",
+    "decision_path",
+    "counters"
+  ],
+  "properties": {
+    "schema": {
+      "const": "kd-verdict/1",
+      "description": "Version tag of this record shape. Written by S10."
+    },
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "CM-27: the identity of the ONE item this verdict decides. Required, non-empty, and one verdict per id -- two verdicts for one id are refused by S10.assert_per_item_verdict, and a verdict for a set has no place to live in this shape."
+    },
+    "item_verdict": {
+      "enum": ["PROMOTE", "HOLD_AT_PATTERN", "DROP_SILENT", "DROP_WITH_LEDGER", "RETIRE_TO_ARCHIVE", "PROPOSE_DISPOSITION", "REFUSE"],
+      "description": "Per-item verdict vocabulary (CM-27, MUST). Each member decides one candidate; the set-level words pass/fail/passed/failed/ok are deliberately absent, because 06 5.1's exits are not a binary and Round 2 lists 'one verdict obscures per-item decisions in a batch' as the failure mode. Mapping: PROMOTE -> a durable landing; HOLD_AT_PATTERN -> L-PATTERN (count only, no proposal, never the resident layer); DROP_SILENT / DROP_WITH_LEDGER -> the two physical variants of 06 5.1's single 'do nothing' exit; RETIRE_TO_ARCHIVE -> L-ARCHIVE, the reversible ceiling; PROPOSE_DISPOSITION -> one of 06 2.2's six actions, still only a proposal; REFUSE -> a named refusal (deferred parameter, unshipped sibling module, carrier misuse, ESC-W2-01, REROOT)."
+    },
+    "terminal_landing": {
+      "enum": ["L-PATTERN", "L-NOTHING", "L-NOTHING+LEDGER", "L-SCRIPT", "L-LINT", "L-TEST", "L-EVAL", "L-SKILL", "L-RULE-PROJECT", "L-RULE-GLOBAL", "L-ARCHIVE", null],
+      "description": "06 5.1: the ten required exits, with 'do nothing' split into its two physical exits (L-NOTHING silent, L-NOTHING+LEDGER must write a lifecycle_event and may not vanish silently -- 06:run-account-anti-silence), so N29 has eleven out-edges. null only when item_verdict is REFUSE (an explicit refusal exit is a legal branch target per 06 1's counting rule). Stage 0's six disposition actions are NOT landings: they reuse this set via `disposition`."
+    },
+    "disposition": {
+      "enum": ["ADD", "MOVE", "UPDATE", "MERGE", "AUTOMATE", "SUPERSEDE", "DELETE", "ARCHIVE", "RESTORE", null],
+      "description": "06 2.2's action, carried alongside the landing. `ADD` is unreachable unless node N09b's three preconditions all hold, and it is forbidden outright as soon as N00 finds existing coverage."
+    },
+    "exit_code": {
+      "enum": [0, 2, 3],
+      "description": "S10 contract: 0 = promoted onto a durable landing, 3 = not promoted (a normal terminal state such as L-PATTERN / L-NOTHING / L-ARCHIVE), 2 = thresholds and policy are not same-source or Stage 0 was skipped/refused. 0 is impossible while `refusal` is non-null."
+    },
+    "decision_path": {
+      "type": "array",
+      "minItems": 1,
+      "description": "The trace: one entry per node entered, in order, from N00. First entry is always N00 -- Stage 0 cannot be skipped, and a trace that starts elsewhere is not this schema's shape. Each entry names the node, its adjudicator, and either the branch condition taken or the refusal raised there.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["node", "judge"],
+        "properties": {
+          "node": {"type": "string", "pattern": "^N[0-9]{1,2}[ab]?$"},
+          "judge": {"enum": ["DET", "LLM", "HUMAN", "JUDGE"]},
+          "condition": {"type": ["string", "null"]},
+          "to": {"type": ["string", "null"]},
+          "outcome": {"const": "refusal"},
+          "exit_code": {"enum": [2, 3]},
+          "reason": {"type": "string"},
+          "deferred_id": {"type": "string"},
+          "gap_id": {"type": "string"}
+        }
+      }
+    },
+    "scope": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["workspace", "project", "layer"],
+      "properties": {
+        "workspace": {"type": "string", "minLength": 1},
+        "project": {"type": "string", "minLength": 1},
+        "layer": {"enum": ["project", "global", "cohort"]}
+      },
+      "description": "SC11's triple, echoed onto the verdict because the landing depends on it: this is the read point S04 says `layer` exists for (05 5.3 S3/S4). layer == project -> L-RULE-PROJECT, layer == global -> L-RULE-GLOBAL; two distinct terminal states, not one state with a field. `cohort` is an occurrence axis, not a standing-preference layer, so a rule landing on it is refused."
+    },
+    "identity_digest": {
+      "type": ["string", "null"],
+      "description": "The L0 canonical digest N11 resolved. Never a model-produced key (06 3 forbids continuing on one)."
+    },
+    "counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["carrier"],
+      "properties": {
+        "carrier": {"const": "pattern"},
+        "support_count": {"type": ["integer", "null"], "minimum": 0},
+        "distinct_occurrence_count": {"type": ["integer", "null"], "minimum": 0}
+      },
+      "description": "M7 (05:111): the promotion gate reads the Pattern layer only -- support_count and distinct_occurrence_count. `carrier` is const 'pattern' and the three forbidden carriers (use_count/view_count/patch_count of the Evidence layer, adherence_rate of the Artifact layer) have no property here: additionalProperties refuses them, so reading the wrong counter is a structural error, not a quiet fallback."
+    },
+    "human_approved": {
+      "type": "boolean",
+      "description": "N25's outcome. A durable landing is unreachable without it, and kd_gate.apply_mutation keeps raising WritePathViolation for produced_by == 'model' when it is false."
+    },
+    "risk_tier": {
+      "enum": ["R1", "R2", null],
+      "description": "06 5 N25's write-risk tier: R1 resident layer, R2 irreversible (any delete, or a merge that destroys content). L-RULE-GLOBAL is R1 plus `second_human_gate`."
+    },
+    "second_human_gate": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["approver", "second_approver"],
+      "properties": {
+        "approver": {"type": "string", "minLength": 1},
+        "second_approver": {"type": "string", "minLength": 1}
+      },
+      "description": "The explicit second gate on L-RULE-GLOBAL (06 5.1, marked [I] there: extrapolated from DD-1's resident-layer rule plus B's layering, no reference project implements a two-tier human gate). The two approvers must be different people, else N25 refuses."
+    },
+    "absorbed_into": {
+      "type": ["string", "null"],
+      "description": "Mandatory whenever disposition is MERGE or SUPERSEDE (06 2 hard ban: the narrower entry is deleted only with absorbed_into = the surviving name). S12 refuses the write without it."
+    },
+    "rekey_pending": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["digest_before", "digest_after", "carry_over_chosen", "reset_chosen"],
+      "properties": {
+        "digest_before": {"type": "string"},
+        "digest_after": {"type": "string"},
+        "support_count_at_refusal": {"type": ["integer", "null"]},
+        "escalation": {"const": "ESC-W2-01"},
+        "status": {"const": "ROUND2_REOPEN_REQUIRED"},
+        "carry_over_chosen": {"const": false},
+        "reset_chosen": {"const": false},
+        "note": {"type": "string"}
+      },
+      "description": "ESC-W2-01 (ROUND2_REOPEN_REQUIRED): when the Stage-3 naming step changes the identity digest, both digests are recorded and the Pattern is NOT promotable. The two candidate policies are pinned to false here so no implementation can silently pick carry-over or reset; that choice belongs to a Round 2 re-adjudication."
+    },
+    "refusal": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["reason", "node"],
+      "properties": {
+        "reason": {"type": "string", "minLength": 1},
+        "node": {"type": "string", "pattern": "^N[0-9]{1,2}[ab]?$"},
+        "deferred_id": {"type": "string"},
+        "gap_id": {"type": "string"}
+      },
+      "description": "A named refusal, always attributable to the node that raised it, carrying the DEFERRED entry id when the cause is an undecided parameter. Never an empty reason, never a default value."
+    },
+    "approval_view_size_bytes": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "CM-31: the gate measures the approval view it would inject and reports its size; the budget itself belongs to S18 kd_budget, which is named in `refusal.gap_id` when the view is over budget with no budget owner."
+    },
+    "draft_size_bytes": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "M22b: the model reports its own size; the gate records it and never lets the number decide the landing."
+    },
+    "llm_diagnosis_inputs_consumed": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "How many recorded model proposals fed the four [LLM] Stage-0 diagnoses. Proposal rights only: 06 3 gives the model no adjudication power, and Stage 1's evaluators read no model value."
+    },
+    "not_promoted_reason": {
+      "type": ["string", "null"],
+      "description": "Why a non-promotion landing is the correct exit, in one line, pointing at the decision_path entry that produced it."
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"item_verdict": {"const": "PROMOTE"}}, "required": ["item_verdict"]},
+      "then": {
+        "required": ["terminal_landing", "scope", "human_approved", "risk_tier", "absorbed_into"],
+        "properties": {"human_approved": {"const": true}, "exit_code": {"const": 0}, "refusal": {"type": "null"}}
+      }
+    },
+    {
+      "if": {"properties": {"terminal_landing": {"const": "L-RULE-GLOBAL"}}, "required": ["terminal_landing"]},
+      "then": {
+        "required": ["second_human_gate", "risk_tier"],
+        "properties": {"risk_tier": {"enum": ["R1", "R2"]}, "scope": {"properties": {"layer": {"const": "global"}}}}
+      }
+    },
+    {
+      "if": {"properties": {"terminal_landing": {"const": "L-RULE-PROJECT"}}, "required": ["terminal_landing"]},
+      "then": {"properties": {"scope": {"properties": {"layer": {"const": "project"}}}}}
+    },
+    {
+      "if": {"properties": {"terminal_landing": {"const": "L-NOTHING"}}, "required": ["terminal_landing"]},
+      "then": {"properties": {"exit_code": {"const": 3}}}
+    },
+    {
+      "if": {"properties": {"terminal_landing": {"const": "L-NOTHING+LEDGER"}}, "required": ["terminal_landing"]},
+      "then": {
+        "properties": {"exit_code": {"const": 3}},
+        "description": "The silent variant and the ledger variant are the SAME 06 5.1 exit with two physical writes: this variant must never disappear without a lifecycle_event row."
+      }
+    },
+    {
+      "if": {"properties": {"item_verdict": {"const": "REFUSE"}}, "required": ["item_verdict"]},
+      "then": {"required": ["refusal"], "properties": {"terminal_landing": {"type": "null"}, "exit_code": {"const": 2}}, "description": "A later guard may refuse after N25 approved. Preserve the recorded human decision; it never authorizes a refused write."}
+    },
+    {
+      "if": {"properties": {"disposition": {"const": "ARCHIVE"}, "item_verdict": {"const": "RETIRE_TO_ARCHIVE"}}, "required": ["disposition", "item_verdict"]},
+      "then": {"required": ["scope", "human_approved", "risk_tier"], "properties": {"terminal_landing": {"const": "L-ARCHIVE"}, "item_verdict": {"const": "RETIRE_TO_ARCHIVE"}, "exit_code": {"const": 3}, "human_approved": {"const": true}, "risk_tier": {"const": "R1"}}}
+    },
+    {
+      "if": {"properties": {"disposition": {"const": "RESTORE"}, "item_verdict": {"const": "PROMOTE"}}, "required": ["disposition", "item_verdict"]},
+      "then": {"properties": {"risk_tier": {"const": "R2"}}, "description": "Explicit user-approved committed-history inverse; S12 independently verifies the old active source and fresh Eval/consent."}
+    },
+    {
+      "if": {"properties": {"disposition": {"enum": ["MERGE", "SUPERSEDE"]}}, "required": ["disposition"]},
+      "then": {"required": ["absorbed_into"], "properties": {"absorbed_into": {"type": "string", "minLength": 1}}}
+    },
+    {
+      "if": {"properties": {"rekey_pending": {"type": "object"}}, "required": ["rekey_pending"]},
+      "then": {"properties": {"item_verdict": {"const": "REFUSE"}, "terminal_landing": {"type": "null"}}}
+    }
+  ]
+}

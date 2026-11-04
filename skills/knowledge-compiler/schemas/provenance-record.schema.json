@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/provenance-record.schema.json",
+  "title": "SC06 provenance-record.schema.json -- Agent 12's 11-field minimum sufficient set (05-DATA-MODEL.md §2) with the L1-L5 assertion dispatch (10-PROVENANCE-MODEL.md §1) and the holder rule (10 §3)",
+  "description": "Eleven adjudicated fields, carried as ten keys because origin.problem/origin.why and origin.source_refs share the `origin` object: (1) origin.problem + origin.why, (2) origin.source_refs[], (3) evidence_refs[], (4) evidence{status,status_basis}, (5) actor, (6) generation{}, (7) verification[], (8) lifecycle_event[], (9) derived_from[], (10) record_locator, (11) refs_integrity. Written by S13 (write-time, once, never overwritten) and persisted by S12. The holder rule of 10 §3 means this record is kept by the assembly/ledger side, NOT inside the body it describes: 声明方不得持有判定自己是否可信的那份记录.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "origin",
+    "evidence_refs",
+    "evidence",
+    "actor",
+    "generation",
+    "verification",
+    "lifecycle_event",
+    "derived_from",
+    "record_locator",
+    "refs_integrity"
+  ],
+  "properties": {
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["problem", "why", "source_refs"],
+      "properties": {
+        "problem": {"type": "string", "minLength": 1, "description": "Field 1. Answers Q1. Schema validator refuses empty; not rewritable in place -- a change rides a new lifecycle_event and the old value stays in the ledger."},
+        "why": {"type": "string", "minLength": 1, "description": "Field 1. Baseline for the Q7 reason of any later change."},
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Field 2. Answers Q1/Q3. A worker fills only ids it actually opened; a referential-integrity auditor judges resolvability, and a missing target demotes the record to stale AND blocks promotion.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "id"],
+            "properties": {
+              "kind": {"enum": ["issue", "session", "fix", "dd", "run"]},
+              "id": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Field 3. Answers Q2. Canonical repository-relative path only; brace/glob shorthand is a contractual exit 2 for S14, so this schema forbids the characters as well.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["project", "path", "kind", "status", "lines"],
+        "properties": {
+          "project": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "pattern": "^[^/\\\\][^{}\\[\\]*?…]*$"},
+          "symbol": {"type": ["string", "null"]},
+          "kind": {"type": "string", "minLength": 1},
+          "status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+          "lines": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["start", "end"],
+            "properties": {
+              "start": {"type": "integer", "minimum": 1},
+              "end": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "status_basis"],
+      "description": "Field 4. Answers Q2/Q6. Only the eval/audit runner writes VERIFIED; with no run record the value can only be UNVERIFIED. If/then below makes that mechanical: VERIFIED cannot exist without a basis pointing at a real run.",
+      "properties": {
+        "status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "status_basis": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["run_id", "run_at", "artifact_sha"],
+          "properties": {
+            "run_id": {"type": "string", "minLength": 1},
+            "run_at": {"type": "string", "minLength": 1},
+            "artifact_sha": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "If the run record disappears or artifact_sha no longer matches, status falls back to UNVERIFIED."}
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"const": "VERIFIED"}}, "required": ["status"]},
+          "then": {"properties": {"status_basis": {"type": "object"}}, "required": ["status_basis"]}
+        }
+      ]
+    },
+    "actor": {
+      "anyOf": [
+        {"enum": ["human", "curator", "import", "shared"]},
+        {"type": "string", "pattern": "^agent:[A-Za-z0-9._-]+$"}
+      ],
+      "description": "Field 5. Answers Q3/Q5/Q7 and decides write authority. Written by the gateway/assembly layer, never self-reported; there is no default and no 'unknown', because absence must fail closed. Attribution changes only through the human adopt path. L2 of the dispatch table governs this assertion class ('I changed it')."
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["round_id", "pass_id", "compiler_version", "model_id", "config_sha", "created_at"],
+      "description": "Field 6. Answers Q4/Q5. Stamped by the assembly layer at write time, Worker 不可自填, immutable: any rewrite creates a new entry linked by lifecycle_event.",
+      "properties": {
+        "round_id": {"type": "string", "minLength": 1},
+        "pass_id": {"type": "string", "minLength": 1},
+        "compiler_version": {"type": "string", "minLength": 1},
+        "model_id": {"type": ["string", "null"], "description": "null on the zero-LLM path. Never a placeholder: 12 §16 item 6 forbids a guessed value."},
+        "config_sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "created_at": {"type": "string", "minLength": 1}
+      }
+    },
+    "verification": {
+      "type": "array",
+      "description": "Field 7. Answers Q6. Appended by the eval runner; the body may not edit an existing verdict. Empty is a real state and must render as UNKNOWN.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["eval_id", "verdict", "run_at", "run_evidence_hash", "artifact_sha"],
+        "properties": {
+          "eval_id": {"type": "string", "minLength": 1},
+          "verdict": {"type": "string", "minLength": 1},
+          "run_at": {"type": "string", "minLength": 1},
+          "run_evidence_hash": {"type": "string", "minLength": 1},
+          "artifact_sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "lifecycle_event": {
+      "type": "array",
+      "description": "Field 8. Answers Q7. Projection of the SC07 ledger: append-only, one row per batch op, `detail` never authoritative. The authoritative copy is addressed by record_locator.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "op", "actor", "reason", "supersedes", "superseded_by"],
+        "properties": {
+          "at": {"type": "string", "minLength": 1},
+          "op": {"enum": ["ADD", "MERGE", "UPDATE", "SUPERSEDE", "DELETE", "REINFORCE", "DECAY", "ARCHIVE", "RESTORE"]},
+          "actor": {"enum": ["curator", "user", "merge", "agent", "human", "import", "shared"]},
+          "reason": {"type": ["string", "null"], "enum": ["decay-sweep", "archive", "absorbed", "reactivated", "tombstone", null]},
+          "supersedes": {"type": ["string", "null"]},
+          "superseded_by": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "derived_from": {
+      "type": "array",
+      "description": "Field 9.派生谱系: read-only view input (05 §4 M9 -- not materialised as its own storage column, and `staleness` is not stored at all). Upstream failure propagates downstream as stale, never as deletion.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["entity", "entity_id"],
+        "properties": {
+          "entity": {"enum": ["evidence", "learning", "pattern", "artifact", "lifecycle"]},
+          "entity_id": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "record_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ledger", "seq"],
+      "description": "Field 10. The storage prerequisite for all seven questions: the body stores only a ledger reference, so the authoritative source cannot be rewritten by the object it describes.",
+      "properties": {
+        "ledger": {"type": "string", "minLength": 1},
+        "seq": {"type": "integer", "minimum": 1}
+      }
+    },
+    "refs_integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "total_refs", "resolved", "unresolved", "basis"],
+      "description": "Field 11. Written by the re-runnable S14 auditor and recomputed every round, fail-on-unresolved with exit 2 (L1 of the dispatch table governs 'I read it'). EMPTY_REF_SET and SCANNED_SET_INCOMPLETE are distinct values precisely so a vacuous scan cannot report success.",
+      "properties": {
+        "status": {"enum": ["PASS", "FAIL_UNRESOLVED", "FAIL_SHORTHAND", "EMPTY_REF_SET", "SCANNED_SET_INCOMPLETE"]},
+        "total_refs": {"type": "integer", "minimum": 0},
+        "resolved": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "basis": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "$defs": {
+    "note_l1_l5_dispatch": {
+      "description": "Mechanically meaningful half of 10-PROVENANCE-MODEL.md §1: trust strength is dispatched BY ASSERTION CLASS, not globally. Each row names the field of this schema that carries the obligation and the enforcement form; the schema cannot run the check itself, S13/S14/S12 do.",
+      "assertion_classes": [
+        {"class": "我读过 (inspection claim)", "tier": "L1 event-stream reverse lookup + fail-closed gate before write", "carried_by": ["refs_integrity", "evidence_refs"], "enforced_by": "kd_refs_audit (exit 2) called from kd_write_txn.preflight_intent"},
+        {"class": "我改了 (write/change claim)", "tier": "L2 path-set accounting + created_by at every entry point + capability narrowing", "carried_by": ["actor", "lifecycle_event"], "enforced_by": "kd_provenance_stamp (exit 2) + kd_gate.apply_mutation"},
+        {"class": "不可信文本入库", "tier": "L3 type-layer construction (孤证, 独立项目数 = 1, 如实标注)", "carried_by": ["evidence_refs[].kind", "origin.source_refs[].kind"], "enforced_by": "closed enums here; the newtype equivalent is the constructor set of the ingest module"},
+        {"class": "产物强标识符", "tier": "L4 verbatim set difference against the cited evidence", "carried_by": ["evidence_refs"], "enforced_by": "kd_refs_audit.check_claim_binding, refused by kd_write_txn (exit 2) -- SC04 `claims[]` is the bound side"},
+        {"class": "不可逆语义归类 (merge/archive/classify)", "tier": "L5 layered authority reconciliation with visible demotion", "carried_by": ["lifecycle_event"], "enforced_by": "kd_write_txn requires absorbed_into with an existing destination and writes exactly one ledger row per op"},
+        {"class": "自报采集口", "tier": "kept, but NOT an evidence grade (10 §1.6)", "carried_by": ["evidence.status"], "enforced_by": "status may only be UNVERIFIED without a run record; self-report never reaches VERIFIED"}
+      ]
+    }
+  }
+}

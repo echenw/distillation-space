@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/lifecycle-record.schema.json",
+  "title": "SC05 lifecycle-record.schema.json -- the Lifecycle Status entry (05-DATA-MODEL.md §3 15 entry columns + §4 M10 config item, 07-LIFECYCLE-POLICY.md §1 6 storage states)",
+  "description": "Closed field set: exactly the 15 entry columns of 05 §3 (the row accounting is stated in 05 §3's 原子列核算: 16 table rows = 15 entry columns + 1 config item) plus the 6-state enum of 07 §1. The one admitted configuration item, `deletion_grace_days`, lives in $defs.lifecycle_config and is NOT an entry column (05 §4 M10: 配置为唯一 Owner，条目侧默认 NULL 继承). Columns deliberately absent: `transition_actor`/`transition_reason` (folded into the lifecycle_event ledger, M1), `maturity_threshold_ref` (removed by M6), `staleness` (not materialized, M9), `invalid_at`/`superseded_by` (ledger columns, M4), `adherence_rate` (Artifact-layer derived value, M7 -- computed at read time, never stored).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lifecycle_state", "last_activity_at", "use_count", "view_count",
+               "opportunity_anchor", "layer_request_count", "created_by", "tombstoned_at",
+               "absorbed_into", "first_seen_at", "pinned", "referenced_by_external",
+               "decay_type", "last_validated_at", "validation_state"],
+  "properties": {
+    "lifecycle_state": {
+      "type": "string",
+      "enum": ["candidate", "active", "superseded", "archived", "rejected", "failed"],
+      "$comment": "07-LIFECYCLE-POLICY.md:12-33 §1 table -- the six storage states, in the order 05-DATA-MODEL.md:79 lists them. 07:35 状态守恒声明: 6 storage states + `hard-deleted` (a row/file disappearance, NOT a state) is the whole set, and 任何未列出的状态一律不得新增，新增即需重新裁决. `stale` is absent on purpose: 07 §1.1 rules it 只作只读派生视图，不物化 (M9 in 05 §4), and `tombstone` is folded into the `tombstoned_at` column, `probation`/`dormant` stay pure derivation (07 §1.1). A value outside this enum is the S09 exit-2 shape (枚举越界).",
+      "description": "The retirement eligibility conclusion must be a persisted state bit, not recomputed per read: 05 §3 row 1 -- without it a revival could not revoke deletion eligibility and a mislabel could not be rolled back."
+    },
+    "last_activity_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}([.][0-9]+)?([+][0-9]{2}:[0-9]{2}|[-][0-9]{2}:[0-9]{2}|Z)$",
+      "description": "DERIVED column: max of the event counters, 显式不含 created_at (05 §3 row 2, M3). null = 从未活动, which is exactly the identifiability 05 §3 says is lost if created_at is folded in, and the input CM-57's zero-use rule needs. Hand-writing it is refused by S17 (禁止手工写).",
+      "$comment": "readOnly in spirit; `readOnly` is an annotation keyword and the deterministic gate does not treat annotations as constraints, so the ban lives in kd_lifecycle.reinforce() and its tests, not in a schema keyword."
+    },
+    "use_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Evidence-layer event counter (05 §3 row 3, M7 carrier 1). Only `use` enters the survival numerator. null = 从未测得, distinct from 0 = measured-no-use, because 05 §5.4 (3) forbids rendering a default as real data."
+    },
+    "view_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Evidence-layer read/display counter, 与 use 严格分离，禁止合并 (05 §3 row 4). It only pardons at graduation review and never enters the survival numerator; `patch` is tracked separately and adds nothing (07 §2 A6 ②). Merging it with use would let the library select 写得好看的条目."
+    },
+    "opportunity_anchor": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Watermark seeded when the entry first comes under management (05 §3 row 5). Without it the adherence denominator degenerates into the wall clock. Re-seeded on entry rebuild."
+    },
+    "layer_request_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Per-layer request counter: opportunities = max(0, request_count - opportunity_anchor) (05 §3 row 6, 06:lib/counters.py::request_count,bump_request as the reference shape). The denominator is opportunities, not elapsed time, so 从未被召回 is never judged stale and the decision does not read a clock.",
+      "$comment": "Writer is NOT LANDED in this repository: CM-07 lifecycle-hook-capture-trigger is optional adapter O04 and DD-4 DEFERRED-2 leaves 是否有等价真实消费事件面 unproven. kd_lifecycle.admission_report() therefore refuses this counter as decision input and exits 2 (contract S17 exit) rather than letting a permanently-zero column drive anything -- that is the 08 pro-workflow `times_applied` counterexample of 05 §5.4."
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ownership: who produced the CONTENT (05 §4 M2 -- distinct from provenance.actor, which is who wrote a change). Decides 入池资格 across the five paths 05 §3 row 7 lists, and it is the zero-use red line: only self-produced entries are counted and archived. 07 §2 A1 forbids a durable record with created_by=null, so this column is neither nullable nor optional.",
+      "$comment": "No closed enum: 05 §3 row 7 writes the type as enum/string 权威成员键 without adjudicating a member list. Inventing one here would be policy, so the constraint is a non-empty string and the value vocabulary stays with the assembly layer."
+    },
+    "tombstoned_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}([.][0-9]+)?([+][0-9]{2}:[0-9]{2}|[-][0-9]{2}:[0-9]{2}|Z)$",
+      "description": "The revocable DELETION-ELIGIBILITY BIT, not an action (05 §5.6, 05 §4 M4 which renamed 15's `superseded_at` to kill the confusion with `superseded_by`). null = no eligibility. Only decay eviction and the reconcile-delete safety net may write it; a rewrite of the same path or a further real use clears it, which is what makes revival revoke eligibility instead of needing an undo system.",
+      "$comment": "Its origin is recorded in lifecycle_event.reason (decay-sweep | tombstone), because 07 §1.1 explicitly rejects 15's two-ticket-sources-deliberately-indistinguishable design."
+    },
+    "absorbed_into": {
+      "type": ["string", "null"],
+      "description": "Forward reference written only by the MERGE intent path: non-null after a merge/absorb and the target umbrella MUST already exist (05 §3 row 9, 07 §2 A2 ① fail-closed -- a missing target rejects the whole intent, the shape that made 归档了一簇但没归并 undetectable, 事故 #29912). Existence is a store question, so it is checked in kd_lifecycle.merge() against the records handed in, not by this schema."
+    },
+    "first_seen_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}([.][0-9]+)?([+][0-9]{2}:[0-9]{2}|[-][0-9]{2}:[0-9]{2}|Z)$",
+      "description": "Seeding clock: the moment the entry was first observed, seeded and deferred by one cycle (05 §3 row 11, whose 16-row accounting merges `first_seen_at` and `seeded_at` into this single column at -1). Without it a fresh install's first tick migrates the whole tree. null = not yet seeded, which is what makes 首个 tick 绝不动库 checkable.",
+      "$comment": "# IMPLEMENTATION_GAP: Round 2 merged the two names into one column without saying which survives (05 §3 原子列核算). `first_seen_at` is the first-listed name in that row and in 05 §6's Knowledge Artifact row (`first_seen_at/seeded_at`); `seeded_at` is kept as a note, not a second column, since a second column would make 16 entry columns. Not covered by any id in .distill/round-3/DEFERRED-PARAMETERS.yaml (newly surfaced by W3-B)."
+    },
+    "pinned": {
+      "type": "boolean",
+      "description": "Exemption axis 1 (05 §3 row 12): pinned entries are exempt from every auto-transition and the model review pass, so a required safeguard cannot be aged out by inactivity. Written only by a human."
+    },
+    "referenced_by_external": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "description": "Exemption axis 2 (05 §3 row 13): the ref set held by the reference scanner; being referenced (e.g. by a scheduled job) is equivalent to pinned, and the exemption lapses when the reference disappears. An empty array is a real answer, not a missing value."
+    },
+    "decay_type": {
+      "type": "string",
+      "enum": ["reality", "decision", "dependency", "relevance", "unknown"],
+      "description": "The third failure axis, and `unknown` is an allowed value (05 §3 row 14, CM-57 01:decay-type-maintenance-contract): age and usage cannot prove content wrong, so no universal half-life is given and no owner is invented. Written by the failure-attribution path after a model judgement, and re-decided on re-validation with a ledger row kept."
+    },
+    "last_validated_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}([.][0-9]+)?([+][0-9]{2}:[0-9]{2}|[-][0-9]{2}:[0-9]{2}|Z)$",
+      "description": "Advanced ONLY when a re-validation passes (05 §3 row 15, pack 07:10-145): missing or conflicting evidence must not push it forward and a proposal must not be treated as validated. Treat a change that moves this column without a passing verdict as a defect."
+    },
+    "validation_state": {
+      "type": "string",
+      "enum": ["pending", "verified", "unresolved"],
+      "description": "「凭什么信·验过没有」(05 §3 row 16, 05 §4 M5 keeps it apart from evidence.status). Written by the eval/audit runner, never by the recorded object; a vanished record falls back to pending. review 不是生命周期事件: a review pass adds no recurrence count, no last-seen refresh and no parallel registry."
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "07 §2 A5 ① + 07 §1's superseded/rejected rows: a deletion ticket belongs to an entry that has already left the authoritative visible set (superseded 门票, or a rejected entry a human explicitly gave DELETE eligibility to). A ticket on candidate/active/archived would be the SUPERSEDE/DELETE-shares-a-state-bit shape Agent 11 forbids, so it is a schema violation, not a warning.",
+      "if": {
+        "properties": {"tombstoned_at": {"type": "string"}},
+        "required": ["tombstoned_at"]
+      },
+      "then": {
+        "properties": {"lifecycle_state": {"enum": ["superseded", "rejected"]}}
+      }
+    },
+    {
+      "$comment": "07 §2 A2 ①: absorbed_into is written by the MERGE intent only, whose post-states are superseded (sibling, with the pointer) and archived (sibling, with the pointer). An active or candidate row holding it would mean a merge that never left the visible set.",
+      "if": {
+        "properties": {"absorbed_into": {"type": "string"}},
+        "required": ["absorbed_into"]
+      },
+      "then": {
+        "properties": {"lifecycle_state": {"enum": ["superseded", "archived"]}}
+      }
+    }
+  ],
+  "$defs": {
+    "lifecycle_config": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The configuration side of SC05: 05 §3 admits ONE configuration item (M10 moved it out of the entry columns) and 05 §4 M6/M10 make configuration the single Owner of a threshold, so no entry may copy it. S17 reads this object's property list from this file at call time -- a Python copy of the field list would stop biting when the file changes.",
+      "properties": {
+        "deletion_grace_days": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "enum": [null],
+          "description": "The grace window, applied to `tombstoned_at` and NOT to entry age (05 §3 row 10, 05 §4 M10). Round 2 quotes 参照值 180 (07 §2 A5 ①, from 15:retention-decay-formula hard_delete_after_days) but registers no adjudicated value, and .distill/round-3/DEFERRED-PARAMETERS.yaml DEFERRED-3 (DD-4) fixes the temporary behaviour as 破坏性上限固定为可逆 archive，不启用自动 TTL 硬删. # IMPLEMENTATION_GAP: value stays UNKNOWN; encoding anything but null here would be S17 choosing a number for Round 2. Closing DEFERRED-3 replaces this enum with the evidenced bound -- / DEFERRED id DEFERRED-3.",
+          "$comment": "`minimum: 1` is kept so that the day a value is admitted, a 0-day grace window is already a schema violation: 07 §2 A7 ⑤ clamps threshold floors because a sub-1 value makes the cutoff land after `now` and migrate the whole tree without confirmation."
+        }
+      }
+    },
+    "field_set_conservation": {
+      "$comment": "Not expressible as one-row JSON Schema; checked mechanically by kd_lifecycle.check_field_set() and tests/knowledge-compiler/test_w3b_lifecycle.py.",
+      "invariants": [
+        "properties has exactly 15 entries = 05 §3's 原子列核算 (16 table rows minus the M10 config item); a 16th entry column would re-create the second authority M6/M10 removed",
+        "lifecycle_state.enum has exactly 6 members and no `stale`/`tombstone`/`probation`/`dormant`/`deleted` (07 §1.1, 07 §1 状态守恒声明)",
+        "no column named adherence_rate / support_count / distinct_occurrence_count exists in this file: M7 keeps the three carriers apart and this file is the Artifact/Lifecycle carrier only",
+        "exactly one configuration item is admitted (deletion_grace_days); a second key here is an un-adjudicated knob",
+        "deletion eligibility is the `tombstoned_at` column only: there is no `deleted_at`, no `purge_*` and no delete-shaped field, because SC05's writer S17 has no physical-removal path (07 §3.1, 12:50 N3)"
+      ]
+    }
+  }
+}

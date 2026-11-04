@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/learning.schema.json",
+  "title": "Learning (SC02)",
+  "description": "Closed field set for the Learning entity (the formalized 01/04/07 style .learnings record). Membership is verbatim from .distill/round-2/05-DATA-MODEL.md sec 6: 'Learning = all provenance columns of Evidence + identity(L0) + Pattern link + decay_type + last_validated_at/validation_state'. Evidence's provenance columns are exactly the sec 6 Evidence row: content_hash, scope, origin.*, evidence_refs[], evidence.status + status_basis, generation{}, record_locator, refs_integrity. Counters deliberately do NOT appear here: sec 6 puts support_count / distinct_occurrence_count / contradiction_count on Pattern (and use/view/patch on Artifact), and sec 4 M7 rules the three carriers 'forbidden to interoperate'. Because additionalProperties is false, a counter landed on a Learning record is rejected -- the sec 5.4 admission rule enforced structurally rather than by prose.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "learning_id",
+    "content_hash",
+    "scope",
+    "origin",
+    "evidence_refs",
+    "evidence",
+    "generation",
+    "record_locator",
+    "refs_integrity",
+    "identity",
+    "pattern_ref",
+    "decay_type",
+    "last_validated_at",
+    "validation_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1"
+    },
+    "learning_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Store primary key required by CM-24 content-addressed-idempotent-upsert; 05 sec 6 enumerates business columns only."
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "$comment": "05 sec 5.2: sha256 of the normalized body (CRLF->LF, trailing whitespace removed, trailing blank lines removed, trim). Consumers: (a) exact-equality dedup, (b) content-equal short circuit, (c) the comparison target that expires verification[].artifact_sha. Prohibited from being the whole identity (sec 5.2 '禁止') -- identity is a separate field."
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "origin": {
+      "$ref": "#/$defs/origin"
+    },
+    "evidence_refs": {
+      "$ref": "#/$defs/evidenceRefs"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidenceStatus"
+    },
+    "generation": {
+      "$ref": "#/$defs/generation"
+    },
+    "record_locator": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "05 sec 2 row record_locator: the body stores only a reference to the store-side ledger; the authoritative provenance is not held by the recorded object itself (Agent 12 provenance_holder_rule)."
+    },
+    "refs_integrity": {
+      "$ref": "#/$defs/refsIntegrity"
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "pattern_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pattern_id"
+      ],
+      "$comment": "05 sec 6 'Pattern link'. Existence of the target is the resolver's decision branch (sec 2.1 D2), not this schema's.",
+      "properties": {
+        "pattern_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "decay_type": {
+      "enum": [
+        "reality",
+        "decision",
+        "dependency",
+        "relevance",
+        "unknown"
+      ],
+      "$comment": "05 sec 3: exactly 5 values and `unknown` is deliberately allowed (age and usage cannot prove content is wrong)."
+    },
+    "last_validated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}",
+      "$comment": "05 sec 3: advances only when revalidation passes; nullable = never validated. `pattern` applies only when the value is a string (draft 2020-12), so null stays legal."
+    },
+    "validation_state": {
+      "enum": [
+        "pending",
+        "verified",
+        "unresolved"
+      ],
+      "$comment": "05 sec 3: written by the eval/audit runner; falls back to pending when the record disappears. A review is not a lifecycle event."
+    }
+  },
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workspace",
+        "project",
+        "layer"
+      ],
+      "$comment": "05 sec 5.3 S1: typed triple, non-empty and fail-closed -- a missing or unresolvable scope is refused, never defaulted to global. This is the structural block of the '02 computed cohort_key but never consumed it' defect.. SCOPE VS COHORT (Wave 1 integration): this object is 05-DATA-MODEL.md line 174's typed triple {workspace, project, layer} and nothing else. The identity triple of line 177 invariant 4 is a SEPARATE named object, `cohort` = {workspace, project, path}, whose key set is fixed by the frozen kernel kd_provenance.cohort_key (scripts/kd_provenance.py lines 55-63) and which is defined in schemas/scope-tuple.schema.json ($defs.cohort_triple) and schemas/evidence.schema.json. Support counting groups by `cohort`; promotion filtering branches on `scope.layer` (S10, Wave 3). One key never carries both meanings.",
+      "properties": {
+        "workspace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layer": {
+          "enum": [
+            "project",
+            "global",
+            "cohort"
+          ]
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "problem",
+        "why",
+        "source_refs"
+      ],
+      "$comment": "05 sec 2 rows 1-2: two non-empty texts, refused empty by the validator, not rewritable in place (a rewrite must ride a new lifecycle_event). source_refs may only name ids the writer actually opened.",
+      "properties": {
+        "problem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "id"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "issue",
+                  "session",
+                  "fix",
+                  "dd",
+                  "run"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "project",
+          "path",
+          "kind"
+        ],
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^(?!/)[^{}*?]+$",
+            "$comment": "05 sec 2 row evidence_refs[]: 'path must be a canonical repository-relative path, brace/wildcard shorthand is forbidden'. Round 1 measured 132/132 paths missing the repo-root prefix and 3 brace shorthands, so the shape is rejected here rather than noted in prose."
+          },
+          "symbol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "VERIFIED",
+              "UNVERIFIED",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "evidenceStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "status_basis"
+      ],
+      "$comment": "05 sec 2 row 4 + sec 4 M5: this is per-item evidence-gathering state, distinct from the scoring record verification[] which lives on the Artifact table (sec 6). Written only by the eval/audit runner.",
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "UNVERIFIED",
+            "UNKNOWN"
+          ]
+        },
+        "status_basis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "$comment": "Points at one real run record. nullable rather than absent so 'no run record yet' is an explicit state, per sec 5.4 (3)."
+        }
+      },
+      "allOf": [
+        {
+          "$comment": "05 sec 2 row 4: '无运行记录时只能是 UNVERIFIED' -- so claiming VERIFIED without a status_basis pointer is refused by construction.",
+          "if": {
+            "properties": {
+              "status": {
+                "const": "VERIFIED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "status_basis": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "round_id",
+        "pass_id",
+        "compiler_version",
+        "model_id",
+        "config_sha",
+        "created_at"
+      ],
+      "$comment": "05 sec 2 row 6: stamped by the assembly layer at write time, immutable, never self-reported by the worker; any rewrite creates a new entry linked by lifecycle_event.",
+      "properties": {
+        "round_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compiler_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "config_sha": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"
+        }
+      }
+    },
+    "refsIntegrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "auditor",
+        "checked_at"
+      ],
+      "$comment": "05 sec 2 row 11: a result bit written by a re-runnable auditor script, recomputed every round, fail-on-unresolved. `auditor` is the named writer, because 05 sec 1 red line 3 and sec 5.4 (1) forbid a decision field with no identifiable writer.",
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        },
+        "auditor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layer",
+        "pattern_key",
+        "canonical_key",
+        "identity_digest"
+      ],
+      "properties": {
+        "layer": {
+          "enum": [
+            "L0"
+          ],
+          "$comment": "05 sec 6 gives Learning 'identity(L0)'. L1 is a Pattern-level hint layer and L2 embedding is not adopted (sec 5.1), so a Learning record claiming either fails with ENUM_OUT_OF_RANGE (S09 exit 2)."
+        },
+        "pattern_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonical_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]+$"
+        },
+        "derivation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "canonical_fields",
+            "normalizer_set",
+            "scope_triple",
+            "source_worker",
+            "digest_len"
+          ],
+          "$comment": "Same record shape emitted by kd_identity_key (S05). Kept structurally identical to SC03 so one derivation can be checked against both carriers; schemas stay self-contained per the brief (no cross-file $ref). 05 line 122 is TWO axes (canonical NUL-join ‖ explicit Pattern-Key) and the Pattern-Key is named by the model at Stage 3 step 12, so `canonical_fields` states what actually joined and the two keys below make a skipped axis visible; the field list itself stays DEFERRED (05 sec 7 DM-1).",
+          "properties": {
+            "canonical_fields": {
+              "type": "array",
+              "minItems": 3,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "$comment": "PROVISIONAL-CANONICAL-FIELD-SET: the adjudicated minimum (semantic + scope triple, bookkeeping excluded), bounded in count only; DM-1 defers the list."
+            },
+            "absent_optional_fields": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "$comment": "Declared canonical fields this record contributed nothing for; an empty array means every declared axis joined."
+            },
+            "axes_participating": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "semantic",
+                  "scope",
+                  "worker"
+                ]
+              },
+              "$comment": "Which of DC-SP-1 gate 3's groups moved the digest for this record."
+            },
+            "normalizer_set": {
+              "enum": [
+                "kd-identity-v1"
+              ]
+            },
+            "scope_triple": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_worker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "digest_len": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

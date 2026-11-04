@@ -1,0 +1,349 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledge-compiler.local/schemas/pattern.schema.json",
+  "title": "Pattern (SC03)",
+  "description": "Closed field set for the Pattern entity: the only counting carrier the promotion gate reads. Field membership is taken verbatim from .distill/round-2/05-DATA-MODEL.md sec 6 (Pattern row: identity / support_count / distinct_occurrence_count / last_attempted_count / near_duplicate_count / contradiction_count / scope / absorbed_into). Identity layering per sec 5.1 (L0 exact equality holds the only automatic counting and write right; L1 emits hints only; L2 embedding clustering is NOT adopted). Counter admission per sec 5.4: a counter is admissible only with an event -> writer -> consumer -> test chain, so every counter here is an object that must name its writer event, its writer call site, its consumer and at least one test. A bare integer counter is rejected by construction, which is the shape of the times_applied defect that sec 5.4 names as the headline counter-example.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "pattern_id",
+    "identity",
+    "scope"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "$comment": "05 sec 6 closed field set; version pin so a stale writer cannot be read by the new gate."
+    },
+    "pattern_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Store primary key required by CM-24 content-addressed-idempotent-upsert. 05 sec 6 enumerates business columns only; the id column is plumbing, not policy."
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "support_count": {
+      "$ref": "#/$defs/admittedCounter",
+      "$comment": "05 sec 5.4: writer = L0 identity equality hit at ingest; consumer = Stage 1 threshold gate; tests = (1) hit -> +1, (2) threshold -> proposal."
+    },
+    "distinct_occurrence_count": {
+      "$ref": "#/$defs/admittedCounter",
+      "$comment": "05 sec 5.4: writer = after canonical occurrence folding; consumer = Stage 1 minimum-distinct-source gate (blocks batch same-source promotion). Occurrence-ID provenance itself is DEFERRED (05 sec 7 DM-3) -- this schema demands the anchor, it does not decide which host anchor is used."
+    },
+    "last_attempted_count": {
+      "$ref": "#/$defs/admittedCounter",
+      "$comment": "05 sec 6 Pattern row; paired column with support_count so a retry only counts as new evidence (05 sec 5.4 quoting state.rs matches.len() <= last_attempted_count)."
+    },
+    "near_duplicate_count": {
+      "$ref": "#/$defs/admittedCounter",
+      "$comment": "05 sec 4 M8: deterministic proxy code may write this column. It is NOT contradiction evidence and must never be merged with contradiction_count."
+    },
+    "contradiction_count": {
+      "$ref": "#/$defs/contradictionCounter",
+      "$comment": "05 sec 4 M8 + sec 5.4: writable only by code after a model judgment, and every write must leave one lifecycle_event row per item; hence the mandatory ledger references."
+    },
+    "possible_duplicate": {
+      "type": "boolean",
+      "$comment": "05 sec 5.1 L1 and 12 sec M1: similarity produces a hint/marker only, never an automatic merge."
+    },
+    "absorbed_into": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "$comment": "05 sec 6 (merge terminal state) + sec 3: non-empty only on merge/absorb, and the target must already exist -- existence is the resolver's branch, not the schema's."
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "05 sec 5.1: L1 may not hold automatic counting rights. If the identity layer is L1, no admitted counter may be present on the same record.",
+      "if": {
+        "properties": {
+          "identity": {
+            "properties": {
+              "layer": {
+                "const": "L1"
+              }
+            },
+            "required": [
+              "layer"
+            ]
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "support_count"
+              ]
+            },
+            {
+              "required": [
+                "distinct_occurrence_count"
+              ]
+            },
+            {
+              "required": [
+                "contradiction_count"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layer",
+        "pattern_key",
+        "canonical_key",
+        "identity_digest"
+      ],
+      "properties": {
+        "layer": {
+          "enum": [
+            "L0",
+            "L1"
+          ],
+          "$comment": "05 sec 5.1 admits exactly L0 (auto counting + write right) and L1 (hint/proposal only). L2 embedding clustering is NOT adopted, so a record claiming L2 must fail the gate with ENUM_OUT_OF_RANGE (S09 exit 2)."
+        },
+        "pattern_key": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "05 sec 5.1 'explicit Pattern-Key field': a model may name it, but it exists only after code canonicalizes it (04 row 6 / adjudication C3). The naming is free; the key below is not."
+        },
+        "canonical_key": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "The NUL-joined canonical field string produced by kd_identity_key (05 sec 5.1). Bookkeeping fields are excluded from it by derivation, and kd_identity_key refuses a single-field strip/trim identity (S05 exit 2)."
+        },
+        "identity_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]+$",
+          "$comment": "sha256(canonical_key) truncated per 05 sec 5.1 ([0:40]). The truncation LENGTH itself is DEFERRED (05 sec 7 DM-1), so the schema pins the hex form and the derivation record states the length actually used."
+        },
+        "derivation": {
+          "$ref": "#/$defs/derivation"
+        }
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_fields",
+        "normalizer_set",
+        "scope_triple",
+        "source_worker",
+        "digest_len"
+      ],
+      "$comment": "Reproducibility record emitted by kd_identity_key so a reviewer can re-derive the digest without reading the code. DC-SP-1 gate 3 (12 sec 523): the key must contain at least normalized pattern identity + scope + source worker, so the three groups are mandatory here and the gate checks them. 05-DATA-MODEL.md line 122 states TWO axes -- sha256(canonical NUL-join)[0:40] ‖ 显式 Pattern-Key 字段 -- and line 126 makes the Pattern-Key an LLM-named, deterministically validated product of Stage 3 step 12, so a Stage 2 derivation may not require it: `canonical_fields` therefore lists the fields that ACTUALLY joined and the two keys below make a skipped axis visible instead of silent. The final field list stays DEFERRED (05 sec 7 DM-1).",
+      "properties": {
+        "canonical_fields": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "minItems 3 = DC-SP-1 gate 3's three mandatory groups. The final field list is DEFERRED (05 sec 7 DM-1); this schema therefore bounds the count and demands the groups, and does not name the semantic fields. PROVISIONAL-CANONICAL-FIELD-SET: the values are the adjudicated minimum (semantic + scope triple, bookkeeping excluded), not a permanent decision."
+        },
+        "absent_optional_fields": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "Declared canonical fields this record contributed nothing for (absent, or erased by the narrow fold). Recorded so an absent Pattern-Key/worker axis is auditable; an empty array means every declared axis joined."
+        },
+        "axes_participating": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "semantic",
+              "scope",
+              "worker"
+            ]
+          },
+          "$comment": "Which of gate 3's groups actually moved the digest for this record. A Pattern document must carry all three (12 sec 523); `semantic` + `scope` only is the evidence-layer shape S06 groups on."
+        },
+        "normalizer_set": {
+          "enum": [
+            "kd-identity-v1"
+          ],
+          "$comment": "The adjudicated normalization pipeline of 04 row 6 / 12 sec 725: NFKC, trim, strip .md, lowercase, underscore+space to hyphen, kebab slug, NUL-join, sha256. Versioned so a rule change cannot pass for the same record."
+        },
+        "scope_triple": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "05 sec 5.3 S1: typed triple, fail-closed, never defaulted to global."
+        },
+        "source_worker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "digest_len": {
+          "type": "integer",
+          "minimum": 1,
+          "$comment": "Declared, not assumed: DM-1 leaves the truncation length open, so the record states what was used."
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workspace",
+        "project",
+        "layer"
+      ],
+      "$comment": "05 sec 5.3: scope = typed triple {workspace, project, layer}; S1 fail-closed non-empty; S3 counter keys must contain scope; S4 the adjudicated object carries scope.. SCOPE VS COHORT (Wave 1 integration): this object is 05-DATA-MODEL.md line 174's typed triple {workspace, project, layer} and nothing else. The identity triple of line 177 invariant 4 is a SEPARATE named object, `cohort` = {workspace, project, path}, whose key set is fixed by the frozen kernel kd_provenance.cohort_key (scripts/kd_provenance.py lines 55-63) and which is defined in schemas/scope-tuple.schema.json ($defs.cohort_triple) and schemas/evidence.schema.json. Support counting groups by `cohort`; promotion filtering branches on `scope.layer` (S10, Wave 3). One key never carries both meanings.",
+      "properties": {
+        "workspace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layer": {
+          "enum": [
+            "project",
+            "global",
+            "cohort"
+          ]
+        }
+      }
+    },
+    "admittedCounter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "measured",
+        "value",
+        "writer_event",
+        "writer_call_site",
+        "consumer",
+        "tests"
+      ],
+      "$comment": "05 sec 5.4 counter admission, encoded structurally: conditions (1) writer event + call site, (2) at least one behavior test, (3) 'never measured' must stay distinguishable from 0. A counter without a named writer cannot be represented, therefore cannot be read by any decision path.",
+      "properties": {
+        "measured": {
+          "type": "boolean",
+          "$comment": "sec 5.4 (3): default/absent state must not be rendered as real data."
+        },
+        "value": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "writer_event": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "sec 5.4 (1): which event increments."
+        },
+        "writer_call_site": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "sec 5.4 (1): '实现清单里给出文件与符号' -- a file/symbol, not a promise."
+        },
+        "consumer": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "05 sec 1 red line 3: every field binds at least one real consuming branch (ordering / write right / promotion / invalidation / report rendering)."
+        },
+        "tests": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "sec 5.4 (2): event -> field change, and field change -> decision change."
+        },
+        "judgment_ledger_refs": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "Store-side lifecycle_event references for the increments behind `value`. Optional for the deterministic counters, MANDATORY for contradiction_count (see $defs/contradictionCounter), because 05 sec 4 M8 requires '模型判定后由代码回写，且必须逐条留 lifecycle_event'."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "measured": {
+                "const": false
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "contradictionCounter": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/admittedCounter"
+        },
+        {
+          "type": "object",
+          "required": [
+            "judgment_ledger_refs"
+          ],
+          "properties": {
+            "judgment_ledger_refs": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "$comment": "05 sec 4 M8: contradiction_count may only be written by code after a model judgment, and 'must leave one lifecycle_event row per item'. These are the store-side ledger references, per sec 2 record_locator (the body holds only a ledger reference, never the authority). A null or empty list is refused, so a proxy count can never be dressed up as contradiction evidence."
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "artifact": "promotion-gate-thresholds",
+  "status": "provisional",
+  "authority": "NOT decided. Values here are conservative Wave 0 defaults.",
+  "provenance_of_values": "Round 2 left the promotion-threshold subparameters DEFERRED. See .distill/round-3/DEFERRED-PARAMETERS.yaml, DD-1 group (DEF-1..DEF-8 and the DD-1 sub-parameter entries).",
+  "must_not_be_cited_as": [
+    "final policy",
+    "decided threshold",
+    "evidence-backed constant"
+  ],
+  "conservatism_claim": "RETRACTED (RH-P1-03). The prior text 'stricter than any observed reference value' was false: 2 is LOOSER, not stricter, than the one observed Round-1 reference point (recurrence>=3, see reference_points_not_adopted). No conservatism is substantiated for these values and none is claimed.",
+  "unresolved_threshold_notice": "These thresholds are UNRESOLVED (DD-1). Durable production promotion under them is NOT final policy and NOT evidence-backed. A host that needs a decided threshold must supply an explicit runtime-reviewed parameter or FAIL CLOSED; never treat 2 as a safe or conservative default. This round has no authority to set the number (§34), so the value is left as-is and the distortion in the wording is corrected instead.",
+  "thresholds": {
+    "min_independent_cohorts": 2,
+    "min_distinct_evidence": 2
+  },
+  "reference_points_not_adopted": [
+    "Round 1 observed a recurrence>=3 style gate implemented in 01 (pskoett-ai-skills) and 02 (distill, MIN_WORKFLOW_MATCHES_FOR_PROPOSAL = 3); 09 documents min_occurrences=3 only inside a prompt with no code enforcement. None of these were adopted as a decided value here."
+  ],
+  "close_condition": "Replace only after supplying the evidence listed in DD-1 DEF-1..DEF-8 and re-running .distill/round-3/audit_round3.py"
+}
