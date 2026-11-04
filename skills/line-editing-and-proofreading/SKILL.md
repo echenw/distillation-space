@@ -4,7 +4,6 @@ description: 中文和英文小说、散文的语言精修与校对：理顺长�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "Strunk, The Elements of Style（1918–1920 原版，PG37134）；中文机械校对按 GB/T 15834-2011、GB/T 15835-2011 的通行要点整理"
 ---
 
 # 语言精修与校对
@@ -113,7 +112,6 @@ metadata:
 | `references/zh-sentence-and-wording.md` | 中文段落、句子、用词规则的细则和例句（SR-01 至 SR-12、SR-16） |
 | `references/zh-mechanics.md` | 中文标点、对白格式、的地得、数字、错别字、体例表（SR-13 至 SR-15） |
 | `references/en-mechanics-and-punctuation.md`、`references/en-sentence-revision.md`、`references/en-paragraph-and-emphasis.md`、`references/en-word-choice-and-concision.md` | 英文稿（分工见 §6） |
-| `references/source-index.md` | 规则出处、行号、看似两说其实有条件的地方、不采纳的常见误读、转录本的更正表 |
 | `examples/worked-example.md` | 一段中文小说的完整精修示范，和一段英文说明文的示范 |
 
 ## 8. 交付

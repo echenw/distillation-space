@@ -1,6 +1,6 @@
 # 伏笔与兑现（SU-01、SU-06、SU-07、SU-08）
 
-返回 [SKILL.md](../SKILL.md)。来源编号见 [source-index.md](source-index.md)；行号 `L` 指来源转录本的行号。
+返回 [SKILL.md](../SKILL.md)。
 
 ---
 

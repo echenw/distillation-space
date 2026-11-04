@@ -1,6 +1,6 @@
 # 能不能转、转成什么（AD-01 至 AD-06）
 
-返回 [SKILL.md](../SKILL.md)。出处和行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 先读这三句：
 - 这里管动笔前的判断：原作的哪些功能必须保留，它们现在靠什么载体成立，换到目标媒介后还剩下什么。

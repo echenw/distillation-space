@@ -1,6 +1,6 @@
 # 诊断、修改单与例外
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ## 1. 诊断顺序
 

@@ -4,7 +4,6 @@ description: 场景设计与冲突节奏：一场戏进场和离场变了什么�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "伏笔与节奏：Poe《The Philosophy of Composition》与《The Raven》，另有 16 部 1609–1929 年的写作与戏剧手册；场景：9 部二十世纪初的戏剧评论与剧场史；动作：82 本 18 世纪初到 1950 年的小说"
 ---
 
 # 场景设计与冲突节奏
@@ -123,7 +122,7 @@ metadata:
 
 ## 5. 规则卡
 
-完整的说明、例外和例子在参考文件里；括号里是主要来源，出处见 `references/source-index.md`。
+完整的说明、例外和例子在参考文件里；括号里是主要来源。
 
 ### 场景单位（`references/scene-units.md`）
 
@@ -213,7 +212,6 @@ AF 卡全部是从小说个案归纳的推断，不是真实的格斗、战术�
 | `references/rhythm-diagnosis.md` | 诊断流程、修改单格式、SU-19 节奏审计表、作者坚持时怎么办 |
 | `references/scene-and-action-diagnosis.md` | SC-01、SC-12 至 SC-14：目标优先、场景症状表、动作场面的八种症状、保存功能、退出与边界 |
 | `references/scope-and-conflicts.md` | 来源之间的分歧怎么裁决、SU 卡在不同体裁里的用法、动作卡的证据范围、六组取舍、硬排除 |
-| `references/source-index.md` | 每条规则的来源、原文定位、改正过的说法 |
 | `examples/suspense-and-hooks.md` | 一个悬疑短篇的设计示范和一个连载章末的诊断示范 |
 | `examples/scene-cases.md` | 四个场景用例：正常设计、缺稿、误用历史格式、目标已经达到时停下 |
 | `examples/refrain-case.md` | 一个恐怖短篇的多场景设计：终点、阶梯、母题、现实解释线、交付时能说什么 |

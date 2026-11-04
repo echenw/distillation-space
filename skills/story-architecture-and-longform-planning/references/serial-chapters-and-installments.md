@@ -1,6 +1,6 @@
 # 章末与每一期（SV-09、SV-10）
 
-返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)，书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)。
 
 本文件管分次阅读的两个位置：章末断在哪、断得多密，以及每一期本身站不站得住。钩子的具体写法（真问题还是切断句子）、兑现日志、悬念强度转 `scene-conflict-and-rhythm` 的 SU-15、SU-16；卷末的收法见 SV-04、SV-05。
 

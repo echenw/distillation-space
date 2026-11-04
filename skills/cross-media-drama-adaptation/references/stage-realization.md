@@ -1,6 +1,6 @@
 # 舞台落地：指示、走位、群众、布景、排练、版权（AD-23 至 AD-29）
 
-返回 [SKILL.md](../SKILL.md)。出处和行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 先读这两句：
 - 本页的主要来源是 Barrett H. Clark《How to Produce Amateur Plays: A Practical Manual》（版权页 1917、1922），一本给业余剧团的系统的舞台制作手册。其他来源各有身份（剧作、电影方法、画面评论），不能统称“舞台规范”。

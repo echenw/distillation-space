@@ -1,6 +1,6 @@
 # 场景、取舍与故事（CL-08 至 CL-11）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [self-check-source-index.md](self-check-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ## 1. 场面表与“从台下看”（CL-08）
 

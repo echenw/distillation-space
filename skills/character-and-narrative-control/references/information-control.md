@@ -1,6 +1,6 @@
 # 信息控制（PV-09 至 PV-11、PV-16）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [source-index.md](source-index.md)。文中例子都是为说明而编写的。
+返回 [SKILL.md](../SKILL.md)。文中例子都是为说明而编写的。
 
 本文件回答“谁知道、读者知道什么、怎样瞒才不作弊”。悬念强度、伏笔位置、回收清单接着用 `scene-conflict-and-rhythm`。
 

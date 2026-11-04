@@ -1,6 +1,6 @@
 # 人物心理的边界与伦理
 
-返回 [SKILL.md](../SKILL.md)。来源见 [source-index.md](source-index.md) §7。视角规则自己的例外、作者坚持时怎么办、误用的后果，在 [diagnosis.md](diagnosis.md) §5 至 §7，这里不重复。
+返回 [SKILL.md](../SKILL.md)。视角规则自己的例外、作者坚持时怎么办、误用的后果，在 [diagnosis.md](diagnosis.md) §5 至 §7，这里不重复。
 
 本 skill 用于文学人物和叙述的设计。现实中的医疗、科学、司法判断，不从文学案例里推出来。用户提出创作或改写的请求，就已经授权了这个范围内的工作，普通的、可以撤回的选择不再反复确认。
 

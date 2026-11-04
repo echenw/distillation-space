@@ -1,6 +1,6 @@
 # 场景与动作的诊断（SC-01、SC-12 至 SC-14）
 
-返回 [SKILL.md](../SKILL.md)。伏笔、悬念和节奏的诊断流程、修改单格式和节奏审计见 [rhythm-diagnosis.md](rhythm-diagnosis.md)；这里管场景和动作。两边用同一种修改单（rhythm-diagnosis §2）。来源和行号见 [source-index.md](source-index.md) §4。
+返回 [SKILL.md](../SKILL.md)。伏笔、悬念和节奏的诊断流程、修改单格式和节奏审计见 [rhythm-diagnosis.md](rhythm-diagnosis.md)；这里管场景和动作。两边用同一种修改单（rhythm-diagnosis §2）。
 
 ---
 

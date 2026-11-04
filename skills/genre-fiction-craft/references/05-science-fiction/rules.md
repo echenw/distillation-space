@@ -1,6 +1,6 @@
 # 科幻规则（SF-01 至 SF-28）
 
-返回 [guide.md](guide.md)。书目见 [source-index.md](source-index.md)。现代科幻的常见子类型、世界推演和连载写法在 [subgenres-and-worldbuilding.md](subgenres-and-worldbuilding.md)（SF-29 至 SF-39）。书里的现象、角色的说法、用户的设定，机制解释，可选的设计，三者分开写。只填影响当前任务的字段，不把空模板变成新门槛。
+返回 [guide.md](guide.md)。现代科幻的常见子类型、世界推演和连载写法在 [subgenres-and-worldbuilding.md](subgenres-and-worldbuilding.md)（SF-29 至 SF-39）。书里的现象、角色的说法、用户的设定，机制解释，可选的设计，三者分开写。只填影响当前任务的字段，不把空模板变成新门槛。
 
 ## SF-01 三种证据层
 

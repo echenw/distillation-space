@@ -1,6 +1,6 @@
 # 画面检查：构图、运动、节奏与氛围（AD-30 至 AD-34）
 
-返回 [SKILL.md](../SKILL.md)。出处和行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 先读这两句：
 - 主要来源是 Victor Oscar Freeburg《Pictorial Beauty on the Screen》，一部画面美学的论著；导演层的说法来自 Peter Milne《Motion Picture Directing》。它们是作者的观点，不是验证过的知觉定律。

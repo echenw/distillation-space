@@ -1,6 +1,6 @@
 # 章末与结尾（SU-15 至 SU-18）
 
-返回 [SKILL.md](../SKILL.md)。来源编号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ---
 

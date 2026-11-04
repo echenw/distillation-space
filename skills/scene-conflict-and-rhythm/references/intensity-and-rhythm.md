@@ -1,6 +1,6 @@
 # 强度与节奏（SU-02、SU-10 至 SU-14）
 
-返回 [SKILL.md](../SKILL.md)。来源编号见 [source-index.md](source-index.md)。本文件的规则主要来自 Poe 一个来源，适合短篇和单场景；用于长篇时以章或场景为单元。
+返回 [SKILL.md](../SKILL.md)。本文件的规则主要来自 Poe 一个来源，适合短篇和单场景；用于长篇时以章或场景为单元。
 
 ---
 

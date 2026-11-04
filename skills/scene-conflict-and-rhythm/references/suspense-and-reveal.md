@@ -1,6 +1,6 @@
 # 悬念与揭晓（SU-03、SU-04、SU-05、SU-09）
 
-返回 [SKILL.md](../SKILL.md)。来源编号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ---
 

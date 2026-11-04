@@ -181,6 +181,6 @@
 
 1. Captain识别数字代表字母表次序，例如9对应I；依次替换成功。
 2. 得到`INEVERSAWYOUBUTONCEILOVEYOUEDITHINWOOD`，因为未分词，他仍说没有意义，不知道如何拆开。
-3. Tracer接过笔，划成`I NEVER SAW YOU BUT ONCE. I LOVE YOU. EDITH INWOOD.`（PG13180 原文第 3027、3036–3037 行）；技术替换与语言分组是两项不同帮助。
+3. Tracer接过笔，划成`I NEVER SAW YOU BUT ONCE. I LOVE YOU. EDITH INWOOD.`（PG13180《The Tracer of Lost Persons》原文第 3027、3036–3037 行）；技术替换与语言分组是两项不同帮助。
 4. 迁移到创作时可用这种“局部成功仍需另一种知识”的中介结构；读到明确告白仍不是已经给出恋爱同意。若新故事要回应，另写接收者的自由选择。
 数字和字符串为源例，不是新编；具体中介机制可迁移，是否适合目标作品仍为设计判断。

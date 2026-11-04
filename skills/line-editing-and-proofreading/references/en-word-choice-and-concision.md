@@ -1,6 +1,6 @@
 # 英文 · 用词、具体化与简洁
 
-返回 [SKILL.md](../SKILL.md) · 出处见 [source-index.md](source-index.md) · 这是英文稿规则；中文稿见 [zh-sentence-and-wording.md](zh-sentence-and-wording.md)
+返回 [SKILL.md](../SKILL.md) · 这是英文稿规则；中文稿见 [zh-sentence-and-wording.md](zh-sentence-and-wording.md)
 
 范围：删冗词、固定冗语、具体/抽象、套话整句重写、1918 词表的历史边界。
 每张卡的“出处”是 PG37134 转录本的行号。“书里没有”指书中没有涉及、本 skill 也没有另外核实；现代体例分歧按房规处理。

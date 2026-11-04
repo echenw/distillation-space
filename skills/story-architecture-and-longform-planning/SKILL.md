@@ -4,7 +4,6 @@ description: 故事结构与长篇分卷规划：一句主行动和副线挂载�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "单本结构：19 本 1609–1922 年的戏剧、小说作法、短篇与讲述手册，另有 10 本边界来源；分卷连载：103 份 1884–1925 年英美连载、编号丛书和作者自述"
 ---
 
 # 故事架构与长篇规划
@@ -323,8 +322,6 @@ metadata:
 | `references/serial-formula-and-escalation.md` | SV-11、SV-12：固定与变化、疲劳表、四种升级方式、赌注与篇幅 | 套路疲劳、要不要加码 |
 | `references/serial-production.md` | SV-13 至 SV-15：容量、开载路线、存稿、反馈日志、退场预案、备用结局，以及作者自述的背景 | 排产、开载、反馈 |
 | `references/serial-zh-webnovel.md` | 把各卡用到中文网文：卷、断章、日更、存稿、请假、升级、评论区 | 写网文时 |
-| `references/plot-source-index.md` | 单本结构 29 本来源的作者、版本、行号、支撑的规则、限制 | 核对依据 |
-| `references/serial-source-index.md` | 分卷连载的来源书目、族、用到的位置、能证明什么、不能证明什么 | 核对依据 |
 | `examples/plot-examples.md` | 三个综合示范（规划双线长篇、诊断中段塌加巧合、修订超长开篇）和五个单条规则示范 | 学习单本结构的用法 |
 | `examples/serial-examples.md` | 三个示范：系列卷规划、卷末全闭合诊断、网文分卷与日更排产 | 学习分卷连载的用法 |
 | `templates/plot-canvas.md` | 情节画布 PA-01 至 PA-12 | 规划的交付 |

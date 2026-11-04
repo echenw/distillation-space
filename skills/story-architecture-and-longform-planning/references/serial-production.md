@@ -1,6 +1,6 @@
 # 容量、开载与反馈（SV-13 至 SV-15）
 
-返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)，书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)。
 
 本文件的数字（每章几页、每页几词、每周几页）都是那几位作者的个人参数和当年的版式，不能照搬。能借的是结构。用到网文时，参数由作者、平台、合同给，见 [serial-zh-webnovel.md](serial-zh-webnovel.md)。
 

@@ -1,6 +1,6 @@
 # 套路与升级（SV-11、SV-12）
 
-返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)，书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)。
 
 先记一句：**重复不是优点，是成本。** 套路降低读者进门的成本，也在攒疲劳。目标是可控的变化，不是越像越好，也不是每卷都更大。
 

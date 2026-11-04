@@ -1,6 +1,6 @@
 # 叙述者与视点（PV-01 至 PV-08）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [source-index.md](source-index.md)。文中例句都是为说明而编写的。
+返回 [SKILL.md](../SKILL.md)。文中例句都是为说明而编写的。
 
 ## 1. 主体一句话（PV-01）
 

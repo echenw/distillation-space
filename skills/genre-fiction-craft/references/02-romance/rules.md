@@ -1,6 +1,6 @@
 # 言情规则（RO-01 至 RO-35）
 
-返回 [guide.md](guide.md)。书目见 [source-index.md](source-index.md)。现代言情的常见类型、感情线节奏和人设在 [tropes-and-serial.md](tropes-and-serial.md)（RO-36 至 RO-50）。
+返回 [guide.md](guide.md)。现代言情的常见类型、感情线节奏和人设在 [tropes-and-serial.md](tropes-and-serial.md)（RO-36 至 RO-50）。
 
 作品里的现象、人物的说法、用户的设定，和机制解释、设计提议是三层，写的时候分开。规则不因为在多部作品里重复出现就成了定律。只填写对当前作品有用的字段；卡片和模板是可选工具，不是配额。
 

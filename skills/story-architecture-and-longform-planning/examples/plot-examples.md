@@ -287,4 +287,4 @@
 - 全部是编写的示范；没有真实读者、销量、留存、编辑反馈数据；不能当“运行成功”证据。
 - 字数、章节、载体参数均为假设；历史规则只作默认/可选，不作硬门。
 - 示例中的“通过/待定”是设计时的自检，不是真实回归运行；本 skill 没有脚本、没有自动校验。
-- 规则来源见 `references/plot-source-index.md`；冲突与单来源参数见 `references/plot-scope-and-conflicts.md`。
+- 冲突与单来源参数见 `references/plot-scope-and-conflicts.md`。

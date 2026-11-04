@@ -1,6 +1,6 @@
 # 分卷连载规则卡（SV-01 至 SV-15）
 
-返回 [SKILL.md](../SKILL.md)。本文件是分卷连载规则的完整卡片：规则 → 怎么做 → 例外和起点 → 依据（括号里是作者和原文位置，行号指本仓库整本阅读版）。分支细则、卡住时、短引文和可信度在各自的参考文件里：SV-01 至 SV-07 见 [serial-volume-and-closure.md](serial-volume-and-closure.md)，SV-08 见 [serial-open-lines-and-continuity.md](serial-open-lines-and-continuity.md)，SV-09、SV-10 见 [serial-chapters-and-installments.md](serial-chapters-and-installments.md)，SV-11、SV-12 见 [serial-formula-and-escalation.md](serial-formula-and-escalation.md)，SV-13 至 SV-15 见 [serial-production.md](serial-production.md)。书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。本文件是分卷连载规则的完整卡片：规则 → 怎么做 → 例外和起点 → 依据（括号里是作者和原文位置及行号）。分支细则、卡住时、短引文和可信度在各自的参考文件里：SV-01 至 SV-07 见 [serial-volume-and-closure.md](serial-volume-and-closure.md)，SV-08 见 [serial-open-lines-and-continuity.md](serial-open-lines-and-continuity.md)，SV-09、SV-10 见 [serial-chapters-and-installments.md](serial-chapters-and-installments.md)，SV-11、SV-12 见 [serial-formula-and-escalation.md](serial-formula-and-escalation.md)，SV-13 至 SV-15 见 [serial-production.md](serial-production.md)。
 
 
 

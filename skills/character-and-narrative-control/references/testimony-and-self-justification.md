@@ -1,10 +1,10 @@
 # 证词、自辩与解释权（PS-01 至 PS-08）
 
-返回 [SKILL.md](../SKILL.md)。来源见 [source-index.md](source-index.md) §7。
+返回 [SKILL.md](../SKILL.md)。
 
 先读这三句：
 - 这些卡讲的是小说怎样写人物的说法、证词和自我辩解，是文学写法，不是临床知识；不用它们给人物或真人下病名。
-- 引号里的英文原话都回原文核过，位置在 source-index §7；情节概述来自早先的阅读卡，没有逐句复核。
+- 引号里的英文原话都回原文核过。
 - 证词要记账时，不另建表：在 [information-control.md](information-control.md) §3 的知识表上加下面四列。时间也错位时，再加 [nonlinear-time.md](nonlinear-time.md) §2 的四列。空表见 [narrative-workbook.md](../templates/narrative-workbook.md) §2。
 
 | 列 | 记什么 | 防的是什么错 |

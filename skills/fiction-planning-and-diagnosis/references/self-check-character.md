@@ -1,6 +1,6 @@
 # 人物、设定与材料（CL-03 至 CL-07）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [self-check-source-index.md](self-check-source-index.md)。例子都是为说明而编写的。
+返回 [SKILL.md](../SKILL.md)。例子都是为说明而编写的。
 
 ## 1. 人性兴趣审计（CL-03）
 

@@ -1,6 +1,6 @@
 # 形态、卷表、卷界、卷末与卷首（SV-01 至 SV-07）
 
-返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)，书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)。
 
 每条的写法：**规则 → 用在 → 怎么做 → 不用 → 卡住时 → 依据 → 可信度**。依据分三层：**原文**是书里写着的；**推断**是从几本书归纳出的条件；**建议**是本 skill 给的做法。行号以各书的整本阅读版为准，引文只作定位。
 

@@ -4,7 +4,6 @@ description: 人物塑造与叙事控制：决定谁来讲、从谁的眼睛看�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "视角与信息：Percy Lubbock《The Craft of Fiction》（1921）为主，另有 Wharton、Hamilton、Dowst、Forster 等 7 部 1901–1927 年的写作手册与选本；时间：40 篇英美小说，多为二十世纪中叶的通俗科幻，含 Henry James 两部；人物心理：《Crime and Punishment》（Garnett 译本）与 72 部十七到二十世纪的欧美小说"
 ---
 
 # 人物塑造与叙事控制
@@ -121,7 +120,7 @@ metadata:
 
 ## 5. 规则卡
 
-每张卡的细则、例子和例外在对应的参考文件里；来源和行号见 [source-index.md](references/source-index.md)。
+每张卡的细则、例子和例外在对应的参考文件里。
 
 ### 叙述者与视点（`references/narrator-and-viewpoint.md`）
 
@@ -223,7 +222,6 @@ metadata:
 | `references/boundaries-and-ethics.md` | 范围、四个争议、创伤题材的伦理表、十二个反例、五档可信度 | 写创伤题材、碰上医疗或现实的问题 |
 | `references/diagnosis.md` | 诊断顺序、视角与信息的十种症状、修改单示例、规则的例外、作者坚持时、误用、心理与时间的症状 | 拿到稿子先读 |
 | `references/zh-and-serial.md` | 中文写作与网文连载的迁移：称呼与视点、无时态时的距离、面板弹幕等装置、重生文的时间合同 | 中文稿、网文、长篇连载 |
-| `references/source-index.md` | 来源、行号、核过的原话、规则与来源对照、更正、本 skill 不声称什么 | 核对依据 |
 | `examples/pov-cases.md` | 视角与信息的编写示范：家族史、密室、认知变化、网文多视角 | 学习视角和信息的用法 |
 | `examples/psychology-cases.md` | 人物心理的编写示范：八个案例和几种要停下或改道的请求 | 学习 PS 卡的用法 |
 | `templates/narrative-workbook.md` | 视角方案卡、统一信息表、心理场景卡、时间机制卡、修改单、审稿十问、起点值 | 交付时填写 |
@@ -241,6 +239,5 @@ metadata:
 - **视角与信息**：主要来源是 Percy Lubbock《The Craft of Fiction》（1921），分析的是福楼拜、托尔斯泰、萨克雷、巴尔扎克、Henry James 等十九世纪欧洲长篇。Lubbock 认为小说的方法在向“戏剧化”进步，本 skill 不采纳：没有哪种视角天然更高级。视角合同和切换另有 Wharton、Hamilton、Dowst、Forster 等多部来源同向，较强；其余 PV 卡大多只有 Lubbock 一家，是一套可以检验的手艺假设。
 - **时间**：四十篇英美小说，都已通读，多数是二十世纪中叶的通俗科幻短篇；TM 卡多半一篇一张，证据弱到中。Henry James 续写笔记里的结局和等时是作者的规划，不是正文。
 - **人物心理**：PS-06、PS-07、PS-12 至 PS-17、PS-23、PS-24、PS-29、PS-30 来自《Crime and Punishment》一部书，说明这部书的做法；其余 PS 卡各来自一到三部作品。引号里的英文原话都回原文核过，情节概述来自早先的阅读卡。
-- 早先版本里与原文不符的几处已照原文改过，见 source-index §8。
 - 来源都是十七到二十世纪的欧美作品，没有讨论当代中文小说和网文；`references/zh-and-serial.md` 是本 skill 的迁移建议，没有来源和读者数据支持。
 - 这些规则没有在真实的写作任务上验证过，不承诺读者效果。

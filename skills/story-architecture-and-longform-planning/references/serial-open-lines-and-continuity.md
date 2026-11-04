@@ -1,6 +1,6 @@
 # 跨卷的线与连续性（SV-08）
 
-返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)，书目在 [serial-source-index.md](serial-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。空白表在 [serial-tables.md](../templates/serial-tables.md)。
 
 先分清两个词：
 - **入口**：下一卷的第一步（SV-05 的开口）。有了新任务，不等于又开了一条待解的线。

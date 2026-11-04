@@ -1,6 +1,6 @@
 # 场景单位（SC-02 至 SC-05、SC-09 至 SC-11）
 
-返回 [SKILL.md](../SKILL.md)。来源和行号见 [source-index.md](source-index.md) §4。这些规则的来源是戏剧评论和剧场史，用到小说是类比；具体的操作步骤是本 skill 的建议。
+返回 [SKILL.md](../SKILL.md)。这些规则的来源是戏剧评论和剧场史，用到小说是类比；具体的操作步骤是本 skill 的建议。
 
 ---
 

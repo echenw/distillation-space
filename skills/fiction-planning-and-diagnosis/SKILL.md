@@ -4,7 +4,6 @@ description: 小说创作的总流程与成稿自检：先定篇幅、媒介、�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "FC 规则：28 部 1808–1929 年（主体 1888–1928）的英语小说作法、戏剧与短篇手册，加上古典诗学和《文心雕龙》《闲情偶寄》；CL 测试：Crawford《The Novel; What It Is》（1893）、Besant《The Art of Fiction》（1884）；事实核验：Machiavelli《The Prince》、Bleyer、Cushing 的新闻写作手册与鲁迅《中國小說史略》；读者反馈：Lewes、Overton（1919）、Sherwood Anderson（1925）"
 ---
 
 # 小说创作的规划、诊断与自检
@@ -183,7 +182,7 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 
 ### 成稿自检（CL 测试）
 
-每个测试回答一个问题，只发现问题，不替作者下结论。细则在 `self-check-` 文件里，来源是 Crawford 和 Besant 两书（行号见 `references/self-check-source-index.md`）。
+每个测试回答一个问题，只发现问题，不替作者下结论。细则在 `self-check-` 文件里，来源是 Crawford 和 Besant 两书，主要参考 Crawford 和 Besant 两书。
 
 **定位**（`references/self-check-contract.md`）
 - **CL-01 读者契约两行**：“本书提供___，不提供___”；“本书以___为完成标准”。第一行具体到谁想要什么、什么挡着、读者在等哪个答案；第二行是修改时的优先级。Crawford 把小说看作闲暇里的“智性的艺术奢侈品”，Besant 把它看作和姐妹艺术并列的艺术；两种看法回答不同的问题，本 skill 不裁决。
@@ -239,14 +238,12 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 | `references/diagnosis.md` | 诊断流程：九类症状、证据、严重度、最小验证 | 诊断成稿 |
 | `references/revision.md` | 修订流程：分层、删减的判据、回归项、版本纪律 | 修订和删减 |
 | `references/scope-and-conflicts.md` | 篇幅、媒介、类型的条件，19 条冲突，单一来源的参数，证据边界，依据的种类 | 规则打架、跨赛道时 |
-| `references/source-index.md` | FC 规则 28 本来源的作者、版本、所用位置、支撑的规则、限制 | 核对 FC 的依据 |
 | `references/self-check-contract.md` | CL-01、CL-02、CL-14：两种小说观、契约两行、说教的三层、可教与不可教 | 定位、说教、被退稿时 |
 | `references/self-check-character.md` | CL-03 至 CL-07：人性兴趣审计、经验账本、三场景测试、事实契约与借材、人物双审 | 人物和材料 |
 | `references/self-check-scenes.md` | CL-08 至 CL-11：场面表、无功能才删、写完、双栏 | 场景的取舍 |
 | `references/self-check-language.md` | CL-12、CL-13：复述测试、修订轮次、方言和外语 | 语言和修订 |
 | `references/self-check-diagnosis.md` | 整稿自检的顺序、作者的各种情形、作者决定的事项、只能靠试读的判断、误用 | 拿 CL 测试审整稿 |
 | `references/self-check-modern-and-zh.md` | CL 测试在中文、网文和其他现代场合的用法 | 中文稿、网文 |
-| `references/self-check-source-index.md` | Crawford 和 Besant 两书的版本、所用位置、两书的分歧 | 核对 CL 的依据 |
 | `references/research-and-verification.md` | 事实契约、断言的拆分、证据类型表、检索顺序、六种结论、RS-01 至 RS-14、证据冲突、来源 | 有现实断言要核时 |
 | `references/reader-feedback.md` | 反馈记录、RF-01 至 RF-12、来源 | 收到评论或想做试读时 |
 | `examples/planning-cases.md` | 四个综合示范：规划短篇、规划双线长篇、诊断中段塌加人物工具化、修订超长连载 | 学习用法 |
@@ -260,7 +257,7 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 - 两个症状互相矛盾（比如“删太多”和“中段塌”）：分别列证据和代价，请作者定优先级，不平均折中。
 - 规则之间的冲突（19 条）和各赛道的条件，见 `references/scope-and-conflicts.md`。只有一家来源的参数（四分之三处、中点照面、字数、章数、两三个视角）只作默认值，不作门槛。
 - 来源是评论家对作品的反推时，不写成作者的方法。
-- Crawford 和 Besant 的分歧（小说是消遣的商品还是艺术、人物必须真实还是可以不可能、内容的尺度）由作者决定（`references/self-check-source-index.md`）。
+- Crawford 和 Besant 的分歧（小说是消遣的商品还是艺术、人物必须真实还是可以不可能、内容的尺度）由作者决定。
 - 商业上的可读和表达的完整冲突时，给两案和代价，由作者裁决（RF-09）；市场的约束不当作艺术的规则（FC-20）。
 - 事实和虚构冲突时，按作者定的事实契约（CL-06）：纪实的部分改正，架空的部分写明偏离点，虚构的设定只校内部一致。
 
@@ -277,7 +274,7 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 ## 9. 来源与可信度
 
 - **FC 规则**：28 部作品，主体是 1888–1928 年英美印刷市场的小说作法、短篇工艺、戏剧手册，加上亚里士多德《诗学》等古典诗学和《文心雕龙》《闲情偶寄》。多数规则有几个独立的来源，每条的来源数、来源类型和可信度写在 `rules-` 文件里。
-- **CL 测试**：只有 Crawford（1893）和 Besant（1884 年讲稿）两书，是十九世纪英国小说观的手艺建议；两书的分歧和不采纳的说法见 `references/self-check-source-index.md`。
+- **CL 测试**：只有 Crawford（1893）和 Besant（1884 年讲稿）两书，是十九世纪英国小说观的手艺建议；两书的分歧由作者自主决定。
 - **RS 卡**：从四本 1920 年前后的新闻写作手册、文学史和政治论著的做法里归纳，是本 skill 的设计，不是这些书的主张。
 - **RF 卡**：来自三本十九世纪到 1925 年的批评论著；RF-10 至 RF-12 的流程是本 skill 的设计。
 - 证据薄弱的地方：当代网文和平台、长篇系列的跨书结构、非西方的现代小说、影视和互动叙事、现代的读者研究和销售数据。相关的判断是保守的默认值。

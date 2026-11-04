@@ -68,5 +68,5 @@
 | 把三场景预测当成质量判断 | “预测得出”被误当成“写得好” | 它只说明人物清楚（CL-05） |
 | 把修订次数当质量 | 作者被要求一遍遍重写，越改越死 | 用停止条件（CL-13） |
 | 以为 CL 测试覆盖了语言层 | 句法、视角、节奏没人管 | 句子转 `line-editing-and-proofreading`，视角转 `character-and-narrative-control`，节奏转 `scene-conflict-and-rhythm` |
-| 把两书一致当成两份独立证据 | 十九世纪一个传统的看法被当成共识 | 见 SKILL.md §9 和 [self-check-source-index.md](self-check-source-index.md) |
+| 把两书一致当成两份独立证据 | 十九世纪一个传统的看法被当成共识 | 见 SKILL.md §9 |
 | 承诺“按测试改就能成功” | 作者把手艺清单当成成功保证 | 按 CL-14 分清可检查和不可检查的部分 |

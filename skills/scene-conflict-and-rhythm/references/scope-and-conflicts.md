@@ -1,6 +1,6 @@
 # 适用范围与来源分歧
 
-返回 [SKILL.md](../SKILL.md)。来源和行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ---
 

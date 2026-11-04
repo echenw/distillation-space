@@ -1,6 +1,6 @@
 # 非线性时间：先分类，再记账
 
-返回 [SKILL.md](../SKILL.md)。来源见 [source-index.md](source-index.md) §6。这里的例子来自四十篇英美小说，多数是二十世纪中叶的通俗科幻短篇，另有 Henry James 的两部作品；它们说明“书里这样做过”，不是时间规律。Lubbock 关于跨越时间、叙述的时间距离的规则在 [scene-summary-and-time.md](scene-summary-and-time.md)（PV-14、PV-15）。具体的时间机制见 [time-mechanisms.md](time-mechanisms.md)（TM 卡）。
+返回 [SKILL.md](../SKILL.md)。这里的例子来自四十篇英美小说，多数是二十世纪中叶的通俗科幻短篇，另有 Henry James 的两部作品；它们说明“书里这样做过”，不是时间规律。Lubbock 关于跨越时间、叙述的时间距离的规则在 [scene-summary-and-time.md](scene-summary-and-time.md)（PV-14、PV-15）。具体的时间机制见 [time-mechanisms.md](time-mechanisms.md)（TM 卡）。
 
 ---
 

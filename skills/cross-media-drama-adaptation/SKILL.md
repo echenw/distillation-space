@@ -4,7 +4,6 @@ description: 跨媒介剧作改编：把小说、故事或剧本改成舞台方�
 metadata:
   version: "3.0.0"
   language: zh-CN
-  sources: "七部二十世纪一〇到二〇年代的美国手册：电影剧作三部（Esenwein & Leeds、Phillips、Zuver），电影美学两部（Lindsay、Freeburg），导演一部（Milne），业余舞台制作一部（Clark）；另有 Thoma、Wedekind、Baron 的三部剧本作个案"
 ---
 
 # 跨媒介剧作改编
@@ -101,7 +100,7 @@ metadata:
 
 ## 5. 规则卡
 
-完整的说明、原话、例外和例子在参考文件里；括号里是主要来源，出处见 `references/source-index.md`。
+完整的说明、原话、例外和例子在参考文件里；括号里是主要来源。
 
 ### 能不能转（`references/transferability.md`）
 
@@ -166,7 +165,6 @@ metadata:
 | `references/stage-realization.md` | AD-23 至 AD-29：读透指示、走位、群众、布景灯光、旁白、排练、版权；检查清单 |
 | `references/pictorial-checks.md` | AD-30 至 AD-34：构图、运动与方向、节奏、三条美学警示、导演与氛围；检查清单 |
 | `references/conflicts.md` | 五组分歧（披露多少、快慢、结尾形态、示范演员、片长）怎么判；裁决备忘 |
-| `references/source-index.md` | 每本书核过的原话和行号、剧本个案、改正过的说法、删去的说法、没有逐句核对的概括 |
 | `examples/adaptation-cases.md` | 四个编的案例：侦探短篇能不能改、分场稿检查、个案不是规则、要求照抄已有的改编版 |
 | `templates/adaptation-workbook.md` | 改编合同、功能转换表、分场表、修改单、分歧裁决、交付收口 |
 
@@ -177,8 +175,8 @@ metadata:
 ## 8. 来源与可信度
 
 - 七部手册是二十世纪一〇到二〇年代美国作者的主张，讲的是无声电影和业余舞台；用到今天的媒介是类比，不是规范。
-- 引号里的原话都已回原文核对，行号在 `references/source-index.md`。少数概括沿用早先的版本、没有逐句核对，在那里单独列出。
-- 早先的版本有十几处出处或内容错误（例如把萧伯纳的话算成 Lindsay 的、凭空给喜剧速度一个比例），已经改正或删去，见 `references/source-index.md` §3、§4。
+- 引号里的原话都已回原文核对。
+- 早先的版本有十几处出处或内容错误（例如把萧伯纳的话算成 Lindsay 的、凭空给喜剧速度一个比例），已经改正或删去。
 - 三部剧本是个案，只说明“可以这样做”，不说明“应该这样做”。
 - AD-01、判断步骤、选载体的步骤和工作表是本 skill 的工作方法，不由来源背书。
 - 所有“观众会……”的判断都是待验证的设计假设，不是观众研究的结论。是否采纳由作者决定。

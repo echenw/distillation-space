@@ -1,6 +1,6 @@
 # 语言与修订（CL-12、CL-13）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [self-check-source-index.md](self-check-source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 两书只在两点上讨论语言：语言是印刷小说唯一的媒介（Crawford）；风格就是手艺，靠反复修改（Besant）。句法、视角、语域、节奏、对白格式不在两书里，相应的工作转给 `line-editing-and-proofreading` 和 `character-and-narrative-control`。
 

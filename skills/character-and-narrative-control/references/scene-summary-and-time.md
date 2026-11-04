@@ -1,6 +1,6 @@
 # 场景、概述与时间（PV-12 至 PV-15、PV-17）
 
-返回 [SKILL.md](../SKILL.md)。来源行号见 [source-index.md](source-index.md)。
+返回 [SKILL.md](../SKILL.md)。
 
 ## 1. 四个词
 
