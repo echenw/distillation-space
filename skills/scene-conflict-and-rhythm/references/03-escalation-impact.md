@@ -42,7 +42,7 @@
 - 真实历史/传记中结局不可改 → 改为"先定讲述终点（讲到哪一年）"。
 
 **反例**：
-- 探索式写作若最终只用无关素材填缝、缺乏整合，可能造成中段松散；“先写开头”本身不构成错误。 是 Poe 对一种构作方式的批评。
+- 探索式写作若最终只用无关素材填缝、缺乏整合，可能造成中段松散；“先写开头”本身不构成错误。该处是 Poe 对一种构作方式的批评。
 - 若目标是具体画面收束，仅写“他终于明白了亲情的可贵”仍缺少实现方式；以议论、认识或声音收束的作品，可直接检验其语言和认识是否获得支撑。
 
 **验收**：
@@ -204,7 +204,7 @@
 **条件**：打斗描写开始堆“迅猛地/狠狠地/凌厉地”时。
 
 **锚点**
--《Scaramouche: A Romance of the French Revolution》《Scaramouche》：决斗刺杀后的收束——尸体从腋下被接住、膝盖弯曲、血从创口涌出，原文第 1311 行实读 `the blood welled and bubbled from the`（`同书.ledger.md` 第四块，；随后对手用蕾丝手帕擦剑并任其落地。同一场开局只用一句 `Steel beat on steel, and the men engaged.`（原文第 1291 行实读）加三个交锋便结束。
+-《Scaramouche: A Romance of the French Revolution》《Scaramouche》：决斗刺杀后的收束——尸体从腋下被接住、膝盖弯曲、血从创口涌出，原文第 1311 行实读 `the blood welled and bubbled from the`；随后对手用蕾丝手帕擦剑并任其落地。同一场开局只用一句 `Steel beat on steel, and the men engaged.`（原文第 1291 行实读）加三个交锋便结束。
 -《Scaramouche: A Romance of the French Revolution》 全书开场第 74 行实读：`He was born with a gift of laughter and a sense that the world was mad.`
 
 **动作分支（接R10）**：用手松、膝弯、视线或呼吸改变、擦拭物件等后果替换空泛强度词。心理判断与抽象叙述有独有作用时可保留。
@@ -223,8 +223,8 @@
 **条件**：新兵、第一次杀人、角色的第一场战斗。
 
 **锚点**
-- 《红色英勇勋章》：恐惧光谱的新兵原点；P2 条目写“身体先决定的开火”（.md:43`）。
-- 《战争与和平》：Rostóv 首次冲锋的五段心理弧线——跨过“生死界线”的狂喜 → 被击落坠马 → 怀疑自己已死 → 见法军逼近时“连杀我似乎都不可能”的荒谬安全感 → 弃枪如兔（原文行 10866-10976）。
+- 《红色英勇勋章》：恐惧光谱的新兵原点；P2 条目写“身体先决定的开火”（见原文）。
+- 《战争与和平》：Rostóv 首次冲锋的五段心理弧线——跨过“生死界线”的狂喜 → 被击落坠马 → 怀疑自己已死 → 见法军逼近时“连杀我似乎都不可能”的荒谬安全感 → 弃枪如兔。
 
 **用法**：让第一次开火或第一次动手**先于角色的意志宣示**，事后可补理性解释以表现落差；有意识的首次行动及身体、意志一致同样成立。
 
@@ -286,7 +286,7 @@
 **条件**：一对一/小规模肢体冲突；打斗读起来像招式清单时优先用它。
 
 **锚点**
-- 《The Desert of Wheat》：全书第一场真正的肢体冲突是“一击流”——没有招式动词也没有缠斗，重心放在**打完之后的对峙与警戒（防对手拔枪）**（.ledger.md:23`）。原文第 1078 行实读：`With one swift lunge Kurt knocked the man flat and then leaped to stand`。
+- 《The Desert of Wheat》：全书第一场真正的肢体冲突是“一击流”——没有招式动词也没有缠斗，重心放在**打完之后的对峙与警戒（防对手拔枪）**（见原文）。原文第 1078 行实读：`With one swift lunge Kurt knocked the man flat and then leaped to stand`。
 - 《The Last of the Mohicans》：掷斧命中后徒手扑敌被写成一次**战术错误**并立即结账。
 
 **用法**：一次打击写完后立刻换写①对手的姿态变化；②我方对“下一步威胁”的警戒（还有没有第二个人、能不能补这一下）；③要不要追。若合成长句妨碍此目标，可拆开；长句连击可用于速度、失控或连续感。
@@ -307,7 +307,7 @@
 **锚点**
 - 《The Last of the Mohicans; A narrative of 1757》 白刃之斗（其一）：双方各抓住对方持刀的上举之臂，互视近一分钟角力；持械手被挣脱后刀锋直刺入胸。
 - 《The Last of the Mohicans; A narrative of 1757》 白刃之斗（其一）：双方各抓住对方持刀的上举之臂，互视近一分钟角力；持械手被挣脱后刀锋直刺入胸。
-- 同书 白刃之斗（其二）：邓肯的细剑在首合即断，此后全凭体力与决断；打落对方的刀后变成“谁能把谁掷下悬崖”的凶斗，每一回合都把他们推向崖边。
+- 《The Last of the Mohicans; A narrative of 1757》中的白刃之斗（其二）：邓肯的细剑在首合即断，此后全凭体力与决断；打落对方的刀后变成“谁能把谁掷下悬崖”的凶斗，每一回合都把他们推向崖边。
 - 《The Coming Conquest of England》 缴械只有两步——抓住举刀的手臂，一抖夺刀；胜负由**体力悬殊**说明，不由武术技巧说明。
 
 **用法**：可用三项组织近身冲突：**器械控制**（谁控制持械肢体或行动范围）、**位置与力量条件**（体重、地形、崖边、台阶、地面材料）、**结果**。三项可合写、换序或省去不相关项；不强制一击结束或禁用招式名。真实身体能力不能仅以文学个案认证，非写实作品按其世界规则。
@@ -326,7 +326,7 @@
 **条件**：要制造张力但这场戏还不能死人、不能见血时（谈判、俘虏、示威、调情场面）。
 
 **锚点**
-- 《Alice of Old Vincennes》：剑锋擦鼻而过发出锐响 + 对方 “jerked his head and flung up his hand” 的闪避反射（.ledger.md:76-78`）；剑尖抵近颈侧，原文第 1014 行实读：`"Notice how very near to your neck I can thrust and yet not touch it.）。
+- 《Alice of Old Vincennes》：剑锋擦鼻而过发出锐响 + 对方 “jerked his head and flung up his hand” 的闪避反射（见原文）；剑尖抵近颈侧，原文第 1014 行实读：`"Notice how very near to your neck I can thrust and yet not touch it."`；以光喻速；攻守两端各定一帧。
 
 **用法**：写“离致命多近”+ 对方的**反射**（缩头、抬手、后退几步），不写“切开什么”。伤害留到这一幕之外。
 
@@ -344,12 +344,12 @@
 **条件**：会战、多单位协同、战线推移。
 
 **锚点**
-- ：整段靠“谁追、谁回、谁转向”的连续动作推进——萨克森军溃 → 蒂利停止追击 → 胜兵转击瑞典侧翼 → 对方反击敌后卫 → 阵线整体转向 → 预备队奉命左转形成新正面（.ledger.md:49）。
-- 原著 的群众恐慌、原著 的指挥官描写为同族佐证。
+- 整段靠“谁追、谁回、谁转向”的连续动作推进——萨克森军溃 → 蒂利停止追击 → 胜兵转击瑞典侧翼 → 对方反击敌后卫 → 阵线整体转向 → 预备队奉命左转形成新正面（见原文）。
+- 原著的群众恐慌、原著的指挥官描写为同族佐证。
 
 **用法**：当溃败由错误传播驱动时，可写“可指认的失误→具体误判→放弃动作”。压倒性真实威胁、命令、疲劳或组织崩解也可引起撤离；先识别本稿原因，再安排身体与集体反应。
 
-**反例**：《Memoirs of a Cavalier A Military Journal of the Wars in Germany, and the Wars in England. From the Year 1632 to the Year 1648.》 给过对照——同为撤退，纪律部队先送走炮与辎重、留一部分人继续开火掩盖（`同书.ledger.md:84`，**纪律差异要写成动作差异**，可明确区分或表现不同单位同时出现的恐慌与秩序，避免无意混淆。
+**反例**：《Memoirs of a Cavalier A Military Journal of the Wars in Germany, and the Wars in England. From the Year 1632 to the Year 1648.》 给过对照——同为撤退，纪律部队先送走炮与辎重、留一部分人继续开火掩盖。**纪律差异要写成动作差异**，可明确区分或表现不同单位同时出现的恐慌与秩序，避免无意混淆。
 
 ---
 
@@ -364,7 +364,7 @@
 
 **锚点**
 - “负伤三令”：领袖负伤后连续下达命令，末次转祝福或托付，是早期版本的设计方案；“必须且不能遗嘱”无普适依据，改为按场景目标选择。
--同族佐证：《Under the White Ensign: A Naval Story of the Great War》 舰桥上的指挥官、《The World Set Free》 地图旁的 Dubois——构成“领袖死亡位置学”的三种站位（《Captain Macklin: His Memoirs》.md` 跨书母题索引）。
+-同族佐证：《Under the White Ensign: A Naval Story of the Great War》 舰桥上的指挥官、《The World Set Free》 地图旁的 Dubois——构成“领袖死亡位置学”的三种站位（《Captain Macklin: His Memoirs》 跨书母题索引）。
 
 **用法**：需倒计时时可建立可感的威胁规则，再选择兑现、中止或错过。需传递延迟时记录知情人、通道、接收与误差；跳数随任务，不设至少两跳。
 

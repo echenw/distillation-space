@@ -61,7 +61,7 @@
 - **动作**：先分档（彻底错误 / 不建议 / 可用但陈腐）；问“这句话真正要说什么”；重写整句；重写后回跑 C01–C19 的句法与标点检查。
 - **输出**：`命中词 | 档位 | 句子真正意思 | recast 版 | 是否技术/引文`。
 - **反例**：`His superior training was the great factor in his winning.` 只把 `factor` 换成 `element`，空结构仍在；`one of the most` 换成 `among the most` 但不补内容。
-- **来源**：`one of the most` 。
+- **来源**：`one of the most`。
 - **置信**：高（方法）；中（词条是否越位）。
 - **身份**：F + H。
 

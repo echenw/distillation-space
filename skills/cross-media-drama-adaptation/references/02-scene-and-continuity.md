@@ -4,11 +4,11 @@
 
 本节的scene接近当时一次拍摄动作的单位；不能与现代剧本场、舞台出入场或镜头直接画等号。以下编号要求仅在选择对应历史格式时执行。
 
--**场＝一次不停机、同一地点拍下的全部动作**（《Writing the Photoplay》；同书 再次给出同一定义）。
+- **场＝一次不停机、同一地点拍下的全部动作**（《Writing the Photoplay》；该书另一处再次给出同一定义）。
 - 新环境即新场景，须连续编号。
--多本长片从 Scene 1 直编到底，不按本重置（《Writing the Photoplay》：you start with Scene 1 and number straight through to Scene 200）。
--地点的**最微小移动**也是新场（《Writing the Photoplay》：消防员登梯分两场；若摄影机 tilt 跟拍则一场；火车跟拍虽背景连变仍是一场）。别人进场不另起新场。
--截图式插入（bust/close-up）自立场景号并单独编号（《Writing the Photoplay》；：需要的特写才写进稿并编号，纯画面效果留给导演）。
+- 多本长片从 Scene 1 直编到底，不按本重置（《Writing the Photoplay》：you start with Scene 1 and number straight through to Scene 200）。
+- 地点的**最微小移动**也是新场（《Writing the Photoplay》：消防员登梯分两场；若摄影机 tilt 跟拍则一场；火车跟拍虽背景连变仍是一场）。别人进场不另起新场。
+- 截图式插入（bust/close-up）自立场景号并单独编号（《Writing the Photoplay》；需要的特写才写进稿并编号，纯画面效果留给导演）。
 
 ## R2.2 空间连续性（F）
 
@@ -53,7 +53,7 @@
 
 ## R2.6 反例与边界
 
-- 8 部戏剧密集使用 aside（/336/381、/574、/1317 等）：这是舞台约定，**不是连续性缺陷**；转成无声银幕时才需要整体替换为字幕/视线/物件。见 05 与 07。
+- 8 部戏剧密集使用 aside：这是舞台约定，**不是连续性缺陷**；转成无声银幕时才需要整体替换为字幕/视线/物件。见 05 与 07。
 - 《Love's Labour's Lost》用三层中继传话：是伪装—误认约定的产物，**不得当作通用分场法**。
 
 边界与复查共用 [条件裁决](07-conflicts-and-adjudication.md) 的执行说明；本页采用条件已写入各条规则。

@@ -4,7 +4,7 @@
 
 **状态：`DESIGN_EXAMPLE`。** 下面两段输入是为演示而写的构造文本，不是客户稿。示例只展示“如何按本 Skill 做判断”，不证明规则在现代英语中有效；所有现代适用性仍是 `H/NOT_PROVEN`。
 
-**共同前提**：人工工作流；只改副本；每条 finding 带 `Cxx` 与 《The Elements of Style (Strunk original)》 Lxxx`；作者裁决优先；不自动批量改稿。
+**共同前提**：人工工作流；只改副本；每条 finding 带 `Cxx` 与《The Elements of Style (Strunk original)》 Lxxx；作者裁决优先；不自动批量改稿。
 
 ---
 
@@ -39,11 +39,11 @@
 
 | 句 | 测试 | 结果 | 规则 | 建议 | 风险 |
 |---|---|---|---|---|---|
-| S2 | 独立测试 | 逗号两侧各有主谓，无连词 → 逗号粘连 | C03 / | 逗号改分号（最小改动） | 句子的“政策—收费”关系不变 |
-| S2 | 系列测试 | `books, DVDs and magazines` 是 3+ 项单连词 | C07 / | 按房规加 Oxford comma | 仅体例差异，不是语法错误 |
-| S3 | 指称测试 | 删掉 `which was formed in 2019` 不改变 `the board` 的指称 | C02 / | 保留成对逗号，不改 | 若改成限制性会改变含义 |
-| S4 | 施动者测试 | `A survey ... was made by the library staff` 的施动者是 staff，但主语是 survey | C13 / | 改 `The library staff surveyed this region.` | 主语转为staff；若应保留调查/地区为话题，可用This region was surveyed by the library staff |
-| S5 | 嵌套测试 | `were considered to be significant` 其中to be significant是系表结构，并非第二个被动；可以讨论表达经济性 | C13 / （主语选择）及C25 | 改 `The staff considered the results significant.` | 施事明确，改主动不丢信息 |
+| S2 | 独立测试 | 逗号两侧各有主谓，无连词 → 逗号粘连 | C03 | 逗号改分号（最小改动） | 句子的“政策—收费”关系不变 |
+| S2 | 系列测试 | `books, DVDs and magazines` 是 3+ 项单连词 | C07 | 按房规加 Oxford comma | 仅体例差异，不是语法错误 |
+| S3 | 指称测试 | 删掉 `which was formed in 2019` 不改变 `the board` 的指称 | C02 | 保留成对逗号，不改 | 若改成限制性会改变含义 |
+| S4 | 施动者测试 | `A survey ... was made by the library staff` 的施动者是 staff，但主语是 survey | C13 | 改 `The library staff surveyed this region.` | 主语转为staff；若应保留调查/地区为话题，可用This region was surveyed by the library staff |
+| S5 | 嵌套测试 | `were considered to be significant` 其中to be significant是系表结构，并非第二个被动；可以讨论表达经济性 | C13（主语选择）及C25 | 改 `The staff considered the results significant.` | 施事明确，改主动不丢信息 |
 
 - **未改项**：S3 的 `which` 从句是非限制性，成对逗号正确；不要因为“逗号多”就删。
 - **未改项**：S1 的 `that is often discussed` 虽然弱，但删掉后只剩 `Library fines are often discussed.`，不改变命题；留到 R3 处理。
@@ -128,7 +128,7 @@
 
 | 话轮 | 说话人 | 当前分段 | 建议 | 依据 |
 |---|---|---|---|---|
-| 1 | Mara | 与 Ilya 的第一句同段 | 在 `"You're late," she said.` 后分段 | C24 / ：换说话人即换段 |
+| 1 | Mara | 与 Ilya 的第一句同段 | 在 `"You're late," she said.` 后分段 | C24：换说话人即换段 |
 | 2 | Ilya | 与 Mara 同段 | 独立成段 | 同上 |
 | 2 续 | Ilya | `"It stopped... In the tunnel."` 独立段 | 保留；同一说话人继续，不因句号碎片再分段 | C24 + C04 的强调例外 |
 | 3 | Mara | 独立段，叙述 beat 同段 | 保留 | C24：beat 跟随其说话人 |
@@ -148,11 +148,11 @@ Mara set the cup down. "You're late," she said.
 
 | 检查 | 结果 | 规则 | 动作 |
 |---|---|---|---|
-| `"It stopped for twenty minutes. In the tunnel."` | 句号后片段，但在对白中像有意的 afterthought | C04 / ；when_not 允许强调片段 | **不改**；问作者这是否是刻意节奏 |
-| `"And you didn't think to call?"` | 真实质问，不是 hedging | C14 / | 不改否定 |
+| `"It stopped for twenty minutes. In the tunnel."` | 句号后片段，但在对白中像有意的 afterthought | C04；when_not 允许强调片段 | **不改**；问作者这是否是刻意节奏 |
+| `"And you didn't think to call?"` | 真实质问，不是 hedging | C14 | 不改否定 |
 | `"The signal was dead. I tried."` | 短句节奏，删/并会改变人物语气 | C25 / when_not | 不改 |
 | `said Ilya` | 书内没有“说话人标签必须前置/后置”的规则 | — | 不改；不是 finding |
-| 主题句/段末 | 小说对白不适用 | C21 / | 不检查 |
+| 主题句/段末 | 小说对白不适用 | C21 | 不检查 |
 | 被动 | 无被动问题 | C13 | 不检查 |
 
 ### 输出（一个修改 + 两个作者问题）

@@ -15,8 +15,8 @@
 - **when_not**：对白、意识流、实验标点；插入语极轻且删掉后句子仍清楚时，可以整对省略；限定从句不得加逗号（转 C02）。
 - **动作**：先判断该逗号是否属于句中插入语的边界；确属成对结构却缺一边时补全或整对删，不改并列、句首连接和句末边界为双逗号。插入语前有连词时，第一个逗号放在连词前。
 - **输出**：`定位 | C01 | 单边逗号 | 补对/整对删 | 可能改变停顿轻重`。
-- **反例**：书内两个直接反例：`Marjorie's husband, Colonel Nelson paid us a visit yesterday,`；`My brother you will be pleased to hear, is now in perfect health,`（。
-- **来源**：强制插入语清单 。
+- **反例**：书内两个直接反例：`Marjorie's husband, Colonel Nelson paid us a visit yesterday,`；`My brother you will be pleased to hear, is now in perfect health,`（见原文）。
+- **来源**：强制插入语清单。
 - **置信**：高。原则与反例均为书内明说。
 - **身份**：F（成对原则）+ P（补对/整对删）。
 
@@ -31,7 +31,7 @@
 - **动作**：先做删除测试——“删掉从句，读者还能指出是哪一个吗？”再做拆分测试——“能拆成两句且指称不变吗？”两项一致才下判断；不一致就停。
 - **输出**：`从句 | 限制/非限制/歧义 | 依据 | 建议逗号 | 置信`。
 - **反例**：`The candidate, who best meets these requirements, will obtain the place.`（把限制性误作非限制性）；`The audience which had at first been indifferent became more and more interested.`（把非限制性误作限制性；书内原句有逗号）。
-- **来源**：（专属判据 、专名例 、`the day` 例）。
+- **来源**：（专属判据、专名例、`the day` 例）。
 - **置信**：高（原则与书内测试）；低（两可句）。
 - **身份**：F + P；现代 `which/that` 分工为 H。
 
@@ -46,7 +46,7 @@
 - **动作**：对每个可疑逗号做“两边能否独立成句”测试；能，则三选一：分号、句号、连词 + 逗号。不要把所有逗号都升级成句号。
 - **输出**：`句 | 粘连 | 改法（分号/句号/连词） | 节奏代价`。
 - **反例**：`Stevenson's romances are entertaining, they are full of exciting adventures.`（书内逗号粘连例）。
-- **来源**：（规则 、副词开头 、短对句 、对白例外）。
+- **来源**：（规则、副词开头、短对句、对白例外）。
 - **置信**：高（标准散文）；中（对白/文学例外）。
 - **身份**：F + P；现代新闻体拆句倾向为 H。
 
@@ -75,7 +75,7 @@
 - **when_not**：复合谓语、同一主语且宾语共享的紧凑句；极短并列；目标房规采用省略并列逗号的新闻体（H/NOT_PROVEN）。如果第二个独立从句前已有依赖从句或需要逗号的引导短语，连词后不再补逗号。
 - **动作**：找连词，判断左右是否各有主谓；是，默认加逗号；若同主语且关系紧密，允许省略；`but` 不省。
 - **输出**：`连词位置 | 左/右是否独立 | 加/省逗号 | 房规依赖`。
-- **反例**：`The early records of the city have disappeared, and the story of its first years can no longer be reconstructed.`（书内原句在 `and` 前有逗号，；缺逗号即违反本条）。
+- **反例**：`The early records of the city have disappeared, and the story of its first years can no longer be reconstructed.`（书内原句在 `and` 前有逗号；缺逗号即违反本条）。
 - **来源**：《The Elements of Style (Strunk original)》。
 - **置信**：中高（书内有省略条件）。
 - **身份**：F + P；现代新闻体省略为 H。
@@ -151,6 +151,6 @@
 - **动作**：用项目词典核对；列出变体而不是静默统一；专名不改；双写规则只作提示，遇到 `Coming` 一类例外回词典。
 - **输出**：`词 | 词典依据 | 建议 | 是否专名/引文`。
 - **反例**：现代稿写 `to-day`；把 `anyone` 改成 `any one`；把 `planned` 写成 `planed`。
-- **来源**：移行 。
+- **来源**：移行。
 - **置信**：高（书内确有该总则与双写说明）；具体词形依实际项目词典核对，历史形式不直接作现代规范。
 - **身份**：F（原则/双写）+ H（现代形式）；1918 拼写条目不作为现代规则。

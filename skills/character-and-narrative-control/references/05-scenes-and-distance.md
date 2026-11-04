@@ -43,7 +43,7 @@ Lubbock 在此严格的 scene 定义下强调三项取舍，应用时需检查�
 
 概述有三种正当功能：
 1. **蓄能**：巴尔扎克式预备图画，为后面的戏剧提供人物、环境、时间的储备。
-2. **压缩**：跨年、跨地、群体反应（的反面）。
+2. **压缩**：跨年、跨地、群体反应（反面）。
 3. **语调**：全景本身可以是一种世界观（Thackeray 的"沉思式铺陈"）。
 
 判据：比较概述与场景在本处提供的压缩、距离、声音、反思和细节体验。即使同一材料也能场景化，概述仍可因语调或结构需要保留；只有与目标不符、无益重复或损坏因果时再删改，不按“场景能不能做”一项裁决。
@@ -62,7 +62,7 @@ Lubbock 在此严格的 scene 定义下强调三项取舍，应用时需检查�
 
 ## 规则与独有案例
 
-### C03-R9 场景经济与兑现（允许场景建立信息）
+### POV-R9 场景经济与兑现（允许场景建立信息）
 - 触发：场景过多、节奏拖、或高潮无力。
 - 信号：每个场景都在"介绍情况"；场景之间靠概述补洞；高潮场景既要建立又要解决。
 - 操作：
@@ -71,9 +71,9 @@ Lubbock 在此严格的 scene 定义下强调三项取舍，应用时需检查�
   3. 为高潮预备承重信息；高潮可以引入非承重信息。只有靠临时新增规则才成立的解决，才需回填或重构。
 - 输出：场景功能表 + 删改清单。
 - 失效：纯戏剧体（全场景）自愿放弃概述，需要极强场景自足性；抒情/氛围场景可无推进功能，但须有语调功能。
-- 依据：` "to clinch a matter already pending, to demonstrate a result"；`` "there can be no foreshortening of time or space"。
+- 依据："to clinch a matter already pending, to demonstrate a result"；"there can be no foreshortening of time or space"。
 
-### C03-R11 高潮预付（钥匙先存，最后一转）
+### POV-R11 高潮预付（钥匙先存，最后一转）
 - 触发：结尾/高潮需要某个视点、物件或信息才成立。
 - 信号：高潮突然引入新人物/新能力/新信息；结尾靠解释。
 - 操作：
@@ -82,4 +82,4 @@ Lubbock 在此严格的 scene 定义下强调三项取舍，应用时需检查�
   3. 兑现时可让钥匙带着新意义重现，也可按当前视点补充说明；不得临时创造此前无从预期的承重规则来替人物解决困境。非承重信息可在高潮新出现。
 - 输出：钥匙清单 + 预存位置 + 重现位置。
 - 失效：预存太显眼=可预测；太隐蔽=读者觉得作弊。可安排真实读者回读；未执行时只报告文本检查结果。
-- 依据：` "Charles must be held in readiness"；`` "the climax of the story... is laid up betimes in the descriptive picture"。
+- 依据："Charles must be held in readiness"；"the climax of the story... is laid up betimes in the descriptive picture"。

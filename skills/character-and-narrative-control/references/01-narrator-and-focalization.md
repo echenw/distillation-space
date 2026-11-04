@@ -39,11 +39,11 @@ Lubbock 把全部方法问题归结为视角：
 
 Lubbock认为，若重心是叙述者自身意识变化，第三人称更利于其所说的“演出”。执行时比较第一人称内语、回顾距离与第三人称聚焦的效果，不据此强改人称。反用：若"自我暴露/自我欺骗"本身是主题，第一人称的不可客观化恰好是效果（Barry Lyndon 例）。
 
-第一人称可以自我剖析；作者的“第一人称不如第三人称演心”判断只代表 原著 的论证。 对《简·爱》并未撤回其批评。旧 R14/R15 在本包归入 C03-R6/R4 的条件分支，不是缺失的额外规则。
+第一人称可以自我剖析；作者对“第一人称不如第三人称演心”的判断只代表其审美论证，对《简·爱》的批评也并未撤回。第一人称自我剖析与第三人称戏剧化意识各有适用条件，按主体与叙述距离分支选择。
 
 ## 规则与独有案例
 
-### C03-R1 主体十词句（先定主体，再定方法）
+### POV-R1 主体十词句（先定主体，再定方法）
 - 触发：开新书或重构叙事结构。
 - 信号：说不清"这本书关于什么"；多个主题并列；视角选择靠直觉。
 - 操作：
@@ -51,10 +51,10 @@ Lubbock认为，若重心是叙述者自身意识变化，第三人称更利于�
   2. 若写不出，先列两种可能的主题焦点，说明各自结构后果；删除副线或合并人物应符合已有授权；若已授权结构修订，可说明理由后实施，不重复索要许可。
   3. 用主体句判断重心：在一个人意识内 / 在一个群体或时代 / 在一个待解问题。
 - 输出：一句主体句 + 重心类型（意识/群像/问题）。
-- 失效：真正的复调（多主体并列本身是主题）不应被压成一句；此时改走 C03-R3 的多视点方案。
-- 依据：` "it is anyhow expressible in ten words that reveal its unity"；`` "The best form is that which makes the most of its subject"。
+- 失效：真正的复调（多主体并列本身是主题）不应被压成一句；此时改走 POV-R3 的多视点方案。
+- 依据："it is anyhow expressible in ten words that reveal its unity"；"The best form is that which makes the most of its subject"。
 
-### C03-R2 选视点中心（centre of vision）
+### POV-R2 选视点中心（centre of vision）
 - 触发：已确定主体，需选"从谁的意识看"。
 - 信号：候选人物多个；每个都"很重要"；作者想平均分配。
 - 操作：
@@ -63,31 +63,31 @@ Lubbock认为，若重心是叙述者自身意识变化，第三人称更利于�
   3. 若主体是人与环境对抗，可比较受压者、施压者和旁观者的知识与距离，不必唯一选择受压者。
 - 输出：所选聚焦者或多中心分工 + 选择理由 + 各方案的信息与情绪得失。
 - 失效：群像/史诗尺度（主线结构极简）可多中心；但须保证读者始终知道"此刻谁在看"。
-- 依据：` "the difficult question of the centre of vision"；`` "the middle of the subject is in her experience"。
+- 依据："the difficult question of the centre of vision"；"the middle of the subject is in her experience"。
 
-### C03-R3 视角切换付费制
+### POV-R3 视角切换付费制
 - 触发：需要从 A 的视角切到 B。
 - 信号：切换只为"交代信息"；切完读者更迷糊；同一章内多次换眼。
 - 操作：
   1. 每次切换写一行"支付理由"：读者获得什么新信息/新判断/新反讽。
   2. 无信息、情绪、主题或形式收益且妨碍目标的切换可删除，改为该视角内的对话/文件/观察。
-  3. 换眼时优先明确场景断点；“每章 ≤2 次”仅为本 Skill 的 H 提示，**不是 原著 的普适数量规定**。若多视角是体裁契约，则用信息增量而非次数判定。
+  3. 换眼时优先明确场景断点；“每章 ≤2 次”仅为本 Skill 的 H 提示，**不是原著的普适数量规定**。若多视角是体裁契约，则用信息增量而非次数判定。
 - 输出：视角清单（章/段/聚焦者/信息增量）。
 - 失效：Lubbock以Tolstoy的简单主线解释其切换自由；其他全知、复调和滑移结构也可成立，按本作组织和可读性判断，不把篇幅或极简主线当许可证。
-- 依据：` "to shift the point of view no more often than he need"；`` "Haphazard and unnecessary plunges... only confuse the effect"。
+- 依据："to shift the point of view no more often than he need"；"Haphazard and unnecessary plunges... only confuse the effect"。
 
-### C03-R4 限知补光（双脑规则）
+### POV-R4 限知补光（双脑规则）
 - 触发：聚焦者智力/年龄/文化位置不足以描述必要世界。
 - 信号：读者抱怨"世界很薄"；聚焦者看不懂关键事务；作者频繁跳出来解释。
 - 操作：
-  1. 先判断"受限"是否是主题：是 → 不补光，用反讽距离（C03-R5）；否 → 补光。
+  1. 先判断"受限"是否是主题：是 → 不补光，用反讽距离（POV-R5）；否 → 补光。
   2. 补光用"同一角度、更高目力"：作者共享聚焦者位置，只补观察精度，不换立场。
   3. 以聚焦者可感知的信息域约束补光，不悄悄引入其不可能知道的事实；“每章 ≤2 处”是 H 检查值而非原书硬标准。
 - 输出：补光段清单 + 每段"补了什么目力"。
 - 失效：补光过量=变相全知，限知契约破裂；读者会感觉得到"有人在替她说话"。
-- 依据：` "the story must be viewed as the poor creature saw it; and yet the poor creature cannot tell the story in full"；`` "there are now two brains behind that eye"。
+- 依据："the story must be viewed as the poor creature saw it; and yet the poor creature cannot tell the story in full"；"there are now two brains behind that eye"。
 
-### C03-R5 反讽距离（在人物脑内仍保持一米）
+### POV-R5 反讽距离（在人物脑内仍保持一米）
 - 触发：聚焦者判断力有限、道德可疑、或自我美化。
 - 信号：叙述完全被人物语调吞没；读者失去作者的评价坐标。
 - 操作：
@@ -96,9 +96,9 @@ Lubbock认为，若重心是叙述者自身意识变化，第三人称更利于�
   3. 关键处让另一人物的反应折射她（丈夫/情人/仆人的眼光）。
 - 输出：实际需要的距离锚点及作用；旧每章1–2个是练习值，不是配额。
 - 失效：距离过大=作者嘲笑人物，读者不再投入；距离开关须随主题调。
-- 依据：` "by keeping Emma always at a certain distance"；`` "very discreetly the same standard has reigned throughout"。
+- 依据："by keeping Emma always at a certain distance"；"very discreetly the same standard has reigned throughout"。
 
-### C03-R6 视角合法化（把看之眼放进书里）
+### POV-R6 视角合法化（把看之眼放进书里）
 - 触发：使用全知/回忆/框架叙述。
 - 信号：读者问"这是谁在说"；叙述者知道得太多却无来源；结尾收不住。
 - 操作：
@@ -107,4 +107,4 @@ Lubbock认为，若重心是叙述者自身意识变化，第三人称更利于�
   3. 无名全知可采用稳定且清楚的叙述权限；强人格旁白、人物化叙述者或框架均是可选方案，不能仅因无人格就强改。
 - 输出：叙述者身份卡（是谁/在哪/凭什么知道/局限是什么）。
 - 失效：装置过重会压过故事（书信体维持可信度的代价）；若装置本身正是作品趣味，可保留；只有无意压过既定目标时才考虑削减。
-- 依据：` "to make the mind and the eye objective, to make them facts in the story"；`` "If the story-teller is _in_ the story himself, the author is dramatized"。
+- 依据："to make the mind and the eye objective, to make them facts in the story"；"If the story-teller is _in_ the story himself, the author is dramatized"。
