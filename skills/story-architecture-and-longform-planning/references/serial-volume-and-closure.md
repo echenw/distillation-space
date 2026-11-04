@@ -58,7 +58,7 @@
 **依据**：
 - 原文：作者先交书名和插图场景，再写稿。：“First it is necessary to submit titles, and scenes for illustration.” ：插图构思“days or even weeks in advance of the stories themselves”交给画师，作者要据此“weave around it a group of logical stories”。
 - 原文：卷首书目把本书排进出版月份。：“To be published in May, 1925.”，下面是 114 号（本书）和 115 号。
-- 原文：卷末预告下一号书名和章题。：“THE NEXT NUMBER (10) WILL CONTAIN”；：“THE NEXT NUMBER (16) WILL CONTAIN”。
+- 原文：卷末预告下一分卷/下一章节的核心悬念与篇名。：“THE NEXT NUMBER (10) WILL CONTAIN”；：“THE NEXT NUMBER (16) WILL CONTAIN”。
 - 原文：周刊公示规格，书末书目里几十期都是同一种双题句式。：“Price 5 cents. 32 Pages. Colored Covers. Issued Weekly.”
 - 反例： 正文以  “THE END.” 收，后面只有丛书广告，没有下一号预告。 在 THE END 后紧接一条 1002 号的预告，但本书自己的编号文本里没写，看不出是不是紧挨着的下一号。
 - 推断：书目和预告证明卷被当成可排期的商品；Cook 的自述证明至少有一类作者是先定题目和场景再写。

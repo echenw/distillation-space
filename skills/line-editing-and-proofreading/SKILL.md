@@ -1,6 +1,6 @@
 ---
 name: line-editing-and-proofreading
-description: 中文和英文小说、散文的语言精修与校对：理顺长句、语序和主语，删冗词，改套话和 AI 腔，调整句末强调、段落与对白分段，校标点、的地得、数字、错别字和全书体例；英文稿按 Strunk《The Elements of Style》原版处理。用于润色、精修、校对、查错别字和标点。给改好的文本或逐条修改，保留作者与人物的声口，不改剧情；剧情和结构转 story-architecture-and-longform-planning，人物和视角转 character-and-narrative-control。
+description: 中文和英文小说、散文的语言精修与校对：理顺长句、语序和主语，删冗词，改套话和 AI 腔，调整句末强调、段落与对白分段，校标点、的地得、数字、错别字和全书体例；英文稿按经典英文行文规范与修辞准则处理。用于润色、精修、校对、查错别字和标点。给改好的文本或逐条修改，保留作者与人物的声口，不改剧情；剧情和结构转 story-architecture-and-longform-planning，人物和视角转 character-and-narrative-control。
 metadata:
   version: "3.0.0"
   language: zh-CN

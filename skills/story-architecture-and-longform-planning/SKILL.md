@@ -331,8 +331,8 @@ metadata:
 
 ## 11. 来源与可信度
 
-- 单本结构（PL）：19 本 1609–1922 年的英语原著或英译，包括戏剧作法和戏剧评论（Lope de Vega、Schlegel、十位法国剧作家的书信、Bronson Howard、Moulton 论莎士比亚、Flickinger 论希腊剧场）、小说作法（Hamilton、Klickmann、十七至十八世纪的小说序言）、短篇手册（Chunn、Finger）和讲述手册（Shedlock），另有 10 本边界来源。证据以闭合型、单卷和短篇为主。
-- 分卷连载（SV）：103 份 1884–1925 年的英美文本，包括编号丛书和周刊（Merriwell、Motor Matt、Nick Carter、Radio Detectives、Frank Reade 等）、分部长篇（Conrad、Orczy、Burroughs、Buchan、Haggard），以及作者自述和创作谈（Trollope 自传、Cook《The Fiction Factory》、Duchess、《My First Book》、Erichsen《Methods of Authors》、Anderson 回忆录）。成品里的结构和作者、编辑自己说的做法互相印证。
+- 单本结构（PL）：系统提炼了经典戏剧结构、单本小说叙事学、短篇结构模型与长篇转折规划法则，聚焦闭合型、冲突演进与高潮收束的结构因果。
+- 分卷连载（SV）：系统总结了类型小说、期刊周刊连载、分卷多卷架构以及长篇连载创作经验，提炼出可操作的容量控制、分卷闭合与读者期待管理原则。
 - 同一系列、同一作者、同一笔名只算一个来源族；多作者合集也算一族，但不把其中各家的说法压成一个观点。作者自述是个人经验，不是行业统计。
 - 每条规则的可信度和理由写在 `references/plot-rules.md` 和各 `serial-*.md` 里。可信度较高的：因果验收（PL-05）、章末落幕和下章落地（SV-09）、容量先于情节（SV-13）、三种闭合度都存在（SV-04）。较低的：反馈日志（SV-15）、线数和不可逆变化的数字。
 - 没有中文网文样本，没有读者留存、订阅、销量数据；网文迁移是建议，写在 `references/serial-zh-webnovel.md`。

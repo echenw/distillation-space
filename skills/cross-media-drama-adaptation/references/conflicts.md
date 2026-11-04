@@ -11,7 +11,7 @@
 
 ## 分歧一：结局前让观众知道多少
 
-| | 主张 | 出处 |
+| | 主张 | 核心依据 / 论证 |
 |---|---|---|
 | 甲 | 让观众进入作者的“confidence”；写影戏要放弃小说最大的本钱之一：扣住重要的事实不说 | Phillips |
 | 乙 | 最大的惊奇留到最后；侦探小说成功的程度，和谜底保留到结尾的程度成正比 | Esenwein & Leeds |
@@ -20,7 +20,7 @@
 
 ## 分歧二：快还是慢
 
-| | 主张 | 出处 |
+| | 主张 | 核心依据 / 论证 |
 |---|---|---|
 | 甲 | 风气是“touch and run”：用了七十处布景，十七处就能给出更强的环境感 | Freeburg |
 | 乙 | 喜剧的动作比正剧快得多，不要越过它合乎逻辑的自然结尾，哪怕只多一场 | Esenwein & Leeds |
@@ -31,7 +31,7 @@
 
 ## 分歧三：结尾的形态
 
-| | 主张 | 出处 |
+| | 主张 | 核心依据 / 论证 |
 |---|---|---|
 | 甲 | 观众爱大团圆，除非是硬拽出来的 | Esenwein & Leeds |
 | 乙 | 不管中间多悲，总要设法走向大团圆 | Zuver |
@@ -41,7 +41,7 @@
 
 ## 分歧四：要不要示范给演员看
 
-| | 主张 | 出处 |
+| | 主张 | 核心依据 / 论证 |
 |---|---|---|
 | 甲 | De Mille 说导演的首要规则之一是“never tell an actor _how_ to play a scene” | Milne 转述 |
 | 乙 | Lubitsch 自己当过演员，而且是好演员，他“believes in showing his actors how to play their scenes”；演员对故事知道得很少，全靠他启发。Milne 特意说明，这和书里前面表达过的意见相反 | Milne |
@@ -53,7 +53,7 @@
 
 ## 分歧五：长片该多长
 
-| | 主张 | 出处 |
+| | 主张 | 核心依据 / 论证 |
 |---|---|---|
 | 甲 | “A one hour programme is long enough for any one”；“Six-reel programmes are a weariness to the flesh”；他还借 Poe 说没有长诗，推出“There is certainly no such thing as a long moving picture masterpiece” | Lindsay |
 | 乙 | 正剧的中心思想多半撑得起当时的几种片长；但注水（padding）在正剧里同样不好 | Esenwein & Leeds |
@@ -66,8 +66,8 @@
 
 ```
 分歧：<一句话>
-甲：<主张>　依据：<书名与位置>
-乙：<主张>　依据：<书名与位置>
+甲：<主张>　依据：<核心依据与适用场景>
+乙：<主张>　依据：<核心依据与适用场景>
 本 skill 的默认做法：<值>（推断）
 本稿的选择和理由：<已有约束足够时填>
 还要作者决定的：<只填真正没定的；没有就写“无”>

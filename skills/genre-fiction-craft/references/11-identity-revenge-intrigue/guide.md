@@ -17,7 +17,7 @@
 | 复仇、代价、敌我转化与结局 | [revenge-and-endings.md](revenge-and-endings.md)（IR-04） | 行动目标、可用路径、后果和结局的承诺 |
 | 话语归属、历史偏见与迁移边界 | [stance-and-boundaries.md](stance-and-boundaries.md)（IR-05） | 事实、角色判断、作者选择分层 |
 | 具体填写或改写 | [templates-and-examples.md](templates-and-examples.md)（IR-06） | 和当前约束一致的实际方案 |
-| 书中案例、争议及版本 | [sources-and-editions.md](sources-and-editions.md)（IR-07） | 案例观察、版本限度与没证实的边界 |
+| 技法范式与设计边界 | [sources-and-editions.md](sources-and-editions.md)（IR-07） | 范式机制、权谋博弈与设计边界 |
 
 ## 一次任务的顺序
 
