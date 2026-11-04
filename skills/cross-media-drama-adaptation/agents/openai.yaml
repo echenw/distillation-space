@@ -1,4 +1,8 @@
+# 界面信息与选择提示；宿主是否加载、采用哪些字段，以实际宿主为准。
+# 本文件不授予权限，也不承诺自动执行；实际能力受宿主工具与用户授权限制。
 interface:
-  display_name: "Cross-media drama adaptation"
-  short_description: "Adapt narrative functions across stage and silent visual storytelling"
-  default_prompt: "Use the source story and target medium to build an evidence-based adaptation plan."
+  display_name: "跨媒介剧作改编"
+  short_description: "把小说或剧本改成舞台方案或分场稿：可转移性、分场与连续性、载体替换、结局、舞台调度、画面检查"
+  default_prompt: "请先问清原作、目标媒介、必须保留的情节和改写授权，再按我的材料判断能不能转、重切分场、替换载体、安排结局，或检查舞台调度和画面；材料不全时给出标明“假设”的方案，最多问我三个问题。"
+policy:
+  allow_implicit_invocation: false
