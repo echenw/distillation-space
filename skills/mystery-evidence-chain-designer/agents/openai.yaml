@@ -1,0 +1,50 @@
+interface:
+  display_name: "推理悬疑刑侦·证据链设计"
+  short_description: "设计与审查推理小说的线索—证据—推理链，回指 29 份公版侦探小说原文"
+  icon: magnifying_glass
+  category: writing
+  default_locale: zh-CN
+
+branding:
+  color_scheme: noir
+  mood: 冷静、克制、讲究证据
+  accent_color: "#2B3A55"
+
+prompts:
+  starter:
+    - "帮我设计一个密室案，要求读者能回推"
+    - "我的推理稿结案章被说作弊，帮我查哪一步出问题"
+    - "第一人称助手叙述怎么藏凶手才不突兀"
+    - "死亡时间写不准，用什么锚点最稳"
+    - "帮我检查这条证据链有没有失效条件"
+
+tags:
+  - 推理小说
+  - 悬疑
+  - 刑侦
+  - 密室
+  - 不在场证明
+  - 不可靠叙述
+  - 线索布置
+  - 创作辅助
+
+capabilities:
+  - 谜面归类与规则路由
+  - 现场章 / 时间线 / 视角章检查表
+  - 结案公平性自检（负向排除清单）
+  - 反例与失效条件对照
+  - 来源锚点回指（PG ID + 行号）
+
+limitations:
+  - 不提供现实刑侦流程、法医鉴定或法律可采性意见
+  - 规则来自虚构文本，是叙事自洽标准，不是执法或鉴识规范
+  - 未做真实宿主任务验证（P5 / GQ1–GQ5 标 NOT_PROVEN）
+
+provenance:
+  task_id: A-03-B02
+  category: 16-类型小说专项/01-推理悬疑刑侦/批次-02
+  sources: 29
+  coverage: 29/29 FULL
+  source_view: distill/分类蒸馏/_来源批次/16-类型小说专项/01-推理悬疑刑侦/批次-02
+  skill_version: 1.0.0
+  built_at: 2026-10-30

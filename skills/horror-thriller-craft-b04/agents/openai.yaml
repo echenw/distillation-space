@@ -1,0 +1,5 @@
+interface:
+  display_name: "恐怖惊悚怪谈创作"
+  short_description: "以来源与限制为依据，规划和诊断恐怖惊悚怪谈创作"
+policy:
+  allow_implicit_invocation: false

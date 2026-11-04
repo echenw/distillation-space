@@ -1,0 +1,4 @@
+interface:
+  display_name: "探险寻宝线索与风险"
+  short_description: "核验藏宝线索、路线、资源成本和发现公平性"
+  default_prompt: "请先锁定我的探险正典与已知线索，再基于本 Skill 设计可回查证据、旅行限制和风险分支。"

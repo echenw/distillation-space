@@ -1,0 +1,5 @@
+interface:
+  display_name: "科幻设定推演与诊断"
+  short_description: "以来源与限制为依据，规划和诊断科幻设定推演与诊断"
+policy:
+  allow_implicit_invocation: false

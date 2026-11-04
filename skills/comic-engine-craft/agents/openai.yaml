@@ -1,0 +1,7 @@
+interface:
+  display_name: "喜剧幽默与笑点调度"
+  short_description: "诊断喜剧人物误会、荒诞前提、讽刺距离、节奏反转与包袱承接"
+  version: "1.0.1"
+  round: "round-p4-final-2026-10-30"
+  changelog: "1.0.1（2026-10-31）：13 本台账补齐 run（全本实读、门禁 PASS，151 块/291 引文）知识融入 references 01/02/03/05，新增制度字面主义、虚惊与讣告、文件层反讽三个机制条目；基线 1.0.0 取自历史 manifest revision 1。"
+  default_prompt: "给出体裁、叙述视角与讽刺靶子，我要诊断或设计喜剧引擎：笑点归属、持续机制、兑现位置与停手边界。"

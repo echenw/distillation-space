@@ -1,0 +1,228 @@
+# 04 语体、空间与多载体（F11 / F12 / F14 / F21）
+
+适用：时代语体、宫廷/城市/要塞空间、高潮前制度辩论、长篇多视角换轨。
+
+---
+
+## F11 时代语体分层（ADOPT，5 族）
+
+**触发**：人物第一次开口；或你需要区分公开场合/私下场合。
+
+**判断信号**：
+- 对白读起来像现代人。
+- 你想用"古语"但怕读者看不懂。
+- 同一人物在朝堂与私室说话方式一样。
+
+**操作**：
+1. 给每个主要人物两套语体：**公开语体**（称谓、誓词、套话、绕圈）与**私下语体**（短句、命令、方言、口头禅）。
+2. 时代词只放在**称谓、官职、誓言、器物、骂人话**上；句法保持现代可读。
+3. 用**外行角色/注释**翻译术语；不要让所有人物都懂行话。
+4. 叙述者可以用现代语，但不要用现代政治概念替代人物语言（"民主""人权"要换成时代说法）。
+
+**输出**：一张"人物—公开语体—私下语体—禁用现代词"表。
+
+**失效**：
+- 通篇仿古，读者疲劳。
+- 现代词直接进入时代人物口中。
+- 所有人都用同一种聪明俏皮话。
+
+**证据**：
+- PG9785 L5319–5334（Scott）："the most unintelligible speaker that ever perplexed an audience"——克伦威尔公开演说绕圈，私下命令极简明。
+- PG2516 L6302–6307（Scott）："he spoke sometimes of the Chevalier, but never either of the Prince"——政治委婉语本身就是史料。
+- PG76816 L3453–3460（Heyer）："YR. MAJESTY,--Has Yr. Majesty punished His Servant enough"——仿古书信，大写名词/拼写变体。
+- PG59178 L4986–4987（Buchan）："A man may be tired of the country, but when he is tired of London he is tired of life."——Johnson 式格言体前置彩蛋（原记 L4908–4918 未命中，回读后改）。
+- PG42681 L794–797（Dumas）："the Baker, the Baker's Wife and the Baker's Little Boy"——民间绰号歌谣作政治语汇。
+
+**来源族**：Scott（PG9785、PG2516）/ Heyer / Buchan / Dumas = 4 族（另 PG5805 的证词体可算第 5）。
+
+### 逐本痕迹（F11 时代语体分层，17 本全覆盖）
+- PG9785 L5319–5334（"the most unintelligible speaker that ever perplexed an audience"——公开绕圈、私下简明）。
+- PG2516 L6302–6307（"he spoke sometimes of the Chevalier, but never either of the Prince"——政治委婉语即史料）。
+- PG76816 L3453–3460（"YR. MAJESTY,--Has Yr. Majesty punished His Servant enough"——仿古书信）。
+- PG59178 L4986–4987（"A man may be tired of the country, but when he is tired of London he is tired of life."——Johnson 式格言体）。
+- PG42681 L794–797（"the Baker, the Baker's Wife and the Baker's Little Boy"——民间绰号歌谣作政治语汇）。
+- PG5354 L558–582（"donner and blitzen! I bin Jans Jansen, from Cuxhaven"——德语腔英语作人物标记）。
+- PG5355 L11573–11604（Pleydell 的"法律如烟囱"论——**术语需外行翻译者**）。
+- PG30664 L5977–6121（"what is truth? What in heaven and earth do you mean by truth?"——观念对辩的语言层）。
+- PG5175 L5007–5178（"Wear them always, beloved Miriam, for my sake"——长信体承载异地信息）。
+- PG5805 L2295–2305（"Being the deposition of citizeness Fanny Roussell"——证词体）。
+- PG7684 L17410–17539（"the crown is not mine to give"——**现代政治语汇略重，登记为失效风险**）。
+- PG1966 L7730–7746（"The law and the constitution are like a child's pants"——真实人物的日常比喻）。
+- PG17183 L1071–1077（"That this incident is suggested by Hans Andersen's beautiful story"——**互文声明，属副文本语体**）。
+- PG65591 L1693–1702（"Changing the name of a city that has been Hungarian for centuries"——地名更改作争吵触发点）。
+- PG2399 L1622–1630（"It was a winter-scene, by Adrian van de Velde"——以绘画构图开篇）。
+- PG69768 L387（"I shall do my best to give a translation and commentary"——译注体本身即语体装置）。
+- PG5354 与 PG5355 同书异卷，语体证据按一族计。
+
+
+---
+
+## F12 空间层积（ADOPT，5 族）
+
+**触发**：开场建世界；或宫廷/城堡/城市第一次出现。
+
+**判断信号**：
+- 你想用一段景物交代几百年历史。
+- 空间需要决定谁能偷听/藏身/下毒/通行。
+- 读者对建筑没有概念。
+
+**操作**：
+1. 选一座**有层积的建筑/遗址**：罗马-撒克逊-诺曼、教堂-厨房-兵营、宫殿-监狱-博物馆。
+2. 用**物质细节**写层积：石阵/祭坛/小龛/木教堂；被砸的彩窗；改作厨房的宫殿。
+3. 让空间成为**行动条件**：钥匙、密道、镜子、门帘、卧房位置、楼梯、塔顶。
+4. 每场私密戏先交代 1–2 个空间事实，再让人物行动。
+
+**输出**：一张"空间—可见性—可进入性—可藏性"表。
+
+**失效**：
+- 建筑只是风景，不决定行动。
+- 层积象征过密，变成图解。
+- 空间考据错误，象征崩塌。
+
+**证据**：
+- PG7684 L611–634（Bulwer-Lytton）："the shrines of four creeds"——罗马旧宅同时容纳 Druid 石阵、Thor 祭坛、Bacchus 小龛、木教堂。
+- PG2399 L409–411（Pater）："the rough plaster we used to cover ... is replaced by dainty panelling of wood"——房间装修写洛可可/西班牙风格之争（省略号压缩引文，两片段均已在 L409/L411 回读核对）。
+- PG9785 L1731–1753（Scott）："The sacred edifice showed many marks of dilapidation"——废弃教堂写十年内战。
+- PG5175 L6466–6489（Haggard）：塔顶俯瞰，把城墙/圣殿/街区一次讲清。
+- PG33609 L467–476（Dumas）：宫室/密道/拉丁密语——空间决定私会与偷听。
+
+**来源族**：Bulwer-Lytton / Pater / Scott / Haggard / Dumas = 5 族。
+
+### 逐本痕迹（F12 空间层积，17 本全覆盖）
+- PG7684 L611–634（"the shrines of four creeds"——罗马旧宅容纳四重信仰）。
+- PG2399 L409–411（"the rough plaster … is replaced by dainty panelling of wood"——房间装修写风格史）。
+- PG9785 L1731–1753（"The sacred edifice showed many marks of dilapidation"）。
+- PG9785 L3129–3143（建筑按年代层积："contained specimens of every style"）。
+- PG5175 L6466–6489（"To the south lay the marble courts and glittering buildings of the Temple"——塔顶俯瞰）。
+- PG33609 L467–476（"Ipse attuli." / "Noctu pro more."——拉丁密语与宫室决定偷听）。
+- PG5354 L891–907（海蚀洞入口用海草伪装、潮水掩护）。
+- PG5355 L5569–5587（Woodbourne 与"nabob"分寸）/ L6264–6275（罗马墙怀古）。
+- PG30664 L193–280（开篇地理—建筑全景先立物质世界）。
+- PG2516 L2849–2934（Mount Sharon 家史——地名变更即层积）/ L1464–1600（cottage 中的玫瑰经、银器、武器）。
+- PG5805 L3430–3454（"the panels at the back do not fit very closely"——衣柜暗格）。
+- PG76816 L2126–2128（总督晨间巧克力与后楼梯——**权力的空间日常化**）。
+- PG65591 L2296–2434（Cluj 旅馆衰败与 Anna 卖杂货——**衰败空间写战后**）。
+- PG59178 L5245–5246（"the world lay choked, six-foot drifts in the road"——雪困旅店强制共处）。
+- PG1966 L3097–3128（"a little river twining about a coppice"——挂毯图像贯穿一生）。
+- PG17183 L1256–1269（"Thousands of lights glittered through the foliage"——王宫抵达段的感官密度）。
+- PG69768 L79–88（印加柳桥与"一百多年前"的年代层积）。
+- PG42681 L291–321（锁匠讲暗门机关——**技术性空间说明**）。
+
+
+---
+
+## F14 制度辩论前置（ADOPT，5 族）
+
+**触发**：高潮前需要把冲突"规则化"；或双方即将开战/审判/继承。
+
+**判断信号**：
+- 冲突不只是"谁强"，而是"谁有权"。
+- 读者需要理解双方的正当性。
+- 你想避免作者直接讲道理。
+
+**操作**：
+1. 选一个**可执行争点**：谁有权授位、教皇能否仲裁、决斗能否代表国家、遗嘱是否有效、停战条件。
+2. 用主张、质证、行动三种**功能**推进；回合数量取决于角色实际歧见，不能固定三次。
+3. 每方论点都成立；不要让一方是稻草人。
+4. 由**行动**裁决（开战、退兵、签字、拒签），不由叙述者总结。
+5. 用外行角色要求"讲人话"，控制术语密度。
+
+**输出**：一场 2–4 页的辩论戏 + 一句"行动裁决"。
+
+**失效**：
+- 辩论重复同一争点且没有证据、关系或行动变化才有拖沓风险；超过三回合并不自动失败。
+- 一方明显错误，读者出戏。
+- 辩论结果不影响行动。
+
+**证据**：
+- PG7684 L17410–17539（Bulwer-Lytton）："the crown is not mine to give" / "I mock at a sentence that profanes heaven"——王冠归属、教皇仲裁、决斗逐一驳回。
+- PG2516 L2336–2378（Scott）：教友派与渔民争定置网——阶级/教派/法律冲突落成产权。
+- PG1966 L5091–5169（Buchan）：虚构顾问与克伦威尔辩论弑君——两难都成立。
+- PG30664 L7335–7445（Newman）："Prove your words; there is the altar, the flame, and the incense"——罗马审讯程序。
+- PG33609 L430–438（Dumas）："I give my sister to all the Protestants of the kingdom"——政治双关一句带过。
+
+**来源族**：Bulwer-Lytton / Scott / Buchan / Newman / Dumas = 5 族。
+
+### 逐本痕迹（F14 制度辩论前置，17 本全覆盖）
+- PG7684 L17410–17539（"the crown is not mine to give" / "I mock at a sentence that profanes heaven"）。
+- PG2516 L2336–2378（教友派与渔民争定置网——阶级/教派/法律落成产权）。
+- PG1966 L5091–5169（虚构顾问与克伦威尔辩论弑君："if England requires it I will cut off the King's head with the crown on it"）。
+- PG30664 L7335–7445（"Prove your words; there is the altar, the flame, and the incense"——罗马审讯程序）。
+- PG33609 L430–438（"I give my sister to all the Protestants of the kingdom"——政治双关一句带过）。
+- PG5354 L7433–7447（"for legal proof a great deal"——道德确信 vs 法律证据）。
+- PG5355 L16157–16200（法律证据门槛：吉普赛人不能作证）。
+- PG9785 L1854–2004（"I am myself minded to hold forth"——长老会与独立派争讲坛）。
+- PG5175 L7409–7642（"I accuse her..."——Sanhedrim 审判的控罪与判词）。
+- PG5805 L1252–1265（"His papers are all in order, I tell you"——以文书对抗搜查）。
+- PG76816 L16475（"Stafford must not die!"——民意—法庭—王权三方压力）。
+- PG65591 L3752–3901（"文章换人命"——以职业与人身作筹码的辩论）。
+- PG59178 L7800–7844（Johnson 逼主角承认"杀情敌"的真实动机——**道德对质**）。
+- PG2399 L1970–1978（"a renowned young Jewish divine, Baruch de Spinosa"——思想对手出场）。
+- PG17183 L1301–1304（宫廷禁令作为不可辩的规则）。
+- PG42681 L5082–5092（"One is to place yourself on the foremost breaker"——把选项压成两条路）。
+- PG69768 L2926–2962（讽刺性统计表——**不是辩论，是反例**）。
+
+
+---
+
+## F21 多载体换轨（CONDITIONAL，5 族）
+
+**触发**：长篇需要多视角；或你想让"谁在讲述"成为主题。
+
+**判断信号**：
+- 单一视角撑不住跨度。
+- 你需要书信/日记/证词/伪学术结论。
+- 读者会问"叙述者怎么知道"。
+
+**操作**：
+1. 选 2–4 种载体：书信、日记、第三人称、法庭证词、伪学术结论、编者按。
+2. 每种载体承担**不可替代的信息类型**：书信=私情/误会；日记=限知/自欺；证词=公开版本；伪学术=后世定论。
+3. 每次换轨由叙述者**明说理由**（时间跳跃、材料到手、视角人物改变）。
+4. 换轨后重设场景：时间、地点、说话人、信息差。
+
+**输出**：一张"载体—信息类型—换轨理由"表。
+
+**失效**：
+- 换轨无理由，读者失去信任。
+- 载体太多，故事碎片化。
+- 每种载体声音一样。
+
+**证据**：
+- PG2516 L6246–6273（Scott）："resembles the original discipline of the dragoons"——叙述者明说从书信体切到混合体。
+- PG2399 L40–42（Pater）："EXTRACTS FROM AN OLD FRENCH JOURNAL"——日记体限知。
+- PG5805 L2295–2305（Orczy）："Being the deposition of citizeness Fanny Roussell"——法庭证词框架。
+- PG5355 L5058–5178（Scott）："The perusal of a few short extracts from these may be necessary"——Julia 书信推进。
+- PG59178 L98–143（Buchan）：律师事务所旧档框架。
+
+**来源族**：Scott（PG2516、PG5355）/ Pater / Orczy / Buchan = 4 族（另 PG76816 的仿古书信可算第 5）。
+
+### 逐本痕迹（F21 多载体换轨，17 本全覆盖）
+- PG2516 L6269（"resembles the original discipline of the dragoons"——明说从书信体切到混合体）。
+- PG2399 L40–42（"EXTRACTS FROM AN OLD FRENCH JOURNAL"——日记体限知）。
+- PG5805 L2295–2305（"Being the deposition of citizeness Fanny Roussell"——法庭证词框架）。
+- PG5355 L5058–5178（"The perusal of a few short extracts from these may be necessary"——Julia 书信推进）。
+- PG59178 L98–143（"the packet contained a story, obscure in parts"——律师事务所旧档）。
+- PG5354 L9149–9319（"Here ends THE ASTROLOGER."——元叙事收尾，**与 PG5355 同文异行**）。
+- PG9785 L1523–1565（伪手稿框架自拆）。
+- PG76816 L18960–18970（"My Heart bleeds for my deare Master"——仿古家书尾声）。
+- PG65591 L7177–7289（"I introduced him to you as Number Ten"——反派密室章制造信息差）。
+- PG30664 L8749–8750（"The second document is a fragment of the _Acta Proconsularia_ of her Passion. If, indeed, it could be trusted to the letter"——档案嵌入并当场自我质疑）。
+- PG5175 L5007–5178（长信体承载异地信息）。
+- PG1966 L60–117（序幕现代谈话立命题——**现代框架包历史段落**）。
+- PG17183 L2206–2361（"Far back in the ages whose annals are lost in story"——嵌入传说作主题预演）。
+- PG69768 L219–228（"Any Spanish schoolboy is required to know today more about"——后世史家口吻）。
+- PG42681 L1629–1634（"Our intention being to temporarily abandon the fortunes of our high and mighty characters"——公开换轨到小人物）。
+- PG7684 L4401–4499（作者长论直接解剖 Harold——**全知议论切换，登记为风险**）。
+- PG33609 L29363–29367（尾声指星——以开放母题收束而非换轨）。
+
+
+---
+
+## 场景检查清单
+
+- [ ] 主要人物是否有公开/私下两套语体？
+- [ ] 时代词是否只在称谓/官职/誓言/器物上？
+- [ ] 空间是否决定了可见性/可进入性/可藏性？
+- [ ] 辩论是否产生新信息或抉择，并最终在情节中结算（可超过三回合）？
+- [ ] 每次换轨是否有明说理由与不可替代的信息？
+- [ ] 换轨后是否重设了时间/地点/信息差？

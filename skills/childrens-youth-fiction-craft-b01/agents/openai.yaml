@@ -1,0 +1,31 @@
+version: "1.0"
+display_name: "儿童青少年向虚构写作与诊断"
+summary: "先按读者年龄带（绘本 3-8 岁 / 中年级 / YA 前期）选规则，再检查重复梯度、因果、尊严、恐惧出口与危机习惯；明确处理娱乐优先与教训优先的冲突，拒绝把单书桥段升级为通用规则。"
+default_prompt: "处理这份儿童向稿件：判定读者年龄带，跑改编四问，检查四条硬规则，输出带来源行号的诊断卡。"
+tags:
+  - childrens-fiction
+  - picture-book
+  - middle-grade
+  - young-adult
+  - story-structure
+  - adaptation
+  - diagnosis
+capabilities:
+  - 读者年龄带判定
+  - 结构与重复梯度设计
+  - 改编三问（删改清单）
+  - 施助与救助场景的尊严检查
+  - 冲突分支输出（不伪造共识）
+limitations:
+  - 不提供真实儿童测试或出版年龄分级
+  - 不提供插画构图建议（证据只有占位符）
+  - 不提供版权或许可意见
+  - 未在真实宿主中运行验证（GQ5 NOT_PROVEN）
+sources:
+  - PG474 How to Tell Stories to Children（唯一方法书）
+  - PG1874 The Railway Children
+  - PG16540 Melchior's Dream and Other Tales
+  - PG17125 More William
+  - PG6360 Half a Dozen Girls
+  - PG4989 A Sweet Girl Graduate
+  - 其余 23 部见 references/source-index.md

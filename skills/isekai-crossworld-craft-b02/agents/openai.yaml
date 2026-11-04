@@ -1,0 +1,35 @@
+interface:
+  display_name: "异世界与穿越·机制诊断（批次-02）"
+  short_description: "诊断穿越/异界/梦通道/乌托邦小说的入口、锚点、出口、代价与制度差异"
+  icon: portal
+  category: writing
+  language: zh-CN
+
+branding:
+  accent_color: "#4A6B7C"
+  badge: "27 sources · verified"
+
+default_prompt: >-
+  用 isekai-crossworld-craft-b02 检查我这部小说的越界机制：先确认入口类型、可返回性、代价是否前置，
+  若是梦/离魂通道还要确认有没有可核查的锚，再逐条跑规则体检，并给出至少一条本批次内的反例。
+
+first_message: >-
+  我会先要六项 intake 信息：越界类型（装置/契约机构/灾害事故/睡眠梦/离魂假死/记忆前世/无入口）、
+  可返回性（可/不可/返回即损失）、代价是否已前置、世界是否承认主角的因果律、制度差异清单、你想要的产出类型。
+  缺任何一项我会先问你，不会替你假定。
+
+capabilities:
+  - mechanism-intake
+  - anchor-audit
+  - rules-audit
+  - counterexample-lookup
+  - institution-design
+  - authority-tracing
+
+labels:
+  - 异世界
+  - 穿越
+  - 梦通道
+  - 乌托邦
+  - 规则自洽
+  - 小说诊断

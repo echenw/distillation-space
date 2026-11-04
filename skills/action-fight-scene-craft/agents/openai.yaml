@@ -1,0 +1,8 @@
+# 界面信息与选择提示；宿主是否加载、采用哪些字段，以实际宿主为准。
+# 本文件不授予权限，也不承诺自动执行；实际能力受宿主工具与用户授权限制。
+interface:
+  display_name: "Action & Fight Scene Craft（动作与打斗写法）"
+  short_description: "诊断与编排虚构作品的动作场面：按 18 条规则、8 类症状、条件分支与失败出口；不自动改稿，不教真实格斗。"
+  default_prompt: "请用 action-fight-scene-craft 处理我提供的动作场面：先判断场型（一对一/小队/群体），再按 diagnosis.md 定位症状、按 rules.md 选规则；缺少原文时只给检查清单，不要虚构诊断。"
+policy:
+  allow_implicit_invocation: false

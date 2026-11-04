@@ -1,0 +1,4 @@
+interface:
+  display_name: "力量叙事与成长弧"
+  short_description: "诊断能力规则、代价与人物成长、社会承认"
+  default_prompt: "请先核对我的作品正典、力量来源与限制；再用本 Skill 规划或诊断因果与成长，不强制三次升级。"

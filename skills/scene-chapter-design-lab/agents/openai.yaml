@@ -1,0 +1,25 @@
+interface:
+  display_name: "章节与场景设计"
+  short_description: "面向小说和剧本，设计场景目标、信息揭示、因果衔接，并诊断与修订整章结构"
+  category: "05-章节与场景设计"
+  version: "round-p4-final-2026-10-30"
+  supersedes: "round-p4-wave4-agent3-2026-10-30"
+  source_count: 9
+  source_ids:
+    - PG19028
+    - PG32433
+    - PG36790
+    - PG43490
+    - PG63188
+    - PG68853
+    - PG72661
+    - PG74314
+    - PG76555
+  coverage: "9/9 FULL（逐本台账经 kd32_ledger_gate.py 回源核验）"
+  input_expect: "媒介与体裁、目标读者体验、执行动作（设计/诊断/改写）、本单位的边界"
+  failure_exits:
+    - INPUT_MISSING
+    - AUTHOR_DECISION
+    - NOT_PROVEN
+  evidence_policy: "F=来源行号可回源；H=推导；P=执行动作；效果类断言一律 NOT_PROVEN"
+  rights_note: "来源取自 Project Gutenberg 镜像并按 PG 美国公版规则筛查（MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION），非法律意见"

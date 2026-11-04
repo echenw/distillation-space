@@ -1,0 +1,36 @@
+# UI 元信息（ZCode / OpenAI 兼容）
+name: isekai-crossworld-craft
+version: 1.0.0
+display_name: 异世界与穿越·机制核账
+short_description: 用 27 份公版来源蒸馏的机制分型与规则裁决，体检或设计异世界/穿越设定。
+category: 类型小说专项 / 异世界与穿越
+language: zh-CN
+task_id: B-08-B03
+parent_category: 16-类型小说专项/12-异世界与穿越
+batch: 批次-03
+source_count: 27
+sources_verified_full: 27
+sources_not_full: 0
+coverage: FULL（27/27 实读台账 + 逐字引文回源门禁）
+evidence_round: rounds/round-p4-final-2026-10-30
+license_note: 来源均为 Project Gutenberg 公有领域文本；本 Skill 只提炼写法，不转载原文。
+supersedes: none
+superseded_by: none
+entry: SKILL.md
+references:
+  - references/mechanism-taxonomy.md
+  - references/rule-verdicts.md
+  - references/source-index.md
+  - references/conflicts-and-exceptions.md
+ui:
+  icon: portal
+  suggested_prompts:
+    - 帮我体检这部穿越小说的设定一致性
+    - 不解释穿越机制可以吗？
+    - 结尾要不要说这只是一场梦？
+    - 主角一定要是被选中的那个人吗？
+  negative_triggers:
+    - 古风/中世纪罗曼司，无跨界机制
+    - 社会乌托邦或社区改造小说
+    - 民俗怪谈（主角未旅行到另一世界）
+    - 语言润色与对白打磨

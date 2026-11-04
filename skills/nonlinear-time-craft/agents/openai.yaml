@@ -1,0 +1,5 @@
+interface:
+  display_name: "非线性叙事与时间设计"
+  short_description: "以来源与限制为依据，规划和诊断非线性叙事与时间设计"
+policy:
+  allow_implicit_invocation: false

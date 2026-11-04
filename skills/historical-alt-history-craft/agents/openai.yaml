@@ -1,0 +1,5 @@
+interface:
+  display_name: "历史缝隙虚构写作"
+  short_description: "以来源与限制为依据，规划和诊断历史缝隙虚构写作"
+policy:
+  allow_implicit_invocation: false

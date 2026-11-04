@@ -1,0 +1,4 @@
+interface:
+  display_name: "身份、复仇与权谋写作"
+  short_description: "设计可信的身份证据、政治关系、行动成本和揭示路径"
+  default_prompt: "请用身份、复仇与权谋 Skill，先确认已有正典与证据，再给出可执行的情节分支与代价。"

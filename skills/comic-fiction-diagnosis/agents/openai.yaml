@@ -1,0 +1,12 @@
+interface:
+  display_name: "喜剧叙事诊断（笑点归属·物证误会·讽刺让位）"
+  short_description: "诊断与设计喜剧/幽默小说的笑点机制：归属、物证、谎话自洽、重复变化、讽刺边界"
+  category: "16-类型小说专项/07-喜剧幽默"
+  version: "1.0.0"
+  sources: 24
+  coverage: "24/24 coverage_full"
+  license_note: "来源均为 Project Gutenberg 公共领域文本；Skill 内只引用行号级观察，不复制正文"
+  replaces: null
+  related:
+    - id: "comic-engine-craft"
+      relation: "同父类别批次-04 的另一组来源产物；不互相继承证据"

@@ -1,0 +1,32 @@
+interface:
+  display_name: "资料研究与事实核验"
+  short_description: "拆断言、选检查动作、核来源与版本，输出带出处和不确定性等级的核查表"
+  default_locale: "zh-CN"
+  prompt_suggestions:
+    - "帮我核实这段里的事实，标出哪些能当真"
+    - "这两个版本的说法冲突，怎么裁定"
+    - "这段是史实还是虚构设定"
+    - "核一下这句引文的出处和译本"
+    - "这段报道有没有夸大或把相关写成因果"
+    - "我要把这段材料写进小说，先核一遍"
+policy:
+  allow_implicit_invocation: true
+  requires_user_confirmation_for_edits: true
+  read_only_by_default: true
+  scope_notes:
+    - "只审查时只输出判断与候选修订；修改原文须明确授权"
+    - "没有可访问来源时不以模型记忆补足，输出 NOT_VERIFIABLE 与最小补证清单"
+    - "医疗、法律、金融、安全与个人名誉类结论需由合格专业人员独立核验"
+    - "本 Skill 不提供联网检索能力；无检索工具时走失败出口"
+source_provenance:
+  distilled_from_task: "C-04"
+  category: "14-资料研究与事实核验"
+  source_count: 4
+  source_ids:
+    - "PG1232"
+    - "PG15718"
+    - "PG25559"
+    - "PG26557"
+  reading_edition_note: "行号为本项目阅读版行号，不是印刷页码；外部使用者须按书名与版本重新定位"
+  rights: "来源按项目元数据为美国公有领域；不对其他法域或后出版本作许可承诺"
+  evidence_status: "P0–P4 静态交付；P5/GQ5 真实宿主测试 NOT_PROVEN；P6/P7 NOT_DONE"

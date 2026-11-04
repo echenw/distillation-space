@@ -1,0 +1,8 @@
+# 界面信息与选择提示；宿主是否加载、采用哪些字段，以实际宿主为准。
+# 本文件不授予权限，也不承诺自动执行；实际能力受宿主工具与用户授权限制。
+interface:
+  display_name: "Supernatural Power Craft（超自然力量机制）"
+  short_description: "设计与诊断虚构作品里的超自然力量条款：边界、代价、禁忌、变形、传承、复活、两界、权属、社会再分类；人工填表、条件分支、失败出口，不自动改稿。"
+  default_prompt: "请用 supernatural-power-craft 处理我提供的设定或文本：先判断是规划、诊断还是核账，再给力量分型（授予/权属/获得/血统）并按对应 RC 核对；没有原文时只给检查问句，不要虚构诊断。"
+policy:
+  allow_implicit_invocation: false

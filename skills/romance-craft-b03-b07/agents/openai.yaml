@@ -1,0 +1,79 @@
+interface:
+  display_name: "言情爱情·关系机制诊断与写作"
+  short_description: "诊断爱情线的阻挡力、追求与拒绝、中间人与结局形态，全部结论可回源到 18 部原著行号。"
+  icon_small: "static/icon-small.png"
+  icon_large: "static/icon-large.png"
+  brand_color: "#C2185B"
+  default_prompt: "用 romance-craft-b03-b07 帮我诊断这条爱情线：它是主负荷关系吗？阻挡力有几条、分别落在谁身上？如果要写拒绝场景，礼节层/理由层/动机自陈层各给一句。最后在封闭/停止/悬置三种结局里选一种并说明理由。"
+  sample_prompts:
+    - "这条爱情线读起来假，帮我诊断张力卡在哪，并给出可回源到原著行号的改法。"
+    - "我要写一个被拒绝的告白场景，按礼节层/理由层/动机自陈层各写一句。"
+    - "这对情侣要不要复合？先回答：伤害有没有改变当事人的自我理解。"
+    - "我要加一个撮合者，帮我判断他的动机属于服务当事人还是满足自己的戏剧感。"
+    - "我的爱情线只有外部反对者，没有主角自己的取舍，会有什么问题？"
+    - "结局在封闭/停止/悬置三种里选一种，说明代价。"
+metadata:
+  skill_id: romance-craft-b03-b07
+  task_id: B-03-B07
+  category: "16-类型小说专项/02-言情爱情/批次-07"
+  kind: new
+  version: "1.0.0"
+  sources: 18
+  sources_full: 18
+  sources_not_full: 0
+  source_ids:
+    - PG11901
+    - PG15402
+    - PG1621
+    - PG177
+    - PG22002
+    - PG25001
+    - PG26001
+    - PG2870
+    - PG39865
+    - PG44374
+    - PG4600
+    - PG57099
+    - PG700
+    - PG78710
+    - PG79505
+    - PG805
+    - PG8203
+    - PG9182
+  source_period: "1830-1925"
+  coverage: "18/18 FULL（逐来源台账经 kd32_ledger_gate.py 复核）"
+  provenance:
+    reading_ledgers:
+      - "rounds/round-perbook/notes/reading/ledger-PG11901-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG15402-full.md"
+      - "rounds/round-kd32-r02/notes/reading/ledger-PG1621-s1-3577.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG177-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG22002-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG25001-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG26001-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG2870-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG39865-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG4600-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG700-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG78710-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG79505-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG805-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG8203-full.md"
+      - "rounds/round-perbook/notes/reading/ledger-PG9182-full.md"
+      - "rounds/round-shard-dfm/notes/reading/ledger-PG44374-s1-5833.md"
+      - "rounds/round-shard-dfm/notes/reading/ledger-PG57099-s1-2043.md"
+      - "rounds/round-kd32-r02/notes/reading/ledger-PG57099-s2044-4067.md"
+      - "rounds/round-kd32-r02/notes/reading/ledger-PG57099-s4068-4518.md"
+    this_round_supplement:
+      - "rounds/round-p4-final-2026-10-30/notes/ledger-PG2870-s6041-7473.md"
+      - "rounds/round-p4-final-2026-10-30/notes/ledger-PG57099-s3239-4067.md"
+    synthesis: "rounds/round-p4-final-2026-10-30/notes/source-synthesis.md"
+    coverage_note: "rounds/round-p4-final-2026-10-30/notes/source-coverage.md"
+  license: "来源为 Project Gutenberg 公有领域文本；本 Skill 为基于其实读台账的原创方法论，可自由使用与修改，引用结论时保留 PG 号与行号。"
+  supersedes: null
+  superseded_by: null
+  not_proven_scope:
+    - "1925 年之后的类型言情市场、读者期待与流派标签"
+    - "恋爱场景的篇幅/对话节奏规范"
+    - "连载分卷与更新节奏"
+  p4_status: P4_SKILL_CLOSED
