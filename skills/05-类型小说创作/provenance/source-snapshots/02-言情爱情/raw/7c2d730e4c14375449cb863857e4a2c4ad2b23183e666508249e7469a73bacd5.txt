@@ -1,0 +1,44 @@
+# 04 来源索引：book_id、定位、覆盖档位、族去重
+
+本索引自包含：只列 book_id、作品、作者/族、定位、覆盖档位、被哪条规则使用、能与不能证明什么。不依赖轮次工作区路径。
+
+## 1. 定位读法
+
+- **L** = 整本阅读版.txt 行号（从文件头计）。
+- 覆盖档位：**SAMPLED** = 定向深读（行号区间见下，非全文）；**SCAN** = 结构扫描（开场 30/中段 6/结尾 6 行，<1%）；**FAM** = 同族卷（本卡未读，随族代表计入）。
+- 族去重：同作者多本/house name/三卷本各计 **1 族**；同族多本不增加独立证据。
+
+## 2. 逐书条目（深读 3 + 族 1 + 扫描 15 = 19 本）
+
+| book_id | 作品 | 作者/族 | 覆盖 | 定位 | 能证明 | 不能证明 |
+|---|---|---|---|---|---|---|
+| PG1342 | Pride and Prejudice | Austen | SAMPLED 10%（Ch34/35/36 末/58 全章级） | L7505–7544；L7529–7533；L7737–7951；L7469–7485；L8114；L13673–13702；L13720–13738；L13750–13807 | R1–R6 全部断言 | 未读区间技法；现代迁移 |
+| PG158 | Emma | Austen | SCAN | 开场/中/尾 | 同族存在 | 任何技法（同族已由 PG1342 代表） |
+| PG619 | The Warden | Trollope | SAMPLED 13%（Ch I–III/VIII/结尾） | L525–526；L2565–2570；L472–495；L7285–7330 | R7–R9 断言 | 未读区间；Barset 系列跨卷机制 |
+| PG12234 | Mr Scarborough's Family | Trollope | SCAN | 开场/中/尾 | 族内多本并存 | 任何技法 |
+| PG4917 | The Kellys and the O'Kellys | Trollope | SCAN | 同上 | 同上 | 同上 |
+| PG27712 | Sir Harry Hotspur of Humblethwaite | Trollope | SCAN | 同上 | 同上 | 同上 |
+| PG3699 | Miss Sarah Jack of Spanish Town | Trollope | SCAN | 同上 | 中短篇体量存在 | 同上 |
+| PG3700 | The Courtship of Susan Bell | Trollope | SCAN | 同上 | 同上 | 同上 |
+| PG54010 | The Younger Sister Vol.I | Hubback 续书族 | SAMPLED 1.5%（标题页+献辞+L57–161 复述段） | L28–35；L57–161 | R10 断言 | 正文技法；卷界结构 |
+| PG54011 | The Younger Sister Vol.II | 同族 | FAM（未读） | — | 三卷分册存在 | 一切 |
+| PG54012 | The Younger Sister Vol.III | 同族 | FAM（未读） | — | 同上 | 一切 |
+| PG1023 | Bleak House | Dickens | SCAN | 开场/中/尾 | 体量跨度上界；双线开篇体例存在 | 双线机制（未深读，本 Skill 无此规则） |
+| PG1263 | The Glimpses of the Moon | Wharton | SCAN | 同上 | 婚姻市场题材存在 | 技法 |
+| PG35538 | The Squatter and the Don | Ruiz de Burton | SCAN | 同上 | 题材地理广度 | 文化机制 |
+| PG524 | Ann Veronica | Wells | SCAN | 同上 | 新女性题材存在 | 技法 |
+| PG1671 | When a Man Marries | Rinehart | SCAN | 同上 | 大众言情市场分层 | 技法 |
+| PG3321 | Children of the Whirlwind | Packard | SCAN | 同上 | 同上 | 技法 |
+| PG3404 | April Hopes | Howells | SCAN | 同上 | 单本存在 | 技法 |
+| PG68222 | His Fortunate Grace | 单本 | SCAN | 同上 | 同上 | 技法 |
+
+## 3. 族谱（8 族）
+
+Austen（PG1342+PG158）/ Trollope（6 本）/ Hubback 三卷 / Dickens / Wharton / Ruiz de Burton / 世纪之交大众言情合档（PG524/1671/3321）/ 单本档（PG3404/68222）。
+**规则引用的实际深读族 = 3**（Austen、Trollope、Hubback）；其余 5 族仅扫描/体例。
+
+## 4. UNVERIFIED / 禁止引用
+
+- 全部 10 条规则置信低：均出自 ≤2 族深读，无独立第二族复现（R1–R6 单族、R7–R9 单族、R10 单族）。
+- 扫描层 14 本 + FAM 2 卷不得支撑章内技巧。
+- 无现代样本；无读者数据；GQ5 未运行。

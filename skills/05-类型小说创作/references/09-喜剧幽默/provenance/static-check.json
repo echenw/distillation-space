@@ -1,0 +1,11 @@
+{
+  "status": "SUPERSEDED_NON_OPERATIVE",
+  "scope": "第一版记录，仅审计；当前用rule-evidence-map.json与delivery-manifest.json",
+  "historical_payload": {
+    "check": "PG identifier retention and local Markdown link targets",
+    "missing_pg": [],
+    "broken_links": [],
+    "semantic_effectiveness": "NOT_PROVEN",
+    "independent_review": "NOT_PROVEN"
+  }
+}

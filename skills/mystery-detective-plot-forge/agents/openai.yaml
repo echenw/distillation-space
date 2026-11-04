@@ -1,5 +1,0 @@
-interface:
-  display_name: "推理悬疑情节设计"
-  short_description: "规划与诊断虚构谜题、线索、公平性及结案结构"
-policy:
-  allow_implicit_invocation: false

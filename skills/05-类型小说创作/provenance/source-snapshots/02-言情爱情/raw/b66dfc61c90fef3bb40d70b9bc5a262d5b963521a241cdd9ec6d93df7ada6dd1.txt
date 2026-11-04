@@ -1,0 +1,40 @@
+# 来源索引 · 19 本固定 PG 原件与读取证据
+
+来源角色为小说个案 `FICTION_CASE`，不是写作技巧公理或现代关系心理学。`RANGE_COVERED` 意为已有台账范围并集从 L1 到 EOF；不能等同本轮真人重新逐字阅读，且可能包含老轮次的未独立认证内容。
+
+| PG ID | 作品/作者（阅读版） | 来源定位 | 台账范围 | 当前文件 SHA | 可用边界 |
+|---|---|---|---|---|---|
+| PG1023 | Bleak House / Dickens, Charles, 1812-1870 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–39837 RANGE_COVERED | `f5a63bc64af664bb…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG12234 | Mr. Scarborough's Family / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–22509 RANGE_COVERED | `1484dace6fd564e3…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG1263 | The Glimpses of the Moon / Wharton, Edith, 1862-1937 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–9181 RANGE_COVERED | `91e7d8106fe4f19c…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG1342 | Pride and Prejudice / Austen, Jane, 1775-1817 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–14529 RANGE_COVERED | `595bb39fe77d9808…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG158 | Emma / Austen, Jane, 1775-1817 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–16489 RANGE_COVERED | `4ae98d6e56b57e5a…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG1671 | When a Man Marries / Rinehart, Mary Roberts, 1876-1958 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–6266 RANGE_COVERED | `989f4d47d72d2572…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG27712 | Sir Harry Hotspur of Humblethwaite / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–7689 RANGE_COVERED | `262f28c1e73ac0ee…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG3321 | Children of the Whirlwind / Scott, Leroy, 1875-1929 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–11484 RANGE_COVERED | `6a1fbc8570ff0d7a…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG3404 | April Hopes / Howells, William Dean, 1837-1920 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–13487 RANGE_COVERED | `aba68d846684517e…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG35538 | The Squatter and the Don A Novel Descriptive of Contemporary Occurrences in California / Ruiz de Burton, María Amparo, 1832-1895 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–16337 RANGE_COVERED | `c6ab6e32ccfe4df9…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG3699 | Miss Sarah Jack of Spanish Town, Jamaica / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–1037 RANGE_COVERED | `626b409615ffd02a…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG3700 | The Courtship of Susan Bell / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–1317 RANGE_COVERED | `d7f6b01a45c39311…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG4917 | The Kellys and the O'Kellys / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–19348 RANGE_COVERED | `fbcb79069a4b1479…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG524 | Ann Veronica: A Modern Love Story / Wells, H. G. (Herbert George), 1866-1946 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–12109 RANGE_COVERED | `600e54136ba4e8e9…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG54010 | The Younger Sister: A Novel, Vol. I. / Hubback, Mrs. (Catherine-Anne Austen), 1818-1877 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–5471 RANGE_COVERED | `b17bec60a40e3cc4…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG54011 | The Younger Sister: A Novel, Vol. II. / Hubback, Mrs. (Catherine-Anne Austen), 1818-1877 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–7742 RANGE_COVERED | `a5f7fa4166ae64b8…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG54012 | The Younger Sister: A Novel, Vol. III. / Hubback, Mrs. (Catherine-Anne Austen), 1818-1877 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–9047 RANGE_COVERED | `2ba8653e446b44f5…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG619 | The Warden / Trollope, Anthony, 1815-1882 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–7580 RANGE_COVERED | `205b18b0bdcd686a…` | 作为该作品个案；不因小说所写即断定现实适用 |
+| PG68222 | His fortunate Grace / Atherton, Gertrude Franklin Horn, 1857-1948 | 阅读版原件：L1–EOF；规则细节另见上文重点定位 | L1–3903 RANGE_COVERED | `6f46934dfeaeff04…` | 作为该作品个案；不因小说所写即断定现实适用 |
+
+## 重点规则引用定位
+
+- R1–R6：PG1342 L7505–7951、L13673–13807；同族反例 PG158 L673–946。
+- R7–R9：PG619 L472–530、L525–526、L2565–2570、L7285–7330；跨族差异 PG1263 L101–176、PG35538 L771–773/L1797–1836。
+- R10：PG54010 L28–35/L57–161；同族后卷 PG54011 L50–266、PG54012 L33–43。
+- 自主权边界：PG524 L2358–2409；不是 2026 年法律或心理临床权威。
+
+## 阅读与授权边界
+
+- 原始来源为该工作区固定 Gutenberg 文件及对应 metadata。逐文件完整 64 位 SHA 与 19 本 L1→EOF 区间在本轮 P2 证据审计保存，不将其作为消费者必须访问的外部依赖。
+- 某些旧卡片仍标 `SCAN/FAM/UNREAD`，反映旧轮次的当时取样；不得把这些历史口径当作本次最终阅读范围，也不能拿新范围替代可信语义复核。
+- 同作者多本、续书同一作品族只算一个独立证据族。
+- 原书元数据中的 USA public-domain 或其他许可陈述只限对应版本与管辖区，不授予其他译本/影印本再发行权；本 Skill 仅包含短定位及原创方法。
+- 本包不夹带原著完整文本；阅读版行号不是印刷版页码，外部原件须重新核实。

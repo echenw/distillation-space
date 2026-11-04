@@ -1,0 +1,352 @@
+# PG53988
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG53988-The-Bride-of-the-Sun/整本阅读版.txt
+sha256: 62decea5fc30b58dbe1d956fd29a3efed64854ab2c09631da2b0315527220726
+total_lines: 6928
+1: THE BRIDE OF THE SUN
+2: 
+3: By Gaston Leroux
+4: 
+5: 1915, McBride, Nabt & Co.
+6: 
+7: 
+8: 
+9: 
+10: BOOK I--THE GOLDEN SUN BRACELET
+11: 
+12: 
+13: 
+14: 
+15: I
+16: 
+17: As the liner steamed into Callao Roads, and long before it had
+18: anchored, it was surrounded by a flotilla of small boats. A moment
+19: later, deck, saloons and cabins were invaded by a host of gesticulating
+20: and strong-minded boatmen, whose badges attested that they were duly
+21: licensed to carry off what passengers and luggage they could. They raged
+22: impotently, however, round Francis Montgomery, F.R.S., who sat enthroned
+23: on a pile of securely locked boxes in which were stored his cherished
+24: manuscripts and books.
+25: 
+26: It was in vain that they told him it would be two full hours before the
+27: ship came alongside the Darsena dock. Nothing would part him from his
+28: treasures, nothing induce him to allow these half-crazed foreigners to
+29: hurl his precious luggage overside into those frail-looking skiffs.
+30: 
+31: When this was suggested to him by a tall young man who called him uncle,
+32: the irascible scientist explained with fluency and point that the idea
+33: was an utterly ridiculous one. So Dick Montgomery shrugged his broad
+34: shoulders, and with a “See you presently,” that hardly interrupted his
+35: uncle’s flow of words, beckoned to a boatman.
+36: 
+37: A moment later he had left the ship’s side and was nearing the
+38: shore--the Eldorado of his young ambition, the land of gold and legends,
+39: the Peru of Pizarro and the Incas. Then the thought of a young girl’s
+40: face blotted out those dreams to make way for new ones.
+# PG22247
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG22247-If-You-Touch-Them-They-Vanish/整本阅读版.txt
+sha256: 03ca02db4fc2909e7599a59e75eb19e11f11f2d5a59faf8ee9f82c0fda1cc1a6
+total_lines: 2377
+1: Produced by Roger Frank and the Online Distributed
+2: Proofreading Team at https://www.pgdp.net
+3: 
+4: 
+5: 
+6: 
+7: 
+8: -----------------------------------------------------------------------
+9: 
+10: By Gouverneur Morris
+11: 
+12: Published by
+13: Charles Scribner's Sons
+14: 
+15: If You Touch Them They Vanish. Illustrated.   net $1.00
+16: 
+17: The Penalty. Illustrated.                     net $1.35
+18: 
+19: It, and Other Stories.                        net $1.25
+20: 
+21: The Spread Eagle, and Other Stories.          net $1.20
+22: 
+23: The Footprint, and Other Stories.                 $1.50
+24: 
+25: -----------------------------------------------------------------------
+26: 
+27: [Illustration: "If I had the power," he thought, "I'd settle this region
+28: with innocent people who have been accused of crimes."]
+29: 
+30: -----------------------------------------------------------------------
+31: 
+32: IF YOU TOUCH THEM THEY VANISH
+33: 
+34: By Gouverneur Morris
+35: 
+36: With illustrations by Charles S. Chapman
+37: 
+38: New York Charles Scribner's Sons 1913
+39: 
+40: -----------------------------------------------------------------------
+# PG32822
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG32822-Daughter-of-the-Night/整本阅读版.txt
+sha256: 05a9e54cd923ac8cdd9ecb5148abd92242f3a1e6db35bb3393a63abdc519fb77
+total_lines: 1344
+1: Produced by Greg Weeks, Mary Meehan and the Online
+2: Distributed Proofreading Team at http://www.pgdp.net
+3: 
+4: 
+5: 
+6: 
+7: 
+8: 
+9: 
+10: 
+11: 
+12:                         DAUGHTER OF THE NIGHT
+13: 
+14:                         By RICHARD S. SHAVER
+15: 
+16: [Transcriber Note: This etext was produced from Amazing Stories December
+17: 1948. Extensive research did not uncover any evidence that the U.S.
+18: copyright on this publication was renewed.]
+19: 
+20: 
+21: [Sidenote: The evil magic of the Goddess Diana turned men to stone.
+22: Would the power of the strange Eos be strong enough to turn them back to
+23: living men?]
+24: 
+25: 
+26: [Illustration: Like a flash of light the gleaming sword swept down]
+27: 
+28: 
+29: Like a flash of light the gleaming sword swept down. A fraction of a
+30: second later a portion of it no longer gleamed: it was crimson! And
+31: Queen Dionaea's head bounced down the stairway into her garden of live
+32: oaks. A few seconds of thought remained to it before it would be very
+33: dead; but her thought was confused by shock--her eyes rolled
+34: uncontrollably while she tried to remember some cantrap or rune from her
+35: long association with the Goddess Diana. Desperately she tried to recite
+36: the proper abracadabra to stay the swift death that was sweeping through
+37: her mind; but it is hard for a head to chant a charm with no body to
+38: draw a breath....
+39: 
+40: Druga, his job of execution finished, sheathed his bloody sword and
+# PG56889
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG56889-The-Blue-Star/整本阅读版.txt
+sha256: def6f4ee24c9e548616ba247e592915041cc668d821fba8fd339b7809399a417
+total_lines: 9635
+1: Produced by Al Haines, Stephen Hutcheson & the online
+2: Distributed Proofreaders Canada team at
+3: http://www.pgdpcanada.net
+4: 
+5: 
+6: 
+7: 
+8: 
+9: 
+10: 
+11: 
+12: 
+13:                              The Blue Star
+14: 
+15: 
+16:                            BY FLETCHER PRATT
+17: 
+18:                    NEW YORK : TWAYNE PUBLISHERS, INC.
+19: 
+20:                COPYRIGHT 1952 BY TWAYNE PUBLISHERS, INC.
+21:  ALL RIGHTS RESERVED. NO PORTION OF THIS BOOK MAY BE REPRINTED WITHOUT
+22:   PERMISSION EXCEPT BRIEF QUOTATIONS EMBODIED IN CRITICAL ARTICLES OR
+23:  REVIEWS. FOR INFORMATION, ADDRESS TWAYNE PUBLISHERS, INC., 34 EAST 23D
+24:                            STREET, N. Y. 10.
+25:               MANUFACTURED IN THE UNITED STATES OF AMERICA
+26: 
+27: 
+28: 
+29: 
+30:                                 Contents
+31: 
+32: 
+33:     Prologue                                                         225
+34:   1 Netznegon City: March Rain                                       230
+35:   2 April Night                                                      236
+36:   3 Escape                                                           243
+37:   4 Daylight; Refuge                                                 250
+38:   5 Night; Generosity; Treason                                       257
+39:   6 Night and Day; The Place of Masks                                264
+40:   7 Sedad Vix: A New Life                                            271
+# PG48860
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG48860-The-Brown-Owl-A-Fairy-Story/整本阅读版.txt
+sha256: 04bd2be0d0e451cb3bbccc303ee09338d964ee9373adb3a29223a7f7f2224054
+total_lines: 3224
+1: THE CHILDREN’S LIBRARY
+2: 
+3: [Illustration]
+4: 
+5: _VOLUME ONE_
+6: 
+7: 
+8: THE BROWN OWL
+9: 
+10: [Illustration]
+11: 
+12: 
+13: 
+14: 
+15: _THE CHILDREN’S LIBRARY._
+16: 
+17: 
+18:     THE BROWN OWL.
+19:     THE CHINA CUP, AND OTHER STORIES.
+20:     STORIES FROM FAIRYLAND.
+21: 
+22: [Illustration]
+23: 
+24: 
+25: 
+26: 
+27: THE
+28: 
+29: BROWN OWL
+30: 
+31: A Fairy Story
+32: 
+33:     BY
+34:     FORD H. MADOX HUEFFER
+35: 
+36: 
+37:     _TWO ILLUSTRATIONS BY
+38:     F. MADOX BROWN_
+39: 
+40:     NEW YORK
+# PG66196
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG66196-The-Enchanted-Crusade/整本阅读版.txt
+sha256: 698531e3269f789eb92d6629592eef4ed574a164fd3f69b9e2751f705025b2d2
+total_lines: 3122
+1:               Saracen blades held no fear for Godwin; but
+2:            now he faced Mufaddal's sorcery with the fate of
+3:            the beautiful Ramizail--and England--resting upon
+4: 
+5:                          The Enchanted Crusade
+6: 
+7:                          By Geoff St. Reynard
+8: 
+9:            [Transcriber's Note: This etext was produced from
+10:               Imagination Stories of Science and Fantasy
+11:                               April 1953
+12:          Extensive research did not uncover any evidence that
+13:          the U.S. copyright on this publication was renewed.]
+14: 
+15: 
+16: Just as daybreak burst over the rim of the desert, the dying man heard
+17: the crunch of horses' hooves on sand. He lifted his head and croaked as
+18: loudly as collapsing lungs would let him, saying thrice over, "In the
+19: name of God, help!" Then he pitched on his nose again and lay still,
+20: unable to move so much as an eyelash.
+21: 
+22: There was the grit of sand under the light tread of men, and a voice
+23: said, "Name of all camels! What a collection of vulture-victuals this
+24: one is!"
+25: 
+26: "I doubt it was he cried out," said another voice. "He must have
+27: been dead for a decade." This voice then rendered a belch of classic
+28: proportions. "Damn those figs," it said.
+29: 
+30: "If you will eat three pounds at a breakfast, Godwin love," said a
+31: throaty feminine voice, all full of honey and laughter, "you must
+32: expect some few repercussions."
+33: 
+34: The dying man collected his will and the scraps of strength that were
+35: left in his tortured body, and shoving at the sand with one arm managed
+36: to roll over on his back. The horizon-cleared sun lanced sickeningly
+37: across his eyeballs, adding one more pain to the thousand which beset
+38: him. Three vague dark shapes bent above him.
+39: 
+40: "By the very God, he lives! Give him a drink."
+# PG68829
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG68829-Mistake-inside/整本阅读版.txt
+sha256: 737b67697cd5e83f9be9fc46f407d86d1c3b605d663bb0403f1708c91871f9b8
+total_lines: 936
+1:                             MISTAKE INSIDE
+2: 
+3:                             By JAMES BLISH
+4: 
+5:            [Transcriber's Note: This etext was produced from
+6:                     Startling Stories, March 1948.
+7:          Extensive research did not uncover any evidence that
+8:          the U.S. copyright on this publication was renewed.]
+9: 
+10: 
+11: This was England, two hundred years before bomb craters had become a
+12: fixed feature of the English landscape, and while the coffee house
+13: still had precedence over the pub. The fire roared, and the smoke from
+14: long clay church-warden pipes made a blue haze through which cheerful
+15: conversation struggled.
+16: 
+17: The door swung back, and the host stood in the opening, fat hands
+18: on hips, surveying the scene contentedly. Someone, invisible in the
+19: fog, drank a slurred uproarious toast, and a glass slammed into the
+20: fireplace, where the brandy-coated fragments made a myriad of small
+21: blue flames.
+22: 
+23: "Split me if that goes not in the reckoning!" the innkeeper bellowed.
+24: A ragged chorus of derision answered him. The inn cat shot down the
+25: stairs behind him, and its shadow glided briefly over the room as it
+26: passed the fire. It was an impossibly large, dark shadow, and for a
+27: moment it blacked out several of the booths in the rear of the chamber;
+28: the close, motionless air seemed to take on a chill. Then it was gone,
+29: and the cat, apparently annoyed by the noise, vanished into the depths
+30: of a heavy chair.
+31: 
+32: The host forgot about it. He was accustomed to its sedentary tastes.
+33: It often got sat on in the after-theater hilarity. He rolled
+34: good-naturedly across the room as someone pounded on a table for him.
+35: 
+36: But the cat, this time, had not merely burrowed into the cushions. It
+37: was gone. In the chair, in a curiously transparent condition which made
+38: him nearly invisible in the uncertain light, sat a dazed, tired figure
+39: in a Twentieth-Century Tux....
+40: 
+# PG10441
+source: /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG10441-The-Green-Mouse/整本阅读版.txt
+sha256: 4ccbc92b13dd90a79ba62fd83ddfed81a15f04217437c5878391c6e501f013a4
+total_lines: 7177
+1: [Illustration]
+2: 
+3: [Illustration: "She almost wished some fisherman might come into view."]
+4: 
+5: 
+6: 
+7:                               THE GREEN MOUSE
+8: 
+9:                                     By
+10: 
+11:                             ROBERT W. CHAMBERS
+12: 
+13:                           ILLUSTRATED IN COLOR BY
+14: 
+15:                              EDMUND FREDERICK
+16: 
+17:                                    1910
+18: 
+19:                                     TO
+20: 
+21:                                  MY FRIEND
+22: 
+23:                                 JOHN CORBIN
+24: 
+25: Folly and Wisdom, Heavenly twins,
+26:   Sons of the god Imagination,
+27: Heirs of the Virtues--which were Sins
+28:   Till Transcendental Contemplation
+29: Transmogrified their outer skins--
+30:   Friend, do you follow me? For I
+31:   Have lost myself, I don't know why.
+32: 
+33: Resuming, then, this erudite
+34:   And decorative Dedication,--
+35: Accept it, John, with all your might
+36:   In Cinquecentic resignation.
+37: You may not understand it, quite,
+38:   But if you've followed me all through,
+39:   You've done far more than I could do.
+40: 

@@ -1,0 +1,525 @@
+{
+  "task_id": "A-05-B01",
+  "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft",
+  "base_read_status": "FULL_ACTUALLY_READ_BY_AGENT",
+  "deltas_status": "FULL_ACTUALLY_READ",
+  "mappings": [
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/SKILL.md",
+      "sha256": "9d37779dae9cd88d0e80fb0456c9895b9bfb6af118cc74a1c19028b893880f6d",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/SKILL.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            2
+          ],
+          "old_lines": [
+            1,
+            2
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            3,
+            13
+          ],
+          "old_lines": [
+            3,
+            3
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            14,
+            18
+          ],
+          "old_lines": [
+            4,
+            8
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            19,
+            22
+          ],
+          "old_lines": [
+            9,
+            8
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            23,
+            184
+          ],
+          "old_lines": [
+            9,
+            170
+          ]
+        }
+      ],
+      "reading_status": "FULL_BASE_PLUS_ALL_CHANGED_RANGES_READ"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/counterexamples.md",
+      "sha256": "bc8da8c6bafc8a95e353013273a7a96c81c0090f485537ccd1b88240b0fe3ab7",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/counterexamples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/examples.md",
+      "sha256": "77a8530d528050ebf153f4934b4f224dd383c3ff75c8c40f17ce07fa85887033",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/examples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/failure-modes.md",
+      "sha256": "db9ab98073dfddaf33ba3f1f2753223566c3f08f60185c1a27c68fbbe2bdd360",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/failure-modes.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md",
+      "sha256": "e514a70a363d74f592033b48e9348e4ea9acd1156312accd2d152c1344693610",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            10
+          ],
+          "old_lines": [
+            1,
+            10
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            11,
+            11
+          ],
+          "old_lines": [
+            11,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            12,
+            25
+          ],
+          "old_lines": [
+            12,
+            25
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            26,
+            26
+          ],
+          "old_lines": [
+            26,
+            26
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            27,
+            72
+          ],
+          "old_lines": [
+            27,
+            72
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            73,
+            73
+          ],
+          "old_lines": [
+            73,
+            73
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            74,
+            140
+          ],
+          "old_lines": [
+            74,
+            140
+          ]
+        }
+      ],
+      "reading_status": "FULL_BASE_PLUS_ALL_CHANGED_RANGES_READ"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md",
+      "sha256": "ddd1a8f9796cc57c8792dc043a55e90e63f446ab536f3448988556ccd207f9f9",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            66
+          ],
+          "old_lines": [
+            1,
+            66
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            67,
+            67
+          ],
+          "old_lines": [
+            67,
+            67
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            68,
+            103
+          ],
+          "old_lines": [
+            68,
+            103
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            104,
+            104
+          ],
+          "old_lines": [
+            104,
+            104
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            105,
+            124
+          ],
+          "old_lines": [
+            105,
+            124
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            125,
+            125
+          ],
+          "old_lines": [
+            125,
+            125
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            126,
+            131
+          ],
+          "old_lines": [
+            126,
+            131
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            132,
+            132
+          ],
+          "old_lines": [
+            132,
+            132
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            133,
+            147
+          ],
+          "old_lines": [
+            133,
+            147
+          ]
+        }
+      ],
+      "reading_status": "FULL_BASE_PLUS_ALL_CHANGED_RANGES_READ"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md",
+      "sha256": "c2e6b447037a8cc5b880997506d30c7b4cd644b04221a101701e1252acd97f76",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md",
+      "sha256": "cfa76c36b320ed81083ef6d315a4796ad6eed129f4e962e36e1ad90a0edd377a",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md",
+      "sha256": "bbb57246576e3cc8f59eba724a6749924867ce885ab7814cd44721e0038fbc6e",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md",
+      "sha256": "1e84ea05ffd7abf50754648b00dffc0e4f7c7e6dc8d2559f995bac6ced19d58a",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            60
+          ],
+          "old_lines": [
+            1,
+            60
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            61,
+            61
+          ],
+          "old_lines": [
+            61,
+            61
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            62,
+            67
+          ],
+          "old_lines": [
+            62,
+            67
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            68,
+            68
+          ],
+          "old_lines": [
+            68,
+            68
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            69,
+            125
+          ],
+          "old_lines": [
+            69,
+            125
+          ]
+        }
+      ],
+      "reading_status": "FULL_BASE_PLUS_ALL_CHANGED_RANGES_READ"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/sources-index.md",
+      "sha256": "a548f04339132c8d317c801198798fc1ecee09a6afb1546cd4f95224365d42af",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/sources-index.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/SKILL.md",
+      "sha256": "9d37779dae9cd88d0e80fb0456c9895b9bfb6af118cc74a1c19028b893880f6d",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/SKILL.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/counterexamples.md",
+      "sha256": "bc8da8c6bafc8a95e353013273a7a96c81c0090f485537ccd1b88240b0fe3ab7",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/counterexamples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/examples.md",
+      "sha256": "77a8530d528050ebf153f4934b4f224dd383c3ff75c8c40f17ce07fa85887033",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/examples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/failure-modes.md",
+      "sha256": "db9ab98073dfddaf33ba3f1f2753223566c3f08f60185c1a27c68fbbe2bdd360",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/failure-modes.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md",
+      "sha256": "e514a70a363d74f592033b48e9348e4ea9acd1156312accd2d152c1344693610",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md",
+      "sha256": "ddd1a8f9796cc57c8792dc043a55e90e63f446ab536f3448988556ccd207f9f9",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md",
+      "sha256": "c2e6b447037a8cc5b880997506d30c7b4cd644b04221a101701e1252acd97f76",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md",
+      "sha256": "cfa76c36b320ed81083ef6d315a4796ad6eed129f4e962e36e1ad90a0edd377a",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md",
+      "sha256": "bbb57246576e3cc8f59eba724a6749924867ce885ab7814cd44721e0038fbc6e",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md",
+      "sha256": "1e84ea05ffd7abf50754648b00dffc0e4f7c7e6dc8d2559f995bac6ced19d58a",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/results/skills/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-01-2026-10-25/output/speculative-wuxia-fantasy-craft/sources-index.md",
+      "sha256": "a548f04339132c8d317c801198798fc1ecee09a6afb1546cd4f95224365d42af",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/sources-index.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/SKILL.md",
+      "sha256": "d7932d69dc8df14c23805dbf4e2ebc6c0b8aecb14a55eb8a6e80d7cc6acdf4f1",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/SKILL.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/agents/openai.yaml",
+      "sha256": "ceaf93eb8412dc361cfe96a7584e05ecb7f665ca27a9d4271fc38c7507a1aa06",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/agents/openai.yaml"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/counterexamples.md",
+      "sha256": "bc8da8c6bafc8a95e353013273a7a96c81c0090f485537ccd1b88240b0fe3ab7",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/counterexamples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/examples.md",
+      "sha256": "77a8530d528050ebf153f4934b4f224dd383c3ff75c8c40f17ce07fa85887033",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/examples.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/failure-modes.md",
+      "sha256": "db9ab98073dfddaf33ba3f1f2753223566c3f08f60185c1a27c68fbbe2bdd360",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/failure-modes.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md",
+      "sha256": "d4004f93d4efc07b8d258cba7058817f52f6683fcaa8c1c125eb7fca0c3d43d0",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/01-portals-and-otherworld-laws.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md",
+      "sha256": "cefe6a0a11efdfe3a2cffa73eb615c2eea9be3264358ec42958f9b00d090f276",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/02-artifacts-taboos-and-trials.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md",
+      "sha256": "c2e6b447037a8cc5b880997506d30c7b4cd644b04221a101701e1252acd97f76",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/03-price-identity-and-names.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md",
+      "sha256": "cfa76c36b320ed81083ef6d315a4796ad6eed129f4e962e36e1ad90a0edd377a",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/04-institutions-rumor-and-antagonists.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md",
+      "sha256": "bbb57246576e3cc8f59eba724a6749924867ce885ab7814cd44721e0038fbc6e",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/05-prophecy-contracts-and-endings.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md",
+      "sha256": "f26c09b79c3f9d6b8e2c17b7f258c2d4e701fc8202a04d6fb865cfd7d2264c16",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/06-pov-horror-and-boundaries.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/historical-provenance.md",
+      "sha256": "2f3651e2fc651e1242109172af622289d1a9e0e8269f1b9bcfe186dde1503eb8",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/historical-provenance.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/rework-decision.md",
+      "sha256": "cd7a47f3ecf2a8f1d21ff0fcff8a16d768807ff2a254d1aaa41775962f19720f",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/references/rework-decision.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/sources-index.md",
+      "sha256": "a548f04339132c8d317c801198798fc1ecee09a6afb1546cd4f95224365d42af",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-01/rounds/round-p4-agent-a-2026-10-30/output/speculative-wuxia-fantasy-craft/sources-index.md"
+    }
+  ],
+  "read_pages": [
+    1
+  ]
+}

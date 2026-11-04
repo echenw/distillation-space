@@ -1,0 +1,36 @@
+{
+  "id": "PG1033",
+  "title": "Rose o' the River",
+  "author": "Wiggin, Kate Douglas Smith, 1856-1923",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/1033",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Love stories; Log driving -- Maine -- Fiction",
+  "source_catalog_issued": "1997-09-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/1/0/3/1033/1033-0.txt",
+  "mirror_reported_size": 158262,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG1033-Rose-o-the-River",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "5ba06dd8496d1736cd764d54b0bf799acab8b8b82fbf82bf920b3387138f4bb1",
+  "reading_sha256": "8d73c20350c2a28dc37e8865be182444cfacbfc761462ed20d9f4aeb93e138bb",
+  "raw_bytes": 158262,
+  "reading_bytes": 158157,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG1033-Rose-o-the-River/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG1033-Rose-o-the-River/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

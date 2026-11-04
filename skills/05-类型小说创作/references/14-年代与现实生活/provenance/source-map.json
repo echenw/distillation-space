@@ -1,0 +1,481 @@
+{
+  "task_id": "B-09",
+  "source_root": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace",
+  "source_ids": [
+    "PG1400",
+    "PG45",
+    "PG46",
+    "PG514",
+    "PG76",
+    "PG98"
+  ],
+  "files": [
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 551,
+      "sha256": "3f227ec4332e37058915ad5d3199e486f6be9bbea95c03d02b6b2cd008f2122a",
+      "lines": 12,
+      "task_id": "B-09",
+      "new_file": "00-题材指南.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/rules.md",
+      "skill_relative": "references/rules.md",
+      "bytes": 1356,
+      "sha256": "c06a202f353d05b230126d8c4026c2554cf9af3a0d934de2c306d30f2c8067aa",
+      "lines": 28,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/scope-and-conflicts.md",
+      "skill_relative": "references/scope-and-conflicts.md",
+      "bytes": 226,
+      "sha256": "c164d70842590a2a447c4533c4902f4b3d7359e2089ace67bc46f143eee2157d",
+      "lines": 6,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/source-index.md",
+      "skill_relative": "references/source-index.md",
+      "bytes": 642,
+      "sha256": "bae159eee53e7654a0def0a091ec322d9d2dd6dce861528554abb8a3c277f80a",
+      "lines": 12,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/techniques.md",
+      "skill_relative": "references/techniques.md",
+      "bytes": 210,
+      "sha256": "31b9cbcec08b7ae63cf8e3de125cf155f3633759dacfefaa89f6314b2641cbf6",
+      "lines": 6,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/templates/realism-designer.md",
+      "skill_relative": "templates/realism-designer.md",
+      "bytes": 333,
+      "sha256": "b38064f4ac132f7f5a88822e263b697c204116ebc5f6a1af8ca5ca52134067b9",
+      "lines": 13,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/templates/realism-diagnosis.md",
+      "skill_relative": "templates/realism-diagnosis.md",
+      "bytes": 297,
+      "sha256": "16023791061e5dad38e25d02f651ccadb8a2eb8778ffd229dbd01169f7f15abc",
+      "lines": 11,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 551,
+      "sha256": "3f227ec4332e37058915ad5d3199e486f6be9bbea95c03d02b6b2cd008f2122a",
+      "lines": 12,
+      "task_id": "B-09",
+      "new_file": "00-题材指南.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/rules.md",
+      "skill_relative": "references/rules.md",
+      "bytes": 1356,
+      "sha256": "c06a202f353d05b230126d8c4026c2554cf9af3a0d934de2c306d30f2c8067aa",
+      "lines": 28,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/scope-and-conflicts.md",
+      "skill_relative": "references/scope-and-conflicts.md",
+      "bytes": 226,
+      "sha256": "c164d70842590a2a447c4533c4902f4b3d7359e2089ace67bc46f143eee2157d",
+      "lines": 6,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/source-index.md",
+      "skill_relative": "references/source-index.md",
+      "bytes": 642,
+      "sha256": "bae159eee53e7654a0def0a091ec322d9d2dd6dce861528554abb8a3c277f80a",
+      "lines": 12,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/techniques.md",
+      "skill_relative": "references/techniques.md",
+      "bytes": 210,
+      "sha256": "31b9cbcec08b7ae63cf8e3de125cf155f3633759dacfefaa89f6314b2641cbf6",
+      "lines": 6,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/templates/realism-designer.md",
+      "skill_relative": "templates/realism-designer.md",
+      "bytes": 333,
+      "sha256": "b38064f4ac132f7f5a88822e263b697c204116ebc5f6a1af8ca5ca52134067b9",
+      "lines": 13,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/templates/realism-diagnosis.md",
+      "skill_relative": "templates/realism-diagnosis.md",
+      "bytes": 297,
+      "sha256": "16023791061e5dad38e25d02f651ccadb8a2eb8778ffd229dbd01169f7f15abc",
+      "lines": 11,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 7206,
+      "sha256": "e9f6a235db99efe37f2abf4c07b356e27bd0f1d0629fdc348c483222ee092468",
+      "lines": 50,
+      "task_id": "B-09",
+      "new_file": "00-题材指南.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 192,
+      "sha256": "d9118d8ae9a1eeded8f569144dbe1297021c3deadaf1bf752aaf18c725589209",
+      "lines": 3,
+      "task_id": "B-09",
+      "new_file": "00-题材指南.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/examples/worked-example.md",
+      "skill_relative": "examples/worked-example.md",
+      "bytes": 2189,
+      "sha256": "31545f0086b3a53eb7ac8c12470f630da1f8d7520243ba9fb2b67d0f724b2e4b",
+      "lines": 21,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/01-class-and-material-constraints.md",
+      "skill_relative": "references/01-class-and-material-constraints.md",
+      "bytes": 3069,
+      "sha256": "65f2271b58edcbf1a28bd4cdddf4cd19de54088206c59158e093f35c0e6d81d1",
+      "lines": 27,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/02-family-community-and-growth.md",
+      "skill_relative": "references/02-family-community-and-growth.md",
+      "bytes": 2711,
+      "sha256": "fdc8ff05136e52e65e2967148fc8ac165db24cd75a6fcdda776a77f33f82a71b",
+      "lines": 25,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/03-agency-voice-and-endings.md",
+      "skill_relative": "references/03-agency-voice-and-endings.md",
+      "bytes": 3548,
+      "sha256": "fd69e1b31dff425b770db34b792bf499fa36abba9bbeab43dd4711fcf00a54b3",
+      "lines": 33,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/04-history-genre-and-evidence.md",
+      "skill_relative": "references/04-history-genre-and-evidence.md",
+      "bytes": 3138,
+      "sha256": "af8beab175246ab856e10ff06d855c811157cc3a58f63b0f262cc5f92cc22ca5",
+      "lines": 32,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/05-workflow-and-failures.md",
+      "skill_relative": "references/05-workflow-and-failures.md",
+      "bytes": 3379,
+      "sha256": "05302d59232764f3c1dac518c89fb679a492ed70c5d3c7e86762419988ad778c",
+      "lines": 35,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/rules.md",
+      "skill_relative": "references/rules.md",
+      "bytes": 1599,
+      "sha256": "8eab69a7afa9c88b9836d3ef2ba128fd387aa7fae78a532ff4f4c9ff25b1aa5b",
+      "lines": 17,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/scope-and-conflicts.md",
+      "skill_relative": "references/scope-and-conflicts.md",
+      "bytes": 1380,
+      "sha256": "4e75961e3125d727fc5cd0d6a541c973ec1c7894206ec409a658c635d83cbf27",
+      "lines": 15,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/source-index.md",
+      "skill_relative": "references/source-index.md",
+      "bytes": 3597,
+      "sha256": "d774a1f8c1200a34bf678c62ddfd9f7e8a035e1460fa668d153abd299b53607b",
+      "lines": 32,
+      "task_id": "B-09",
+      "new_file": "03-来源与边界.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/techniques.md",
+      "skill_relative": "references/techniques.md",
+      "bytes": 1199,
+      "sha256": "13db87e2d4ed3de2d9b587ade51414692a4f2919c8edd9ae280931d067634169",
+      "lines": 13,
+      "task_id": "B-09",
+      "new_file": "01-条件规则与工作流.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/templates/realism-designer.md",
+      "skill_relative": "templates/realism-designer.md",
+      "bytes": 1626,
+      "sha256": "9f3e9fb15653165cce038c7606461d9026cca274b4053d8ed8304e7711a9d080",
+      "lines": 18,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/templates/realism-diagnosis.md",
+      "skill_relative": "templates/realism-diagnosis.md",
+      "bytes": 1529,
+      "sha256": "20df05aedccd294074fd373d87a96f4a2844ebe3b5262ca8259423e54e64c1ab",
+      "lines": 17,
+      "task_id": "B-09",
+      "new_file": "02-模板与示例.md",
+      "treatment": "semantic-content-merged; source bytes retained upstream",
+      "semantic_reading": "FULL; byte-identical copies read once"
+    }
+  ],
+  "byte_identical_groups": [
+    {
+      "sha256": "3f227ec4332e37058915ad5d3199e486f6be9bbea95c03d02b6b2cd008f2122a",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/SKILL.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/SKILL.md"
+      ]
+    },
+    {
+      "sha256": "c06a202f353d05b230126d8c4026c2554cf9af3a0d934de2c306d30f2c8067aa",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/rules.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/rules.md"
+      ]
+    },
+    {
+      "sha256": "c164d70842590a2a447c4533c4902f4b3d7359e2089ace67bc46f143eee2157d",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/scope-and-conflicts.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/scope-and-conflicts.md"
+      ]
+    },
+    {
+      "sha256": "bae159eee53e7654a0def0a091ec322d9d2dd6dce861528554abb8a3c277f80a",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/source-index.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/source-index.md"
+      ]
+    },
+    {
+      "sha256": "31b9cbcec08b7ae63cf8e3de125cf155f3633759dacfefaa89f6314b2641cbf6",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/references/techniques.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/references/techniques.md"
+      ]
+    },
+    {
+      "sha256": "b38064f4ac132f7f5a88822e263b697c204116ebc5f6a1af8ca5ca52134067b9",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/templates/realism-designer.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/templates/realism-designer.md"
+      ]
+    },
+    {
+      "sha256": "16023791061e5dad38e25d02f651ccadb8a2eb8778ffd229dbd01169f7f15abc",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/results/skills/realism-craft-b09/templates/realism-diagnosis.md",
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-01-2026-10-25/output/realism-craft-b09/templates/realism-diagnosis.md"
+      ]
+    },
+    {
+      "sha256": "e9f6a235db99efe37f2abf4c07b356e27bd0f1d0629fdc348c483222ee092468",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/SKILL.md"
+      ]
+    },
+    {
+      "sha256": "d9118d8ae9a1eeded8f569144dbe1297021c3deadaf1bf752aaf18c725589209",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/agents/openai.yaml"
+      ]
+    },
+    {
+      "sha256": "31545f0086b3a53eb7ac8c12470f630da1f8d7520243ba9fb2b67d0f724b2e4b",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/examples/worked-example.md"
+      ]
+    },
+    {
+      "sha256": "65f2271b58edcbf1a28bd4cdddf4cd19de54088206c59158e093f35c0e6d81d1",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/01-class-and-material-constraints.md"
+      ]
+    },
+    {
+      "sha256": "fdc8ff05136e52e65e2967148fc8ac165db24cd75a6fcdda776a77f33f82a71b",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/02-family-community-and-growth.md"
+      ]
+    },
+    {
+      "sha256": "fd69e1b31dff425b770db34b792bf499fa36abba9bbeab43dd4711fcf00a54b3",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/03-agency-voice-and-endings.md"
+      ]
+    },
+    {
+      "sha256": "af8beab175246ab856e10ff06d855c811157cc3a58f63b0f262cc5f92cc22ca5",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/04-history-genre-and-evidence.md"
+      ]
+    },
+    {
+      "sha256": "05302d59232764f3c1dac518c89fb679a492ed70c5d3c7e86762419988ad778c",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/05-workflow-and-failures.md"
+      ]
+    },
+    {
+      "sha256": "8eab69a7afa9c88b9836d3ef2ba128fd387aa7fae78a532ff4f4c9ff25b1aa5b",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/rules.md"
+      ]
+    },
+    {
+      "sha256": "4e75961e3125d727fc5cd0d6a541c973ec1c7894206ec409a658c635d83cbf27",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/scope-and-conflicts.md"
+      ]
+    },
+    {
+      "sha256": "d774a1f8c1200a34bf678c62ddfd9f7e8a035e1460fa668d153abd299b53607b",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/source-index.md"
+      ]
+    },
+    {
+      "sha256": "13db87e2d4ed3de2d9b587ade51414692a4f2919c8edd9ae280931d067634169",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/references/techniques.md"
+      ]
+    },
+    {
+      "sha256": "9f3e9fb15653165cce038c7606461d9026cca274b4053d8ed8304e7711a9d080",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/templates/realism-designer.md"
+      ]
+    },
+    {
+      "sha256": "20df05aedccd294074fd373d87a96f4a2844ebe3b5262ca8259423e54e64c1ab",
+      "paths": [
+        "distill/分类蒸馏/16-类型小说专项/13-年代与现实生活/rounds/round-03-2026-10-30/output/realism-craft-b09/templates/realism-diagnosis.md"
+      ]
+    }
+  ],
+  "semantic_reading": "All 21 unique files read in full; initial truncated middle re-read explicitly. Original books not re-read.",
+  "source_version": "round-03-2026-10-30/output with older unique mechanisms retained conditionally",
+  "validation": "Static assembly only; independent review and consumer effectiveness NOT_PROVEN",
+  "integration_primary_rechecks": {
+    "execution_id": "cad6c6d1-272d-4356-b2cc-9c2de4fc5773",
+    "PG46": [
+      [
+        3495,
+        3515
+      ],
+      [
+        3805,
+        3842
+      ]
+    ],
+    "PG98": [
+      [
+        15820,
+        15900
+      ]
+    ],
+    "scope": "Only named windows independently read by Main; all other PG anchors inherited; no full-book re-reading claim."
+  },
+  "integration_repairs": "audit/realism-integration-repairs.json"
+}

@@ -1,0 +1,579 @@
+[
+  {
+    "id": "AT01",
+    "title": "按目标与正典选择机制",
+    "rule": "目标、子类型和证据系统允许混合与转型，未知输入不阻断可做的设计。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/SKILL.md",
+        "sha256": "d08bd600792cf07cfa79497d4e35fed6aa1c059a18852475b8f07b8e8bd2c771",
+        "start_line": 1,
+        "end_line": 94
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/SKILL.md",
+        "sha256": "35112e936bb339416ae4e9c2383bca6779f69f07a8db46adc37165038b0b3984",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/subtype-routing.md",
+        "sha256": "edcaa62ae84f3a9c40bc1b9e41a778990d32bb5094aba842ed298bbc20b879b1",
+        "start_line": 1,
+        "end_line": 36
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT02",
+    "title": "价值、动机与目标变化",
+    "rule": "财富、生命、知识、营救、身份、归属可发生价值迁移；不把道德选择绑死角色类型。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/01-treasure-and-clues.md",
+        "sha256": "f5ef8324121e98e2231306fc5bc4c67841d362af8693cf50005bd52bfc6b05d0",
+        "start_line": 5,
+        "end_line": 23
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/techniques.md",
+        "sha256": "ab30ed67f164052d2ce4e21f2fa051b7de59238b63d5c7429bf218c1e59c166a",
+        "start_line": 3,
+        "end_line": 5
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT03",
+    "title": "物质位置与取得链",
+    "rule": "藏、找、证实、控制、搬运、处分分开解释，仅展开影响故事的环节。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/01-treasure-and-clues.md",
+        "sha256": "f5ef8324121e98e2231306fc5bc4c67841d362af8693cf50005bd52bfc6b05d0",
+        "start_line": 24,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/techniques.md",
+        "sha256": "ab30ed67f164052d2ce4e21f2fa051b7de59238b63d5c7429bf218c1e59c166a",
+        "start_line": 19,
+        "end_line": 33
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 143,
+        "end_line": 152
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT04",
+    "title": "线索、误读与复核",
+    "rule": "以来源、持有链、可见时间、可伪造性和验证质量评估线索，不设出现次数与来源数量硬门。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/01-treasure-and-clues.md",
+        "sha256": "f5ef8324121e98e2231306fc5bc4c67841d362af8693cf50005bd52bfc6b05d0",
+        "start_line": 42,
+        "end_line": 63
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 41,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/techniques.md",
+        "sha256": "ab30ed67f164052d2ce4e21f2fa051b7de59238b63d5c7429bf218c1e59c166a",
+        "start_line": 7,
+        "end_line": 9
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/conflicts-and-exceptions.md",
+        "sha256": "0922ce23337bc7f0212a16db550f28687f2c194a6e27939d12c4107ca04c9b9a",
+        "start_line": 6,
+        "end_line": 36
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT05",
+    "title": "知识分布与失联信息",
+    "rule": "独占与分散是可切换的信息结构；缺席、迟到、假讯与制度时序分别产生悬念。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/05-riddles-and-nonhuman.md",
+        "sha256": "fd3ae234e5ab2f045fc857a5b74160a90be9612994a1ae4d116fd0e41f70f2be",
+        "start_line": 5,
+        "end_line": 29
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 14,
+        "end_line": 21
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 20,
+        "end_line": 25
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/conflicts-and-exceptions.md",
+        "sha256": "0922ce23337bc7f0212a16db550f28687f2c194a6e27939d12c4107ca04c9b9a",
+        "start_line": 6,
+        "end_line": 17
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT06",
+    "title": "组织、专业与权责",
+    "rule": "根据规模与情境选择分工、服务准入、否决、财产和异议机制，保留忠诚与非正式合作。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/02-pirates-and-villains.md",
+        "sha256": "ba83755656f6af0c9e97fc32291a389eb116a1d5d56c687343ebfc8c86b686fc",
+        "start_line": 28,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 5,
+        "end_line": 24
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT07",
+    "title": "反派控制点与声望",
+    "rule": "角色可混合、转变或无法归型；结局由行为与关系造成，声望的受众和物质作用具体化。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/02-pirates-and-villains.md",
+        "sha256": "ba83755656f6af0c9e97fc32291a389eb116a1d5d56c687343ebfc8c86b686fc",
+        "start_line": 5,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/02-pirates-and-villains.md",
+        "sha256": "ba83755656f6af0c9e97fc32291a389eb116a1d5d56c687343ebfc8c86b686fc",
+        "start_line": 69,
+        "end_line": 96
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT08",
+    "title": "产业链、潜行与逃亡",
+    "rule": "展示故事所需的入口、信息、成本和可识别风险；犯罪机制作为叙事因果，不迁移成现实操作。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/02-pirates-and-villains.md",
+        "sha256": "ba83755656f6af0c9e97fc32291a389eb116a1d5d56c687343ebfc8c86b686fc",
+        "start_line": 49,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 60,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 68,
+        "end_line": 84
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 62,
+        "end_line": 77
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT09",
+    "title": "路线、资源与绝境选择",
+    "rule": "地理、时序、工具、技能与风险决定可选动作；量化程度随叙事需要，不设固定节点或失败次数。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 25,
+        "end_line": 59
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/04-law-and-detection.md",
+        "sha256": "4abcb60062292ded8935048c15bf360f8b8bd2ac59f476d70bf64fec053d46ee",
+        "start_line": 79,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/techniques.md",
+        "sha256": "ab30ed67f164052d2ce4e21f2fa051b7de59238b63d5c7429bf218c1e59c166a",
+        "start_line": 11,
+        "end_line": 17
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 128,
+        "end_line": 134
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT10",
+    "title": "现实、奇观与解释层级",
+    "rule": "先分角色判断、故事正典和现实知识；科学、魔法、未知与讽刺可以共存但不能偷换承诺。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/01-treasure-and-clues.md",
+        "sha256": "f5ef8324121e98e2231306fc5bc4c67841d362af8693cf50005bd52bfc6b05d0",
+        "start_line": 64,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/05-riddles-and-nonhuman.md",
+        "sha256": "fd3ae234e5ab2f045fc857a5b74160a90be9612994a1ae4d116fd0e41f70f2be",
+        "start_line": 96,
+        "end_line": 114
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 32,
+        "end_line": 39
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 86,
+        "end_line": 93
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/conflicts-and-exceptions.md",
+        "sha256": "0922ce23337bc7f0212a16db550f28687f2c194a6e27939d12c4107ca04c9b9a",
+        "start_line": 38,
+        "end_line": 45
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT11",
+    "title": "法律、权利与程序",
+    "rule": "分别写实际占有、法律授权、正当性、文化利益与程序结果，不用一封信或胜利替代全部问题。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/04-law-and-detection.md",
+        "sha256": "4abcb60062292ded8935048c15bf360f8b8bd2ac59f476d70bf64fec053d46ee",
+        "start_line": 5,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/techniques.md",
+        "sha256": "ab30ed67f164052d2ce4e21f2fa051b7de59238b63d5c7429bf218c1e59c166a",
+        "start_line": 19,
+        "end_line": 21
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 143,
+        "end_line": 152
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT12",
+    "title": "非人对手与情绪设定",
+    "rule": "用可观察行为形成假说，选择实验、回避、沟通或利用；虚构情绪可物理化但不认证心理科学。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/05-riddles-and-nonhuman.md",
+        "sha256": "fd3ae234e5ab2f045fc857a5b74160a90be9612994a1ae4d116fd0e41f70f2be",
+        "start_line": 30,
+        "end_line": 79
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT13",
+    "title": "暴政、知识与技术结算",
+    "rule": "呈现技术控制、知识缺口和反制代价；技术去留由作品价值与效果裁决，不设每件金手指必有破解。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/05-riddles-and-nonhuman.md",
+        "sha256": "fd3ae234e5ab2f045fc857a5b74160a90be9612994a1ae4d116fd0e41f70f2be",
+        "start_line": 47,
+        "end_line": 79
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/06-endings-and-sources.md",
+        "sha256": "f6c9d46c7e6db8851fcce60bbca1e110d2a33ae750ea336d8375ff729b7f147d",
+        "start_line": 5,
+        "end_line": 25
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT14",
+    "title": "声音、标题与叙述框架",
+    "rule": "声音可为氛围、身份、警报或译码；标题与框架各有信息功能，不设歌谣配额或叙述者必死。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 59,
+        "end_line": 66
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 104,
+        "end_line": 129
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 140,
+        "end_line": 165
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 85,
+        "end_line": 141
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT15",
+    "title": "语调、暴力与灾难知觉",
+    "rule": "按视角和目标选择节量、共情、距离、静物、反差、媒介降级和消失，任何装置都不强制。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 97,
+        "end_line": 184
+      },
+      {
+        "task_id": "A-09-B01",
+        "source_id": "PG44875",
+        "file": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/14-探险寻宝/PG44875-The-Cruise-of-the-Midge-Vol-1-of-2/整本阅读版.txt",
+        "sha256": "0aa185ce70ef69879aab67bf6891e92b95fb88a802b3a806802a315826f25f77",
+        "read_ranges": [
+          [
+            4660,
+            4720
+          ],
+          [
+            7550,
+            7585
+          ],
+          [
+            7690,
+            7720
+          ]
+        ],
+        "verified_claim_lines": [
+          [
+            4680,
+            4681
+          ],
+          [
+            7571,
+            7571
+          ],
+          [
+            7705,
+            7705
+          ]
+        ],
+        "status": "ORIGINAL_PG_PARTIAL_RECHECKED",
+        "evidence_copy": "evidence/verified-PG44875-windows.txt",
+        "evidence_copy_sha256": "138a79d01a12b58e7a6fbc13fc0b9415e6b485d5055c29285ac1d9b95d2a1fc3"
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; PG44875_LISTED_WINDOWS_ACTUALLY_READ; OTHER_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT16",
+    "title": "嵌套文本与可信装置",
+    "rule": "嵌套传记、证书、文书与附录的功能和可靠性分别评估，无5%篇幅硬阈值。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 166,
+        "end_line": 184
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/05-riddles-and-nonhuman.md",
+        "sha256": "fd3ae234e5ab2f045fc857a5b74160a90be9612994a1ae4d116fd0e41f70f2be",
+        "start_line": 96,
+        "end_line": 114
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT17",
+    "title": "因果收束与开放余味",
+    "rule": "事件、物资、权利、关系与动机可分层结算；开放或闭合可组合，不强制返乡婚礼死亡。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/03-expedition-and-survival.md",
+        "sha256": "0065b19ac465a9d9416517adcbf5564339395a7ee8fd1b41b4c7e8040e099da0",
+        "start_line": 81,
+        "end_line": 96
+      },
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/06-endings-and-sources.md",
+        "sha256": "f6c9d46c7e6db8851fcce60bbca1e110d2a33ae750ea336d8375ff729b7f147d",
+        "start_line": 1,
+        "end_line": 147
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/rules.md",
+        "sha256": "596f25651812a788b9caacc66a17f170c12aeb846f6bfe3896d4cf129dab5df0",
+        "start_line": 131,
+        "end_line": 138
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/rules.md",
+        "sha256": "44cffe49e8d24b04e1b99cf89a5066229bab73eaf51813d535526437d08f850a",
+        "start_line": 113,
+        "end_line": 126
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "AT18",
+    "title": "历史立场、证据与未证明",
+    "rule": "区分作品现象、设计推断和现代事实；保留历史语境与证据冲突，拒绝无根据的普遍效力和族数背书。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-09-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-01/rounds/round-p4-agent2-final-2026-10-30/output/adventure-treasure-craft/references/version-and-provenance.md",
+        "sha256": "b51ce4a898104988a21e8e4458628e14cde3743e34f63f5af333135451b240e9",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-09-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-02/rounds/round-p4-wave4-agent4-final-2026-10-30/output/adventure-treasure-craft-b02/references/source-index.md",
+        "sha256": "f411681f367142919407a471c1a6852f1c9ecf9c9f713b5aa03a775d8cd0ccaa",
+        "start_line": 1,
+        "end_line": 42
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/version-and-provenance.md",
+        "sha256": "e38bbf080b2902e81f5ee7d8e0d4afcb0437a1cfda29ebd50b5cde6751386b1e",
+        "start_line": 1,
+        "end_line": 46
+      },
+      {
+        "task_id": "A-09-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/14-探险寻宝/批次-03/rounds/round-p4-final-2026-10-30/output/adventure-treasure-craft-b03/references/conflicts-and-exceptions.md",
+        "sha256": "0922ce23337bc7f0212a16db550f28687f2c194a6e27939d12c4107ca04c9b9a",
+        "start_line": 47,
+        "end_line": 61
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  }
+]

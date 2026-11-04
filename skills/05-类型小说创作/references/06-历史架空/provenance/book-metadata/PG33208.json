@@ -1,0 +1,36 @@
+{
+  "id": "PG33208",
+  "title": "The Laughing Cavalier: The Story of the Ancestor of the Scarlet Pimpernel",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/33208",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Adventure stories; Netherlands -- History -- 17th century -- Fiction",
+  "source_catalog_issued": "2010-07-20",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/3/2/0/33208/33208-8.txt",
+  "mirror_reported_size": 749710,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG33208-The-Laughing-Cavalier-The-Story-of-the-Ancestor-of-the-Scarl",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "bc3dbc4a51b8d6882a1d116a975686561ee8222d74b542871087fd099618fa39",
+  "reading_sha256": "3128baeff08253151035a74a4e5264ef640c7bc4ca1ca5fd754abd2a789e1f06",
+  "raw_bytes": 749710,
+  "reading_bytes": 729822,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG33208-The-Laughing-Cavalier-The-Story-of-the-Ancestor-of-the-Scarl/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG33208-The-Laughing-Cavalier-The-Story-of-the-Ancestor-of-the-Scarl/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

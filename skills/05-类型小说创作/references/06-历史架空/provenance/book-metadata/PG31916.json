@@ -1,0 +1,36 @@
+{
+  "id": "PG31916",
+  "title": "The Works of Robert Louis Stevenson - Swanston Edition, Vol. 10",
+  "author": "Stevenson, Robert Louis, 1850-1894; Lang, Andrew, 1844-1912 [Other]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/31916",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Christmas stories; Adventure and adventurers -- Fiction; Kidnapping -- Fiction",
+  "source_catalog_issued": "2010-04-07",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/1/9/1/31916/31916-8.txt",
+  "mirror_reported_size": 576950,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG31916-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-10",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "96aefeadc5f1b8a5539d1031a0e8cb66278054bf2b60854c81e825b036f0b933",
+  "reading_sha256": "4ea09cb72083644ea19ef0f6fea1766f69d0dfe340cbbda6e06098ad77112e4a",
+  "raw_bytes": 576950,
+  "reading_bytes": 557048,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG31916-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-10/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG31916-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-10/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

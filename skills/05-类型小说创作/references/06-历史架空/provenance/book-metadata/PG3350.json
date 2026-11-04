@@ -1,0 +1,36 @@
+{
+  "id": "PG3350",
+  "title": "The Wandering Jew — Complete",
+  "author": "Sue, Eugène, 1804-1857",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/3350",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Jesuits -- Fiction; Inheritance and succession -- Fiction; Wandering Jew -- Fiction; France -- History -- Louis Philippe, 1830-1848 -- Fiction",
+  "source_catalog_issued": "2004-10-25",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/3/5/3350/3350-0.txt",
+  "mirror_reported_size": 3152146,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG3350-The-Wandering-Jew-Complete",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "9b9f3507f70b78641c686e15cf9edfb99fcaede3bfb933c890faa2a3ee5a0e73",
+  "reading_sha256": "2faa614ded670adbb8f19942173eb293e75b6be67c243825b4a482c390f7097c",
+  "raw_bytes": 3152146,
+  "reading_bytes": 3132372,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG3350-The-Wandering-Jew-Complete/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG3350-The-Wandering-Jew-Complete/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

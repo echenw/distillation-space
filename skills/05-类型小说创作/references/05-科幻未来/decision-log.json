@@ -1,0 +1,3246 @@
+[
+  {
+    "id": "D01",
+    "decision": "MERGE",
+    "comparison": {
+      "object": "五批以novum、能力、制度或概念分别命名相近推演",
+      "condition": "对象相同且条件/动作/限制/结果相同",
+      "action": "按SF对象合并，具体书例保留K卡",
+      "limitation": "标题或术语相似不足以合并；同一对象的不同世界条件分支保留",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "五批以novum、能力、制度或概念分别命名相近推演",
+    "current": "按SF对象合并，具体书例保留K卡",
+    "reason": "标题或术语相似不足以合并；同一对象的不同世界条件分支保留",
+    "rules": [
+      "SF01",
+      "SF02"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/rule-adjudication.md",
+        "sha256": "54a70a2ce1fd0f9e7f8ce24a3a0f1d3a1a235588b2f1d318b546227a4e74aea4",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/version-and-provenance.md",
+        "sha256": "6fd8ffb0cde82351aef97df79170536a849432deba5660f4351b7f403760c719",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 100
+      }
+    ]
+  },
+  {
+    "id": "D02",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "所有能力必须倒计时、所有救援必须外部损失",
+      "condition": "冲突需要边界；世界已存在共享瓶颈",
+      "action": "时间只是边界之一；冗余/后稀缺不硬造停摆",
+      "limitation": "B01最新P4明确撤回，B02/B04正文残留不能恢复旧铁律",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "所有能力必须倒计时、所有救援必须外部损失",
+    "current": "时间只是边界之一；冗余/后稀缺不硬造停摆",
+    "reason": "B01最新P4明确撤回，B02/B04正文残留不能恢复旧铁律",
+    "rules": [
+      "SF03",
+      "SF05"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 74,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/expedition-combat.md",
+        "sha256": "aaee29b6437d51e66a78e7413366db403bec8e25317156286298c5d99c4eeaab",
+        "start_line": 1,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 20,
+        "end_line": 30
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      }
+    ]
+  },
+  {
+    "id": "D03",
+    "decision": "BRANCH",
+    "comparison": {
+      "object": "识破敌人就安全／识别永远不等于安全",
+      "condition": "PG72认知致害成立与否",
+      "action": "认知免疫世界可免疫；David等世界只增加知识",
+      "limitation": "对象和致害条件不同，不互相推翻成新通则",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "识破敌人就安全／识别永远不等于安全",
+    "current": "认知免疫世界可免疫；David等世界只增加知识",
+    "reason": "对象和致害条件不同，不互相推翻成新通则",
+    "rules": [
+      "SF03",
+      "SF08"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 74,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      }
+    ]
+  },
+  {
+    "id": "D04",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "幻象必须真实伤亡配重",
+      "condition": "真实感可能由幻象中己方倒下制造",
+      "action": "保存真实感设计，实际伤亡无证不指定",
+      "limitation": "表演可信与物理牺牲不是同一事实；K001避免扩大原断言",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "幻象必须真实伤亡配重",
+    "current": "保存真实感设计，实际伤亡无证不指定",
+    "reason": "表演可信与物理牺牲不是同一事实；K001避免扩大原断言",
+    "rules": [
+      "SF03",
+      "SF09"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 74,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 106,
+        "end_line": 131
+      }
+    ]
+  },
+  {
+    "id": "D05",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "能力必须可反制；解法必须源自限制",
+      "condition": "规则智胜承诺与不可抗力/失败承诺分开",
+      "action": "可解时给可发现条件；无解时转目标和后果",
+      "limitation": "B01/02/04新边界支持；悲剧不必硬生漏洞",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "能力必须可反制；解法必须源自限制",
+    "current": "可解时给可发现条件；无解时转目标和后果",
+    "reason": "B01/02/04新边界支持；悲剧不必硬生漏洞",
+    "rules": [
+      "SF03",
+      "SF25"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 74,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D06",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "新奇点只能一个主加一个辅、每后果立即可见",
+      "condition": "多设定耦合或迟发/未知后果",
+      "action": "围绕承重因果组织，不按数量或可视性淘汰",
+      "limitation": "PG1906意识与制度、PG1013多身体/环境设定并存",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "新奇点只能一个主加一个辅、每后果立即可见",
+    "current": "围绕承重因果组织，不按数量或可视性淘汰",
+    "reason": "PG1906意识与制度、PG1013多身体/环境设定并存",
+    "rules": [
+      "SF02",
+      "SF11"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/heterotopia-inversion.md",
+        "sha256": "6d59ad8aa01403319af112bf3654d2c4ee97c3d0095158f1026e17cfcbd776cb",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 1,
+        "end_line": 89
+      }
+    ]
+  },
+  {
+    "id": "D07",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "所有设定必须可计算、至少四规格/两兑现",
+      "condition": "工程核算与寓言/奇观形式不同",
+      "action": "只核承重数字；开放/质性设定允许",
+      "limitation": "B04分流协议已区分世界内与现实，固定配额无证明",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "所有设定必须可计算、至少四规格/两兑现",
+    "current": "只核承重数字；开放/质性设定允许",
+    "reason": "B04分流协议已区分世界内与现实，固定配额无证明",
+    "rules": [
+      "SF02",
+      "SF04"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/hard-sf-traceability.md",
+        "sha256": "4c939f19f6222b00426e22dc2a65d24885e429f4986f711f24bf0d2c1a9facb4",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/05-time-and-mechanism-ledger.md",
+        "sha256": "ff79d49227b1aaddec4a6b15ff425a4f1c4929102050822b2e3e63ce7ea69456",
+        "start_line": 1,
+        "end_line": 47
+      }
+    ]
+  },
+  {
+    "id": "D08",
+    "decision": "BRANCH",
+    "comparison": {
+      "object": "试验一定能防错／小模型成功却失败",
+      "condition": "是否测到影响结果的尺度、条件与反馈",
+      "action": "分别写拒测风险和缩比遗漏",
+      "limitation": "PG53016拒测与PG59587尺度失败不是矛盾结论",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "试验一定能防错／小模型成功却失败",
+    "current": "分别写拒测风险和缩比遗漏",
+    "reason": "PG53016拒测与PG59587尺度失败不是矛盾结论",
+    "rules": [
+      "SF04"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/hard-sf-traceability.md",
+        "sha256": "4c939f19f6222b00426e22dc2a65d24885e429f4986f711f24bf0d2c1a9facb4",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/05-time-and-mechanism-ledger.md",
+        "sha256": "ff79d49227b1aaddec4a6b15ff425a4f1c4929102050822b2e3e63ce7ea69456",
+        "start_line": 1,
+        "end_line": 47
+      }
+    ]
+  },
+  {
+    "id": "D09",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "工程中段必须算错一次",
+      "condition": "用户选择计算悬念时",
+      "action": "允许可复查重算，不强制错误情节",
+      "limitation": "B04新协议已有撤回；数字与人物/形式可并用",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "工程中段必须算错一次",
+    "current": "允许可复查重算，不强制错误情节",
+    "reason": "B04新协议已有撤回；数字与人物/形式可并用",
+    "rules": [
+      "SF04",
+      "SF16"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/hard-sf-traceability.md",
+        "sha256": "4c939f19f6222b00426e22dc2a65d24885e429f4986f711f24bf0d2c1a9facb4",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/05-time-and-mechanism-ledger.md",
+        "sha256": "ff79d49227b1aaddec4a6b15ff425a4f1c4929102050822b2e3e63ce7ea69456",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/01-exposition-and-evidence.md",
+        "sha256": "3d16a07ca8f776d7ef3d21537eac684bebad7e59224edcb9113166921f86501c",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 1,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      }
+    ]
+  },
+  {
+    "id": "D10",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "军事实力可固定换人命、每次行动必须付出至少一项成本",
+      "condition": "资源或价值确实受约束",
+      "action": "记录实际消耗和选择，不虚构统一交换率",
+      "limitation": "PG70691是战术案例，B01冗余分支反证全称",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "军事实力可固定换人命、每次行动必须付出至少一项成本",
+    "current": "记录实际消耗和选择，不虚构统一交换率",
+    "reason": "PG70691是战术案例，B01冗余分支反证全称",
+    "rules": [
+      "SF05",
+      "SF26"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/expedition-combat.md",
+        "sha256": "aaee29b6437d51e66a78e7413366db403bec8e25317156286298c5d99c4eeaab",
+        "start_line": 1,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 20,
+        "end_line": 30
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 77,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 224,
+        "end_line": 248
+      }
+    ]
+  },
+  {
+    "id": "D11",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "机器只能凭行为/死亡证明人格",
+      "condition": "叙述可靠性与法律、社会判断不同",
+      "action": "接受可靠内视等适用证据，保留争议层",
+      "limitation": "B04 PG32079内视与PG22466程序行为已分流",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "机器只能凭行为/死亡证明人格",
+    "current": "接受可靠内视等适用证据，保留争议层",
+    "reason": "B04 PG32079内视与PG22466程序行为已分流",
+    "rules": [
+      "SF06"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 74,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      }
+    ]
+  },
+  {
+    "id": "D12",
+    "decision": "BRANCH",
+    "comparison": {
+      "object": "人格自述必最弱／任一可核信号即可定人格",
+      "condition": "自述、仪器、记忆的具体可伪造性",
+      "action": "按世界规则评估，不设固定证据排名或多源门槛",
+      "limitation": "单一可靠叙述可以成立，多处同源伪证仍不成立",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "人格自述必最弱／任一可核信号即可定人格",
+    "current": "按世界规则评估，不设固定证据排名或多源门槛",
+    "reason": "单一可靠叙述可以成立，多处同源伪证仍不成立",
+    "rules": [
+      "SF06",
+      "SF08"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 74,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      }
+    ]
+  },
+  {
+    "id": "D13",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "无恶意就不是造物反噬",
+      "condition": "结果伤害与主观动机是两维",
+      "action": "保留Herbert等字面服从造成伤害",
+      "limitation": "PG30371自修改限制不排除有害后果；K036",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "无恶意就不是造物反噬",
+    "current": "保留Herbert等字面服从造成伤害",
+    "reason": "PG30371自修改限制不排除有害后果；K036",
+    "rules": [
+      "SF07"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      }
+    ]
+  },
+  {
+    "id": "D14",
+    "decision": "REVISE_PRIMARY_VERIFIED",
+    "comparison": {
+      "object": "PG16921船猫可反证自动机反噬",
+      "condition": "原Skill未证明猫是自动机",
+      "action": "PG16921 L498–512船猫的动物叙述不支持自动机类别；保留气味与交易机制。",
+      "limitation": "只核明确窗口；其他原PG锚仍继承。",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "PG16921船猫可反证自动机反噬",
+    "current": "PG16921 L498–512船猫的动物叙述不支持自动机类别；保留气味与交易机制。",
+    "reason": "本轮实读L460–540，正文K036及冲突表同步修正。",
+    "rules": [
+      "SF07",
+      "SF10"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/alien-contact.md",
+        "sha256": "43929a910f562b1b4fb290087ceb300b56b5ce333943ee109f754595b986abba",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/02-alienness-and-scale.md",
+        "sha256": "71a4280e323893e8cfab71ad6aeb5a02dd97ed63aaf24dc1ea29478a1ad80529",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 16,
+        "end_line": 41
+      }
+    ],
+    "prior_decision_before_main_recheck": {
+      "decision": "NOT_PROVEN",
+      "current": "撤回类别证据，保留其气味/交易情节",
+      "reason": "不能以未证分类支持跨类规则"
+    },
+    "main_primary_recheck_execution_id": "4ca957cc-765c-4807-8a03-4aac1db48d2d"
+  },
+  {
+    "id": "D15",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "每个AI都四阶成长、一句话目标推出全部行为",
+      "condition": "Lex亲密替代的一条特定路径",
+      "action": "保留按钮/品味/命名/替代细节，可用其他人格形态",
+      "limitation": "同批PG32079与PG31611另有内视和自我宣告",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "每个AI都四阶成长、一句话目标推出全部行为",
+    "current": "保留按钮/品味/命名/替代细节，可用其他人格形态",
+    "reason": "同批PG32079与PG31611另有内视和自我宣告",
+    "rules": [
+      "SF06",
+      "SF07"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 74,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      }
+    ]
+  },
+  {
+    "id": "D16",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "身份必由记忆和承认决定而不由身体",
+      "condition": "本作身份本体论与制度条件",
+      "action": "身体、记忆、自认/他认/法律分别记账",
+      "limitation": "换身与人格整合是不同答案，不能把一种定义普遍化",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "身份必由记忆和承认决定而不由身体",
+    "current": "身体、记忆、自认/他认/法律分别记账",
+    "reason": "换身与人格整合是不同答案，不能把一种定义普遍化",
+    "rules": [
+      "SF08"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      }
+    ]
+  },
+  {
+    "id": "D17",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "测谎/声纹/语言不可推翻，至少双源才可信",
+      "condition": "检测指标和伪造/误判条件",
+      "action": "评估独立性和可靠性，不以数量代质量",
+      "limitation": "原身份资料已列录音/模仿与口音误判风险",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "测谎/声纹/语言不可推翻，至少双源才可信",
+    "current": "评估独立性和可靠性，不以数量代质量",
+    "reason": "原身份资料已列录音/模仿与口音误判风险",
+    "rules": [
+      "SF08",
+      "SF09"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 106,
+        "end_line": 131
+      }
+    ]
+  },
+  {
+    "id": "D18",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "同化越深忠诚越低；死信箱自首假死标准三连",
+      "condition": "潜伏的实际探测与目标",
+      "action": "保留独立策略和失效可能，取消反比和固定链",
+      "limitation": "B01P4允许关系/资源/联络限制；K012",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "同化越深忠诚越低；死信箱自首假死标准三连",
+    "current": "保留独立策略和失效可能，取消反比和固定链",
+    "reason": "B01P4允许关系/资源/联络限制；K012",
+    "rules": [
+      "SF09"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 106,
+        "end_line": 131
+      }
+    ]
+  },
+  {
+    "id": "D19",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "第一接触必须误判、承认无知、三规则三后果",
+      "condition": "双方感知和利益是否产生误读",
+      "action": "可直接理解仍有利益冲突；按承重协议取项",
+      "limitation": "沟通、制度、尺度案例各有不同机制",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "第一接触必须误判、承认无知、三规则三后果",
+    "current": "可直接理解仍有利益冲突；按承重协议取项",
+    "reason": "沟通、制度、尺度案例各有不同机制",
+    "rules": [
+      "SF10"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/alien-contact.md",
+        "sha256": "43929a910f562b1b4fb290087ceb300b56b5ce333943ee109f754595b986abba",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/02-alienness-and-scale.md",
+        "sha256": "71a4280e323893e8cfab71ad6aeb5a02dd97ed63aaf24dc1ea29478a1ad80529",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 16,
+        "end_line": 41
+      }
+    ]
+  },
+  {
+    "id": "D20",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "名词到抽象词为普遍学习阶梯，图像更有效",
+      "condition": "PG1013具体教学条件及双方感官",
+      "action": "作为条件案例；允许其他次序与通道",
+      "limitation": "来源为单作品，不足支持通用语言规律",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "名词到抽象词为普遍学习阶梯，图像更有效",
+    "current": "作为条件案例；允许其他次序与通道",
+    "reason": "来源为单作品，不足支持通用语言规律",
+    "rules": [
+      "SF10"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/alien-contact.md",
+        "sha256": "43929a910f562b1b4fb290087ceb300b56b5ce333943ee109f754595b986abba",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/02-alienness-and-scale.md",
+        "sha256": "71a4280e323893e8cfab71ad6aeb5a02dd97ed63aaf24dc1ea29478a1ad80529",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 16,
+        "end_line": 41
+      }
+    ]
+  },
+  {
+    "id": "D21",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "每项制度必须身体化、每段理性辩护后身体不适",
+      "condition": "讽刺目标与感官/制度载体",
+      "action": "可用身体、文书、工作、日常或辩论独立承载",
+      "limitation": "PG1013是一种方式，其他制度文本支持不同表达",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "每项制度必须身体化、每段理性辩护后身体不适",
+    "current": "可用身体、文书、工作、日常或辩论独立承载",
+    "reason": "PG1013是一种方式，其他制度文本支持不同表达",
+    "rules": [
+      "SF11",
+      "SF16"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/heterotopia-inversion.md",
+        "sha256": "6d59ad8aa01403319af112bf3654d2c4ee97c3d0095158f1026e17cfcbd776cb",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 1,
+        "end_line": 89
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/01-exposition-and-evidence.md",
+        "sha256": "3d16a07ca8f776d7ef3d21537eac684bebad7e59224edcb9113166921f86501c",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 1,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      }
+    ]
+  },
+  {
+    "id": "D22",
+    "decision": "BRANCH",
+    "comparison": {
+      "object": "技术解放与技术依赖不可统一",
+      "condition": "人群、用途、时间与资源依赖不同",
+      "action": "两者可以同时存在，或确需分世界假设",
+      "limitation": "新能力解除旧压迫仍可制造维护依赖，不是逻辑矛盾",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "技术解放与技术依赖不可统一",
+    "current": "两者可以同时存在，或确需分世界假设",
+    "reason": "新能力解除旧压迫仍可制造维护依赖，不是逻辑矛盾",
+    "rules": [
+      "SF02",
+      "SF26"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/03-single-variable-world.md",
+        "sha256": "f9ca326ca2a95ac6ec4c4af7f2eacc0c8131d71a071ef93e6e66fbe8620e4b56",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 44,
+        "end_line": 100
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 77,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 224,
+        "end_line": 248
+      }
+    ]
+  },
+  {
+    "id": "D23",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "机器人故事必须不可修制度且至少三数字三救济",
+      "condition": "具体制度承诺和人物目标",
+      "action": "允许可修/部分修/转让/抗争，数值按因果",
+      "limitation": "三类结局可对不同角色同时成立",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "机器人故事必须不可修制度且至少三数字三救济",
+    "current": "允许可修/部分修/转让/抗争，数值按因果",
+    "reason": "三类结局可对不同角色同时成立",
+    "rules": [
+      "SF12",
+      "SF25"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 136,
+        "end_line": 192
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D24",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "已用90天所以所有保修全堵",
+      "condition": "机械一年、电气30天、不同缺陷排除",
+      "action": "区分类别和厂商解释；E11已实际改表",
+      "limitation": "原示例与自己的期限表矛盾；不是原书新事实断言",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "已用90天所以所有保修全堵",
+    "current": "区分类别和厂商解释；E11已实际改表",
+    "reason": "原示例与自己的期限表矛盾；不是原书新事实断言",
+    "rules": [
+      "SF12"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 136,
+        "end_line": 192
+      }
+    ]
+  },
+  {
+    "id": "D25",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "机构必须3–4窗、至少一帮倒忙、最官僚部门解局",
+      "condition": "实际权限与讽刺目标",
+      "action": "窗口可一可多，可合作或反对；结算主体按因果",
+      "limitation": "B04最新world规则已撤配额，旧例/诊断残留同步改写",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "机构必须3–4窗、至少一帮倒忙、最官僚部门解局",
+    "current": "窗口可一可多，可合作或反对；结算主体按因果",
+    "reason": "B04最新world规则已撤配额，旧例/诊断残留同步改写",
+    "rules": [
+      "SF12"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/04-rules-costs-and-paperwork.md",
+        "sha256": "db21aed3243c08f46ce2b9d1a7231cf700287b7acf0b99b138bb1179a052279e",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 136,
+        "end_line": 192
+      }
+    ]
+  },
+  {
+    "id": "D26",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "系统推理必须先死配角、最后只改输入不打坏人",
+      "condition": "系统与个人作用共存",
+      "action": "先观察或成功试验亦可，治理与个人责任可结合",
+      "limitation": "案例中的昂贵失败不足以证明必须失败",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "系统推理必须先死配角、最后只改输入不打坏人",
+    "current": "先观察或成功试验亦可，治理与个人责任可结合",
+    "reason": "案例中的昂贵失败不足以证明必须失败",
+    "rules": [
+      "SF13"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 76,
+        "end_line": 132
+      }
+    ]
+  },
+  {
+    "id": "D27",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "偏见一定有产业链且只能公开实验消除",
+      "condition": "偏见成因与干预的实际作用范围",
+      "action": "利益、恐惧、习惯、制度、宣传等分别检查",
+      "limitation": "B04新协议明确人物无需用实验说服所有歧视者",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "偏见一定有产业链且只能公开实验消除",
+    "current": "利益、恐惧、习惯、制度、宣传等分别检查",
+    "reason": "B04新协议明确人物无需用实验说服所有歧视者",
+    "rules": [
+      "SF13"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 76,
+        "end_line": 132
+      }
+    ]
+  },
+  {
+    "id": "D28",
+    "decision": "BRANCH",
+    "comparison": {
+      "object": "良性感染解决偏见／因此全部不可写",
+      "condition": "书内标记消失、同意与结构后果不同",
+      "action": "保留书内有效结果与未解决伦理，不认证现实方案",
+      "limitation": "PG29448 L4116并不证明压迫结构消失",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "良性感染解决偏见／因此全部不可写",
+    "current": "保留书内有效结果与未解决伦理，不认证现实方案",
+    "reason": "PG29448 L4116并不证明压迫结构消失",
+    "rules": [
+      "SF13",
+      "SF27"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/novum-consequence-chain.md",
+        "sha256": "c23adc95818c836a6d65e9772bd869aad0aea81020add11d66986d6211bcfa0b",
+        "start_line": 1,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 76,
+        "end_line": 132
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/counterexamples.md",
+        "sha256": "19b9d207907757741397888ed91d68ba2f7e653881f099f1c918ae0f2f138c13",
+        "start_line": 1,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D29",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "骗局必须物证公开播放、所有信仰都善意杀人",
+      "condition": "公开揭穿承诺及人物动机",
+      "action": "私人结尾不必播放，真诚/恶意/混合都可",
+      "limitation": "B04P4已修公开揭穿边界，正文其它绝对句进一步条件化",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "骗局必须物证公开播放、所有信仰都善意杀人",
+    "current": "私人结尾不必播放，真诚/恶意/混合都可",
+    "reason": "B04P4已修公开揭穿边界，正文其它绝对句进一步条件化",
+    "rules": [
+      "SF09",
+      "SF14"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 106,
+        "end_line": 131
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 135,
+        "end_line": 161
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 18,
+        "end_line": 72
+      }
+    ]
+  },
+  {
+    "id": "D30",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "真实宗教必须架空",
+      "condition": "历史文化准确与群体本质化风险",
+      "action": "可写真实宗教，区分作品立场与可靠事实",
+      "limitation": "B04新R27明确不强制架空；旧示例风险句撤回",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "真实宗教必须架空",
+    "current": "可写真实宗教，区分作品立场与可靠事实",
+    "reason": "B04新R27明确不强制架空；旧示例风险句撤回",
+    "rules": [
+      "SF14",
+      "SF27"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/mind-war.md",
+        "sha256": "ae16a5e4e2e17c04ebc2f54df98cc82e7fbf75017b401824a7bd51d861c80cdd",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 135,
+        "end_line": 161
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/world-and-institutions.md",
+        "sha256": "cb38f8304d1a058afe4fbde7f6d4565bef608e2f7f36196b28ab97b34dcaca23",
+        "start_line": 18,
+        "end_line": 72
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/counterexamples.md",
+        "sha256": "19b9d207907757741397888ed91d68ba2f7e653881f099f1c918ae0f2f138c13",
+        "start_line": 1,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D31",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "时间改变量决定三档；双史料都必可靠",
+      "condition": "时间模型规则和资料可信性",
+      "action": "分别登记事件、记忆和档案；PG30267为另一时间分支的小说，不是非虚构双史料。伪造与错误只在所设计模型成立时采用。",
+      "limitation": "PG66005/74227/30267为不同机制，不构成尺度法则",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "时间改变量决定三档；双史料都必可靠",
+    "current": "分别登记事件、记忆和档案；PG30267为另一时间分支的小说，不是非虚构双史料。伪造与错误只在所设计模型成立时采用。",
+    "reason": "PG66005/74227/30267为不同机制，不构成尺度法则",
+    "rules": [
+      "SF15"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/05-time-and-mechanism-ledger.md",
+        "sha256": "ff79d49227b1aaddec4a6b15ff425a4f1c4929102050822b2e3e63ce7ea69456",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/03-repetition-and-restaging.md",
+        "sha256": "2054b57714b0197289e73b14f57c8473603385bde9fc0b3ed0c6548ef10b8061",
+        "start_line": 1,
+        "end_line": 48
+      }
+    ],
+    "prior_current_as_reported": "分别登记事件、记忆、档案；容纳伪造与错误",
+    "main_primary_recheck": {
+      "execution_id": "aef1ae3a-2efc-45dc-b07f-05f9cf740f4f",
+      "raw_output": "audit/verification/05-SF-genre-and-identity-recheck.txt",
+      "exit_code": 0,
+      "output_truncated": false,
+      "readings": [
+        {
+          "pg": "PG30267",
+          "lines": [
+            [
+              1,
+              520
+            ]
+          ],
+          "total_lines": 520,
+          "scope": "FULL_TEXT_ACTUALLY_READ",
+          "sha256": "550caa4723ca758f775e7f48b2c7c3a78aaf98e37a7bee92e534ead8c05977c5"
+        },
+        {
+          "pg": "PG25439",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 8454,
+          "scope": "TITLE_AND_INTRODUCTION_WINDOW_ONLY",
+          "sha256": "fd8dfd517a51f016194db1da962245e6b21dd2fb807b7b6114d7afd88ca10488"
+        },
+        {
+          "pg": "PG51337",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 830,
+          "scope": "TITLE_AND_OPENING_WINDOW_ONLY",
+          "sha256": "ecc0ba63abd834ab38e6778e790f85fbc33d24bfe1036ce460e76cd76f504a5a"
+        }
+      ]
+    }
+  },
+  {
+    "id": "D32",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "说明必须等提问/由人物回答/五行内；整书只清单或尺度",
+      "condition": "作品叙述形式和当前信息功能",
+      "action": "允许全知、讲座、并用证据风格及审美说明",
+      "limitation": "PG16457、PG32、PG829和工程规格存在形式反例",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "说明必须等提问/由人物回答/五行内；整书只清单或尺度",
+    "current": "允许全知、讲座、并用证据风格及审美说明",
+    "reason": "PG16457、PG32、PG829和工程规格存在形式反例",
+    "rules": [
+      "SF16"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/01-exposition-and-evidence.md",
+        "sha256": "3d16a07ca8f776d7ef3d21537eac684bebad7e59224edcb9113166921f86501c",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 1,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      }
+    ]
+  },
+  {
+    "id": "D33",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "所有概念必须可摸可损、写不出以为其实就没概念",
+      "condition": "概念承载和创作阶段",
+      "action": "语言/声音/动作/关系/纯对话可成立，场景试写也可起步",
+      "limitation": "B05P4已修主体规则，旧例和出口仍需实改",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "所有概念必须可摸可损、写不出以为其实就没概念",
+    "current": "语言/声音/动作/关系/纯对话可成立，场景试写也可起步",
+    "reason": "B05P4已修主体规则，旧例和出口仍需实改",
+    "rules": [
+      "SF17"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/02-reveal-timing.md",
+        "sha256": "0d1bf45403de4d027be4b84274c2eaca361c6983a05935828ac4475f0194065c",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D34",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "是什么必后置、怎么办必前置、全篇仅一问题",
+      "condition": "读者已有知识、视角权限、多个悬念层",
+      "action": "允许前置/后置/弥散混合及问题转移",
+      "limitation": "PG36867导语与尾声分别揭示不同层面",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "是什么必后置、怎么办必前置、全篇仅一问题",
+    "current": "允许前置/后置/弥散混合及问题转移",
+    "reason": "PG36867导语与尾声分别揭示不同层面",
+    "rules": [
+      "SF17"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/02-reveal-timing.md",
+        "sha256": "0d1bf45403de4d027be4b84274c2eaca361c6983a05935828ac4475f0194065c",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D35",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "前置后正文禁止说明；后置中段不许讲规则",
+      "condition": "说明是否偷换承诺或增加必要信息",
+      "action": "可以解释不再悬置的规则，保留关系/身份悬念",
+      "limitation": "固定位置禁令与混合合同冲突",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "前置后正文禁止说明；后置中段不许讲规则",
+    "current": "可以解释不再悬置的规则，保留关系/身份悬念",
+    "reason": "固定位置禁令与混合合同冲突",
+    "rules": [
+      "SF16",
+      "SF17"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/01-exposition-and-evidence.md",
+        "sha256": "3d16a07ca8f776d7ef3d21537eac684bebad7e59224edcb9113166921f86501c",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 1,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/02-reveal-timing.md",
+        "sha256": "0d1bf45403de4d027be4b84274c2eaca361c6983a05935828ac4475f0194065c",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D36",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "反转只能改意义不能新事实、叙述者不能说谎",
+      "condition": "公平推理和不可靠叙述的不同合同",
+      "action": "给足必要回溯；新事实和谎言可在既定合同下运作",
+      "limitation": "不能把一种公平谜题配方覆盖全部科幻",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "反转只能改意义不能新事实、叙述者不能说谎",
+    "current": "给足必要回溯；新事实和谎言可在既定合同下运作",
+    "reason": "不能把一种公平谜题配方覆盖全部科幻",
+    "rules": [
+      "SF18",
+      "SF21"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 104,
+        "end_line": 129
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 16,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/04-cognitive-framing.md",
+        "sha256": "184e16ca069c33b392244c2ae3c6a3f6672b7c6cb3c5877ce4f19b00937139de",
+        "start_line": 37,
+        "end_line": 72
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D37",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "伏笔须前2/3、两次、必须物证、删尾能唯一推出",
+      "condition": "信息足够性与目标可推理程度",
+      "action": "按承诺给足前提，允许证词/语言/关系线索",
+      "limitation": "B05已明确多维不必三层，B04固定数值缺证",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "伏笔须前2/3、两次、必须物证、删尾能唯一推出",
+    "current": "按承诺给足前提，允许证词/语言/关系线索",
+    "reason": "B05已明确多维不必三层，B04固定数值缺证",
+    "rules": [
+      "SF18"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 104,
+        "end_line": 129
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D38",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "重复3–4次、逐字固定、只改一元素、3段内完结",
+      "condition": "是否需要模式比较和后续承诺",
+      "action": "可一次逆转或多元素变奏，停笔按线索和情感闭合",
+      "limitation": "B05P4已修；B04母题四次上限无效果证据",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "重复3–4次、逐字固定、只改一元素、3段内完结",
+    "current": "可一次逆转或多元素变奏，停笔按线索和情感闭合",
+    "reason": "B05P4已修；B04母题四次上限无效果证据",
+    "rules": [
+      "SF19",
+      "SF25"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 133,
+        "end_line": 157
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 192,
+        "end_line": 220
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/03-repetition-and-restaging.md",
+        "sha256": "2054b57714b0197289e73b14f57c8473603385bde9fc0b3ed0c6548ef10b8061",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D39",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "道具必须三用、每次改权力、结尾同物回收",
+      "condition": "道具实际功能和因果",
+      "action": "保留流转机制，允许局部功能和不回收",
+      "limitation": "三用是PG32657等案例形态，不是通则",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "道具必须三用、每次改权力、结尾同物回收",
+    "current": "保留流转机制，允许局部功能和不回收",
+    "reason": "三用是PG32657等案例形态，不是通则",
+    "rules": [
+      "SF19"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 133,
+        "end_line": 157
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 192,
+        "end_line": 220
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/03-repetition-and-restaging.md",
+        "sha256": "2054b57714b0197289e73b14f57c8473603385bde9fc0b3ed0c6548ef10b8061",
+        "start_line": 1,
+        "end_line": 48
+      }
+    ]
+  },
+  {
+    "id": "D40",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "每个非人事件类比+参数、必须岗位死线、必须缺词",
+      "condition": "叙述权限、专业知识与感知",
+      "action": "内视/外视/参数/准确术语都可用",
+      "limitation": "PG32079内视与PG51296缺词是不同条件",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "每个非人事件类比+参数、必须岗位死线、必须缺词",
+    "current": "内视/外视/参数/准确术语都可用",
+    "reason": "PG32079内视与PG51296缺词是不同条件",
+    "rules": [
+      "SF20"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 74,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/04-cognitive-framing.md",
+        "sha256": "184e16ca069c33b392244c2ae3c6a3f6672b7c6cb3c5877ce4f19b00937139de",
+        "start_line": 1,
+        "end_line": 72
+      }
+    ]
+  },
+  {
+    "id": "D41",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "失忆一定半知识、恢复只靠身体记忆",
+      "condition": "设定边界和支持系统",
+      "action": "保留技能/关系分离，允许其他失忆与恢复结构",
+      "limitation": "没有原证据排除训练、解释或全面失忆的合法叙事",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "失忆一定半知识、恢复只靠身体记忆",
+    "current": "保留技能/关系分离，允许其他失忆与恢复结构",
+    "reason": "没有原证据排除训练、解释或全面失忆的合法叙事",
+    "rules": [
+      "SF20"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 74,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/04-cognitive-framing.md",
+        "sha256": "184e16ca069c33b392244c2ae3c6a3f6672b7c6cb3c5877ce4f19b00937139de",
+        "start_line": 1,
+        "end_line": 72
+      }
+    ]
+  },
+  {
+    "id": "D42",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "框架必须100词内露局限、结尾回收；惊悚不能用",
+      "condition": "框架的来源/距离功能",
+      "action": "何时揭示可靠性按信息合同；开头功能已完可不回收",
+      "limitation": "B05P4撤100词阈值，绝对负触发不足为通则",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "框架必须100词内露局限、结尾回收；惊悚不能用",
+    "current": "何时揭示可靠性按信息合同；开头功能已完可不回收",
+    "reason": "B05P4撤100词阈值，绝对负触发不足为通则",
+    "rules": [
+      "SF21"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 16,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/04-cognitive-framing.md",
+        "sha256": "184e16ca069c33b392244c2ae3c6a3f6672b7c6cb3c5877ce4f19b00937139de",
+        "start_line": 37,
+        "end_line": 72
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D43",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "每三分之一权力变、主角先输、无压力就造时钟",
+      "condition": "密闭冲突的实际张力来源",
+      "action": "按状态变化组织，可不倒计时、不先败",
+      "limitation": "四段表为候选，不强制新造失败",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "每三分之一权力变、主角先输、无压力就造时钟",
+    "current": "按状态变化组织，可不倒计时、不先败",
+    "reason": "四段表为候选，不强制新造失败",
+    "rules": [
+      "SF22"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/expedition-combat.md",
+        "sha256": "aaee29b6437d51e66a78e7413366db403bec8e25317156286298c5d99c4eeaab",
+        "start_line": 1,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 19,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 134,
+        "end_line": 188
+      }
+    ]
+  },
+  {
+    "id": "D44",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "每探索段解一规则、成功必断退路、返程不可逆损失",
+      "condition": "探索的知识/关系/审美/行动目标",
+      "action": "可保留可逆修复和安全归返，授权/见证按需",
+      "limitation": "B04最新已撤断退路硬门，剩余损失句同需条件化",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "每探索段解一规则、成功必断退路、返程不可逆损失",
+    "current": "可保留可逆修复和安全归返，授权/见证按需",
+    "reason": "B04最新已撤断退路硬门，剩余损失句同需条件化",
+    "rules": [
+      "SF22"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/expedition-combat.md",
+        "sha256": "aaee29b6437d51e66a78e7413366db403bec8e25317156286298c5d99c4eeaab",
+        "start_line": 1,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 19,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 134,
+        "end_line": 188
+      }
+    ]
+  },
+  {
+    "id": "D45",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "训练每条必回收、手艺必难点/质疑者/失败",
+      "condition": "是否承诺后续关键使用",
+      "action": "承重规则兑现或说明失效，日常细节可塑人",
+      "limitation": "B04新R13正文仍残留不回收就删，现行全入口修正",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "训练每条必回收、手艺必难点/质疑者/失败",
+    "current": "承重规则兑现或说明失效，日常细节可塑人",
+    "reason": "B04新R13正文仍残留不回收就删，现行全入口修正",
+    "rules": [
+      "SF22"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/expedition-combat.md",
+        "sha256": "aaee29b6437d51e66a78e7413366db403bec8e25317156286298c5d99c4eeaab",
+        "start_line": 1,
+        "end_line": 78
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 19,
+        "end_line": 73
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 134,
+        "end_line": 188
+      }
+    ]
+  },
+  {
+    "id": "D46",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "爱情只能共同危机推进且不能婚姻收尾",
+      "condition": "人物意愿和关系证据",
+      "action": "对话、照护、独立线、婚姻或分离均可",
+      "limitation": "B01新规则已允许持续对话，反工具化不等于禁婚礼",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "爱情只能共同危机推进且不能婚姻收尾",
+    "current": "对话、照护、独立线、婚姻或分离均可",
+    "reason": "B01新规则已允许持续对话，反工具化不等于禁婚礼",
+    "rules": [
+      "SF23"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 1,
+        "end_line": 89
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 106,
+        "end_line": 130
+      }
+    ]
+  },
+  {
+    "id": "D47",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "仪式越长反转越重；复生可靠仪式补逻辑",
+      "condition": "生命机制与预埋条件",
+      "action": "保留葬礼步骤和复苏伏笔，死亡也可成立",
+      "limitation": "PG10662的地电流条件不能被仪式数量代替",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "仪式越长反转越重；复生可靠仪式补逻辑",
+    "current": "保留葬礼步骤和复苏伏笔，死亡也可成立",
+    "reason": "PG10662的地电流条件不能被仪式数量代替",
+    "rules": [
+      "SF24"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/society-love-craft.md",
+        "sha256": "0f93a40ee4fb84a2a470e12379df604123c3e89cc475ab8e6b786927237f19d2",
+        "start_line": 1,
+        "end_line": 89
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/examples.md",
+        "sha256": "31d914a3019efa7e1608ca6dc7fff5caf9bf1b92d6d8cd0971c48695a6b808aa",
+        "start_line": 45,
+        "end_line": 50
+      }
+    ]
+  },
+  {
+    "id": "D48",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "结尾必须未解代价+物件、不可消灭威胁",
+      "condition": "实际承诺与层次",
+      "action": "胜利、修复、开放并存，分层结算",
+      "limitation": "PG36细菌确实击败入侵者直接反证全称",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "结尾必须未解代价+物件、不可消灭威胁",
+    "current": "胜利、修复、开放并存，分层结算",
+    "reason": "PG36细菌确实击败入侵者直接反证全称",
+    "rules": [
+      "SF25"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D49",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "三层物证、十二词、禁因为原来/设定词、删后三段",
+      "condition": "语种、节奏、明示/留白合同",
+      "action": "只要求支持当前结论的信息足够，解释词不自动删除",
+      "limitation": "B05最新规则已撤阈值；所有现行模板/示例同步取消",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "三层物证、十二词、禁因为原来/设定词、删后三段",
+    "current": "只要求支持当前结论的信息足够，解释词不自动删除",
+    "reason": "B05最新规则已撤阈值；所有现行模板/示例同步取消",
+    "rules": [
+      "SF18",
+      "SF25"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 104,
+        "end_line": 129
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D50",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "灾后第二场必须解释、胜利只写尸体、奇迹仅寓言",
+      "condition": "灾难信息结构与战争目标",
+      "action": "可长期未知、欢庆和修复；奇迹按合同分析",
+      "limitation": "样本不证明场次数、情绪或体裁排他",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "灾后第二场必须解释、胜利只写尸体、奇迹仅寓言",
+    "current": "可长期未知、欢庆和修复；奇迹按合同分析",
+    "reason": "样本不证明场次数、情绪或体裁排他",
+    "rules": [
+      "SF26"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 77,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 224,
+        "end_line": 248
+      }
+    ]
+  },
+  {
+    "id": "D51",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "历史偏见只能删掉、复杂复仇一律拒绝",
+      "condition": "现实群体主张与历史/虚构呈现不同",
+      "action": "拒绝本质论作为规则，保留角色立场与批判分析",
+      "limitation": "原书互相矛盾不证明复杂叙事本身无效",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "历史偏见只能删掉、复杂复仇一律拒绝",
+    "current": "拒绝本质论作为规则，保留角色立场与批判分析",
+    "reason": "原书互相矛盾不证明复杂叙事本身无效",
+    "rules": [
+      "SF27"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/counterexamples.md",
+        "sha256": "19b9d207907757741397888ed91d68ba2f7e653881f099f1c918ae0f2f138c13",
+        "start_line": 1,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D52",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "没设定不帮想、缺完整输入不开始",
+      "condition": "原创和定位诊断不同",
+      "action": "有条件原创；没原稿不给虚构位置",
+      "limitation": "B05最新授权无原稿原创，B02旧失败表过度拦截",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "没设定不帮想、缺完整输入不开始",
+    "current": "有条件原创；没原稿不给虚构位置",
+    "reason": "B05最新授权无原稿原创，B02旧失败表过度拦截",
+    "rules": [
+      "SF28"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/failure-modes.md",
+        "sha256": "d0cf7c472a0aa4980e8e6be7ab9f5fceccfd8b7867ab8c2227d8330b1a8a05d0",
+        "start_line": 1,
+        "end_line": 52
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/failure-modes.md",
+        "sha256": "6461a220ebf9ebf36b725db926d335e3cf1fbb37e8cdf4229bbd10341ea99cd7",
+        "start_line": 1,
+        "end_line": 143
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D53",
+    "decision": "NOT_PROVEN",
+    "comparison": {
+      "object": "现代效果、族数≥2即可立通则、历史PASS就是当前PASS",
+      "condition": "观察、归纳、效果和独立验证不同",
+      "action": "单源可作条件案例，多源不自动证明效力",
+      "limitation": "B03作者组22算术疑点与B05覆盖历史另列，不冒充重读",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "现代效果、族数≥2即可立通则、历史PASS就是当前PASS",
+    "current": "单源可作条件案例，多源不自动证明效力",
+    "reason": "B03作者组22算术疑点与B05覆盖历史另列，不冒充重读",
+    "rules": [
+      "SF01",
+      "SF27",
+      "SF28"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/rule-adjudication.md",
+        "sha256": "54a70a2ce1fd0f9e7f8ce24a3a0f1d3a1a235588b2f1d318b546227a4e74aea4",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/version-and-provenance.md",
+        "sha256": "6fd8ffb0cde82351aef97df79170536a849432deba5660f4351b7f403760c719",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/counterexamples.md",
+        "sha256": "19b9d207907757741397888ed91d68ba2f7e653881f099f1c918ae0f2f138c13",
+        "start_line": 1,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/06-endings-conflicts-counterexamples.md",
+        "sha256": "f978331c93d1c12f9fadb381096e98c9bc6ef3ce593a4fba2f08a2fd14596892",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/failure-modes.md",
+        "sha256": "d0cf7c472a0aa4980e8e6be7ab9f5fceccfd8b7867ab8c2227d8330b1a8a05d0",
+        "start_line": 1,
+        "end_line": 52
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/failure-modes.md",
+        "sha256": "6461a220ebf9ebf36b725db926d335e3cf1fbb37e8cdf4229bbd10341ea99cd7",
+        "start_line": 1,
+        "end_line": 143
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ]
+  },
+  {
+    "id": "D54",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "B03无机器人法律/异星语言证据所以项目不提供",
+      "condition": "批次边界与融合后的证据集不同",
+      "action": "SF06/08用B01法律拟制；SF10用B01/02语言机制",
+      "limitation": "局部NOT_PROVEN不能外推全项目无证",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "B03无机器人法律/异星语言证据所以项目不提供",
+    "current": "SF06/08用B01法律拟制；SF10用B01/02语言机制",
+    "reason": "局部NOT_PROVEN不能外推全项目无证",
+    "rules": [
+      "SF06",
+      "SF10"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 74,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/created-beings.md",
+        "sha256": "b17efbc34c1b9e471d7297a8aa749cba4e72eb1e88d0bc75b884a658f8f223d9",
+        "start_line": 1,
+        "end_line": 80
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/alien-contact.md",
+        "sha256": "43929a910f562b1b4fb290087ceb300b56b5ce333943ee109f754595b986abba",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/02-alienness-and-scale.md",
+        "sha256": "71a4280e323893e8cfab71ad6aeb5a02dd97ed63aaf24dc1ea29478a1ad80529",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 16,
+        "end_line": 41
+      }
+    ]
+  },
+  {
+    "id": "D55",
+    "decision": "REVISE_PRIMARY_VERIFIED",
+    "comparison": {
+      "object": "whole life lonely挂PG32615 L179–180",
+      "condition": "同批source表挂PG31692相同行",
+      "action": "孤独句正确归属PG31692 L179–180，Myron说话，不能升级为终生必然事实。",
+      "limitation": "只核明确窗口；其他原PG锚仍继承。",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "whole life lonely挂PG32615 L179–180",
+    "current": "孤独句正确归属PG31692 L179–180，Myron说话，不能升级为终生必然事实。",
+    "reason": "本轮对读PG31692 L150–205与PG32615 L155–195，撤销跨书错挂。",
+    "rules": [
+      "SF01",
+      "SF26"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/rule-adjudication.md",
+        "sha256": "54a70a2ce1fd0f9e7f8ce24a3a0f1d3a1a235588b2f1d318b546227a4e74aea4",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/version-and-provenance.md",
+        "sha256": "6fd8ffb0cde82351aef97df79170536a849432deba5660f4351b7f403760c719",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/institution-detail.md",
+        "sha256": "9b665331b12a420d75a0abf2bf90b10514ba654fac3be6a441d37096cc169c4c",
+        "start_line": 1,
+        "end_line": 50
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 77,
+        "end_line": 102
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/structure-and-endings.md",
+        "sha256": "4d45fccbe26603ce68d10780b6a93180807aeb3691c7487cd98b5af2fa719c42",
+        "start_line": 224,
+        "end_line": 248
+      }
+    ],
+    "prior_decision_before_main_recheck": {
+      "decision": "NOT_PROVEN",
+      "current": "登记争议，不引用为已核逐字证据",
+      "reason": "原Skill内部矛盾需PG回读裁定，现未回读"
+    },
+    "main_primary_recheck_execution_id": "4ca957cc-765c-4807-8a03-4aac1db48d2d"
+  },
+  {
+    "id": "D56",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "记忆示例同一张纸又每次新纸；0418证明循环继续",
+      "condition": "物理身份、编号与时间机制不同",
+      "action": "E14区分不同纸/同编号；0418仅证登记改变",
+      "limitation": "旧例内部逻辑不支持其结论，不需伪造原PG来修例",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "记忆示例同一张纸又每次新纸；0418证明循环继续",
+    "current": "E14区分不同纸/同编号；0418仅证登记改变",
+    "reason": "旧例内部逻辑不支持其结论，不需伪造原PG来修例",
+    "rules": [
+      "SF08",
+      "SF15",
+      "SF18"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/identity-infiltration.md",
+        "sha256": "71098de2808d72e3e1801e618a93e93056d3ab138e8ee22109c74dbcf025b5d6",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/contact-and-otherness.md",
+        "sha256": "1e8d7cc30b1304d1da5b59fb1b0592eaac9d05a86a21a8b446a253e8b0a16904",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/created-beings.md",
+        "sha256": "a3dbb8a7e4b7af63fbe1526a994cde85d36f6ca2bedf5e6c37f62623873b69d5",
+        "start_line": 1,
+        "end_line": 53
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      },
+      {
+        "task_id": "A-06-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-03/rounds/round-p4-final-2026-10-30/output/scifi-future-craft-b03/references/05-time-and-mechanism-ledger.md",
+        "sha256": "ff79d49227b1aaddec4a6b15ff425a4f1c4929102050822b2e3e63ce7ea69456",
+        "start_line": 1,
+        "end_line": 47
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/03-repetition-and-restaging.md",
+        "sha256": "2054b57714b0197289e73b14f57c8473603385bde9fc0b3ed0c6548ef10b8061",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/novum-and-rules.md",
+        "sha256": "9e8a6556063debec826e916e44653e175b58279c2db6f855361858214d22aed3",
+        "start_line": 104,
+        "end_line": 129
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/05-negative-space-and-close.md",
+        "sha256": "87df183b4d6f405245f6264c4518cf9025cddf17a0a2a8b84b5dd5d1a1740728",
+        "start_line": 1,
+        "end_line": 61
+      }
+    ]
+  },
+  {
+    "id": "D57",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "芯片可替换所以不能承载概念；专业修剪师必须无证据一词",
+      "condition": "对象意义与专业词汇条件",
+      "action": "保留芯片候选与专业术语，选择纸因场景功能",
+      "limitation": "B05条件规则本已允许无损物件和准确术语",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "芯片可替换所以不能承载概念；专业修剪师必须无证据一词",
+    "current": "保留芯片候选与专业术语，选择纸因场景功能",
+    "reason": "B05条件规则本已允许无损物件和准确术语",
+    "rules": [
+      "SF17",
+      "SF20"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/01-anchor-object.md",
+        "sha256": "02ac033f63babad4d4595f13ebd71140ab317016d701f7a2024b8a91b7f3fb93",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/02-reveal-timing.md",
+        "sha256": "0d1bf45403de4d027be4b84274c2eaca361c6983a05935828ac4475f0194065c",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/reversal-and-framing.md",
+        "sha256": "9d9e781e7f4986087415e635fc309398897ea77183bbc37172b66b289798ff04",
+        "start_line": 1,
+        "end_line": 51
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/information-and-pov.md",
+        "sha256": "92594d2bd5a1d5ddb740010e6cab29a20be98662c9d205e0cc7418bab346f5a7",
+        "start_line": 74,
+        "end_line": 162
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/04-cognitive-framing.md",
+        "sha256": "184e16ca069c33b392244c2ae3c6a3f6672b7c6cb3c5877ce4f19b00937139de",
+        "start_line": 1,
+        "end_line": 72
+      }
+    ]
+  },
+  {
+    "id": "D58",
+    "decision": "NOT_PROVEN",
+    "comparison": {
+      "object": "所有来源PG全文已由本轮独立核验",
+      "condition": "本轮实读对象为源Skill及历史差异",
+      "action": "所有PG全文已核仍NOT_PROVEN；Main新增PG30267 L1–520全文实读，其他PG分别保持窗口实读或继承定位。宿主测试仍未证。",
+      "limitation": "reading-ledger与source-identities分别记录，不以桥接复制代阅读",
+      "result": "保留有效机制与具体来源；按当前SF/K卡执行，不复活旧绝对入口"
+    },
+    "old_claim": "所有来源PG全文已由本轮独立核验",
+    "current": "所有PG全文已核仍NOT_PROVEN；Main新增PG30267 L1–520全文实读，其他PG分别保持窗口实读或继承定位。宿主测试仍未证。",
+    "reason": "reading-ledger与source-identities分别记录，不以桥接复制代阅读",
+    "rules": [
+      "SF01",
+      "SF28"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/rule-adjudication.md",
+        "sha256": "54a70a2ce1fd0f9e7f8ce24a3a0f1d3a1a235588b2f1d318b546227a4e74aea4",
+        "start_line": 1,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/references/rework-decision.md",
+        "sha256": "05f12d321343608806a5cb763047255af71fa2c807da28813dd8d5e2cedea59b",
+        "start_line": 1,
+        "end_line": 27
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/version-and-provenance.md",
+        "sha256": "6fd8ffb0cde82351aef97df79170536a849432deba5660f4351b7f403760c719",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/failure-modes.md",
+        "sha256": "d0cf7c472a0aa4980e8e6be7ab9f5fceccfd8b7867ab8c2227d8330b1a8a05d0",
+        "start_line": 1,
+        "end_line": 52
+      },
+      {
+        "task_id": "A-06-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-02/rounds/round-p4-final-2026-10-30/output/sci-fi-novum-world-forge/references/failure-exit.md",
+        "sha256": "3fe5ccd0472092641dcc48413cfbd3d0c85babafc94457cb58fad8542b5a4195",
+        "start_line": 1,
+        "end_line": 58
+      },
+      {
+        "task_id": "A-06-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-04/rounds/round-p4-agent-a-2026-10-30/output/science-fiction-craft-b04/failure-modes.md",
+        "sha256": "6461a220ebf9ebf36b725db926d335e3cf1fbb37e8cdf4229bbd10341ea99cd7",
+        "start_line": 1,
+        "end_line": 143
+      },
+      {
+        "task_id": "A-06-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-05/rounds/round-p4-agent1-final-2026-10-30/output/science-fiction-conceptual-reveal/references/06-failure-modes.md",
+        "sha256": "e87b248d9e8e63271f868f9defd11cb794fc069f718f19ddd0055a358d392488",
+        "start_line": 1,
+        "end_line": 51
+      }
+    ],
+    "prior_current_as_reported": "继承PG定位为上游报告；原PG全文与宿主测试未证"
+  },
+  {
+    "id": "D59",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "PG30267体裁与档案机制、来源责任者和年份",
+      "condition": "Main实际PG全文或书头窗口可直接裁决的字段",
+      "action": "撤回非虚构分类；分开时间分支与史料可靠性；保留底本署名并展开已核作者",
+      "limitation": "未实核的规范作者名、首版史与其他PG内容继续NOT_PROVEN",
+      "result": "K016、E5、D31与来源身份表已实际改写"
+    },
+    "old_claim": "PG30267为历史短文并非虚构单列；PG25439的1887笼统作年份；PG51337仅E. E. Smith",
+    "current": "PG30267为时间分支科幻；PG25439版权年与Broun引言区分；PG51337为Evelyn E. Smith",
+    "reason": "直接原文与书头范围支持，未扩大核验范围",
+    "rules": [
+      "SF15",
+      "SF14",
+      "SF01",
+      "SF28"
+    ],
+    "primary_evidence": {
+      "execution_id": "aef1ae3a-2efc-45dc-b07f-05f9cf740f4f",
+      "raw_output": "audit/verification/05-SF-genre-and-identity-recheck.txt",
+      "exit_code": 0,
+      "output_truncated": false,
+      "readings": [
+        {
+          "pg": "PG30267",
+          "lines": [
+            [
+              1,
+              520
+            ]
+          ],
+          "total_lines": 520,
+          "scope": "FULL_TEXT_ACTUALLY_READ",
+          "sha256": "550caa4723ca758f775e7f48b2c7c3a78aaf98e37a7bee92e534ead8c05977c5"
+        },
+        {
+          "pg": "PG25439",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 8454,
+          "scope": "TITLE_AND_INTRODUCTION_WINDOW_ONLY",
+          "sha256": "fd8dfd517a51f016194db1da962245e6b21dd2fb807b7b6114d7afd88ca10488"
+        },
+        {
+          "pg": "PG51337",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 830,
+          "scope": "TITLE_AND_OPENING_WINDOW_ONLY",
+          "sha256": "ecc0ba63abd834ab38e6778e790f85fbc33d24bfe1036ce460e76cd76f504a5a"
+        }
+      ]
+    }
+  },
+  {
+    "id": "D60",
+    "decision": "REVISE",
+    "comparison": {
+      "object": "HT-02六个相近但不等价的子机制及原作归属",
+      "condition": "本轮全文阅读PG30267并逐行回读原history-time.md和examples.md",
+      "action": "分别保留双档案设计、历史锚、话语迁移、象征再用、传说参数和异常回读；撤回无证原作归属与数量规律",
+      "limitation": "PG29418、PG66005未进行此次全文重读；不冒称时间旅者为语言最初原创者或原书已有动物/天气异常网络",
+      "result": "K016正文展开六分支，JSON逐项对应原Skill L29–34"
+    },
+    "old_claim": "纠正体裁时压缩K016子机制，且同一征兆多视角被无据挂给PG29418",
+    "current": "条件、动作、反例及具体来源分列；保留有用设计，不冒充源书事实",
+    "reason": "语义完整性要求保留相近但不同知识，直接原文同时限制虚假归属",
+    "rules": [
+      "SF15",
+      "SF14"
+    ],
+    "evidence": [
+      {
+        "task_id": "A-06-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/05-科幻未来/批次-01/rounds/round-p4-agent1-final-2026-10-30/output/sci-fi-future-plot-forge/references/history-time.md",
+        "sha256": "b3ffaed9d0a790dbe3d05a34e0a1b117fceebbc1b600e48017b14cd37bc2525d",
+        "start_line": 1,
+        "end_line": 74
+      }
+    ],
+    "primary_evidence": {
+      "execution_id": "aef1ae3a-2efc-45dc-b07f-05f9cf740f4f",
+      "raw_output": "audit/verification/05-SF-genre-and-identity-recheck.txt",
+      "exit_code": 0,
+      "output_truncated": false,
+      "readings": [
+        {
+          "pg": "PG30267",
+          "lines": [
+            [
+              1,
+              520
+            ]
+          ],
+          "total_lines": 520,
+          "scope": "FULL_TEXT_ACTUALLY_READ",
+          "sha256": "550caa4723ca758f775e7f48b2c7c3a78aaf98e37a7bee92e534ead8c05977c5"
+        },
+        {
+          "pg": "PG25439",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 8454,
+          "scope": "TITLE_AND_INTRODUCTION_WINDOW_ONLY",
+          "sha256": "fd8dfd517a51f016194db1da962245e6b21dd2fb807b7b6114d7afd88ca10488"
+        },
+        {
+          "pg": "PG51337",
+          "lines": [
+            [
+              1,
+              85
+            ]
+          ],
+          "total_lines": 830,
+          "scope": "TITLE_AND_OPENING_WINDOW_ONLY",
+          "sha256": "ecc0ba63abd834ab38e6778e790f85fbc33d24bfe1036ce460e76cd76f504a5a"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,147 @@
+FILE /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/13-年代与现实生活/PG46-A-Christmas-Carol-in-Prose-Being-a-Ghost-Story-of-Christmas/整本阅读版.txt
+PG PG46 SHA256 4cb7714ffb1edd4f0d0402f43d5673ce3a9ddc3fec466ca52511e25033bace16 LINES 3842
+WINDOW L3495-3515
+3495: have been but for this intercourse. Why show me this, if I
+3496: am past all hope!"
+3497: 
+3498: For the first time the hand appeared to shake.
+3499: 
+3500: "Good Spirit," he pursued, as down upon the ground he
+3501: fell before it: "Your nature intercedes for me, and pities
+3502: me. Assure me that I yet may change these shadows you
+3503: have shown me, by an altered life!"
+3504: 
+3505: The kind hand trembled.
+3506: 
+3507: "I will honour Christmas in my heart, and try to keep it
+3508: all the year. I will live in the Past, the Present, and the
+3509: Future. The Spirits of all Three shall strive within me. I
+3510: will not shut out the lessons that they teach. Oh, tell me I
+3511: may sponge away the writing on this stone!"
+3512: 
+3513: In his agony, he caught the spectral hand. It sought to
+3514: free itself, but he was strong in his entreaty, and detained it.
+3515: The Spirit, stronger yet, repulsed him.
+WINDOW L3805-3842
+3805: salary!"
+3806: 
+3807: Bob trembled, and got a little nearer to the ruler. He
+3808: had a momentary idea of knocking Scrooge down with it,
+3809: holding him, and calling to the people in the court for help
+3810: and a strait-waistcoat.
+3811: 
+3812: "A merry Christmas, Bob!" said Scrooge, with an earnestness
+3813: that could not be mistaken, as he clapped him on the
+3814: back. "A merrier Christmas, Bob, my good fellow, than I
+3815: have given you, for many a year! I'll raise your salary, and
+3816: endeavour to assist your struggling family, and we will discuss
+3817: your affairs this very afternoon, over a Christmas bowl of
+3818: smoking bishop, Bob! Make up the fires, and buy another
+3819: coal-scuttle before you dot another i, Bob Cratchit!"
+3820: 
+3821: 
+3822: Scrooge was better than his word. He did it all, and
+3823: infinitely more; and to Tiny Tim, who did NOT die, he was
+3824: a second father. He became as good a friend, as good a
+3825: master, and as good a man, as the good old city knew, or
+3826: any other good old city, town, or borough, in the good old
+3827: world. Some people laughed to see the alteration in him,
+3828: but he let them laugh, and little heeded them; for he was
+3829: wise enough to know that nothing ever happened on this
+3830: globe, for good, at which some people did not have their fill
+3831: of laughter in the outset; and knowing that such as these
+3832: would be blind anyway, he thought it quite as well that they
+3833: should wrinkle up their eyes in grins, as have the malady in
+3834: less attractive forms. His own heart laughed: and that was
+3835: quite enough for him.
+3836: 
+3837: He had no further intercourse with Spirits, but lived upon
+3838: the Total Abstinence Principle, ever afterwards; and it was
+3839: always said of him, that he knew how to keep Christmas
+3840: well, if any man alive possessed the knowledge. May that
+3841: be truly said of us, and all of us! And so, as Tiny Tim
+3842: observed, God bless Us, Every One!
+FILE /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/13-年代与现实生活/PG98-A-Tale-of-Two-Cities/整本阅读版.txt
+PG PG98 SHA256 ace6e1e002690792ff3ffb0b068bc6695747a290cfc14dc0d93e14a5a8d5e438 LINES 15900
+WINDOW L15820-15900
+15820: 
+15821: “What I have been thinking as we came along, and what I am still
+15822: thinking now, as I look into your kind strong face which gives me so
+15823: much support, is this:--If the Republic really does good to the poor,
+15824: and they come to be less hungry, and in all ways to suffer less, she may
+15825: live a long time: she may even live to be old.”
+15826: 
+15827: “What then, my gentle sister?”
+15828: 
+15829: “Do you think:” the uncomplaining eyes in which there is so much
+15830: endurance, fill with tears, and the lips part a little more and tremble:
+15831: “that it will seem long to me, while I wait for her in the better land
+15832: where I trust both you and I will be mercifully sheltered?”
+15833: 
+15834: “It cannot be, my child; there is no Time there, and no trouble there.”
+15835: 
+15836: “You comfort me so much! I am so ignorant. Am I to kiss you now? Is the
+15837: moment come?”
+15838: 
+15839: “Yes.”
+15840: 
+15841: She kisses his lips; he kisses hers; they solemnly bless each other.
+15842: The spare hand does not tremble as he releases it; nothing worse than
+15843: a sweet, bright constancy is in the patient face. She goes next before
+15844: him--is gone; the knitting-women count Twenty-Two.
+15845: 
+15846: “I am the Resurrection and the Life, saith the Lord: he that believeth
+15847: in me, though he were dead, yet shall he live: and whosoever liveth and
+15848: believeth in me shall never die.”
+15849: 
+15850: The murmuring of many voices, the upturning of many faces, the pressing
+15851: on of many footsteps in the outskirts of the crowd, so that it swells
+15852: forward in a mass, like one great heave of water, all flashes away.
+15853: Twenty-Three.
+15854: 
+15855:         *****
+15856: 
+15857: They said of him, about the city that night, that it was the
+15858: peacefullest man’s face ever beheld there. Many added that he looked
+15859: sublime and prophetic.
+15860: 
+15861: One of the most remarkable sufferers by the same axe--a woman--had asked
+15862: at the foot of the same scaffold, not long before, to be allowed to
+15863: write down the thoughts that were inspiring her. If he had given any
+15864: utterance to his, and they were prophetic, they would have been these:
+15865: 
+15866: “I see Barsad, and Cly, Defarge, The Vengeance, the Juryman, the Judge,
+15867: long ranks of the new oppressors who have risen on the destruction of
+15868: the old, perishing by this retributive instrument, before it shall cease
+15869: out of its present use. I see a beautiful city and a brilliant people
+15870: rising from this abyss, and, in their struggles to be truly free, in
+15871: their triumphs and defeats, through long years to come, I see the evil
+15872: of this time and of the previous time of which this is the natural
+15873: birth, gradually making expiation for itself and wearing out.
+15874: 
+15875: “I see the lives for which I lay down my life, peaceful, useful,
+15876: prosperous and happy, in that England which I shall see no more. I see
+15877: Her with a child upon her bosom, who bears my name. I see her father,
+15878: aged and bent, but otherwise restored, and faithful to all men in his
+15879: healing office, and at peace. I see the good old man, so long their
+15880: friend, in ten years’ time enriching them with all he has, and passing
+15881: tranquilly to his reward.
+15882: 
+15883: “I see that I hold a sanctuary in their hearts, and in the hearts of
+15884: their descendants, generations hence. I see her, an old woman, weeping
+15885: for me on the anniversary of this day. I see her and her husband, their
+15886: course done, lying side by side in their last earthly bed, and I know
+15887: that each was not more honoured and held sacred in the other’s soul,
+15888: than I was in the souls of both.
+15889: 
+15890: “I see that child who lay upon her bosom and who bore my name, a man
+15891: winning his way up in that path of life which once was mine. I see him
+15892: winning it so well, that my name is made illustrious there by the
+15893: light of his. I see the blots I threw upon it, faded away. I see him,
+15894: fore-most of just judges and honoured men, bringing a boy of my name,
+15895: with a forehead that I know and golden hair, to this place--then fair to
+15896: look upon, with not a trace of this day’s disfigurement--and I hear him
+15897: tell the child my story, with a tender and a faltering voice.
+15898: 
+15899: “It is a far, far better thing that I do, than I have ever done; it is a
+15900: far, far better rest that I go to than I have ever known.”

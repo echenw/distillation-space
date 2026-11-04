@@ -1,0 +1,38 @@
+{
+  "id": "PG1711",
+  "title": "Child of Storm",
+  "author": "Haggard, H. Rider (Henry Rider), 1856-1925",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/1711",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "1999-04-01",
+  "source_catalog_subjects": "Historical fiction; Zulu (African people) -- Fiction; Quatermain, Allan (Fictitious character) -- Fiction; Zululand (South Africa) -- History -- Fiction",
+  "source_catalog_locc": "PR",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/1/7/1/1711/1711-0.txt",
+  "source_mirror_file_size": 540378,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG1711-Child-of-Storm/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG1711-Child-of-Storm/整本阅读版.txt",
+  "raw_sha256": "0160a35432f919b5226da99a3bab30f1890dda40bcd720ec1535ad56f8f8cbbb",
+  "reading_sha256": "f585d94a58101bd1d93805ebb9788aaeb27f78155d0170c7cbd4b07df4d1b7ef",
+  "raw_bytes": 540378,
+  "reading_bytes": 520596,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG1711-Child-of-Storm",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

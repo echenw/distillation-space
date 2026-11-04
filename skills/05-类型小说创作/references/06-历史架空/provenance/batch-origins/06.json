@@ -1,0 +1,129 @@
+{
+  "schema": "genre-batch-source-view/v1",
+  "task_id": "A-07-B06",
+  "parent_genre": "16-类型小说专项/06-历史架空",
+  "source_count": 17,
+  "o200k_tokens": 2681750,
+  "no_semantic_genre_reclassification": true,
+  "source_entries": [
+    {
+      "pg_id": "PG17183",
+      "title": "Atmâ A Romance",
+      "o200k_tokens": 34443,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG17183-Atm-A-Romance",
+      "sha256_reading": "3e0691080f02fb3bc62ade1c084c4ae81fbda07e3461ed206e18fe947c1093c2"
+    },
+    {
+      "pg_id": "PG1966",
+      "title": "The Path of the King",
+      "o200k_tokens": 114921,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG1966-The-Path-of-the-King",
+      "sha256_reading": "1c5022f3463f2f8ab50cb71281b482e0f13c37e9e1f6ca5872fff8b7f9979b9f"
+    },
+    {
+      "pg_id": "PG2399",
+      "title": "Imaginary Portraits",
+      "o200k_tokens": 44797,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG2399-Imaginary-Portraits",
+      "sha256_reading": "eafde31d1c984b53bb581f71013b4a43caeeae3cb89b3e36069a35539bdfff07"
+    },
+    {
+      "pg_id": "PG2516",
+      "title": "Redgauntlet: A Tale of the Eighteenth Century",
+      "o200k_tokens": 262546,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG2516-Redgauntlet-A-Tale-of-the-Eighteenth-Century",
+      "sha256_reading": "981096b1bcd03267a3fcbcde9886942403dff6d00dcc874e4cac2894d2395543"
+    },
+    {
+      "pg_id": "PG30664",
+      "title": "Callista : a Tale of the Third Century",
+      "o200k_tokens": 133930,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG30664-Callista-a-Tale-of-the-Third-Century",
+      "sha256_reading": "46b29742216cc36cb19b0ac7d303d390f874d9b1879e0e565f737d4c4f0b54ab"
+    },
+    {
+      "pg_id": "PG33609",
+      "title": "Marguerite de Valois",
+      "o200k_tokens": 286091,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG33609-Marguerite-de-Valois",
+      "sha256_reading": "f6495d804cf40f36e0da66e828b4abfa739adb915db6e0f8a6ab1a8313fd94fd"
+    },
+    {
+      "pg_id": "PG42681",
+      "title": "The Hero of the People: A Historical Romance of Love, Liberty and Loyalty",
+      "o200k_tokens": 107878,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG42681-The-Hero-of-the-People-A-Historical-Romance-of-Love-Liberty-",
+      "sha256_reading": "c5a746ad721bf9fe9908aaa4c609f75396dc76967d08e890025d043aa6206a09"
+    },
+    {
+      "pg_id": "PG5175",
+      "title": "Pearl-Maiden: A Tale of the Fall of Jerusalem",
+      "o200k_tokens": 178603,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG5175-Pearl-Maiden-A-Tale-of-the-Fall-of-Jerusalem",
+      "sha256_reading": "69987328d9c934c9a48a5efdecea583c3152fbe997d2e4451bb78e395edfdd17"
+    },
+    {
+      "pg_id": "PG5354",
+      "title": "Guy Mannering, Or, the Astrologer — Volume 02",
+      "o200k_tokens": 125338,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG5354-Guy-Mannering-Or-the-Astrologer-Volume-02",
+      "sha256_reading": "1e15b5b02659230a788371bcecaae6e9019223b5ffaa65cf6707099206eb0c4a"
+    },
+    {
+      "pg_id": "PG5355",
+      "title": "Guy Mannering, Or, the Astrologer — Complete",
+      "o200k_tokens": 247053,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG5355-Guy-Mannering-Or-the-Astrologer-Complete",
+      "sha256_reading": "f391e01cf13c424a19585bcc515923acd52fd3821e18fd50a4a80b97d7d4bb0f"
+    },
+    {
+      "pg_id": "PG5805",
+      "title": "The League of the Scarlet Pimpernel",
+      "o200k_tokens": 104208,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG5805-The-League-of-the-Scarlet-Pimpernel",
+      "sha256_reading": "57bbf033256988c923fbe2313a79b6e05bc550391481eaed33dca226b11be6c0"
+    },
+    {
+      "pg_id": "PG59178",
+      "title": "Midwinter: Certain Travellers in Old England",
+      "o200k_tokens": 122266,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG59178-Midwinter-Certain-Travellers-in-Old-England",
+      "sha256_reading": "b7d83e93ea2e4b73fef9803d9dc477ae7129c875d5c25b0e0fc84996c59518c6"
+    },
+    {
+      "pg_id": "PG65591",
+      "title": "Pimpernel and Rosemary",
+      "o200k_tokens": 145801,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG65591-Pimpernel-and-Rosemary",
+      "sha256_reading": "a82afb11da7c0dff3f3d9f89c825b486a5f75acd1991dcde936ff8b29df3321e"
+    },
+    {
+      "pg_id": "PG69768",
+      "title": "The bridge of San Luis Rey",
+      "o200k_tokens": 42494,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG69768-The-bridge-of-San-Luis-Rey",
+      "sha256_reading": "52f2435d167dbde84976da99ce794dc2000ad6383c09e1eb5d77fef8ab7a85fb"
+    },
+    {
+      "pg_id": "PG76816",
+      "title": "The great Roxhythe",
+      "o200k_tokens": 165348,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG76816-The-great-Roxhythe",
+      "sha256_reading": "388f913081bca16a0c657806f3223904ed297e98979df2c3590abfcf2b895eb4"
+    },
+    {
+      "pg_id": "PG7684",
+      "title": "Harold : the Last of the Saxon Kings — Complete",
+      "o200k_tokens": 287316,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG7684-Harold-the-Last-of-the-Saxon-Kings-Complete",
+      "sha256_reading": "908cfe8fc46b806e752885d5b1cb453a4a7d47e1d7a1ceb0ddc856d7602f2655"
+    },
+    {
+      "pg_id": "PG9785",
+      "title": "Woodstock; or, the Cavalier",
+      "o200k_tokens": 278717,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG9785-Woodstock-or-the-Cavalier",
+      "sha256_reading": "4fbf3116970305cbc961cbeaff1e7abe2a583acf54631412d7413f625e2c143d"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "PG1036",
+  "title": "Joe Wilson and His Mates",
+  "author": "Lawson, Henry, 1867-1922",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/1036",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Frontier and pioneer life -- Australia -- Fiction; Australia -- Fiction",
+  "source_catalog_issued": "1997-09-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/1/0/3/1036/1036-0.txt",
+  "mirror_reported_size": 467580,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG1036-Joe-Wilson-and-His-Mates",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "7b33751486ee67725d452e29446d6d740cb37f704105a26b0d97ac75cff0ee88",
+  "reading_sha256": "589fe138f6bcc7c0b0c3980f0f351fe283b4a68189b2acdc2c3c01ae77b5e9a7",
+  "raw_bytes": 467580,
+  "reading_bytes": 467475,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG1036-Joe-Wilson-and-His-Mates/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG1036-Joe-Wilson-and-His-Mates/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "PG43076",
+  "title": "Agnes of Sorrento",
+  "author": "Stowe, Harriet Beecher, 1811-1896",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/43076",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2013-07-01",
+  "source_catalog_subjects": "Historical fiction; Savonarola, Girolamo, 1452-1498 -- Fiction; Catholic Church -- Italy -- History -- To 1500 -- Fiction; Papacy -- History -- 1447-1565 -- Fiction; Sorrento (Italy) -- History -- Fiction",
+  "source_catalog_locc": "PS",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/4/3/0/7/43076/43076-0.txt",
+  "source_mirror_file_size": 678053,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG43076-Agnes-of-Sorrento/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG43076-Agnes-of-Sorrento/整本阅读版.txt",
+  "raw_sha256": "6c9aa62a9b29d3c3811f9c015024928ec7d2b40d16c00e64a1fdb7e5a40e66f0",
+  "reading_sha256": "c344dc13a1968d8f544bb2bfbe8534f85496e80f2ca58d3e035b8d27d4db5fb5",
+  "raw_bytes": 678053,
+  "reading_bytes": 677946,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG43076-Agnes-of-Sorrento",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

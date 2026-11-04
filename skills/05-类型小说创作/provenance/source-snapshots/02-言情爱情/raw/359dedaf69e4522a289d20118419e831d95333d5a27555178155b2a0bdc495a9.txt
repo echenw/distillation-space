@@ -1,0 +1,38 @@
+# 来源索引（source-index）— 18 本
+
+- 批次：16-类型小说专项/02-言情爱情/批次-03（Task B-03-B03）
+- 状态定义：**FULL**=1 行至末行连续实读；**PARTIAL**=仅计划窗口；**STRUCTURAL**=仅 `notes/structural/` 脚本档案（未读正文）。
+- "被规则引用"列：R1–R10 见 SKILL.md §7；"C2/C3/C5/C6" 见 references/05 红线。
+- 原文 SHA-256 与行数以 `materials/2026-10-25/source-verification.json` 与 `inputs/manifest.yaml` 为准。
+
+| # | PGID | 标题 | 作者 | 行数 | 状态 | 被规则引用 |
+|---|---|---|---|---|---|---|
+| 1 | PG25726 | The Pretty Sister of José | Frances Hodgson Burnett | 2159 | FULL | R1, R2, R3, R5, R6, R8；C2, C3, C6 |
+| 2 | PG15381 | Victorian Short Stories: Stories of Courtship（5 篇） | Gilbert / Trollope / Crackanthorpe / Egerton / Zangwill | 4021 | FULL | R1, R2, R3, R4, R5, R6, R7, R9, R10；C3, C5 |
+| 3 | PG145 | Middlemarch | George Eliot | 33277 | PARTIAL（5 窗 / 600 行） | R4, R7, R9, R10；C5 |
+| 4 | PG25579 | Ralph the Heir | Anthony Trollope | 22136 | PARTIAL（5 窗 / 600 行） | R1, R8, R10；C5 |
+| 5 | PG1624 | The Two Destinies | Wilkie Collins | 9481 | PARTIAL（5 窗 / 600 行） | R4, R5, R6, R7, R10 |
+| 6 | PG768 | Wuthering Heights | Emily Brontë | 12342 | PARTIAL（5 窗 / 600 行） | R5, R7, R8, R10；C2 |
+| 7 | PG27 | Far from the Madding Crowd | Thomas Hardy | 16629 | STRUCTURAL | R2-f（章题级） |
+| 8 | PG8897 | Nina Balatka | Anthony Trollope | 8162 | STRUCTURAL | 未引用（仅结构记录） |
+| 9 | PG16389 | The Enchanted April | Elizabeth von Arnim（**UNVERIFIED**） | 8731 | STRUCTURAL | 未引用（仅结构记录） |
+| 10 | PG1569 | The Lily of the Valley | Honoré de Balzac | 9734 | STRUCTURAL | 未引用（书信体框架，仅结构记录） |
+| 11 | PG945 | Dust | **UNVERIFIED** | 4868 | STRUCTURAL | 未引用 |
+| 12 | PG20945 | Patty Blossom | Carolyn Wells（**UNVERIFIED**） | 7295 | STRUCTURAL | 未引用 |
+| 13 | PG68069 | The Principal Girl | **UNVERIFIED** | 8267 | STRUCTURAL | 未引用 |
+| 14 | PG39172 | A Safety Match | **UNVERIFIED** | 8729 | STRUCTURAL | 未引用（章题"THE MATCH IS STRUCK"仅记于结构文件） |
+| 15 | PG42085 | A Bachelor Husband | **UNVERIFIED** | 14343 | STRUCTURAL | 未引用 |
+| 16 | PG7892 | Heart and Science | Wilkie Collins（**UNVERIFIED**，与 PG1624 同族推定） | 15367 | STRUCTURAL | 未引用（与 PG1624 同族，不重复计数） |
+| 17 | PG47874 | My Wife and I; Or, Harry Henderson's History | Harriet Beecher Stowe（**UNVERIFIED**） | 17195 | STRUCTURAL | 未引用 |
+| 18 | PG7005 | The Antiquary — Complete | Walter Scott（**UNVERIFIED**） | 18665 | STRUCTURAL | 未引用 |
+
+## 统计
+- 18 本 = FULL 2 + PARTIAL 4 + STRUCTURAL 12。
+- 被规则实际引用：**7 本**（2 FULL + 4 PARTIAL + 1 STRUCTURAL）。
+- 未被任何规则引用：**11 本**（全部 STRUCTURAL）。
+- 来源族：16 族（Trollope 2 本→1 族；W. Collins 2 本→1 族；PG15381 合集→1 族；PG16389 单列 1 族）。
+
+## 引用与免责
+- FULL/PARTIAL 的行号均经"原文逐字检索 + 行号回查"两次核验（见 `notes/quality/anchor-check.md`）。
+- STRUCTURAL 引用只到"章题/取样行"层级，**不代表已读正文**。
+- 作者栏标 **UNVERIFIED** 者，仅依据书名/批次清单推定，未核对原书版权页。

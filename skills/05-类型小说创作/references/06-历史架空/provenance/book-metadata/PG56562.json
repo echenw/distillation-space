@@ -1,0 +1,36 @@
+{
+  "id": "PG56562",
+  "title": "Kidnapped (Illustrated) Being Memoirs of the Adventures of David Balfour in the Year 1751",
+  "author": "Stevenson, Robert Louis, 1850-1894; Wyeth, N. C. (Newell Convers), 1882-1945 [Illustrator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/56562",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Adventure and adventurers -- Fiction; Kidnapping -- Fiction",
+  "source_catalog_issued": "2018-02-13",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/5/6/5/6/56562/56562-0.txt",
+  "mirror_reported_size": 460510,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG56562-Kidnapped-Illustrated-Being-Memoirs-of-the-Adventures-of-Dav",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "f51cdfe9c5d604178feac75199d9fa46b9651a0a3ebafa20b65b62573122834c",
+  "reading_sha256": "37a6b44de7df0eaac492f75f7dedfb18fc8b5fd0232590ba1d47d739c83adf46",
+  "raw_bytes": 460510,
+  "reading_bytes": 440695,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG56562-Kidnapped-Illustrated-Being-Memoirs-of-the-Adventures-of-Dav/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG56562-Kidnapped-Illustrated-Being-Memoirs-of-the-Adventures-of-Dav/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "PG69768",
+  "title": "The bridge of San Luis Rey",
+  "author": "Wilder, Thornton, 1897-1975; Drevenstedt, Amy, 1886- [Illustrator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/69768",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Peru -- Fiction; Accident victims -- Fiction; Bridges -- Accidents -- Peru -- Fiction",
+  "source_catalog_issued": "2023-01-11",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/9/7/6/69768/69768-0.txt",
+  "mirror_reported_size": 183016,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG69768-The-bridge-of-San-Luis-Rey",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "86aa0dc4a8a7ad9abd90639bc8c2b25fed1294bd344dbdfc5c5ef72bb3026851",
+  "reading_sha256": "52f2435d167dbde84976da99ce794dc2000ad6383c09e1eb5d77fef8ab7a85fb",
+  "raw_bytes": 183016,
+  "reading_bytes": 182909,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG69768-The-bridge-of-San-Luis-Rey/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG69768-The-bridge-of-San-Luis-Rey/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

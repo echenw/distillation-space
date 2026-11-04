@@ -1,0 +1,36 @@
+{
+  "id": "PG840",
+  "title": "Lorna Doone: A Romance of Exmoor",
+  "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/840",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Monmouth's Rebellion, 1685 -- Fiction; Love stories; Exmoor (England) -- Fiction",
+  "source_catalog_issued": "2006-04-27",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/8/4/840/840-0.txt",
+  "mirror_reported_size": 1478458,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG840-Lorna-Doone-A-Romance-of-Exmoor",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "6d9fd2a1e43873e03f51bd2745ff2a3904321deccd7b32b6864b438fcf86c34f",
+  "reading_sha256": "6072d428b5dbac8878b1bdfee12d083e11605943be1a78eba8e2d57b5c1903b8",
+  "raw_bytes": 1478458,
+  "reading_bytes": 1458712,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG840-Lorna-Doone-A-Romance-of-Exmoor/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG840-Lorna-Doone-A-Romance-of-Exmoor/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

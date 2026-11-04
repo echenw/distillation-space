@@ -1,0 +1,80 @@
+# 01 · 时间、制度与权力（H01 / H02 / H04 / H05）
+
+每条规则：**规则句 → F 证据（PG + 行号 + ≤25 词逐字引文 + 证据强度）→ when / when_not → 失效模式（反例）→ 产出物**。
+引用路径：`../../notes/evidence/card-PG*.md` 或 `partial-PG*.md`；覆盖状态见 `06-source-index.md`。
+
+---
+
+## H01 双钟计时：公共纪年 + 私人地点（ADOPT）
+
+**规则句**：在开场或每一幕的入口，同时给出“可考的公共时间”（年/月/政权纪年）与“私人坐标”（具体地点/房间/身体状态）。让读者一眼知道历史时钟与人物时钟的夹角。
+
+**F 证据**
+- PG1433（FULL）L150-152：“Toward the end of Venemiaire, year VII., a republican period which in the present day corresponds to October 20, 1799”。革命历与公历并置，同时交代“现在”与“当时”的换算。
+- PG1374（FULL）L28-33：开篇“In the year 1800, toward the close of October”与“was standing for a long time in front of the palace of the Tuileries”。
+- PG1374（FULL）L440：“the end of the month of July, 1815. The second return of the Bourbons had shaken many friendships”。
+
+**when**：历史小说开场；时间跳跃后的第一段；读者需要知道“这是哪个政权下”的任何场景。
+**when_not**：传说/神话模式（PG840 序言明确拒绝历史小说编年，L18-21）；或系列作已在前卷锁定时（可只给相对时间）。
+**失效模式**：只给年份不给地点→像年表；只给地点不给年份→像地方志。反例 A03：精确日期堆叠而不影响选择。
+
+**产出物**：时代压力表第一行（公共时间 / 私人坐标 / 两者夹角）。
+
+---
+
+## H02 制度即压力：冲突只能由当时制度解/不能解（ADOPT）
+
+**规则句**：核心冲突必须落在一个“当时可执行的制度”上：谁能批准、需要什么文书、违反的后果是什么。让角色不是“被时代氛围困扰”，而是被具体条款卡住。
+
+**F 证据**
+- PG1374（FULL）L2046-2066：公证人宣读“the law allows a respectful summons before proceeding to the celebration of a marriage--in spite of the non-consent of the parents”。父亲的反制不是道理，而是家法。
+- PG1374（FULL）L1950-1951：“They mean that I have a dagger, and that I do not fear man's justice. Corsicans explain themselves to God.”两套法源同时有效，冲突不可调。
+- PG388（PARTIAL）L5907-5912：“Will you take the oath of allegiance to Virginia and the Continental Congress?”入伍先过誓词，这就是边境政权的“制度”。
+- PG12175（PARTIAL）L5641-5643：“I accept my release on parole.”假释不是抽象名词，而是次日必须到庭的义务（L5680-5681）。
+
+**when**：婚姻、继承、兵役、迁徙、职业准入、政治审查。
+**when_not**：无国家的边疆/海上/战时真空——此时必须把“习俗”写成明文法：PG1374 L194-196 说“The tradition of the Vendetta will long prevent the reign of law in Corsica”，并给出“But it _must_ be destroyed, at any cost.”。
+**失效模式**：制度只出现在旁白解释里，不改变任何人的行动→A08 服装剧；制度被现代常识轻易绕过→读者不信。
+
+**产出物**：制度清单（名称 / 执行者 / 文书或见证 / 违反后果 / 主角能否绕过）。
+
+---
+
+## H04 历史人物短线出场：改变选项后离场（CONDITIONAL）
+
+**规则句**：真实历史人物只在“其决定改变主角可选集合”的节点上场；上场必须给出一个可核的决策（批准/拒绝/立法/调动），随后尽快退场，让后果留在主角生活里。
+
+**F 证据**
+- PG1374（FULL）L99-128：吕西安、缪拉、拉纳、拉普在拿破仑书房进出；拉普赖着不走，最后被“pushed by the shoulders”（L127-128）。
+- PG1374（FULL）L188-190：拿破仑给出判决：“I have become the leader of a great nation; I command the Republic; I am bound to execute the laws.”
+- PG1374（FULL）L246-249：紧接着一句“Fifteen years elapsed...”，历史人物整体退场，叙事回到家庭。
+
+**when**：开国/复辟/战争决策节点；主角的命运取决于一次赦免、任命、征召、判决。
+**when_not**：人物只是“路过”或提供气氛；此时应让其在幕后（PG840 只用“a new king arose”，L25643）。
+**失效模式**：A01 真实人物巡游——出场不改变任何选项，读者只看到名人蜡像。
+
+**产出物**：人物出场台账（人物 / 决策 / 改变谁的哪个选项 / 退场方式 / 后续提及次数）。
+
+---
+
+## H05 清洗进入日常：派系改变座位、婚配、雇佣（ADOPT）
+
+**规则句**：政治清洗不要只写成街头暴动；把它写进室内：谁和谁同桌、画架摆在哪、谁能来上课、谁被解雇、谁不能结婚。
+
+**F 证据**
+- PG1374（FULL）L439-441：“this scene took place toward the end of the month of July, 1815. The second return of the Bourbons had shaken many friendships”。
+- PG1374（FULL）L399-406、L468-470：阿梅莉把吉内芙拉的画架搬走，作为政治羞辱；“to drive her from a place that in some sense belonged to her”（L468-470）。
+- PG1374（FULL）L1093-1096：“patriotism and Bonapartism (in those days the terms were synonymous)”——一个词义变化就决定了谁还能来画室。
+
+**when**：革命、复辟、内战、占领、告密盛行的年代。
+**when_not**：政治与人物选择无关时（删掉派系，情节不变）→不要写。
+**失效模式**：只写口号与旗帜，不写座次与饭碗；或把派系当成品格证明（C7/A05，PG1374 L460-470 的浅薄保王派 vs 忠贞波拿巴派即语料内的偏见样本）。
+
+**产出物**：日常政治压力表（场合 / 派系标记 / 被改变的行为 / 目击者）。
+
+---
+
+## 真实事件接缝（配合 H11，见 03 §4）
+
+- 事件进入室内的三种载体：报纸叫卖（PG1374 L888-892）、酒馆口信（PG6872 L7083-7086）、马蹄与狗吠（PG388 L11804-11808）。三处都遵守同一原则：**先给声音，再给消息，最后给人的反应**。
+- 反例：让主角恰好在战场看见全部事件→史诗化，失去“后方”的历史感；语料中的战争多以口粮、伤兵、传闻出现（PG6872 L10581-10618）。

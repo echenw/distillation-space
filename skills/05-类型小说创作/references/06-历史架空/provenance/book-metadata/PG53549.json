@@ -1,0 +1,38 @@
+{
+  "id": "PG53549",
+  "title": "I Will Maintain",
+  "author": "Bowen, Marjorie, 1888-1952",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/53549",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2016-11-18",
+  "source_catalog_subjects": "Historical fiction; Biographical fiction; Netherlands -- History -- 1648-1714 -- Fiction; William III, King of England, 1650-1702 -- Fiction; Netherlands -- Kings and rulers -- Fiction",
+  "source_catalog_locc": "PR",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/5/3/5/4/53549/53549-0.txt",
+  "source_mirror_file_size": 920083,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG53549-I-Will-Maintain/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG53549-I-Will-Maintain/整本阅读版.txt",
+  "raw_sha256": "db9c71dbafdd6c435933b73e491c88d68ec09954bbda03ee548d228c4cc2e255",
+  "reading_sha256": "a67339d486512df662eb7438860301d5d66d04fe5de004f5cb54c8596de9da77",
+  "raw_bytes": 920083,
+  "reading_bytes": 919976,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG53549-I-Will-Maintain",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

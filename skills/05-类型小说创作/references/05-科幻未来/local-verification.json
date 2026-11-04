@@ -1,0 +1,64 @@
+{
+  "scope": "source Skill SHA and line-range integrity, original-byte retention, current local links; not real consumer or original PG validation",
+  "source_files": 166,
+  "unique_source_sha256": 118,
+  "rules": 28,
+  "microcards": 102,
+  "decisions": 60,
+  "template_types": 44,
+  "evidence_errors": [],
+  "original_pg_recheck": "PG30267_FULL_PLUS_EXPLICIT_TARGETED_WINDOWS_ONLY",
+  "consumer_effect": "NOT_PROVEN",
+  "producer_original_pg_recheck": "NOT_DONE",
+  "main_primary_execution_id": "4ca957cc-765c-4807-8a03-4aac1db48d2d",
+  "microcard_rule_reference_normalization": {
+    "previous_shorthand_fields": 83,
+    "current_all_ids_have_SF_prefix": true
+  },
+  "main_additional_primary_recheck": {
+    "execution_id": "aef1ae3a-2efc-45dc-b07f-05f9cf740f4f",
+    "raw_output": "audit/verification/05-SF-genre-and-identity-recheck.txt",
+    "exit_code": 0,
+    "output_truncated": false,
+    "readings": [
+      {
+        "pg": "PG30267",
+        "lines": [
+          [
+            1,
+            520
+          ]
+        ],
+        "total_lines": 520,
+        "scope": "FULL_TEXT_ACTUALLY_READ",
+        "sha256": "550caa4723ca758f775e7f48b2c7c3a78aaf98e37a7bee92e534ead8c05977c5"
+      },
+      {
+        "pg": "PG25439",
+        "lines": [
+          [
+            1,
+            85
+          ]
+        ],
+        "total_lines": 8454,
+        "scope": "TITLE_AND_INTRODUCTION_WINDOW_ONLY",
+        "sha256": "fd8dfd517a51f016194db1da962245e6b21dd2fb807b7b6114d7afd88ca10488"
+      },
+      {
+        "pg": "PG51337",
+        "lines": [
+          [
+            1,
+            85
+          ]
+        ],
+        "total_lines": 830,
+        "scope": "TITLE_AND_OPENING_WINDOW_ONLY",
+        "sha256": "ecc0ba63abd834ab38e6778e790f85fbc33d24bfe1036ce460e76cd76f504a5a"
+      }
+    ]
+  },
+  "main_source_identity_table_reading": "All rows actually read across the Main integration passes; this is not full primary-book reading.",
+  "main_K016_submechanism_recheck": "Original history-time.md L1–74 and examples.md read in full; PG30267 full L1–520 reread; six distinct submechanisms retained with conditional attribution."
+}

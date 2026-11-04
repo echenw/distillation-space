@@ -1,0 +1,39 @@
+{
+  "id": "PG2681",
+  "title": "Ten Years Later",
+  "author": "Dumas, Alexandre, 1802-1870",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Project_Gutenberg_public_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/2681",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/2/6/8/2681/2681-0.txt",
+  "mirror_reported_size": 1135993,
+  "source_issued_at": "2001-06-01",
+  "source_subjects": "Historical fiction; France -- History -- Louis XIV, 1643-1715 -- Fiction; Adventure and adventurers -- Fiction; Swordsmen -- Fiction",
+  "source_rights_caveat": "Gutenberg official catalog+public mirror; per-work and jurisdiction rights must be checked independently",
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG2681-Ten-Years-Later",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "28de952fe18d91453f175dbb957183eea1e2ccfadf62ec8c23405ee68874d9db",
+  "reading_sha256": "2bc7f8957a03ae067e53869aafbe8f43ac07f8fd90eb0f06eba261a112d8265c",
+  "raw_bytes": 1135993,
+  "reading_bytes": 1135889,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG2681-Ten-Years-Later/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG2681-Ten-Years-Later/整本阅读版.txt",
+  "content_status_reason": null,
+  "source_role_note": "Fiction narrative or play case; only descriptive structural observations, not authorial instructions.",
+  "editorial_match_basis": "PG_CATALOG_SUBJECT_ONLY_NOT_YET_READ",
+  "material_file_type": "BOOK_OR_STORY_OR_DRAMATIC_SCRIPT",
+  "source_text_charset": "utf-8",
+  "acquisition_screen": "HEADERS_AND_GUTENBERG_WRAPPERS_SCREENED_US_PD_NOT_LEGAL_CERTIFICATION"
+}

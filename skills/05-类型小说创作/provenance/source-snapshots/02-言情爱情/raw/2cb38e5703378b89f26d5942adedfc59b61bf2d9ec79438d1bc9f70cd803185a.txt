@@ -1,0 +1,93 @@
+# 05 · 代价结算与反高潮收束（R7 / R10）+ 红线
+
+> 用途：让结局"有重量"；避免用旁白直接宣布幸福；并给出本 Skill 的不可协商边界。
+> 证据级别：F = 全文/窗口实读。
+
+---
+
+## R7 代价结算（Cost Ledger）
+
+**规则（P）**：结局必须列出**代价清单**——谁失去了什么——并由**第三方之口**说出，而不是由主角自我总结。可用代价类型（选 1–3 项）：
+1. 社会位置（被议论、被放逐、离开故土）
+2. 亲属关系（断绝、冷战、永不登门）
+3. 公共价值（才华被婚姻吸收、事业中断）
+4. 时间与身体（独身终老、病、死）
+
+**F 证据**
+
+| # | 出处 | 逐字引文 | 代价类型 |
+|---|---|---|---|
+| R7-a | PG15381:1360 | "In her own eyes she is a confirmed old maid" | 4：独身；且由她自己与叙述者双重确认 |
+| R7-b | PG15381:2679 | "from this day forward, Tony, ye're na son o' mine" | 2：母子断绝，且当场宣布 |
+| R7-c | PG145:33246 | "she was spoken of to a younger generation as a fine girl who married a sickly clergyman" | 1：身后评价被压缩成两桩婚事 |
+| R7-d | PG145:33251 | "else she would not have married either the one or the other" | 1：道德判词（"不是好女人"） |
+| R7-e | PG1624:9445 | "we have always one last consolation to sustain us--we have love" | 1：离乡避谤，只剩"爱"这一项资产 |
+| R7-f | PG1624:9451 | "It does seem hard to charge the misfortunes of my life on me, as if they were my faults" | 1：把判决权交回读者 |
+| R7-g | PG768:12298 | "as soon as they are married, and that will be on New Year’s Day" | 4（反向）：上一代死，下一代同日成婚，代价与补偿并置 |
+
+**适用**
+- 所有需要"重量"的结局；尤其 HE 也需要代价（否则显得轻）。
+- 多线作品：每条线各结算一项，避免全赢。
+
+**不适用**
+- 中篇以下的轻松向：可只结算"一项小代价"（错过一次机会、少一个朋友），不必上纲。
+- 若代价由"事故/疾病"强制产生（而非选择），会变成苦难展示，不构成结算。
+
+**反例（F，不照做）**
+- PG25726 的结局没有代价清单：她在数日内成婚，母亲/兄长/社会均无损失（L2145–2152）；这是本批次"最轻"的收束，适合对照而非模仿。
+- PG1624 的母亲在许可后即退场（L7185–7213），其自身代价未结算，使"许可"显得廉价。
+
+**最小节拍**
+1. 婚礼/复合后，切到一个**旁人场景**（酒馆、教区、街口、亲戚家）。
+2. 旁人用一句闲话给出判词（含数字或称呼："她还是那个……""他现在是……"）。
+3. 主角不在场，或在场但不辩解。
+4. 最后一句留给物/景（不是抒情），完成收束。
+
+---
+
+## R10 反高潮（Anti-Climax Landing）
+
+**规则（P）**：全篇至少一次，把"最该抒情"的场景写成**吃喝、天气、账目、或旁人的闲话**；结局尤其要用反高潮落地，不许用旁白宣布幸福。
+
+**F 证据**
+
+| # | 出处 | 逐字引文 | 反高潮手段 |
+|---|---|---|---|
+| R10-a | PG15381:3538 | "They had said nothing--not a word of their love even; nothing but cakes and ices." | 吃喝：约会全程只吃了蛋糕和冰淇淋 |
+| R10-b | PG145:24974 | "a first farewell has pathos in it, but to come back for a second lends an opening to comedy" | 文体判断：把重逢降格为喜剧 |
+| R10-c | PG25579:22042 | "It had been settled that both the marriages should take place early in April" | 账目/日程：双婚礼用行政口吻交代 |
+| R10-d | PG768:12341 | "wondered how any one could ever imagine unquiet slumbers for the sleepers in that quiet earth" | 景物+反问：用"安静"否定全书的激烈 |
+| R10-e | PG15381:4020 | "He had become a woman beater." | 短句判决：把抒情彻底掐断（此例过狠，见红线） |
+| R10-f | PG1624:70 | "here at least was a happy marriage!" | 开篇即用旁人的判断代替抒情（前置反高潮） |
+
+**适用**
+- 情绪浓度高的作品需要"泄压阀"，否则读者疲劳。
+- 结局需要"生活继续"的质感。
+
+**不适用**
+- 悲剧高潮（死亡、诀别）当场不宜反高潮，应留到下一场/尾声。
+- 若前文没有建立"日常细节"的质感，突然写吃喝会显得敷衍。
+
+**反例（F，不照做）**
+- PG15381（THE WOMAN BEATER）用"他成了打老婆的人"作末句（R10-e），反讽成立但情感线被彻底取消；类型言情若照搬会让读者觉得被欺骗。
+- PG25579 的双婚礼用"settled"一词带过（R10-c），代价是读者对两桩婚事毫无参与感。
+
+---
+
+## 红线（Red Lines，来自冲突裁决）
+
+### C2 自毁胁迫
+- **现象（F）**：PG25726 L1935 "she bought a sharp little knife and hid it in her breast"；L2113 "if you die, I will drive the knife to its hilt in my heart"。PG768 L3112 淋雨一夜 → L3169 "It proved the commencement of delirium"。
+- **裁决**：本 Skill 不提供"以死相逼=深情"的模板。若情节必须出现，需满足三条：①代价落在施害者本人；②由第三方指出其不当；③不作为关系推进的**唯一**原因。
+
+### C3 强制身体动作
+- **现象（F）**：PG25726 L1332 "caught her wrists"；PG15381 L1614 "gripping her arm, he forced her to stop"；L1648 "seizing her shoulders, he forced her backwards"；L2265 "gripping her wrist"。
+- **裁决**：禁止写入建议动作。可作为**反派/失控时刻**的标记，并在文本中承担后果。
+
+### C6 巧合解决
+- **现象（F）**：PG25726 L2042–2054 对视导致牛角挑伤，事故直接促成和解。
+- **裁决**：事故只能加压，不能解决；解决必须由人物做一次可选择的行为（PG15381 L1245–1252 由女方提出解除婚约，是正例）。
+
+### C5 叙述者信用
+- **现象（F）**：PG25579 L5639 "an assurance of esteem and friendship means, and only can mean"（全知担保）vs PG15381 L41→L196（叙述者自承误读）。
+- **裁决**：一篇之内只选一种信用等级，并在前 10% 确立；混用需显式标记（如"多年后我才知道"）。

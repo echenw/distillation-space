@@ -1,0 +1,116 @@
+{"pg": "PG6407", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/06-历史架空/PG6407-The-Abbot/整本阅读版.txt", "sha256": "9fd5cd027ed1071e7a9f8e825fe9baa50e8b5263a97e12f1aba9492a7bc0d963", "lines": 19127, "scope": "exact term search and listed context windows, not full reread"}
+{"term": "Hilary", "hit_lines": []}
+{"term": "Sebastian", "hit_lines": [14852, 14918, 14921, 14928]}
+WINDOW 14844-14864
+14844	adherence to thine own graver opinion, which holds our talk as folly.
+14845	But thou art court-bred, and wilt well understand me when I say,
+14846	the Queen _commands_ Lady Fleming to tell her where she led the last
+14847	_branle_.”
+14848	
+14849	With a face deadly pale, and a mien as if she were about to sink into
+14850	the earth, the court-bred dame, no longer daring to refuse obedience,
+14851	faltered out--“Gracious Lady--if my memory err not--it was at a masque
+14852	in Holyrood--at the marriage of Sebastian.”
+14853	
+14854	The unhappy Queen, who had hitherto listened with a melancholy smile,
+14855	provoked by the reluctance with which the Lady Fleming brought out her
+14856	story, at this ill-fated word interrupted her with a shriek so wild
+14857	and loud that the vaulted apartment rang, and both Roland and Catherine
+14858	sprang to their feet in the utmost terror and alarm. Meantime, Mary
+14859	seemed, by the train of horrible ideas thus suddenly excited, surprised
+14860	not only beyond self-command, but for the moment beyond the verge of
+14861	reason.
+14862	
+14863	“Traitress!” she said to the Lady Fleming, “thou wouldst slay thy
+14864	sovereign--Call my French guards--_a moi! a moi! mes Français!_--I
+WINDOW 14910-14930
+14910	there in the Lady Fleming's words to excite so wild a transport?”
+14911	
+14912	“Oh, the Lady Fleming, the Lady Fleming,” said Catherine, repeating the
+14913	words impatiently; “the Lady Fleming is a fool--she loves her mistress,
+14914	yet knows so little how to express her love, that were the Queen to ask
+14915	her for very poison, she would deem it a point of duty not to resist
+14916	her commands. I could have torn her starched head-tire from her formal
+14917	head--The Queen should have as soon had the heart out of my body, as the
+14918	word Sebastian out of my lips--That that piece of weaved tapestry should
+14919	be a woman, and yet not have wit enough to tell a lie!”
+14920	
+14921	“And what was this story of Sebastian?” said the page. “By Heaven,
+14922	Catherine, you are all riddles alike!”
+14923	
+14924	“You are as great a fool as Fleming,” returned the impatient maiden;
+14925	“know ye not, that on the night of Henry Darnley's murder, and at the
+14926	blowing up of the Kirk of Field, the Queen's absence was owing to her
+14927	attending on a masque at Holyrood, given by her to grace the marriage of
+14928	this same Sebastian, who, himself a favoured servant, married one of her
+14929	female attendants, who was near to her person?”
+14930	
+WINDOW 14913-14933
+14913	words impatiently; “the Lady Fleming is a fool--she loves her mistress,
+14914	yet knows so little how to express her love, that were the Queen to ask
+14915	her for very poison, she would deem it a point of duty not to resist
+14916	her commands. I could have torn her starched head-tire from her formal
+14917	head--The Queen should have as soon had the heart out of my body, as the
+14918	word Sebastian out of my lips--That that piece of weaved tapestry should
+14919	be a woman, and yet not have wit enough to tell a lie!”
+14920	
+14921	“And what was this story of Sebastian?” said the page. “By Heaven,
+14922	Catherine, you are all riddles alike!”
+14923	
+14924	“You are as great a fool as Fleming,” returned the impatient maiden;
+14925	“know ye not, that on the night of Henry Darnley's murder, and at the
+14926	blowing up of the Kirk of Field, the Queen's absence was owing to her
+14927	attending on a masque at Holyrood, given by her to grace the marriage of
+14928	this same Sebastian, who, himself a favoured servant, married one of her
+14929	female attendants, who was near to her person?”
+14930	
+14931	“By Saint Giles,” said the page, “I wonder not at her passion, but only
+14932	marvel by what forgetfulness it was that she could urge the Lady Fleming
+14933	with such a question.”
+{"term": "silhouette", "hit_lines": []}
+{"term": "great and violent grief", "hit_lines": []}
+{"term": "Acta", "hit_lines": [12314, 17165]}
+WINDOW 12306-12326
+12306	almost universally unintelligible, Dr. Luke Lundin approached the beach,
+12307	and hailed the page as he advanced towards him.--“The freshness of the
+12308	morning upon you, fair sir--You are sent, I warrant me, to see if we
+12309	observe here the regimen which her good ladyship hath prescribed, for
+12310	eschewing all superstitious observances and idle anilities in these
+12311	our revels. I am aware that her good ladyship would willingly have
+12312	altogether abolished and abrogated them--But as I had the honour to
+12313	quote to her from the works of the learned Hercules of Saxony, _omnis
+12314	curatio est vel canonica vel coacta_,--that is, fair sir, (for silk and
+12315	velvet have seldom their Latin _ad unguem_,) every cure must be wrought
+12316	either by art and induction of rule, or by constraint; and the wise
+12317	physician chooseth the former. Which argument her ladyship being pleased
+12318	to allow well of, I have made it my business so to blend instruction and
+12319	caution with delight--_fiat mixtio_, as we say--that I can answer
+12320	that the vulgar mind will be defecated and purged of anile and Popish
+12321	fooleries by the medicament adhibited, so that the _primae vice_ being
+12322	cleansed, Master Henderson, or any other able pastor, may at will throw
+12323	in tonics, and effectuate a perfect moral cure, _tuto, cito, jucunde_.”
+12324	
+12325	“I have no charge, Dr. Lundin,” replied the page--
+12326	
+WINDOW 17157-17177
+17157	is safe.”
+17158	
+17159	“Will you permit this, madam?” said Catherine, imploringly; “you leave
+17160	your deliverer to death.”
+17161	
+17162	“I will not,” said the Queen.--“Seyton I command you to stay at every
+17163	risk.”
+17164	
+17165	“Pardon me, madam, if I disobey,” said the intractable young man; and
+17166	with one hand lifting in Lady Fleming, he began himself to push off the
+17167	boat.
+17168	
+17169	She was two fathoms' length from the shore, and the rowers were getting
+17170	her head round, when Roland Graeme, arriving, bounded from the beach,
+17171	and attained the boat, overturning Seyton, on whom he lighted. The youth
+17172	swore a deep but suppressed oath, and stopping Graeme as he stepped
+17173	towards the stern, said, “Your place is not with high-born dames--keep
+17174	at the head and trim the vessel--Now give way--give way--Row, for God
+17175	and the Queen!”
+17176	
+17177	The rowers obeyed, and began to pull vigorously.

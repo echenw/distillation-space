@@ -1,0 +1,36 @@
+{
+  "id": "PG31484",
+  "title": "The Works of Robert Louis Stevenson - Swanston Edition, Vol. 08",
+  "author": "Stevenson, Robert Louis, 1850-1894; Lang, Andrew, 1844-1912 [Other]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/31484",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Knights and knighthood -- Fiction; War stories; English literature -- 19th century; Bildungsromans; Young men -- Fiction; Guardian and ward -- Fiction; Great Britain -- History -- Wars of the Roses, 1455-1485 -- Fiction; Outlaws -- Fiction",
+  "source_catalog_issued": "2010-03-03",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/1/4/8/31484/31484-8.txt",
+  "mirror_reported_size": 505166,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG31484-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-08",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "5343b94d6365babca0c1bc4ff0bc01b3ea29fecaaa5766eaf6481029b84b22b1",
+  "reading_sha256": "e65f875e69833cf2a1de03e927b2282c91707efd0194ecdc8c265093f3009479",
+  "raw_bytes": 505166,
+  "reading_bytes": 485308,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG31484-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-08/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG31484-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-08/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

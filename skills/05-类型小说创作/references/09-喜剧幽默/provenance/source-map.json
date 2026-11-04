@@ -1,0 +1,1438 @@
+{
+  "schema": "genre-fusion-source-map/v2",
+  "source_root": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace",
+  "tasks": [
+    "B-04-B01",
+    "B-04-B02",
+    "B-04-B03",
+    "B-04-B04"
+  ],
+  "files": [
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 14055,
+      "sha256": "07e178ec916efc2c2f2a746f2aeb3275b3fd046c1bce2599cfdee5d57f10acc8",
+      "lines": 144,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:07e178ec916e:L1-5",
+        "B-04-B01:07e178ec916e:L6-7",
+        "B-04-B01:07e178ec916e:L8-15",
+        "B-04-B01:07e178ec916e:L16-26",
+        "B-04-B01:07e178ec916e:L27-28",
+        "B-04-B01:07e178ec916e:L29-35",
+        "B-04-B01:07e178ec916e:L36-42",
+        "B-04-B01:07e178ec916e:L43-54",
+        "B-04-B01:07e178ec916e:L55-72",
+        "B-04-B01:07e178ec916e:L73-89",
+        "B-04-B01:07e178ec916e:L90-104",
+        "B-04-B01:07e178ec916e:L105-116",
+        "B-04-B01:07e178ec916e:L117-122",
+        "B-04-B01:07e178ec916e:L123-134",
+        "B-04-B01:07e178ec916e:L135-144"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 619,
+      "sha256": "2786e792c329d8afd805019037ceacaa91c3faefa09231e0a565d8ce80b6ee4d",
+      "lines": 12,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "02-前提误会与现实账本.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:2786e792c329:L1-12"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/examples/worked-example.md",
+      "skill_relative": "examples/worked-example.md",
+      "bytes": 6749,
+      "sha256": "e38a36fdaf5599317d7fec787556eeb7b3213330c8f32b36108dac48d987e898",
+      "lines": 125,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "06-模板与设计示例.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:e38a36fdaf55:L1-6",
+        "B-04-B01:e38a36fdaf55:L7-12",
+        "B-04-B01:e38a36fdaf55:L13-18",
+        "B-04-B01:e38a36fdaf55:L19-35",
+        "B-04-B01:e38a36fdaf55:L36-40",
+        "B-04-B01:e38a36fdaf55:L41-50",
+        "B-04-B01:e38a36fdaf55:L51-56",
+        "B-04-B01:e38a36fdaf55:L57-70",
+        "B-04-B01:e38a36fdaf55:L71-76",
+        "B-04-B01:e38a36fdaf55:L77-82",
+        "B-04-B01:e38a36fdaf55:L83-96",
+        "B-04-B01:e38a36fdaf55:L97-118",
+        "B-04-B01:e38a36fdaf55:L119-125"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/references/01-attribution-and-evidence.md",
+      "skill_relative": "references/01-attribution-and-evidence.md",
+      "bytes": 5065,
+      "sha256": "5bd0d47984412b9d1afdf488d1586e32fefeeab7631fa5084567257f0ad67a21",
+      "lines": 72,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:5bd0d4798441:L1-6",
+        "B-04-B01:5bd0d4798441:L7-27",
+        "B-04-B01:5bd0d4798441:L28-42",
+        "B-04-B01:5bd0d4798441:L43-60",
+        "B-04-B01:5bd0d4798441:L61-72"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/references/02-satire-and-boundaries.md",
+      "skill_relative": "references/02-satire-and-boundaries.md",
+      "bytes": 5444,
+      "sha256": "43fabdcf654a761323f43d26792eb2ebd2d0ceaf1db013e41786201d64f7e6b0",
+      "lines": 86,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "03-语言清单与修辞机制.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:43fabdcf654a:L1-6",
+        "B-04-B01:43fabdcf654a:L7-23",
+        "B-04-B01:43fabdcf654a:L24-38",
+        "B-04-B01:43fabdcf654a:L39-54",
+        "B-04-B01:43fabdcf654a:L55-69",
+        "B-04-B01:43fabdcf654a:L70-86"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/references/03-repetition-openings-payoff.md",
+      "skill_relative": "references/03-repetition-openings-payoff.md",
+      "bytes": 6423,
+      "sha256": "fc3773d6b8aa30c0960947f365453856d02aa2bf6e9c87e2e89986139a48f7c6",
+      "lines": 108,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:fc3773d6b8aa:L1-6",
+        "B-04-B01:fc3773d6b8aa:L7-26",
+        "B-04-B01:fc3773d6b8aa:L27-47",
+        "B-04-B01:fc3773d6b8aa:L48-62",
+        "B-04-B01:fc3773d6b8aa:L63-77",
+        "B-04-B01:fc3773d6b8aa:L78-96",
+        "B-04-B01:fc3773d6b8aa:L97-108"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 6134,
+      "sha256": "feee954c68f22e81992d41bcd690284ad00847f240fdd1e302a44c2fca1741c5",
+      "lines": 73,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:feee954c68f2:L1-10",
+        "B-04-B01:feee954c68f2:L11-39",
+        "B-04-B01:feee954c68f2:L40-50",
+        "B-04-B01:feee954c68f2:L51-61",
+        "B-04-B01:feee954c68f2:L62-68",
+        "B-04-B01:feee954c68f2:L69-73"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis/references/05-conflicts-and-anti-patterns.md",
+      "skill_relative": "references/05-conflicts-and-anti-patterns.md",
+      "bytes": 7207,
+      "sha256": "66860b86a0d6377de9abd7d9e5772b419bd00aa5d5ab17bebb2b19fb37816b26",
+      "lines": 77,
+      "task_id": "B-04-B01",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-01/rounds/round-p4-final-2026-10-30/output/comic-fiction-diagnosis",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "03-语言清单与修辞机制.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B01:66860b86a0d6:L1-6",
+        "B-04-B01:66860b86a0d6:L7-8",
+        "B-04-B01:66860b86a0d6:L9-15",
+        "B-04-B01:66860b86a0d6:L16-22",
+        "B-04-B01:66860b86a0d6:L23-29",
+        "B-04-B01:66860b86a0d6:L30-37",
+        "B-04-B01:66860b86a0d6:L38-50",
+        "B-04-B01:66860b86a0d6:L51-69",
+        "B-04-B01:66860b86a0d6:L70-77"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 11989,
+      "sha256": "04d275451ceda2ea8ee11626569e411f2911b7f9f6efce7c5aff8657c9e6fb99",
+      "lines": 180,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:04d275451ced:L1-5",
+        "B-04-B02:04d275451ced:L6-11",
+        "B-04-B02:04d275451ced:L12-27",
+        "B-04-B02:04d275451ced:L28-36",
+        "B-04-B02:04d275451ced:L37-45",
+        "B-04-B02:04d275451ced:L46-56",
+        "B-04-B02:04d275451ced:L57-67",
+        "B-04-B02:04d275451ced:L68-69",
+        "B-04-B02:04d275451ced:L70-80",
+        "B-04-B02:04d275451ced:L81-96",
+        "B-04-B02:04d275451ced:L97-101",
+        "B-04-B02:04d275451ced:L102-106",
+        "B-04-B02:04d275451ced:L107-110",
+        "B-04-B02:04d275451ced:L111-133",
+        "B-04-B02:04d275451ced:L134-144",
+        "B-04-B02:04d275451ced:L145-163",
+        "B-04-B02:04d275451ced:L164-173",
+        "B-04-B02:04d275451ced:L174-180"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 432,
+      "sha256": "43343f6388cbcc4681b08b8bafdcea6e4b014a1d0f4795fe747f0c9fe5ee5cb9",
+      "lines": 5,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "04-节拍重复开篇与兑现.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:43343f6388cb:L1-5"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/references/01-attribution-and-beats.md",
+      "skill_relative": "references/01-attribution-and-beats.md",
+      "bytes": 5010,
+      "sha256": "7fcb89123287ff74a32763033f2cf46c6fa341717249cae57c47ff2328865883",
+      "lines": 85,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:7fcb89123287:L1-2",
+        "B-04-B02:7fcb89123287:L3-11",
+        "B-04-B02:7fcb89123287:L12-21",
+        "B-04-B02:7fcb89123287:L22-42",
+        "B-04-B02:7fcb89123287:L43-55",
+        "B-04-B02:7fcb89123287:L56-72",
+        "B-04-B02:7fcb89123287:L73-85"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/references/02-mechanism-library.md",
+      "skill_relative": "references/02-mechanism-library.md",
+      "bytes": 5907,
+      "sha256": "38ffa0531d23df510766eb6b9238fdb7e7736cb1ff45afe892d2dacd6e6b55f0",
+      "lines": 91,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:38ffa0531d23:L1-5",
+        "B-04-B02:38ffa0531d23:L6-7",
+        "B-04-B02:38ffa0531d23:L8-16",
+        "B-04-B02:38ffa0531d23:L17-23",
+        "B-04-B02:38ffa0531d23:L24-25",
+        "B-04-B02:38ffa0531d23:L26-36",
+        "B-04-B02:38ffa0531d23:L37-38",
+        "B-04-B02:38ffa0531d23:L39-48",
+        "B-04-B02:38ffa0531d23:L49-58",
+        "B-04-B02:38ffa0531d23:L59-68",
+        "B-04-B02:38ffa0531d23:L69-70",
+        "B-04-B02:38ffa0531d23:L71-77",
+        "B-04-B02:38ffa0531d23:L78-85",
+        "B-04-B02:38ffa0531d23:L86-91"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/references/03-branches-and-prohibitions.md",
+      "skill_relative": "references/03-branches-and-prohibitions.md",
+      "bytes": 5408,
+      "sha256": "75542be76ec83794a2f532addfdbbb9c4a74cc2485bf8ad7b4ac578ad66172c0",
+      "lines": 82,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:75542be76ec8:L1-5",
+        "B-04-B02:75542be76ec8:L6-7",
+        "B-04-B02:75542be76ec8:L8-19",
+        "B-04-B02:75542be76ec8:L20-31",
+        "B-04-B02:75542be76ec8:L32-43",
+        "B-04-B02:75542be76ec8:L44-55",
+        "B-04-B02:75542be76ec8:L56-63",
+        "B-04-B02:75542be76ec8:L64-74",
+        "B-04-B02:75542be76ec8:L75-82"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 10680,
+      "sha256": "9a02e9680a5d6f7c34980a7750603ccb6653bca36f9fe1e556c81a6d6af8ca89",
+      "lines": 58,
+      "task_id": "B-04-B02",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-02/rounds/round-p4-final-2026-10-30/output/comedy-beat-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B02:9a02e9680a5d:L1-36",
+        "B-04-B02:9a02e9680a5d:L37-47",
+        "B-04-B02:9a02e9680a5d:L48-53",
+        "B-04-B02:9a02e9680a5d:L54-58"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 11521,
+      "sha256": "8a05a06b6f7a527504ed4219949d3df68baf30017628205b30f53dea9c85e941",
+      "lines": 122,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "03-语言清单与修辞机制.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:8a05a06b6f7a:L1-5",
+        "B-04-B03:8a05a06b6f7a:L6-7",
+        "B-04-B03:8a05a06b6f7a:L8-14",
+        "B-04-B03:8a05a06b6f7a:L15-21",
+        "B-04-B03:8a05a06b6f7a:L22-23",
+        "B-04-B03:8a05a06b6f7a:L24-29",
+        "B-04-B03:8a05a06b6f7a:L30-36",
+        "B-04-B03:8a05a06b6f7a:L37-44",
+        "B-04-B03:8a05a06b6f7a:L45-60",
+        "B-04-B03:8a05a06b6f7a:L61-78",
+        "B-04-B03:8a05a06b6f7a:L79-87",
+        "B-04-B03:8a05a06b6f7a:L88-95",
+        "B-04-B03:8a05a06b6f7a:L96-105",
+        "B-04-B03:8a05a06b6f7a:L106-115",
+        "B-04-B03:8a05a06b6f7a:L116-122"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 1002,
+      "sha256": "aa2c47f826ecff22b07de03040a8c32aa9d35241d802b5e486186a882e685e87",
+      "lines": 23,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "05-讽刺善意与停手边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:aa2c47f826ec:L1-23"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/references/01-narrator-devices.md",
+      "skill_relative": "references/01-narrator-devices.md",
+      "bytes": 5848,
+      "sha256": "5d9f49a6851bc7a185fe3fe4ec3044b1883573fc3973ec8c433a289f694adcc4",
+      "lines": 48,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:5d9f49a6851b:L1-4",
+        "B-04-B03:5d9f49a6851b:L5-18",
+        "B-04-B03:5d9f49a6851b:L19-32",
+        "B-04-B03:5d9f49a6851b:L33-43",
+        "B-04-B03:5d9f49a6851b:L44-48"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/references/02-incongruity-devices.md",
+      "skill_relative": "references/02-incongruity-devices.md",
+      "bytes": 6170,
+      "sha256": "4a9b497cfda72c53ed64164f4cd565fdeb7b4575005557d7718b00e787a6c0f4",
+      "lines": 62,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "03-语言清单与修辞机制.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:4a9b497cfda7:L1-4",
+        "B-04-B03:4a9b497cfda7:L5-18",
+        "B-04-B03:4a9b497cfda7:L19-32",
+        "B-04-B03:4a9b497cfda7:L33-48",
+        "B-04-B03:4a9b497cfda7:L49-62"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/references/03-plot-devices.md",
+      "skill_relative": "references/03-plot-devices.md",
+      "bytes": 8098,
+      "sha256": "49b8f41a4188c7e73618dced2157cc6705fb913792a3d0eea52d2ff9880edeb7",
+      "lines": 73,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:49b8f41a4188:L1-4",
+        "B-04-B03:49b8f41a4188:L5-19",
+        "B-04-B03:49b8f41a4188:L20-32",
+        "B-04-B03:49b8f41a4188:L33-47",
+        "B-04-B03:49b8f41a4188:L48-60",
+        "B-04-B03:49b8f41a4188:L61-73"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/references/04-satire-costs.md",
+      "skill_relative": "references/04-satire-costs.md",
+      "bytes": 5127,
+      "sha256": "ce8401c8c92a19e9deaaee0e4edbf3413ec6262db0a28f92928d08a88f975294",
+      "lines": 36,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:ce8401c8c92a:L1-4",
+        "B-04-B03:ce8401c8c92a:L5-25",
+        "B-04-B03:ce8401c8c92a:L26-31",
+        "B-04-B03:ce8401c8c92a:L32-36"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics/references/05-source-index.md",
+      "skill_relative": "references/05-source-index.md",
+      "bytes": 8510,
+      "sha256": "b9931a24efbb8670b777ef537b131c132e5b52ce052ecf4bccf75b3ff5d12f62",
+      "lines": 67,
+      "task_id": "B-04-B03",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-03/rounds/round-p4-final-2026-10-30/output/comedy-scene-mechanics",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B03:b9931a24efbb:L1-4",
+        "B-04-B03:b9931a24efbb:L5-33",
+        "B-04-B03:b9931a24efbb:L34-41",
+        "B-04-B03:b9931a24efbb:L42-60",
+        "B-04-B03:b9931a24efbb:L61-67"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 5815,
+      "sha256": "a35ba1b2d7c4b4324a446cbcd10ab737d0dcdc6dcd0e06570b70531187ad46b9",
+      "lines": 97,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:a35ba1b2d7c4:L1-5",
+        "B-04-B04:a35ba1b2d7c4:L6-7",
+        "B-04-B04:a35ba1b2d7c4:L8-14",
+        "B-04-B04:a35ba1b2d7c4:L15-21",
+        "B-04-B04:a35ba1b2d7c4:L22-23",
+        "B-04-B04:a35ba1b2d7c4:L24-29",
+        "B-04-B04:a35ba1b2d7c4:L30-35",
+        "B-04-B04:a35ba1b2d7c4:L36-44",
+        "B-04-B04:a35ba1b2d7c4:L45-51",
+        "B-04-B04:a35ba1b2d7c4:L52-66",
+        "B-04-B04:a35ba1b2d7c4:L67-74",
+        "B-04-B04:a35ba1b2d7c4:L75-81",
+        "B-04-B04:a35ba1b2d7c4:L82-89",
+        "B-04-B04:a35ba1b2d7c4:L90-97"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/01-partner-engines.md",
+      "skill_relative": "references/01-partner-engines.md",
+      "bytes": 3354,
+      "sha256": "8566af93dbb66225d4e7ae747f8b141dd65d6a02cbec6df990d11277afb62d49",
+      "lines": 43,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:8566af93dbb6:L1-4",
+        "B-04-B04:8566af93dbb6:L5-14",
+        "B-04-B04:8566af93dbb6:L15-21",
+        "B-04-B04:8566af93dbb6:L22-30",
+        "B-04-B04:8566af93dbb6:L31-37",
+        "B-04-B04:8566af93dbb6:L38-43"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/02-satire-engines.md",
+      "skill_relative": "references/02-satire-engines.md",
+      "bytes": 2656,
+      "sha256": "b14092633c9e25d618bca955442d30eb284bf2b8258b84bfc5e87cf99ee81109",
+      "lines": 34,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:b14092633c9e:L1-4",
+        "B-04-B04:b14092633c9e:L5-12",
+        "B-04-B04:b14092633c9e:L13-20",
+        "B-04-B04:b14092633c9e:L21-27",
+        "B-04-B04:b14092633c9e:L28-34"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/03-openings-and-formats.md",
+      "skill_relative": "references/03-openings-and-formats.md",
+      "bytes": 1939,
+      "sha256": "c8b1d7c7498ed3a567791b83133b99f5f221e34b98753801320163c4694d47c1",
+      "lines": 30,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:c8b1d7c7498e:L1-4",
+        "B-04-B04:c8b1d7c7498e:L5-12",
+        "B-04-B04:c8b1d7c7498e:L13-24",
+        "B-04-B04:c8b1d7c7498e:L25-30"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 3529,
+      "sha256": "79e197397df274939784dd4c088a850479063e9b74dfc6717fe36dd606999498",
+      "lines": 46,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:79e197397df2:L1-4",
+        "B-04-B04:79e197397df2:L5-9",
+        "B-04-B04:79e197397df2:L10-36",
+        "B-04-B04:79e197397df2:L37-41",
+        "B-04-B04:79e197397df2:L42-46"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 5815,
+      "sha256": "a35ba1b2d7c4b4324a446cbcd10ab737d0dcdc6dcd0e06570b70531187ad46b9",
+      "lines": 97,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/SKILL.md",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:a35ba1b2d7c4:L1-5",
+        "B-04-B04:a35ba1b2d7c4:L6-7",
+        "B-04-B04:a35ba1b2d7c4:L8-14",
+        "B-04-B04:a35ba1b2d7c4:L15-21",
+        "B-04-B04:a35ba1b2d7c4:L22-23",
+        "B-04-B04:a35ba1b2d7c4:L24-29",
+        "B-04-B04:a35ba1b2d7c4:L30-35",
+        "B-04-B04:a35ba1b2d7c4:L36-44",
+        "B-04-B04:a35ba1b2d7c4:L45-51",
+        "B-04-B04:a35ba1b2d7c4:L52-66",
+        "B-04-B04:a35ba1b2d7c4:L67-74",
+        "B-04-B04:a35ba1b2d7c4:L75-81",
+        "B-04-B04:a35ba1b2d7c4:L82-89",
+        "B-04-B04:a35ba1b2d7c4:L90-97"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft/references/01-partner-engines.md",
+      "skill_relative": "references/01-partner-engines.md",
+      "bytes": 3354,
+      "sha256": "8566af93dbb66225d4e7ae747f8b141dd65d6a02cbec6df990d11277afb62d49",
+      "lines": 43,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/01-partner-engines.md",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:8566af93dbb6:L1-4",
+        "B-04-B04:8566af93dbb6:L5-14",
+        "B-04-B04:8566af93dbb6:L15-21",
+        "B-04-B04:8566af93dbb6:L22-30",
+        "B-04-B04:8566af93dbb6:L31-37",
+        "B-04-B04:8566af93dbb6:L38-43"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft/references/02-satire-engines.md",
+      "skill_relative": "references/02-satire-engines.md",
+      "bytes": 2656,
+      "sha256": "b14092633c9e25d618bca955442d30eb284bf2b8258b84bfc5e87cf99ee81109",
+      "lines": 34,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/02-satire-engines.md",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:b14092633c9e:L1-4",
+        "B-04-B04:b14092633c9e:L5-12",
+        "B-04-B04:b14092633c9e:L13-20",
+        "B-04-B04:b14092633c9e:L21-27",
+        "B-04-B04:b14092633c9e:L28-34"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft/references/03-openings-and-formats.md",
+      "skill_relative": "references/03-openings-and-formats.md",
+      "bytes": 1939,
+      "sha256": "c8b1d7c7498ed3a567791b83133b99f5f221e34b98753801320163c4694d47c1",
+      "lines": 30,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/03-openings-and-formats.md",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:c8b1d7c7498e:L1-4",
+        "B-04-B04:c8b1d7c7498e:L5-12",
+        "B-04-B04:c8b1d7c7498e:L13-24",
+        "B-04-B04:c8b1d7c7498e:L25-30"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 3529,
+      "sha256": "79e197397df274939784dd4c088a850479063e9b74dfc6717fe36dd606999498",
+      "lines": 46,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-01-2026-10-25/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/results/skills/comic-engine-craft/references/04-source-index.md",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:79e197397df2:L1-4",
+        "B-04-B04:79e197397df2:L5-9",
+        "B-04-B04:79e197397df2:L10-36",
+        "B-04-B04:79e197397df2:L37-41",
+        "B-04-B04:79e197397df2:L42-46"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 14355,
+      "sha256": "5c651876c918db355ed260a15e3d82efc6d1243501e423dbe053adc698b84c63",
+      "lines": 123,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:5c651876c918:L1-5",
+        "B-04-B04:5c651876c918:L6-7",
+        "B-04-B04:5c651876c918:L8-15",
+        "B-04-B04:5c651876c918:L16-24",
+        "B-04-B04:5c651876c918:L25-30",
+        "B-04-B04:5c651876c918:L31-41",
+        "B-04-B04:5c651876c918:L42-49",
+        "B-04-B04:5c651876c918:L50-70",
+        "B-04-B04:5c651876c918:L71-79",
+        "B-04-B04:5c651876c918:L80-86",
+        "B-04-B04:5c651876c918:L87-96",
+        "B-04-B04:5c651876c918:L97-102",
+        "B-04-B04:5c651876c918:L103-113",
+        "B-04-B04:5c651876c918:L114-123"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 665,
+      "sha256": "f174bc8d17aad3e822d6208a3ab2d0617c485adcce5fab79bfd38d46bdb2642c",
+      "lines": 7,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "02-前提误会与现实账本.md",
+        "05-讽刺善意与停手边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:f174bc8d17aa:L1-7"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/examples/worked-example.md",
+      "skill_relative": "examples/worked-example.md",
+      "bytes": 2222,
+      "sha256": "c49cd0c27d8ddcfe273f5f5312663758333878c906c02424d12f8282ea442833",
+      "lines": 29,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "06-模板与设计示例.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:c49cd0c27d8d:L1-2",
+        "B-04-B04:c49cd0c27d8d:L3-9",
+        "B-04-B04:c49cd0c27d8d:L10-16",
+        "B-04-B04:c49cd0c27d8d:L17-23",
+        "B-04-B04:c49cd0c27d8d:L24-29"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/references/01-partner-engines.md",
+      "skill_relative": "references/01-partner-engines.md",
+      "bytes": 9514,
+      "sha256": "5786e4a8a292cb2c17013616aee74db68b30a6eaa9aa8fba04200d1a4e32f310",
+      "lines": 48,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:5786e4a8a292:L1-6",
+        "B-04-B04:5786e4a8a292:L7-14",
+        "B-04-B04:5786e4a8a292:L15-22",
+        "B-04-B04:5786e4a8a292:L23-32",
+        "B-04-B04:5786e4a8a292:L33-42",
+        "B-04-B04:5786e4a8a292:L43-48"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/references/02-satire-engines.md",
+      "skill_relative": "references/02-satire-engines.md",
+      "bytes": 11218,
+      "sha256": "8c12c8fc2574e7998bba52f891f1c0dda73c0c4959348a78466c0f2d3cbe34c5",
+      "lines": 62,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "02-前提误会与现实账本.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:8c12c8fc2574:L1-6",
+        "B-04-B04:8c12c8fc2574:L7-14",
+        "B-04-B04:8c12c8fc2574:L15-25",
+        "B-04-B04:8c12c8fc2574:L26-33",
+        "B-04-B04:8c12c8fc2574:L34-41",
+        "B-04-B04:8c12c8fc2574:L42-48",
+        "B-04-B04:8c12c8fc2574:L49-57",
+        "B-04-B04:8c12c8fc2574:L58-62"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/references/03-openings-and-formats.md",
+      "skill_relative": "references/03-openings-and-formats.md",
+      "bytes": 11283,
+      "sha256": "38aedeeb75c264c2904495fd2fb617a91f0eac66318e56b45eca5133c294f9db",
+      "lines": 71,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:38aedeeb75c2:L1-6",
+        "B-04-B04:38aedeeb75c2:L7-14",
+        "B-04-B04:38aedeeb75c2:L15-22",
+        "B-04-B04:38aedeeb75c2:L23-29",
+        "B-04-B04:38aedeeb75c2:L30-37",
+        "B-04-B04:38aedeeb75c2:L38-47",
+        "B-04-B04:38aedeeb75c2:L48-53",
+        "B-04-B04:38aedeeb75c2:L54-64",
+        "B-04-B04:38aedeeb75c2:L65-71"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 6520,
+      "sha256": "b40e9843b45d0c944d3e2e495c852b56129118e714f523d69b0f6c1c7c6df693",
+      "lines": 47,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:b40e9843b45d:L1-2",
+        "B-04-B04:b40e9843b45d:L3-38",
+        "B-04-B04:b40e9843b45d:L39-47"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft/references/05-confidence-and-feedback.md",
+      "skill_relative": "references/05-confidence-and-feedback.md",
+      "bytes": 5439,
+      "sha256": "faab565b79933f4b8e9bb40b0f91c9ae6a9b9ba8faa8ca4dc28a82ba6638a63b",
+      "lines": 38,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:faab565b7993:L1-4",
+        "B-04-B04:faab565b7993:L5-11",
+        "B-04-B04:faab565b7993:L12-17",
+        "B-04-B04:faab565b7993:L18-23",
+        "B-04-B04:faab565b7993:L24-32",
+        "B-04-B04:faab565b7993:L33-38"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 7310,
+      "sha256": "4e5b139d8f6063a7bde582660a80c7df97ec01b453793875a2c08b67fb748c2d",
+      "lines": 108,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:4e5b139d8f60:L1-5",
+        "B-04-B04:4e5b139d8f60:L6-7",
+        "B-04-B04:4e5b139d8f60:L8-14",
+        "B-04-B04:4e5b139d8f60:L15-20",
+        "B-04-B04:4e5b139d8f60:L21-22",
+        "B-04-B04:4e5b139d8f60:L23-28",
+        "B-04-B04:4e5b139d8f60:L29-34",
+        "B-04-B04:4e5b139d8f60:L35-43",
+        "B-04-B04:4e5b139d8f60:L44-50",
+        "B-04-B04:4e5b139d8f60:L51-65",
+        "B-04-B04:4e5b139d8f60:L66-73",
+        "B-04-B04:4e5b139d8f60:L74-80",
+        "B-04-B04:4e5b139d8f60:L81-88",
+        "B-04-B04:4e5b139d8f60:L89-97",
+        "B-04-B04:4e5b139d8f60:L98-108"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 165,
+      "sha256": "87623cbe637f89f95dbd29c4bf621fa9b507c2ec3fd740bcf54411b5b0275be6",
+      "lines": 3,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "02-前提误会与现实账本.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:87623cbe637f:L1-3"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/examples/worked-example.md",
+      "skill_relative": "examples/worked-example.md",
+      "bytes": 1964,
+      "sha256": "051af0d66f32ef64982498e847b844513f3096bce2dc7080bcf5d0536ced5606",
+      "lines": 20,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "06-模板与设计示例.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:051af0d66f32:L1-2",
+        "B-04-B04:051af0d66f32:L3-15",
+        "B-04-B04:051af0d66f32:L16-20"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/references/01-partner-engines.md",
+      "skill_relative": "references/01-partner-engines.md",
+      "bytes": 6813,
+      "sha256": "91be4f9340e2aa2ba07ad2caabb704459dac6ba4d457ab90319262bb7b4b4eb4",
+      "lines": 73,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:91be4f9340e2:L1-4",
+        "B-04-B04:91be4f9340e2:L5-15",
+        "B-04-B04:91be4f9340e2:L16-20",
+        "B-04-B04:91be4f9340e2:L21-28",
+        "B-04-B04:91be4f9340e2:L29-33",
+        "B-04-B04:91be4f9340e2:L34-43",
+        "B-04-B04:91be4f9340e2:L44-48",
+        "B-04-B04:91be4f9340e2:L49-56",
+        "B-04-B04:91be4f9340e2:L57-61",
+        "B-04-B04:91be4f9340e2:L62-68",
+        "B-04-B04:91be4f9340e2:L69-73"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/references/02-satire-engines.md",
+      "skill_relative": "references/02-satire-engines.md",
+      "bytes": 5167,
+      "sha256": "243aad2e4a1436550ffe79097fcc99c2003920e0915288d073c5cd6e0b622413",
+      "lines": 58,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:243aad2e4a14:L1-4",
+        "B-04-B04:243aad2e4a14:L5-13",
+        "B-04-B04:243aad2e4a14:L14-18",
+        "B-04-B04:243aad2e4a14:L19-27",
+        "B-04-B04:243aad2e4a14:L28-32",
+        "B-04-B04:243aad2e4a14:L33-40",
+        "B-04-B04:243aad2e4a14:L41-45",
+        "B-04-B04:243aad2e4a14:L46-53",
+        "B-04-B04:243aad2e4a14:L54-58"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/references/03-openings-and-formats.md",
+      "skill_relative": "references/03-openings-and-formats.md",
+      "bytes": 2570,
+      "sha256": "ce06ec814c21cf0e619efce862cbe39f3203f3749b16d73231f997d62e00cca6",
+      "lines": 36,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:ce06ec814c21:L1-4",
+        "B-04-B04:ce06ec814c21:L5-13",
+        "B-04-B04:ce06ec814c21:L14-18",
+        "B-04-B04:ce06ec814c21:L19-30",
+        "B-04-B04:ce06ec814c21:L31-36"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 9098,
+      "sha256": "aede880916c6d10ccb6b87cb31155176fbf98da564141d10f85b4317070027f9",
+      "lines": 60,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:aede880916c6:L1-31",
+        "B-04-B04:aede880916c6:L32-60"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 7246,
+      "sha256": "43d715db7998ec7d07812132255298652068b95156808fa34a4da227b0929bb3",
+      "lines": 108,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "06-模板与设计示例.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:43d715db7998:L1-5",
+        "B-04-B04:43d715db7998:L6-7",
+        "B-04-B04:43d715db7998:L8-14",
+        "B-04-B04:43d715db7998:L15-20",
+        "B-04-B04:43d715db7998:L21-22",
+        "B-04-B04:43d715db7998:L23-28",
+        "B-04-B04:43d715db7998:L29-34",
+        "B-04-B04:43d715db7998:L35-43",
+        "B-04-B04:43d715db7998:L44-50",
+        "B-04-B04:43d715db7998:L51-65",
+        "B-04-B04:43d715db7998:L66-73",
+        "B-04-B04:43d715db7998:L74-80",
+        "B-04-B04:43d715db7998:L81-88",
+        "B-04-B04:43d715db7998:L89-97",
+        "B-04-B04:43d715db7998:L98-108"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 165,
+      "sha256": "87623cbe637f89f95dbd29c4bf621fa9b507c2ec3fd740bcf54411b5b0275be6",
+      "lines": 3,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-2026-10-30/output/comic-engine-craft/agents/openai.yaml",
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "02-前提误会与现实账本.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:87623cbe637f:L1-3"
+      ],
+      "mapping_basis": "same_sha256_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/examples/worked-example.md",
+      "skill_relative": "examples/worked-example.md",
+      "bytes": 2008,
+      "sha256": "3a7ff833dd8c166c804bdc1e2c9cb509fa97b48c1f6f86c6fd8630765767daff",
+      "lines": 29,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "06-模板与设计示例.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:3a7ff833dd8c:L1-2",
+        "B-04-B04:3a7ff833dd8c:L3-9",
+        "B-04-B04:3a7ff833dd8c:L10-16",
+        "B-04-B04:3a7ff833dd8c:L17-23",
+        "B-04-B04:3a7ff833dd8c:L24-29"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/references/01-partner-engines.md",
+      "skill_relative": "references/01-partner-engines.md",
+      "bytes": 3646,
+      "sha256": "0d9b486f65939fe2b7659cf21b0308eee7fc2a08aff9d1bcec9bd1ef1962862a",
+      "lines": 35,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "01-归属与叙述站位.md",
+        "02-前提误会与现实账本.md",
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:0d9b486f6593:L1-4",
+        "B-04-B04:0d9b486f6593:L5-11",
+        "B-04-B04:0d9b486f6593:L12-17",
+        "B-04-B04:0d9b486f6593:L18-23",
+        "B-04-B04:0d9b486f6593:L24-30",
+        "B-04-B04:0d9b486f6593:L31-35"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/references/02-satire-engines.md",
+      "skill_relative": "references/02-satire-engines.md",
+      "bytes": 2675,
+      "sha256": "e57c49fbeae3e01ff925816c67488aa086e0dc1f56756e02b2e0b1aa436df7dc",
+      "lines": 27,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "00-题材指南.md",
+        "01-归属与叙述站位.md",
+        "03-语言清单与修辞机制.md",
+        "04-节拍重复开篇与兑现.md",
+        "05-讽刺善意与停手边界.md",
+        "07-来源与版本边界.md",
+        "08-融合裁决与历史保留.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:e57c49fbeae3:L1-4",
+        "B-04-B04:e57c49fbeae3:L5-10",
+        "B-04-B04:e57c49fbeae3:L11-16",
+        "B-04-B04:e57c49fbeae3:L17-22",
+        "B-04-B04:e57c49fbeae3:L23-27"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/references/03-openings-and-formats.md",
+      "skill_relative": "references/03-openings-and-formats.md",
+      "bytes": 1878,
+      "sha256": "a90303764c9c32c28085936bc6f02a437f9557f91ea98971f5810eb5d4041eaa",
+      "lines": 21,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "04-节拍重复开篇与兑现.md",
+        "07-来源与版本边界.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:a90303764c9c:L1-4",
+        "B-04-B04:a90303764c9c:L5-11",
+        "B-04-B04:a90303764c9c:L12-18",
+        "B-04-B04:a90303764c9c:L19-21"
+      ],
+      "mapping_basis": "source_sections"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft/references/04-source-index.md",
+      "skill_relative": "references/04-source-index.md",
+      "bytes": 10491,
+      "sha256": "1e2f6475a0839877b902859288123424ffe7a35e3482f19c7e633bbbb9df2f9d",
+      "lines": 61,
+      "task_id": "B-04-B04",
+      "candidate_root": "distill/分类蒸馏/16-类型小说专项/07-喜剧幽默/批次-04/rounds/round-p4-wave4-agent3-final-2026-10-30/output/comic-engine-craft",
+      "same_bytes_as": null,
+      "read_status": "FULL_CURRENT_AND_COMPLETE_HISTORY_UNIQUE_LINES_OR_IDENTICAL_BYTES",
+      "new_files": [
+        "07-来源与版本边界.md",
+        "09-来源身份表.md"
+      ],
+      "source_section_ids": [
+        "B-04-B04:1e2f6475a083:L1-31",
+        "B-04-B04:1e2f6475a083:L32-58",
+        "B-04-B04:1e2f6475a083:L59-61"
+      ],
+      "mapping_basis": "source_sections"
+    }
+  ]
+}

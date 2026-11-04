@@ -1,0 +1,36 @@
+---
+name: adventure-treasure-craft-b02
+description: 探险寻宝写作与修订技能（来源：29 份 1836-1951 公版探险小说全文提炼，批次 A-09-B02）。当用户要写、诊断或修订探险寻宝类小说（海上冒险、失落文明、寻宝、丛林、间谍、科幻探险）时使用。不用于学术论文或纯硬科幻。
+---
+
+# Adventure-Treasure-Craft（探险寻宝写作技能 · 批次 B02）
+
+从 29 份 Project Gutenberg 公版探险小说（Kipling、Stevenson×2、Verne、Cooper、Buchan、Orczy、Merritt、ERB、Bond、Anderson、Haggard、Falkner 等）全文提炼的探险写作技能。18 条规则回指 PG ID+行号+短引文。
+
+## 触发
+- 用户要写/起草探险、寻宝、海上冒险、失落文明、丛林、间谍、科幻探险类小说或短篇。
+- 用户要诊断、修订探险稿件。
+- 用户询问"探险故事的结构/钩子/结局"。
+
+## 负触发
+- 纯硬科幻（无探险结构）。
+- 学术论文/游记。
+- 把虚构冒充真实探险发表。
+
+## 输入权限
+- 需要：探险类型（海事/失落文明/寻宝/丛林/间谍/科幻）、目标篇幅。
+- 可空：读者年龄、视角（第一/第三/第二人称），未指定时默认第一人称。
+
+## 工作分支
+1. **从零构思** → 用 references/rules.md 选择视角/开局/结构 → templates/expedition-designer.md。
+2. **诊断修订** → templates/adventure-diagnosis.md。
+3. **子类型路由** → references/techniques.md 分域手册。
+
+## 失败出口
+- 用户拒绝提供探险类型 → 如实说明无法路由到子类型规则，产出降级为通用冒险。
+- 引文行号与用户版本不一致 → 以 PG 整本阅读版.txt 为准。
+
+## 来源与核验
+- 29 份来源：references/source-index.md。
+- 18 条规则：references/rules.md。
+- 冲突裁决：references/scope-and-conflicts.md。

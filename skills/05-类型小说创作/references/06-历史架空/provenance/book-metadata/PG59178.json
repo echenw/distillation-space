@@ -1,0 +1,36 @@
+{
+  "id": "PG59178",
+  "title": "Midwinter: Certain Travellers in Old England",
+  "author": "Buchan, John, 1875-1940",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/59178",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Charles Edward, Prince, grandson of James II, King of England, 1720-1788 -- Fiction; Jacobite Rebellion, 1745-1746 -- Fiction; Johnson, Samuel, 1709-1784 -- Fiction",
+  "source_catalog_issued": "2019-04-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/5/9/1/7/59178/59178-0.txt",
+  "mirror_reported_size": 516913,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG59178-Midwinter-Certain-Travellers-in-Old-England",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "a1edd163b1f1681d23925d8b6731cab505119a9b41e209716fd1741b70f2e4a0",
+  "reading_sha256": "b7d83e93ea2e4b73fef9803d9dc477ae7129c875d5c25b0e0fc84996c59518c6",
+  "raw_bytes": 516913,
+  "reading_bytes": 496837,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG59178-Midwinter-Certain-Travellers-in-Old-England/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG59178-Midwinter-Certain-Travellers-in-Old-England/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

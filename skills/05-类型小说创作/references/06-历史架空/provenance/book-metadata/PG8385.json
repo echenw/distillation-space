@@ -1,0 +1,38 @@
+{
+  "id": "PG8385",
+  "title": "The Short Line War",
+  "author": "Merwin, Samuel, 1874-1936; Webster, Henry Kitchell, 1875-1932",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/8385",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2005-06-01",
+  "source_catalog_subjects": "Historical fiction; Railroads -- History -- Fiction",
+  "source_catalog_locc": "PS",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/8/3/8/8385/8385-0.txt",
+  "source_mirror_file_size": 375852,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG8385-The-Short-Line-War/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG8385-The-Short-Line-War/整本阅读版.txt",
+  "raw_sha256": "510208ec2c23c56e91465a9236caa9559281a262673d225217ba869f46be7973",
+  "reading_sha256": "c9b2ff57f980f89fdd5eda8d46fa9e04ed25f32c5467b5a05d59f84e7aa1a240",
+  "raw_bytes": 375852,
+  "reading_bytes": 356139,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG8385-The-Short-Line-War",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "PG864",
+  "title": "The Master of Ballantrae: A Winter's Tale",
+  "author": "Stevenson, Robert Louis, 1850-1894",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/864",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Inheritance and succession -- Fiction; Revenge -- Fiction; Psychological fiction; Brothers -- Fiction; Absence and presumption of death -- Fiction",
+  "source_catalog_issued": "1997-03-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/8/6/864/864-0.txt",
+  "mirror_reported_size": 501299,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG864-The-Master-of-Ballantrae-A-Winter-s-Tale",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "a188091edc1d0353fdd0c2434e563108aa0fba9e81a61cd7fadb5e2228e37334",
+  "reading_sha256": "ba16d0f3a8d36140b71b1710892fd0062383022f0c0ca4fde6a12de2195f69ff",
+  "raw_bytes": 501299,
+  "reading_bytes": 481473,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG864-The-Master-of-Ballantrae-A-Winter-s-Tale/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG864-The-Master-of-Ballantrae-A-Winter-s-Tale/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

@@ -1,0 +1,102 @@
+# r4 — 告白、承诺、牺牲与结局（R11–R14 详解）
+
+## 1. 告白五型
+
+### 1.1 驴背/低语型（地位差）
+- 结构：男方在无法正式求婚的场合（驴背、走廊、车门口）低声问；女方不能答，只能沉默/叫名字。
+- 为什么有效：把"地位差"变成身体姿态——她坐在驴上，他仰头；她无处可退，他不必跪下。
+- 锚点：PG3166 L15329-15332 "Will you be my wife?"；L15368 "Oh, Frank!"。
+- 写作参数：女方至少有一次"想推却推不开"的动作；男方不要长篇大论。
+
+### 1.2 午夜/长篇型（压迫感）
+- 结构：封闭空间 + 连续独白 + 女方只能重复拒绝。
+- 为什么有效：让"求婚"变成"围困"，读者的窒息感来自篇幅本身。
+- 锚点：PG1684 L17719-17721 "I am free. Thank Heaven! I am free to choose my mate"；L17808 "I cannot give it."。
+- 写作参数：男方的每段话都要暴露一个自私的假设；女方的拒绝要越来越短。
+
+### 1.3 问答/师生型（权力差）
+- 结构：男方用"你对我有多少感情"的连续提问，把女方逼到必须用"我同意"作答。
+- 为什么有效：把"同意"写成被引导的结论，而不是主动选择；后文必须处理这个权力差。
+- 锚点：PG1028 L7759-7840 "Master, I consent to pass my life with you."。
+- 写作参数：女方要在婚前提出一个"独立条件"（保留教职、共同经营），否则甜味会变成豢养。
+
+### 1.4 书信/长信型（异地）
+- 结构：女方主动写长信示爱，逐条回应男方顾虑；先给"为什么现在说"的触发（假死讯、误会、离别）。
+- 为什么有效：书信能承载长篇自我辩护，且给双方留体面。
+- 锚点：PG42812 L10740-10891 "I love you, and I am holding out my arms to you"。
+- 写作参数：信里要有具体的生活安排，不只是抒情；男方收到后必须有一次"不敢信/不敢回"的延迟。
+
+### 1.5 伪婚约型（形式齐备、意图缺失）
+- 结构：代理丈夫、私誓、条件式承诺、假婚书；形式上有法律/社会痕迹，意图上双方都不认为已结婚。
+- 为什么有效：把"误会"升级成"制度陷阱"，后文可以用文件/证词翻盘。
+- 锚点：PG1586 L3788-3960 "ask at the door for 'my wife,'"；PG16804 L2273-2274 "she shall be my wife,--but I cannot take her to Scroope Manor as my wife while my uncle lives"。
+- 写作参数：必须提前让读者知道规则（法律/家族/教会），否则翻盘像作弊。
+
+## 2. 承诺的"形式/意图"对照表
+
+| 承诺 | 形式 | 意图 | 后文风险 | 锚点 |
+|---|---|---|---|---|
+| 私誓+戒指 | 有仪式、有见证 | 双方以为有效 | 法律不认 | PG1437 L793-819 |
+| 代理丈夫 | 公开自称夫妻 | 只为住店 | 被视为重婚证据 | PG1586 L5401-5429 |
+| 条件式婚约 | 等长辈死后再娶 | 男方自认有期限 | 到期仍不履约 | PG16804 L2273-2274 |
+| 名义婚约 | 订婚但各自自由 | 女方为搬出娘家 | 被双方家庭误解 | PG1245 L11226-11368 |
+| 遗嘱条件 | 娶她才给财产 | 父亲想绑住儿子 | 女方被当交易 | PG3166 L12853-12869 |
+
+## 3. 牺牲/自污：三步写法
+
+1. **选择被误解**：让她/他公开说一个谎，使对方恨自己，而不是感激。
+   - 锚点：PG1608 L7641-7653 "he will hate me."；PG1586 L21999-22141 "she claims to be now--and to have been... Mr. Geoffrey Delamayn's wedded wife."。
+2. **公开见证**：牺牲必须在众人面前发生，不能私下做无名英雄。
+   - 锚点：PG1586 L21999-22141 "she claims to be now--and to have been... Mr. Geoffrey Delamayn's wedded wife."；PG3166 L21356-21357 "I am engaged to Frank Gresham."。
+3. **反作用**：对方不能立刻理解；后文要写他更痛/更恨/更追，或写牺牲被贬值。
+   - 锚点：PG3166 L21574 "To you who have nothing to give in return!"（牺牲被对方母亲贬低）。
+
+### 3.1 失效
+- 无外部强制（家族、法律、疾病）时，自我污名会显得矫情。
+- 若牺牲只由配角承担代价，女主会被读成"圣母"。
+- 若男主随后轻松救出，牺牲被贬值。
+
+## 4. 结局类型匹配表
+
+| 阻力 | 主角选择 | 结局 | 必须写清 | 锚点 |
+|---|---|---|---|---|
+| 可协商（财产/家长） | 付代价结合 | 婚配 | 谁付了什么、婚后第一道裂缝 | PG77271 L4741-4746 "It was founded, not on long friendship"；PG3166 L23848-23849 "he did marry money" |
+| 可协商但制度不容 | 私奔/非制度结合 | 结合或分离 | 社会成本由谁承担 | PG77271 L4621-4643 "To make it perfect you must elope."；PG67123 L10147-10153 "She never saw him again." |
+| 不可协商（身份/绝症/法律） | 分离/死亡 | 悲剧 | 病/债/名誉伏笔至少两次 | PG1608 L8015-8164 "what followed was written by Julie Duprat"；PG16804 L7255-7261 "An eye for an eye, and a tooth for a tooth! Is it not so?" |
+| 被反讽绕过 | 算计/失礼 | 讽刺收尾 | 幸福的代价与不体面 | PG1684 L23303-23307；PG121 L7915-7982 |
+| 婚后 | 共同经营 | 开放/日常 | 婚姻制造的新冲突 | PG544 L6499-6676 "It was their first approach to a quarrel."；PG1437 L1746-1758 |
+
+### 4.1 婚后冷却的四种写法
+1. **空间分层**：谁住哪间房、谁进谁的房间要敲门。锚点：PG1437 L1746-1758。
+2. **财权**：谁管钱、谁要报账、谁被剥夺签字权。锚点：PG1556 L4126-4137。
+3. **当品**：戒指、大衣、手杖轮流进当铺，每次典当=一次降级。锚点：PG67123 L7392-7410。
+4. **日常争执**：两种"正确"相撞，读者无法简单站队。锚点：PG544 L6499-6676。
+
+## 5. 反讽收尾的尺度
+
+- 可用：前文已建立"社会规范 vs 真实幸福"的张力；结尾用一段道德训诫/自嘲拆台。
+- 锚点：PG121 L7915-7982 "whether the tendency of this work be altogether to recommend parental tyranny, or reward filial disobedience"；PG3166 L23848-23849 "he did marry money"；PG24000 L15574-15576 "accepted thankfully, quietly"。
+- 不可用：悲剧正剧、读者需要明确糖的类型言情、前文没有社会压力时。
+- 失败信号：反讽变成作者替自己开脱；读者不知道到底该笑还是该哭。
+
+## 6. 锚点表
+
+| 技法 | PG | 行号 | 逐字引文 |
+|---|---|---|---|
+| 驴背求婚 | PG3166 | L15329-15332 | "Will you be my wife?" |
+| 午夜长篇求婚 | PG1684 | L17719-17721 | "I am free. Thank Heaven! I am free to choose my mate" |
+| 问答式求婚 | PG1028 | L7759-7840 | "Master, I consent to pass my life with you." |
+| 女方长信告白 | PG42812 | L10740-10891 | "I love you, and I am holding out my arms to you" |
+| 代理丈夫 | PG1586 | L3788-3960 | "ask at the door for 'my wife,'" |
+| 条件式婚约 | PG16804 | L2273-2274 | "she shall be my wife,--but I cannot take her to Scroope Manor as my wife while my uncle lives" |
+| 自污救友 | PG1586 | L21999-22141 | "she claims to be now--and to have been... Mr. Geoffrey Delamayn's wedded wife." |
+| 当众认婚 | PG3166 | L21356-21357 | "I am engaged to Frank Gresham." |
+| 牺牲被贬值 | PG3166 | L21574 | "To you who have nothing to give in return!" |
+| 娶钱反讽 | PG3166 | L23848-23849 | "he did marry money" |
+| 复仇闭环 | PG16804 | L7255-7261 | "An eye for an eye, and a tooth for a tooth! Is it not so?" |
+| 反讽收尾 | PG121 | L7915-7982 | "whether the tendency of this work be altogether to recommend parental tyranny, or reward filial disobedience" |
+| 私奔结局 | PG77271 | L4621-4643 | "To make it perfect you must elope." |
+| 一见钟情式结合 | PG77271 | L4741-4746 | "It was founded, not on long friendship" |
+| 死后接笔 | PG1608 | L8015-8164 | "what followed was written by Julie Duprat" |
+| 两对恋人反讽 | PG1684 | L23303-23307 | "two lovers met between the Swiss and Tyrol Alps over the Lake of Constance" |
+| 婚后首次争执 | PG544 | L6499-6676 | "It was their first approach to a quarrel." |

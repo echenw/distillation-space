@@ -1,0 +1,36 @@
+{
+  "id": "PG7987",
+  "title": "The Fair Maid of Perth; Or, St. Valentine's Day",
+  "author": "Scott, Walter, 1771-1832",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/7987",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Merchants -- Fiction; Social classes -- Fiction; Nobility -- Fiction; Scotland -- History -- Robert III, 1390-1406 -- Fiction; Perth (Scotland) -- Fiction",
+  "source_catalog_issued": "2005-04-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/7/9/8/7987/7987-0.txt",
+  "mirror_reported_size": 1085462,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG7987-The-Fair-Maid-of-Perth-Or-St-Valentine-s-Day",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "c664b969073ac6fd11cd1deb70c420ab5f06aa2dc3d9dd8dbba1ad8da3af0325",
+  "reading_sha256": "a1718c7b77cbc66988214e1a635b33f109e5e2b9b42d513710a7be1f45d9d155",
+  "raw_bytes": 1085462,
+  "reading_bytes": 1065710,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG7987-The-Fair-Maid-of-Perth-Or-St-Valentine-s-Day/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG7987-The-Fair-Maid-of-Perth-Or-St-Valentine-s-Day/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

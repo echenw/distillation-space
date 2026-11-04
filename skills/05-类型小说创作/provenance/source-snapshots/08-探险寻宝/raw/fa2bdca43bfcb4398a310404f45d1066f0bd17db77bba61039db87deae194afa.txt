@@ -1,0 +1,26 @@
+# 示例与反例 — adventure-treasure-craft-b02
+
+## 例 1（RE-01）第二人称开局
+来源：PG63697 L30 "You were bored--keeping the endless, dull space-lanes clear."
+写法：开篇一句"你"的直接代入，无聊与危险的对照即刻建立。
+
+## 例 2（RE-02）报道缺席
+来源：PG74118 L20-22 "It never really got much beyond the rumor stage--Captain James Kelly saw to that."
+写法：以"报纸只有两则不相干的简讯"暗示远超报道规模的事件——读者自己拼图。
+
+## 例 3（RE-06）落魄者聚齐
+来源：PG1604 L85 "In the telling South Sea phrase, these three men were ON THE BEACH."
+写法：三个化名者+共同困境+各自前史不明——无英雄开局。
+
+## 例 4（RE-10）科学/超自然反讽
+来源：PG3809 结尾对话："Nonsense; this Robur was not the devil!" / "Ah, well! he was worthy of being so!"
+写法：终章用一段对话同时给两个解释——角色自己争论，叙述者不裁决。
+
+## 例 5（RE-16）沉默英雄
+来源：PG74118 结尾 "He rolled it up slowly and threw it far out through the porthole, then stood for a moment watching it drift."
+写法：终章让英雄把关键证据（一份名单/一封信/一把刀）投入海中——以物件的消失替代告白。
+
+## 反例集
+1. 沉默无理由（RE-16 失效）：主角如果只是"不想说"，读者觉得矫情。
+2. 书名物象单次出现（RE-05 失效）：只出现一次即无回收。
+3. 科幻不解释（C12 失效）：科幻探险若拒绝科学解释即失去子类型信誉。

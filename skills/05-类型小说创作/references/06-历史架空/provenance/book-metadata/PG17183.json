@@ -1,0 +1,38 @@
+{
+  "id": "PG17183",
+  "title": "Atmâ A Romance",
+  "author": "Frazer, C. A. (Caroline Augusta)",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/17183",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2005-11-29",
+  "source_catalog_subjects": "Historical fiction; Atama Singha -- Fiction; Sikhs -- India -- Punjab -- History -- Fiction",
+  "source_catalog_locc": "PS",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/1/7/1/8/17183/17183-8.txt",
+  "source_mirror_file_size": 165909,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG17183-Atm-A-Romance/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG17183-Atm-A-Romance/整本阅读版.txt",
+  "raw_sha256": "ba78ab0b3f4b9195e378ec0e600ae7149e15fa6fe70ab6d674a244b35fcb576e",
+  "reading_sha256": "3e0691080f02fb3bc62ade1c084c4ae81fbda07e3461ed206e18fe947c1093c2",
+  "raw_bytes": 165909,
+  "reading_bytes": 146198,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG17183-Atm-A-Romance",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "ISO-8859-1",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

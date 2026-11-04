@@ -1,0 +1,4 @@
+interface:
+  display_name: "人物塑造与叙事控制"
+  short_description: "人物行动、视角权限、信息差与时间结构的条件化创作和修订"
+  default_prompt: "按现有稿件和作者目标选择人物与叙事规则，保留独有案例和反例，交付实际可用文本或蓝图。"

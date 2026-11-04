@@ -1,0 +1,36 @@
+{
+  "id": "PG33609",
+  "title": "Marguerite de Valois",
+  "author": "Dumas, Alexandre, 1802-1870; Maquet, Auguste, 1813-1888",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/33609",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Biographical fiction; Henry IV, King of France, 1553-1610 -- Fiction; Saint Bartholomew's Day, Massacre of, France, 1572 -- Fiction; Queens -- France -- Fiction; Marguerite, Queen, consort of Henry IV, King of France, 1553-1615 -- Fiction",
+  "source_catalog_issued": "2010-09-02",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/3/6/0/33609/33609-8.txt",
+  "mirror_reported_size": 1185469,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG33609-Marguerite-de-Valois",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "8e25833551c7832d06f4bc3b586be07d8126c32321b66115de9ea7cd002508d6",
+  "reading_sha256": "f6495d804cf40f36e0da66e828b4abfa739adb915db6e0f8a6ab1a8313fd94fd",
+  "raw_bytes": 1185469,
+  "reading_bytes": 1167445,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG33609-Marguerite-de-Valois/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG33609-Marguerite-de-Valois/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

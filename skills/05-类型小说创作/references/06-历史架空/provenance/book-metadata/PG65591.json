@@ -1,0 +1,36 @@
+{
+  "id": "PG65591",
+  "title": "Pimpernel and Rosemary",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/65591",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; France -- History -- Revolution, 1789-1799 -- Fiction; Adventure stories; British -- France -- Fiction; Blakeney, Percy, Sir (Fictitious character) -- Fiction",
+  "source_catalog_issued": "2021-06-11",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/5/5/9/65591/65591-0.txt",
+  "mirror_reported_size": 615677,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG65591-Pimpernel-and-Rosemary",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "304a72db35f5420139b68781fc27c709e5eb778741511f5e9b4dbd42297fc801",
+  "reading_sha256": "a82afb11da7c0dff3f3d9f89c825b486a5f75acd1991dcde936ff8b29df3321e",
+  "raw_bytes": 615677,
+  "reading_bytes": 615570,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG65591-Pimpernel-and-Rosemary/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG65591-Pimpernel-and-Rosemary/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "PG6944",
+  "title": "The Heart of Mid-Lothian, Complete",
+  "author": "Scott, Walter, 1771-1832",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/6944",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Sisters -- Fiction; Trials (Murder) -- Fiction; Legal stories; Great Britain -- History -- George II, 1727-1760 -- Fiction; Women travelers -- Fiction; Scots -- England -- Fiction; Porteous Riots, 1736 -- Fiction; Women prisoners -- Fiction; Pardon -- Fiction",
+  "source_catalog_issued": "2004-08-21",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/9/4/6944/6944-0.txt",
+  "mirror_reported_size": 1434320,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG6944-The-Heart-of-Mid-Lothian-Complete",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "c62c6f5e7cddd764ec696c468165bf71378dd64e077f07146bf902ac8dc29b4f",
+  "reading_sha256": "eb9ec400de83dc291eb39231e8f1f17c176075bf33feb6e53654d186d3cb2527",
+  "raw_bytes": 1434320,
+  "reading_bytes": 1414700,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG6944-The-Heart-of-Mid-Lothian-Complete/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG6944-The-Heart-of-Mid-Lothian-Complete/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

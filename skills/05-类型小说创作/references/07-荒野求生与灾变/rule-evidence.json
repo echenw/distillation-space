@@ -1,0 +1,403 @@
+[
+  {
+    "id": "SV01",
+    "title": "先判体裁、环境与时间",
+    "rule": "按真实限制选资源、节律、治理或身份分支；无危机不强造灾变。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 13,
+        "end_line": 28
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/SKILL.md",
+        "sha256": "be48685144fd4dd87485775a2354da6b630dc9dc262a26b3f0ebfc1d7fef78c2",
+        "start_line": 49,
+        "end_line": 56
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/06-ecology-time-and-power.md",
+        "sha256": "0591edc5fe5156d4018bca6d0a2588a3212dcf23998507578c62e9e149c015f1",
+        "start_line": 5,
+        "end_line": 22
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV02",
+    "title": "清点、度量与可修正账本",
+    "rule": "先界定盘点范围、单位、估计人、误差与补给；定量不够用相对状态。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 30,
+        "end_line": 43
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/01-inventory-and-measurement.md",
+        "sha256": "b239834d88d240be6bba9d98f717b7806a7599d336e15e70bbc1c1db39915516",
+        "start_line": 3,
+        "end_line": 37
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/01-resource-ledger.md",
+        "sha256": "db163fc745581618b239072c5982537ce633833e439a7308be347f689e05477d",
+        "start_line": 5,
+        "end_line": 44
+      },
+      {
+        "source_type": "ORIGINAL_PG_PARTIAL_READ",
+        "pg_id": "PG24859",
+        "original_file": "archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/10-荒野求生与灾变/PG24859-Turned-Adrift/整本阅读版.txt",
+        "full_source_sha256": "2aa1ed4aabe1781f4b5709eb5f615a9d2b499bdfb47ff284f87bce2ec74c8191",
+        "start_line": 1040,
+        "end_line": 1120,
+        "read_status": "READ_EXACT_RANGE_ONLY"
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; PG24859_L1040_L1120_READ_ONLY; OTHER_PG_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV03",
+    "title": "多种时间尺度",
+    "rule": "区分人物能观察的期限、自然节律、主观恐惧与人物不知的制度期限。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 84,
+        "end_line": 95
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/01-resource-ledger.md",
+        "sha256": "db163fc745581618b239072c5982537ce633833e439a7308be347f689e05477d",
+        "start_line": 46,
+        "end_line": 82
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV04",
+    "title": "威胁变化与因果后果",
+    "rule": "节点改变信息、行动、关系或风险；可持续同一对抗，允许互助恢复。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/02-escalation-ladder.md",
+        "sha256": "6945de3d2ecd7b3547f555ab5ef0b439b752a7fc51e8626a343a886da32ac130",
+        "start_line": 5,
+        "end_line": 82
+      },
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 150,
+        "end_line": 157
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV05",
+    "title": "据点、出入口与撤离",
+    "rule": "呈现保护、弱点、容量和退出条件；封闭与通风撤离是条件张力，不强造敌人。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 71,
+        "end_line": 82
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/02-shelter-engineering.md",
+        "sha256": "ee43d68c23a68dc0244810ab4d73e098403744850e2d86b22498aa936de86f30",
+        "start_line": 3,
+        "end_line": 34
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/04-shelter-salvage.md",
+        "sha256": "210990ff95a43bbcb372bff1f19999b134c30cbe546617c7577283d6c9e7d3a3",
+        "start_line": 5,
+        "end_line": 42
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV06",
+    "title": "工具、改制与技能来源",
+    "rule": "材料和能力可回查；记录工时、试错、替代成本与结果，不强迫失败次数或两种用途。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 45,
+        "end_line": 68
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/03-salvage-refit-chain.md",
+        "sha256": "4facaf9170a083ab328ad03dc9004c1f3b6bf361e9ff5b6529c417e325c632bb",
+        "start_line": 3,
+        "end_line": 34
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/04-shelter-salvage.md",
+        "sha256": "210990ff95a43bbcb372bff1f19999b134c30cbe546617c7577283d6c9e7d3a3",
+        "start_line": 44,
+        "end_line": 123
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV07",
+    "title": "伤病、卫生和转运约束",
+    "rule": "把状态变化、照护资源和物流成本写入决策；小说处理方法不认证现实。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 97,
+        "end_line": 109
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/01-inventory-and-measurement.md",
+        "sha256": "b239834d88d240be6bba9d98f717b7806a7599d336e15e70bbc1c1db39915516",
+        "start_line": 41,
+        "end_line": 53
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV08",
+    "title": "权威、配给和制度",
+    "rule": "按群体规模、权力来源与合法性写职责、异议、纠错、交接及资源权限。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 111,
+        "end_line": 122
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/05-group-governance.md",
+        "sha256": "015eb4a89dc17b1d9e6dad0b76c2a8780e70db2b7e1cf3770680ed17837dc95d",
+        "start_line": 3,
+        "end_line": 41
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/03-group-governance.md",
+        "sha256": "5dae67100bd47d175587ada3988144c48ff2a80161cd9258747194a1fb9eb3f0",
+        "start_line": 5,
+        "end_line": 84
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV09",
+    "title": "信息、禁忌与伦理",
+    "rule": "分别记录谁知、谁应知、公开和隐瞒成本；有效性不能替代同意和正当性。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 138,
+        "end_line": 148
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/03-group-governance.md",
+        "sha256": "5dae67100bd47d175587ada3988144c48ff2a80161cd9258747194a1fb9eb3f0",
+        "start_line": 86,
+        "end_line": 123
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/05-morale-signal-irony.md",
+        "sha256": "a52021c0bbcdb6b4cd4960b889f7a1058d343aa8fb9c517ecd3228c90a444d12",
+        "start_line": 45,
+        "end_line": 78
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV10",
+    "title": "接触、求援和信道",
+    "rule": "可见性、接收者、误读、暴露、回执与救援因果分开，不设两信道配额或成功保证。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 124,
+        "end_line": 136
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/04-contact-and-signal.md",
+        "sha256": "4d03ed764321100c8f91587ea7a3759dcd7cdf638e1f2c4d7564c1377e0d0e15",
+        "start_line": 3,
+        "end_line": 43
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/05-morale-signal-irony.md",
+        "sha256": "a52021c0bbcdb6b4cd4960b889f7a1058d343aa8fb9c517ecd3228c90a444d12",
+        "start_line": 80,
+        "end_line": 118
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV11",
+    "title": "士气、命名与仪式",
+    "rule": "按作品需要用日常、协作、功能性仪式或不可逆承诺，不设时间阈值或必定失效。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/06-cost-and-aftermath.md",
+        "sha256": "0b3414f31db5a3bd2c96ae212f89f161508b1a7898102d044d094235239c287e",
+        "start_line": 3,
+        "end_line": 17
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/05-morale-signal-irony.md",
+        "sha256": "a52021c0bbcdb6b4cd4960b889f7a1058d343aa8fb9c517ecd3228c90a444d12",
+        "start_line": 5,
+        "end_line": 43
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV12",
+    "title": "伏笔、误读与反转",
+    "rule": "有反转时建立可回查的物件、技能、语言或行为链；角色断言可被修正。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/05-morale-signal-irony.md",
+        "sha256": "a52021c0bbcdb6b4cd4960b889f7a1058d343aa8fb9c517ecd3228c90a444d12",
+        "start_line": 120,
+        "end_line": 156
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/07-source-roles-and-contrasts.md",
+        "sha256": "55db676e77e36b166b57f592871eb048de9db2dd01ec177db834591273030ddf",
+        "start_line": 35,
+        "end_line": 49
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/07-source-roles-and-contrasts.md",
+        "sha256": "55db676e77e36b166b57f592871eb048de9db2dd01ec177db834591273030ddf",
+        "start_line": 115,
+        "end_line": 126
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV13",
+    "title": "收束与所得所失",
+    "rule": "按未获救、胜利有代价、重建、和解等分支回应承诺，不制造固定创伤。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/rules.md",
+        "sha256": "1e13389cdad5468e38e7e8951226ab09c3163dbf0444e63806d8d189ebe84864",
+        "start_line": 161,
+        "end_line": 172
+      },
+      {
+        "task_id": "A-08-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-02/rounds/round-p4-final-2026-10-30/output/castaway-salvage-stronghold/references/06-cost-and-aftermath.md",
+        "sha256": "0b3414f31db5a3bd2c96ae212f89f161508b1a7898102d044d094235239c287e",
+        "start_line": 21,
+        "end_line": 42
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/05-morale-signal-irony.md",
+        "sha256": "a52021c0bbcdb6b4cd4960b889f7a1058d343aa8fb9c517ecd3228c90a444d12",
+        "start_line": 158,
+        "end_line": 197
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  },
+  {
+    "id": "SV14",
+    "title": "局部机制与证据边界",
+    "rule": "保留单源机制、时代语境和来源族；不能把故事数量、结构门禁和读者实测混同。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "A-08-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-01/rounds/round-p4-final-2026-10-30/output/wilderness-disaster-survival-craft-b01/references/conflicts-and-exceptions.md",
+        "sha256": "19f956048612c986de89e12c56d7d29a5400bc237df5ce142696f41036e683ed",
+        "start_line": 33,
+        "end_line": 87
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/source-index.md",
+        "sha256": "a62bb5ca89731ba57bce99ed44299431eabda3d11b2690dd6fa028615892a01b",
+        "start_line": 39,
+        "end_line": 64
+      },
+      {
+        "task_id": "A-08-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-final-2026-10-30/output/survival-crisis-escalation/references/07-source-roles-and-contrasts.md",
+        "sha256": "55db676e77e36b166b57f592871eb048de9db2dd01ec177db834591273030ddf",
+        "start_line": 11,
+        "end_line": 133
+      }
+    ],
+    "proof_status": "SOURCE_SKILL_READ; ORIGINAL_PG_RECHECK_NOT_PROVEN; GQ5_NOT_PROVEN"
+  }
+]

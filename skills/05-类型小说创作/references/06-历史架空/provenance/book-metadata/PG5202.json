@@ -1,0 +1,36 @@
+{
+  "id": "PG5202",
+  "title": "The Golden Lion of Granpere",
+  "author": "Trollope, Anthony, 1815-1882",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/5202",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Vosges Mountains (France) -- Fiction",
+  "source_catalog_issued": "2004-03-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/5/2/0/5202/5202.txt",
+  "mirror_reported_size": 397708,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG5202-The-Golden-Lion-of-Granpere",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "98da3273765cde35ea7e989bb1b568c972545768bbe999af2485c982d07d89cf",
+  "reading_sha256": "08e099a8a45d92caa3d40b6cfce55a83214ffd7e4db250055752042ae71b0dd8",
+  "raw_bytes": 397708,
+  "reading_bytes": 377983,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG5202-The-Golden-Lion-of-Granpere/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG5202-The-Golden-Lion-of-Granpere/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

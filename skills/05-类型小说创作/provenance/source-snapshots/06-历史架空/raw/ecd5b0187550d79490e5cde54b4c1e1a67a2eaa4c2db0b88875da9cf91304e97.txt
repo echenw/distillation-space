@@ -1,0 +1,75 @@
+# 03 · 血债、身份与不可靠视角（H08 / H09 / H14 / H11）
+
+每条规则：**规则句 → F 证据（PG + 行号 + ≤25 词逐字引文 + 证据强度）→ when / when_not → 失效模式（反例）→ 产出物**。
+**FICTION_CASE 警告**：本文件引用的“人物做法/叙述者判断”只说明文本展示了什么，不是作者明示规则，更不是本 Skill 推荐的价值观。
+
+---
+
+## H08 血债先于爱情：继承的义务压缩选择（ADOPT）
+
+**规则句**：让家族血债发生在主角出生之前，并把它写成一份“继承的义务”（谁必须复仇、谁必须赎罪、谁必须隐姓）。主角的爱情/前途一出现，就自动撞上这份旧账。
+
+**F 证据**
+- PG1374（FULL）L138-170：父亲逐户复仇；“I myself bound him to his bed before setting fire to the house.”——连孩子也被绑在床上。
+- PG1374（FULL）L1819-1821：“My father then massacred the whole family.”——女儿从母亲口中得知自己爱上的是仇家幸存者。
+- PG1374（FULL）L2893-2894：“Our two families were doomed to exterminate each other.”——结局把血债写成“注定”，而不是误会。
+- PG1374（FULL）L1403-1405：父亲把女儿训练成复仇者，“precisely as a lion teaches the lion-cubs to spring upon their prey.”
+
+**when**：世仇、部族/党派冲突、殖民/被殖民家族、跨阵营爱情。
+**when_not**：若你想写“主角能打破宿命”，必须另给制度或文书的杠杆（H02），否则宿命会压扁人物能动性。
+**失效模式**：血债只作背景介绍、不影响任何决定→装饰；爱情一句“那是上一代的事”就化解→与语料证据相反（PG1374 的代价是双亡）。
+
+**产出物**：血债时间线（事件年 / 施害者 / 幸存者 / 继承的义务 / 谁知道 / 谁不知道）。
+
+---
+
+## H09 身份延迟揭示：日常寒暄触发，前文埋种（ADOPT）
+
+**规则句**：把身份揭示放在最普通的社交动作里（介绍、让座、端酒、寒暄），而不是审讯或调查；但在前 1/4 必须埋一次“相像/旧姓/旧物/口音”的种子，使揭示既意外又公平。
+
+**F 证据**
+- PG1374（FULL）L1787-1788：“Monsieur's resemblance to a person we knew in Corsica, Nina Porta, is really surprising.”一句家常话引爆。
+- PG1374（FULL）L1791-1793：“Nina was my sister.” / “Are you Luigi Porta?”（短句连续）——揭示后立刻进入沉默与离席（L1797-1800）。
+- PG1374（FULL）L1810：“What misery in a word!”——揭示的代价由受害者自己说出。
+- PG1433（FULL）L246-249：听到“Prosper Magnan”之名，听者“seized the decanter, poured out a glass of water, and emptied it at a draught.”；L868-878 名字“Frederic”再次触发，指缝里透出“a darkling flame”（L872-874）。
+
+**when**：私生子/失散/改名/卧底/跨阵营亲属；读者已获得部分信息、角色尚未拼合。
+**when_not**：公平推理结构——线索必须更显性（姓名、伤疤、文书）；或喜剧误会——不需要沉重代价。
+**失效模式**：A07 无铺垫巧合→读者觉得作者作弊；揭示后无人付出代价→悬念空转。
+
+**产出物**：揭示节拍表（种子场景 / 触发语 / 谁知道 / 揭示后的即时代价 / 后续法律或经济后果）。
+
+---
+
+## H14 不可靠时代视角：时代偏见标为人物/叙述者视角（ADOPT）
+
+**规则句**：当人物持有时代偏见（种族、阶级、宗教、帝国优越感）时，文本必须让读者看见“这是谁的看法”：用人物局限、文本内反证、或副文本（脚注/后记/另一位叙述者）拉开距离。不要把时代偏见写成叙述者的最终裁决。
+
+**F 证据（FICTION_CASE）**
+- PG6872（PARTIAL）L7116-7120：叙述以奴隶主视角写“The slaves had taken no part in the attack”，随后写“the negroes themselves went with cheerful faces to their work”——这是人物/叙述者的自我安慰，不是史实结论。
+- PG6872（PARTIAL）L10688-10694：同一本书又让丹在饥饿农妇家看见“hunger had drained all the red”，并把战争定义为“a war for the people of the soil”——文本内部提供了反证。
+- PG1374（FULL）L460-470：叙述者把保王派写成浅薄、把波拿巴派写成忠贞；这是叙述立场，不是历史判决。
+- PG1374（FULL）L1093-1096：“patriotism and Bonapartism (in those days the terms were synonymous)”——用词义变化提示“当时的分类”与“现在的分类”不同。
+
+**when**：奴隶制、殖民、宗教冲突、阶级蔑视、民族主义高涨期。
+**when_not**：不能因为“要客观”而把偏见洗白；也不能让现代角色替历史人物说出完整现代价值观（时代错置）。
+**失效模式**：A05 现代价值观直接裁决→人物变成传声筒；A06 把时代偏见当作者结论→作品替暴力背书。正确做法：让偏见造成可见伤害，并让至少一个文本内声音（人物、文书、脚注）与之冲突。
+
+**产出物**：视角标注单（句子/场景 / 谁在说 / 其利益 / 文本内反证 / 是否需要副文本）。
+
+---
+
+## H11 历史打断私人时刻：传闻、报纸、马蹄声（ADOPT）
+
+**规则句**：大事件不要直接切战场；让它以“声音—消息—反应”的三段式闯进私人场景。消息必须打断一个正在进行的私人动作（吃饭、求婚、临终、装饰房间），从而改变该动作的含义。
+
+**F 证据**
+- PG1374（FULL）L888-892：“Just at this moment the loud cries of the vendors of newspapers came up from the street: 'Condemned to death!'”——一声叫卖打断疗伤场景，名字让伤者当场失态。
+- PG6872（PARTIAL）L7083-7086：州长在探病归途说“An attack was made on the arsenal at midnight”，并补“it was feared that the slaves for miles around were armed for an uprising”。
+- PG388（PARTIAL）L11804-11808：“then the hound in the road gave tongue to the short, sharp bark that is the call to arms”——先狗吠，后马蹄，再政治追捕。
+
+**when**：革命/内战/政变/刺杀/大屠杀；需要展示“远方事件如何到达本地”。
+**when_not**：事件本身是主角亲历的主线（此时应正面写，不要绕过）；或消息到达不改变任何决定（删）。
+**失效模式**：巧合堆叠（每次转折都靠报纸）；消息只作背景播报，不改变私人动作。
+
+**产出物**：打断节拍（私人动作 / 声音 / 消息内容 / 听者反应 / 动作被改变成什么）。

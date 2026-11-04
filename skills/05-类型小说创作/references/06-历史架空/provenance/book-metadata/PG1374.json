@@ -1,0 +1,39 @@
+{
+  "id": "PG1374",
+  "title": "Vendetta",
+  "author": "Balzac, Honoré de, 1799-1850; Wormeley, Katharine Prescott, 1830-1908 [Translator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Project_Gutenberg_public_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/1374",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/1/3/7/1374/1374-0.txt",
+  "mirror_reported_size": 149416,
+  "source_issued_at": "2005-10-28",
+  "source_subjects": "Historical fiction; French fiction -- Translations into English",
+  "source_rights_caveat": "Gutenberg official catalog+public mirror; per-work and jurisdiction rights must be checked independently",
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG1374-Vendetta",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "13a80f0e7a9e7f3d0a2b2dca05fd3fa4ef706d3d619a0d0dbddbd5837ee4917c",
+  "reading_sha256": "74a5805fb1c2688e014e80ec571fd405be180b8d7103e53c613ed3f577fe7c96",
+  "raw_bytes": 149416,
+  "reading_bytes": 149311,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG1374-Vendetta/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG1374-Vendetta/整本阅读版.txt",
+  "content_status_reason": null,
+  "source_role_note": "Fiction narrative or play case; only descriptive structural observations, not authorial instructions.",
+  "editorial_match_basis": "PG_CATALOG_SUBJECT_ONLY_NOT_YET_READ",
+  "material_file_type": "BOOK_OR_STORY_OR_DRAMATIC_SCRIPT",
+  "source_text_charset": "utf-8",
+  "acquisition_screen": "HEADERS_AND_GUTENBERG_WRAPPERS_SCREENED_US_PD_NOT_LEGAL_CERTIFICATION"
+}

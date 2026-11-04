@@ -1,0 +1,38 @@
+{
+  "id": "PG24973",
+  "title": "The Sun King",
+  "author": "Derreaux, Gaston",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/24973",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2008-04-01",
+  "source_catalog_subjects": "Historical fiction; Short stories; Zoroastrianism -- History -- Fiction",
+  "source_catalog_locc": "PS",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/2/4/9/7/24973/24973.txt",
+  "source_mirror_file_size": 36731,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG24973-The-Sun-King/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG24973-The-Sun-King/整本阅读版.txt",
+  "raw_sha256": "54f283d14b12fc43a7f2a0046300cc8de07205e7501c0c8f219b0a334918a33c",
+  "reading_sha256": "b65350f5886c943500d349470cf8f7d6145ed6e14f6190d6012dcd6f4db4fce3",
+  "raw_bytes": 36731,
+  "reading_bytes": 17032,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG24973-The-Sun-King",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

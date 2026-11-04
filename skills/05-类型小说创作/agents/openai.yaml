@@ -1,0 +1,4 @@
+interface:
+  display_name: "类型小说创作"
+  short_description: "十四类题材的条件规则、案例、模板与融合路由"
+  default_prompt: "根据我的创作或改稿目标，读取相关题材知识并交付实际作品或有依据的修订。"

@@ -1,0 +1,181 @@
+{
+  "schema": "genre-fusion-manifest/v2",
+  "task_ids": [
+    "B-07-B01",
+    "B-07-B02",
+    "B-07-B03",
+    "B-07-B04",
+    "B-07-B05",
+    "B-07-B06"
+  ],
+  "candidate_count": 19,
+  "source_instances": 165,
+  "unique_contents": 130,
+  "source_section_mappings": 721,
+  "source_pg_count": 93,
+  "source_identity_rows": 93,
+  "pg_not_named_in_consumer_but_preserved_in_audit": [],
+  "broken_links": [],
+  "source_hash_status": "ALL_MATCH_BRIDGE_INVENTORY",
+  "semantic_review_status": "REWRITTEN_SELF_AUTHORED_REQUIRES_INDEPENDENT_REVIEW",
+  "original_book_validation": "TARGETED_PRIMARY_WINDOWS_ONLY_SIX_PG",
+  "primary_windows": [
+    {
+      "path": "provenance/verification/11-identity-evidence-rechecks.txt",
+      "sha256": "5a3bfce3773aacaee292c8ab41e4911c75555a51745f71abbcff6f79b89314a4",
+      "scope": "targeted primary-text windows, fully read in rewrite"
+    },
+    {
+      "path": "provenance/verification/11-PG1837-seal-continuation.txt",
+      "sha256": "436d2eb90b7225465379d49ad3a00b009f591cd2e4b6d2ac2a6f7b0fa23b393e",
+      "scope": "targeted primary-text windows, fully read in rewrite"
+    },
+    {
+      "path": "provenance/verification/11-identity-ending-attribution.txt",
+      "sha256": "088220db4b87520e28fc953f398db6b5a83fb6473a2fad4c9859dddec8d2f3de",
+      "scope": "Main read PG1623/PG2158 exact specified windows; not complete books"
+    }
+  ],
+  "files": [
+    {
+      "path": "00-题材指南.md",
+      "bytes": 2920,
+      "sha256": "7e43b518143f597632b0c77121704d57b589b2134833e032493e787a8a0880da"
+    },
+    {
+      "path": "01-身份主张与认定.md",
+      "bytes": 5354,
+      "sha256": "a02b6a5be59e9ed55e6d846906447392ec0a7b18c506f1cc0928c52f867f063c"
+    },
+    {
+      "path": "02-伪装证据知情与揭示.md",
+      "bytes": 6685,
+      "sha256": "cbae9d341ef4cfe6cc410bcc7c7ced6bc800aad6924544f8c27db795d7f6e950"
+    },
+    {
+      "path": "03-机构联盟与控制.md",
+      "bytes": 7091,
+      "sha256": "240b46a17c48e36f46e34d4c0244ee775851c387cecfb1d793b935ade0c90228"
+    },
+    {
+      "path": "04-复仇代价与结局.md",
+      "bytes": 5474,
+      "sha256": "372b3d6f98cffdafb7f5b640f6ac9f5548d4693225530301e9f1d056137488d5"
+    },
+    {
+      "path": "05-叙述立场与适用边界.md",
+      "bytes": 4335,
+      "sha256": "b647901a09340a8fc00f3bd54d56ccdfd2d4f54988f526c86183c48730be324d"
+    },
+    {
+      "path": "06-模板与设计示例.md",
+      "bytes": 13903,
+      "sha256": "b05fd8323184b8dad94674a7f73d7dfcc9cfe8a753c3e8f9594a7c6a05ad65ac"
+    },
+    {
+      "path": "07-来源与版本边界.md",
+      "bytes": 32227,
+      "sha256": "02310c5d1eb69848f796aeac9f302f9316efa3599032442412abf0e75a81a748"
+    },
+    {
+      "path": "08-融合裁决与历史保留.md",
+      "bytes": 12095,
+      "sha256": "5689668fd64e42315364e3e3bcbbc22b56c6a5cd8955a9dfb23c1bc23cff9bdd"
+    },
+    {
+      "path": "09-来源身份表.md",
+      "bytes": 23632,
+      "sha256": "66e0524c900da793d972b0c9fd1f63dbc159d17d5ab3979aa8b5944614a4fa49"
+    },
+    {
+      "path": "provenance/delivery-check.json",
+      "bytes": 656,
+      "sha256": "14684848aaf2991034386e05a2eeaf062b658dada34117cd4c114be10bdc87e4"
+    },
+    {
+      "path": "provenance/earlier-draft-audit-only.json",
+      "bytes": 353260,
+      "sha256": "5970c3ef9edf23a558db5216ea1e8241d52fde0fcb22ef9daa1b38a38360c2ea"
+    },
+    {
+      "path": "provenance/rule-evidence-map.json",
+      "bytes": 2120012,
+      "sha256": "eb4e2a53f73c55fe1e919da0fb07fe08aa6f68d7cec601899cbaf96d43cc8d62"
+    },
+    {
+      "path": "provenance/rule-map.json",
+      "bytes": 606736,
+      "sha256": "8c2c521950c7b46f8a8601154b96e3ad021a4c6a78324df6bd614873d62f9fe3"
+    },
+    {
+      "path": "provenance/source-map.json",
+      "bytes": 228690,
+      "sha256": "1c80e6380209ad09594aaf6c6cabdb63f5801a77c312e025e5d4eba95ff8a386"
+    },
+    {
+      "path": "provenance/static-check.json",
+      "bytes": 590,
+      "sha256": "d214616b126a67b63d1575c93e71ebb3db5fc1225e3dee4c8de0ac08ce03bab6"
+    },
+    {
+      "path": "provenance/verification/11-PG1837-seal-continuation.txt",
+      "bytes": 9947,
+      "sha256": "436d2eb90b7225465379d49ad3a00b009f591cd2e4b6d2ac2a6f7b0fa23b393e"
+    },
+    {
+      "path": "provenance/verification/11-identity-evidence-rechecks.txt",
+      "bytes": 15156,
+      "sha256": "5a3bfce3773aacaee292c8ab41e4911c75555a51745f71abbcff6f79b89314a4"
+    },
+    {
+      "path": "provenance/读取与裁决记录.md",
+      "bytes": 1408,
+      "sha256": "e7e6489b35f4a7e916677a98482f8b23cf6bebe92e571131effff2acded0df6a"
+    },
+    {
+      "path": "provenance/重写与阅读工作记录.md",
+      "bytes": 3910,
+      "sha256": "0ba7bc884a02efb1b1b4ff8d76d5b0daeb8c83831cd78f2540475bfbf1a97eb9"
+    },
+    {
+      "path": "provenance/verification/11-identity-ending-attribution.txt",
+      "bytes": 14452,
+      "sha256": "088220db4b87520e28fc953f398db6b5a83fb6473a2fad4c9859dddec8d2f3de"
+    }
+  ],
+  "delivery_check": "provenance/delivery-check.json",
+  "producer_manifest_scope": "Original producer delivery, with following Main integration fingerprint refresh",
+  "main_additional_primary_recheck": {
+    "scope": "TARGETED_PRIMARY_WINDOWS_ONLY",
+    "execution_id": "a873c171-2729-4c47-a34b-e614a577e708",
+    "file": "audit/verification/11-identity-ending-attribution.txt",
+    "local_copy": "provenance/verification/11-identity-ending-attribution.txt",
+    "windows": {
+      "PG1623": [
+        [
+          8690,
+          8760
+        ],
+        [
+          11780,
+          11834
+        ]
+      ],
+      "PG2158": [
+        [
+          22880,
+          22965
+        ],
+        [
+          27695,
+          27720
+        ]
+      ]
+    }
+  },
+  "main_read_scope": "All ten consumer Markdown files, source identities and both working records actually read; not an independent full 74-task audit.",
+  "producer_original_book_validation": "TARGETED_PRIMARY_WINDOWS_ONLY_FOUR_PG",
+  "producer_manifest_preserved_at": "audit/history/pre-takeover-manifests/11-身份复仇与权谋.json",
+  "current_fingerprint_scope": "CURRENT_MAIN_INTEGRATION; not a claim that the original producer authored or independently reviewed subsequent edits",
+  "main_fingerprint_updated_at": "2026-10-31T22:33:54.510522+00:00"
+}

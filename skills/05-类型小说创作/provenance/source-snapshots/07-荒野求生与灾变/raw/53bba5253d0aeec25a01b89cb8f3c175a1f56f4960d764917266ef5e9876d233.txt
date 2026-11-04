@@ -1,0 +1,66 @@
+# 04 庇护所与拾荒替代链
+
+本文件覆盖 R5、R6、R7。
+
+## R5 庇护所写成有规则、有弱点的资产
+
+**规则（P）**：庇护所不是背景板，而是一套规则：怎么进、怎么锁、能防什么、怕什么、被对手利用时会怎样。至少让角色把规则当武器用过一次。
+
+**F 证据**
+- PG62319 398–404：把舱门改成防御——“his first move toward self preservation lay in making the space ship livable and impregnable to outside attack”，最后一扇“locked from either side”。
+- PG58748 577–578：气闸规则被双方利用——“neither door would open unless the other was shut”；580–581 立刻变成“lock Jonner out”的手段。
+- PG1268 17355–17365：居所兼仓库——“Granite House thus became a general warehouse, containing all the provisions, arms, tools, and spare utensils”，并把炮口开在窗口“like a little Gibraltar”。
+- PG33516 2268–2275：大宗物资入岩洞，伪装洞口防兽——“it will be prudent to hide the opening. I don't mean from two-legged thieves, but; from those with four paws!”
+
+**H**：庇护所的“规则”越清楚，反转越好写；读者能预测“如果对手知道这条规则会怎样”。（族：Jacobi、Fontenay、Verne）
+
+**P 动作**
+1. 写三条硬规则（入口、锁、容量）。
+2. 写两条弱点（能源、视线、单入口）。
+3. 让对手利用其中一条，或让主角利用对手的庇护所规则。
+
+**适用**：基地、船只、洞穴、废墟。
+**不适用**：不断移动的逃亡叙事；此时把“庇护所”改成“临时营地规则”，每晚重置。
+**反例**：PG62319 的据点一旦主角离开就被端掉（1548–1555），说明“单点庇护所”必须配 R3 的换类或 R8 的留守安排。
+
+## R6 回收物列两种以上用途，其一延迟兑现
+
+**规则（P）**：每件重要回收物至少写两种用途：一种立刻用，一种在后文（最好跨场景）兑现。用途要由材料属性决定，而不是由剧情需要决定；本批没有“三章后”级证据，故不设固定章数。
+
+**F 证据**
+- PG33516 2227–2237：气球布先当衣料——“There is what will furnish us with linen for years”，随后又做帆（2256–2258）。
+- PG64595 507–508：头盔里的炸药改手榴弹——“We can make a few hand grenades out of it.”
+- PG1268 5811–5814：缺雷管时用 azotic acid 制代用品；5840：硫浸绳做定时引信。
+- PG33516 4397–4398：捕猎器“copied from the Aleutian fishermen”。
+
+**H**：回收物的“第二用途”是伏笔的物理形态；读者记住的是材料，不是作者的提示。（族：Verne、Wells）
+
+**P 动作**
+1. 建一张“回收物—属性—用途A—用途B—兑现章”表。
+2. 用途B必须在用途A失效后出现。
+3. 至少一件回收物最终被证明“不该留”（负担/暴露/诱惑）。
+
+**适用**：沉船、废墟、废弃基地、灾后城市。
+**不适用**：资源极度匮乏到“一切即时消耗”的短篇；此时只保留用途A。
+**反例**：PG46600 的破艇无法修复也无法使用（8080–8082），只提供情感价值，不构成“回收—兑现”链。
+
+## R7 能力展示用替代链，不用万能装置
+
+**规则（P）**：让主角“有本事”，靠的是替代链：缺A用B，B需要C，C有副作用。不要靠一件万能装置跳过资源与治理问题。
+
+**F 证据**
+- PG1268 5811–5835：没有雷管→用 azotic acid 制代用品→用铁块与硫浸绳做定时→人先撤离（5832–5838）。
+- PG58748 482–500：不会用老式手枪→凭演示记忆摸索上膛——“After a moment of hesitant tugging, he hit the right movement”，并承担后坐力代价（518–525）。
+- PG33516 4392–4400：捕猎器照搬成熟工艺并验证结果——“this invention, copied from the Aleutian fishermen, succeeded perfectly”。
+- PG64595 501–508：太空服当潜水服，头盔炸药当手榴弹——两件现有物各改一种用途。
+
+**H**：替代链越长，能力越可信；万能装置越强，生存叙事越像冒险童话。（族：Verne、Fontenay、Wells）
+
+**P 动作**
+1. 把“主角会”拆成三步：识别材料、改造、验证。
+2. 每步给一个失败可能或副作用。
+3. 禁止用同一件装置解决两个以上不同类别的问题。
+
+**适用**：工程型主角、硬科幻、历史生存。
+**不适用**：神话/奇幻设定可以有意使用万能物，但应显式标注为“非现实规则”。
+**反例**：PG62319 1412–1436 用“electro-hypnosis machines”让俘虏自愿劳动，一举解决人力与治理，阶梯与代价同时消失；这是本批次明确的反面样本。

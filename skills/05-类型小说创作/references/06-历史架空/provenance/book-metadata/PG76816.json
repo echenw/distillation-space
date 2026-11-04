@@ -1,0 +1,38 @@
+{
+  "id": "PG76816",
+  "title": "The great Roxhythe",
+  "author": "Heyer, Georgette, 1902-1974",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/76816",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2025-09-04",
+  "source_catalog_subjects": "Historical fiction; Spy stories; Kings and rulers -- Fiction; Great Britain -- History -- Charles II, 1660-1685 -- Fiction; Spies -- Fiction",
+  "source_catalog_locc": "PR",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/7/6/8/1/76816/76816-0.txt",
+  "source_mirror_file_size": 696215,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG76816-The-great-Roxhythe/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG76816-The-great-Roxhythe/整本阅读版.txt",
+  "raw_sha256": "e4e87b5de30f0593bd7f6fe2d7a37b4cb167db4813794a2d66fa32d5dd0c0922",
+  "reading_sha256": "388f913081bca16a0c657806f3223904ed297e98979df2c3590abfcf2b895eb4",
+  "raw_bytes": 696215,
+  "reading_bytes": 696091,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG76816-The-great-Roxhythe",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

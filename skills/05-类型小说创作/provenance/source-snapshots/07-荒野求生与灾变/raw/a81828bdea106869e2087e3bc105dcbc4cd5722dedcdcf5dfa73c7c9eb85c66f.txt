@@ -1,0 +1,70 @@
+# 本轮来源定位与证据等级
+
+原著及其历史阅读证据不随 Skill 包复制。本表由已有元数据、原始与阅读版 SHA-256、逐段台账及原文引文回源核验形成；不表示本轮重读全书。历史索引若有不同结论，以本轮核验为准。
+
+| PG | 来源书名 | 全文行数 | 阅读版 SHA-256 | 可回源区间 | 验证级别 |
+| --- | --- | ---: | --- | ---: | --- |
+| PG10076 | Lister's Great Adventure | 8979 | 87f41eb28137eec350bf85405181be17ac36b09f3f0f6664dd791a774b18596b | 0/8979 | NOT_PROVEN |
+| PG11703 | The Swiss Family Robinson; or Adventures in a Desert Island | 12212 | 1f0407f3a4819e4aafff4d6879b0ca6f202af29a224060bba8c2f84075563cd1 | 0/12212 | NOT_PROVEN |
+| PG1268 | The Mysterious Island | 23108 | 990c397730a40f1b834d91ade6527b3c1053c6af8db7a11d06ebeaed1a67b5c0 | 22372/23108 | PARTIAL |
+| PG13967 | Nedra | 9289 | 39094dec486428128bd49ae77df31750bab5a7bc7580e2b2fe840964336599f1 | 0/9289 | NOT_PROVEN |
+| PG14249 | Half A Chance | 7751 | f147305d97df4a24ddd501bac9f720a269e551a8779dc631eb0e04c5542e7f4f | 0/7751 | NOT_PROVEN |
+| PG1465 | The Wreck of the Golden Mary | 1088 | 01793adb1478a03843b9394d4c6057084ace120edf331f96b97c58c70cecd4af | 0/1088 | NOT_PROVEN |
+| PG1625 | The frozen deep | 3658 | 44311a89ba5d5d1dd1a7fa3c2983f7e84c2cf29dfa9cf5e4edfdb6881e240ca5 | 0/3658 | NOT_PROVEN |
+| PG1652 | The Survivors of the Chancellor: Diary of J.R. Kazallon, Passenger | 5779 | 4020e10c643d70c53a98bfe9ba491987b54fc67cc8c1782c1eca83a81c1fa886 | 5779/5779 | FULL |
+| PG19649 | The Captain of the Kansas | 9442 | ab27bf837762e50bb1537379ebacd02e61f756af2b3da02a38f146aec7e5dcab | 41/9442 | PARTIAL |
+| PG20084 | The Beach of Dreams: A Romance | 8212 | 594aa1cfd0aeed3722a67e1515deba504af30d4179fbd8e8e73885a389e20559 | 41/8212 | PARTIAL |
+| PG2127 | Paul and Virginia | 4244 | 416f4efbdbd7931099e4b43eb47883ac1247e5ef30ba35140c5d3e941722eef9 | 0/4244 | NOT_PROVEN |
+| PG21552 | Masterman Ready; Or, The Wreck of the "Pacific" | 10687 | fc114e79d0bcd3e0f5c334990f6dcf6fbdb8795c0239809281b9fffc4fc13910 | 0/10687 | NOT_PROVEN |
+| PG27982 | The Ocean Waifs: A Story of Adventure on Land and Sea | 12857 | a5f06df9cb0bccfbb28e4dd1a7d15c9ce56e21fbb3f076cf790ecf0e40309dcf | 0/12857 | NOT_PROVEN |
+| PG30365 | In Desert and Wilderness | 14461 | 247c566f0aceab0c1d2a1365ff809f0fd2229cedb2d66607dc1ac65d5d9a10a6 | 14461/14461 | FULL |
+| PG33187 | By Right of Conquest: A Novel | 7453 | f6684127caecf6c34db165fd978eb89c03903e3e49620bc76b93b255df89ec64 | 7453/7453 | FULL |
+| PG33516 | Abandoned | 8705 | c89819320cc2f948ca3f6d9758a91707aee705603592b3ec364c1e344f2f743c | 8225/8705 | PARTIAL |
+| PG33660 | The Year When Stardust Fell | 7660 | 0bc9d9f5a4b5ff29d3dffec26c1ddf22a9b1bb93d404868201c5f54c83b095d1 | 7660/7660 | FULL |
+| PG34009 | Stranded in Arcady | 5566 | 2954b4cd089efd176a3a0d9c8c790bdea20933f79e5744e40a97c4d7ddcc8b57 | 0/5566 | NOT_PROVEN |
+| PG35155 | The Betrothed From the Italian of Alessandro Manzoni | 17499 | a17e08701ad509d2cf00f8e6a893e474cfde69a3a412a3357b7982bf2f729653 | 17019/17499 | PARTIAL |
+| PG35823 | The Secret of the Reef | 10925 | a2e726e2ab43543a55ce8c550ac7af18d34115f4a0c0e62345f8d972051c99f6 | 0/10925 | NOT_PROVEN |
+| PG36950 | Richard Galbraith, Mariner; Or, Life among the Kaffirs | 6051 | e998f5dd990cdeb0d7f074c34ea12effa7c9118fda8556ce9cf9c477738beb18 | 0/6051 | NOT_PROVEN |
+| PG37954 | Maid of the Mist | 11869 | 0042c507347bf4d131e24e2b36e15677c7aaba40f2097b3be48e16113e6a4ae6 | 0/11869 | NOT_PROVEN |
+| PG46600 | By the World Forgot: A Double Romance of the East and West | 10714 | 12c2f2e3378fe95b38a3429eac51c680d4184cb13adb0017d5c8415ca1eeaafc | 10234/10714 | PARTIAL |
+| PG58748 | Escape Velocity | 1201 | 15ad222b6dc0953ec01da0f72a5560698faaaf12d9296d167bdc34a1cb830e73 | 0/1201 | NOT_PROVEN |
+| PG60177 | Through the Desert | 14420 | 789cdf389730a73674d7c5872f3e019e2d6ee01e8f0484ca4c346dc8c52d8633 | 14420/14420 | FULL |
+| PG62319 | Cosmic Castaway | 1861 | ceacfafa90a308beb81b0a6cd2886e27c47228611964346c574633c6b4bba04b | 0/1861 | NOT_PROVEN |
+| PG64595 | Animat | 787 | 12989eff2f9ee630cb1457a0eeb86da9d2757f6b49de9271388a0014736d48ed | 0/787 | NOT_PROVEN |
+| PG73604 | The red fetish | 534 | 88393c5034aa8e4574e74d24a7f6baed5eafd5f50c04d6866dedfa434548736e | 0/534 | NOT_PROVEN |
+| PG789 | The Gathering of Brother Hilarius | 3319 | bdb9ac2d2ebb610af96529960eeb97a293bff3232df0d14623bc5bc03ceec6c0 | 0/3319 | NOT_PROVEN |
+
+## 台账回查与来源边界
+
+- PG10076: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG10076.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG11703: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG11703.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG1268: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-perbook/notes/reading/ledger-PG1268-full.md (PASS)；元数据与两类 SHA MATCH。
+- PG13967: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG13967.ledger.md (INCOMPLETE)；元数据与两类 SHA MATCH。
+- PG14249: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG14249.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG1465: NO_USABLE_LEDGER；元数据与两类 SHA MATCH。
+- PG1625: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG1625.ledger.md (LEGACY_RANGE_ONLY)；元数据与两类 SHA MATCH。
+- PG1652: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG1652.ledger.md (PASS)；元数据与两类 SHA MATCH。
+- PG19649: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG19649.ledger.md (FABRICATED), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-kd32-r01/notes/reading/ledger-PG19649-s9188-9228.md (PASS)；元数据与两类 SHA MATCH。
+- PG20084: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG20084.ledger.md (FABRICATED), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-kd32-r01/notes/reading/ledger-PG20084-s2222-2262.md (PASS)；元数据与两类 SHA MATCH。
+- PG2127: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG2127.ledger.md (LEGACY_RANGE_ONLY)；元数据与两类 SHA MATCH。
+- PG21552: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG21552.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG27982: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG27982.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG30365: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG30365.ledger.md (PASS), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-p4-wave4-agent3-2026-10-30/notes/reading/ledger-PG30365-s13374-13378.md (PASS), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-kd32-r13/notes/reading/ledger-PG30365-s13379-14461.md (PASS), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-shard-hy4/notes/reading/ledger-PG30365-s1374-7373.md (PASS), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-shard-hy4/notes/reading/ledger-PG30365-s7374-13373.md (PASS)；元数据与两类 SHA MATCH。
+- PG33187: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG33187.ledger.md (PASS)；元数据与两类 SHA MATCH。
+- PG33516: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG33516.ledger.md (PASS)；元数据与两类 SHA MATCH。
+- PG33660: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG33660.ledger.md (PASS)；元数据与两类 SHA MATCH。
+- PG34009: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG34009.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG35155: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG35155.ledger.md (PASS), distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-perbook/notes/reading/ledger-PG35155-full.md (PASS)；元数据与两类 SHA MATCH。
+- PG35823: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG35823.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG36950: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG36950.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG37954: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG37954.ledger.md (FABRICATED)；元数据与两类 SHA MATCH。
+- PG46600: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG46600.ledger.md (PASS)；元数据与两类 SHA MATCH。
+- PG58748: NO_USABLE_LEDGER；元数据与两类 SHA MATCH。
+- PG60177: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-perbook/notes/reading/ledger-PG60177-full.md (PASS)；元数据与两类 SHA MATCH。
+- PG62319: NO_USABLE_LEDGER；元数据与两类 SHA MATCH。
+- PG64595: NO_USABLE_LEDGER；元数据与两类 SHA MATCH。
+- PG73604: NO_USABLE_LEDGER；元数据与两类 SHA MATCH。
+- PG789: distill/分类蒸馏/16-类型小说专项/10-荒野求生与灾变/批次-03/rounds/round-03-2026-10-25/notes/evidence/PG789.ledger.md (LEGACY_RANGE_ONLY)；元数据与两类 SHA MATCH。
+
+- 历史批次的作品/戏剧/评论所见为 F，提议的写作操作为 H/P；一部作品的形式不自动构成所有作品的定律。
+- 本批结论按原著及历史已有阅读，不是源在本轮被完整重新阅读；实际 GQ5 宿主效果无回执。

@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+分段取词引文核验（P4 用）
+用法: python3 _verify_citations.py <spec.json>
+spec.json 格式:
+[
+  {"pg":"PG9150", "lines":[8034,8039], "quote":"We are just as if we were in a diving-bell",
+   "segments":["diving","bell"], "note":"M25"}
+]
+核验逻辑:
+ 1. 取区间行(含端点), 拼接为单串, 折叠所有空白为单空格, 统一连字符/引号变体
+ 2. 在该折叠串上做整串命中判定 -> full_hit
+ 3. 若整串未命中, 对每个空格分词(token)做独立子串命中 -> seg_hit / 列出未命中 token
+从而把"行末断词造成的伪阴性"与"真实伪造"区分开。
+"""
+import json, sys, re, os
+
+BASE = "/Users/aizou/Desktop/工作台/kd-worktrees/w06/distill/有原始正文/16-类型小说专项/14-探险寻宝"
+
+def norm(s):
+    s = s.replace("\u2019", "'").replace("\u2018", "'")
+    s = s.replace("\u201c", '"').replace("\u201d", '"')
+    s = s.replace("\u2014", "--").replace("\u2013", "-")
+    s = s.replace("\xa0", " ")
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+def find_file(pg):
+    if not os.path.isdir(BASE):
+        return None
+    for d in os.listdir(BASE):
+        if d.startswith(pg + "-") or d == pg:
+            p = os.path.join(BASE, d, "整本阅读版.txt")
+            if os.path.exists(p):
+                return p
+    return None
+
+def run(spec_path):
+    specs = json.load(open(spec_path))
+    cache = {}
+    rows = []
+    for sp in specs:
+        pg = sp["pg"]
+        if pg not in cache:
+            f = find_file(pg)
+            if not f:
+                rows.append({"pg": pg, "note": sp.get("note", ""), "error": "FILE_NOT_FOUND"})
+                continue
+            cache[pg] = open(f, encoding="utf-8", errors="replace").read().split("\n")
+        lines = cache[pg]
+        a, b = sp["lines"][0], sp["lines"][1]
+        a = max(1, min(a, len(lines)))
+        b = max(a, min(b, len(lines)))
+        blob = norm(" ".join(lines[a - 1:b]))
+        q = norm(sp["quote"])
+        full = q in blob
+        toks = [t for t in re.split(r"\s+", q) if len(t) >= 3]
+        miss = [t for t in toks if t.lower().strip(".,;:!?\"'()[]_-") not in blob.lower()]
+        rows.append({
+            "pg": pg, "note": sp.get("note", ""),
+            "range": "L%d-%d" % (a, b),
+            "full_hit": full,
+            "tokens_checked": len(toks),
+            "missing_tokens": miss,
+            "verdict": "PASS" if full else ("SEG_PASS" if not miss else "FAIL"),
+        })
+    npass = sum(1 for r in rows if r.get("verdict") in ("PASS", "SEG_PASS"))
+    print(json.dumps(rows, ensure_ascii=False, indent=2))
+    print("\n=== 汇总: %d/%d 核验通过 (整串命中 %d, 分段命中 %d, 失败 %d) ===" % (
+        npass, len(rows),
+        sum(1 for r in rows if r.get("verdict") == "PASS"),
+        sum(1 for r in rows if r.get("verdict") == "SEG_PASS"),
+        sum(1 for r in rows if r.get("verdict") == "FAIL"),
+    ))
+    return rows
+
+if __name__ == "__main__":
+    run(sys.argv[1])

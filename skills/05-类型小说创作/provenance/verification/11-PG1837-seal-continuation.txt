@@ -1,0 +1,178 @@
+{"pg": "PG1837", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/11-身份复仇与权谋/PG1837-The-Prince-and-the-Pauper/整本阅读版.txt", "sha256": "f89d6c2ac2128b724b531cc9241cd54a8f11c77e0a0e255fa77bf8e5680cb713", "lines": 8161, "scope": "targeted continuation, identification and seal retrieval"}
+WINDOW 7220-7249
+7220	out--
+7221	
+7222	“On your peril!  Touch him not, he is the King!”
+7223	
+7224	The hands were withheld; a paralysis fell upon the house; no one moved,
+7225	no one spoke; indeed, no one knew how to act or what to say, in so
+7226	strange and surprising an emergency.  While all minds were struggling to
+7227	right themselves, the boy still moved steadily forward, with high port
+7228	and confident mien; he had never halted from the beginning; and while
+7229	the tangled minds still floundered helplessly, he stepped upon the
+7230	platform, and the mock-King ran with a glad face to meet him; and fell
+7231	on his knees before him and said--
+7232	
+7233	“Oh, my lord the King, let poor Tom Canty be first to swear fealty to
+7234	thee, and say, ‘Put on thy crown and enter into thine own again!’”
+7235	
+7236	The Lord Protector’s eye fell sternly upon the new-comer’s face; but
+7237	straightway the sternness vanished away, and gave place to an expression
+7238	of wondering surprise.  This thing happened also to the other great
+7239	officers.  They glanced at each other, and retreated a step by a common
+7240	and unconscious impulse.  The thought in each mind was the same:  “What
+7241	a strange resemblance!”
+7242	
+7243	The Lord Protector reflected a moment or two in perplexity, then he
+7244	said, with grave respectfulness--
+7245	
+7246	“By your favour, sir, I desire to ask certain questions which--”
+7247	
+7248	“I will answer them, my lord.”
+7249	
+WINDOW 7341-7485
+7341	
+7342	“Sire, the Seal is not there!”
+7343	
+7344	A mob does not melt away from the presence of a plague-patient with more
+7345	haste than the band of pallid and terrified courtiers melted away from
+7346	the presence of the shabby little claimant of the Crown.  In a moment
+7347	he stood all alone, without friend or supporter, a target upon which
+7348	was concentrated a bitter fire of scornful and angry looks.  The Lord
+7349	Protector called out fiercely--
+7350	
+7351	“Cast the beggar into the street, and scourge him through the town--the
+7352	paltry knave is worth no more consideration!”
+7353	
+7354	Officers of the guard sprang forward to obey, but Tom Canty waved them
+7355	off and said--
+7356	
+7357	“Back!  Whoso touches him perils his life!”
+7358	
+7359	The Lord Protector was perplexed in the last degree.  He said to the
+7360	Lord St. John--
+7361	
+7362	“Searched you well?--but it boots not to ask that.  It doth seem passing
+7363	strange.  Little things, trifles, slip out of one’s ken, and one does
+7364	not think it matter for surprise; but how so bulky a thing as the
+7365	Seal of England can vanish away and no man be able to get track of it
+7366	again--a massy golden disk--”
+7367	
+7368	Tom Canty, with beaming eyes, sprang forward and shouted--
+7369	
+7370	“Hold, that is enough!  Was it round?--and thick?--and had it letters
+7371	and devices graved upon it?--yes?  Oh, _now_ I know what this Great Seal
+7372	is that there’s been such worry and pother about. An’ ye had described
+7373	it to me, ye could have had it three weeks ago.  Right well I know where
+7374	it lies; but it was not I that put it there--first.”
+7375	
+7376	“Who, then, my liege?” asked the Lord Protector.
+7377	
+7378	“He that stands there--the rightful King of England.  And he shall tell
+7379	you himself where it lies--then you will believe he knew it of his own
+7380	knowledge.  Bethink thee, my King--spur thy memory--it was the last, the
+7381	very _last_ thing thou didst that day before thou didst rush forth from
+7382	the palace, clothed in my rags, to punish the soldier that insulted me.”
+7383	
+7384	A silence ensued, undisturbed by a movement or a whisper, and all eyes
+7385	were fixed upon the new-comer, who stood, with bent head and corrugated
+7386	brow, groping in his memory among a thronging multitude of valueless
+7387	recollections for one single little elusive fact, which, found, would
+7388	seat him upon a throne--unfound, would leave him as he was, for good and
+7389	all--a pauper and an outcast.  Moment after moment passed--the moments
+7390	built themselves into minutes--still the boy struggled silently on, and
+7391	gave no sign.  But at last he heaved a sigh, shook his head slowly, and
+7392	said, with a trembling lip and in a despondent voice--
+7393	
+7394	“I call the scene back--all of it--but the Seal hath no place in it.”
+7395	  He paused, then looked up, and said with gentle dignity, “My lords and
+7396	gentlemen, if ye will rob your rightful sovereign of his own for lack of
+7397	this evidence which he is not able to furnish, I may not stay ye, being
+7398	powerless.  But--”
+7399	
+7400	“Oh, folly, oh, madness, my King!” cried Tom Canty, in a panic,
+7401	“wait!--think!  Do not give up!--the cause is not lost!  Nor _shall_ be,
+7402	neither! List to what I say--follow every word--I am going to bring that
+7403	morning back again, every hap just as it happened.  We talked--I told
+7404	you of my sisters, Nan and Bet--ah, yes, you remember that; and about
+7405	mine old grandam--and the rough games of the lads of Offal Court--yes,
+7406	you remember these things also; very well, follow me still, you shall
+7407	recall everything.  You gave me food and drink, and did with princely
+7408	courtesy send away the servants, so that my low breeding might not shame
+7409	me before them--ah, yes, this also you remember.”
+7410	
+7411	As Tom checked off his details, and the other boy nodded his head in
+7412	recognition of them, the great audience and the officials stared in
+7413	puzzled wonderment; the tale sounded like true history, yet how could
+7414	this impossible conjunction between a prince and a beggar-boy have come
+7415	about?  Never was a company of people so perplexed, so interested, and
+7416	so stupefied, before.
+7417	
+7418	“For a jest, my prince, we did exchange garments.  Then we stood before
+7419	a mirror; and so alike were we that both said it seemed as if there had
+7420	been no change made--yes, you remember that.  Then you noticed that the
+7421	soldier had hurt my hand--look! here it is, I cannot yet even write with
+7422	it, the fingers are so stiff.  At this your Highness sprang up, vowing
+7423	vengeance upon that soldier, and ran towards the door--you passed a
+7424	table--that thing you call the Seal lay on that table--you snatched
+7425	it up and looked eagerly about, as if for a place to hide it--your eye
+7426	caught sight of--”
+7427	
+7428	“There, ’tis sufficient!--and the good God be thanked!” exclaimed the
+7429	ragged claimant, in a mighty excitement.  “Go, my good St. John--in an
+7430	arm-piece of the Milanese armour that hangs on the wall, thou’lt find
+7431	the Seal!”
+7432	
+7433	“Right, my King! right!” cried Tom Canty; “_Now_ the sceptre of England
+7434	is thine own; and it were better for him that would dispute it that he
+7435	had been born dumb!  Go, my Lord St. John, give thy feet wings!”
+7436	
+7437	The whole assemblage was on its feet now, and well-nigh out of its mind
+7438	with uneasiness, apprehension, and consuming excitement.  On the floor
+7439	and on the platform a deafening buzz of frantic conversation burst
+7440	forth, and for some time nobody knew anything or heard anything or was
+7441	interested in anything but what his neighbour was shouting into his ear,
+7442	or he was shouting into his neighbour’s ear.  Time--nobody knew how much
+7443	of it--swept by unheeded and unnoted.  At last a sudden hush fell upon
+7444	the house, and in the same moment St. John appeared upon the platform,
+7445	and held the Great Seal aloft in his hand.  Then such a shout went up--
+7446	
+7447	“Long live the true King!”
+7448	
+7449	For five minutes the air quaked with shouts and the crash of musical
+7450	instruments, and was white with a storm of waving handkerchiefs; and
+7451	through it all a ragged lad, the most conspicuous figure in England,
+7452	stood, flushed and happy and proud, in the centre of the spacious
+7453	platform, with the great vassals of the kingdom kneeling around him.
+7454	
+7455	Then all rose, and Tom Canty cried out--
+7456	
+7457	“Now, O my King, take these regal garments back, and give poor Tom, thy
+7458	servant, his shreds and remnants again.”
+7459	
+7460	The Lord Protector spoke up--
+7461	
+7462	“Let the small varlet be stripped and flung into the Tower.”
+7463	
+7464	But the new King, the true King, said--
+7465	
+7466	“I will not have it so.  But for him I had not got my crown again--none
+7467	shall lay a hand upon him to harm him.  And as for thee, my good uncle,
+7468	my Lord Protector, this conduct of thine is not grateful toward
+7469	this poor lad, for I hear he hath made thee a duke”--the Protector
+7470	blushed--“yet he was not a king; wherefore what is thy fine title
+7471	worth now?  To-morrow you shall sue to me, _through him_, for its
+7472	confirmation, else no duke, but a simple earl, shalt thou remain.”
+7473	
+7474	Under this rebuke, his Grace the Duke of Somerset retired a little from
+7475	the front for the moment.  The King turned to Tom, and said kindly--“My
+7476	poor boy, how was it that you could remember where I hid the Seal when I
+7477	could not remember it myself?”
+7478	
+7479	“Ah, my King, that was easy, since I used it divers days.”
+7480	
+7481	“Used it--yet could not explain where it was?”
+7482	
+7483	“I did not know it was _that_ they wanted.  They did not describe it,
+7484	your Majesty.”
+7485	

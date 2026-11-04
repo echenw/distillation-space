@@ -1,0 +1,39 @@
+{
+  "id": "PG5355",
+  "title": "Guy Mannering, Or, the Astrologer — Complete",
+  "author": "Scott, Walter, 1771-1832",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Project_Gutenberg_public_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/5355",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/5/3/5/5355/5355.txt",
+  "mirror_reported_size": 1047653,
+  "source_issued_at": "2004-03-01",
+  "source_subjects": "Historical fiction; Inheritance and succession -- Fiction; Disinheritance -- Fiction; Scotland -- Fiction; Astrologers -- Fiction",
+  "source_rights_caveat": "Gutenberg official catalog+public mirror; per-work and jurisdiction rights must be checked independently",
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG5355-Guy-Mannering-Or-the-Astrologer-Complete",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "70e87a285bad6ba569b65c46fa4fd64b66e564c6556f88d70399c195cd3a0f4a",
+  "reading_sha256": "f391e01cf13c424a19585bcc515923acd52fd3821e18fd50a4a80b97d7d4bb0f",
+  "raw_bytes": 1047653,
+  "reading_bytes": 1027265,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG5355-Guy-Mannering-Or-the-Astrologer-Complete/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG5355-Guy-Mannering-Or-the-Astrologer-Complete/整本阅读版.txt",
+  "content_status_reason": null,
+  "source_role_note": "Fiction narrative or play case; only descriptive structural observations, not authorial instructions.",
+  "editorial_match_basis": "PG_CATALOG_SUBJECT_ONLY_NOT_YET_READ",
+  "material_file_type": "BOOK_OR_STORY_OR_DRAMATIC_SCRIPT",
+  "source_text_charset": "utf-8",
+  "acquisition_screen": "HEADERS_AND_GUTENBERG_WRAPPERS_SCREENED_US_PD_NOT_LEGAL_CERTIFICATION"
+}

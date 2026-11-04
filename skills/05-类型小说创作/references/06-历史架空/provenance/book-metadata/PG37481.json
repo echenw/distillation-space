@@ -1,0 +1,36 @@
+{
+  "id": "PG37481",
+  "title": "The Tangled Skein",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/37481",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Great Britain -- History -- Mary I, 1553-1558 -- Fiction",
+  "source_catalog_issued": "2011-09-20",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/7/4/8/37481/37481-8.txt",
+  "mirror_reported_size": 531495,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG37481-The-Tangled-Skein",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "215d0cb4a22afa9a8730daf23f945d07687ff69007083eba08a8b63b748ea01b",
+  "reading_sha256": "d34fa3c0b6f2d8a96803b5f44a634d5e1edca7dd20a7cb2b2a346617d37a2498",
+  "raw_bytes": 531495,
+  "reading_bytes": 512952,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG37481-The-Tangled-Skein/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG37481-The-Tangled-Skein/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

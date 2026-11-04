@@ -1,0 +1,36 @@
+{
+  "id": "PG24789",
+  "title": "\"Unto Caesar\"",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/24789",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Christian life -- Fiction; Rome -- Fiction; Caligula, Emperor of Rome, 12-41 -- Fiction",
+  "source_catalog_issued": "2008-03-09",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/2/4/7/8/24789/24789-0.txt",
+  "mirror_reported_size": 642017,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG24789-Unto-Caesar",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "018ab072e38146122d5ad0a42e2811c6799caf34a22ec201e108e1147ad9ab7d",
+  "reading_sha256": "8fc24acd42d5370b3dcf82be1e3f775275ecc5ebd39db7300ba118913017075d",
+  "raw_bytes": 642017,
+  "reading_bytes": 622324,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG24789-Unto-Caesar/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG24789-Unto-Caesar/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

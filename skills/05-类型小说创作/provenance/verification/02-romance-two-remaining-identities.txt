@@ -1,0 +1,162 @@
+{"pg": "PG15252", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/02-言情爱情/PG15252-Victorian-Short-Stories-Stories-of-Successful-Marriages/整本阅读版.txt", "sha256": "64d4911d537a05fec4d75565395d6d469b11d883e4452362231bb593e2500526", "lines": 4045, "scope": "title window L1–80 only"}
+1	Produced by Juliet Sutherland, S.R.Ellison and the PG Online
+2	Distributed Proofreading Team.
+3	
+4	
+5	
+6	
+7	
+8	
+9	STORIES OF SUCCESSFUL MARRIAGES
+10	
+11	
+12	THE MANCHESTER MARRIAGE Elizabeth Gaskell
+13	
+14	A MERE INTERLUDE Thomas Hardy
+15	
+16	A FAITHFUL HEART George Moore
+17	
+18	THE SOLID GOLD REEF COMPANY, LIMITED Walter Besant
+19	
+20	THE TREE OF KNOWLEDGE Henry James
+21	
+22	
+23	
+24	
+25	_Elizabeth Gaskell_
+26	
+27	THE MANCHESTER MARRIAGE
+28	
+29	(_Household Words_, Christmas 1858)
+30	
+31	
+32	Mr and Mrs Openshaw came from Manchester to settle in London. He
+33	had been, what is called in Lancashire, a salesman for a large
+34	manufacturing firm, who were extending their business, and opening a
+35	warehouse in the city; where Mr Openshaw was now to superintend their
+36	affairs. He rather enjoyed the change; having a kind of curiosity
+37	about London, which he had never yet been able to gratify in his brief
+38	visits to the metropolis. At the same time, he had an odd, shrewd
+39	contempt for the inhabitants, whom he always pictured to himself as
+40	fine, lazy people, caring nothing but for fashion and aristocracy, and
+41	lounging away their days in Bond Street, and such places; ruining good
+42	English, and ready in their turn to despise him as a provincial. The
+43	hours that the men of business kept in the city scandalized him too,
+44	accustomed as he was to the early dinners of Manchester folk and
+45	the consequently far longer evenings. Still, he was pleased to go to
+46	London, though he would not for the world have confessed it, even to
+47	himself, and always spoke of the step to his friends as one demanded
+48	of him by the interests of his employers, and sweetened to him by a
+49	considerable increase of salary. This, indeed, was so liberal that he
+50	might have been justified in taking a much larger house than the
+51	one he did, had he not thought himself bound to set an example to
+52	Londoners of how little a Manchester man of business cared for show.
+53	Inside, however, he furnished it with an unusual degree of comfort,
+54	and, in the winter-time, he insisted on keeping up as large fires as
+55	the grates would allow, in every room where the temperature was in
+56	the least chilly. Moreover, his northern sense of hospitality was such
+57	that, if he were at home, he could hardly suffer a visitor to leave
+58	the house without forcing meat and drink upon him. Every servant in
+59	the house was well warmed, well fed, and kindly treated; for their
+60	master scorned all petty saving in aught that conduced to comfort;
+61	while he amused himself by following out all his accustomed habits and
+62	individual ways, in defiance of what any of his new neighbours might
+63	think.
+64	
+65	His wife was a pretty, gentle woman, of suitable age and character. He
+66	was forty-two, she thirty-five. He was loud and decided; she soft and
+67	yielding. They had two children; or rather, I should say, she had two;
+68	for the elder, a girl of eleven, was Mrs Openshaw's child by Frank
+69	Wilson, her first husband. The younger was a little boy, Edwin, who
+70	could just prattle, and to whom his father delighted to speak in the
+71	broadest and most unintelligible Lancashire dialect, in order to keep
+72	up what he called the true Saxon accent.
+73	
+74	Mrs Openshaw's Christian name was Alice, and her first husband had
+75	been her own cousin. She was the orphan niece of a sea-captain
+76	in Liverpool; a quiet, grave little creature, of great personal
+77	attraction when she was fifteen or sixteen, with regular features and
+78	a blooming complexion. But she was very shy, and believed herself to
+79	be very stupid and awkward; and was frequently scolded by her aunt,
+80	her own uncle's second wife. So when her cousin, Frank Wilson, came
+{"pg": "PG44374", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/02-言情爱情/PG44374-The-Robber-Baron-of-Bedford-Castle/整本阅读版.txt", "sha256": "e7114179c6867193d9a08fa26195574e124d306cd425e4b3b755b314f006a25e", "lines": 5833, "scope": "title window L1–80 only"}
+1	CASTLE ***
+2	
+3	
+4	
+5	
+6	Produced by Al Haines.
+7	
+8	
+9	
+10	
+11	[Illustration: "Aliva recognized on the helmet the crest of the De
+12	Beauchamps."  Page 143.]
+13	
+14	
+15	
+16	
+17	                            THE ROBBER BARON
+18	                           OF BEDFORD CASTLE
+19	
+20	
+21	                   BY A. J. FOSTER AND E. E. CUTHELL
+22	
+23	
+24	
+25	                           LONDON, EDINBURGH,
+26	                          DUBLIN, AND NEW YORK
+27	                         THOMAS NELSON AND SONS
+28	                                  1903
+29	
+30	
+31	
+32	
+33	                              _*CONTENTS*_
+34	
+35	      I. By the Banks of Ouse
+36	     II. Bletsoe Manor-House
+37	    III. How Aliva received a Second Suitor
+38	     IV. In Bedford Castle
+39	      V. In Elstow Abbey
+40	     VI. A Penitent
+41	    VII. "*Arcades Ambo*"
+42	   VIII. Justice in Bonds
+43	     IX. An Unexpected Meeting
+44	      X. Through Ouse Marshes
+45	     XI. Breathing-Time
+46	    XII. At the Castle of Eaton Socon
+47	   XIII. The Bird in the Cage
+48	    XIV. The Sanctuary Violated
+49	     XV. Ralph raps at the Castle Gate
+50	    XVI. Within the Castle Walls
+51	   XVII. The King in Council
+52	  XVIII. Heard Underground
+53	    XIX. Fears and Hopes
+54	     XX. Love Laughs at Locksmiths
+55	    XXI. The Castle Falls
+56	   XXII. Ralph to the Rescue
+57	  XXIII. A tête-à-tête Ride to Elstow Abbey
+58	   XXIV. "*De Mortuis*"
+59	
+60	
+61	
+62	
+63	                       _*LIST OF ILLUSTRATIONS*_
+64	
+65	
+66	"Aliva recognized on the helmet the crest of the De Beauchamps" . . . .
+67	. . _Frontispiece_.
+68	
+69	"The soldiers cast the bailiff into the midst of the fire"
+70	
+71	The Robber Baron making his peace with the Church
+72	
+73	"Thronging the castle-yard was a crowd of servants and retainers"
+74	
+75	A wild chase through Ouse marshes
+76	
+77	The council at Northampton
+78	
+79	A desperate plunge
+80	

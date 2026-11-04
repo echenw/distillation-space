@@ -1,0 +1,160 @@
+{
+  "schema": "genre-fusion-manifest/v2",
+  "task_ids": [
+    "B-04-B01",
+    "B-04-B02",
+    "B-04-B03",
+    "B-04-B04"
+  ],
+  "candidate_count": 8,
+  "source_instances": 53,
+  "unique_contents": 47,
+  "source_section_mappings": 326,
+  "source_pg_count": 96,
+  "pg_not_named_in_consumer_but_preserved_in_audit": [],
+  "broken_links": [],
+  "semantic_review_status": "REWRITTEN_SELF_AUTHORED_REQUIRES_INDEPENDENT_REVIEW",
+  "original_book_validation": {
+    "scope": "TARGETED_PRIMARY_WINDOWS_ONLY",
+    "executions": [
+      "00cd6e7a-6904-4e75-b6a6-5579c4bf77f6",
+      "e104a5ee-ba78-45e3-aed9-8e97a9decdd8",
+      "889b1639-f86b-4f50-9485-05668fbb300b"
+    ],
+    "files": [
+      "audit/verification/history-and-comedy-source-rechecks.txt",
+      "audit/verification/09-comedy-case-rechecks.txt",
+      "audit/verification/09-comedy-PG587-fall-context.txt"
+    ],
+    "readings": {
+      "PG28149": [
+        [
+          1,
+          45
+        ]
+      ],
+      "PG19851": [
+        [
+          1,
+          45
+        ]
+      ],
+      "PG587": [
+        [
+          28,
+          120
+        ],
+        [
+          180,
+          360
+        ],
+        [
+          601,
+          729
+        ]
+      ],
+      "PG6980": [
+        [
+          1180,
+          1200
+        ],
+        [
+          1828,
+          1848
+        ]
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "00-题材指南.md",
+      "bytes": 2641,
+      "sha256": "5806ead61449c412dca93be221668d62c4c406ef272cdae6aa887b9872f79158"
+    },
+    {
+      "path": "01-归属与叙述站位.md",
+      "bytes": 3406,
+      "sha256": "136693155014786abe7a8e0deab86ab98795ac78032046153a321a6445226b0b"
+    },
+    {
+      "path": "02-前提误会与现实账本.md",
+      "bytes": 4560,
+      "sha256": "97a6b4437dc372155d3fd9685745822a0effce1c2901a01d2f8ae038ce6d6fe2"
+    },
+    {
+      "path": "03-语言清单与修辞机制.md",
+      "bytes": 3487,
+      "sha256": "da414a6d4d63016c774dbd655bead5ce4f75549d03f201559102afdcf9b52f0e"
+    },
+    {
+      "path": "04-节拍重复开篇与兑现.md",
+      "bytes": 5064,
+      "sha256": "83d841a34a029f5412163a714265c5d2168545e47cd220d99ee3fb1c602a2a62"
+    },
+    {
+      "path": "05-讽刺善意与停手边界.md",
+      "bytes": 3615,
+      "sha256": "e30d2fa9f7f41fd02b3948d5e2fc5865a060cd298f6abb94c674da33b34614c9"
+    },
+    {
+      "path": "06-模板与设计示例.md",
+      "bytes": 7031,
+      "sha256": "925a3a9e22f0286676fe481db8ea2885855f91a999907ffb6d4867b6d451c900"
+    },
+    {
+      "path": "07-来源与版本边界.md",
+      "bytes": 16610,
+      "sha256": "c734302dfdc203a5352ba030fa07af0e3ba53d2cbeba3922b460edbaf727da18"
+    },
+    {
+      "path": "08-融合裁决与历史保留.md",
+      "bytes": 4624,
+      "sha256": "2581073457a6bdf1ed9f6bbbe28191ca00d5cedff46990c0aef94eebbf70fbbb"
+    },
+    {
+      "path": "09-来源身份表.md",
+      "bytes": 41254,
+      "sha256": "a86869931744f7d721fb049652c6cad2d890197a707b1541dcf7830a116a708c"
+    },
+    {
+      "path": "provenance/earlier-draft-audit-only.json",
+      "bytes": 212460,
+      "sha256": "be144c85fa40432a0896ab45d96d804e6da8cbf25931b8f1575bd5ee6dd2179e"
+    },
+    {
+      "path": "provenance/rule-evidence-map.json",
+      "bytes": 1106441,
+      "sha256": "8074962291d1d936e20cebe17f955b39397b49184530d3504ba756fd904cd440"
+    },
+    {
+      "path": "provenance/rule-map.json",
+      "bytes": 157557,
+      "sha256": "e9b4a6281f9910f94a119effc4c163a2412eae5975ffb8b47352b21bf392397d"
+    },
+    {
+      "path": "provenance/source-map.json",
+      "bytes": 65489,
+      "sha256": "e955183e8e15d8b2a3e5ff7fdfb91cf280e1457f1072ff90bf4e3b9626ca0a94"
+    },
+    {
+      "path": "provenance/static-check.json",
+      "bytes": 375,
+      "sha256": "3453cae0063252c88f0af3e91ed9427e66e5bc228c0d597ef623311392fc9458"
+    },
+    {
+      "path": "provenance/读取与裁决记录.md",
+      "bytes": 1372,
+      "sha256": "29780e85232d3bd0a25f5a03973ddbb015ed9e837711b295d183c85b28211a3c"
+    },
+    {
+      "path": "provenance/重写与阅读工作记录.md",
+      "bytes": 1841,
+      "sha256": "87634dca402b3dbaf605ae6285d3f5bf7cb47354fb14b3209c013d4b44e27862"
+    }
+  ],
+  "producer_original_book_validation": "NOT_PERFORMED",
+  "main_read_scope": "All ten consumer Markdown files, all source-identity rows, both producer working records actually read; not the independent full 74-task audit.",
+  "producer_manifest_preserved_at": "audit/history/pre-takeover-manifests/09-喜剧幽默.json",
+  "current_fingerprint_scope": "CURRENT_MAIN_INTEGRATION; not a claim that the original producer authored or independently reviewed subsequent edits",
+  "main_fingerprint_updated_at": "2026-10-31T22:33:54.502981+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "PG388",
+  "title": "The Crossing",
+  "author": "Churchill, Winston, 1871-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/388",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Frontier and pioneer life -- Fiction; Louisiana -- Fiction; Northwest, Old -- History -- Revolution, 1775-1783 -- Fiction; Kentucky -- Fiction; Clark, George Rogers, 1752-1818 -- Fiction",
+  "source_catalog_issued": "2004-10-19",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/8/388/388-0.txt",
+  "mirror_reported_size": 1187388,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG388-The-Crossing",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "3f9f29e2648ec52b8061a685adff0dfbfa8b8435c34b8df52667bf1ddfadfae5",
+  "reading_sha256": "469bb002feeb66ec8c670ec155bebc4c0ab274f6defa089172537e5523a1fd24",
+  "raw_bytes": 1187388,
+  "reading_bytes": 1167913,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG388-The-Crossing/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG388-The-Crossing/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

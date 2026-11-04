@@ -1,0 +1,36 @@
+{
+  "id": "PG67929",
+  "title": "The Bridal Wreath",
+  "author": "Undset, Sigrid, 1882-1949; Archer, Charles, 1861-1941 [Translator]; Scott, J. S. (Translator) [Translator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/67929",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Norway -- Social life and customs -- Fiction; Women -- Norway -- Fiction",
+  "source_catalog_issued": "2022-04-26",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/7/9/2/67929/67929-0.txt",
+  "mirror_reported_size": 620461,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG67929-The-Bridal-Wreath",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "f84ee76eca31582066b7e57949e6f92a5e4d2abf406900852daa1440fda9ae7c",
+  "reading_sha256": "64b5f79fb60e3090529d8322a596ca8bbed01b6dabda76a5c1a141dcb1a80bb7",
+  "raw_bytes": 620461,
+  "reading_bytes": 620354,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG67929-The-Bridal-Wreath/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG67929-The-Bridal-Wreath/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

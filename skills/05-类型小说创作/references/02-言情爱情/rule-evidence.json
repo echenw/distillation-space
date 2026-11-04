@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "RO01",
+    "title": "分开来源事实、人物立场、解释与设计",
+    "rule": "F记录作品所写，H解释机制，P提出写法；原书、源Skill和现代效果的证明范围分开。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/05-source-index.md",
+        "sha256": "3862db1f24cbbab84b24a37b6f9eba76b11ab15796d4a4e5ca14af0b069aab30",
+        "start_line": 1,
+        "end_line": 40
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/04-source-index.md",
+        "sha256": "151b7592ac37c01b79341bd59d0a69f62fe9318f91f7d0043718ed4a18b38c68",
+        "start_line": 1,
+        "end_line": 67
+      },
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/version-and-provenance.md",
+        "sha256": "ded79b38f013125d45db509c469e316b5ba6d6ae3ab0ac84e77fe14ed41d955c",
+        "start_line": 1,
+        "end_line": 23
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/version-and-provenance.md",
+        "sha256": "e66131e7449b2abd80228765cc9ceb0387f94a7f0f81b0999577514c7eeddcc3",
+        "start_line": 1,
+        "end_line": 34
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/evidence-index.md",
+        "sha256": "a830d45e63b52eff30b51b2f45a10cd77713f7a6468ca3d2c6f4502445e688ed",
+        "start_line": 1,
+        "end_line": 78
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO02",
+    "title": "关系主线、副线与叙事承诺",
+    "rule": "确认爱情承担的结构作用和作者预期；可预设结局，也可在试写中发现，允许混合题材。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/SKILL.md",
+        "sha256": "b1b951254528f7b85d42d715c169a7c01fca3eb8a336f6dc2b92ab9b084cdbfd",
+        "start_line": 1,
+        "end_line": 165
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/source-roles-b03b07.md",
+        "sha256": "9c1d3d7fe2befeb112ed2c992f042bc2e12a181d820e2aeadd8cd76b12290e73",
+        "start_line": 1,
+        "end_line": 31
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/SKILL.md",
+        "sha256": "d10d5d44a1a58fec357dc572b3eb8a67c57b2d6dfae9e9947d27695c192a9dc7",
+        "start_line": 1,
+        "end_line": 326
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO03",
+    "title": "独立目标、吸引与相遇方式",
+    "rule": "为有关人物保留工作、亲缘、价值与感知；初遇、熟识、困境中场或一见倾心按作品选择。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r1-meet-and-obstacle.md",
+        "sha256": "bc36d18c513d309f1ea086960b7164b8721af56c23fcd1eac5afebb377c3cd9d",
+        "start_line": 1,
+        "end_line": 107
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      },
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/02-social-cost-rules.md",
+        "sha256": "97920bbf3e4c591c8d78738c07f7822727e94680eee92d63dec1094fcd69a901",
+        "start_line": 1,
+        "end_line": 97
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO04",
+    "title": "资源、门第与婚姻市场",
+    "rule": "分别记录财产、收入、劳动、继承、债务、机会及控制权；财力既可阻碍也可提供选择。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/02-social-cost-rules.md",
+        "sha256": "97920bbf3e4c591c8d78738c07f7822727e94680eee92d63dec1094fcd69a901",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/02-settlement-and-closure.md",
+        "sha256": "d4850ffd163e67d09774a39de31359560e94066ddd4f71af3225ee60de362da3",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/02-ending-and-cost.md",
+        "sha256": "ed32fd39f476decca0451bccfac4e325d882f8bc24a49cff126ef9b98dd410a8",
+        "start_line": 1,
+        "end_line": 102
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r3-rivals-and-market.md",
+        "sha256": "4ad31ec3727bee52ef587b1747853c8a6482497c6104454b08e36bf08ae0f9bf",
+        "start_line": 1,
+        "end_line": 110
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO05",
+    "title": "家族与反对者的实际权力",
+    "rule": "具体写谁能做什么及其限度；分个人否决、分散制裁、内化规范与善恶混合动机。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/02-social-cost-rules.md",
+        "sha256": "97920bbf3e4c591c8d78738c07f7822727e94680eee92d63dec1094fcd69a901",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/01-obstacle-ownership.md",
+        "sha256": "514ad2558c021bc84aa74761ccec91405b41eb6975ecbf4c95b5b0558614abb5",
+        "start_line": 1,
+        "end_line": 84
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r3-rivals-and-market.md",
+        "sha256": "4ad31ec3727bee52ef587b1747853c8a6482497c6104454b08e36bf08ae0f9bf",
+        "start_line": 1,
+        "end_line": 110
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO06",
+    "title": "名誉、污名与不对称处罚",
+    "rule": "区分行为者、受罚者、豁免者、传播者和能否退出；历史偏见可以成为叙事对象。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/03-stigma-and-boundaries.md",
+        "sha256": "2327131da36ca21ce72ca59afa4e7410101c01a53ffab68e85ff7e2df3f23db7",
+        "start_line": 1,
+        "end_line": 65
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/03-social-pressure-and-pov.md",
+        "sha256": "fd8c8b03703fe06f2e6b2bd5bdc9833eeffe262b984f205cba2ef40285465d8a",
+        "start_line": 1,
+        "end_line": 71
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO07",
+    "title": "婚姻身份、契约与个人意愿",
+    "rule": "分法律身份、社会承认、私下承诺与当下意愿；个人结束关系不以对方批准为必要。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/01-obstacle-ownership.md",
+        "sha256": "514ad2558c021bc84aa74761ccec91405b41eb6975ecbf4c95b5b0558614abb5",
+        "start_line": 1,
+        "end_line": 84
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/02-settlement-and-closure.md",
+        "sha256": "d4850ffd163e67d09774a39de31359560e94066ddd4f71af3225ee60de362da3",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO08",
+    "title": "秘密、披露与隐私归属",
+    "rule": "列信息所有者、受影响者、知情需要、保密承诺与披露后果；保留选择不披露或无力披露的分支。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/04-confession-documents-ending.md",
+        "sha256": "ebee2ece956bbc8b84905431c66d385083ed5d52881707481539f3f18dae7865",
+        "start_line": 1,
+        "end_line": 76
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/02-settlement-and-closure.md",
+        "sha256": "d4850ffd163e67d09774a39de31359560e94066ddd4f71af3225ee60de362da3",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO09",
+    "title": "误会、误认与伪造信息",
+    "rule": "区分事实缺口、价值冲突、偏见、误认与蓄意制造；按因果使用单层或多层误会。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/03-reversal-and-vacancy.md",
+        "sha256": "cc2abba361d251bfb904854d159b42bf3ad0cf6f939ca907fd6e2ffc39d924d2",
+        "start_line": 1,
+        "end_line": 42
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/01-obstacle-ownership.md",
+        "sha256": "514ad2558c021bc84aa74761ccec91405b41eb6975ecbf4c95b5b0558614abb5",
+        "start_line": 1,
+        "end_line": 84
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO10",
+    "title": "信件、物证与承认机制",
+    "rule": "分别评估文书真伪、接收、理解、可信度及法律/社会/亲密效力；文件也可只是情感载体。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/04-confession-documents-ending.md",
+        "sha256": "ebee2ece956bbc8b84905431c66d385083ed5d52881707481539f3f18dae7865",
+        "start_line": 1,
+        "end_line": 76
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r2-beats-and-delay.md",
+        "sha256": "d756a3e8f9a14a80171c0b07679b874fa50903f08c70b2e215302029b5ea738a",
+        "start_line": 1,
+        "end_line": 83
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO11",
+    "title": "中间人、转述与越权",
+    "rule": "写中间人的知识、动机、权限和传递方式；帮助、收费、偏差、越权与私心可并存。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO12",
+    "title": "证据接收者与公共权力",
+    "rule": "真相能否改变行动取决于接收者的利益与权力；无效申辩不等于所有证据无效。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/02-settlement-and-closure.md",
+        "sha256": "d4850ffd163e67d09774a39de31359560e94066ddd4f71af3225ee60de362da3",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/03-social-pressure-and-pov.md",
+        "sha256": "fd8c8b03703fe06f2e6b2bd5bdc9833eeffe262b984f205cba2ef40285465d8a",
+        "start_line": 1,
+        "end_line": 71
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO13",
+    "title": "认识变化与成长",
+    "rule": "通过对话、反思、事件、旁证或实践改变判断；不强制双方等量有错或对称成长。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r5-pov-and-interiority.md",
+        "sha256": "db4234d8a3795ed43bd201f94d7292752652de96c0e8707e5351182ef9f884dd",
+        "start_line": 1,
+        "end_line": 92
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/conflicts-and-exceptions.md",
+        "sha256": "f741dbd41d84638f10f2a2bd2333b71ce76b21c614e9d6123aaf3775faa1ffbd",
+        "start_line": 1,
+        "end_line": 56
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO14",
+    "title": "告白与求婚的内容和场域",
+    "rule": "分情感表达、关系提议、契约条件及对方回应；直接、含蓄、信件和代理形式按条件使用。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/04-confession-scenes.md",
+        "sha256": "604dec7cd34a16124193bceea6197a85acf5fbe57ffdd677c7114fc7b7e56e7f",
+        "start_line": 1,
+        "end_line": 38
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO15",
+    "title": "自愿、强迫与叙事判断",
+    "rule": "区分可辨认的自愿表达、顺从、冻结、保护他人的假答应和被迫条件；描写不自动等于认可。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/03-stigma-and-boundaries.md",
+        "sha256": "2327131da36ca21ce72ca59afa4e7410101c01a53ffab68e85ff7e2df3f23db7",
+        "start_line": 1,
+        "end_line": 65
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/coercion-and-consent.md",
+        "sha256": "7c2f39beace95c8bf74a4602ddcfbf6d8ef5dc54c16e4c30300271b43a3ff7eb",
+        "start_line": 1,
+        "end_line": 29
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/counterexamples.md",
+        "sha256": "8f5f955fe1e63ca2e7a1369d8a31202d65ac357fce34085c637ecc9cbc425490",
+        "start_line": 1,
+        "end_line": 62
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO16",
+    "title": "拒绝、撤回与继续追求",
+    "rule": "拒绝可简短，也可解释或自陈；不要求拒绝者自责、证明客观理由或支付惩罚。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/01-refusal-and-vow.md",
+        "sha256": "8f9404a0a1969d0352f3305ed83acdc76ffb0da5ebc9ca759a52ce404a5599cd",
+        "start_line": 1,
+        "end_line": 46
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/obstacle-and-refusal-playbook.md",
+        "sha256": "9d788a625c467bd1d0a7b6742213699009adfae3a263a13737bd6438362a8749",
+        "start_line": 1,
+        "end_line": 84
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO17",
+    "title": "等待、时间与承诺",
+    "rule": "等待、定期联系、暂缓决定、解除承诺或重新协商分别写条件和选择，不以时长自动证明忠诚。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/02-social-cost-rules.md",
+        "sha256": "97920bbf3e4c591c8d78738c07f7822727e94680eee92d63dec1094fcd69a901",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r2-beats-and-delay.md",
+        "sha256": "d756a3e8f9a14a80171c0b07679b874fa50903f08c70b2e215302029b5ea738a",
+        "start_line": 1,
+        "end_line": 83
+      },
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/03-derivative-and-formats.md",
+        "sha256": "04f43c6e7f1c25e6a7f755652c28cba6d1ed5266c4f1c92720633f5c1a015137",
+        "start_line": 1,
+        "end_line": 28
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO18",
+    "title": "离场、空位与返回",
+    "rule": "区分实际离开、心理撤回、失去接触与回归；回归应符合动机和现实路径，分离也可终局。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/03-reversal-and-vacancy.md",
+        "sha256": "cc2abba361d251bfb904854d159b42bf3ad0cf6f939ca907fd6e2ffc39d924d2",
+        "start_line": 1,
+        "end_line": 42
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/conflicts-and-anti-patterns.md",
+        "sha256": "eea2bce51209ef28ffafe838eabd31de87a3b428bba3529d2217b05be043a209",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/02-ending-and-cost.md",
+        "sha256": "ed32fd39f476decca0451bccfac4e325d882f8bc24a49cff126ef9b98dd410a8",
+        "start_line": 1,
+        "end_line": 102
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO19",
+    "title": "场景变化与情绪节奏",
+    "rule": "记录行动、知识、关系、情绪或意义的变化；对话、日常、静观与危机均可承重。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/02-obstacle-carriers.md",
+        "sha256": "9c25d7d38147f76b07836f832a6d137faaee5eb4aacdd251ecb7fd1aae433acd",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r2-beats-and-delay.md",
+        "sha256": "d756a3e8f9a14a80171c0b07679b874fa50903f08c70b2e215302029b5ea738a",
+        "start_line": 1,
+        "end_line": 83
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/p4-field-guide.md",
+        "sha256": "f2333be6609d95bcf048cced21884a9aa82a3f254bcdbd2afc9d94338b225a38",
+        "start_line": 1,
+        "end_line": 86
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO20",
+    "title": "信物、物件与流转",
+    "rule": "按物的所有者、用途、出现时点和解释变化使用；不要求三次、反转或婚礼回收。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/02-obstacle-carriers.md",
+        "sha256": "9c25d7d38147f76b07836f832a6d137faaee5eb4aacdd251ecb7fd1aae433acd",
+        "start_line": 1,
+        "end_line": 45
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r2-beats-and-delay.md",
+        "sha256": "d756a3e8f9a14a80171c0b07679b874fa50903f08c70b2e215302029b5ea738a",
+        "start_line": 1,
+        "end_line": 83
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO21",
+    "title": "话语、回避与潜台词",
+    "rule": "区分对谁说、说了什么、听者如何理解；回避、重复、幽默和明说都可有效。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/01-refusal-and-vow.md",
+        "sha256": "8f9404a0a1969d0352f3305ed83acdc76ffb0da5ebc9ca759a52ce404a5599cd",
+        "start_line": 1,
+        "end_line": 46
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r3-rivals-and-market.md",
+        "sha256": "4ad31ec3727bee52ef587b1747853c8a6482497c6104454b08e36bf08ae0f9bf",
+        "start_line": 1,
+        "end_line": 110
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/conflicts-and-exceptions.md",
+        "sha256": "f741dbd41d84638f10f2a2bd2333b71ce76b21c614e9d6123aaf3775faa1ffbd",
+        "start_line": 1,
+        "end_line": 56
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO22",
+    "title": "口音、语言与社会标记",
+    "rule": "依据人物语言经验安排声腔、词汇和翻译；可表现身份、亲密、隔阂、节奏与审美。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/counterexamples.md",
+        "sha256": "8f5f955fe1e63ca2e7a1369d8a31202d65ac357fce34085c637ecc9cbc425490",
+        "start_line": 1,
+        "end_line": 62
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO23",
+    "title": "视角、内心与叙述可靠性",
+    "rule": "分别管理读者已知、人物已知、叙述者可说；内视、全知、框架和多声部按权限选择。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/03-reversal-and-vacancy.md",
+        "sha256": "cc2abba361d251bfb904854d159b42bf3ad0cf6f939ca907fd6e2ffc39d924d2",
+        "start_line": 1,
+        "end_line": 42
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/03-social-pressure-and-pov.md",
+        "sha256": "fd8c8b03703fe06f2e6b2bd5bdc9833eeffe262b984f205cba2ef40285465d8a",
+        "start_line": 1,
+        "end_line": 71
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r5-pov-and-interiority.md",
+        "sha256": "db4234d8a3795ed43bd201f94d7292752652de96c0e8707e5351182ef9f884dd",
+        "start_line": 1,
+        "end_line": 92
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/SKILL.md",
+        "sha256": "b1b951254528f7b85d42d715c169a7c01fca3eb8a336f6dc2b92ab9b084cdbfd",
+        "start_line": 1,
+        "end_line": 165
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO24",
+    "title": "私人关系与公开承认",
+    "rule": "公众、家族、法院、职场和两人的认可不必同步；公开表态可能有益、无效或有害。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/04-confession-documents-ending.md",
+        "sha256": "ebee2ece956bbc8b84905431c66d385083ed5d52881707481539f3f18dae7865",
+        "start_line": 1,
+        "end_line": 76
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/03-social-pressure-and-pov.md",
+        "sha256": "fd8c8b03703fe06f2e6b2bd5bdc9833eeffe262b984f205cba2ef40285465d8a",
+        "start_line": 1,
+        "end_line": 71
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO25",
+    "title": "代价、得失与余波",
+    "rule": "列实际得失、承担者、时点与因果；不强制损失配额，不把先后相邻当因果。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/04-confession-documents-ending.md",
+        "sha256": "ebee2ece956bbc8b84905431c66d385083ed5d52881707481539f3f18dae7865",
+        "start_line": 1,
+        "end_line": 76
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/02-ending-and-cost.md",
+        "sha256": "ed32fd39f476decca0451bccfac4e325d882f8bc24a49cff126ef9b98dd410a8",
+        "start_line": 1,
+        "end_line": 102
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO26",
+    "title": "牺牲、付出与控制",
+    "rule": "分动机、受益人、知情选择、替代方案及实际结果；无私与自我表演可同时存在。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/rules-obstacle-delay.md",
+        "sha256": "d9772c64bf9031534f58f02d6d28472bc6fa5437211daff7793116616411facc",
+        "start_line": 1,
+        "end_line": 146
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/conflicts-and-anti-patterns.md",
+        "sha256": "eea2bce51209ef28ffafe838eabd31de87a3b428bba3529d2217b05be043a209",
+        "start_line": 1,
+        "end_line": 73
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/source-roles-b03b07.md",
+        "sha256": "9c1d3d7fe2befeb112ed2c992f042bc2e12a181d820e2aeadd8cd76b12290e73",
+        "start_line": 1,
+        "end_line": 31
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO27",
+    "title": "修复、宽恕与复仇",
+    "rule": "澄清、归还、道歉、补偿、追责、放下和恢复关系分别处理；宽恕不自动等于复合。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/02-settlement-and-closure.md",
+        "sha256": "d4850ffd163e67d09774a39de31359560e94066ddd4f71af3225ee60de362da3",
+        "start_line": 1,
+        "end_line": 48
+      },
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/04-confession-documents-ending.md",
+        "sha256": "ebee2ece956bbc8b84905431c66d385083ed5d52881707481539f3f18dae7865",
+        "start_line": 1,
+        "end_line": 76
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/source-roles-b03b07.md",
+        "sha256": "9c1d3d7fe2befeb112ed2c992f042bc2e12a181d820e2aeadd8cd76b12290e73",
+        "start_line": 1,
+        "end_line": 31
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO28",
+    "title": "爱情与人格变化的限度",
+    "rule": "爱情可以参与变化，但不能仅凭关系标签证明改变；变化也不是所有爱情成立的前提。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/01-courtship-engines.md",
+        "sha256": "ddbbd6d06261cd654f33105e7910b7418b2c0758c4814c42c896d62ba4408b3f",
+        "start_line": 1,
+        "end_line": 70
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/coercion-and-consent.md",
+        "sha256": "7c2f39beace95c8bf74a4602ddcfbf6d8ef5dc54c16e4c30300271b43a3ff7eb",
+        "start_line": 1,
+        "end_line": 29
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/conflicts-and-anti-patterns.md",
+        "sha256": "eea2bce51209ef28ffafe838eabd31de87a3b428bba3529d2217b05be043a209",
+        "start_line": 1,
+        "end_line": 73
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO29",
+    "title": "关系结局与停笔位置",
+    "rule": "分关系走向、人物选择、社会后果和叙述结束；团圆、独身、拒绝、死亡与开放可组合。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/05-ending-and-cost.md",
+        "sha256": "553bfde759db66f10585af1b4853cd5df2774fc7508d4c982e3c5051e6c98bc1",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/02-ending-and-cost.md",
+        "sha256": "ed32fd39f476decca0451bccfac4e325d882f8bc24a49cff126ef9b98dd410a8",
+        "start_line": 1,
+        "end_line": 102
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/SKILL.md",
+        "sha256": "b1b951254528f7b85d42d715c169a7c01fca3eb8a336f6dc2b92ab9b084cdbfd",
+        "start_line": 1,
+        "end_line": 165
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO30",
+    "title": "婚后、重组家庭与日常",
+    "rule": "婚礼可收束，也可开启劳动、照护、财产、信任与权力的后续；不强制婚后再设危机。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B04",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-04/rounds/round-p4-final-2026-10-30/output/romance-obstacle-and-cost/references/02-ending-and-cost.md",
+        "sha256": "ed32fd39f476decca0451bccfac4e325d882f8bc24a49cff126ef9b98dd410a8",
+        "start_line": 1,
+        "end_line": 102
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/source-index.md",
+        "sha256": "a64c215c7ecb1a02949592dd0ce2b5ff5c653b954025ff8bd9fd433c348b42ef",
+        "start_line": 1,
+        "end_line": 37
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r4-confession-and-endings.md",
+        "sha256": "d93bb4d8a94ebe87a67e480d49ac8b76bbc54728ef1f23ebeeb27c9bd0b5344f",
+        "start_line": 1,
+        "end_line": 97
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO31",
+    "title": "照护、疾病、死亡与幸存者",
+    "rule": "让病者、照护者和幸存者保有自身处境；分叙事因果、人物解释和现实医学。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/p4-field-guide.md",
+        "sha256": "f2333be6609d95bcf048cced21884a9aa82a3f254bcdbd2afc9d94338b225a38",
+        "start_line": 1,
+        "end_line": 86
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/counterexamples.md",
+        "sha256": "8f5f955fe1e63ca2e7a1369d8a31202d65ac357fce34085c637ecc9cbc425490",
+        "start_line": 1,
+        "end_line": 62
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/r5-pov-and-interiority.md",
+        "sha256": "db4234d8a3795ed43bd201f94d7292752652de96c0e8707e5351182ef9f884dd",
+        "start_line": 1,
+        "end_line": 92
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO32",
+    "title": "历史边界、偏见与迁移",
+    "rule": "保留时代制度、宗教、阶级、种族和性别话语的具体作用，不把其本质论升级为现实规则。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/03-stigma-and-boundaries.md",
+        "sha256": "2327131da36ca21ce72ca59afa4e7410101c01a53ffab68e85ff7e2df3f23db7",
+        "start_line": 1,
+        "end_line": 65
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/coercion-and-consent.md",
+        "sha256": "7c2f39beace95c8bf74a4602ddcfbf6d8ef5dc54c16e4c30300271b43a3ff7eb",
+        "start_line": 1,
+        "end_line": 29
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/counterexamples.md",
+        "sha256": "8f5f955fe1e63ca2e7a1369d8a31202d65ac357fce34085c637ecc9cbc425490",
+        "start_line": 1,
+        "end_line": 62
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/source-roles-b03b07.md",
+        "sha256": "9c1d3d7fe2befeb112ed2c992f042bc2e12a181d820e2aeadd8cd76b12290e73",
+        "start_line": 1,
+        "end_line": 31
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO33",
+    "title": "语调、类型与表达形式",
+    "rule": "喜剧、悲剧、惊悚、感伤、社会批评和反高潮可单用或混合，按作者承诺组织。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B01",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-01/rounds/round-p4-final-2026-10-30/output/romance-social-cost-craft/references/02-social-cost-rules.md",
+        "sha256": "97920bbf3e4c591c8d78738c07f7822727e94680eee92d63dec1094fcd69a901",
+        "start_line": 1,
+        "end_line": 97
+      },
+      {
+        "task_id": "B-03-B03",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-03/rounds/round-p4-wave4-agent2-2026-10-30/output/romance-emotional-arc/references/05-ending-and-cost.md",
+        "sha256": "553bfde759db66f10585af1b4853cd5df2774fc7508d4c982e3c5051e6c98bc1",
+        "start_line": 1,
+        "end_line": 54
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/source-roles-b03b07.md",
+        "sha256": "9c1d3d7fe2befeb112ed2c992f042bc2e12a181d820e2aeadd8cd76b12290e73",
+        "start_line": 1,
+        "end_line": 31
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO34",
+    "title": "续写、衍生与材料边界",
+    "rule": "区分既有角色/关系/伏笔、新目标与新设定；未完成原作不等于不能设计明确标注的新结局。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B02",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-02/rounds/round-p4-final-2026-10-30/output/courtship-conflict-craft/references/03-derivative-and-formats.md",
+        "sha256": "04f43c6e7f1c25e6a7f755652c28cba6d1ed5266c4f1c92720633f5c1a015137",
+        "start_line": 1,
+        "end_line": 28
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/source-index.md",
+        "sha256": "a64c215c7ecb1a02949592dd0ce2b5ff5c653b954025ff8bd9fd433c348b42ef",
+        "start_line": 1,
+        "end_line": 37
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/version-and-provenance.md",
+        "sha256": "e66131e7449b2abd80228765cc9ceb0387f94a7f0f81b0999577514c7eeddcc3",
+        "start_line": 1,
+        "end_line": 34
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  },
+  {
+    "id": "RO35",
+    "title": "诊断、缺证与失败出口",
+    "rule": "有稿才定位原稿；原创可带假设继续。材料冲突保留分支，效果与未经核对的事实记NOT_PROVEN。",
+    "decision": "CONDITIONAL",
+    "evidence": [
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/failure-modes.md",
+        "sha256": "13e3be475203d29af0336a848bcfcfcb6c1d8da6a3e6090dade708f28a269b04",
+        "start_line": 1,
+        "end_line": 38
+      },
+      {
+        "task_id": "B-03-B06",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/rounds/round-p4-agent2-final-2026-10-30/output/romance-craft-b06/references/p4-field-guide.md",
+        "sha256": "f2333be6609d95bcf048cced21884a9aa82a3f254bcdbd2afc9d94338b225a38",
+        "start_line": 1,
+        "end_line": 86
+      },
+      {
+        "task_id": "B-03-B05",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-05/rounds/round-p4-final-2026-10-30/output/romance-obstacle-delay-craft/references/conflicts-and-exceptions.md",
+        "sha256": "f741dbd41d84638f10f2a2bd2333b71ce76b21c614e9d6123aaf3775faa1ffbd",
+        "start_line": 1,
+        "end_line": 56
+      },
+      {
+        "task_id": "B-03-B07",
+        "file": "distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-07/rounds/round-p4-final-2026-10-30/output/romance-craft-b03-b07/references/conflicts-and-anti-patterns.md",
+        "sha256": "eea2bce51209ef28ffafe838eabd31de87a3b428bba3529d2217b05be043a209",
+        "start_line": 1,
+        "end_line": 73
+      }
+    ],
+    "proof_status": "SOURCE_SKILLS_AND_ALL_DISTINCT_HISTORY_READ; ELEVEN_PG_IDENTITIES_OR_TARGETED_WINDOWS_READ_AS_EXPLICITLY_SCOPED; FULL_PG_REREAD_AND_EFFECT_NOT_PROVEN"
+  }
+]

@@ -1,0 +1,96 @@
+# 02 — 海盗公司与反派工艺（M05/M06/M07/M08/M09）
+
+## §1 反派类型学六种样例（M08，ADOPT）
+
+### M08 · 本节单独 P3/P4 核验锚点
+
+**P4 最终有效规则 · REVISE**：以下条件性动作取代本节旧的绝对化要求。反派有不同动机和暴露路径，所谓六型是案例索引；允许混合型或难以分类的角色，揭穿方法取决于其关键控制点，而非类别强绑定。
+
+
+
+**规则**：可以参考类型识别其关键控制点，但混合型反派需额外列出被误判和变更条件；反派 defeat 与其类型强绑定。
+
+| 类型 | 核心机制 | 暴露方式 | defeat 逻辑 | 锚点 |
+|---|---|---|---|---|
+| 魅力型叛徒 | 公众面孔/私下面孔/忠诚宣言/杀心时刻四层 | 话术模板复制（P319："the same thing from three different men"） | 话术失效+群体对质 | P318，PG120 Long John |
+| 储蓄型守财奴 | 积蓄册/囤积癖 | 账本暴露（P322） | 死于自己的囤积 | P321，PG120 Billy Bones |
+| 间谍型 | 三面下注（"served three masters and betrayed two"） | 多方对照暴露 | 无一方信任 | P398，PG71328；P468 怯懦表演，PG37992 |
+| 表演型 | 以伪装换取渗透资格 | 面具物理揭除（"layers of plastic came off in his fingers"） | 伪装的体力成本 | P468，PG69036；P529 军火商货化 |
+| 天才型 | 技术碾压 | 后勤围困（P428） | 补给线 | P419 天才分区保存，PG11556 |
+| bully 型 | 暴力即信用 | 武器真空（"His rifle was empty...unprovided with pistols"） | 民船群体的程序反制 | P508/bully 速写，PG69036 Bradley |
+
+**复合限制**（R60）：单一类型反派在长篇中会耗尽——可复合两型但须定主型。
+
+## §2 海盗公司治理四件套（M05，ADOPT）
+
+### M05 · 本节单独 P3/P4 核验锚点
+
+**P4 最终有效规则 · REVISE**：以下条件性动作取代本节旧的绝对化要求。海盗公司治理的分赃、禁赌、遗产继承等是历史海盗案例，不是全部掠夺组织必备规则。依据资产、成员利益和可信权力机制选择制度，数量不固定。
+
+
+
+**规则**：掠夺组织的稳定性不靠忠诚靠制度；写掠夺组织时仅为出现内部分赃/组织稳定问题时，按情节需要配置可观察的治理制度，并让至少一项在情节中被触发。
+
+| 制度 | 规则 | 触发场景 | 锚点 |
+|---|---|---|---|
+| 分赃箱 | 私人宝箱钉死记名、共同保管、非经全体同意不得开启 | 退伙/背叛时的财产处置 | P524，PG37992 |
+| 禁赌协议 | 超出现金的赌债组织不认（"such Debts should never be paid while he continu'd in that Company"） | 防内讧 | P525，PG37992 |
+| 留守抵押金 | 离队者财产留作忠诚保证金——退出即没收 | 可被领袖逆用（Avery 让全员主动留守） | P526，PG37992 |
+| 遗产权 | 死者与离队者的份额分给新加入者 | 新血激励 | P527，PG37992 |
+| 分红制 | 战利品按比例分成（含货物/人口拍卖/残值） | 组织与宗主的利益切分 | P541，PG63807 |
+| 氏族徽章 | 无政府据点以徽章氏族自保（"Never take it off"） | 无法律空间的秩序替代物 | P542，PG63807 |
+
+**when**：海盗/匪帮/佣兵团/太空掠夺者等组织化团体。**when_not**：单狼反派。
+
+## §3 劫掠产业链（M06，ADOPT）
+
+### M06 · 本节单独 P3/P4 核验锚点
+
+**P4 最终有效规则 · REVISE**：以下条件性动作取代本节旧的绝对化要求。劫掠产业链若服务于组织叙事，可展示上游、交易和后果；无需机械部署每个环节，避免把虚构流程当现实违法操作教程。
+
+
+
+**规则**：反派劫掠线按产业链分幕（布局→接应→运营→洗白→销赃），每幕一个可被主角攻破的环节；叙事视角锁定主角的"发现顺序"。
+
+1. **供应链上游植入**（P495）：反派以合法职业应聘进入受害方供应链——劫局从货物离岸前开始。
+2. **接应航法**（P496 蛇形航线/"crossed and recrossed about a score of times"；P538 隐形涂层——"one chance in a million that anyone would notice the momentary blotting out of a star"）。
+3. **据点运营**（P497 鬼地掩护——"folks do say de debbil hab been see'd"；P498 囚奴收容所；P542 氏族徽章）。
+4. **货物洗白**（P501 洗标改标——"all cotton bales are alike--as much as eggs, peas, or sheep. Remove the mark, and it may belong to anybody."）。
+5. **现场清洁**（P502：血水洗船/帆布裹泥沉湖/铁锚沉尸的层级——据点湖=一具，主航道=其余）。
+
+**鬼地掩护的物质解释律**：恐怖传闻须配物质线索（"the abandoned dug-out...would have given a clue to the debbil"）。
+**when**：海盗/走私/黑帮/太空掠夺主线。**when_not**：独狼犯罪。
+
+## §4 海盗行为语法（M07，ADOPT）
+
+### M07 · 本节单独 P3/P4 核验锚点
+
+**P4 最终有效规则 · REVISE**：以下条件性动作取代本节旧的绝对化要求。黑旗威慑/Quarter 处置属单一时代制度 F；可以转写为异类组织的协商与恐惧，但不得把其历史合法性泛化。
+
+
+
+**规则**：海盗群体按语法配置行为；仁慈与残忍作为政策分歧而非性格标签。
+
+- **旗语威慑**（P519）："hoisted the black Flag, a Signal that we would give them no Quarter, they began to sink in their Spirits."
+- **Quarter 政策辩论**（P520）：仁慈方以实用理由胜出（俘虏=劳力/情报/赎金）——"I prevail'd with him to give them Quarter, and good Usage too."
+- **按需劫掠**（P521）："for as to the Sugar and Molosses, we had neither Use for them, or Room for them."
+- **残忍的代价**（P522）："Cruelty never recommends any Man among Englishmen"——最残忍者死于横祸且船员无一人惋惜（"D--n him, let him go, he was a butcherly Dog"）。
+- **互助经济**（P523）：同行的非掠夺交换（火药/腌肉/朗姆互赠——"they very frankly gave us 50 Jarrs of it gratis"）。
+
+**when**：海盗群像/强盗团。**when_not**：浪漫化 single pirate protagonist（语法降级为背景）。
+
+## §5 威望泡沫闭环（M09，ADOPT）
+
+### M09 · 本节单独 P3/P4 核验锚点
+
+**P4 最终有效规则 · REVISE**：以下条件性动作取代本节旧的绝对化要求。名誉泡沫要成立须有他人实际给予的资源或容错，缺公众认可时可用私密误导；前中后反噬不必固定三幕。
+
+
+
+**规则**：名声是可经营的资产：制造（放大兵力/财富/残酷的传闻并释放信源——"A Tale loses nothing in the carrying."）→护城河（谣言退敌——"none of the English or Dutch Ships would come near Madagascar again...for Fear of us"）→反噬（虚名掩盖真实虚弱；财富本身成为逃亡障碍）。
+
+- 泡沫须标注失效条件：被识破/被实证挑战/被真实需求戳穿（PG69036 的 Murrell 落网即泡沫终点）。
+- 鬼地掩护是泡沫的空间形态（P497）；威望泡沫是泡沫的声誉形态（P530）；两者可叠加。
+
+**when**：据点防御/逃亡隐身/以弱示强。**when_not**：需要实证信誉的交易场景（泡沫在法庭与拍卖中失效）。
+**反例/限制**：R76 戏仿表明泡沫通胀是类型俗套——正格使用时须给泡沫一个"被戳穿的时刻"。

@@ -1,0 +1,36 @@
+{
+  "id": "PG324",
+  "title": "A Knight of the Cumberland",
+  "author": "Fox, John, Jr., 1862-1919",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/324",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Country life -- Fiction; Kentucky -- Fiction",
+  "source_catalog_issued": "2008-07-09",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/2/324/324-0.txt",
+  "mirror_reported_size": 136835,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG324-A-Knight-of-the-Cumberland",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "9c71713443386596ae14f4e805fe1c0c5244e49bc25b8d67ae37f3d1787de1d4",
+  "reading_sha256": "06d0799f3fac38e629640327f2b53979d82509320fe063c47dd2d61671c20a93",
+  "raw_bytes": 136835,
+  "reading_bytes": 117127,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG324-A-Knight-of-the-Cumberland/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG324-A-Knight-of-the-Cumberland/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

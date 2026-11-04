@@ -1,0 +1,29 @@
+# 来源索引 — historical-fiction-craft-b03
+
+> 16 份来源全部为 Project Gutenberg 公版（原始位置 distill/有原始正文/16-类型小说专项/06-历史架空/）；SHA-256 于 2026-10-25 全部核验通过。行号均指"整本阅读版.txt"。
+
+## 阅读顺序（小→大）
+
+| PG ID | 作者/标题/年 | 材料角色 | 贡献的规则 |
+|---|---|---|---|
+| PG1454 | Balzac, *Maitre Cornelius*, 1846 | FICTION_CASE | RH-01、RH-14 |
+| PG357 | Morris, *A Dream of John Ball*, 1888 | FICTION_CASE | 感官连续性穿越、先知对话 |
+| PG966 | Peacock, *Maid Marian*, 1822 | FICTION_CASE | 传说母题三步、昵称独白 |
+| PG66728 | Stevenson, *The Kingmakers*, 1922 | FICTION_CASE | 虚构国家试验场、歌剧主题镜 |
+| PG421 | R.L. Stevenson, *Kidnapped*, 1886 | FICTION_CASE | RH-04、RH-09、RH-10 |
+| PG848 | R.L. Stevenson, *The Black Arrow*, 1888 | FICTION_CASE | RH-11、署名恐怖、变装揭示 |
+| PG14355 | Hough, *54-40 or Fight*, 1909 | FICTION_CASE | RH-12、RH-18、双场景同日剪辑 |
+| PG5353 | Scott, *Guy Mannering* Vol.I, 1815 | FICTION_CASE+CRITICISM | RH-07、RH-20 |
+| PG14133 | R.L. Stevenson, *David Balfour*, 1893 | FICTION_CASE | 续作认弱、真案证人嵌书 |
+| PG4074 | Haggard, *Swallow*, 1900 | FICTION_CASE | RH-15、祖母框架 |
+| PG40014 | Buchan, *John Burnet of Barns*, 1898 | FICTION_CASE | 评判权移交、地形叙事 |
+| PG3606 | Collins, *Antonina*, 1850 | FICTION_CASE+METHOD | RH-02、RH-03（方法论核心） |
+| PG7853 | Scott, *Quentin Durward*, 1823 | FICTION_CASE+CRITICISM | RH-13、时间错位脚注 |
+| PG1606 | Scott, *Kenilworth*, 1821 | FICTION_CASE+CRITICISM | RH-05、RH-08、RH-17 |
+| PG5950 | Scott, *The Fortunes of Nigel*, 1822 | FICTION_CASE+CRITICISM | 法律飞地写法 |
+| PG18997 | Dumas, *Vicomte de Bragelonne*, 1848-50 | FICTION_CASE | RH-06、RH-16 |
+
+## 阅读覆盖声明
+- 16/16 来源全文实读（FULL）：Main 独立按小→大顺序实读，逐批 ledger 记录于工作区证据目录。
+- 断点与覆盖台账：工作区阅读断点检查点文件；每本证据卡 证据卡目录。
+- 引文均逐字摘自整本阅读版.txt 并带行号；GQ 抽查记录见 质检记录目录 。

@@ -1,0 +1,115 @@
+{
+  "schema": "genre-batch-source-view/v1",
+  "task_id": "A-07-B02",
+  "parent_genre": "16-类型小说专项/06-历史架空",
+  "source_count": 15,
+  "o200k_tokens": 2686878,
+  "no_semantic_genre_reclassification": true,
+  "source_entries": [
+    {
+      "pg_id": "PG10046",
+      "title": "Salute to Adventurers",
+      "o200k_tokens": 122371,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG10046-Salute-to-Adventurers",
+      "sha256_reading": "8d259c3e8222318d9c446c6d3131fc5bf1f8aab96d6115411425ea65da692cf8"
+    },
+    {
+      "pg_id": "PG1036",
+      "title": "Joe Wilson and His Mates",
+      "o200k_tokens": 115547,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG1036-Joe-Wilson-and-His-Mates",
+      "sha256_reading": "589fe138f6bcc7c0b0c3980f0f351fe283b4a68189b2acdc2c3c01ae77b5e9a7"
+    },
+    {
+      "pg_id": "PG1461",
+      "title": "A Legend of Montrose",
+      "o200k_tokens": 125376,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG1461-A-Legend-of-Montrose",
+      "sha256_reading": "0399b92660e0bec74ed0dd3bba5b84f04b0b0d9e8bfb820aa439908fbd1036e8"
+    },
+    {
+      "pg_id": "PG1678",
+      "title": "An Historical Mystery (The Gondreville Mystery)",
+      "o200k_tokens": 104681,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG1678-An-Historical-Mystery-The-Gondreville-Mystery",
+      "sha256_reading": "a1251e0439b14870c287a7e36ef94e7f6dbe2ed45f5054bb2c4d8d6b10662d90"
+    },
+    {
+      "pg_id": "PG24789",
+      "title": "\"Unto Caesar\"",
+      "o200k_tokens": 149018,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG24789-Unto-Caesar",
+      "sha256_reading": "8fc24acd42d5370b3dcf82be1e3f775275ecc5ebd39db7300ba118913017075d"
+    },
+    {
+      "pg_id": "PG2609",
+      "title": "The Vicomte de Bragelonne",
+      "o200k_tokens": 268537,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG2609-The-Vicomte-de-Bragelonne",
+      "sha256_reading": "3aacfdc880c3725b98ecc6f4b1bc7b986322428177cfa1c181e73d997ce7af8b"
+    },
+    {
+      "pg_id": "PG271",
+      "title": "Black Beauty",
+      "o200k_tokens": 76097,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG271-Black-Beauty",
+      "sha256_reading": "6630d911f45f5d5e9802dba896423f2b8669475a328f2e10f73178a728c07765"
+    },
+    {
+      "pg_id": "PG324",
+      "title": "A Knight of the Cumberland",
+      "o200k_tokens": 28313,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG324-A-Knight-of-the-Cumberland",
+      "sha256_reading": "06d0799f3fac38e629640327f2b53979d82509320fe063c47dd2d61671c20a93"
+    },
+    {
+      "pg_id": "PG33208",
+      "title": "The Laughing Cavalier: The Story of the Ancestor of the Scarlet Pimpernel",
+      "o200k_tokens": 174474,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG33208-The-Laughing-Cavalier-The-Story-of-the-Ancestor-of-the-Scarl",
+      "sha256_reading": "3128baeff08253151035a74a4e5264ef640c7bc4ca1ca5fd754abd2a789e1f06"
+    },
+    {
+      "pg_id": "PG3350",
+      "title": "The Wandering Jew — Complete",
+      "o200k_tokens": 742406,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG3350-The-Wandering-Jew-Complete",
+      "sha256_reading": "2faa614ded670adbb8f19942173eb293e75b6be67c243825b4a482c390f7097c"
+    },
+    {
+      "pg_id": "PG46345",
+      "title": "Sir Quixote of the Moors Being some account of an episode in the life of the Sieur de Rohaine",
+      "o200k_tokens": 35945,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG46345-Sir-Quixote-of-the-Moors-Being-some-account-of-an-episode-in",
+      "sha256_reading": "a9968a9c07db0f565e88ed0b5ef6d73ce51ddadbb61006510e1899a4b7e57c42"
+    },
+    {
+      "pg_id": "PG56562",
+      "title": "Kidnapped (Illustrated) Being Memoirs of the Adventures of David Balfour in the Year 1751",
+      "o200k_tokens": 110139,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG56562-Kidnapped-Illustrated-Being-Memoirs-of-the-Adventures-of-Dav",
+      "sha256_reading": "37a6b44de7df0eaac492f75f7dedfb18fc8b5fd0232590ba1d47d739c83adf46"
+    },
+    {
+      "pg_id": "PG5709",
+      "title": "La Vendée",
+      "o200k_tokens": 240136,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG5709-La-Vend-e",
+      "sha256_reading": "331b84a02e52b96c82845c6c6ae457d190b1ed660ec8ca658b716595203a1d9d"
+    },
+    {
+      "pg_id": "PG6407",
+      "title": "The Abbot",
+      "o200k_tokens": 254809,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG6407-The-Abbot",
+      "sha256_reading": "9fd5cd027ed1071e7a9f8e825fe9baa50e8b5263a97e12f1aba9492a7bc0d963"
+    },
+    {
+      "pg_id": "PG79489",
+      "title": "The grandmothers",
+      "o200k_tokens": 139029,
+      "original_path": "distill/有原始正文/16-类型小说专项/06-历史架空/PG79489-The-grandmothers",
+      "sha256_reading": "3c694d420be10507f3ecd67743f61f4428fd32f51121d7f5b2c4e22fdb5cfda1"
+    }
+  ]
+}

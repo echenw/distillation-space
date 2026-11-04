@@ -1,0 +1,242 @@
+FILE /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG3527-The-Blue-Moon/整本阅读版.txt
+PG PG3527 SHA256 159beb908e920ebb85d21ea28999223e0ef4e1b730e561cd7556bde133d070ce BYTES 152457 LINES 2976
+MATCH_LINES []
+WINDOW L1-45
+1: Produced by A. Elizabeth Warren
+2: 
+3: 
+4: 
+5: 
+6: 
+7: THE BLUE MOON
+8: 
+9: By Laurence Housman
+10: 
+11: 
+12: 
+13: 
+14: CONTENTS
+15: 
+16: 
+17:      THE BLUE MOON
+18:      A CHINESE FAIRY-TALE
+19:      THE WAY OF THE WIND
+20:      A CAPFUL OF MOONSHINE
+21:      THE MOON-STROKE
+22:      HOW LITTLE DUKE JARL SAVED THE CASTLE
+23:      THE WHITE DOE
+24:      THE GENTLE COCKATRICE
+25:      THE RAT-CATCHER’S DAUGHTER
+26:      WHITE BIRCH
+27: 
+28: 
+29: 
+30: 
+31: THE BLUE MOON
+32: 
+33: Nillywill and Hands-pansy were the most unimportant and happy pair of
+34: lovers the world has ever gained or lost.
+35: 
+36: With them it had been a case of love at first blindness since the day
+37: when they had tumbled into each other’s arms in the same cradle. And
+38: Hands-pansy, when he first saw her, did not discover that Nillywill was
+39: a real princess hiding her birthright in the home of a poor peasant; nor
+40: did Nillywill, when she first saw Hands, see in him the baby-beginnings
+41: of the most honest and good heart that ever sprang out of poverty and
+42: humble parentage. So from her end of their little crib she kicked him
+43: with her royal rosy toes, and he from his kicked back and laughed: and
+44: thus, as you hear, at first blindness they fell head over ears in love
+45: with one another.
+WINDOW L3485-3497
+OUT_OF_RANGE
+WINDOW L3524-3526
+OUT_OF_RANGE
+WINDOW L3775-3793
+OUT_OF_RANGE
+FILE /Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/16-类型小说专项/04-武侠仙侠玄幻/PG49750-The-Golden-Breasted-Kootoo-and-Other-Stories/整本阅读版.txt
+PG PG49750 SHA256 a6625fe6aec7e2d9de5b4a8c58ed521c4870b02f64ee9d297567fa617363ef38 BYTES 49597 LINES 1058
+WINDOW L1-45
+1: THE GOLDEN-BREASTED KOOTOO
+2: 
+3: 
+4: 
+5: 
+6: THE GOLDEN-BREASTED KOOTOO
+7: 
+8:     BY
+9:     LAURA E. RICHARDS
+10:     AUTHOR OF “CAPTAIN JANUARY,” “THE JOYOUS STORY
+11:     OF TOTO,” “TOTO’S MERRY WINTER,”
+12:     “IN MY NURSERY,” ETC.
+13: 
+14: [Illustration]
+15: 
+16:     BOSTON
+17:     LITTLE, BROWN, AND COMPANY
+18: 
+19: 
+20: 
+21: 
+22:     _Copyright, 1885_,
+23:     BY ROBERTS BROTHERS
+24: 
+25:     _Copyright, 1899_,
+26:     BY LITTLE, BROWN, AND CO.
+27:     ————
+28:     _All rights reserved_
+29: 
+30: 
+31:     University Press:
+32:     JOHN WILSON AND SON, CAMBRIDGE, U.S.A.
+33: 
+34: 
+35: 
+36: 
+37: CONTENTS
+38: 
+39: 
+40:                                                        PAGE
+41:     THE GOLDEN-BREASTED KOOTOO                            5
+42:     THE STORY OF HOKEY POKEY                             25
+43:     THE AMBITIOUS ROCKING-HORSE                          40
+44:     “OH, DEAR”                                           44
+45:     THE TRAVELLER, THE COOK, AND THE LITTLE OLD MAN      55
+WINDOW L370-400
+370: Hokey Pokey would be none of these things; so when he was grown to be a
+371: tall youth he went to his father and said, “Give me my fortune.”
+372: 
+373: “Will you be a butcher?” asked his father.
+374: 
+375: “No!” said Hokey Pokey.
+376: 
+377: “Will you be a baker?”
+378: 
+379: “No, again.”
+380: 
+381: “Will you make candlesticks?”
+382: 
+383: “Nor that either!”
+384: 
+385: “Then,” said his father, “this is the only fortune I can give you;” and
+386: with that he took up his cudgel and gave the youth a stout beating.
+387: “Now you cannot complain that I gave you nothing!” said he.
+388: 
+389: “That is true!” said Hokey Pokey. “But give me also the wooden mallet
+390: which lies on the shelf, and I will make my way through the world.”
+391: 
+392: His father gave him the mallet, glad to be so easily rid of him, and
+393: Hokey Pokey went out into the world to seek his fortune. He walked
+394: all day, and at nightfall he came to a small village. Feeling hungry,
+395: he went into a baker’s shop, intending to buy a loaf of bread for his
+396: supper. There was a great noise and confusion in the back part of the
+397: shop; and on going to see what was the matter, he found the baker on
+398: his knees beside a large box or chest, which he was trying with might
+399: and main to keep shut. But there was something inside the box which was
+400: trying just as hard to get out, and it screamed and kicked, and pushed
+WINDOW L525-630
+525: the bull saw that, he stopped dancing on the Dresden dinner set and
+526: came charging out of the shop, straight towards the red umbrella. When
+527: he came near enough, Hokey Pokey dropped the umbrella, and raising his
+528: wooden mallet hit the bull such a blow on the muzzle that he fell down
+529: dead, and never bellowed again.
+530: 
+531: The people all flung up their hats, and cheered, and ran up and down
+532: all the more, to express their gratification. As for the china-shop
+533: man, he threw his arms round Hokey Pokey’s neck, called him his
+534: cherished preserver, and bade him choose anything that was left in his
+535: shop in payment for his services.
+536: 
+537: “Can you match these?” asked Hokey Pokey, holding up the loaf of bread
+538: and the ball of sweetmeats.
+539: 
+540: “That can I,” said the shop-man; and he brought out a huge ball of
+541: solid ivory, inlaid with gold and silver, and truly lovely to behold.
+542: It was very heavy, being twice as large as the ball of sweetmeats; but
+543: Hokey Pokey took it, and, after thanking the shop-man and receiving his
+544: thanks in return, he proceeded on his way.
+545: 
+546: After walking for several days, he came to a fair, large castle, in
+547: front of which sat a man on horseback. When the man saw Hokey Pokey, he
+548: called out,—
+549: 
+550: “Who are you, and what do you bring to the mighty Dragon, lord of this
+551: castle?”
+552: 
+553: “Hokey Pokey is my name,” replied the youth, “and strange things do I
+554: bring. But what does the mighty Dragon want, for example?”
+555: 
+556: “He wants something new to eat,” said the man on horseback. “He has
+557: eaten of everything that is known in the world, and pines for something
+558: new. He who brings him a new dish, never before tasted by him, shall
+559: have a thousand crowns and a new jacket; but he who fails, after three
+560: trials, shall have his jacket taken away from him, and his head cut off
+561: besides.”
+562: 
+563: “I bring strange food,” said Hokey Pokey. “Let me pass in, that I may
+564: serve the mighty Dragon.”
+565: 
+566: Then the man on horseback lowered his lance, and let him pass in, and
+567: in short space he came before the mighty Dragon. The Dragon sat on
+568: a silver throne, with a golden knife in one hand, and a golden fork
+569: in the other. Around him were many people, who offered him dishes of
+570: every description; but he would none of them, for he had tasted them
+571: all before; and he howled with hunger on his silver throne. Then came
+572: forward Hokey Pokey, and said boldly,—
+573: 
+574: “Here come I, Hokey Pokey, bringing strange food for the mighty Dragon.”
+575: 
+576: The Dragon howled again, and waving his knife and fork, bade Hokey
+577: Pokey give the food to the attendants, that they might serve him.
+578: 
+579: “Not so,” said Hokey Pokey. “I must serve you myself, most mighty
+580: Dragon, else you shall not taste of my food. Therefore put down your
+581: knife and fork, and open your mouth, and you shall see what you shall
+582: see.”
+583: 
+584: So the Dragon, after summoning the man-with-the-thousand-crowns
+585: and the man-with-the-new-jacket to one side of his throne, and the
+586: man-to-take-away-the-old-jacket and the executioner to the other, laid
+587: down his knife and fork and opened his mouth. Hokey Pokey stepped
+588: lightly forward, and dropped the round loaf down the great red throat.
+589: The Dragon shut his jaws together with a snap, and swallowed the loaf
+590: in two gulps.
+591: 
+592: “That is good,” he said; “but it is not new. I have eaten much bread,
+593: though never before in a round loaf. Have you anything more? Or shall
+594: the man take away your jacket?”
+595: 
+596: “I have this, an it please you,” said Hokey Pokey; and he dropped the
+597: ball of sweetmeats into the Dragon’s mouth.
+598: 
+599: When the Dragon tasted this, he rolled his eyes round and round, and
+600: was speechless with delight for some time. At length he said, “Worthy
+601: youth, this is very good; it is extremely good; it is better than
+602: anything I ever tasted. Nevertheless, it is not new; for I have tasted
+603: the same kind of thing before, only not nearly so good. And now,
+604: unless you are positively sure that you have something new for your
+605: third trial, you really might as well take off your jacket; and the
+606: executioner shall take off your head at the same time, as it is getting
+607: rather late. Executioner, do your—”
+608: 
+609: “Craving your pardon, most mighty Dragon,” said Hokey Pokey, “I will
+610: first make my third trial;” and with that he dropped the ivory ball
+611: into the Dragon’s mouth.
+612: 
+613: “Gug-wugg-gllll-grrr!” said the Dragon, for the ball had stuck fast,
+614: being too big for him to swallow.
+615: 
+616: Then Hokey Pokey lifted his mallet and struck one tremendous blow upon
+617: the ball, driving it far down the throat of the monster, and killing
+618: him most fatally dead. He rolled off the throne like a scaly log, and
+619: his crown fell off and rolled to Hokey Pokey’s feet. The youth picked
+620: it up and put it on his own head, and then called the people about him
+621: and addressed them.
+622: 
+623: [Illustration: “‘People,’ he said, ‘I am Hokey Pokey.’”]
+624: 
+625: “People,” he said, “I am Hokey Pokey, and I have come from a far land
+626: to rule over you. Your Dragon have I slain, and now I am your king; and
+627: if you will always do exactly what I tell you to do, you will have no
+628: further trouble.”
+629: 
+630: So the people threw up their caps and cried, “Long live Hokey Pokey!”

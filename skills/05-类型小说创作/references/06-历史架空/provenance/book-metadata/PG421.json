@@ -1,0 +1,36 @@
+{
+  "id": "PG421",
+  "title": "Kidnapped",
+  "author": "Stevenson, Robert Louis, 1850-1894",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/421",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Adventure and adventurers -- Fiction; Kidnapping -- Fiction",
+  "source_catalog_issued": "2006-01-16",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/4/2/421/421-0.txt",
+  "mirror_reported_size": 440231,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG421-Kidnapped",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "c1b349465d73b28c866e82c693092a189c93042c1006ef4a3f83e404c0490c2a",
+  "reading_sha256": "fc8a5d7ae999f09897da1e9a6f69b2cb5830b5649de1aa10974c2775bc631890",
+  "raw_bytes": 440231,
+  "reading_bytes": 440130,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG421-Kidnapped/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG421-Kidnapped/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

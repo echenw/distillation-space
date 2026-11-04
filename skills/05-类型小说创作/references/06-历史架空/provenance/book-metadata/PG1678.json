@@ -1,0 +1,39 @@
+{
+  "id": "PG1678",
+  "title": "An Historical Mystery (The Gondreville Mystery)",
+  "author": "Balzac, Honoré de, 1799-1850; Wormeley, Katharine Prescott, 1830-1908 [Translator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Project_Gutenberg_public_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/1678",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/1/6/7/1678/1678-0.txt",
+  "mirror_reported_size": 470019,
+  "source_issued_at": "2004-11-06",
+  "source_subjects": "Historical fiction; Detective and mystery stories; French fiction -- Translations into English",
+  "source_rights_caveat": "Gutenberg official catalog+public mirror; per-work and jurisdiction rights must be checked independently",
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG1678-An-Historical-Mystery-The-Gondreville-Mystery",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "e9c65225921cd47ce1864304c6db441efdc2aac9e128dee7bb6c233e9239098e",
+  "reading_sha256": "a1251e0439b14870c287a7e36ef94e7f6dbe2ed45f5054bb2c4d8d6b10662d90",
+  "raw_bytes": 470019,
+  "reading_bytes": 450197,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG1678-An-Historical-Mystery-The-Gondreville-Mystery/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG1678-An-Historical-Mystery-The-Gondreville-Mystery/整本阅读版.txt",
+  "content_status_reason": null,
+  "source_role_note": "Fiction narrative or play case; only descriptive structural observations, not authorial instructions.",
+  "editorial_match_basis": "PG_CATALOG_SUBJECT_ONLY_NOT_YET_READ",
+  "material_file_type": "BOOK_OR_STORY_OR_DRAMATIC_SCRIPT",
+  "source_text_charset": "utf-8",
+  "acquisition_screen": "HEADERS_AND_GUTENBERG_WRAPPERS_SCREENED_US_PD_NOT_LEGAL_CERTIFICATION"
+}

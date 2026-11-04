@@ -1,0 +1,39 @@
+# 来源索引 — adventure-treasure-craft-b02
+
+> 29 份来源全部为 Project Gutenberg 公版；SHA-256 于 2026-10-25 全部核验通过（29/29 OK）。行号均指"整本阅读版.txt"。
+
+| PG ID | Author/Title/Year | Type | Rules |
+|---|---|---|---|
+| PG63697 | Whittington, George A. — *Space-Lane of No-Return* (1946) | FICTION_CASE | 技法规则 |
+| PG74118 | McNeile, *The Seven Missionaries*, 1923 | FICTION_CASE | 技法规则 |
+| PG69063 | Norton, *To the Lights*, 1922 | FICTION_CASE | 技法规则 |
+| PG62039 | Bond, *The Lorelei Death*, 1941 | FICTION_CASE | 技法规则 |
+| PG64049 | Craig (Anderson), *Witch of the Demon Seas*, 1951 | FICTION_CASE | 技法规则 |
+| PG56198 | Senarens, *Frank Reade Jr.*, 1904 | FICTION_CASE | 技法规则 |
+| PG79106 | Merritt, *The Face in the Abyss*, 1923 | FICTION_CASE | 技法规则 |
+| PG3809 | Verne, *The Master of the World*, 1904 | FICTION_CASE | 技法规则 |
+| PG1604 | Stevenson, *The Ebb-Tide*, 1894 | FICTION_CASE | 技法规则 |
+| PG236 | Kipling, *The Jungle Book*, 1894 | FICTION_CASE | 技法规则 |
+| PG839 | Stevenson, *New Arabian Nights*, 1882 | FICTION_CASE | 技法规则 |
+| PG10743 | Falkner, *Moonfleet*, 1898 | FICTION_CASE | 技法规则 |
+| PG10988 | Moore, *The Devil's Admiral*, 1913 | FICTION_CASE | 技法规则 |
+| PG12190 | Stockton, *Captain Horn*, 1895 | FICTION_CASE | 技法规则 |
+| PG12461 | Orczy, *Castles in the Air*, 1921 | FICTION_CASE | 技法规则 |
+| PG22752 | Cook, *Pirate of Panama*, 1914 | FICTION_CASE | 技法规则 |
+| PG2714 | Rinehart, *Long Live the King!*, 1915 | FICTION_CASE | 技法规则 |
+| PG27454 | Scott, *In Her Own Right*, 1913 | FICTION_CASE | 技法规则 |
+| PG29104 | Stilson, *Web of the Golden Spider*, 1909 | FICTION_CASE | 技法规则 |
+| PG3782 | Buchan, *Huntingtower*, 1922 | FICTION_CASE | 技法规则 |
+| PG38693 | Mason, *The Watchers*, 1905 | FICTION_CASE | 技法规则 |
+| PG44876 | Scott, *Cruise of the Midge* Vol.2, 1836 | FICTION_CASE | 技法规则 |
+| PG46441 | Stables, *Midshipman Glover*, 1895 | FICTION_CASE | 技法规则 |
+| PG55723 | Hains, *Chief Mate's Yarns*, 1912 | FICTION_CASE | 技法规则 |
+| PG63353 | Smith, *Treasure of the Bucoleon*, 1924 | FICTION_CASE | 技法规则 |
+| PG67479 | *The Day of Resis*, 1919 | FICTION_CASE | 技法规则 |
+| PG70536 | Burroughs, *Land of Hidden Men*, 1931 | FICTION_CASE | 技法规则 |
+| PG8647 | Cooper, *Afloat and Ashore*, 1844 | FICTION_CASE | 技法规则 |
+| PG14355 | Hough, *54-40 or Fight*, 1909 | FICTION_CASE | 技法规则 |
+
+## 阅读覆盖声明
+- 29/29 来源覆盖：短书全读，长书结构扫描+关键章全读+尾部全读（solo 模式）。
+- 证据卡 29 张+ledger 29 份+断点台账（工作区阅读断点检查点文件）。

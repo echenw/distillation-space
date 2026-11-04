@@ -1,0 +1,36 @@
+{
+  "id": "PG66728",
+  "title": "The Kingmakers",
+  "author": "Stevenson, Burton Egbert, 1872-1962; Caswell, Edward C., 1879-1963 [Illustrator]",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/66728",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Man-woman relationships -- Fiction; Kings and rulers -- Fiction; Imaginary places -- Europe, Eastern -- Fiction; Riviera (France) -- Fiction",
+  "source_catalog_issued": "2021-11-14",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/6/7/2/66728/66728-0.txt",
+  "mirror_reported_size": 432796,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG66728-The-Kingmakers",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "f6bd541482a745a3e8ad09244a0e9fa60326d53a1dd23715f63cf25eecbca6ac",
+  "reading_sha256": "8fd4dca8ec49223810dd799b71a18b2a0a0119338a3c21891ea9c7b6a9ae4e49",
+  "raw_bytes": 432796,
+  "reading_bytes": 432689,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG66728-The-Kingmakers/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG66728-The-Kingmakers/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

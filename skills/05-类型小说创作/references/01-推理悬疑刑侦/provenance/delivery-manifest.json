@@ -1,0 +1,100 @@
+{
+  "schema": "genre-fusion-manifest/v2",
+  "task_ids": [
+    "A-03-B01",
+    "A-03-B02",
+    "A-03-B03",
+    "A-03-B04",
+    "A-03-B05"
+  ],
+  "candidate_count": 12,
+  "source_instances": 116,
+  "unique_contents": 69,
+  "source_section_mappings": 621,
+  "source_pg_count": 147,
+  "pg_not_named_in_consumer_but_preserved_in_audit": [],
+  "broken_links": [],
+  "semantic_review_status": "SELF_AUTHORED_REQUIRES_INDEPENDENT_REVIEW",
+  "original_book_validation": "SIX_TARGETED_FRONT_MATTER_WINDOWS_BY_MAIN; FULL_BOOK_REREADING_NOT_CLAIMED",
+  "files": [
+    {
+      "path": "00-题材指南.md",
+      "bytes": 3501,
+      "sha256": "153e40bb3862ad86c931dc33fc681c73fd9da06b60d26adf472c341956dd6bd0"
+    },
+    {
+      "path": "01-契约与信息披露.md",
+      "bytes": 5473,
+      "sha256": "85a841a57d4981baf5f29e8d2a1a0ca69bbf918f8e37e0909594640d2053d5a2"
+    },
+    {
+      "path": "02-证据身份与证词.md",
+      "bytes": 8470,
+      "sha256": "9dd9d20b84ed278217889815d3fb41f4d350f77588babb29f0baa50901aa9d14"
+    },
+    {
+      "path": "03-时间空间与不可能性.md",
+      "bytes": 10281,
+      "sha256": "9946e758875f7077c1e8f83beae9bd777e6a8cdbefb9b16ebaf330406d77e8f8"
+    },
+    {
+      "path": "04-调查对抗与制度.md",
+      "bytes": 8888,
+      "sha256": "817df3fc7c247cded56f024d11ae7aa161f21a07f929aa833f89936e503e1f21"
+    },
+    {
+      "path": "05-动机人物与收束.md",
+      "bytes": 11015,
+      "sha256": "765607999e63efc37ec9d20fa23e81d6569d1275c60bffcca9b7d1c2401e410a"
+    },
+    {
+      "path": "06-工作表与修正案例.md",
+      "bytes": 12280,
+      "sha256": "87cd03b39856397fc1107101085ec2706d862221c291fda30e34267356721991"
+    },
+    {
+      "path": "07-案例证据与来源.md",
+      "bytes": 7365,
+      "sha256": "a2eba16f2304971a18f86ddf9ba941525bd44586758bb5621665708950ee0596"
+    },
+    {
+      "path": "08-冲突裁决与历史保留.md",
+      "bytes": 4615,
+      "sha256": "324a709f246294ff69223dc9499d36bbf47a43c34da4e478f7ec4d956a3ded8c"
+    },
+    {
+      "path": "09-来源身份表.md",
+      "bytes": 27621,
+      "sha256": "251d02b05e2814c67ee22444c72523bfd0df2a88c3f8a5813247082421f8e9f9"
+    },
+    {
+      "path": "10-来源身份复核.md",
+      "bytes": 5255,
+      "sha256": "d2b4aeec97a34bc067957f9a3a08170615bd8fa406524e7661fbda3adc1b9027"
+    },
+    {
+      "path": "provenance/rule-evidence-map.json",
+      "bytes": 1805382,
+      "sha256": "73514759735684d091856781b36f8689b555651f860a0248a3417dc6fed8d55a"
+    },
+    {
+      "path": "provenance/source-map.json",
+      "bytes": 189781,
+      "sha256": "d93db5c0e8c189c3b0049f5e821e22440067df54f2ad92c7803746f46f66cf23"
+    },
+    {
+      "path": "provenance/完整阅读与裁决工作记录.md",
+      "bytes": 9753,
+      "sha256": "487ac5113f58434ca1f944c3c82544b5c6be7cb4f2eb1831beb0c14de4460b5f"
+    }
+  ],
+  "main_integration_changes": {
+    "identity_recheck": "10-来源身份复核.md",
+    "old_file_mapping_identity_targets": 7,
+    "execution_id": "527b09a5-0246-4fd5-a945-f08c810a6215",
+    "independent_review": "PENDING"
+  },
+  "producer_manifest_preserved_at": "audit/history/pre-takeover-manifests/01-推理悬疑刑侦.json",
+  "current_fingerprint_scope": "CURRENT_MAIN_INTEGRATION; not a claim that the original producer authored or independently reviewed subsequent edits",
+  "main_fingerprint_updated_at": "2026-10-31T23:08:57.550302+00:00"
+}

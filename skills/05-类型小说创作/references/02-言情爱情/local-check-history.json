@@ -1,0 +1,57 @@
+{
+  "scope": "author narrow local structural checks; not independent consumer review",
+  "events": [
+    {
+      "status": "FAIL",
+      "finding": "historical-boundaries actual-PG table header had four columns but separator had three",
+      "errors": [
+        [
+          "TABLE_COLUMN_MISMATCH",
+          "historical-boundaries.md",
+          68
+        ],
+        [
+          "TABLE_COLUMN_MISMATCH",
+          "historical-boundaries.md",
+          69
+        ]
+      ],
+      "action": "separator corrected; no content removed to bypass check"
+    },
+    {
+      "status": "PASS",
+      "finding": "source SHA, source line ranges, full RO IDs, raw-byte mappings, local links and Markdown table columns passed after correction",
+      "counts": {
+        "tasks": 7,
+        "source_file_mappings": 164,
+        "unique_source_sha256": 130,
+        "current_rules": 35,
+        "current_mechanisms": 166,
+        "historical_conditions": 37,
+        "decisions": 96,
+        "template_fields": 60,
+        "examples": 16,
+        "identity_records": 129,
+        "original_pg_targeted_scope_count": 11
+      }
+    }
+  ],
+  "generation_issue": {
+    "status": "RESOLVED_BEFORE_INITIAL_WRITE",
+    "detail": "unescaped apostrophes in an English phrase caused initial Python SyntaxError; changed enclosing quote; first unsuccessful attempt created no formal output"
+  },
+  "final_readback_corrections": [
+    "Mary Scatcherd mother / Mary Thorne daughter",
+    "PG13180 replacement vs word segmentation plus full numeric example",
+    "eleven original-PG targeted/title windows, not full rereads",
+    "E05 weight stays with woman; man returns ledger only",
+    "E01 currency wording",
+    "T47 compound typo corrected"
+  ],
+  "archive_ready": {
+    "raw_files": 130,
+    "detail_files": 7,
+    "purpose": "exact historical evidence only; parent may move to root provenance with pointer updates"
+  },
+  "frozen_for_parent_integration": true
+}

@@ -1,0 +1,63 @@
+# 06 · 来源索引与编号约定
+
+## 1. 来源总表（17 本 / 13 族）
+
+| PGID | 标题 | 作者 | 族 | 行数 | o200k tok | 覆盖状态 | 本 Skill 引用位置 |
+|---|---|---|---|---|---|---|---|
+| PG1433 | The Red Inn | Balzac（Wormeley 译） | Balzac | 1,410 | 17,608 | **FULL** 1–1410 | H01、H02、H03、H06、H07、H09、H15 |
+| PG1374 | Vendetta | Balzac（Wormeley 译） | Balzac | 2,971 | 34,982 | **FULL** 1–2971 | H01–H06、H08、H09、H11、H13–H15 |
+| PG840 | Lorna Doone: A Romance of Exmoor | Blackmore | 单本 | 25,696 | 362,366 | **PARTIAL** 5 窗口（600 行） | H12、H13、H15、C1/副文本契约 |
+| PG388 | The Crossing | Churchill | 单本 | 23,563 | 283,220 | **PARTIAL** 5 窗口（600 行） | H02、H03、H07、H10、H11、H12 |
+| PG12175 | The Nest of the Sparrowhawk | Orczy | Orczy | 11,260 | 126,603 | **PARTIAL** 5 窗口（600 行） | H02、H03、H10、H13 |
+| PG6872 | The Battle Ground | Glasgow | 单本 | 14,108 | 177,014 | **PARTIAL** 5 窗口（600 行） | H07、H11、H12、H13、H14、H15 |
+| PG1460 | The Black Dwarf | Scott | Scott | 6,153 | 82,136 | STRUCTURAL | 未进规则正文（伪编者框架仅作结构对照） |
+| PG2034 | Waverley; or, 'Tis sixty years since | Scott | Scott | 19,329 | 256,572 | STRUCTURAL | 05 §4（“六十年”副文本结构） |
+| PG2710 | Louise de la Vallière | Dumas | 单本 | 22,612 | 241,783 | STRUCTURAL | 未引用（仅索引） |
+| PG37481 | The Tangled Skein | Orczy | Orczy | 11,330 | 122,952 | STRUCTURAL | 未引用（仅索引） |
+| PG39786 | Beau Brocade: A Romance | Orczy | Orczy | 9,662 | 106,212 | STRUCTURAL | 未引用（仅索引） |
+| PG48963 | The Viper of Milan | Bowen | 单本 | 13,510 | 139,538 | STRUCTURAL | C1（出版商序言，05 §2） |
+| PG5343 | Rainbow Valley | Montgomery | 单本 | 9,022 | 110,240 | STRUCTURAL | 类型边界（不作历史证据，05 §4） |
+| PG5897 | Castle Richmond | Trollope | 单本 | 22,141 | 270,280 | STRUCTURAL | U03（导言“documentary”自称） |
+| PG67929 | The Bridal Wreath | Undset（Archer/Scott 译） | 单本 | 12,016 | 150,093 | STRUCTURAL | 05 §4（三卷结构对照） |
+| PG8385 | The Short Line War | Merwin & Webster | 单本 | 7,509 | 82,708 | STRUCTURAL | 类型边界（不作历史证据） |
+| PG864 | The Master of Ballantrae | Stevenson | 单本 | 8,691 | 116,827 | STRUCTURAL | 05 §4（日期化章题对照） |
+
+- 合计：220,983 行 / 2,681,134 o200k tok；SHA-256 17/17 实测见 `inputs/manifest.yaml` 与 `materials/2026-10-25/source-verification.json`。
+- 实读：2 FULL + 4 PARTIAL = 6 本 / 6,781 行 / 约 82,537 o200k tok（3.08%）。
+- 族计权：Balzac（2 本）、Orczy（3 本）、Scott（2 本）各计 1 族；其余 10 本各 1 族；合计 13 族（含 2 本类型边界书）。
+
+## 2. 引文格式（强制）
+
+```
+PG####（强度）L###–###：“≤25 词逐字英文引文”
+```
+
+- 强度只能是 `FULL`、`PARTIAL`、`STRUCTURAL`。
+- `PARTIAL` 引文必须落在下列窗口内，窗口外一律不得引用：
+  - PG840：1–120；6424–6543；12848–12967；19272–19391；25577–25696
+  - PG388：1–120；5890–6009；11781–11900；17672–17791；23444–23563
+  - PG12175：1–120；2815–2934；5630–5749；8445–8564；11141–11260
+  - PG6872：1–120；3527–3646；7054–7173；10581–10700；13989–14108
+- `STRUCTURAL` 引文只能来自 `notes/structural/struct-PG####.md` 中的书名页/章题/首尾取样，并注明“档案取样”。
+- 引文必须逐字（保留原始拼写与用词）；弯/直引号、撇号与破折号按 ASCII 归一（`’`→`'`、`“”`→`"`、`—`/`--`→`--`），不改变词形；不得补词、改词、合并两处不相邻文本。
+
+## 3. 编号约定
+
+- 规则：`H01–H15`（本 Skill 自有编号，不与外部 P 编号混用）。
+- 反例：`A01–A08`；冲突：`C1–C7`；未决：`U01–U04`。
+- 证据文件：FULL 书为 `notes/evidence/card-PG####.md`；PARTIAL 书为 `notes/evidence/partial-PG####.md`；STRUCTURAL 为 `notes/structural/struct-PG####.md`。
+- 覆盖状态总表：`notes/coverage-ledger.md`（17 行，逐本）。
+
+## 4. 引用核验路径（三级）
+
+1. 本索引 → 对应 references 的规则段；
+2. 规则段 → `notes/evidence/` 证据卡/窗口卡（同一行号）；
+3. 证据卡 → `notes/coverage-ledger.md` → 原文 `整本阅读版.txt` 的对应行（FULL/PARTIAL 窗口内）。
+
+任何一级对不上，引用即作废；不得用“大意如此”替代逐字引文。
+
+## 5. 覆盖声明（不得省略）
+
+- 本 Skill 的规则主要来自 **Balzac 两本（FULL）** 与 **四本 PARTIAL 窗口**；11 本 STRUCTURAL 未读正文。
+- 因而：**不能**声称“17 本历史小说都如此”；**不能**把 STRUCTURAL 书的章题当正文风格证据；**不能**把 PARTIAL 窗口外的情节写进示例。
+- 具体限制见 `05-antipatterns-and-boundaries.md` §4 与 `notes/structural-usage.md`。

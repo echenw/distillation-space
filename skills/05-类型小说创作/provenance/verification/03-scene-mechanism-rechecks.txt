@@ -1,0 +1,219 @@
+{"pg": "PG55749", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/06-伏笔悬念与节奏/PG55749-The-Raven-and-The-Philosophy-of-Composition/整本阅读版.txt", "sha256": "6f1c489054ac4df69cca23aa0515c30ad57271dfe2ef45f7c871b043eeef0b05", "lines": 769, "windows": [[290, 320], [400, 445], [485, 500], [590, 630], [655, 670]]}
+
+WINDOW PG55749 L290-320
+290: considerations inevitably led me to the long “o” as the most sonorous
+291: vowel, in connection with “r” as the most producible consonant.
+292: 
+293: The sound of the refrain being thus determined, it became necessary to
+294: select a word embodying this sound, and at the same time in the fullest
+295: possible keeping with that melancholy which I had predetermined as the
+296: tone of the poem. In such a search it would have been absolutely
+297: impossible to overlook the word “Nevermore.” In fact, it was the very
+298: first which presented itself.
+299: 
+300: The next desideratum was a pretext for the continuous use of the one
+301: word “Nevermore.” In observing the difficulty which I at once found in
+302: inventing a sufficiently plausible reason for its continuous repetition,
+303: I did not fail to perceive that this difficulty arose solely from the
+304: pre-assumption that the word was to be so continuously or monotonously
+305: spoken by a human being—I did not fail to perceive, in short, that the
+306: difficulty lay in the reconciliation of this monotony with the exercise
+307: of reason on the part of the creature repeating the word. Here, then,
+308: immediately arose the idea of a non-reasoning creature capable of
+309: speech; and, very naturally, a parrot, in the first instance, suggested
+310: itself, but was superseded forthwith by a Raven, as equally capable of
+311: speech, and infinitely more in keeping with the intended tone.
+312: 
+313: [Illustration]
+314: 
+315: I had now gone so far as the conception of a Raven—the bird of ill
+316: omen—monotonously repeating the one word, “Nevermore,” at the conclusion
+317: of each stanza, in a poem of melancholy tone, and in length about one
+318: hundred lines. Now, never losing sight of the object supremeness, or
+319: perfection, at all points, I asked myself—“Of all melancholy topics,
+320: what, according to the universal understanding of mankind, is the most
+
+WINDOW PG55749 L400-445
+400: eight of these feet—the second of seven and a half (in effect
+401: two-thirds)—the third of eight—the fourth of seven and a half—the fifth
+402: the same—the sixth, three and a half. Now, each of these lines, taken
+403: individually, has been employed before, and what originality “The Raven”
+404: has, is in their combination into stanza: nothing even remotely
+405: approaching this combination has ever been attempted. The effect of this
+406: originality of combination is aided by other unusual and some altogether
+407: novel effects, arising from an extension of the application of the
+408: principles of rhyme and alliteration.
+409: 
+410: The next point to be considered was the mode of bringing together the
+411: lover and the Raven—and the first branch of this consideration was the
+412: locale. For this the most natural suggestion might seem to be a forest,
+413: or the fields—but it has always appeared to me that a close
+414: circumscription of space is absolutely necessary to the effect of
+415: insulated incident: it has the force of a frame to a picture. It has an
+416: indisputable moral power in keeping concentrated the attention, and, of
+417: course, must not be confounded with mere unity of place.
+418: 
+419: I determined, then, to place the lover in his chamber—in a chamber
+420: rendered sacred to him by memories of her who had frequented it. The
+421: room is represented as richly furnished—this, in mere pursuance of the
+422: ideas I have already explained on the subject of beauty as the sole true
+423: poetical thesis.
+424: 
+425: The locale being thus determined, I had now to introduce the bird—and
+426: the thought of introducing him through the window was inevitable. The
+427: idea of making the lover suppose, in the first instance, that the
+428: flapping of the wings of the bird against the shutter is a “tapping” at
+429: the door, originated in a wish to increase, by prolonging, the reader’s
+430: curiosity, and in a desire to admit the incidental effect arising from
+431: the lover’s throwing open the door, finding all dark, and thence
+432: adopting the half-fancy that it was the spirit of his mistress that
+433: knocked.
+434: 
+435: I made the night tempestuous, first, to account for the Raven’s seeking
+436: admission, and, secondly, for the effect of contrast with the (physical)
+437: serenity within the chamber.
+438: 
+439: I made the bird alight on the bust of Pallas, also for the effect of
+440: contrast between the marble and the plumage—it being understood that the
+441: bust was absolutely suggested by the bird—the bust of Pallas being
+442: chosen, first, as most in keeping with the scholarship of the lover,
+443: and, secondly, for the sonorousness of the word, Pallas, itself.
+444: 
+445: About the middle of the poem, also, I have availed myself of the force
+
+WINDOW PG55749 L485-500
+485: the dénouement—which is now brought about as rapidly and as directly as
+486: possible.
+487: 
+488: With the dénouement proper—with the Raven’s reply, “Nevermore,” to the
+489: lover’s final demand if he shall meet his mistress in another world—the
+490: poem, in its obvious phase, that of a simple narrative, may be said to
+491: have its completion. So far, everything is within the limits of the
+492: accountable—of the real. A Raven, having learned by rote the single
+493: word, “Nevermore,” and having escaped from the custody of its owner, is
+494: driven at midnight, through the violence of a storm, to seek admission
+495: at a window from which a light still gleams,—the chamber-window of a
+496: student, occupied half in poring over a volume, half in dreaming of a
+497: beloved mistress deceased. The casement being thrown open at the
+498: fluttering of the bird’s wings, the bird itself perches on the most
+499: convenient seat out of the immediate reach of the student, who, amused
+500: by the incident and the oddity of the visitor’s demeanour, demands of
+
+WINDOW PG55749 L590-630
+590: 
+591:  Presently my soul grew stronger; hesitating then no longer,
+592:  “Sir,” said I, “or Madam, truly your forgiveness I implore;
+593:  But the fact is I was napping, and so gently you came rapping,
+594:  And so faintly you came tapping, tapping at my chamber door,
+595:  That I scarce was sure I heard you”—here I opened wide the door;—
+596:      Darkness there and nothing more.
+597: 
+598: [Illustration: _Copyright 1906 by The Harwell-Evans Co._]
+599: 
+600: [Illustration]
+601: 
+602:  Deep into that darkness peering, long I stood there wondering, fearing,
+603:  Doubting, dreaming dreams no mortal ever dared to dream before;
+604:  But the silence was unbroken, and the stillness gave no token,
+605:  And the only word there spoken was the whispered word, “Lenore!”
+606:  This I whispered, and an echo murmured back the word, “Lenore!”
+607:      Merely this and nothing more.
+608: 
+609: [Illustration]
+610: 
+611:  Back into the chamber turning, all my soul within me burning,
+612:  Soon again I heard a tapping somewhat louder than before.
+613:  “Surely,” said I, “surely that is something at my window lattice;
+614:  Let me see, then, what thereat is, and this mystery explore—
+615:  Let my heart be still a moment and this mystery explore;—
+616:      ’Tis the wind and nothing more.”
+617: 
+618: [Illustration: _Copyright 1906 by The Harwell-Evans Co._]
+619: 
+620: [Illustration]
+621: 
+622:  Open here I flung the shutter, when, with many a flirt and flutter,
+623:  In there stepped a stately Raven of the saintly days of yore.
+624:  Not the least obeisance made he; not a minute stopped or stayed he;
+625:  But, with mien of lord or lady, perched above my chamber door—
+626:  Perched upon a bust of Pallas just above my chamber door—
+627:      Perched, and sat, and nothing more.
+628: 
+629: [Illustration]
+630: 
+
+WINDOW PG55749 L655-670
+655:  Till I scarcely more than muttered “Other friends have flown before—
+656:  On the morrow he will leave me, as my hopes have flown before.”
+657:      Then the bird said, “Nevermore.”
+658: 
+659: [Illustration: _Copyright 1906 by The Harwell-Evans Co._]
+660: 
+661: [Illustration]
+662: 
+663:  Startled at the stillness broken by reply so aptly spoken,
+664:  “Doubtless,” said I, “what it utters is its only stock and store
+665:  Caught from some unhappy master whom unmerciful Disaster
+666:  Followed fast and followed faster till his songs one burden bore—
+667:  Till the dirges of his Hope that melancholy burden bore
+668:      Of ‘Never—nevermore.’”
+669: 
+670: [Illustration]
+{"pg": "PG2026", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/17-高级叙事与表现/01-动作与打斗/PG2026-The-Coming-Conquest-of-England/整本阅读版.txt", "sha256": "295c59937b4a0094eb9e66874c664c20e3e2a4c4e763b74721ce96256f2bcbfd", "lines": 11971, "windows": [[3465, 3490]]}
+
+WINDOW PG2026 L3465-3490
+3465: The English prepared for a decisive battle, for already the head of
+3466: the Russian columns was no further than ten English miles north of
+3467: the mausoleum of the Emperor Jahangir at Shah Dara, a military station
+3468: scarcely eight English miles north-west of Lahore.
+3469: 
+3470: The English troops advanced in their concentrated formation in single
+3471: line; their left wing occupied the Shah Dara plantations and the pontoon
+3472: bridge across the river Ravi that flows close to Lahore. It extended
+3473: thence five English miles further eastwards to a canal which flows
+3474: past the Shalimar Park towards the south. This park and a place called
+3475: Bhogiwal, lying next to it, formed the right wing. Before their front
+3476: stretched a tributary of the sinuous Ravi with its marshy banks. To the
+3477: rear of their position lay the fortress of Lahore with its brick wall,
+3478: fifteen feet in height, pierced by thirteen gates.
+3479: 
+3480: The Ravi, a tributary of the Indus, had at this time but little water.
+3481: The bed of the river was for the most part dry, and only consisted of
+3482: rapid, irregular rivulets, which here and there exposed between them
+3483: larger and smaller, but for the most part, muddy islands. The bed of
+3484: this river formed the chief obstacle to the Russian attack, for they had
+3485: to pass it before reaching the English front and the city of Lahore.
+3486: 
+3487: Heideck occupied a small tent that he had brought with him from
+3488: Chanidigot. Morar Gopal’s horse had carried it on its back during the
+3489: march from Mooltan to Lahore, for the lancers, whom Heideck had joined
+3490: as being a friend of their officers, had not covered the distance by
+{"pg": "PG2600", "path": "/Users/aizou/Desktop/工作台/knowledge-distillation-workspace/archives/novel-craft-history/_source-store/novel-craft-reference-library-20261021-r12/分类/17-高级叙事与表现/01-动作与打斗/PG2600-War-and-Peace/整本阅读版.txt", "sha256": "841254e45cac8dfda9ff0870f544e67eff7302e9bf56614c5efe5f4a9b6bd479", "lines": 65650, "windows": [[13760, 13785]]}
+
+WINDOW PG2600 L13760-13785
+13760: and as he went on became more and more animated. He told them of his
+13761: Schön Grabern affair, just as those who have taken part in a battle
+13762: generally do describe it, that is, as they would like it to have been,
+13763: as they have heard it described by others, and as sounds well, but not
+13764: at all as it really was. Rostóv was a truthful young man and would on
+13765: no account have told a deliberate lie. He began his story meaning to
+13766: tell everything just as it happened, but imperceptibly, involuntarily,
+13767: and inevitably he lapsed into falsehood. If he had told the truth to his
+13768: hearers—who like himself had often heard stories of attacks and had
+13769: formed a definite idea of what an attack was and were expecting to hear
+13770: just such a story—they would either not have believed him or, still
+13771: worse, would have thought that Rostóv was himself to blame since what
+13772: generally happens to the narrators of cavalry attacks had not happened
+13773: to him. He could not tell them simply that everyone went at a trot and
+13774: that he fell off his horse and sprained his arm and then ran as hard as
+13775: he could from a Frenchman into the wood. Besides, to tell everything as
+13776: it really happened, it would have been necessary to make an effort of
+13777: will to tell only what happened. It is very difficult to tell the truth,
+13778: and young people are rarely capable of it. His hearers expected a story
+13779: of how beside himself and all aflame with excitement, he had flown like
+13780: a storm at the square, cut his way in, slashed right and left, how his
+13781: saber had tasted flesh and he had fallen exhausted, and so on. And so he
+13782: told them all that.
+13783: 
+13784: In the middle of his story, just as he was saying: “You cannot imagine
+13785: what a strange frenzy one experiences during an attack,” Prince

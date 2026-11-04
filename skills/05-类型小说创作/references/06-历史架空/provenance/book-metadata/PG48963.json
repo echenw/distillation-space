@@ -1,0 +1,38 @@
+{
+  "id": "PG48963",
+  "title": "The Viper of Milan: A Romance of Lombardy",
+  "author": "Bowen, Marjorie, 1888-1952",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/48963",
+  "source_catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "source_catalog_issued": "2015-05-15",
+  "source_catalog_subjects": "Historical fiction; Adventure stories; Lombardy (Italy) -- History -- Fiction",
+  "source_catalog_locc": "PR",
+  "source_mirror_url": "https://mirrors.xmission.com/gutenberg/4/8/9/6/48963/48963-0.txt",
+  "source_mirror_file_size": 566202,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG48963-The-Viper-of-Milan-A-Romance-of-Lombardy/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG48963-The-Viper-of-Milan-A-Romance-of-Lombardy/整本阅读版.txt",
+  "raw_sha256": "367fe721b89d8ab75b3d0649dab9c27ea28419653576d21bdf7a30415be0dd58",
+  "reading_sha256": "bf96aa3d5ee5e271e22919e6ac22c3ee837916eafb5d210ea795dd884142ec9f",
+  "raw_bytes": 566202,
+  "reading_bytes": 566095,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG48963-The-Viper-of-Milan-A-Romance-of-Lombardy",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "edition_note": "Candidate from official PG downloadable catalog; book was not read. Fiction case/craft source role provisional.",
+  "source_rights_warning": "Project Gutenberg has US public-domain rules and exceptions. Verify status per text and jurisdiction. Non-full text is metadata only.",
+  "acquisition_failure_reason": null,
+  "raw_text_encoding": "UTF-8",
+  "source_license_check": "MIRROR_HEADER_SCREENED_US_PD_RULES_NOT_LEGAL_OPINION"
+}

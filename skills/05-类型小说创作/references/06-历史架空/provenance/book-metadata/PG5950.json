@@ -1,0 +1,36 @@
+{
+  "id": "PG5950",
+  "title": "The Fortunes of Nigel",
+  "author": "Scott, Walter, 1771-1832",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/5950",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; London (England) -- History -- 17th century -- Fiction; Scots -- England -- Fiction; Great Britain -- History -- James I, 1603-1625 -- Fiction; James I, King of England, 1566-1625 -- Fiction",
+  "source_catalog_issued": "2004-06-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/5/9/5/5950/5950-0.txt",
+  "mirror_reported_size": 1194166,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG5950-The-Fortunes-of-Nigel",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "32f72e1ef039325a123a96051e0681c39b1d486ccf935720620bae20aba2a112",
+  "reading_sha256": "258cd7df279215a557e374ad4f1f2aa687a7a932a1edf00749416dde806542fe",
+  "raw_bytes": 1194166,
+  "reading_bytes": 1174420,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG5950-The-Fortunes-of-Nigel/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG5950-The-Fortunes-of-Nigel/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

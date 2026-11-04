@@ -1,0 +1,36 @@
+{
+  "id": "PG30939",
+  "title": "The Works of Robert Louis Stevenson - Swanston Edition, Vol. 12",
+  "author": "Stevenson, Robert Louis, 1850-1894",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/30939",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Inheritance and succession -- Fiction; Revenge -- Fiction; Psychological fiction; Brothers -- Fiction; Absence and presumption of death -- Fiction",
+  "source_catalog_issued": "2010-01-11",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/0/9/3/30939/30939-8.txt",
+  "mirror_reported_size": 496981,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG30939-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-12",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "d20a6c5e3921fa0dc2e2f571de4ece57a14a5e8cdb0398024251a7c946db1c49",
+  "reading_sha256": "3a5f6e2fcf164537e5b86f5e37157415450bff0796eed325b66dda8dd45ac315",
+  "raw_bytes": 496981,
+  "reading_bytes": 477133,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG30939-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-12/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG30939-The-Works-of-Robert-Louis-Stevenson-Swanston-Edition-Vol-12/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

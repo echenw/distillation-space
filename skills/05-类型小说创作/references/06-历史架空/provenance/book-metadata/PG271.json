@@ -1,0 +1,36 @@
+{
+  "id": "PG271",
+  "title": "Black Beauty",
+  "author": "Sewell, Anna, 1820-1878",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/271",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Horses -- Juvenile fiction; Human-animal relationships -- Juvenile fiction; Great Britain -- History -- 19th century -- Juvenile fiction",
+  "source_catalog_issued": "2006-01-16",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/2/7/271/271-0.txt",
+  "mirror_reported_size": 307560,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG271-Black-Beauty",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "7e4e9a073504044e83af53fb1d729348c6d6ff7cce9a2d9c9513b9632f77b0a5",
+  "reading_sha256": "6630d911f45f5d5e9802dba896423f2b8669475a328f2e10f73178a728c07765",
+  "raw_bytes": 307560,
+  "reading_bytes": 307458,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG271-Black-Beauty/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG271-Black-Beauty/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

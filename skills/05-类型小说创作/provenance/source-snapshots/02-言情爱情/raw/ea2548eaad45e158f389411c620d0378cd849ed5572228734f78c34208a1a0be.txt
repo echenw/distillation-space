@@ -1,0 +1,34 @@
+# 版本、历史元数据和来源可信度
+
+本轮同 Round 返工；修改前的旧 skill.zip、skill-closure.json 和逐文件 SHA 存于外层 notes/rework-baseline，不覆盖旧 results。
+历史 Skill：distill/分类蒸馏/16-类型小说专项/02-言情爱情/批次-06/results/skills/romance-craft-b06
+历史扩展元数据：{"version": "2.0.0", "license": "内部蒸馏产物（B-03-B06，18/18 源全文实读；13 个独立来源族）"}
+历史版本：2.0.0
+来源 identity SHA：18/18；可信 FULL：18/18；其他：0（完整区间扫描不是可信全文阅读证明）。
+许可：原版无明确授权的内容标 LICENSE_NOT_DECLARED，不虚构原文/译本商用许可，短引保留 PG/行号。
+真实宿主测试 NOT_RUN，P5/GQ5 NOT_PROVEN，P6/P7 NOT_DONE；不能把静态 PASS 当生成效果 PASS。
+F=作品事实，H=跨书归纳，P=作者可选动作。单来源例子和同作者系列不得自动增加独立族数。
+实际规则权威：本轮修改的原核心参考文件 > p4-field-guide 速查；所有旧固定数值只有在当前规则成立时才能用。
+
+## 全部来源与作用
+
+| PG | P2 | 对应旧规则 | 作用 / 限制 |
+|---|---|---|---|
+| PG1028 | TRUSTED_FULL | R10, R11, R15, R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG121 | TRUSTED_FULL | R01, R14 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1245 | TRUSTED_FULL | R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG141 | TRUSTED_FULL | R06, R07, R15 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1437 | TRUSTED_FULL | R01, R02, R14 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1556 | TRUSTED_FULL | R13, R15 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1586 | TRUSTED_FULL | R02, R11, R12, R13, R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1608 | TRUSTED_FULL | R04, R08, R12, R14, R15 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG16804 | TRUSTED_FULL | R06, R07, R11, R14 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG1684 | TRUSTED_FULL | R02, R06, R07, R10, R11, R14, R15 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG22000 | TRUSTED_FULL | R03, R10 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG24000 | TRUSTED_FULL | R13, R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG3166 | TRUSTED_FULL | R03, R05, R06, R07, R08, R09, R10, R11, R12, R13, R14, R15 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG42812 | TRUSTED_FULL | R01, R05, R11 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG4721 | TRUSTED_FULL | R08, R09, R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG544 | TRUSTED_FULL | R04, R09, R14, R16 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG67123 | TRUSTED_FULL | R02, R04, R14 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |
+| PG77271 | TRUSTED_FULL | R01, R05, R14 | 在规则中作为 F/正例/限制/冲突，需逐条辨析 |

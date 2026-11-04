@@ -1,0 +1,40 @@
+# 来源索引（29 本）
+
+状态口径：FULL = 逐行实读；PARTIAL = 仅读计划窗口；STRUCTURAL = 仅结构档案；UNREAD = 未读。行号为 `整本阅读版.txt` 行号。作者标 UNVERIFIED 者，结构档案与已读窗口均未给出，未另行查证。
+
+| # | PGID | 标题 | 作者 | 状态 | 行数 | 被规则引用 |
+|---|---|---|---|---|---|---|
+| 1 | PG73604 | The Red Fetish | Frank Belknap Long, Jr. | FULL | 534 | R1 R3 R4 R10 R12 R14 R15 |
+| 2 | PG64595 | Animat | Basil Wells | FULL | 787 | R1 R2 R3 R4 R6 R7 R8 R15 |
+| 3 | PG58748 | Escape Velocity | Charles L. Fontenay | FULL | 1201 | R1 R3 R4 R7 R9 R10 R13 R14 R15 |
+| 4 | PG1465 | The Wreck of the Golden Mary | Charles Dickens（与 Wilkie Collins 合著） | FULL | 1088 | R1 R2 R4 R8 R9 R10 R11 R12 R15 |
+| 5 | PG62319 | Cosmic Castaway | Carl Jacobi | FULL | 1861 | R2 R3 R5 R7 R10 R13 |
+| 6 | PG1268 | The Mysterious Island | Jules Verne | PARTIAL（5 窗口） | 23108 | R4 R5 R7 R13 |
+| 7 | PG35155 | The Betrothed | Alessandro Manzoni | PARTIAL（5 窗口） | 17499 | R8 R9 |
+| 8 | PG33516 | Abandoned | Jules Verne | PARTIAL（5 窗口） | 8705 | R5 R6 R7 R11 R13 |
+| 9 | PG46600 | By the World Forgot | Cyrus Townsend Brady | PARTIAL（5 窗口） | 10714 | R3（反面对照）R12 |
+| 10 | PG789 | The Gathering of Brother Hilarius | Michael Fairless | STRUCTURAL | 3319 | 未引用（类型背景） |
+| 11 | PG1625 | The Frozen Deep | Wilkie Collins | STRUCTURAL | 3658 | 族内对照（未引句） |
+| 12 | PG2127 | Paul and Virginia | Bernardin de Saint-Pierre（UNVERIFIED） | STRUCTURAL-概览 | 4244 | 未引用 |
+| 13 | PG34009 | Stranded in Arcady | Francis Lynde | STRUCTURAL | 5566 | 未引用（结构对照） |
+| 14 | PG1652 | The Survivors of the Chancellor | Jules Verne | STRUCTURAL | 5779 | 结构对照（未引句） |
+| 15 | PG36950 | Richard Galbraith, Mariner | UNVERIFIED | STRUCTURAL-概览 | 6051 | 未引用 |
+| 16 | PG33660 | The Year When Stardust Fell | Raymond F. Jones | STRUCTURAL | 7660 | 结构对照：升级阶梯章目 |
+| 17 | PG33187 | By Right of Conquest | G. A. Henty（UNVERIFIED） | STRUCTURAL-概览 | 7453 | 未引用 |
+| 18 | PG14249 | Half A Chance | A. M. Williamson 等（UNVERIFIED） | STRUCTURAL-概览 | 7751 | 未引用 |
+| 19 | PG20084 | The Beach of Dreams | H. de Vere Stacpoole | STRUCTURAL | 8212 | 结构对照（章目） |
+| 20 | PG10076 | Lister's Great Adventure | UNVERIFIED | STRUCTURAL-概览 | 8979 | 未引用 |
+| 21 | PG13967 | Nedra | George Barr McCutcheon（UNVERIFIED） | STRUCTURAL-概览 | 9289 | 未引用 |
+| 22 | PG19649 | The Captain of the Kansas | Louis Tracy | STRUCTURAL | 9442 | 结构对照（章目） |
+| 23 | PG35823 | The Secret of the Reef | Harold Bindloss | STRUCTURAL | 10925 | 结构对照（章目） |
+| 24 | PG37954 | Maid of the Mist | John Oxenham | STRUCTURAL | 11869 | 结构对照（五部体） |
+| 25 | PG21552 | Masterman Ready | Frederick Marryat | STRUCTURAL | 10687 | 结构对照（章目） |
+| 26 | PG27982 | The Ocean Waifs | Mayne Reid | STRUCTURAL | 12857 | 结构对照（章目） |
+| 27 | PG11703 | The Swiss Family Robinson | Johann David Wyss（英译） | STRUCTURAL | 12212 | 结构对照（章目） |
+| 28 | PG30365 | In Desert and Wilderness | Henryk Sienkiewicz | STRUCTURAL | 14461 | 结构对照；与 PG60177 同族 |
+| 29 | PG60177 | Through the Desert | Henryk Sienkiewicz | STRUCTURAL | 14420 | 结构对照；与 PG30365 同族 |
+
+## 引用密度说明
+- 规则引文只来自 9 本实读本（5 FULL + 4 PARTIAL）。
+- STRUCTURAL 20 本中，14 本读过完整 struct 档案，仅用于类型/结构对照；6 本只用 corpus-overview，未进入任何规则。
+- 族去重：凡尔纳（PG1268/PG33516/PG1652）=1；显克维奇（PG30365/PG60177）=1；狄更斯-柯林斯（PG1465/PG1625）=1；其余各 1。共 24 族。

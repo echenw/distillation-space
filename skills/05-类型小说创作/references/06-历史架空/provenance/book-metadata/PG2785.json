@@ -1,0 +1,39 @@
+{
+  "id": "PG2785",
+  "title": "The Elusive Pimpernel",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Project_Gutenberg_public_mirror",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/2785",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/2/7/8/2785/2785-0.txt",
+  "mirror_reported_size": 516937,
+  "source_issued_at": "2001-08-01",
+  "source_subjects": "Historical fiction; France -- History -- Revolution, 1789-1799 -- Fiction; Adventure stories; Blakeney, Percy, Sir (Fictitious character) -- Fiction; Nobility -- Great Britain -- Fiction",
+  "source_rights_caveat": "Gutenberg official catalog+public mirror; per-work and jurisdiction rights must be checked independently",
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG2785-The-Elusive-Pimpernel",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "40ab3e61982cb10e5f35554f9ed01447aaa6b5eceb2362d5dc287c0ed850a5f5",
+  "reading_sha256": "df261d42f311f7917eba06cadef6004a22bda1fe251450aa0d2f8bd5e573856d",
+  "raw_bytes": 516937,
+  "reading_bytes": 497187,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG2785-The-Elusive-Pimpernel/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG2785-The-Elusive-Pimpernel/整本阅读版.txt",
+  "content_status_reason": null,
+  "source_role_note": "Fiction narrative or play case; only descriptive structural observations, not authorial instructions.",
+  "editorial_match_basis": "PG_CATALOG_SUBJECT_ONLY_NOT_YET_READ",
+  "material_file_type": "BOOK_OR_STORY_OR_DRAMATIC_SCRIPT",
+  "source_text_charset": "utf-8",
+  "acquisition_screen": "HEADERS_AND_GUTENBERG_WRAPPERS_SCREENED_US_PD_NOT_LEGAL_CERTIFICATION"
+}

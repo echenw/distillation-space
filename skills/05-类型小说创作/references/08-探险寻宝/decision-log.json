@@ -1,0 +1,261 @@
+[
+  {
+    "id": "A01",
+    "old_claim": "批次=新类型/三要素正格",
+    "evidence_reason": "B01 M23、B02T01与B03彩票非寻宝反例均不支持硬定义",
+    "decision": "REVISE",
+    "current_target": "AT01；目标可混合"
+  },
+  {
+    "id": "A02",
+    "old_claim": "子类不足停全部/海盗不能科技/科幻不能羊皮纸",
+    "evidence_reason": "B03路由仅样本分布，没有不可能性的证据",
+    "decision": "REVISE",
+    "current_target": "AT01；按正典条件选机制"
+  },
+  {
+    "id": "A03",
+    "old_claim": "反派不能弃金、主角三弃",
+    "evidence_reason": "PG710只有局部价值轨迹，无法约束所有角色",
+    "decision": "REVISE",
+    "current_target": "AT02/M01"
+  },
+  {
+    "id": "A04",
+    "old_claim": "藏宝四问每项一工艺/每宝人命价",
+    "evidence_reason": "物质因果有用，固定配方证据不足",
+    "decision": "REVISE",
+    "current_target": "AT03"
+  },
+  {
+    "id": "A05",
+    "old_claim": "短2–3/长5–8线索、三现、至少三地点",
+    "evidence_reason": "B01最终与B02/03逐条撤回配额",
+    "decision": "REJECT",
+    "current_target": "AT04/09；数量按功能"
+  },
+  {
+    "id": "A06",
+    "old_claim": "假线索必须同语义域",
+    "evidence_reason": "PG63657时间误导是局部模式，非穷尽",
+    "decision": "REVISE",
+    "current_target": "AT04/M17"
+  },
+  {
+    "id": "A07",
+    "old_claim": "有第二来源就可信、无就仅信念",
+    "evidence_reason": "B03 C2未证明第二来源独立或第一个一定不可靠",
+    "decision": "REVISE",
+    "current_target": "AT04；质量/独立性/验证"
+  },
+  {
+    "id": "A08",
+    "old_claim": "独占令读者无法推理、永不能与分散同作",
+    "evidence_reason": "PG2424/74835是不同结构，读者和人物可共享唯一证据",
+    "decision": "REVISE",
+    "current_target": "AT05；持有链转移"
+  },
+  {
+    "id": "A09",
+    "old_claim": "两制度、分权必书面、禁止投票",
+    "evidence_reason": "B01较晚最终取消硬门；历史只能说明可选组织",
+    "decision": "REVISE",
+    "current_target": "AT06"
+  },
+  {
+    "id": "A10",
+    "old_claim": "六类反派固定败法/声望必破",
+    "evidence_reason": "类型不能证明固定结局，允许混合转变",
+    "decision": "REVISE",
+    "current_target": "AT07"
+  },
+  {
+    "id": "A11",
+    "old_claim": "产业链逐幕固定、逃亡必弃财",
+    "evidence_reason": "故事需要和信息顺序不同，保留各环节条件",
+    "decision": "REVISE",
+    "current_target": "AT08"
+  },
+  {
+    "id": "A12",
+    "old_claim": "工程必口述/失败付伤亡/意识必三拍",
+    "evidence_reason": "PG9150是同作异译，London同作者，数量不支持通则",
+    "decision": "REVISE",
+    "current_target": "AT09/M12–13/M25"
+  },
+  {
+    "id": "A13",
+    "old_claim": "所有超常机械揭底",
+    "evidence_reason": "Keesh理性合同不约束奇幻/未知恐怖",
+    "decision": "REVISE",
+    "current_target": "AT10/M20"
+  },
+  {
+    "id": "A14",
+    "old_claim": "讽刺作品全作不算正典",
+    "evidence_reason": "讽刺意图和虚构世界事实是不同层级",
+    "decision": "REVISE",
+    "current_target": "AT10；判明被讽刺对象"
+  },
+  {
+    "id": "A15",
+    "old_claim": "正当性四问必先于一切且缺写即最大问题",
+    "evidence_reason": "B03示例未给全文，不能以缺开场说明判全作缺陷",
+    "decision": "REVISE",
+    "current_target": "AT11；按任务与风险选择"
+  },
+  {
+    "id": "A16",
+    "old_claim": "取证后必等待/每程序迫害配反制/必须制度遗憾",
+    "evidence_reason": "PG69036/63856是局部选择，完美或不完美结算皆可",
+    "decision": "REVISE",
+    "current_target": "AT11/M14–16"
+  },
+  {
+    "id": "A17",
+    "old_claim": "非人必科学家破译并武器化、数据必死",
+    "evidence_reason": "B01最终无此硬门；实验设计不等于伤亡证明",
+    "decision": "REVISE",
+    "current_target": "AT12"
+  },
+  {
+    "id": "A18",
+    "old_claim": "每强权装置一破解、压迫技术必毁、情绪固定排名",
+    "evidence_reason": "仅特定书内设定与伦理主张",
+    "decision": "REVISE",
+    "current_target": "AT12–13"
+  },
+  {
+    "id": "A19",
+    "old_claim": "第二人称/海滩/死刑交换/叙述者死亡/沉默英雄固定模板",
+    "evidence_reason": "B02 RE01/03/06/14/16与B03反例撤销必需性，手法仍可选",
+    "decision": "REVISE",
+    "current_target": "AT14；RE细节表"
+  },
+  {
+    "id": "A20",
+    "old_claim": "ON THE BEACH等于地理海滩",
+    "evidence_reason": "旧例指落魄者处境，最新反驳改成海滩地点，语义错位",
+    "decision": "REVISE",
+    "current_target": "AT14/RE06双义分开"
+  },
+  {
+    "id": "A21",
+    "old_claim": "歌声只在改变线索才保留",
+    "evidence_reason": "B03自身含气氛/身份/凶兆，艺术功能可独立成立",
+    "decision": "REVISE",
+    "current_target": "AT14；需证据时才查译码"
+  },
+  {
+    "id": "A22",
+    "old_claim": "暴力至少一装置/死亡不节量/先血腥才可停",
+    "evidence_reason": "两作现象不支持普遍剂量命令",
+    "decision": "REVISE",
+    "current_target": "AT15"
+  },
+  {
+    "id": "A23",
+    "old_claim": "三声部、喜剧最高、每次自评；灾难三拍/世俗禁宗教",
+    "evidence_reason": "单书审美结构不能普遍化",
+    "decision": "REVISE",
+    "current_target": "AT15"
+  },
+  {
+    "id": "A24",
+    "old_claim": "嵌套≤5%、必须证书和微悬疑",
+    "evidence_reason": "史料/自供/传记形态多样，数字无证明",
+    "decision": "REVISE",
+    "current_target": "AT16"
+  },
+  {
+    "id": "A25",
+    "old_claim": "因果与反目标不能混用、结局四选一",
+    "evidence_reason": "可按事件和动机层并存；不等于静默改用户目标",
+    "decision": "REVISE",
+    "current_target": "AT17"
+  },
+  {
+    "id": "A26",
+    "old_claim": "反派诗性死亡限1–2次/只有特定反派可用",
+    "evidence_reason": "作品道德回环不支持次数和类型硬门",
+    "decision": "REVISE",
+    "current_target": "AT17/M32"
+  },
+  {
+    "id": "A27",
+    "old_claim": "M28只能器物制度不能人物/必须反派受罚",
+    "evidence_reason": "原PG9150例恰指母子并营救，旧边界自相矛盾",
+    "decision": "REVISE",
+    "current_target": "AT18/M28；虚构复杂性与现实害人建议分开"
+  },
+  {
+    "id": "A28",
+    "old_claim": "时代语言一律删除、不得写他者声音",
+    "evidence_reason": "不把历史群体偏见当规范；批判性历史呈现可以保留",
+    "decision": "REVISE",
+    "current_target": "AT18/M19"
+  },
+  {
+    "id": "A29",
+    "old_claim": "B01 23/21作者族、PG2226在B01、PG44875=Captain Horn",
+    "evidence_reason": "最终身份表改20族，PG2226在B03，PG44875为Midge卷一；Captain Horn是B02 PG12190",
+    "decision": "REVISE",
+    "current_target": "source-index与身份记录"
+  },
+  {
+    "id": "A30",
+    "old_claim": "异译冲突一律PG12051为准、卷二无资格",
+    "evidence_reason": "同作异译不加独立权重，但各译独有证据应保留；B01无卷二，B02实际有PG44876",
+    "decision": "REVISE",
+    "current_target": "跨批身份条件，不能把B01无证扩成全融合禁用"
+  },
+  {
+    "id": "A31",
+    "old_claim": "PG44875光学句L4706–4707；黑板同归L7562–7571",
+    "evidence_reason": "实际原文窗口逐行读取证实L4680–4681/L7571/L7705，见citation-corrections.md",
+    "decision": "REVISE",
+    "current_target": "AT15/M26/M30；原句证据已落盘"
+  },
+  {
+    "id": "A32",
+    "old_claim": "PG9150罪址引句L11894–11895含11896",
+    "evidence_reason": "最新与历史范围不一致，保留较宽L11894–11896为候选，未核原书",
+    "decision": "NOT_PROVEN",
+    "current_target": "M32，禁止假精准"
+  },
+  {
+    "id": "A33",
+    "old_claim": "B02 PG4074/848/421/66728/14355是本批支撑",
+    "evidence_reason": "不在B02最新29源集；旧元数据还错标作者Cook/Stilson/Stables",
+    "decision": "REVISE",
+    "current_target": "候选技法条件保留，PG锚为历史跨批待证；最新身份表为主"
+  },
+  {
+    "id": "A34",
+    "old_claim": "脚本SEG_PASS即引文证明",
+    "evidence_reason": "历史脚本只查词片段是否存在，忽略顺序/邻接且把范围裁进合法边界",
+    "decision": "REJECT",
+    "current_target": "不以SEG_PASS代替逐句与语义核验；脚本只留证据"
+  },
+  {
+    "id": "A35",
+    "old_claim": "结构FULL等于可信深读/静态PASS等于效果",
+    "evidence_reason": "B02有废弃伪FULL，B03部分回源重建；本轮读Skill不冒称87PG全文",
+    "decision": "REVISE",
+    "current_target": "阅读台账与源报告分开，GQ5 NOT_PROVEN"
+  },
+  {
+    "id": "A36",
+    "old_claim": "P/R全局无冲突、最新截断句补写",
+    "evidence_reason": "B01 P468等混挂；最新06末句未完不能想象续文",
+    "decision": "NOT_PROVEN",
+    "current_target": "任务+PG+卡号联合键，截断原文归档"
+  },
+  {
+    "id": "A37",
+    "old_claim": "一切UNRESOLVED=0、ADOPT数证明可靠",
+    "evidence_reason": "旧M01–24/M01–32总数及最终REVISE状态不同，数量非有效性",
+    "decision": "REJECT",
+    "current_target": "本轮18条件规则独立裁决"
+  }
+]

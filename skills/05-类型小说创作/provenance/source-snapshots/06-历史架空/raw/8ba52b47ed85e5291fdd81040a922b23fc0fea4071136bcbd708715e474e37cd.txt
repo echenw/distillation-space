@@ -1,0 +1,84 @@
+# 02 · 空间、物件与生计（H03 / H06 / H07 / H12）
+
+每条规则：**规则句 → F 证据（PG + 行号 + ≤25 词逐字引文 + 证据强度）→ when / when_not → 失效模式（反例）→ 产出物**。
+
+---
+
+## H03 空间先于行动：门闩、墙缝、潮汐先交代后使用（ADOPT）
+
+**规则句**：任何犯罪、藏匿、逃脱、审判的关键动作，只能使用读者已经见过的空间物件。先让叙述者把平面图交代清楚（哪怕显得啰嗦），再让行动发生；事后审判/揭底时，证据就是这些物件的状态。
+
+**F 证据**
+- PG1433（FULL）L398-400：“for, on an accurate knowledge of the premises depends an understanding of my tale”——叙述者自己声明空间说明的必要性。
+- PG1433（FULL）L392-420：双门、铁杠、两道门闩、薄板墙、上锁的院门、两只狗。
+- PG1433（FULL）L854-856：审讯以“This morning all the windows and doors were found securely fastened.”反证被告。
+- PG1374（FULL）L292-299：“The entrance to the attic above his apartments was walled up.”加上室内螺旋梯，才使“藏人在画室上方”成立；L556-592 的墙缝、鹰徽、呼吸声全部建立在此布局上。
+- PG12175（PARTIAL）L8476-8481：“The chalk of a truth looked slimy and green, and might cause the unwary to trip”；L11179-11181 提前交代帽子与黑丝面罩放在高处，供人发现。
+
+**when**：密室/凶案/藏匿/追捕/法庭反证；任何需要“读者能自己验算”的场景。
+**when_not**：公路/行军/海战等移动场景——改用里程、口粮、天气（PG388 L5976-5979：一百英里、每人四天口粮）。
+**失效模式**：决定性物证在揭底时才第一次出现→读者觉得作弊；空间说明变成建筑论文→节奏死。语料的比例是“一段说明 + 立刻使用”。
+
+**产出物**：场面平面图（入口/出口/藏点/目击点/已交代物件/最后一次被检查的时间）。
+
+---
+
+## H06 经济账本：物价、欠款、口粮写进冲突（ADOPT）
+
+**规则句**：给故事至少三个可核的数字：手上的钱（含货币种类）、欠款/利息、每日口粮或租税。让历史通胀、军饷拖欠、职业竞争直接决定人物能做什么。
+
+**F 证据**
+- PG1433（FULL）L184-186：“an actual treasure in those days when assignats were reaching their lowest depreciation”——货币贬值决定一笔小钱的分量。
+- PG1374（FULL）L2439-2440：“for all my back pay is there,” replied Luigi. “I have mortgaged it to a worthy fellow named Gigonnet.”军饷拖欠被抵押。
+- PG1374（FULL）L2743-2744：“he resolved to sell himself to be a substitute for military service”——兵役顶替市场是历史制度，也是卖身。
+- PG1374（FULL）L2554-2562：“the picture-dealers requested Ginevra to give them something beside copies”——复制画市场饱和，艺术劳动贬值。
+
+**when**：贫困/阶层下滑/婚姻经济/战后复员/饥荒。
+**when_not**：贵族荣誉剧——改用“地位通货”（PG1374 L1774-1780：“Monsieur is not decorated.”）。
+**失效模式**：只写“他们很穷”而不写数字→读者无法计算风险；数字过多像账本→每幕只留一个关键数字。
+
+**产出物**：账本三行（现金与货币 / 欠款与利息 / 每日口粮或租税）+ 一个“价格冲击事件”。
+
+---
+
+## H07 物件写关系：衣物、家具、食物暴露身份（CONDITIONAL）
+
+**规则句**：让物件出现在“交换、争夺、羞耻、炫耀”的动作里，而不是清单里。每件物件回答：谁拥有、谁不能用、谁因此被认出。
+
+**F 证据**
+- PG388（PARTIAL）L99-111：熊皮、玉米饼、鹿肉、葫芦杯，以及“Among them was a gown of silk, of a fine, faded pattern, over which I was wont to speculate.”——一件不适用的丝绸裙写出母亲的身世缺口。
+- PG6872（PARTIAL）L3534-3547：巴黎领巾被嫌“too fancy”；“Uncle Shadrach wouldn't wear it for worlds--he wears only papa's clothes”——衣物把阶级与奴役关系一次说清。
+- PG1433（FULL）L320-325：老板娘的帽子、胸衣、钥匙串被当作“all distinctive signs of the mistress of a German inn”——服饰是角色类型，也是叙述者的观察方式。
+
+**when**：需要在不解释的情况下交代阶层、职业、信仰、地域；或需要一件“可被偷/被送/被烧”的物件推动情节。
+**when_not**：物件与冲突无关时不要写；A02 服饰清单不是历史。
+**失效模式**：物件只被描写、不被使用→静态造型；物件象征过于直白（丝绸=堕落）→说教。
+
+**产出物**：物件关系表（物件 / 拥有者 / 交换或争夺场合 / 暴露的身份 / 最后下落）。
+
+---
+
+## H12 风景要付账：景物 = 生计或障碍（ADOPT）
+
+**规则句**：一段景物描写必须属于某人的账：它是收成、牲畜、道路、潮汐、租金或危险。若删掉景物，人物的风险不变，则删掉。
+
+**F 证据**
+- PG840（PARTIAL）L12954-12958：“yet for us, with our flock beneath it, this great mount had but little charm”——同一场雪，对无羊者是美景，对有羊者是坟墓。
+- PG840（PARTIAL）L12941-12959：羊群被埋在雪堆下，四人挖洞、贴耳听声——风景直接变成劳动场面。
+- PG6872（PARTIAL）L10691-10694：“it seemed to him that, for the first time, he grasped the full meaning of a war for the people of the soil”，紧接“This was the real thing--not the waving banners, not the bayonets, not the fighting in the ranks.”
+- PG388（PARTIAL）L5948-5970：法国旧堡的坍圮棱堡与“La Belle Rivière”之名，把三层历史压进一处废墟。
+
+**when**：开篇定调、行军、灾害、边境、农村/庄园题材。
+**when_not**：城市室内剧——改用房间、楼梯、街道噪音；不要为“美”而写景。
+**失效模式**：纯游记式景物（删掉不影响情节）→读者跳读；把灾害写成奇观而不写损失→失去赌注。
+
+**产出物**：景物账（景物 / 谁的收益或损失 / 可量化后果 / 是否推动下一场戏）。
+
+---
+
+## 物件—空间—账本的联动（写作用检查）
+
+1. 先画平面图，再决定“哪个物件在哪个位置被谁看见”（H03）。
+2. 给每个关键物件标价或标债（H06），让它可被典当、抵押、偷窃。
+3. 让景物只通过“劳动/损失”被看见（H12）。
+4. 最后检查：删掉年代标签，以上四件是否仍然成立？成立=历史压力已内化；不成立=还在靠布景（A08）。

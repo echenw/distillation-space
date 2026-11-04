@@ -1,0 +1,95 @@
+# 03 — 远征组织、逃亡、生存与绝境工程（M04 / M10 / M11 / M12 / M13 / M25）
+
+## §1 寻宝远征的组织学（M04，ADOPT｜6 族）
+
+**规则**：远征队按"专业互补表"分配角色；扩编用服务准入 + 书面条款；内部分歧用**否决权机制**而非争吵；出发/冲关节点配宣言仪式。
+
+- **分工分权**（P482）："We've divided our leadership. We've got specialities."——决策权随领域切换。
+- **服务准入**（P483）：边缘人以持续服务换取随行资格——"I'm seventy, and ain't starved to death never yet."；退出条款书面化（"shift for yourself as soon as you get to Dawson"）。
+- **替补否决权**（P484）：缺席成员的否决权效果**取决于否决者的知情顺序**——"The old codger goes down the Yukon with us, stack on that!"
+- **断退路**（P306 / P485）："We turn back for nothing. And those of us that dies at the oars will live again and go on pulling."
+- **经验升职**（P518）：以具体工艺知识当场解决问题赢得决策圈席位（腌牛肉工艺）。
+- **抢任务独裁**（P561）：指挥官为独占敢死任务持枪缴械己方 + 定时自锁（45 分钟后队友可破门）——独断与善后的配套。
+
+**when**：多人远征主线。
+**when_not**：孤胆主角 → **降级分支**：组织学压缩为**向导单关系**（P290 契约人格向导："his wage was to be…and he would go with us"）。
+
+**失败出口**：
+- 分工制**不可全员表决化**——关键时刻远征是独裁的（P526 留守抵押 / P561 抢任务），民主只在低风险决策中使用。若写成事事投票，远征的张力消失。
+- 若队伍扩编没有书面条款 → 补一条退出条款，否则后续分裂没有制度抓手。
+
+## §2 生存极境五律（M12，ADOPT｜4 族）
+
+**规则**：生存线按**定位 → 压力 → 对决 → 转向 → 余波**五拍配置；每条生存线**至少一处意志宣言**。
+
+1. **心图导航**（P447）："the sun roughly marked the northwest" + 记忆图表 + 地名口诀——无地图者的定位法。
+2. **恐慌式分装清点**（P448）："There were sixty-seven. He counted them three times to make sure."——资源焦虑的身体仪式。
+3. **等生对赌**（P451）："in the very grip of Death he defied Death and refused to die."——**仅适用双方都濒死的对称局面**。
+4. **环境推理定向**（P488 东行推理）："both wounded moose had trailed to him from the east. Therefore, in the east, were men."
+5. **囤积后遗症**（P452）："lined with hardtack; the mattress was stuffed with hardtack…Yet he was sane."——苦难已改写人格的物证。
+
+**when**：荒野 / 极地 / 沙漠 / 海难 / 太空失联。
+**when_not**：城市生存 → 五律降维为资源管理；不对称濒死局面 → 不用等生对赌，改用 `05 §2` 非人对手破译法。
+
+**失败出口**：若人与自然之间没有可目测的反馈（写不出环境推理）→ 跳过第 4 拍，用资源耗尽替代，勿编造伪定向推理。
+
+## §3 濒死意识三部曲（M13，ADOPT｜2 族 ⚠ 同作者 London 双本）
+
+**⚠ 使用限制**：本条仅 2 族且**同为 London 作品**，应视为 **London 个人风格**而非行业通则。**借用须明署**，不得表述为"濒死段落的通用写法"。
+
+**规则**：濒死段落按三拍写——
+1. **意识退行**（P486）：当前任务在深层意识中重构为神话原型——"went to myth-making, and sun-heroizing, himself hero-maker and the hero in quest of the immemorable treasure"（淘金=金羊毛=太阳英雄）。
+2. **现实外部重击**（P487）：唤醒装置必须是**感官暴烈的外部物理事件**——"the smash of reality from without, crashing upon his ear drums in a loud, explosive snort"（撞进火堆的驼鹿）。
+3. **推理转向**（P488）：以**一个环境推理**作为第一理性动作（东行推理）。
+
+**when**：长线绝境的中点/低谷。
+**when_not**：短促危机（三拍需要篇幅，压不出层次就别用）。
+**失败出口**：若写不出具体的神话对应物（退行拍落空）→ 退回去用 §2 五律，不要写抽象的"他感到自己在远古"。
+
+## §4 逃亡与藏匿工艺（M11，ADOPT｜5 族）
+
+**规则**：逃亡线按工序配置——**纪律 → 掩护壳 → 变现 → 终极隐身**。
+
+- **夜行军纪律**（P480）："only walk at night…no fire…the general trend is all I need to get there again"——记趋势不记细节。
+- **掩护壳**：以**最不引人注目的日常行为**为壳——伪宗教禁忌（P472）、假公务出逃（P535，"to buy a Fraight of Rice for the publick Account"）、假宫殿掩护（P534）。
+- **变现路线**（P533 洗白三段式）：先买易出手的货 → 中转出售 → 终点分金。
+- **终极隐身**（P531）："I intend to go and live in some inland Town, where, as they have…no Notion of the Sea, so they will not be inquisitive after us."
+- **换装脱壳**（PG788 台账 L1723–1733，F 级证据未单列 P 号）："we had at last changed places"——尸体 + 衣 + 位置三方交换；"逐一挪动、以小时计"的耐心写实。
+- **体面叛变礼仪**（P528）：给拒绝者安全离开 + 归还个人物品（"gave the Master his Books"）。
+
+**when**：被追捕 / 潜逃 / 金盆洗手。
+**when_not**：正面突围 → 改用 §1 断退路 + 冲关宣言。
+**失败出口**：财富反噬（见 `01 §1` 第三态）是逃亡的**内置障碍**——逃亡者带不走全部财富。**弃财的选择必须成戏**；若写成轻松带走全部财宝，逃亡线失去压力。
+
+## §5 追踪结构双镜像（M10，CONDITIONAL｜4 族）
+
+**规则**：选轨必须**声明化**，两轨**不可混用**（混用＝既要因果满足又要存在虚无，两头落空）。
+
+- **正格轨**：目标—线索—获取，因果闭合（见 `01 §3`）。
+- **反目标轨**（P463/P464/P465，PG710）：无始无终的生活切片——
+  - 画论框架开篇：`PG710 L4007` "That picture is all end. It has no beginning"
+  - 窗口理论："You saw something without beginning or end…The window is the frame of the picture"（PG710 L4067–4074）
+  - 动机不可知（"I do not know"）
+  - 目的达成即崩塌："now that they have found that for which they look, they are like dead"
+  - **反目标线的追踪者须是委托驱动的工具人**（向导视角）。
+
+**when**：正格=侦探化寻宝；反目标=存在主义向的追猎。
+**when_not**：读者需要明确因果报酬的商业主线 → 正格轨。
+**失败出口**：PG11976 的喜剧追踪（循环骗局收束）是**第三轨**——轻浮调性可以吸收反目标的虚无感。若嫌哲学味太重，用第三轨而非硬套反目标。
+
+## §6 绝境工程学：判据—回退—封堵三段式（M25，ADOPT｜3 族）
+
+**规则**：绝境脱困的可信度来自**程序**而非勇气。按四拍写：
+① **致命项识别**（明确说出"真正会杀死我们的是 X"）→ ② **判据设定**（怎样算成功/失败）→ ③ **回退与封堵**（失败如何立即止损）→ ④ **不可逆动作**留到最后。
+
+- 原型链：潜水钟压缩空气阻水（`PG9150` L8034–8039 "We are just as if we were in a diving-bell"）→ 探孔实验的判据—回退—封堵程序（`PG9150` L8143–8171 "plug up the hole instantaneously, and repeat the experiment higher up"）。
+- **禁止临时引入前文未铺垫的救援物理规则**（PG12051 卡 P50 硬约束）。
+
+**失败成本必须存在（硬）**：探孔实验失败了两次，且最坏情形被明说（`PG9150` L8153 "they must all die of asphyxia"）。**零代价的试错会抽干紧张感**。
+
+**when**：密闭 / 缺氧 / 水困 / 塌方 / 失温等物理性绝境。
+**when_not**：人际对峙型困境 → 改用 `02 §1` 反派类型学 / `04 §3` 程序攻防。
+
+**失败出口**：
+- 若角色动手前无法口述原理 → **读者失去可复核的承诺**，补一句原理阐述或改方案。
+- 若本次脱困需要借用前文**从未展示过**的物理规则 → **违规**，退回去在前文埋一个伏笔再写。

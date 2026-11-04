@@ -1,0 +1,36 @@
+{
+  "id": "PG6407",
+  "title": "The Abbot",
+  "author": "Scott, Walter, 1771-1832",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/6407",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; Biographical fiction; Mary, Queen of Scots, 1542-1587 -- Fiction; Scotland -- History -- Mary Stuart, 1542-1567 -- Fiction",
+  "source_catalog_issued": "2004-09-01",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/6/4/0/6407/6407-0.txt",
+  "mirror_reported_size": 1096341,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG6407-The-Abbot",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "d36dac3f366f5594e44fd38f59143a3d0b9fbbcf89caf48cf07256ae62692854",
+  "reading_sha256": "9fd5cd027ed1071e7a9f8e825fe9baa50e8b5263a97e12f1aba9492a7bc0d963",
+  "raw_bytes": 1096341,
+  "reading_bytes": 1076630,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG6407-The-Abbot/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG6407-The-Abbot/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "utf-8"
+}

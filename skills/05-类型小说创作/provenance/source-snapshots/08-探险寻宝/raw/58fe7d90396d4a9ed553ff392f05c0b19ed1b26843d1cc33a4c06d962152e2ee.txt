@@ -1,0 +1,76 @@
+# 04 — 法律人类学、取证收网、程序攻防与时代口径（M14 / M15 / M16 / M19）
+
+## §1 法律人类学三件套（M14，ADOPT｜4 族）
+
+**规则**：无政府 / 多法域设定按三件套配置世界观。
+
+1. **可变法悲剧**（P455）："How was I to know the way of the white man is never twice the same?"——同一行为在制度变迁前后得到相反结局；Zilla 定理："To-day speak true one way, to-morrow speak true another way, which is to lie."——**制度的不可预测性本身就是悲剧引擎，恶人非必需**。
+2. **最小司法仪式**（P458）：law = "the judgment and the will of any group of people" → 群体无最小规模 → **二人即可组成完整法庭**（同充证人/陪审/法官/刽子手），并保留外部见证程序（"so that white men to come after will know"）。
+3. **麻烦隔离律**（P459）："It is white man's trouble, not Siwash trouble…When white man's trouble and Siwash trouble come together and make a trouble, it is a great trouble, beyond understanding and without end."
+
+**配套**：salvage 法理收束（P407，劫掠成果的合法化通道）；量刑空白讽刺（P514——"There was no proof of their having murdered a white man!"，制度性不义是反派的最后屏障）。
+
+**when**：边疆 / 殖民 / 海盗 / 太空歌剧的法律线。
+**when_not**：成熟法域内的都市故事（法条按现实写）。
+
+**失败出口**：R72 时代口径限制——"法律空白"可作**历史制度事实**保留于 P514，但其**平静语气必须剥离**（见 §4）。若无法在不复述轻蔑语气的前提下写这条，改用"程序性豁免"或"管辖权真空"改写，保机制去语气。
+
+## §2 取证-收网工艺（M15，ADOPT｜3 族）
+
+**规则**：侦探/复仇线按收网链配置；**每一步物证须埋设—回收配对**；取证后**按兵不动**。
+
+1. **四步取证链**（P499，PG69036）：残片 → 弹头 → 口径比对 → 锁定（"my own person was the 'pigeon'"）；事后忍耐律（"He might be reproached with negligence, but not accused of a crime"）。
+2. **放任销赃取证**（P503）：主使证据不足时放任其完成赃物处分——"Bradley must be permitted to sell the cotton. That will be needed to connect him with the theft."
+3. **信贷诱购**（P504）：安排买主以信贷成交——"don't pay cash for it, till you draw upon me!"（交易成立、价金未付的窗口期冻结赃物）。
+4. **光学侦察**（P506）：制高点 + 望远镜双线监控——"quite a new idea in detection."
+5. **编组行进**（P510）：逮捕前夜"let us scatter, and march two, two and one"——人数即威胁信号。
+6. **打捞陈列**（P513）：水底物证按层起出——"more than one shipment of cotton had changed its plantation-mark"。
+
+**when**：罪案 / 劫掠的反制线。
+**when_not**：武力收缴（直接强攻）。
+**失败出口**：完美取证 ≠ 完全正义（P514）——收网结局**可以且应当**保留制度性遗憾。若写成"恶人尽数伏法、制度毫无缺陷"，反而丧失本条规则的批判价值；局部正义比全胜结局更贴合语料实况。
+
+## §3 程序武器的攻防两用（M16，ADOPT｜3 族）
+
+**规则**：在有正式程序的组织中，程序是**双向武器**。反派的每个程序性迫害都应留一条主角可援引的反制条款——**成对设计**。
+
+- **攻侧：假瘟疫隔离**（P567，PG63856）："just a little grease and aluminum powder. The doctor was scared to death…"——油脂 + 铝粉伪造症状；**恐慌替假症完成说服**。
+- **守侧：法庭技术反杀**（P568）：三件套——援引具体条款（"Security Law No. F 1720"，证人未到庭则程序非法）+ 管辖异议 + 反诉；外加对法官的反向威慑。
+- **燃料**：程序武器的终极燃料是**他人对程序的敬畏**。
+
+**when**：船只 / 军营 / 殖民地 / 公司等有正式程序的组织。
+**when_not**：无程序空间 → 改用 §1 法律人类学三件套。
+**失败出口**：程序反杀**不可万能**——PG63856 的反杀只换来"监视释放"。逃出法庭不等于脱离险境；若让程序反杀一次解决所有问题，张力归零。
+
+## §4 时代口径三步剥离纪律（M19，REJECT-as-rule 的执行法）
+
+> 这是 **Skill 的负规则**，对所有其他规则的采纳过程生效。原 R47/R61/R65/R67/R70/R72/R74/R77/R79/R83/R85 十一条全部裁决为 **REJECT-as-rule**（不采纳为规则，仅存档为《历史包袱说明书》）。
+
+**语料事实**：1720–1949 的探险寻宝语料**系统性**携带殖民视角、种族本质化、奴隶制书写的平静语气与性别工具化。这些不是可继承的创作技巧，而是必须剥离的时代包裹。
+
+**三步执行法**：
+
+1. **语言剥离**：种族称谓、本质化形容词**不入正文**。
+   - 存档清单：R47 squaw／R61 民族主义／R65 Indians 游戏语言／R67 "white man's way"／R70 blackbird labour 语汇／R72 奴隶制书写的平静语气／R74 东方主义层级／R77 人种设定喜剧化／R79 拍卖-性别绑定／R83 unattached women 政策／R85 种族能力矩阵。
+2. **结构保留**：法律空白（P514）、能力空洞（P577）、情报网等**机制内核可保留**，但主体必须转写为**个体或组织的专业化局限**（宗教禁忌／技术传统／生理构造／组织规程），不得保留种族本质化表述。
+3. **视角转换**：口述框架**不拟写他者声音**；引用原住民/被殖民者视角时，以**角色地位而非种族标签**定义。
+
+**when**：全部规则采纳场景（**无例外**）。
+**when_not**：无。
+
+**失败出口**：若某条规则的**全部价值都依附于被禁的表述**（剥离后机制不成立）→ **整条弃用**，不要"打个折扣用"。宁缺毋滥。
+
+---
+
+### §4 附：1870s 当代知识的年代标注义务（硬）
+
+PG9150 中的经济/博物学数字是**1870 年代的当代知识**，任何引用必须写明年代：
+
+| 数据 | 位置 | 正确写法 |
+|---|---|---|
+| 象牙年出口 >200 吨（=1,125,000 磅） | PG9150 L9305–9306（整段 L9304–9314） | "1870 年代，欧洲每年输入的象牙超过 200 吨" |
+| Sheffield 刀剪业耗 382,500 磅 | PG9150 L9307–9308 | 同上须标 1870s |
+| 对牙均重 28 磅 | PG9150 L9311 | 同上须标 1870s |
+| Kazonndé 有重达 165 磅者 | PG9150 L9313 | 同上须标 1870s |
+
+**禁止**把这些写成现状陈述或"据统计"式的调查报告口吻。本轮这些数字已由 P4 棒按行实检命中（见 `../notes/quality/review.json` 的引用 accountability 记录）。

@@ -1,0 +1,36 @@
+{
+  "id": "PG35117",
+  "title": "Lord Tony's Wife: An Adventure of the Scarlet Pimpernel",
+  "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+  "language": "en",
+  "status": "FULL_TEXT_VERIFIED",
+  "source_kind": "Gutenberg_independent_mirror_text",
+  "material_role": "FICTION_CASE",
+  "official_url": "https://www.gutenberg.org/ebooks/35117",
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "catalog_subjects": "Historical fiction; France -- History -- Revolution, 1789-1799 -- Fiction; Adventure stories; British -- France -- Fiction; Blakeney, Percy, Sir (Fictitious character) -- Fiction",
+  "source_catalog_issued": "2011-01-30",
+  "mirror_url": "https://mirrors.xmission.com/gutenberg/3/5/1/1/35117/35117-8.txt",
+  "mirror_reported_size": 538660,
+  "categories": [
+    "16-类型小说专项/06-历史架空"
+  ],
+  "folder": "16-类型小说专项/06-历史架空",
+  "book_dir": "分类/16-类型小说专项/06-历史架空/PG35117-Lord-Tony-s-Wife-An-Adventure-of-the-Scarlet-Pimpernel",
+  "progression_mode_codes": [
+    "303",
+    "304",
+    "504",
+    "509"
+  ],
+  "raw_sha256": "44078c9e428d1d4739efe2d2a81cb7d5a2b85dde59081bcfa7198e9e67c271c8",
+  "reading_sha256": "ad082ca96ef45f1a2754ce4037be09e34464ed0ac8e18ead7c4f341aa72ade94",
+  "raw_bytes": 538660,
+  "reading_bytes": 518956,
+  "original_file": "分类/16-类型小说专项/06-历史架空/PG35117-Lord-Tony-s-Wife-An-Adventure-of-the-Scarlet-Pimpernel/原始完整电子书.txt",
+  "reading_file": "分类/16-类型小说专项/06-历史架空/PG35117-Lord-Tony-s-Wife-An-Adventure-of-the-Scarlet-Pimpernel/整本阅读版.txt",
+  "rights": "Project Gutenberg official edition; rights need per-work and jurisdiction verification before reuse",
+  "role_limit": "Fiction/play source gives descriptive cases. Historical craft/criticism requires chapter role triage before rules.",
+  "acquisition_status": "SOURCE_BYTES_AND_MARKERS_VERIFIED_RIGHTS_NOT_LEGAL_CERTIFICATION",
+  "original_encoding": "latin-1"
+}

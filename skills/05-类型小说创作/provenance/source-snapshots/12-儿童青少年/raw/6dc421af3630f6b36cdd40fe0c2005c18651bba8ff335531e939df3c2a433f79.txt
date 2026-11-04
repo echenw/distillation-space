@@ -1,0 +1,35 @@
+# 来源索引 — children-ya-craft-b05
+29 份来源 SHA-256 2026-10-25 全部核验通过。行号均指"整本阅读版.txt"。
+| PG ID | Author/Title/Year | Type | Rules |
+|---|---|---|---|
+| PG11162 | Bannerman, Little Black Mingo, 1901 | FICTION_CASE | — |
+| PG23765 | Dickens, Captain Boldheart, 1868 | FICTION_CASE | — |
+| PG15684 | Various, Summer Holidays | FICTION_CASE | — |
+| PG7856 | Soykins, Cheerful Cricket | FICTION_CASE | RC-01 |
+| PG11991 | Dodge, Po-No-Kah | FICTION_CASE | — |
+| PG24590 | Bailey, Ferdinand Frog | FICTION_CASE | RC-01, RC-06 |
+| PG24592 | Bailey, Snowball Lamb | FICTION_CASE | RC-01, RC-06 |
+| PG18190 | Gruelle, Raggedy Ann, 1918 | FICTION_CASE | RC-03 |
+| PG19425 | Hope, Stuffed Elephant | FICTION_CASE | RC-03 |
+| PG4784 | Spyri, Brother and Sister | FICTION_CASE | — |
+| PG10466 | Burnett, Little Saint Elizabeth | FICTION_CASE | — |
+| PG18990 | Wheeler, Billy Whiskers | FICTION_CASE | RC-01 |
+| PG5835 | Wiggin, Story Hour | MIXED | RC-11 |
+| PG14475 | Abbott, Mary Erskine | FICTION_CASE | — |
+| PG68899 | Vanderbilt, Sparrow the Tramp | FICTION_CASE | — |
+| PG14610 | Burt, Miss Elliot's Girls | FICTION_CASE | — |
+| PG13126 | Various, King's Daughter | FICTION_CASE | RC-15 |
+| PG76009 | Burnett, Piccino | FICTION_CASE | — |
+| PG5271 | Wells, Marjorie's Vacation | FICTION_CASE | — |
+| PG58107 | Bailey, For the Story Teller | MIXED | RC-11, RC-14 |
+| PG479 | Burnett, Little Lord Fauntleroy, 1886 | FICTION_CASE | RC-05 |
+| PG18153 | Aimwell, Oscar | FICTION_CASE | — |
+| PG10433 | Swett, Flock of Girls and Boys | FICTION_CASE | — |
+| PG32241 | ed., Dickens' Children | FICTION_CASE | RC-12 |
+| PG910 | London, White Fang, 1906 | FICTION_CASE | RC-08 |
+| PG74 | Twain, Tom Sawyer, 1876 | FICTION_CASE | RC-09, RC-13 |
+| PG113 | Burnett, Secret Garden, 1911 | FICTION_CASE | RC-04, RC-10 |
+| PG359 | Olcott, Good Stories, 1914 | MIXED | RC-15 |
+| PG3655 | Edgeworth, Parent's Assistant, 1796 | FICTION_CASE | RC-14 |
+## 阅读覆盖声明
+29/29 覆盖：结构扫描+关键章全读+尾部全读。

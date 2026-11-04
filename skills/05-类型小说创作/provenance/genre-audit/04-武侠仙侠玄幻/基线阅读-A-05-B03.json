@@ -1,0 +1,69 @@
+{
+  "task_id": "A-05-B03",
+  "baseline": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft",
+  "status": "FULL_ACTUALLY_READ_BY_AGENT",
+  "pages": 3,
+  "files": [
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/SKILL.md",
+      "skill_relative": "SKILL.md",
+      "bytes": 14731,
+      "sha256": "b752c4df38c6a85a6586e6a80833dcfd1108ab79099df5df2ea8176bab8feb66",
+      "lines": 200
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/agents/openai.yaml",
+      "skill_relative": "agents/openai.yaml",
+      "bytes": 829,
+      "sha256": "1997842d03eeda03f54e7b4d6382a01a3f88a6c4c3f24fc678ac7df30ce71f9b",
+      "lines": 8
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/references/design-and-diagnosis.md",
+      "skill_relative": "references/design-and-diagnosis.md",
+      "bytes": 5702,
+      "sha256": "26f44e3fa7edb3fda5e568d9cf95445d5ca63f0a31da013bb596f8f9d497ae56",
+      "lines": 90
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/references/rules.md",
+      "skill_relative": "references/rules.md",
+      "bytes": 24042,
+      "sha256": "ad099aa7f1dbe3d0026c0ded9e3170f091c548b1a4d69e51548ac91058adc643",
+      "lines": 323
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/references/scope-and-conflicts.md",
+      "skill_relative": "references/scope-and-conflicts.md",
+      "bytes": 5986,
+      "sha256": "440a10ca22617fbf325390a0e5a08845f622da6a2585258361a1e96a369bbc67",
+      "lines": 83
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/references/source-index.md",
+      "skill_relative": "references/source-index.md",
+      "bytes": 8680,
+      "sha256": "33c2c57cf6186369da22fcdbd22c87075a2d39592aa12590851a2320f8fbebf1",
+      "lines": 85
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/templates/diagnosis-report.md",
+      "skill_relative": "templates/diagnosis-report.md",
+      "bytes": 2229,
+      "sha256": "05fc7cdca400fa35c35f9f38db79e76b2fd6518c73c2b7b3094a9db1d141a97e",
+      "lines": 50
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-03/rounds/round-p4-final-2026-10-30/output/supernatural-power-craft/templates/power-system-canvas.md",
+      "skill_relative": "templates/power-system-canvas.md",
+      "bytes": 2583,
+      "sha256": "c2b290c2acf4bf176510d18dbdaa773006897ab245844ae4554e6ae4b694ab08",
+      "lines": 57
+    }
+  ],
+  "read_pages": [
+    1,
+    2,
+    3
+  ]
+}

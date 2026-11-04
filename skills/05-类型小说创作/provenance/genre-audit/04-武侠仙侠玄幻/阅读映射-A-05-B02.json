@@ -1,0 +1,2288 @@
+{
+  "task_id": "A-05-B02",
+  "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab",
+  "base_read_status": "FULL_ACTUALLY_READ_BY_AGENT",
+  "deltas_status": "FULL_ACTUALLY_READ_BY_AGENT",
+  "mappings": [
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/SKILL.md",
+      "sha256": "d51207fbcf3bb9ccfbb8e58117c0498a6bc55d873d6ef23fa19544e431db75ec",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/SKILL.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            2
+          ],
+          "old_lines": [
+            1,
+            2
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            3,
+            3
+          ],
+          "old_lines": [
+            3,
+            3
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            4,
+            4
+          ],
+          "old_lines": [
+            4,
+            4
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            5,
+            8
+          ],
+          "old_lines": [
+            5,
+            4
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            9,
+            11
+          ],
+          "old_lines": [
+            5,
+            7
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            20
+          ],
+          "old_lines": [
+            8,
+            7
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            21,
+            22
+          ],
+          "old_lines": [
+            8,
+            9
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            23,
+            23
+          ],
+          "old_lines": [
+            10,
+            10
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            24,
+            144
+          ],
+          "old_lines": [
+            11,
+            131
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            145,
+            146
+          ],
+          "old_lines": [
+            132,
+            133
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            147,
+            147
+          ],
+          "old_lines": [
+            134,
+            134
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/01-power-system-and-price.md",
+      "sha256": "72a5e1e96fc4e3e3156f5ab91334913b8be7b4a8086556710fd9e0ea7dd29619",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/01-power-system-and-price.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            30
+          ],
+          "old_lines": [
+            12,
+            26
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            31,
+            34
+          ],
+          "old_lines": [
+            27,
+            26
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            35,
+            52
+          ],
+          "old_lines": [
+            27,
+            44
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            53,
+            56
+          ],
+          "old_lines": [
+            45,
+            44
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            57,
+            68
+          ],
+          "old_lines": [
+            45,
+            56
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            69,
+            72
+          ],
+          "old_lines": [
+            57,
+            56
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            73,
+            88
+          ],
+          "old_lines": [
+            57,
+            72
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            89,
+            92
+          ],
+          "old_lines": [
+            73,
+            72
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            93,
+            106
+          ],
+          "old_lines": [
+            73,
+            86
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            107,
+            110
+          ],
+          "old_lines": [
+            87,
+            86
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            111,
+            123
+          ],
+          "old_lines": [
+            87,
+            99
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            124,
+            127
+          ],
+          "old_lines": [
+            100,
+            99
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            128,
+            154
+          ],
+          "old_lines": [
+            100,
+            126
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            155,
+            158
+          ],
+          "old_lines": [
+            127,
+            126
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            159,
+            171
+          ],
+          "old_lines": [
+            127,
+            139
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            172,
+            175
+          ],
+          "old_lines": [
+            140,
+            139
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            176,
+            216
+          ],
+          "old_lines": [
+            140,
+            180
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md",
+      "sha256": "14fc74bf22e7350a1efb05ad9208c04201ec7f1c1adae2c247ab1397ca94a4d0",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            35
+          ],
+          "old_lines": [
+            12,
+            31
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            36,
+            39
+          ],
+          "old_lines": [
+            32,
+            31
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            40,
+            48
+          ],
+          "old_lines": [
+            32,
+            40
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            49,
+            52
+          ],
+          "old_lines": [
+            41,
+            40
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            53,
+            136
+          ],
+          "old_lines": [
+            41,
+            124
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            137,
+            140
+          ],
+          "old_lines": [
+            125,
+            124
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            141,
+            148
+          ],
+          "old_lines": [
+            125,
+            132
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            149,
+            149
+          ],
+          "old_lines": [
+            133,
+            133
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            150,
+            150
+          ],
+          "old_lines": [
+            134,
+            134
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            151,
+            158
+          ],
+          "old_lines": [
+            135,
+            140
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            159,
+            178
+          ],
+          "old_lines": [
+            141,
+            160
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md",
+      "sha256": "1d8a1d1a0d2cc28c09058efcad2d6c11d5cc62ebb6c0989478879e16e37a6498",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            12,
+            12
+          ],
+          "old_lines": [
+            12,
+            12
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            13,
+            13
+          ],
+          "old_lines": [
+            13,
+            13
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            14,
+            14
+          ],
+          "old_lines": [
+            14,
+            19
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            15,
+            15
+          ],
+          "old_lines": [
+            20,
+            20
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            16,
+            21
+          ],
+          "old_lines": [
+            21,
+            21
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            22,
+            22
+          ],
+          "old_lines": [
+            22,
+            22
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            23,
+            23
+          ],
+          "old_lines": [
+            23,
+            28
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            24,
+            24
+          ],
+          "old_lines": [
+            29,
+            29
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            25,
+            25
+          ],
+          "old_lines": [
+            30,
+            30
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            26,
+            26
+          ],
+          "old_lines": [
+            31,
+            31
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            27,
+            32
+          ],
+          "old_lines": [
+            32,
+            37
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            33,
+            33
+          ],
+          "old_lines": [
+            38,
+            38
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            34,
+            34
+          ],
+          "old_lines": [
+            39,
+            39
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            35,
+            35
+          ],
+          "old_lines": [
+            40,
+            40
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            36,
+            54
+          ],
+          "old_lines": [
+            41,
+            46
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            55,
+            64
+          ],
+          "old_lines": [
+            47,
+            56
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            65,
+            65
+          ],
+          "old_lines": [
+            57,
+            57
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            66,
+            66
+          ],
+          "old_lines": [
+            58,
+            58
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            67,
+            67
+          ],
+          "old_lines": [
+            59,
+            64
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            68,
+            68
+          ],
+          "old_lines": [
+            65,
+            65
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            69,
+            74
+          ],
+          "old_lines": [
+            66,
+            66
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            75,
+            75
+          ],
+          "old_lines": [
+            67,
+            67
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            76,
+            85
+          ],
+          "old_lines": [
+            68,
+            73
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            86,
+            87
+          ],
+          "old_lines": [
+            74,
+            75
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            88,
+            91
+          ],
+          "old_lines": [
+            76,
+            75
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            92,
+            120
+          ],
+          "old_lines": [
+            76,
+            104
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            121,
+            124
+          ],
+          "old_lines": [
+            105,
+            104
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            125,
+            196
+          ],
+          "old_lines": [
+            105,
+            176
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md",
+      "sha256": "ec7bd367f9dab814276ecf1ed5b141e6b44c5ed72dbf63f53d5e595ed1424ba1",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            30
+          ],
+          "old_lines": [
+            12,
+            26
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            31,
+            34
+          ],
+          "old_lines": [
+            27,
+            26
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            35,
+            45
+          ],
+          "old_lines": [
+            27,
+            37
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            46,
+            49
+          ],
+          "old_lines": [
+            38,
+            37
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            50,
+            80
+          ],
+          "old_lines": [
+            38,
+            68
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            81,
+            84
+          ],
+          "old_lines": [
+            69,
+            68
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            85,
+            103
+          ],
+          "old_lines": [
+            69,
+            87
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            104,
+            107
+          ],
+          "old_lines": [
+            88,
+            87
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            108,
+            197
+          ],
+          "old_lines": [
+            88,
+            177
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md",
+      "sha256": "2592cad50d78bcf7d60d3e68d878d0adf102136167e98ae4c226395bb9e573a1",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            37
+          ],
+          "old_lines": [
+            12,
+            33
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            38,
+            41
+          ],
+          "old_lines": [
+            34,
+            33
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            42,
+            58
+          ],
+          "old_lines": [
+            34,
+            50
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            59,
+            62
+          ],
+          "old_lines": [
+            51,
+            50
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            63,
+            89
+          ],
+          "old_lines": [
+            51,
+            77
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            90,
+            93
+          ],
+          "old_lines": [
+            78,
+            77
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            94,
+            122
+          ],
+          "old_lines": [
+            78,
+            106
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            123,
+            126
+          ],
+          "old_lines": [
+            107,
+            106
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            127,
+            214
+          ],
+          "old_lines": [
+            107,
+            194
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md",
+      "sha256": "7dd1fb3c8aabcce794e952a843f380783bbf4d43064aad190f711984a526dbb5",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            33
+          ],
+          "old_lines": [
+            12,
+            29
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            34,
+            37
+          ],
+          "old_lines": [
+            30,
+            29
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            38,
+            68
+          ],
+          "old_lines": [
+            30,
+            60
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            69,
+            72
+          ],
+          "old_lines": [
+            61,
+            60
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            73,
+            99
+          ],
+          "old_lines": [
+            61,
+            87
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            100,
+            103
+          ],
+          "old_lines": [
+            88,
+            87
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            104,
+            112
+          ],
+          "old_lines": [
+            88,
+            96
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            113,
+            116
+          ],
+          "old_lines": [
+            97,
+            96
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            117,
+            124
+          ],
+          "old_lines": [
+            97,
+            104
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            125,
+            128
+          ],
+          "old_lines": [
+            105,
+            104
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            129,
+            222
+          ],
+          "old_lines": [
+            105,
+            198
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md",
+      "sha256": "76a9600e686b3d52aff47d0f9d95a1715ff8fc12a468dac9f2649f264c883808",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            11
+          ],
+          "old_lines": [
+            1,
+            11
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            12,
+            15
+          ],
+          "old_lines": [
+            12,
+            11
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            16,
+            23
+          ],
+          "old_lines": [
+            12,
+            19
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            24,
+            27
+          ],
+          "old_lines": [
+            20,
+            19
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            28,
+            47
+          ],
+          "old_lines": [
+            20,
+            39
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            48,
+            51
+          ],
+          "old_lines": [
+            40,
+            39
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            52,
+            123
+          ],
+          "old_lines": [
+            40,
+            111
+          ]
+        },
+        {
+          "relation": "delete",
+          "base_lines": [
+            124,
+            127
+          ],
+          "old_lines": [
+            112,
+            111
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            128,
+            235
+          ],
+          "old_lines": [
+            112,
+            219
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md",
+      "sha256": "456eed10185a886e3a4ea71953e8dde120a4165047dd0a72998953dc00c566f1",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            9
+          ],
+          "old_lines": [
+            1,
+            9
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            10,
+            10
+          ],
+          "old_lines": [
+            10,
+            10
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            11,
+            106
+          ],
+          "old_lines": [
+            11,
+            106
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            107,
+            107
+          ],
+          "old_lines": [
+            107,
+            107
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            108,
+            198
+          ],
+          "old_lines": [
+            108,
+            198
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/source-index.md",
+      "sha256": "64bfca6b4e15d386441eb395fb6d5ffbc44c659e940ca876ccb722c8d2f13136",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/source-index.md",
+      "spans": [
+        {
+          "relation": "delete",
+          "base_lines": [
+            1,
+            2
+          ],
+          "old_lines": [
+            1,
+            0
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            3,
+            16
+          ],
+          "old_lines": [
+            1,
+            14
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            17,
+            19
+          ],
+          "old_lines": [
+            15,
+            17
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            20,
+            31
+          ],
+          "old_lines": [
+            18,
+            29
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            32,
+            32
+          ],
+          "old_lines": [
+            30,
+            30
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            33,
+            36
+          ],
+          "old_lines": [
+            31,
+            34
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            37,
+            37
+          ],
+          "old_lines": [
+            35,
+            35
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            38,
+            46
+          ],
+          "old_lines": [
+            36,
+            44
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            47,
+            47
+          ],
+          "old_lines": [
+            45,
+            45
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            48,
+            58
+          ],
+          "old_lines": [
+            46,
+            56
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            59,
+            59
+          ],
+          "old_lines": [
+            57,
+            57
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            60,
+            60
+          ],
+          "old_lines": [
+            58,
+            58
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            61,
+            63
+          ],
+          "old_lines": [
+            59,
+            61
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            64,
+            81
+          ],
+          "old_lines": [
+            62,
+            79
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/SKILL.md",
+      "sha256": "bffb2326376357aa7941db103f0395d4a727aaa6ddc053b9979728cd5b4e3311",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/SKILL.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            2
+          ],
+          "old_lines": [
+            1,
+            2
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            3,
+            3
+          ],
+          "old_lines": [
+            3,
+            3
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            4,
+            5
+          ],
+          "old_lines": [
+            4,
+            5
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            6,
+            6
+          ],
+          "old_lines": [
+            6,
+            6
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            7,
+            144
+          ],
+          "old_lines": [
+            7,
+            144
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            145,
+            146
+          ],
+          "old_lines": [
+            145,
+            146
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            147,
+            147
+          ],
+          "old_lines": [
+            147,
+            147
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/agents/openai.yaml",
+      "sha256": "dccd20a86ae12da37c12fac1e52b60f97979b0d47437ce893c57f80f5c1929cc",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/agents/openai.yaml"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/01-power-system-and-price.md",
+      "sha256": "6651f00621f3501ee28331ba9e840ab8704c95cd17c9104902d649a371b18ff9",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/01-power-system-and-price.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md",
+      "sha256": "798f651671cfb937edfe02dd69dfb43be1a560578dcc8e16d8914b6ed37fb35c",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            148
+          ],
+          "old_lines": [
+            1,
+            148
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            149,
+            149
+          ],
+          "old_lines": [
+            149,
+            149
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            150,
+            150
+          ],
+          "old_lines": [
+            150,
+            150
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            151,
+            151
+          ],
+          "old_lines": [
+            151,
+            151
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            152,
+            152
+          ],
+          "old_lines": [
+            152,
+            152
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            153,
+            158
+          ],
+          "old_lines": [
+            153,
+            160
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            159,
+            178
+          ],
+          "old_lines": [
+            161,
+            180
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md",
+      "sha256": "e5ed77c80812783d7da2fcfa318e09af684268c2fa23e04aa466908dafc7bc30",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            13
+          ],
+          "old_lines": [
+            1,
+            13
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            14,
+            13
+          ],
+          "old_lines": [
+            14,
+            17
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            14,
+            21
+          ],
+          "old_lines": [
+            18,
+            25
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            22,
+            21
+          ],
+          "old_lines": [
+            26,
+            29
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            22,
+            31
+          ],
+          "old_lines": [
+            30,
+            39
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            32,
+            31
+          ],
+          "old_lines": [
+            40,
+            43
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            32,
+            39
+          ],
+          "old_lines": [
+            44,
+            51
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            40,
+            39
+          ],
+          "old_lines": [
+            52,
+            55
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            40,
+            58
+          ],
+          "old_lines": [
+            56,
+            74
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            59,
+            58
+          ],
+          "old_lines": [
+            75,
+            78
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            59,
+            67
+          ],
+          "old_lines": [
+            79,
+            87
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            68,
+            67
+          ],
+          "old_lines": [
+            88,
+            91
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            68,
+            75
+          ],
+          "old_lines": [
+            92,
+            99
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            76,
+            75
+          ],
+          "old_lines": [
+            100,
+            103
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            76,
+            104
+          ],
+          "old_lines": [
+            104,
+            132
+          ]
+        },
+        {
+          "relation": "insert",
+          "base_lines": [
+            105,
+            104
+          ],
+          "old_lines": [
+            133,
+            136
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            105,
+            176
+          ],
+          "old_lines": [
+            137,
+            208
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md",
+      "sha256": "a3b4567ef805c18e1d15d88eeb5aa62f0c2d12144bf0efcbc035a164786f646c",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md",
+      "sha256": "879d888b0c21f09514444b270ebd7056c31fd59c80072f2471b5c08b1db0ea4d",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md",
+      "sha256": "2a19a2c44c7c2b64f1e3b325ac079945f0a178f27e4ebacccc6585229d061920",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md",
+      "sha256": "129201533bbbe2647d9466b31cc663212b0a66450758c01eb9711ec8906754dc",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md",
+      "sha256": "7b050e974588a2fb3ff61095a0a7e9b9dc42147b87e25a5c178a2ab2e1fd15a7",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            106
+          ],
+          "old_lines": [
+            1,
+            106
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            107,
+            107
+          ],
+          "old_lines": [
+            107,
+            107
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            108,
+            198
+          ],
+          "old_lines": [
+            108,
+            198
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/p4-field-guide.md",
+      "sha256": "a57ccc1a165f456035992305525de2e3b16c48cafb541f088eae560f009e82c4",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/p4-field-guide.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            28
+          ],
+          "old_lines": [
+            1,
+            28
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            29,
+            29
+          ],
+          "old_lines": [
+            29,
+            29
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            30,
+            68
+          ],
+          "old_lines": [
+            30,
+            68
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            69,
+            69
+          ],
+          "old_lines": [
+            69,
+            69
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            70,
+            78
+          ],
+          "old_lines": [
+            70,
+            78
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/source-index.md",
+      "sha256": "b0a823850d2e76ee57afd84ba560614238259aae318ccde8a3ee5778164d3318",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/results/skills/fantasy-adventure-structure-lab/references/source-index.md",
+      "spans": [
+        {
+          "relation": "insert",
+          "base_lines": [
+            1,
+            0
+          ],
+          "old_lines": [
+            1,
+            2
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            79
+          ],
+          "old_lines": [
+            3,
+            81
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent-b-2026-10-30/output/fantasy-adventure-structure-lab/references/version-and-provenance.md",
+      "sha256": "84037806a23646613f7a24062d0f3a62e34c338b3ae4dc8e86cd632aa0fbd4db",
+      "type": "full-known-base-plus-delta",
+      "base": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/version-and-provenance.md",
+      "spans": [
+        {
+          "relation": "equal",
+          "base_lines": [
+            1,
+            6
+          ],
+          "old_lines": [
+            1,
+            6
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            7,
+            7
+          ],
+          "old_lines": [
+            7,
+            7
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            8,
+            27
+          ],
+          "old_lines": [
+            8,
+            27
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            28,
+            29
+          ],
+          "old_lines": [
+            28,
+            29
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            30,
+            30
+          ],
+          "old_lines": [
+            30,
+            30
+          ]
+        },
+        {
+          "relation": "replace",
+          "base_lines": [
+            31,
+            31
+          ],
+          "old_lines": [
+            31,
+            31
+          ]
+        },
+        {
+          "relation": "equal",
+          "base_lines": [
+            32,
+            42
+          ],
+          "old_lines": [
+            32,
+            42
+          ]
+        }
+      ],
+      "reading_status": "FULL_ACTUALLY_READ_BY_AGENT"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/SKILL.md",
+      "sha256": "d41134ae46a9fbfefcebbb0c1f5961b9763552992e9d524c8fcf5c1906fefd80",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/SKILL.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/agents/openai.yaml",
+      "sha256": "dccd20a86ae12da37c12fac1e52b60f97979b0d47437ce893c57f80f5c1929cc",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/agents/openai.yaml"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/01-power-system-and-price.md",
+      "sha256": "6651f00621f3501ee28331ba9e840ab8704c95cd17c9104902d649a371b18ff9",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/01-power-system-and-price.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md",
+      "sha256": "9b1c85ada73e145347c0fb6dda904e97067dc3454592f5b99784efbb2aa0d9ac",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/02-institutions-power-and-crowd.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md",
+      "sha256": "2b53af9e97d4a3ce3a23e8e42878a0b0ac9eea2ef0ff31285eab1e1380c88d08",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/03-identity-disguise-and-proof.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md",
+      "sha256": "a3b4567ef805c18e1d15d88eeb5aa62f0c2d12144bf0efcbc035a164786f646c",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/04-oaths-contracts-and-mirror-punishment.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md",
+      "sha256": "879d888b0c21f09514444b270ebd7056c31fd59c80072f2471b5c08b1db0ea4d",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/05-quest-chain-aid-and-pursuit.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md",
+      "sha256": "2a19a2c44c7c2b64f1e3b325ac079945f0a178f27e4ebacccc6585229d061920",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/06-superstition-disenchantment-and-horror.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md",
+      "sha256": "129201533bbbe2647d9466b31cc663212b0a66450758c01eb9711ec8906754dc",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/07-rumor-ending-and-craft.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md",
+      "sha256": "70172b83131a498742bd21e2a57fa27c02990a07d7efe8b22fd209bcde10e903",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/08-conflicts-and-redlines.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/p4-field-guide.md",
+      "sha256": "84bd64e2c5263d71359f88576c66125b65c0cc1d24f4e58ca66818136c1e11e3",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/p4-field-guide.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/source-index.md",
+      "sha256": "8087b5894c92c3afb0ede46f213dbda4f490c20a2e3b342d5f1db8555430f67a",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/source-index.md"
+    },
+    {
+      "path": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/version-and-provenance.md",
+      "sha256": "05ae545115c0d93508ed773978779717c5f3d3ceff7ac0ef4eee01e7dbc15fd5",
+      "type": "byte-identical",
+      "read_as": "distill/分类蒸馏/16-类型小说专项/04-武侠仙侠玄幻/批次-02/rounds/round-p4-agent1-final-2026-10-30/output/fantasy-adventure-structure-lab/references/version-and-provenance.md"
+    }
+  ]
+}
