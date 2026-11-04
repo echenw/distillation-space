@@ -4,7 +4,7 @@
 
 先读这几句：
 - 先判断作品靠什么制造压力：物资倒计时、自然节律、关系信任、制度失灵，还是身份冲突。这里管环境优先级、清点与度量、据点改制、危机升级、群体治理、士气、求救信道和收束。
-- 规则是可选的小说设计动作，书中情节是作品现象。这里不提供现实的应急、医疗、航海和危险工程操作指南。
+- 规则是可选的小说设计动作，故事内情节是作品现象。这里不提供现实的应急、医疗、航海和危险工程操作指南。
 - 案例只是样本，只适用于相应作品和情节条件，不能推定其他作品或真实读者的效果。
 
 ## 读哪个文件
@@ -15,7 +15,7 @@
 | 据点、打捞、技术 | [rules.md](rules.md) SD-05–SD-07；[mechanisms.md](mechanisms.md) 的材料、转运、器物部分 | 空间卡、改制链、约束和替代 |
 | 群体、制度、伦理 | [rules.md](rules.md) SD-08–SD-09、SD-11 | 权责与知情表、冲突的两个分支及后果 |
 | 求救、结局 | [rules.md](rules.md) SD-10、SD-12–SD-13 | 信道的因果、伏笔兑现、所得所失 |
-| 诊断现稿 | [workflow.md](workflow.md)、[templates.md](templates.md)、[examples.md](examples.md) | 真实的原文位置、最小修改、回看 |
+| 诊断现稿 | [workflow.md](workflow.md)、[templates.md](templates.md)、[examples.md](examples.md) | 真实的当前文本位置、最小修改、回看 |
 | 只有一部作品支撑的机制 | [rules.md](rules.md) SD-14；[mechanisms.md](mechanisms.md) | 依据的边界和没证实的部分 |
 
 ## 一次任务的顺序

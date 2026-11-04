@@ -17,7 +17,9 @@
 | 侦探入局、调查停滞、敌我信息、机构和媒体 | [investigation-and-institutions.md](investigation-and-institutions.md)（MY-04） | 每场的状态变化、权限渠道、假设检验、选择的后果 |
 | 动机、复仇、灵异、人物关系和结局 | [motive-and-resolution.md](motive-and-resolution.md)（MY-05） | 关系和利益链、世界规则、解答、证明、裁决、后果 |
 | 工作表和修正案例 | [worksheets-and-cases.md](worksheets-and-cases.md)（MY-06） | 有位置的诊断、最小改法、替代方案、回看 |
-| 具体案例的观察和使用限制 | [case-notes.md](case-notes.md)（MY-07） | 案例写了什么、能借什么、不能推出什么 |
+| 可迁移的案例机制与使用限制 | [case-notes.md](case-notes.md)（MY-07） | 有哪些可迁移机制、能借什么、不能推出什么 |
+
+公平性与篇幅匹配：需要检查关键结论是否有可及线索、替代解释是否排除，以及线索复杂度是否适合篇幅时，使用 [fairness-and-format.md](fairness-and-format.md)。
 
 ## 一次任务的顺序
 

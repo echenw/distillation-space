@@ -3,10 +3,10 @@
 返回 [SKILL.md](../SKILL.md)。FC 规则的正文分在四个文件里：[rules-premise-and-structure.md](rules-premise-and-structure.md)（FC-01 至 FC-06）、[rules-units-and-endings.md](rules-units-and-endings.md)（FC-07 至 FC-10）、[rules-drafting.md](rules-drafting.md)（FC-11 至 FC-16）、[rules-revision-and-method.md](rules-revision-and-method.md)（FC-17 至 FC-21）。SKILL.md 和流程文件只引用 FC 编号，不复制完整的规则；说法不一致时，以这四个文件为准。
 
 读法：
-- 每条规则包含：层级、规则、用在、看什么、分支（含反信号）、怎么做、交付、反例、适用范围、卡住时、依据、来源数、来源类型、冲突、可信度。不把一条规则压成一句口号用。
-- 依据里不标的，是作者明说的方法；标“评论”“作品”“分类资料”“混合文本”“推断”的，含义见 [scope-and-conflicts.md](scope-and-conflicts.md) §4.3。来源数按不同的书计，同一本书多段只算一次；同作者、转引、同编者造成的重叠在条目里注明；反证和正面的来源不相加冒充“多来源共识”。
+- 每条规则包含：层级、规则、适用场景、观察信号、分支与反信号、操作步骤、交付、反例、适用范围、卡住时的处理和验证边界。不要把一条规则压成一句口号。
+- 规则是诊断与练习工具，不是成功保证；真实写作效果和读者反应仍需在具体作品中验证。
 - 范围：28 本材料标称 1808–1929 年，主体是 1888–1928 年英美印刷市场的小说作法、短篇工艺、舞台和戏曲，加上古典文论；非西方的现代小说、当代的类型工业、网络长篇和系列、影视和互动叙事、读者实验都没有覆盖。越出这个范围的，标为推断或未证实。
-- 规则的效果都没有在真实的写作任务上验证过；依据的位置在整理证据时回读核对过，这不等于效果验证。
+- 规则的效果尚未通过真实写作任务或受控读者测试验证；把它们作为可检验的工作假设，不当作效果保证。
 
 ---
 
@@ -36,19 +36,11 @@
 - **交付**：`赛道: {篇幅, 媒介, 类型, 交付方式, 读者承诺}`；`借用的规则: []`（每条注明“同赛道或类比”）。
 - **反例**：
   1. **戏剧术不是小说术**：“The art of the playwright is not, then, the art of the novelist.” 把舞台的“每场一个主脑/幕末汇聚”直接当小说章法，会错配单位。处置：舞台规则只在 C 标签内使用；迁小说标为推断，且只借结构层级。
-  2. **传奇为登场而设**：“填词之设，专为登场”。李渔的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。处置：只保留结构层级，声容/居室/饮馔等不迁移。
+  2. **传奇为登场而设**：“填词之设，专为登场”。戏曲写作方法的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。处置：只保留结构层级，声容/居室/饮馔等不迁移。
   3. **短篇以情境为主**：“situation is the main concern of the short story”。这是短篇判断；用它要求长篇“每章一个情境”，会把长篇压成系列短篇。处置：长篇用 FC-06 的主行动/多线，不用本条 A 分支。
 - **适用范围**：全部赛道；但 1900–1926 的“短篇/长篇”字数界线（短篇约 1,000–10,000 词，长篇 ≥50,000 词）只是当时市场约定，当代网文/短篇平台需重标；舞台/戏曲的“幕/折”不能直接换算成小说章。
 - **卡住时**：四项中缺失 ≥2 项，或委托方拒绝给字数/媒介/类型 → 输出三种赛道方案（短篇/长篇/舞台或连载），各写读者承诺、结构代价、所需工时，不写具体场景与比例；等作者选定后再进入下一步。
-- **依据**：
-  -  “The art of the playwright is not, then, the art of the novelist.”
-  - -810 “situation is the main concern of the short story”
-  - -5477 “The aim of a short-story is to produce a single narrative effect…”
-  - -744 “narratives fall naturally into two large divisions”（作者主张、分类资料）
-  -  “填词之设，专为登场”（作者主张，中文引文，戏曲）
-  -  长篇对象（评论；≥50,000 词为操作约定，非原文统计）
-- **冲突**：有条件（K-10 类型边界、K-11 开头策略均以赛道分流）。
-- **可信度**：高（“必须先分流”几乎无反对）；中（具体字数/媒介分界是历史约定，不是统计）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-10、K-11 条件分流；未定时保留选项与代价。
 
 ---
 
@@ -82,14 +74,7 @@
   3. **速写是树、故事是链**：“The tale is a chain; the short-story is a tree.” 速写/印象主义本来就没有“不可逆变化”；强行加情节会毁掉 tone。处置：C 分支只要求 `效果` 与 `未解的问题`，不要求 `不可逆的变化`。
 - **适用范围**：短篇/类型/商业稿最硬；长篇/人物驱动可软化为“方向句”；舞台需要“可演的情境句”；口头故事需要“可复述的钩子”；速写/印象主义只要求 tone 与画面，不要求事件链。
 - **卡住时**：写不出 `胚故事`（谁+困境+选择+代价）→ 不要开始写场景；回到素材层，列“人物/情境/终局/效果”四堆，指出哪一堆最先出现，再按 FC-05 选入口；若四堆都空，说明还没有故事，只给素材整理任务。
-- **依据**：
-  - -11670 “A plot attracts facts and characters as a magnet attracts iron filings.”
-  - -879 “unless you have a salamander to show him”
-  - -97 “A plot should work steadily forward to the end or denouement”
-  - -5477 “single narrative effect with the greatest economy of means”
-  - -670 “The tale is a chain; the short-story is a tree.”（评论、作品）
-- **冲突**：有条件（K-02 人物/情节入口；K-11 开头策略）。
-- **可信度**：中（实践者一致，但“胚故事”质量无可测标准；几处单一效果定义同出 Hamilton 一系，未计为独立支持）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-02、K-11 条件分流；未定时保留选项与代价。
 
 ---
 
@@ -114,26 +99,17 @@
   2. 写 `效果句`：读者读完应得到的一个主导情绪/问题。
   3. 列 `相争的效果`：每个场景想产生的效果；标出与主导效果冲突者。
   4. A 分支：冲突者删/并/降为背景；B 分支：不删，改为 `主次`（主导 > 支撑 > 对照），并检查每层是否服务整体。
-  5. 做“删节测试”（-473 的删/移测试）：删掉一场，主导效果是否更强？更强则删，不变则考虑并，变弱则留。
+  5. 做“删节测试”（删/移测试）：删掉一场，主导效果是否更强？更强则删，不变则考虑并，变弱则留。
   6. 长篇另做“母题/语调”检查：是否有一个可重复变化的意象/语调把多线缝住（论 pattern/rhythm（评论；转步骤标为推断））。
 - **交付**：`效果单位`、`效果句`、`相争的效果`、`主次`、`删除记录`（删/并/留及理由）。
 - **反例**：
-  1. **同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 Poe 式情绪统一。处置：A 分支只用于情绪/氛围型短篇；戏剧型短篇改用“冲突/危机”统一，不强行删成单一情绪。
+  1. **同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 叙事设计 式情绪统一。处置：A 分支只用于情绪/氛围型短篇；戏剧型短篇改用“冲突/危机”统一，不强行删成单一情绪。
   2. **长篇小说不必一 idea**：“if I stated that the novel must embody one story-idea … the statement would be false”。处置：长篇用 B 分支，不拿“一个主题”砍线。
   3. **细节多职是最高艺术**：“the very highest order of creative art”；要求 selection “typical, to be inclusive”。处置：B 分支保留“不服务主导效果但服务语调/生活面向”的细节；删节测试变弱即留。
   4. **印象主义以 tone 统摄**：速写/印象主义的细节本身就是效果；处置：C 分支只检查 tone 是否同调，不做“删到只剩一个效果”。
-- **适用范围**：短篇/独幕/轶事强；长篇只保留“整体统一”；速写/印象主义/随笔弱；舞台独幕强、多幕弱；电影/口头另有一套“注意力经济”（/），不可直接换算。
+- **适用范围**：短篇/独幕/轶事强；长篇只保留“整体统一”；速写/印象主义/随笔弱；舞台独幕强、多幕弱；电影/口头另有一套“注意力经济”，不可直接换算。
 - **卡住时**：说不出 `效果句`，或每个场景都声称服务不同效果 → 先不要删；回到 FC-02 重写 `胚故事`/`效果`；若仍说不清，改问“读者读完最想带走的一个问题是什么”，用问题句代替主题名词。
-- **依据**：
-  - -5477 “The aim of a short-story is to produce a single narrative effect…”
-  -  “The effect should be single, not multiple.”
-  - 另一本手册引 Hamilton 同一定义（作者主张、分类资料，转引，与 Hamilton 同谱系，不算独立支持）
-  - -4813 “the statement is false”（作者主张，反证）
-  - -5490 短篇一 idea、长篇不必（作者主张，反证）
-  - -1331 “the very highest order of creative art”（作者主张、评论，反证）
-  -  “typical, to be inclusive”（评论，反证）
-- **冲突**：有条件（K-01；“单一效果”只作短篇/独幕 A 分支的判据，不作跨篇幅普遍命题）。
-- **可信度**：中（条件本身有强反证支持；但“单一效果”支持方谱系重叠，不能算多来源共识）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-01 条件分流；未定时保留选项与代价。
 
 ---
 
@@ -162,21 +138,13 @@
   6. C 分支：初稿后补写 `终局状态` 与 `潜伏意象`，再做一次倒推校验。
 - **交付**：`结尾模式`（终场 / 终局状态 / 发现型）、`终场` 或 `终局状态`、`三环因果`、`潜伏意象`、`结尾检查`。
 - **反例**：
-  1. **Trollope 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；处置：B 分支只要求终局状态，不要求终场画面。
+  1. **连载写作经验 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；处置：B 分支只要求终局状态，不要求终场画面。
   2. **人物生长、结尾不在心**：Montgomery 的长篇由人物生长；Stribling 说 “No, the ending is not clearly in mind.” 处置：人物驱动长篇用 B，不把“先定结局”当道德要求。
   3. **卡壳与换地恢复**：动笔后受阻并不代表结构失败，转换物理环境或思考介质常能激发新灵感。处置：C 分支允许边写边发现，但必须记录“已写了什么、还缺什么因”。
   4. **侦探先抛谜面**：“propound your mystery at the beginning … work backwards to the first step”。侦探仍须知道终局，只是谜面在前；处置：A 分支中侦探型把“终场揭示”换成“谜面 + 机关”，倒推链照做。
 - **适用范围**：短篇/类型/侦探最硬；长篇/连载软化为方向；人物驱动/流浪汉体/随笔式最弱；舞台需要“幕末暂解”而非单一终场。
 - **卡住时**：A 分支写不出终场 → 改问“最后一个不可逆的动作是什么”；仍写不出，退回 FC-02 重写 `胚故事`。B 分支写不出终局状态 → 只写“谁在最后必须做一个什么决定”，不写结局；若连这个也没有，标“终点未定”，暂停结构细化。
-- **依据**：
-  - -1109 “Take your stand at the end of the story, and work it out backwards.”
-  - -3035 “see the end of your story before you begin to write it”
-  - -1139 “The climax; I always start with it”
-  -  “he must see the end of his story from the beginning”
-  - -1803 “no conclusion can be right which is not latent in the first page”
-  - 反例：-1615；-2543；-2942。
-- **冲突**：有条件（K-02 起手顺序）。
-- **可信度**：中（短篇工序有多次自述；长篇“方向”是综合判断，无直接来源说“只需方向”）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-02 条件分流；未定时保留选项与代价。
 
 ---
 
@@ -208,19 +176,11 @@
 - **反例**：
   1. **玩偶人物**：“inventing a situation and sticking doll-like characters in it” 是失败经验。处置：B 分支若人物只是被塞进情境，先给人物一个会反抗情境的欲望，再改情境。
   2. **Hardy 让人物 suspend their natures**：人物被情节/命运压干，失真。处置：检查 `情节逼人物` 是否只有“外力推着走”，没有人物自己的选择；补一个代价明确的选择。
-  3. **-1520 Assingham 夫妇为传递信息而造**：功能人物被读者看穿。处置：若人物只承担信息，删/并，或给他一个与信息冲突的私人目的。
-  4. **-13575 通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。处置：短篇/类型可薄人物，但仍须有可信的欲望；不把“圆人物”当唯一标准（K-15 两说）。
+  3. **功能人物只为传递信息而造**：功能人物被读者看穿。处置：若人物只承担信息，删/并，或给他一个与信息冲突的私人目的。
+  4. **通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。处置：短篇/类型可薄人物，但仍须有可信的欲望；不把“圆人物”当唯一标准（K-15 两说）。
 - **适用范围**：短篇/类型偏终局/情境入口；长篇/心理小说偏人物入口；舞台偏情境入口（“character is situation”）；连载偏人物入口 + 情节里程碑；速写/印象主义可弱化人物因果，但不能弱化 tone。
 - **卡住时**：四入口都说不清 → 退回素材层，不写场景；先列“人物/情境/终场/效果”四张卡，每张只写一句，选最先能写出“后果”的那张。双向校验皆“否” → 停止细化情节，先修人物欲望或情境对抗力量。
-- **依据**：
-  - -2470 “character in itself is plot”（评论；转成步骤是推断）
-  - -2307 “what his characters, being what they are, would make of the situation”
-  -  “Character makes plot.”
-  - -372 “Plot, then, is the first principle”（评论）
-  - -213 “each incident functions in the development of a plot or dramatic problem”
-  -  “character is situation.”（作者主张，舞台）
-- **冲突**：有条件（K-02；K-15 人物扁/圆另立）。
-- **可信度**：中（入口诊断有跨来源支持；“哪种入口更好”无数据，且同书自相矛盾）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-02、K-15 条件分流；未定时保留选项与代价。
 
 ---
 
@@ -244,7 +204,7 @@
   1. 写 `主行动`：`某人 + 要什么 + 谁/什么阻止 + 失败代价`。
   2. 列 `线`：每条线写 `功能`（反转/补足/对照/提供信息）与 `交汇点`（在哪一场、与谁、交换什么）。
   3. 无 `交汇点` 的线：删、并、或降为背景；只靠“主题相似”的线不算交汇。
-  4. 标 `主汇合`：所有主线在何处汇合；若在 3/4 处，检查前段是否蓄因、后段是否只收果（结构比例，**单来源默认参考，不是硬门**；侦探/开放式另算）。
+  4. 标 `主汇合`：所有主线在何处汇合；若在 3/4 处，检查前段是否蓄因、后段是否只收果（结构比例，**操作默认参考，不是硬门**；侦探/开放式另算）。
   5. 检查 `并重的线`：若多条线等重，必须像 -2430 那样交织；否则改主次。
   6. 完稿后做“抽线测试”：抽掉一条线，复述主线；若完全不变，该线是赘线。
 - **交付**：`主行动`、`线[]`（name/function/intersection）、`主汇合`、`删减记录`。
@@ -254,13 +214,6 @@
   3. **舞台拉幕点**：要求在多线汇聚处拉幕；但传奇/情节剧可加 Prologue（作者自陈例外）。处置：舞台用“幕末汇聚”，小说不强制每章汇聚；迁小说标为推断。
 - **适用范围**：长篇/多线/群像/连载强；短篇只留一条主行动；舞台分幕需“幕末汇聚”；戏曲“一人一事”更严；链条式/流浪汉体只要求“每站改变主角”，不要求总汇聚。
 - **卡住时**：写不出 `主行动` → 先不要列线；回到 FC-02 写 `胚故事`，或把“主角最想要的东西 + 最大阻力 + 失败代价”三格填满。次线无 `交汇点` → 删/并；作者舍不得删时，要求写出“它改变了主线的哪个条件”，写不出就标为背景，不进入结构。
-- **依据**：
-  - -5564 “the main course of the story must be single”
-  - -2332 “The word plot signifies a weaving together”
-  - -2418 “avoid a sub-plot, unless…”
-  - -2932 “the curtain should be raised at the point where separate lines have converged”（作者主张，舞台）
-  -  “此一人一事，即作传奇之主脑也”（作者主张，中文引文，戏曲）
-- **冲突**：有条件（K-01 单一/多线；K-11 舞台迁移）。
-- **可信度**：中（结构判据跨来源一致；3/4 汇聚比例是 Hamilton 一家的说法，且他把侦探除外）。
+- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-01、K-11 条件分流；未定时保留选项与代价。
 
 ---
