@@ -27,7 +27,7 @@
 ## RT-10 · 环境中的压力链和人物自身选择
 
 - **适用**：贫困、职业、自然环境、群体暴力或制度压力随时间积累，影响人物的行为窗口。
-- **F**：《The House of Mirth》由一句“不够有钱买想要的书吗”把阶层礼仪转写成可计量的成本链，把手镯写成“manacles chaining her to her fate”；《Almayer's Folly: A Story of an Eastern River》 *Almayer's Folly* 与让同一条河将惯常的金色联想与当晚暴雨后的实景相对照（金色 vs “angry and muddy flood”），把漂流树的光秃长枝写成“like a hand lifted in mute appeal”。
+- **F**：《The House of Mirth》由一句“不够有钱买想要的书吗”把阶层礼仪转写成可计量的成本链，把手镯写成“manacles chaining her to her fate”；《Almayer's Folly: A Story of an Eastern River》 *Almayer's Folly* 让同一条河将惯常的金色联想与当晚暴雨后的实景相对照（金色 vs “angry and muddy flood”），把漂流树的光秃长枝写成“like a hand lifted in mute appeal”。
 **更正**：《McTeague: A Story of San Francisco》中的这场戏是**结尾前的终局搏斗**（McTeague 与 Marcus 摔打、鸟笼摔碎），属高潮动作而非“环境压力随时间累积”，不再作为本条的主证据，仅可作文类对照。
 - **H**：触觉、热、饥饿、债务等细节可让压力显形；但自然主义“环境必定决定命运”不是所有心理故事的普遍因果法则。
 - **P**：按 `物理/社会条件→角色主观解释→可选择的行动→真实后果` 组织场景；注明哪些是文本已写成的 F，哪些只是作者的 H。角色有些选择被制度限制、有些仍是自主行为，不得简单等同。

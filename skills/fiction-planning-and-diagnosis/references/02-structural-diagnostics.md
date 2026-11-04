@@ -1,6 +1,6 @@
 # 结构与呈现的综合诊断
 
-本文件融合 A-02 的对应规则与 C-07 的独有方法；引用保留原 PG 和固定阅读版行号。旧反例中的历史立场不替代本条条件。
+本文件融合 A-02 的对应规则与 C-07 的独有方法。旧反例中的历史立场不替代本条条件。
 
 ## RC-04 终场、终局状态与发现型写法
 
@@ -29,10 +29,10 @@
 `ending_mode`（terminal scene / terminal state / discovery）、`terminal_scene` 或 `terminal_state`、`three_causal_links`、`latent_image`、`last_line_direction`（终场最后动作的方向，用动作代替直接结论）、`milestone_turns`（长程里程碑转折清单）、`ending_check`。
 
 ### 原例与反证
-1. ** Trollope 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；具体适用条件见下文。
+1. **Trollope 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；具体适用条件见下文。
 2. **《Fiction Writers on Fiction Writing》：人物生长、结尾不在心**：Montgomery 的长篇由人物生长；Stribling 说 “No, the ending is not clearly in mind.” 具体适用条件见下文。
   3. **《金银岛》卡壳后换地**：十五天十五章后卡住，换地后一章一天；这说明“倒推”也可能卡住，换环境/换介质能恢复。具体适用条件见下文。
-  4. ** 侦探先抛谜面**：“propound your mystery at the beginning … work backwards to the first step”。侦探仍须知道终局，只是谜面在前；具体适用条件见下文。
+  4. **侦探先抛谜面**：“propound your mystery at the beginning … work backwards to the first step”。侦探仍须知道终局，只是谜面在前；具体适用条件见下文。
 
 ### 证据定位
 -《How to Write a Novel: A Practical Guide to the Art of Fiction》 “Take your stand at the end of the story, and work it out backwards.”（M）
@@ -71,9 +71,9 @@ C07-F09：事件栏记录变化、信息或问题；人心栏记录人物后果�
 `main_action`、`strands[]`（name/function/intersection）、`major_convergence`、`cut_log`。
 
 ### 原例与反证
-1. ** 链条式不算 plot**：picaresque 单线串联不构成“编织”；此时不强行加交汇，改按 C 分支验收“每站是否改变主角处境”。
-  2. ** 等重多线**：允许若干等重故事，但须交织；不能拿“多线”当“无主线”的借口。具体适用条件见下文。
-  3. ** 舞台拉幕点**：要求在多线汇聚处拉幕；但传奇/情节剧可加 Prologue（作者自陈例外）。具体适用条件见下文。
+1. **链条式不算 plot**：picaresque 单线串联不构成“编织”；此时不强行加交汇，改按 C 分支验收“每站是否改变主角处境”。
+  2. **等重多线**：允许若干等重故事，但须交织；不能拿“多线”当“无主线”的借口。具体适用条件见下文。
+  3. **舞台拉幕点**：要求在多线汇聚处拉幕；但传奇/情节剧可加 Prologue（作者自陈例外）。具体适用条件见下文。
 
 ### 证据定位
 -《The Technique of Fiction Writing》 “the main course of the story must be single”（M）
@@ -112,10 +112,10 @@ C07-F09：事件栏记录变化、信息或问题；人心栏记录人物后果�
 `unit_table`（段号/type/function/字数）、`scene_to_summary_log`、`transition_log`。
 
 ### 原例与反证
-1. ** 内部 23 人反对描写、6 人主张全描写**：配比无统一标准。具体适用条件见下文。
+1. **内部 23 人反对描写、6 人主张全描写**：配比无统一标准。具体适用条件见下文。
   2. **原著的 tale/sketch 可以以概述为主**：强行场景化会破坏文体。具体适用条件见下文。
-  3. ** 过渡要“colourless and quiet”**：不是无信息；纯拖延的过渡应删。具体适用条件见下文。
-  4. ** “If I use more than one sentence of description I wince.”**：这是快节奏作者的反信号，不是通则。具体适用条件见下文。
+  3. **过渡要“colourless and quiet”**：不是无信息；纯拖延的过渡应删。具体适用条件见下文。
+  4. **“If I use more than one sentence of description I wince.”**：这是快节奏作者的反信号，不是通则。具体适用条件见下文。
 
 ### 证据定位
 -《The Technique of Fiction Writing》 描写随叙事逐项发生、不能一次做完（M）
@@ -153,9 +153,9 @@ C07 的落幕类比只支持检视停顿和期待，不是当代追读或每章 
 `unit_end_table`（unit/state_changed/open_question/delay）、`payoff_log`（承诺→兑现）。
 
 ### 原例与反证
-1. ** “opening out”**：反高潮/开放结尾可以成立；此时“未解”是设计，不是缺陷。具体适用条件见下文。
+1. **“opening out”**：反高潮/开放结尾可以成立；此时“未解”是设计，不是缺陷。具体适用条件见下文。
   2. **《Wild Duck》省掉“揭穿”必看场面**：改写反响仍成立；说明“幕末必须有大场面”不是硬规则。具体适用条件见下文。
-  3. ** 悬念终须兑现**：为钩子而钩子、下一章不兑现，读者感到被骗。具体适用条件见下文。
+  3. **悬念终须兑现**：为钩子而钩子、下一章不兑现，读者感到被骗。具体适用条件见下文。
 
 ### 证据定位
 -《Play-Making: A Manual of Craftsmanship》 “An act… ought to consist either of a minor crisis, carried to its temporary solution”（M）
@@ -194,10 +194,10 @@ C07 的落幕类比只支持检视停顿和期待，不是当代追读或每章 
 `opening_contract`（who/where-when/tone-type/question）、`entry_point`、`exposition_log`（信息→承载动作）。
 
 ### 原例与反证
-1. **《The art of narration》一处主张“尽可能晚”，另一处又主张“从故事开头写起”**：两种建议在作品层面未调和，不能当通则。执行条件见本条的不同分支。
+1. **《The art of narration》一处主张“尽可能晚”，另一处又主张“从故事开头写起”**：两种建议在作品层面未调和，不能当通则。具体适用条件见下文。
   2. **《Rip》两层框架、两段静态写景仍成立**：框架/多层叙事可以违反“晚入场”。具体适用条件见下文。
-  3. ** 舞台开场每个要点说三遍**：因观众迟到/不专注；小说无此强制力。具体适用条件见下文。
-  4. ** 允许 withheld 开头**：但要求足够技巧与回报。具体适用条件见下文。
+  3. **舞台开场每个要点说三遍**：因观众迟到/不专注；小说无此强制力。具体适用条件见下文。
+  4. **允许 withheld 开头**：但要求足够技巧与回报。具体适用条件见下文。
 
 ### 证据定位
 -《The art of narration》 “Begin as late in the story as you possibly can.”（MIX）
@@ -238,7 +238,7 @@ C07 的落幕类比只支持检视停顿和期待，不是当代追读或每章 
 ### 原例与反证
 1. **《Aspects of the Novel》 “Not completion. Not rounding off but opening out.”**：开放结尾成立；但 Forster 也承认“几乎所有小说结尾都弱”。具体适用条件见下文。
   2. **《Lady, or the Tiger?》开放是为幽默效果**：作者自己把它标为例外。具体适用条件见下文。
-  3. ** 侦探必须解释**：先抛谜面、倒推机关；不能用“开放”逃避解谜。具体适用条件见下文。
+  3. **侦探必须解释**：先抛谜面、倒推机关；不能用“开放”逃避解谜。具体适用条件见下文。
 4. **《闲情偶寄》 古典戏曲要团圆**：“七情俱备”；现代小说不必。具体适用条件见下文。
 
 ### 证据定位

@@ -16,7 +16,7 @@
 - **动作**：圈出句首短语的隐含施动者，与主句语法主语比对；不一致时二选一：改主句主语/语态，或把短语改成从句（`On arriving` → `When he arrived`）。技术句 `Using this method, the results show…` 可改为 `With this method, the results show…` 或补出 `we`。
 - **输出**：`句首短语 | 隐含施动者 | 主句主语 | 一致？ | 改主语/改从句`。
 - **反例**：`Being in a dilapidated condition, I was able to buy the house very cheap.`；`Wondering irresolutely what to do next, the clock struck twelve.`；`On arriving in Chicago, his friends met him at the station.`。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 7。
 - **置信**：高（规则与反例均书内明说）；低（绝对结构边界）。
 - **身份**：F + P；绝对结构/技术句边界为 H/NOT_PROVEN。
 
@@ -31,9 +31,9 @@
 - **动作**：找出内层动作的受事/施事，把内层改成限定动词；施事已知且重要时改主动；施事不重要时可用 `It was forbidden to export gold` 这类仍为被动但已去嵌套的写法。
 - **输出**：`原句 | 嵌套层数 | 去嵌套版 | 是否仍被动 | 语义变化`。
 - **反例**：`Gold was not allowed to be exported.` → `It was forbidden to export gold`（书内改正，仍是被动）；`He has been proved to have been seen entering the building.` → `It has been proved that he was seen to enter the building`。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 10（双重被动小节）。
 - **置信**：高（子规则书内明说）；标题层见 C13。
-- **身份**：F + P；Rule 10 标题按的明确例外理解。
+- **身份**：F + P；Rule 10 标题按正文的明确例外理解。
 
 ---
 
@@ -46,21 +46,22 @@
 - **动作**：写段落主题词 → 决定主语 → 选语态。动作名词作主语时，把宾语提为主语、动作改动词（`A survey of this region was made` → `This region was surveyed`）；施事已知且重要 → 主动；受事是主题或施事不可知 → 保留被动；只改“为了主动而换主题”的句子。
 - **输出**：`段落主题词 | 当前主语 | 当前语态 | 建议 | 是否改变主题`。
 - **反例**：`The dramatists of the Restoration are little esteemed to-day.` 在谈 Restoration 剧作家的段落里是正确选择；`My first visit to Boston will always be remembered by me.` 则是可改主动的啰嗦被动。
-- **来源**：《The Elements of Style (Strunk original)》、- **置信**：高（条件规则）；低（“所有写作都必须主动”的普遍主张）。
+- **来源**：《The Elements of Style (Strunk original)》Rule 10（语态条件正文）。
+- **置信**：高（条件规则）；低（“所有写作都必须主动”的普遍主张）。
 - **身份**：F + H；标题条件已由正文澄清；**不得写成“禁用被动”**。
 
 ---
 
 ## C14 · 肯定式，但不改强度
 
-**断言**：作确定断言；`not` 用于否认或对照，不用于回避。原则上肯定式更有力，但只有正面表述由原文蕴含、且不改变命题强度时才替换；否则保留否定并补具体信息或标 query。
+**断言**：作确定断言；`not` 用于否认或对照，不用于回避——书内原话是 “Use the word *not* as a means of denial or in antithesis, never as a means of evasion.”（引文与原书逐字一致）。原则上肯定式更有力，但只有正面表述由原文蕴含、且不改变命题强度时才替换；否则保留否定并补具体信息或标 query。
 
 - **when**：`not + 弱形容词/动词`、含糊评价、`not very / not particularly` 一类回避。
 - **when_not**：`not X, but Y` 对照；`never/none` 等强否定；学术/法律/医疗的真实不确定性；正面词会升级或降级强度（`not important` ≠ `trifling`）；书内第三例自认只是猜测。
 - **动作**：问“作者到底肯定什么”；做蕴含测试与强度测试；两项都通过才替换；否则保留否定，补具体信息，或标 `query: 作者意图？`。
 - **输出**：`否定句 | 作者肯定什么 | 等价正面表述 | 强度变化 | 建议/query`。
 - **反例**：`not important → trifling`（把“不重要”升级为“微不足道”）；把莎剧含糊句硬改成“正面”版本（书内自认是 guess）。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 11。
 - **置信**：高（原则）；低（逐句替换）。
 - **身份**：F + H；第三例作为“改正”为 UNVERIFIABLE。
 
@@ -75,7 +76,7 @@
 - **动作**：逐项标词性/结构；补齐或删去冠词/介词；关联词两侧做同型比对；项目太多时先分组，组内平行，或改表格（书内“二十个”是例子，不是阈值，H）。
 - **输出**：`系列 | 各项结构 | 不对齐处 | 建议 | 是否故意变形`。
 - **反例**：`The French, the Italians, Spanish, and Portuguese`（缺 `the`）；`It was both a long ceremony and very tedious.`（名词 vs 形容词）；`A time not for words, but action.`（缺 `for`）。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 15。
 - **置信**：高（规则与例子）；中（bullet/长列表迁移）。
 - **身份**：F + P；bullet list 应用为 H。
 
@@ -89,7 +90,8 @@
 - **when_not**：周期句的故意延迟是例外；关系从句/同位语插入通常可接受；先行词是词组时关系词放组末，除非造成歧义；不要机械移动所有介词短语。
 - **动作**：画“修饰语 → 被修饰词”的箭头；若中间隔着可移到句首的成分，试移；关系词离先行词太远就调序或拆句；`only/not/all` 先写逻辑辖域，再读两种位置是否改变命题。
 - **输出**：`相关词对 | 距离 | 当前辖域 | 建议 | 歧义风险`。
-- **反例**：`He only found two mistakes.`（`only` 管什么？）；`There was a look in his eye that boded mischief.`（关系词远离先行词）；`All the members were not present.`（否定辖域歧义）。**来源**：《The Elements of Style (Strunk original)》。
+- **反例**：`He only found two mistakes.`（`only` 管什么？）；`There was a look in his eye that boded mischief.`（关系词远离先行词）；`All the members were not present.`（否定辖域歧义）。
+- **来源**：《The Elements of Style (Strunk original)》Rule 16。
 - **置信**：高（原则与例子）；中（机械调序风险）。
 - **身份**：F + P；迁移到现代长句为 H。
 
@@ -104,7 +106,8 @@
 - **动作**：读句末 3–5 词，问“这是否是我要读者记住的”；不是则调序、倒装或拆句，但保持语法清晰与逻辑关系。
 - **输出**：`句末片段 | 是否新信息 | 建议语序 | 清晰度风险`。
 - **反例**：把重要信息放在句中，句末只留旧细节；为强调而倒装到读不懂。
-- **来源**：《The Elements of Style (Strunk original)》、- **置信**：高（句内）；低（段末/篇末外推）。
+- **来源**：《The Elements of Style (Strunk original)》Rule 18。
+- **置信**：高（句内）；低（段末/篇末外推）。
 - **身份**：F + H；段末扩展按C22条件整合（H），不等于所有情况都未决。
 
 ---
@@ -118,7 +121,7 @@
 - **动作**：先按文类立基准时态；逐句圈限定动词；先前事件用完成式；间接引语保留过去时；开头一次说明“以下是摘要”，删重复 reporting tag。
 - **输出**：`摘要 | 基准时态 | 时态跳点 | 间接引语 | 建议`。
 - **反例**：`Romeo prevents the fight, then he killed Tybalt.`（时态跳）；把 `The Friar confesses that it was he who married them.` 的间接引语过去时改成现在时。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 17。
 - **置信**：高（书内范围）；NOT_PROVEN（现代领域惯例）。
 - **身份**：F + H。
 
@@ -133,6 +136,6 @@
 - **动作**：标出连续同型句；按逻辑关系选替换：简单句、分号双句、双句周期句、三句组合；只改到单调消失为止。
 - **输出**：`连续句范围 | 同型模式 | 改哪 1–2 句 | 逻辑关系 | 风险`。
 - **反例**：把整段都改成主谓短句；把“连续 3 句”当硬规则逐句重写。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 14。
 - **置信**：高（原则）；中（3+ 阈值）。
 - **身份**：F + H。

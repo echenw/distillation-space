@@ -3,7 +3,7 @@
 返回 [SKILL.md](../SKILL.md)
 
 范围：插入语、限制/非限制从句、逗号粘连、句子碎片、并列逗号、所有格、系列逗号、括号、引号、拼写与连字符。
-本文件的 `F` 只表示“ 书内明说”；现代体例分歧一律 `H/NOT_PROVEN`。
+本文件的 `F` 只表示“书内明说”，书指《The Elements of Style (Strunk original)》；现代体例分歧一律 `H/NOT_PROVEN`。
 
 ---
 
@@ -16,7 +16,7 @@
 - **动作**：先判断该逗号是否属于句中插入语的边界；确属成对结构却缺一边时补全或整对删，不改并列、句首连接和句末边界为双逗号。插入语前有连词时，第一个逗号放在连词前。
 - **输出**：`定位 | C01 | 单边逗号 | 补对/整对删 | 可能改变停顿轻重`。
 - **反例**：书内两个直接反例：`Marjorie's husband, Colonel Nelson paid us a visit yesterday,`；`My brother you will be pleased to hear, is now in perfect health,`（见原文）。
-- **来源**：强制插入语清单。
+- **来源**：《The Elements of Style (Strunk original)》Rule 3（强制插入语清单）。
 - **置信**：高。原则与反例均为书内明说。
 - **身份**：F（成对原则）+ P（补对/整对删）。
 
@@ -31,7 +31,7 @@
 - **动作**：先做删除测试——“删掉从句，读者还能指出是哪一个吗？”再做拆分测试——“能拆成两句且指称不变吗？”两项一致才下判断；不一致就停。
 - **输出**：`从句 | 限制/非限制/歧义 | 依据 | 建议逗号 | 置信`。
 - **反例**：`The candidate, who best meets these requirements, will obtain the place.`（把限制性误作非限制性）；`The audience which had at first been indifferent became more and more interested.`（把非限制性误作限制性；书内原句有逗号）。
-- **来源**：（专属判据、专名例、`the day` 例）。
+- **来源**：《The Elements of Style (Strunk original)》Rule 3（专属判据、专名例、`the day` 例）。
 - **置信**：高（原则与书内测试）；低（两可句）。
 - **身份**：F + P；现代 `which/that` 分工为 H。
 
@@ -46,7 +46,7 @@
 - **动作**：对每个可疑逗号做“两边能否独立成句”测试；能，则三选一：分号、句号、连词 + 逗号。不要把所有逗号都升级成句号。
 - **输出**：`句 | 粘连 | 改法（分号/句号/连词） | 节奏代价`。
 - **反例**：`Stevenson's romances are entertaining, they are full of exciting adventures.`（书内逗号粘连例）。
-- **来源**：（规则、副词开头、短对句、对白例外）。
+- **来源**：《The Elements of Style (Strunk original)》Rule 5（规则、副词开头、短对句、对白例外）。
 - **置信**：高（标准散文）；中（对白/文学例外）。
 - **身份**：F + P；现代新闻体拆句倾向为 H。
 
@@ -61,7 +61,7 @@
 - **动作**：确认是误切且指向前句时，建议回接并核对大小写/标点；有意片段则记录其功能与节奏代价。意图未知时给回接版及保留版并标query，不以作者未解释为自动合并许可。
 - **输出**：`片段 | 回接位置 | 强调对象（若有） | 建议`。
 - **反例**：`I met them on a Cunard liner several years ago. Coming home from Liverpool to New York.`（书内碎片例）。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 6（回接规则与强调片段例外）。
 - **置信**：高（标准散文）；低（强调片段）。
 - **身份**：F + P；广告体放宽为 H/NOT_PROVEN。
 
@@ -76,7 +76,7 @@
 - **动作**：找连词，判断左右是否各有主谓；是，默认加逗号；若同主语且关系紧密，允许省略；`but` 不省。
 - **输出**：`连词位置 | 左/右是否独立 | 加/省逗号 | 房规依赖`。
 - **反例**：`The early records of the city have disappeared, and the story of its first years can no longer be reconstructed.`（书内原句在 `and` 前有逗号；缺逗号即违反本条）。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 4。
 - **置信**：中高（书内有省略条件）。
 - **身份**：F + P；现代新闻体省略为 H。
 
@@ -91,7 +91,7 @@
 - **动作**：先查 style sheet；没有就选一种（`'s` 或 `'`）并全篇统一；专名按客户拼法；用 `of` 结构消解难看形式。
 - **输出**：`所有格 | 采用体例 | 建议 | 是否仅体例差异`。
 - **反例**：书内会写 `Charles's friend`；另一份项目体例可能选 `Charles' friend`，是否适用须查看实际体例。这是体例差异，不是语法错误，不能把其中一种判错。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 1。
 - **置信**：高（书内规则）；NOT_PROVEN（现代分歧）。
 - **身份**：F（书内）+ H（现代房规）。
 
@@ -106,7 +106,7 @@
 - **动作**：查 style sheet；统一加或统一不加；若各项内部已有逗号，改用分号分隔。
 - **输出**：`系列 | 项数 | 当前体例 | 建议 | 仅体例差异`。
 - **反例**：书内写 `red, white, and blue`；另一份项目体例可选 `red, white and blue`。两者都可成立，取决于房规。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Rule 2（含商号名末尾逗号省略）。
 - **置信**：高（书内规则）；NOT_PROVEN（现代分歧）。
 - **身份**：F（书内）+ H（现代房规）。
 
@@ -121,7 +121,7 @@
 - **动作**：先遮住括号读外层，确认外层标点完整；再单独读括号内，去掉末句号、保留 `?!`；独立句则句号在内。
 - **输出**：`括注 | 外层标点 | 内层标点 | 建议`。
 - **反例**：外层句子未完却在括号内加句号；或独立括注句把句号放在括号外。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Chapter IV。
 - **置信**：高（角色逻辑）；中（现代排版细节）。
 - **身份**：F + P；现代排版为 H。
 
@@ -136,7 +136,7 @@
 - **动作**：先分类（证据/同位语/宾语/诗句/间接引语/熟语），再定标点；引号内外标点按目标变体统一。
 - **输出**：`引文 | 角色 | 标点建议 | 现代变体风险`。
 - **反例**：给 `Keats declares that beauty is truth` 加引号（书内明确视为间接引语）；给 `These are the times that try men's souls.` 加引号（书内视为熟语）。
-- **来源**：《The Elements of Style (Strunk original)》。
+- **来源**：《The Elements of Style (Strunk original)》Chapter IV。
 - **置信**：高（角色逻辑）；中（具体标点随房规）。
 - **身份**：F + P；现代引号体例为 H。
 
@@ -151,6 +151,6 @@
 - **动作**：用项目词典核对；列出变体而不是静默统一；专名不改；双写规则只作提示，遇到 `Coming` 一类例外回词典。
 - **输出**：`词 | 词典依据 | 建议 | 是否专名/引文`。
 - **反例**：现代稿写 `to-day`；把 `anyone` 改成 `any one`；把 `planned` 写成 `planed`。
-- **来源**：移行。
+- **来源**：《The Elements of Style (Strunk original)》Chapter VI（拼写总则、双写说明与移行规则）。
 - **置信**：高（书内确有该总则与双写说明）；具体词形依实际项目词典核对，历史形式不直接作现代规范。
 - **身份**：F（原则/双写）+ H（现代形式）；1918 拼写条目不作为现代规则。

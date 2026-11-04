@@ -60,7 +60,7 @@ P：记录梦前触发、梦中意象、醒后实际选择；只写梦与现实�
 反例/退出：纯象征/荒诞美学不必解码；**梦不必然导致转折**（即为反例）。禁用"梦代表创伤的科学机制"。
 
 ### PSY-P10 角色感到失控与叙事可见因果分开（叙述者层面的因果）
-F：他把决定感受为 "no more freedom of thought, no will, and that everything was suddenly and irrevocably decided"；**（原著逐字引文）**叙述者在角色不自知处给出因果："he had perhaps been dimly conscious of the fundamental falsity in himself and his convictions… the promise of a future crisis"；**** 他承认事前已完成自我审问（"I certainly hadn't the right… I felt clearly of course that I wasn't Napoleon"）。
+F：他把决定感受为 "no more freedom of thought, no will, and that everything was suddenly and irrevocably decided"；**（原著逐字引文）**叙述者在角色不自知处给出因果："he had perhaps been dimly conscious of the fundamental falsity in himself and his convictions… the promise of a future crisis"；他承认事前已完成自我审问（"I certainly hadn't the right… I felt clearly of course that I wasn't Napoleon"）。
 H：角色主观感受不是裁定自由意志的证据；叙述者可以合法掌握角色不自知的因果——这是视角权利，不是失误。
 P：先区分**角色主观失控**与**文本已建立的因果链**，再决定由谁说出。选择前列已知消息、外部强迫、剩余选项及后果。
 **禁用**：把"他事先知道"改写成"他其实不知道"；用"他感到失控"取消已建立的因果；真实胁迫存在时用"自主选择"责备受害者。

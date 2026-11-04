@@ -1,6 +1,6 @@
 # 契约、素材与规则选择
 
-本文件融合 A-02 的对应规则与 C-07 的独有方法；引用保留原 PG 和固定阅读版行号。旧反例中的历史立场不替代本条条件。
+本文件融合 A-02 的对应规则与 C-07 的独有方法。旧反例中的历史立场不替代本条条件。
 
 ## RC-01 项目条件先于规则选择
 
@@ -29,9 +29,9 @@ C07-F01：分别记录读者获得什么与作品以什么为完成度标准。C
 `route: {length, medium, genre, delivery, reader_promise}`；`borrowed_rules: []`（每条注明“同赛道/类比 H”）。
 
 ### 原例与反证
-1. ** 戏剧术不是小说术**：“The art of the playwright is not, then, the art of the novelist.” 把舞台的“每场一个主脑/幕末汇聚”直接当小说章法，会错配单位。执行条件见本条的新分支。
-2. **《闲情偶寄》 传奇为登场而设**：“填词之设，专为登场”。李渔的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。执行条件见本条的新分支。
-  3. ** 短篇以情境为主**：“situation is the main concern of the short story”。这是短篇判断；用它要求长篇“每章一个情境”，会把长篇压成系列短篇。执行条件见本条的新分支。
+1. **戏剧术不是小说术**：“The art of the playwright is not, then, the art of the novelist.” 把舞台的“每场一个主脑/幕末汇聚”直接当小说章法，会错配单位。具体适用条件见下文。
+2. **《闲情偶寄》 传奇为登场而设**：“填词之设，专为登场”。李渔的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。具体适用条件见下文。
+  3. **短篇以情境为主**：“situation is the main concern of the short story”。这是短篇判断；用它要求长篇“每章一个情境”，会把长篇压成系列短篇。具体适用条件见下文。
 
 ### 证据定位
 -《Dramatic Technique》 “The art of the playwright is not, then, the art of the novelist.”（M）
@@ -70,8 +70,8 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 `premise`、`effect`、`irreversible_change`、`event_chain`（每环标“因此/然后”）、`open_question`（B/C 用）。
 
 ### 原例与反证
-1. **《金银岛》边写边发现**：作者自述十五天十五章后卡住，换地后一章一天。这说明“先有完整胚故事”不是所有作者的必经工序；执行条件见本条的新分支。
-  2. ** 结尾不在心**：“No, the ending is not clearly in mind.” 成熟作者也可不预知结尾；但该作家仍知道“要留下什么 mood”。执行条件见本条的新分支。
+1. **《金银岛》边写边发现**：作者自述十五天十五章后卡住，换地后一章一天。这说明“先有完整胚故事”不是所有作者的必经工序；具体适用条件见下文。
+  2. **结尾不在心**：“No, the ending is not clearly in mind.” 成熟作者也可不预知结尾；但该作家仍知道“要留下什么 mood”。具体适用条件见下文。
 3. **《Studying the Short-Story》 区分 tale、short-story 与 sketch**：链/树比喻分别指 tale 与 short-story，不能把 tree 译成速写；sketch 的静态情境另在。该作者的分类提供不同组织方案，不能证明所有印象主义作品都没有变化。若用户选择静态情境，先检查强加情节是否改变其目标，而非直接判其缺少故事。
 
 ### 证据定位
@@ -110,10 +110,10 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 `effect_unit`、`effect_statement`、`competing_effects`、`hierarchy`、`deletion_log`（删/并/留及理由）。
 
 ### 原例与反证
-1. ** 同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 Poe 式情绪统一。执行条件见本条的新分支。
-  2. ** 长篇小说不必一 idea**：“if I stated that the novel must embody one story-idea … the statement would be false”。执行条件见本条的新分支。
-  3. ** 细节多职是最高艺术**：“the very highest order of creative art”；要求 selection “typical, to be inclusive”。执行条件见本条的新分支。
-  4. ** 印象主义以 tone 统摄**：速写/印象主义的细节本身就是效果；执行条件见本条的新分支。
+1. **同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 Poe 式情绪统一。具体适用条件见下文。
+  2. **长篇小说不必一 idea**：“if I stated that the novel must embody one story-idea … the statement would be false”。具体适用条件见下文。
+  3. **细节多职是最高艺术**：“the very highest order of creative art”；要求 selection “typical, to be inclusive”。具体适用条件见下文。
+  4. **印象主义以 tone 统摄**：速写/印象主义的细节本身就是效果；具体适用条件见下文。
 
 ### 证据定位
 -《Materials and Methods of Fiction》 “The aim of a short-story is to produce a single narrative effect…”（M）
@@ -153,10 +153,10 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 `genre_contract`、`market_constraints`、`deviation_log`（偏离/补偿/代价）、`rejection_diagnosis`。
 
 ### 原例与反证
-1. ** “clumsy separations”**：James 认为 novel/romance 二分对创作者无意义；执行条件见本条的新分支。
-  2. ** “not possible to make a hard and fast definition”**：类型无硬定义；执行条件见本条的新分支。
-  3. ** 反“快乐结局”；承认市场压力但自己怀疑**：两者都无统计；执行条件见本条的新分支。
-  4. ** 五条否定律**：这是 1920 年代美国杂志市场，不是普遍道德；执行条件见本条的新分支。
+1. **“clumsy separations”**：James 认为 novel/romance 二分对创作者无意义；具体适用条件见下文。
+  2. **“not possible to make a hard and fast definition”**：类型无硬定义；具体适用条件见下文。
+  3. **反“快乐结局”；承认市场压力但自己怀疑**：两者都无统计；具体适用条件见下文。
+  4. **五条否定律**：这是 1920 年代美国杂志市场，不是普遍道德；具体适用条件见下文。
 
 ### 证据定位
 -《Types of Prose Narratives: A Text-Book for the Story Writer》 叙事两大门、34 型工作定义（M/R）
@@ -183,7 +183,7 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
   - 是否把“反规则”变成新教条。
 
 ### 条件、动作与分支
-区分可检文本属性、审美判断、生产建议及效果假设。记录支持、反证、适用条件和来源依赖；反例可以收窄或修订原规则，不能永远登记“大师豁免”而拒绝改规则。同传统、同编者不自动等于同一证人，具体转引才建立依赖；多个PG也不自动独立。未找到反例写检索范围，不编两个例子凑数。冲突先查对象、尺度、媒介、年代和目标，能兼容则并存，不能裁决则保留分支。
+区分可检文本属性、审美判断、生产建议及效果假设。记录支持、反证、适用条件和来源依赖；反例可以收窄或修订原规则，不能永远登记“大师豁免”而拒绝改规则。同传统、同编者不自动等于同一证人，具体转引才建立依赖；多个来源也不自动独立。未找到反例写检索范围，不编两个例子凑数。冲突先查对象、尺度、媒介、年代和目标，能兼容则并存，不能裁决则保留分支。
 
 ### 失败出口
 只有意见来源时标历史主张或H；效果未测写NOT_PROVEN，不因为无两个反例就删除有价值的单源知识。
@@ -195,10 +195,10 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 `rule_card`（layer/scope/signals/branches/failures/counterexamples/confidence）、`exceptions_log`。
 
 ### 原例与反证
-1. ** 大师可有意犯规、新手须全守**：“大师豁免”不能变成“人人可犯规”；执行条件见本条的新分支。
-  2. ** “no one rule applies to all writers alike.”**：任何“唯一正确方法”都被同一编者的问卷否定；执行条件见本条的新分支。
-  3. ** “the gist of the matter always escapes.”**：规则只能逼近，不能穷尽；执行条件见本条的新分支。
-  4. ** 反公式却输出 18 条主张**：反规则也会变成规则；执行条件见本条的新分支。
+1. **大师可有意犯规、新手须全守**：“大师豁免”不能变成“人人可犯规”；具体适用条件见下文。
+  2. **“no one rule applies to all writers alike.”**：任何“唯一正确方法”都被同一编者的问卷否定；具体适用条件见下文。
+  3. **“the gist of the matter always escapes.”**：规则只能逼近，不能穷尽；具体适用条件见下文。
+  4. **反公式却输出 18 条主张**：反规则也会变成规则；具体适用条件见下文。
 
 ### 证据定位
 -《Fiction Writers on Fiction Writing》 “no one rule applies to all writers alike.”（M）

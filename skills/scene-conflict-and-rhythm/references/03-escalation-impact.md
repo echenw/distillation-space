@@ -204,12 +204,12 @@
 **条件**：打斗描写开始堆“迅猛地/狠狠地/凌厉地”时。
 
 **锚点**
--《Scaramouche: A Romance of the French Revolution》《Scaramouche》：决斗刺杀后的收束——尸体从腋下被接住、膝盖弯曲、血从创口涌出，原文第 1311 行实读 `the blood welled and bubbled from the`；随后对手用蕾丝手帕擦剑并任其落地。同一场开局只用一句 `Steel beat on steel, and the men engaged.`（原文第 1291 行实读）加三个交锋便结束。
--《Scaramouche: A Romance of the French Revolution》 全书开场第 74 行实读：`He was born with a gift of laughter and a sense that the world was mad.`
+- 《Scaramouche: A Romance of the French Revolution》《Scaramouche》：决斗刺杀后的收束——尸体从腋下被接住、膝盖弯曲、血从创口涌出，原文第 1311 行实读 `the blood welled and bubbled from the`；随后对手用蕾丝手帕擦剑并任其落地。同一场开局只用一句 `Steel beat on steel, and the men engaged.`（原文第 1291 行实读）加三个交锋便结束。
+- 《Scaramouche: A Romance of the French Revolution》 全书开场第 74 行实读：`He was born with a gift of laughter and a sense that the world was mad.`
 
 **动作分支（接R10）**：用手松、膝弯、视线或呼吸改变、擦拭物件等后果替换空泛强度词。心理判断与抽象叙述有独有作用时可保留。
 
-**反例**：反差是喜剧分支之一；黑色幽默、滑稽暴力或荒诞体可采用不同契约，参见 AF-15，不把伤亡位置作为笑点禁令。
+**反例**：反差是喜剧分支之一；黑色幽默、滑稽暴力或荒诞体可采用不同契约，参见 AF-14，不把伤亡位置作为笑点禁令。
 
 ---
 
@@ -330,7 +330,7 @@
 
 **用法**：写“离致命多近”+ 对方的**反射**（缩头、抬手、后退几步），不写“切开什么”。伤害留到这一幕之外。
 
-**反例**：若本场确实要呈现已经发生的伤亡，不能只写险些发生而遗漏关键结果；可用 AF-09、转述或余波。未受伤同样能产生时间、关系、恐惧或资源后果，不需为“有代价”强加伤亡。
+**反例**：若本场确实要呈现已经发生的伤亡，不能只写险些发生而遗漏关键结果；可用 AF-08 的伤势写法、转述或余波。未受伤同样能产生时间、关系、恐惧或资源后果，不需为“有代价”强加伤亡。
 
 ---
 
@@ -345,7 +345,27 @@
 
 **锚点**
 - 整段靠“谁追、谁回、谁转向”的连续动作推进——萨克森军溃 → 蒂利停止追击 → 胜兵转击瑞典侧翼 → 对方反击敌后卫 → 阵线整体转向 → 预备队奉命左转形成新正面（见原文）。
-- 原著的群众恐慌、原著的指挥官描写为同族佐证。
+- 《Military Memoirs of Capt. George Carleton》 卡内 H8：队形用形状命名（半月形、马蹄形），命名即战术说明。
+
+**用法**：把每一次大规模变动写成“一个决策 + 一个物理后果”，而不是同时切到十个地方；给读者一条可跟随的因果线，哪怕这条线后来被证明是错的。
+
+**反例**：写“看不清、失控”的新兵视角时可以有意打破这条，可只交付人物可感的片段；读者是否需要恢复全局因果，取决于叙述目标（《The Red Badge of Courage》 的溃退洪流提供一例）。
+
+---
+
+---
+
+## AF-12 溃退、误判链与有序撤离
+
+> 适用优先：操作和数值是对应目标下的H/P候选。以下旧式“必须／不得”均受本条目标及反例限制；不以次数、页数、百分比自动判错。来源观察及原文行位仍按证据段保留。
+**级别**：F+H
+
+**条件**：溃退、恐慌、集体失控。
+
+**锚点**
+- 《Military Memoirs of Capt. George Carleton》 卡内 H3“传染性崩溃”：一人失误（掷雷落己方）→ 旁观者误判 → 集体恐慌 → 主动放弃已得阵地。
+- 《The Red Badge of Courage》：溃退洪流里军官以剑与左拳打人维持队列。
+- 《The Adventures of Gerard》 的群众恐慌、《The World Set Free》 的指挥官描写为同族佐证。
 
 **用法**：当溃败由错误传播驱动时，可写“可指认的失误→具体误判→放弃动作”。压倒性真实威胁、命令、疲劳或组织崩解也可引起撤离；先识别本稿原因，再安排身体与集体反应。
 
@@ -364,7 +384,27 @@
 
 **锚点**
 - “负伤三令”：领袖负伤后连续下达命令，末次转祝福或托付，是早期版本的设计方案；“必须且不能遗嘱”无普适依据，改为按场景目标选择。
--同族佐证：《Under the White Ensign: A Naval Story of the Great War》 舰桥上的指挥官、《The World Set Free》 地图旁的 Dubois——构成“领袖死亡位置学”的三种站位（《Captain Macklin: His Memoirs》 跨书母题索引）。
+- 同族佐证：《Under the White Ensign: A Naval Story of the Great War》 舰桥上的指挥官、《The World Set Free》 地图旁的 Dubois——构成“领袖死亡位置学”的三种站位（《Captain Macklin: His Memoirs》 跨书母题索引）。
+
+**用法**：若目标是表现指挥能力衰减，可逐次缩短命令，末次留动作、名字或托付；若目标包括执行延续，安排接手者和其能力。无法接手、争权或延迟接手也是分支。
+
+**反例**：若两次死亡只是重复而没有新作用，可改变位置、反应或后果；刻意同形可产生对照。悲伤收束本身成立，只有作品还需交代指挥延续时才补执行接力。
+
+---
+
+---
+
+## AF-17 声音倒计时与坏消息接力
+
+> 适用优先：操作和数值是对应目标下的H/P候选。以下旧式“必须／不得”均受本条目标及反例限制；不以次数、页数、百分比自动判错。来源观察及原文行位仍按证据段保留。
+**级别**：F+H
+
+**条件**：远程威胁（轰炸、炮击、追兵）；或写死讯的传递。
+
+**锚点**
+- 《Women's barracks》 卡内 H1：威胁若可被感官在场/缺席判定（引擎声、脚步声、警报间歇），写一句口语规则（“如果它停了，就……”）即可建立可继承的紧张机制；《The World Set Free》 的轰炸声、《Soldier Stories》 的鼓手召回为第二、三处。
+- 《Women's barracks》 卡内 H4：死讯按“知情人→转述→电话→在场者缺席→其实已在场”多级传递可延迟接收并改变意义；每级换视角只是旧H方案，直接通知、同一视角跟踪也成立；《Soldier Stories》 的遗物辨认链为同族。
+- 《The Coming Conquest of England》：三小时静默之后才来第一炮的闷雷——先给静默，再给声音。
 
 **用法**：需倒计时时可建立可感的威胁规则，再选择兑现、中止或错过。需传递延迟时记录知情人、通道、接收与误差；跳数随任务，不设至少两跳。
 
@@ -382,8 +422,8 @@
 **条件**：技术对抗、陷阱与反陷阱、多单位协同、海空对抗。
 
 **锚点**
--《Under the White Ensign: A Naval Story of the Great War》 卡内 H1：按回合组织，每回合给出技术依据（物理/程序），3–5回合是旧H练习值；决胜可来自装置、信息、积累消耗、位置或执行变化，同一火力在条件改变后也可决胜。《Military Memoirs of Capt. George Carleton》、《A Yankee Flier in Italy》、《A Yankee Flier Over Berlin》 交叉索引佐证。
--《Under the White Ensign: A Naval Story of the Great War》 卡内 H2：伪装识别可给可复述的行为判据（方向恒定、无航迹、滚动轴浅）；2–3条是练习值。若采取直觉分支，区分人物猜测与已证事实，按所选公平契约兑现。
+- 《Under the White Ensign: A Naval Story of the Great War》 卡内 H1：按回合组织，每回合给出技术依据（物理/程序），3–5回合是旧H练习值；决胜可来自装置、信息、积累消耗、位置或执行变化，同一火力在条件改变后也可决胜。《Military Memoirs of Capt. George Carleton》、《A Yankee Flier in Italy》、《A Yankee Flier Over Berlin》 交叉索引佐证。
+- 《Under the White Ensign: A Naval Story of the Great War》 卡内 H2：伪装识别可给可复述的行为判据（方向恒定、无航迹、滚动轴浅）；2–3条是练习值。若采取直觉分支，区分人物猜测与已证事实，按所选公平契约兑现。
 
 **用法**：记录每回合优势、反制及改变的条件；可换原理，也可在同一原理上改变资源、位置或执行。选择公平解谜式胜负时，提前提供足以理解决胜的信息；其他惊奇或限知分支另定揭示时机。
 

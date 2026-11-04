@@ -78,7 +78,7 @@
   3. 根据目标选一句点破、较长解释、动作或叙述总结；旧一句限制仅为精简练习。
 - 输出：侧影清单 + 点破句 + 点破后回指的前文页码。
 - 失效：侧影若无新增作用会拖延；短篇与快节奏文本均可使用，数量按实际篇幅和功能安排。
--依据：《The Craft of Fiction》 "Not to walk straight up to the fact and put it into phrases, but to _surround_ the fact"；"stereoscopically"。
+- 依据：《The Craft of Fiction》 "Not to walk straight up to the fact and put it into phrases, but to _surround_ the fact"；"stereoscopically"。
 
 ## RT-02 · 第一人称封闭视角中的失信与孤立
 

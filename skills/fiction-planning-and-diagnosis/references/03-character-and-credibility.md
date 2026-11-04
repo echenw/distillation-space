@@ -1,6 +1,6 @@
 # 人物、信息、可信度与主题
 
-本文件融合 A-02 的对应规则与 C-07 的独有方法；引用保留原 PG 和固定阅读版行号。旧反例中的历史立场不替代本条条件。
+本文件融合 A-02 的对应规则与 C-07 的独有方法。旧反例中的历史立场不替代本条条件。
 
 ## RC-05 人物与事件双向检查
 
@@ -29,10 +29,10 @@
 `entry_type`、`entry_evidence`、`character_card`、`situation_forces`、`plot_forces_character`、`character_causes_turn`。
 
 ### 原例与反证
-1. ** 玩偶人物**：“inventing a situation and sticking doll-like characters in it” 是失败经验。执行条件见本条的新分支。
-  2. ** Hardy 让人物 suspend their natures**：人物被情节/命运压干，失真。执行条件见本条的新分支。
-  3. ** Assingham 夫妇为传递信息而造**：功能人物被读者看穿。执行条件见本条的新分支。
-  4. ** 通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。执行条件见本条的新分支。
+1. **玩偶人物**：“inventing a situation and sticking doll-like characters in it” 是失败经验。具体适用条件见下文。
+  2. **Hardy 让人物 suspend their natures**：人物被情节/命运压干，失真。具体适用条件见下文。
+  3. **Assingham 夫妇为传递信息而造**：功能人物被读者看穿。具体适用条件见下文。
+  4. **通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。具体适用条件见下文。
 
 ### 证据定位
 -《Partial Portraits (includes The Art of Fiction)》 “character in itself is plot”（C，H 到步骤）
@@ -71,10 +71,10 @@
 `pov_contract`、`distance_profile`、`switch_ledger`（trigger/benefit/marker/cost）、`pov_violations`。
 
 ### 原例与反证
-1. **《Bleak House》《War and Peace》频繁切换仍成立**：说明“一致性”不是绝对；执行条件见本条的新分支。
-  2. ** Assingham 夫妇为传递信息而造**：行为不可信；切换的代价高于收益。执行条件见本条的新分支。
-  3. ** 1926 选本仍有第一人称叙述者公开现身**：不是所有时代都禁“叙述者现身”。执行条件见本条的新分支。
-  4. ** 第一人称三种禁用**：是逐篇选择，不是一刀切；执行条件见本条的新分支。
+1. **《Bleak House》《War and Peace》频繁切换仍成立**：说明“一致性”不是绝对；具体适用条件见下文。
+  2. **Assingham 夫妇为传递信息而造**：行为不可信；切换的代价高于收益。具体适用条件见下文。
+  3. **1926 选本仍有第一人称叙述者公开现身**：不是所有时代都禁“叙述者现身”。具体适用条件见下文。
+  4. **第一人称三种禁用**：是逐篇选择，不是一刀切；具体适用条件见下文。
 
 ### 证据定位
 -《The writing of fiction》 “record anything not naturally within his register”（M）
@@ -115,10 +115,10 @@
 `knowledge_matrix`、`suspense_mode`、`reveal_points`、`reader_question`。
 
 ### 原例与反证
-1. ** 舞台要求观众全程知道秘密**：侦探若照搬会泄底。执行条件见本条的新分支。
-  2. ** 悬念有时靠“almost fabulous stupidity”**：这是市场观察，不是正面方法。执行条件见本条的新分支。
-  3. ** 小说唯一可预设义务是“有趣”**：不能拿“读者会不懂”当删减借口，也不能拿“读者会懂”当免解释理由。执行条件见本条的新分支。
-  4. **侦探读者默认“会有答案”**：类型惯例本身是知识状态的一部分；执行条件见本条的新分支。
+1. **舞台要求观众全程知道秘密**：侦探若照搬会泄底。具体适用条件见下文。
+  2. **悬念有时靠“almost fabulous stupidity”**：这是市场观察，不是正面方法。具体适用条件见下文。
+  3. **小说唯一可预设义务是“有趣”**：不能拿“读者会不懂”当删减借口，也不能拿“读者会懂”当免解释理由。具体适用条件见下文。
+  4. **侦探读者默认“会有答案”**：类型惯例本身是知识状态的一部分；具体适用条件见下文。
 
 ### 证据定位
 -《The Theory of the Theatre, and Other Principles of Dramatic Criticism》 “the audience must know the secret all the time”（M，舞台）
@@ -157,10 +157,10 @@
 `credibility_contract`、`chance_audit`（位置/作用/替代方案）、`setup_log`。
 
 ### 原例与反证
-1. **Oedipus 的巧合是悲剧前提，不是解结**：命运框架可豁免；执行条件见本条的新分支。
-  2. ** 允许“delightful improbability”**；要求按 farce 评：闹剧/传奇可容偶然。执行条件见本条的新分支。
-  3. ** 纯奇“probability is not called for”**：仍要求 magnificence/splendor/magic 的内部一致；执行条件见本条的新分支。
-  4. ** “dime novel” 容忍度更高**：这是类型契约，不是写实规则；执行条件见本条的新分支。
+1. **Oedipus 的巧合是悲剧前提，不是解结**：命运框架可豁免；具体适用条件见下文。
+  2. **允许“delightful improbability”**；要求按 farce 评：闹剧/传奇可容偶然。具体适用条件见下文。
+  3. **纯奇“probability is not called for”**：仍要求 magnificence/splendor/magic 的内部一致；具体适用条件见下文。
+  4. **“dime novel” 容忍度更高**：这是类型契约，不是写实规则；具体适用条件见下文。
 
 ### 证据定位
 -《Short Story Writing: A Practical Treatise》 “verisimilitude, not verity, is wanted in fiction.”（M）
@@ -200,10 +200,10 @@
 `theme_question`、`proof_scene`、`declarations_log`、`genre_exception`。
 
 ### 原例与反证
-1. ** 道德故事由“作者明显要教”定义**：“obvious concern about the lesson”；此时“藏主题”反而失败。执行条件见本条的新分支。
-  2. ** 自己承认好故事含 “strong argument for good”**：只是反对把故事当伦理真理的载体；执行条件见本条的新分支。
-  3. ** 主张小说塑造时代道德**：这是价值立场，不是事实；执行条件见本条的新分支。
-  4. **讽刺表面直陈可能是有意反讽**：不能一律删；执行条件见本条的新分支。
+1. **道德故事由“作者明显要教”定义**：“obvious concern about the lesson”；此时“藏主题”反而失败。具体适用条件见下文。
+  2. **自己承认好故事含 “strong argument for good”**：只是反对把故事当伦理真理的载体；具体适用条件见下文。
+  3. **主张小说塑造时代道德**：这是价值立场，不是事实；具体适用条件见下文。
+  4. **讽刺表面直陈可能是有意反讽**：不能一律删；具体适用条件见下文。
 
 ### 证据定位
 -《Short Story Writing: A Practical Treatise》 “strong argument for good”；“didacticism in literature is always inartistic”（M）

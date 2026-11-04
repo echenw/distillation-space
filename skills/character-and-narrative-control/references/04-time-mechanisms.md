@@ -44,7 +44,7 @@
 
 - **断言**：这部故事的双时间线采用**单音节标记**（flick!）做节拍器，并用**同构开场句**锚定（"It was a good job and Max/Mac…knew whom he had to thank"），镜像主角名只差一个字母——结构的可读性靠重复锚点而非解释。
 - **动作**：① 如果两线确有镜像目的，各列“欲望/新信息/后果”；② 可用时间、空间或动作信号之一保证辨认，开场句**不必**逐词镜像；③ 符号 `flick` 仅是原著的设计，不是普遍要求。
-- **来源**：/172/338/450（四组开场）。置信中。
+- **来源**：《Of All Possible Worlds》（四组开场句）。置信中。
 
 ## 2. N7 动机倒置
 
@@ -56,7 +56,7 @@
 
 - **断言**：在原著的世界规则中，能够穿越两条互斥历史的信息介质是**文字与书信**；其他作品并未统一限制物体或人物通行——各自把"另一世界史"抛入时间介质，捡到的恰是对方的；此信件成为动机倒置的直接依据。
 - **动作**：① 信件文风差异化（本源：一个像书worm通信，一个像教 Morons 的教科书）——读者凭文风即知来自哪条线。
-- **来源**：《Of All Possible Worlds》、置信中。
+- **来源**：《Of All Possible Worlds》。置信中。
 
 ## 4. N9 振荡收束
 
@@ -82,7 +82,7 @@
 - **when**：作者未完成的时间/幻设长篇。
 - **断言**：未完成稿以"编者说明（断点声明）+作者口述的后续情景注释全文随附"出版——结局空缺由注释承诺补位，成书完整性由制度而非文本提供；正文与施工图构成双层文本，未完成性本身成为结构。
 - **动作**：① 引用注释层结局必须标注层级（作者规划非正文）；② 引文时如实标已完成正文断点，不把作者施工图代写成原著后续章节；③ 注释中的机制决定（如等时铁律）按笔记层证据计置信。
-- **来源**：（Lubbock 编者注：planned and begun...notes on the course...given in full）；（Notes 标题与脚注：broke off in the middle of the scene...dictated the following notes）；Notes （等时铁律）、（结局规划）。置信中（全读 7833 行+Notes 全文；单族）。
+- **来源**：《The Sense of the Past》（Lubbock 编者注：planned and begun...notes on the course...given in full；Notes 标题与脚注：broke off in the middle of the scene...dictated the following notes；续写 Notes 中的等时铁律与结局规划）。置信中（全文与 Notes 全文；单族）。
 
 ## 1. N13 互为未来（时代互换）
 
@@ -97,7 +97,7 @@
 - **when**：穿越目标是有既定文本记载的过去（神话/正史）。
 - **断言**：主角已知的神话/历史文本就是"未来的剧本"——如果作品选择史实固定型，角色可以把既读文本误认为不可改的未来剧本；但未证明作者必须让预言全数兑现；用神话角色名与主角名字谐音可做身份回写（Dion→Dionysus），暗示不实证。
 - **动作**：① 结局按已知文本逐项交割（黑帆/弃妾/四子等）；② 预言与传说的冲突处用"替身"调和（女仆假扮公主成全传说字面）；③ 主角对复仇链的克制写成"把清算交还历史"。
-- **来源**：（拒绝复仇链+历史进程代偿）、（Dionysus 回写自问）、（"nothing quite like time travel to make a man's predictions work out"+四子名录）、（替身护传说）。置信低（单族）。
+- **来源**：《Battle Out of Time》（拒绝复仇链+历史进程代偿）、（Dionysus 回写自问）、（"nothing quite like time travel to make a man's predictions work out"+四子名录）、（替身护传说）。置信低（单族）。
 
 ## 3. N15 知识缺口律
 

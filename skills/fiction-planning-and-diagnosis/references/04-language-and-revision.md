@@ -1,6 +1,6 @@
 # 细节、语言、工作习惯与修订
 
-本文件融合 A-02 的对应规则与 C-07 的独有方法；引用保留原 PG 和固定阅读版行号。旧反例中的历史立场不替代本条条件。
+本文件融合 A-02 的对应规则与 C-07 的独有方法。旧反例中的历史立场不替代本条条件。
 
 ## RC-14 具体化、细节与视点
 
@@ -29,10 +29,10 @@
 `dominant_impression`、`detail_table`（细节/功能/是否视角可见）、`cut_log`。
 
 ### 原例与反证
-1. ** 有 6 人主张全描写**：在特定读者/类型中成立；执行条件见本条的新分支。
-  2. ** “If I use more than one sentence of description I wince.”**：快节奏动作短篇成立；执行条件见本条的新分支。
-  3. ** 问题单 33要求删去真实但无用的细节**：不能以“我查过资料”为由保留；执行条件见本条的新分支。
-  4. ** 允许技术说明的细节段（沉思体为 H 推断）**：此时“一次成图”不适用；执行条件见本条的新分支。
+1. **有 6 人主张全描写**：在特定读者/类型中成立；具体适用条件见下文。
+  2. **“If I use more than one sentence of description I wince.”**：快节奏动作短篇成立；具体适用条件见下文。
+  3. **问题单 33要求删去真实但无用的细节**：不能以“我查过资料”为由保留；具体适用条件见下文。
+  4. **允许技术说明的细节段（沉思体为 H 推断）**：此时“一次成图”不适用；具体适用条件见下文。
 
 ### 证据定位
 -《Partial Portraits (includes The Art of Fiction)》 “solidity of specification”（C，H 到步骤）
@@ -71,10 +71,10 @@
 `style_floor`（clear/appropriate/readable）、`sentence_log`（原句/改句/理由）、`register_check`。
 
 ### 原例与反证
-1. ** 否掉“短词/撒克逊词”绝对规则**：“I think them false in theory and likely to be fatal in practice.” 执行条件见本条的新分支。
-  2. ** “the ear is the sole judge. It is impossible to lay down laws.”**：节奏无法完全立法；执行条件见本条的新分支。
-  3. ** 纯奇故事文体可从极朴到极华丽**：不能一刀切；执行条件见本条的新分支。
-  4. ** “The style is the man.”**：风格不可教；执行条件见本条的新分支。
+1. **否掉“短词/撒克逊词”绝对规则**：“I think them false in theory and likely to be fatal in practice.” 具体适用条件见下文。
+  2. **“the ear is the sole judge. It is impossible to lay down laws.”**：节奏无法完全立法；具体适用条件见下文。
+  3. **纯奇故事文体可从极朴到极华丽**：不能一刀切；具体适用条件见下文。
+  4. **“The style is the man.”**：风格不可教；具体适用条件见下文。
 
 ### 证据定位
 -《On the Art of Writing》 “accurate, perspicuous, persuasive, appropriate”（M）
@@ -113,10 +113,10 @@
 `revision_log`（层级/段落/原句/改句/理由）、`cold_read_notes`、`rollback_points`。
 
 ### 原例与反证
-1. ** 修订 0 到 20+ 次并存**：修订次数不是质量指标；执行条件见本条的新分支。
-  2. **《金银岛》卡壳/换地后一章一天**：速度与质量无稳定关系；执行条件见本条的新分支。
-3. **《文心雕龍》 “自然会妙”**：对某些文本，过度修改会磨掉生气；执行条件见本条的新分支。
-  4. **连载/截稿**：工序可压缩，但不能用“没时间”跳过结构检查；执行条件见本条的新分支。
+1. **修订 0 到 20+ 次并存**：修订次数不是质量指标；具体适用条件见下文。
+  2. **《金银岛》卡壳/换地后一章一天**：速度与质量无稳定关系；具体适用条件见下文。
+3. **《文心雕龍》 “自然会妙”**：对某些文本，过度修改会磨掉生气；具体适用条件见下文。
+  4. **连载/截稿**：工序可压缩，但不能用“没时间”跳过结构检查；具体适用条件见下文。
 
 ### 证据定位
 -《Short Story Writing: A Practical Treatise》 “lay it away… let it get cold”（M）
@@ -155,10 +155,10 @@
 `daily_quota`、`notebook_index`、`section_map`、`stall_log`（卡点/替代任务/恢复方式）。
 
 ### 原例与反证
-1. **《金银岛》边写边发现**：骨架不是必需；执行条件见本条的新分支。
-2. **《文心雕龍》 养气节宣（单源 H）**：写不动就停，与日课冲突；执行条件见本条的新分支。
-  3. ** 零修订/一次成型**：日课/骨架不是唯一正当工作法；执行条件见本条的新分支。
-  4. **原著的口述作者条目 口述 9 人**：工具与流程不同；执行条件见本条的新分支。
+1. **《金银岛》边写边发现**：骨架不是必需；具体适用条件见下文。
+2. **《文心雕龍》 养气节宣（单源 H）**：写不动就停，与日课冲突；具体适用条件见下文。
+  3. **零修订/一次成型**：日课/骨架不是唯一正当工作法；具体适用条件见下文。
+  4. **原著的口述作者条目 口述 9 人**：工具与流程不同；具体适用条件见下文。
 
 ### 证据定位
 -《On the art of writing fiction》 “write a little bit every day, whether you are in the mood or not”（M）
@@ -196,10 +196,10 @@
 `deletion_table`（对象/类型/三问/处置）、`compression_log`。
 
 ### 原例与反证
-1. ** 要求 “typical, to be inclusive”**：不能因体面/篇幅删掉生活面向；执行条件见本条的新分支。
-  2. ** 素描的魅力在 atmosphere**：删描写即毁；执行条件见本条的新分支。
-  3. ** 问题单 33要求删去真实但无用的细节**：与“保留真实”冲突，按类型裁决；执行条件见本条的新分支。
-4. **原著 对“必要但无趣”只压缩；《文心雕龍》 “善删者字去而意留”**：不是越短越好；执行条件见本条的新分支。
+1. **要求 “typical, to be inclusive”**：不能因体面/篇幅删掉生活面向；具体适用条件见下文。
+  2. **素描的魅力在 atmosphere**：删描写即毁；具体适用条件见下文。
+  3. **问题单 33要求删去真实但无用的细节**：与“保留真实”冲突，按类型裁决；具体适用条件见下文。
+4. **原著 对“必要但无趣”只压缩；《文心雕龍》 “善删者字去而意留”**：不是越短越好；具体适用条件见下文。
 
 ### 证据定位
 -《Short Story Writing: A Practical Treatise》 “The art of omission is an important branch of the art of authorship.”（M）

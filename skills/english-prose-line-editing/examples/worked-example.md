@@ -1,10 +1,10 @@
 # Worked examples · 两个 DESIGN_EXAMPLE
 
-返回 [SKILL.md](../SKILL.md) · 流程 [05](../references/05-workflow-and-failure-modes.md) · 规则 [01](../references/01-mechanics-and-punctuation.md) · [02](../references/02-sentence-revision.md) · [03](../references/03-paragraph-and-emphasis.md) · [04](../references/04-word-choice-and-concision.md) · 来源 06
+返回 [SKILL.md](../SKILL.md) · 流程 [05](../references/05-workflow-and-failure-modes.md) · 规则 [01](../references/01-mechanics-and-punctuation.md) · [02](../references/02-sentence-revision.md) · [03](../references/03-paragraph-and-emphasis.md) · [04](../references/04-word-choice-and-concision.md)
 
 **状态：`DESIGN_EXAMPLE`。** 下面两段输入是为演示而写的构造文本，不是客户稿。示例只展示“如何按本 Skill 做判断”，不证明规则在现代英语中有效；所有现代适用性仍是 `H/NOT_PROVEN`。
 
-**共同前提**：人工工作流；只改副本；每条 finding 带 `Cxx` 与《The Elements of Style (Strunk original)》 Lxxx；作者裁决优先；不自动批量改稿。
+**共同前提**：人工工作流；只改副本；每条 finding 带 `Cxx` 与书内条目（Rule N/章节）；作者裁决优先；不自动批量改稿。
 
 ---
 
