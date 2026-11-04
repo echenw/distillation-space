@@ -93,7 +93,7 @@
 
 - **适用**：事件由转述者/见证者层层传达，主角、受害者或边缘人物缺少完整发言机会。
 - **F**：《Heart of Darkness》 是外层游艇等潮与 Marlow 讲述；同时呈现被锁链者与叙事中的“罪犯”标签。
-**补充（保护性共谋子类）**：《Mère Giraud's Little Daughter》 母亲用阶级刻板印象把女儿的苍白沉默解释为贵妇仪态；兄长坦白“信是她写的、钱是我挣的”；神父只给赦免式回应；村民替缺席的丈夫开脱——四个知情层级互不打通。《Mugby Junction》 中两处场景显示沉默也可以是一种照护而非压迫。
+**补充（保护性共谋子类）**：《Mère Giraud's Little Daughter》 母亲用阶级刻板印象把女儿的苍白沉默解释为贵妇仪态；兄长坦白“信是她写的、钱是我挣的”；神父只给赦免式回应；村民替缺席的丈夫开脱——四个知情层级互不打通。《Mugby Junction》 与 显示沉默也可以是一种照护而非压迫。
    *The Secret Sharer* 也是第一人称自我叙述，但海上身份冲突并不等同该帝国框架。
 - **H**：层级会改变读者对信息的信任与盲点；“转述者越多越不确定”不是固定递增规律。政治/帝国立场是叙述者的立场，不是故事世界的中立事实。
 - **P**：使用本文件 K0，按下述条件分支填列：转述链与保护性共谋分开；后者额外记录保护者、被保护者、代价。
@@ -135,7 +135,7 @@ P：出现宣言与行为（或宣言与宣言）不一致时，给每个版本�
 反例/退出：可靠全知叙述者不必强行推翻自身；不要为了"深不可测"让每个角色都自相矛盾。
 
 ### C09-P12 对峙戏由"双向可用的解释"驱动 —— NEW
-F（原著逐字引文）：侦查者以心理画像取代物证并逐项列举可观察痕迹（"bookish dreams, a heart unhinged by theories"；"He committed the murder and couldn't take the money… he hid under a stone"）；他给的是预言而非证据（"you'll confess of yourself and perhaps to your own surprise"），并自承可能是在奉承；另见同一原著中两处 "psychology cuts both ways" 的用法；指认落在"嘴唇抽动"上。
+F（原著逐字引文）：侦查者以心理画像取代物证并逐项列举可观察痕迹（"bookish dreams, a heart unhinged by theories"；"He committed the murder and couldn't take the money… he hid under a stone"）；他给的是预言而非证据（"you'll confess of yourself and perhaps to your own surprise"），并自承可能是在奉承；另见 、 的 "psychology cuts both ways"；指认落在"嘴唇抽动"上。
 H：对峙张力来自**同一事实可被双方反向利用**；物证也可以同时参与，只是本案例突出双向解释。
 P：让双方各提出一个可被对方反向利用的解释；需要让心理指认获得可见落点时，可配身体反应；也可用停顿、选择或证据反应；写假认罪时给出后来可被推翻的具体缺口。
 退出：类型作品要求铁证推进时不必采用；不要把假认罪简化为"因为心虚"。
