@@ -1,0 +1,4 @@
+interface:
+  display_name: "场景设计与冲突节奏"
+  short_description: "根据目标、空间、知情关系与后果设计修订场景"
+  default_prompt: "先判断当前任务与材料，再按场景设计与冲突节奏的条件分支执行。"

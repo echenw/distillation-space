@@ -1,4 +1,0 @@
-interface:
-  display_name: "历史架空叙事因果"
-  short_description: "校验史实与架空正典边界，设计制度与人物选择代价"
-  default_prompt: "请用历史架空 Skill，先区分历史事实、文学观察和我的架空正典，再做有边界的叙事设计或审稿。"

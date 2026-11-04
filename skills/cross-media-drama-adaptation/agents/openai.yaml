@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cross-media drama adaptation"
+  short_description: "Adapt narrative functions across stage and silent visual storytelling"
+  default_prompt: "Use the source story and target medium to build an evidence-based adaptation plan."

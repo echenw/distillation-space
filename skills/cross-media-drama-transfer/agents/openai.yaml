@@ -1,4 +1,0 @@
-interface:
-  display_name: "Cross-Media Drama Transfer"
-  short_description: "Judge and execute prose/stage to screen or stage adaptation with source-backed, line-cited rules."
-  default_prompt: "判断这个题材能否从小说/舞台剧改到银幕或舞台，并给出带来源行号的分场、载体与结局处理建议。"
