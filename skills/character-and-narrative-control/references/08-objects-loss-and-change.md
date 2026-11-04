@@ -11,7 +11,7 @@
 ## RT-08 · 空间残余是一条叙事镜头路线，不等于意识流全部
 
 - **适用**：人物离场、去世或关系中断后，需显示空间如何留下时间痕迹。
-- **F**：《Jacob's Room》 用空房间空气和物件显示某人的不在场，早期的钟声连接丧亲经验；《The Yellow Wallpaper》 的壁纸则是处于场景内人物的私密感知投射，两者不同。
+- **F**：《Jacob's Room》 用空房间空气和物件显示某人的不在场，早期 的钟声连接丧亲经验；《The Yellow Wallpaper》 的壁纸则是处于场景内人物的私密感知投射，两者不同。
 - **H**：物件与空间可以承载缺席，但意识流也可能是人物此刻的连续内语、碎片感知或自由间接话语；不能从“空房间”直接推导心理状态真实病因。
 - **P**：明确镜头归谁所有（人物感知/叙述者观察/读者从物件推断），选择至少一个能被此前场景回查的物理细节，避免只列阴影、雨和灰尘作为“创伤的套装”。
 - **反例**：用很诗意的空房间替代悲痛者的选择与日常生活；应与具体人物行为/关系互相照明。
@@ -48,7 +48,7 @@ F："I drink so that I may suffer twice as much!"；索尼娅求受难；**（�
 P：若人物求罚又抗拒帮助，写清他想向谁证明什么及实际代价；**保留不和解、不自罚的分支**，作者已给目标或授权代选时可提出并实施有理由的方案；价值取舍仍未明时并列其代价，不把某支当唯一正确。
 禁用：把自伤、暴力或成瘾描写为必要赎罪或疗法。
 
-F： "I drink so that I may suffer twice as much!"；、求受难；**（原著逐字引文）**索尼娅要求当众认罪与受难（"Suffer and expiate your sin by it"），他当场回答 "No! I am not going to them, Sonia!"；另一人物临终拒绝神父："I have no sins. God must forgive me without that. He knows how I have suffered."
+F： "I drink so that I may suffer twice as much!"；、 求受难；**（原著逐字引文）**索尼娅要求当众认罪与受难（"Suffer and expiate your sin by it"），他当场回答 "No! I am not going to them, Sonia!"；另一人物临终拒绝神父："I have no sins. God must forgive me without that. He knows how I have suffered."
 F：**（原著逐字引文）**"They were renewed by love; the heart of each held infinite sources of life for the heart of the other."；同一段 "He did not know that the new life would not be given him for nothing, that he would have to pay dearly for it"；收束于 "that is the beginning of a new story"。另：他渴望悔改但 "he did not repent of his crime"，只在"失败"这一点上承认有罪。
 H：关系可以作为转变的**触点**；本段把后续更新留给另一故事，不能据此得出临床治愈结论。**转变 ≠ 悔改**。
 P：关系可写成转变触点；区分已发生的行动、人物或叙述者的判断、后续尚未呈现的部分。第一次改变、代价与后续检验是一种可选结构，不强制三段。若作者选择恢复或和解结局，按故事证据与设定完成；不能把文学结局升级为现实临床疗效保证，也不让关系变化自动代替责任判断。开放结局则保留未知。

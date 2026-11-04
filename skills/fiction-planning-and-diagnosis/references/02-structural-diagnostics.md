@@ -23,7 +23,7 @@
 写不出结尾时推进一个可写单元，记录待决；不要把不确定结尾当作全局停稿理由。
 
 ### 融合后的独有补充
-保留 《金银岛》与原著的发现型自述、原著的 Trollope 例外；这些是工作法案例，不是速度或成品质量证明。
+保留 《金银岛》与 原著 的发现型自述、原著 的 Trollope 例外；这些是工作法案例，不是速度或成品质量证明。
 
 ### 字段
 `ending_mode`（terminal scene / terminal state / discovery）、`terminal_scene` 或 `terminal_state`、`three_causal_links`、`latent_image`、`last_line_direction`（终场最后动作的方向，用动作代替直接结论）、`milestone_turns`（长程里程碑转折清单）、`ending_check`。
@@ -65,7 +65,7 @@
 联系暂不清时保留待判并给压缩/合并/独立篇章方案；无直接相遇不能自动判赘线。
 
 ### 融合后的独有补充
-C07-F09：事件栏记录变化、信息或问题；人心栏记录人物后果及实际反馈或效果假设。先按项目目标判断弱项；只有氛围不自动补事件，只有事件也不要求每章补情绪段。两栏都弱须有文本依据才建议重写，不能凭猜测读者感受下结论。
+C07-F09：事件栏记录变化、信息或问题；人心栏记录人物后果及实际反馈或效果假设。先按项目目标判断弱项；只有氛围不自动补事件，只有事件也不要求每章补情绪段。两栏都弱须有文本依据才建议重写，不能凭猜测读者感受下结论。。
 
 ### 字段
 `main_action`、`strands[]`（name/function/intersection）、`major_convergence`、`cut_log`。
@@ -113,7 +113,7 @@ C07-F09：事件栏记录变化、信息或问题；人心栏记录人物后果�
 
 ### 原例与反证
 1. ** 内部 23 人反对描写、6 人主张全描写**：配比无统一标准。执行条件见本条的新分支。
-  2. **原著的 tale/sketch 可以以概述为主**：强行场景化会破坏文体。执行条件见本条的新分支。
+  2. **原著 的 tale/sketch 可以以概述为主**：强行场景化会破坏文体。执行条件见本条的新分支。
   3. ** 过渡要“colourless and quiet”**：不是无信息；纯拖延的过渡应删。执行条件见本条的新分支。
   4. ** “If I use more than one sentence of description I wince.”**：这是快节奏作者的反信号，不是通则。执行条件见本条的新分支。
 
@@ -188,7 +188,7 @@ C07 的落幕类比只支持检视停顿和期待，不是当代追读或每章 
 信息尚未决定可先试写不同入口；没有四职不停止起草。篇幅数字与舞台重复三遍仅属历史选项。
 
 ### 融合后的独有补充
-原著的 begin at the beginning 与 begin as late as possible 保留各自上下文；未证明讨论相同对象前不宣布不可化解矛盾。Rip 的框架和静态景物保留为晚入场的反例。
+原著 的 begin at the beginning 与 begin as late as possible 保留各自上下文；未证明讨论相同对象前不宣布不可化解矛盾。Rip 的框架和静态景物保留为晚入场的反例。
 
 ### 字段
 `opening_contract`（who/where-when/tone-type/question）、`entry_point`、`exposition_log`（信息→承载动作）。

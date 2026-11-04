@@ -9,7 +9,7 @@
 ## R1.2 反向判据：什么在银幕上更强（F）
 
 -依赖"看见一件事"的题材（《The photodrama》：People go to the theater to _see_ a deed and not to read or hear _about_ it）。
-- 大型事件连续、群众、风景与仪式（原著的群众片分析；Lindsay主张生死表现应具仪式性，并贬抑私人死亡的画面价值；这是其美学判断）。
+- 大型事件连续、群众、风景与仪式（原著 的群众片分析；：Lindsay主张生死表现应具仪式性，并贬抑私人死亡的画面价值；这是其美学判断）。
 -变形而非替换的幻想题材（《The Art of the Moving Picture》：Substitution is not the fairy-story；要的是 transformation/transfiguration）。
 
 ## R1.3 一手反例：不要以为"能演就必须演"（F）

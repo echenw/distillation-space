@@ -89,7 +89,7 @@
 - **when_not**：周期句的故意延迟是例外；关系从句/同位语插入通常可接受；先行词是词组时关系词放组末，除非造成歧义；不要机械移动所有介词短语。
 - **动作**：画“修饰语 → 被修饰词”的箭头；若中间隔着可移到句首的成分，试移；关系词离先行词太远就调序或拆句；`only/not/all` 先写逻辑辖域，再读两种位置是否改变命题。
 - **输出**：`相关词对 | 距离 | 当前辖域 | 建议 | 歧义风险`。
-- **反例**：`He only found two mistakes.`（`only` 管什么？）；`There was a look in his eye that boded mischief.`（关系词远离先行词）；`All the members were not present.`（否定辖域歧义）。**来源**：《The Elements of Style (Strunk original)》。
+- **反例**：`He only found two mistakes.`（`only` 管什么？）；`There was a look in his eye that boded mischief.`（关系词远离先行词）；`All the members were not present.`（否定辖域歧义，、-**来源**：《The Elements of Style (Strunk original)》。
 - **置信**：高（原则与例子）；中（机械调序风险）。
 - **身份**：F + P；迁移到现代长句为 H。
 

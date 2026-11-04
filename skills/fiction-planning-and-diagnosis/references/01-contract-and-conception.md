@@ -64,7 +64,7 @@ C07-F01：分别记录读者获得什么与作品以什么为完成度标准。C
 没有素材时给原创候选并标假设；忠实续写缺前文时说明承接未知。不能从写不出一句话推断“没有故事”。
 
 ### 融合后的独有补充
-C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随之继承。原著的 chain/tree 比喻区分 tale 与 short-story；sketch 的静态情境另在 ，不能把两个对象混成一条定义。
+C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随之继承。原著 的 chain/tree 比喻区分 tale 与 short-story；sketch 的静态情境另在 ，不能把两个对象混成一条定义。
 
 ### 字段
 `premise`、`effect`、`irreversible_change`、`event_chain`（每环标“因此/然后”）、`open_question`（B/C 用）。
@@ -72,7 +72,7 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 ### 原例与反证
 1. **《金银岛》边写边发现**：作者自述十五天十五章后卡住，换地后一章一天。这说明“先有完整胚故事”不是所有作者的必经工序；执行条件见本条的新分支。
   2. ** 结尾不在心**：“No, the ending is not clearly in mind.” 成熟作者也可不预知结尾；但该作家仍知道“要留下什么 mood”。执行条件见本条的新分支。
-3. **《Studying the Short-Story》 区分 tale、short-story 与 sketch**：链/树比喻分别指 tale 与 short-story，不能把 tree 译成速写；sketch 的静态情境另在。该作者的分类提供不同组织方案，不能证明所有印象主义作品都没有变化。若用户选择静态情境，先检查强加情节是否改变其目标，而非直接判其缺少故事。
+3. **《Studying the Short-Story》 区分 tale、short-story 与 sketch**：的链/树比喻分别指 tale 与 short-story，不能把 tree 译成速写；sketch 的静态情境另在。该作者的分类提供不同组织方案，不能证明所有印象主义作品都没有变化。若用户选择静态情境，先检查强加情节是否改变其目标，而非直接判其缺少故事。
 
 ### 证据定位
 -《Fiction Writers on Fiction Writing》 “A plot attracts facts and characters as a magnet attracts iron filings.”（M）
@@ -189,7 +189,7 @@ C07-E1 的一页 scenario 保留为可选整理工具，历史投稿要求不随
 只有意见来源时标历史主张或H；效果未测写NOT_PROVEN，不因为无两个反例就删除有价值的单源知识。
 
 ### 融合后的独有补充
-融合 C07-F13/F14：craft检查可教，但taste、invention或dramatic sense“永远不可教”也是历史信念，不能用来设天赋门槛。《The art of fiction》；《The Novel; what it is》。保留R1–R8撤回的普遍命题与来源，允许有依据的局部使用。
+融合 C07-F13/F14：craft检查可教，但taste、invention或dramatic sense“永远不可教”也是历史信念，不能用来设天赋门槛。《The art of fiction》、；《The Novel; what it is》、保留R1–R8撤回的普遍命题与来源，允许有依据的局部使用。
 
 ### 字段
 `rule_card`（layer/scope/signals/branches/failures/counterexamples/confidence）、`exceptions_log`。

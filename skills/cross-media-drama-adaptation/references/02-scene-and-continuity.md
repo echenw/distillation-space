@@ -8,7 +8,7 @@
 - 新环境即新场景，须连续编号。
 -多本长片从 Scene 1 直编到底，不按本重置（《Writing the Photoplay》：you start with Scene 1 and number straight through to Scene 200）。
 -地点的**最微小移动**也是新场（《Writing the Photoplay》：消防员登梯分两场；若摄影机 tilt 跟拍则一场；火车跟拍虽背景连变仍是一场）。别人进场不另起新场。
--截图式插入（bust/close-up）自立场景号并单独编号（《Writing the Photoplay》；需要的特写才写进稿并编号，纯画面效果留给导演）。
+-截图式插入（bust/close-up）自立场景号并单独编号（《Writing the Photoplay》；：需要的特写才写进稿并编号，纯画面效果留给导演）。
 
 ## R2.2 空间连续性（F）
 

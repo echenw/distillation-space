@@ -19,7 +19,7 @@
 ## RT-06 · 金钱与身份成本作为真实行动限制
 
 - **适用**：人物的职业、家产、债务、服装礼仪、阶层流动确实限制了他/她的选择。
-- **F**：《The House of Mirth》 用首饰图像呈现 Lily Bart 与上流社会约束，又直接谈女性花费；《The Financier: A Novel》 *The Financier* 的商业生存逻辑与 《The Great Gatsby》 的东西“蛋”阶级空间另有不同社会尺度。
+- **F**：《The House of Mirth》 用首饰图像呈现 Lily Bart 与上流社会约束， 又直接谈女性花费；《The Financier: A Novel》 *The Financier* 的商业生存逻辑与 《The Great Gatsby》 的东西“蛋”阶级空间另有不同社会尺度。
 - **H**：资源差异可以通过具体支付、住所、求助对象、风险与身份成本显形；但经济困境不自动等于创伤诊断，更不能把贫穷作为人格弱点。
 - **P**：给每项角色选择附 `谁付钱/何时到期/若拒绝谁失去什么/社会制度约束是否真实`；若原始证据没有债务或现实约束则不自行发明“必然代价”。
 - **反例**：把所有悲剧归咎个人“自作自受”，没有处理制度性约束；或反过来完全取消角色可选择的行为。
@@ -27,7 +27,7 @@
 ## RT-10 · 环境中的压力链和人物自身选择
 
 - **适用**：贫困、职业、自然环境、群体暴力或制度压力随时间积累，影响人物的行为窗口。
-- **F**：《The House of Mirth》 由一句“不够有钱买想要的书吗”把阶层礼仪转写成可计量的成本链，把手镯写成“manacles chaining her to her fate”；《Almayer's Folly: A Story of an Eastern River》 *Almayer's Folly* 与让同一条河将惯常的金色联想与当晚暴雨后的实景相对照（金色 vs “angry and muddy flood”），把漂流树的光秃长枝写成“like a hand lifted in mute appeal”。
+- **F**：《The House of Mirth》 由一句“不够有钱买想要的书吗”把阶层礼仪转写成可计量的成本链， 把手镯写成“manacles chaining her to her fate”；《Almayer's Folly: A Story of an Eastern River》 *Almayer's Folly* 与 让同一条河将惯常的金色联想与当晚暴雨后的实景相对照（金色 vs “angry and muddy flood”）， 把漂流树的光秃长枝写成“like a hand lifted in mute appeal”。
 **更正**：《McTeague: A Story of San Francisco》中的这场戏是**结尾前的终局搏斗**（McTeague 与 Marcus 摔打、鸟笼摔碎），属高潮动作而非“环境压力随时间累积”，不再作为本条的主证据，仅可作文类对照。
 - **H**：触觉、热、饥饿、债务等细节可让压力显形；但自然主义“环境必定决定命运”不是所有心理故事的普遍因果法则。
 - **P**：按 `物理/社会条件→角色主观解释→可选择的行动→真实后果` 组织场景；注明哪些是文本已写成的 F，哪些只是作者的 H。角色有些选择被制度限制、有些仍是自主行为，不得简单等同。
