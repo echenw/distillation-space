@@ -35,20 +35,18 @@
   5. 把标签写入规划单/改稿单首行，后续每条诊断都回指它。
 - **交付**：`赛道: {篇幅, 媒介, 类型, 交付方式, 读者承诺}`；`借用的规则: []`（每条注明“同赛道或类比”）。
 - **反例**：
-  1. **PG36580 L623 戏剧术不是小说术**：“The art of the playwright is not, then, the art of the novelist.” 把舞台的“每场一个主脑/幕末汇聚”直接当小说章法，会错配单位。处置：舞台规则只在 C 标签内使用；迁小说标为推断，且只借结构层级。
-  2. **PG25471 L1025 传奇为登场而设**：“填词之设，专为登场”。李渔的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。处置：只保留结构层级，声容/居室/饮馔等不迁移。
-  3. **PG72446 L809 短篇以情境为主**：“situation is the main concern of the short story”。这是短篇判断；用它要求长篇“每章一个情境”，会把长篇压成系列短篇。处置：长篇用 FC-06 的主行动/多线，不用本条 A 分支。
+  1. ** 戏剧术不是小说术**：“The art of the playwright is not, then, the art of the novelist.” 把舞台的“每场一个主脑/幕末汇聚”直接当小说章法，会错配单位。处置：舞台规则只在 C 标签内使用；迁小说标为推断，且只借结构层级。
+  2. ** 传奇为登场而设**：“填词之设，专为登场”。李渔的“减头绪/密针线/大收煞”对象是传奇演出；把它当小说通则，会误删小说需要的内心与时间跨度。处置：只保留结构层级，声容/居室/饮馔等不迁移。
+  3. ** 短篇以情境为主**：“situation is the main concern of the short story”。这是短篇判断；用它要求长篇“每章一个情境”，会把长篇压成系列短篇。处置：长篇用 FC-06 的主行动/多线，不用本条 A 分支。
 - **适用范围**：全部赛道；但 1900–1926 的“短篇/长篇”字数界线（短篇约 1,000–10,000 词，长篇 ≥50,000 词）只是当时市场约定，当代网文/短篇平台需重标；舞台/戏曲的“幕/折”不能直接换算成小说章。
 - **卡住时**：四项中缺失 ≥2 项，或委托方拒绝给字数/媒介/类型 → 输出三种赛道方案（短篇/长篇/舞台或连载），各写读者承诺、结构代价、所需工时，不写具体场景与比例；等作者选定后再进入下一步。
 - **依据**：
-  - PG36580 L623 “The art of the playwright is not, then, the art of the novelist.”
-  - PG72446 L809-810 “situation is the main concern of the short story”
-  - PG30776 L5475-5477 “The aim of a short-story is to produce a single narrative effect…”
-  - PG64210 L742-744 “narratives fall naturally into two large divisions”（作者主张、分类资料）
-  - PG25471 L1025 “填词之设，专为登场”（作者主张，中文引文，戏曲）
-  - PG70492 长篇对象（评论；≥50,000 词为操作约定，非原文统计）
-- **来源数**：6（PG36580、PG72446、PG30776、PG64210、PG70492、PG25471；PG13589 与 PG30776 同作者，未重复计）。
-- **来源类型**：方法书×4 / 评论×1 / 工具书×1。
+  -  “The art of the playwright is not, then, the art of the novelist.”
+  - -810 “situation is the main concern of the short story”
+  - -5477 “The aim of a short-story is to produce a single narrative effect…”
+  - -744 “narratives fall naturally into two large divisions”（作者主张、分类资料）
+  -  “填词之设，专为登场”（作者主张，中文引文，戏曲）
+  -  长篇对象（评论；≥50,000 词为操作约定，非原文统计）
 - **冲突**：有条件（K-10 类型边界、K-11 开头策略均以赛道分流）。
 - **可信度**：高（“必须先分流”几乎无反对）；中（具体字数/媒介分界是历史约定，不是统计）。
 
@@ -79,21 +77,19 @@
   6. B/C 分支允许 `胚故事` 只写“起点人物 + 终局方向”，但必须写 `未解的问题`，并在初稿后补一次完整 `胚故事`。
 - **交付**：`胚故事`、`效果`、`不可逆的变化`、`事件链`（每环标“因此/然后”）、`未解的问题`（B/C 用）。
 - **反例**：
-  1. **PG492 L1584《金银岛》边写边发现**：作者自述十五天十五章后卡住，换地后一章一天。这说明“先有完整胚故事”不是所有作者的必经工序；处置：允许 C 分支，但初稿后必须补写 `胚故事`/`终局状态`，不能永远没有。
-  2. **PG61625 L2941 结尾不在心**：“No, the ending is not clearly in mind.” 成熟作者也可不预知结尾；但该作家仍知道“要留下什么 mood”。处置：把“知道结尾”降为“知道效果/方向”，不把预知结尾当硬门。
-  3. **PG68291 L669-670 速写是树、故事是链**：“The tale is a chain; the short-story is a tree.” 速写/印象主义本来就没有“不可逆变化”；强行加情节会毁掉 tone。处置：C 分支只要求 `效果` 与 `未解的问题`，不要求 `不可逆的变化`。
+  1. **《金银岛》边写边发现**：作者自述十五天十五章后卡住，换地后一章一天。这说明“先有完整胚故事”不是所有作者的必经工序；处置：允许 C 分支，但初稿后必须补写 `胚故事`/`终局状态`，不能永远没有。
+  2. ** 结尾不在心**：“No, the ending is not clearly in mind.” 成熟作者也可不预知结尾；但该作家仍知道“要留下什么 mood”。处置：把“知道结尾”降为“知道效果/方向”，不把预知结尾当硬门。
+  3. **-670 速写是树、故事是链**：“The tale is a chain; the short-story is a tree.” 速写/印象主义本来就没有“不可逆变化”；强行加情节会毁掉 tone。处置：C 分支只要求 `效果` 与 `未解的问题`，不要求 `不可逆的变化`。
 - **适用范围**：短篇/类型/商业稿最硬；长篇/人物驱动可软化为“方向句”；舞台需要“可演的情境句”；口头故事需要“可复述的钩子”；速写/印象主义只要求 tone 与画面，不要求事件链。
 - **卡住时**：写不出 `胚故事`（谁+困境+选择+代价）→ 不要开始写场景；回到素材层，列“人物/情境/终局/效果”四堆，指出哪一堆最先出现，再按 FC-05 选入口；若四堆都空，说明还没有故事，只给素材整理任务。
 - **依据**：
-  - PG61625 L11661-11670 “A plot attracts facts and characters as a magnet attracts iron filings.”
-  - PG72446 L878-879 “unless you have a salamander to show him”
-  - PG27224 L95-97 “A plot should work steadily forward to the end or denouement”
-  - PG30776 L5475-5477 “single narrative effect with the greatest economy of means”
-  - PG68291 L669-670 “The tale is a chain; the short-story is a tree.”（评论、作品）
-- **来源数**：5（PG61625、PG72446、PG27224、PG30776、PG68291）。
-- **来源类型**：方法书×4 / 评论×1（含 作品实例 判词）。
+  - -11670 “A plot attracts facts and characters as a magnet attracts iron filings.”
+  - -879 “unless you have a salamander to show him”
+  - -97 “A plot should work steadily forward to the end or denouement”
+  - -5477 “single narrative effect with the greatest economy of means”
+  - -670 “The tale is a chain; the short-story is a tree.”（评论、作品）
 - **冲突**：有条件（K-02 人物/情节入口；K-11 开头策略）。
-- **可信度**：中（实践者一致，但“胚故事”质量无可测标准；PG21964 的单一效果定义与 PG30776 同谱系，未计为独立支持）。
+- **可信度**：中（实践者一致，但“胚故事”质量无可测标准； 的单一效果定义与  同谱系，未计为独立支持）。
 
 ---
 
@@ -114,30 +110,28 @@
   - **C 中间态（novelette/长 short-story）**：区分信号 = 两三条线但只有一个高潮；反信号 = 每条线都要独立收束、每个主角都要完整弧线。
   - **A/B 区分**：A 问“删掉这场，主导效果是否更强”；B 问“删掉这条线，整体主行动/语调是否仍成立”。两问不能互换。
 - **怎么做**：
-  1. 定 `效果单位`：整篇 / 段落 / 场（三者不可混用；三处依据分别是 PG21964 整篇、PG13589 场面、PG36580 段落 对应行）。
+  1. 定 `效果单位`：整篇 / 段落 / 场（三者不可混用；三处依据分别是  整篇、 场面、 段落 对应行）。
   2. 写 `效果句`：读者读完应得到的一个主导情绪/问题。
   3. 列 `相争的效果`：每个场景想产生的效果；标出与主导效果冲突者。
   4. A 分支：冲突者删/并/降为背景；B 分支：不删，改为 `主次`（主导 > 支撑 > 对照），并检查每层是否服务整体。
-  5. 做“删节测试”（PG1974 L467-473 的删/移测试）：删掉一场，主导效果是否更强？更强则删，不变则考虑并，变弱则留。
-  6. 长篇另做“母题/语调”检查：是否有一个可重复变化的意象/语调把多线缝住（PG70492 论 pattern/rhythm（评论；转步骤标为推断））。
+  5. 做“删节测试”（-473 的删/移测试）：删掉一场，主导效果是否更强？更强则删，不变则考虑并，变弱则留。
+  6. 长篇另做“母题/语调”检查：是否有一个可重复变化的意象/语调把多线缝住（ 论 pattern/rhythm（评论；转步骤标为推断））。
 - **交付**：`效果单位`、`效果句`、`相争的效果`、`主次`、`删除记录`（删/并/留及理由）。
 - **反例**：
-  1. **PG32092 L4805-4813 同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 Poe 式情绪统一。处置：A 分支只用于情绪/氛围型短篇；戏剧型短篇改用“冲突/危机”统一，不强行删成单一情绪。
-  2. **PG32092 L5486 长篇小说不必一 idea**：“if I stated that the novel must embody one story-idea … the statement would be false”。处置：长篇用 B 分支，不拿“一个主题”砍线。
-  3. **PG492 L1330 细节多职是最高艺术**：“the very highest order of creative art”；PG58471 L8591 要求 selection “typical, to be inclusive”。处置：B 分支保留“不服务主导效果但服务语调/生活面向”的细节；删节测试变弱即留。
-  4. **PG68291 L9750 印象主义以 tone 统摄**：速写/印象主义的细节本身就是效果；处置：C 分支只检查 tone 是否同调，不做“删到只剩一个效果”。
-- **适用范围**：短篇/独幕/轶事强；长篇只保留“整体统一”；速写/印象主义/随笔弱；舞台独幕强、多幕弱；电影/口头另有一套“注意力经济”（PG13589/PG15383），不可直接换算。
+  1. **-4813 同代手册内部反对**：“when it is stated that the short story … should manifest the unities and produce a single effect, the statement is false.” 戏剧型短篇不服从 Poe 式情绪统一。处置：A 分支只用于情绪/氛围型短篇；戏剧型短篇改用“冲突/危机”统一，不强行删成单一情绪。
+  2. ** 长篇小说不必一 idea**：“if I stated that the novel must embody one story-idea … the statement would be false”。处置：长篇用 B 分支，不拿“一个主题”砍线。
+  3. ** 细节多职是最高艺术**：“the very highest order of creative art”； 要求 selection “typical, to be inclusive”。处置：B 分支保留“不服务主导效果但服务语调/生活面向”的细节；删节测试变弱即留。
+  4. ** 印象主义以 tone 统摄**：速写/印象主义的细节本身就是效果；处置：C 分支只检查 tone 是否同调，不做“删到只剩一个效果”。
+- **适用范围**：短篇/独幕/轶事强；长篇只保留“整体统一”；速写/印象主义/随笔弱；舞台独幕强、多幕弱；电影/口头另有一套“注意力经济”（/），不可直接换算。
 - **卡住时**：说不出 `效果句`，或每个场景都声称服务不同效果 → 先不要删；回到 FC-02 重写 `胚故事`/`效果`；若仍说不清，改问“读者读完最想带走的一个问题是什么”，用问题句代替主题名词。
 - **依据**：
-  - PG30776 L5475-5477 “The aim of a short-story is to produce a single narrative effect…”
-  - PG64210 L12740 “The effect should be single, not multiple.”
-  - PG21964 L167-169 引 Hamilton 同一定义（作者主张、分类资料，转引，与 PG30776 同谱系）
-  - PG32092 L4805-4813 “the statement is false”（作者主张，反证）
-  - PG32092 L5486-5490 短篇一 idea、长篇不必（作者主张，反证）
-  - PG492 L1330-1331 “the very highest order of creative art”（作者主张、评论，反证）
-  - PG58471 L8591 “typical, to be inclusive”（评论，反证）
-- **来源数**：6（按本条依据内的不同 PG 汇总取证来源：PG30776、PG64210、PG21964 为正面支持；PG32092、PG492、PG58471 以反证界定 A 分支边界；PG21964 与 PG30776 同谱系，不作独立共识；PG68291 只作速写反例，不计入）。
-- **来源类型**：方法书×4 / 评论×2 / 工具书×1。
+  - -5477 “The aim of a short-story is to produce a single narrative effect…”
+  -  “The effect should be single, not multiple.”
+  - -169 引 Hamilton 同一定义（作者主张、分类资料，转引，与  同谱系）
+  - -4813 “the statement is false”（作者主张，反证）
+  - -5490 短篇一 idea、长篇不必（作者主张，反证）
+  - -1331 “the very highest order of creative art”（作者主张、评论，反证）
+  -  “typical, to be inclusive”（评论，反证）
 - **冲突**：有条件（K-01；“单一效果”只作短篇/独幕 A 分支的判据，不作跨篇幅普遍命题）。
 - **可信度**：中（条件本身有强反证支持；但“单一效果”支持方谱系重叠，不能算多来源共识）。
 
@@ -157,32 +151,30 @@
 - **分支**：
   - **A 短篇/单线/侦探/商业类型**：区分信号 = 一个终场、一个危机、一个可预设的揭示；反信号 = 人物自己长出了新方向、连载需留钩子、结尾必须靠续集解释。
   - **B 长篇/连载/人物驱动**：区分信号 = 多线、时间跨度、人物会变、允许章节发现；反信号 = 所有线都指向同一个终场且无新发现、终局状态说不出“谁变成什么”。
-  - **C 发现型写作**：区分信号 = 作者边写边发现（PG492 L1584）；反信号 = 反复卡壳、结构失控、写到哪算哪且没有初稿后补写。
+  - **C 发现型写作**：区分信号 = 作者边写边发现；反信号 = 反复卡壳、结构失控、写到哪算哪且没有初稿后补写。
   - **A/B 区分**：A 问“最后一场是什么画面”；B 问“最后什么不可逆地改变了、留下什么意象/决定”。B 不要求知道最后一场。
 - **怎么做**：
   1. A：写 `终场`（最后一场的可拍画面）与 `末行方向`（末句朝哪收）；B：写 `终局状态`（谁变成什么、什么不可逆、最后意象/决定）。
   2. A：从终场倒推 3 个必要因果环（操作默认，非硬门），每环写“前文必须埋什么”；B：写 3 个里程碑转折，不写细节。
-  3. 检查 `潜伏意象`：开头是否已埋下结尾要回收的意象/问题（PG72446 L1802）。
+  3. 检查 `潜伏意象`：开头是否已埋下结尾要回收的意象/问题。
   4. 写作中允许改 `终局状态`，但每次改都回写“前文哪一处需要补因”。
   5. 完稿验收：删掉最后一段，结尾是否仍成立？若成立，说明结尾是补的；若不成立，检查是否“高潮后只解释未解点”。
   6. C 分支：初稿后补写 `终局状态` 与 `潜伏意象`，再做一次倒推校验。
 - **交付**：`结尾模式`（终场 / 终局状态 / 发现型）、`终场` 或 `终局状态`、`三环因果`、`潜伏意象`、`结尾检查`。
 - **反例**：
-  1. **PG38887 L2541 Trollope 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；处置：B 分支只要求终局状态，不要求终场画面。
-  2. **PG61625 L1189-1200 / L2941 人物生长、结尾不在心**：Montgomery 的长篇由人物生长；Stribling 说 “No, the ending is not clearly in mind.” 处置：人物驱动长篇用 B，不把“先定结局”当道德要求。
-  3. **PG492 L1584-1615《金银岛》卡壳后换地**：十五天十五章后卡住，换地后一章一天；这说明“倒推”也可能卡住，换环境/换介质能恢复。处置：C 分支允许发现，但必须记录“已写了什么、还缺什么因”。
-  4. **PG64210 L7578 侦探先抛谜面**：“propound your mystery at the beginning … work backwards to the first step”。侦探仍须知道终局，只是谜面在前；处置：A 分支中侦探型把“终场揭示”换成“谜面 + 机关”，倒推链照做。
+  1. ** Trollope 边写边定**：“my incidents are fabricated to fit my story as it goes on”。这说明连载可以没有预知终场；处置：B 分支只要求终局状态，不要求终场画面。
+  2. **-1200 /  人物生长、结尾不在心**：Montgomery 的长篇由人物生长；Stribling 说 “No, the ending is not clearly in mind.” 处置：人物驱动长篇用 B，不把“先定结局”当道德要求。
+  3. **-1615《金银岛》卡壳后换地**：十五天十五章后卡住，换地后一章一天；这说明“倒推”也可能卡住，换环境/换介质能恢复。处置：C 分支允许发现，但必须记录“已写了什么、还缺什么因”。
+  4. ** 侦探先抛谜面**：“propound your mystery at the beginning … work backwards to the first step”。侦探仍须知道终局，只是谜面在前；处置：A 分支中侦探型把“终场揭示”换成“谜面 + 机关”，倒推链照做。
 - **适用范围**：短篇/类型/侦探最硬；长篇/连载软化为方向；人物驱动/流浪汉体/随笔式最弱；舞台需要“幕末暂解”而非单一终场。
 - **卡住时**：A 分支写不出终场 → 改问“最后一个不可逆的动作是什么”；仍写不出，退回 FC-02 重写 `胚故事`。B 分支写不出终局状态 → 只写“谁在最后必须做一个什么决定”，不写结局；若连这个也没有，标“终点未定”，暂停结构细化。
 - **依据**：
-  - PG38887 L1108-1109 “Take your stand at the end of the story, and work it out backwards.”
-  - PG72910 L3034-3035 “see the end of your story before you begin to write it”
-  - PG61625 L1138-1139 “The climax; I always start with it”
-  - PG30776 L2187 “he must see the end of his story from the beginning”
-  - PG72446 L1802-1803 “no conclusion can be right which is not latent in the first page”
-  - 反例：PG492 L1584-1615；PG38887 L2541-2543；PG61625 L2941-2942。
-- **来源数**：5（PG38887、PG72910、PG61625、PG30776、PG72446；PG492 只作反例，不计支持）。
-- **来源类型**：方法书×5。
+  - -1109 “Take your stand at the end of the story, and work it out backwards.”
+  - -3035 “see the end of your story before you begin to write it”
+  - -1139 “The climax; I always start with it”
+  -  “he must see the end of his story from the beginning”
+  - -1803 “no conclusion can be right which is not latent in the first page”
+  - 反例：-1615；-2543；-2942。
 - **冲突**：有条件（K-02 起手顺序）。
 - **可信度**：中（短篇工序有多次自述；长篇“方向”是综合判断，无直接来源说“只需方向”）。
 
@@ -201,7 +193,7 @@
   - 人物是否只在传递信息/推动机关。
 - **分支**：
   - **A 人物入口**：区分信号 = 人物能生成后果、换情境仍成立、能说出三处“只有他会这样”的决定；反信号 = 人物只是类型标签、换谁都一样、所有决定都由情节需要解释。
-  - **B 情境入口**：区分信号 = 困境本身含对立力量、人物一进场就被逼选择；反信号 = 人物被硬塞进情境（PG61625 L1102 的“doll-like characters”）、情境换谁都能演。
+  - **B 情境入口**：区分信号 = 困境本身含对立力量、人物一进场就被逼选择；反信号 = 人物被硬塞进情境（ 的“doll-like characters”）、情境换谁都能演。
   - **C 终局入口**：区分信号 = 必须先发生某场面/揭示；反信号 = 终局只是作者想要的效果，与前文无因、人物为什么必须走到那里说不清。
   - **D 效果入口**：区分信号 = 先有主导情绪/画面；反信号 = 人物被效果压成符号、没有独立于效果的欲望。
   - **入口区分**：问“如果抽掉这个人物/这个场面/这个效果，素材还剩下什么？”剩下人物 → A；剩下困境 → B；剩下终场 → C；剩下画面/情绪 → D。
@@ -214,21 +206,19 @@
   6. 双向校验：`情节逼人物`（情节是否逼人物改变）与 `人物促成转折`（人物是否促成转折）；两者皆“否”则退回素材层。
 - **交付**：`入口类型`、`入口证据`、`人物卡`、`处境的压力`、`情节逼人物`、`人物促成转折`。
 - **反例**：
-  1. **PG61625 L1101-1104 玩偶人物**：“inventing a situation and sticking doll-like characters in it” 是失败经验。处置：B 分支若人物只是被塞进情境，先给人物一个会反抗情境的欲望，再改情境。
-  2. **PG70492 L2326-2329 Hardy 让人物 suspend their natures**：人物被情节/命运压干，失真。处置：检查 `情节逼人物` 是否只有“外力推着走”，没有人物自己的选择；补一个代价明确的选择。
-  3. **PG72446 L1501-1520 Assingham 夫妇为传递信息而造**：功能人物被读者看穿。处置：若人物只承担信息，删/并，或给他一个与信息冲突的私人目的。
-  4. **PG61625 L13563-13575 通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。处置：短篇/类型可薄人物，但仍须有可信的欲望；不把“圆人物”当唯一标准（K-15 两说）。
-- **适用范围**：短篇/类型偏终局/情境入口；长篇/心理小说偏人物入口；舞台偏情境入口（PG36580 “character is situation”）；连载偏人物入口 + 情节里程碑；速写/印象主义可弱化人物因果，但不能弱化 tone。
+  1. **-1104 玩偶人物**：“inventing a situation and sticking doll-like characters in it” 是失败经验。处置：B 分支若人物只是被塞进情境，先给人物一个会反抗情境的欲望，再改情境。
+  2. **-2329 Hardy 让人物 suspend their natures**：人物被情节/命运压干，失真。处置：检查 `情节逼人物` 是否只有“外力推着走”，没有人物自己的选择；补一个代价明确的选择。
+  3. **-1520 Assingham 夫妇为传递信息而造**：功能人物被读者看穿。处置：若人物只承担信息，删/并，或给他一个与信息冲突的私人目的。
+  4. **-13575 通俗短篇反例**：以代理情绪为目标的短篇，“extreme character drawing is generally a mistake”。处置：短篇/类型可薄人物，但仍须有可信的欲望；不把“圆人物”当唯一标准（K-15 两说）。
+- **适用范围**：短篇/类型偏终局/情境入口；长篇/心理小说偏人物入口；舞台偏情境入口（ “character is situation”）；连载偏人物入口 + 情节里程碑；速写/印象主义可弱化人物因果，但不能弱化 tone。
 - **卡住时**：四入口都说不清 → 退回素材层，不写场景；先列“人物/情境/终场/效果”四张卡，每张只写一句，选最先能写出“后果”的那张。双向校验皆“否” → 停止细化情节，先修人物欲望或情境对抗力量。
 - **依据**：
-  - PG58471 L2469-2470 “character in itself is plot”（评论；转成步骤是推断）
-  - PG72446 L2306-2307 “what his characters, being what they are, would make of the situation”
-  - PG61625 L1473 “Character makes plot.”
-  - PG1974 L371-372 “Plot, then, is the first principle”（评论）
-  - PG32092 L211-213 “each incident functions in the development of a plot or dramatic problem”
-  - PG36580 L9526 “character is situation.”（作者主张，舞台）
-- **来源数**：6（PG58471、PG72446、PG61625、PG1974、PG32092、PG36580）。
-- **来源类型**：方法书×4 / 评论×2。
+  - -2470 “character in itself is plot”（评论；转成步骤是推断）
+  - -2307 “what his characters, being what they are, would make of the situation”
+  -  “Character makes plot.”
+  - -372 “Plot, then, is the first principle”（评论）
+  - -213 “each incident functions in the development of a plot or dramatic problem”
+  -  “character is situation.”（作者主张，舞台）
 - **冲突**：有条件（K-02；K-15 人物扁/圆另立）。
 - **可信度**：中（入口诊断有跨来源支持；“哪种入口更好”无数据，且同书自相矛盾）。
 
@@ -254,24 +244,22 @@
   1. 写 `主行动`：`某人 + 要什么 + 谁/什么阻止 + 失败代价`。
   2. 列 `线`：每条线写 `功能`（反转/补足/对照/提供信息）与 `交汇点`（在哪一场、与谁、交换什么）。
   3. 无 `交汇点` 的线：删、并、或降为背景；只靠“主题相似”的线不算交汇。
-  4. 标 `主汇合`：所有主线在何处汇合；若在 3/4 处，检查前段是否蓄因、后段是否只收果（PG30776 结构比例，**单来源默认参考，不是硬门**；侦探/开放式另算）。
-  5. 检查 `并重的线`：若多条线等重，必须像 PG30776 L2421-2430 那样交织；否则改主次。
+  4. 标 `主汇合`：所有主线在何处汇合；若在 3/4 处，检查前段是否蓄因、后段是否只收果（ 结构比例，**单来源默认参考，不是硬门**；侦探/开放式另算）。
+  5. 检查 `并重的线`：若多条线等重，必须像 -2430 那样交织；否则改主次。
   6. 完稿后做“抽线测试”：抽掉一条线，复述主线；若完全不变，该线是赘线。
 - **交付**：`主行动`、`线[]`（name/function/intersection）、`主汇合`、`删减记录`。
 - **反例**：
-  1. **PG30776 L2328 链条式不算 plot**：picaresque 单线串联不构成“编织”；此时不强行加交汇，改按 C 分支验收“每站是否改变主角处境”。
-  2. **PG30776 L2421-2430 等重多线**：允许若干等重故事，但须交织；不能拿“多线”当“无主线”的借口。处置：等重线必须共享终局或互相改变条件，否则降为次线。
-  3. **PG10865 L2931 舞台拉幕点**：要求在多线汇聚处拉幕；但传奇/情节剧可加 Prologue（作者自陈例外）。处置：舞台用“幕末汇聚”，小说不强制每章汇聚；迁小说标为推断。
-- **适用范围**：长篇/多线/群像/连载强；短篇只留一条主行动；舞台分幕需“幕末汇聚”；戏曲“一人一事”更严（PG25471 L128）；链条式/流浪汉体只要求“每站改变主角”，不要求总汇聚。
+  1. ** 链条式不算 plot**：picaresque 单线串联不构成“编织”；此时不强行加交汇，改按 C 分支验收“每站是否改变主角处境”。
+  2. **-2430 等重多线**：允许若干等重故事，但须交织；不能拿“多线”当“无主线”的借口。处置：等重线必须共享终局或互相改变条件，否则降为次线。
+  3. ** 舞台拉幕点**：要求在多线汇聚处拉幕；但传奇/情节剧可加 Prologue（作者自陈例外）。处置：舞台用“幕末汇聚”，小说不强制每章汇聚；迁小说标为推断。
+- **适用范围**：长篇/多线/群像/连载强；短篇只留一条主行动；舞台分幕需“幕末汇聚”；戏曲“一人一事”更严；链条式/流浪汉体只要求“每站改变主角”，不要求总汇聚。
 - **卡住时**：写不出 `主行动` → 先不要列线；回到 FC-02 写 `胚故事`，或把“主角最想要的东西 + 最大阻力 + 失败代价”三格填满。次线无 `交汇点` → 删/并；作者舍不得删时，要求写出“它改变了主线的哪个条件”，写不出就标为背景，不进入结构。
 - **依据**：
-  - PG32092 L5561-5564 “the main course of the story must be single”
-  - PG30776 L2330-2332 “The word plot signifies a weaving together”
-  - PG30776 L2416-2418 “avoid a sub-plot, unless…”
-  - PG10865 L2931-2932 “the curtain should be raised at the point where separate lines have converged”（作者主张，舞台）
-  - PG25471 L128 “此一人一事，即作传奇之主脑也”（作者主张，中文引文，戏曲）
-- **来源数**：4（PG32092、PG30776、PG10865、PG25471）；PG70492 只作反例/对照。
-- **来源类型**：方法书×4。
+  - -5564 “the main course of the story must be single”
+  - -2332 “The word plot signifies a weaving together”
+  - -2418 “avoid a sub-plot, unless…”
+  - -2932 “the curtain should be raised at the point where separate lines have converged”（作者主张，舞台）
+  -  “此一人一事，即作传奇之主脑也”（作者主张，中文引文，戏曲）
 - **冲突**：有条件（K-01 单一/多线；K-11 舞台迁移）。
 - **可信度**：中（结构判据跨来源一致；3/4 汇聚比例是 Hamilton 一家的说法，且他把侦探除外）。
 

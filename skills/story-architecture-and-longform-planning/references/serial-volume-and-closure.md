@@ -28,9 +28,9 @@
 **卡住时**：判断不了是单本还是系列，先按单本做（最省），把“如果有第二卷”的入口写进备选方案。
 
 **依据**：
-- 原文：Cook 自述丛书的写法，PG47455 L3888–3893：“each story is complete in itself”，又能“preserve the effect of a single story from beginning to end”，三本一组合订出售。
-- 原文：同一作者的两本 Tarzan 一开一闭。PG1401 结尾主角得知妻子还活着，PG1401 L11587：“She lives!”；下一本 PG2020 以 L9585 “Home” 一章收束，新王登基后全闭合。
-- 原文：Radio Detectives 是连续追捕型，主谋一卷卷逃走，PG42545 L165：“their quarry had once more escaped them”。
+- 原文：Cook 自述丛书的写法，：“each story is complete in itself”，又能“preserve the effect of a single story from beginning to end”，三本一组合订出售。
+- 原文：同一作者的两本 Tarzan 一开一闭。 结尾主角得知妻子还活着，：“She lives!”；下一本  以  “Home” 一章收束，新王登基后全闭合。
+- 原文：Radio Detectives 是连续追捕型，主谋一卷卷逃走，：“their quarry had once more escaped them”。
 - 推断：形态决定卷末的默认值，下一卷定没定决定能不能许诺。
 
 **可信度**：中。四种形态各有实例，判据是归纳出来的。
@@ -43,7 +43,7 @@
 
 **怎么做**：
 1. 列出已定的卷号；没定的卷号只写卷号，不填“下一卷第一步”。
-2. 每卷一个卷名：同一句式，只换关键词（周刊书目里几十期都是同一种双题，如 PG37092 L4890 “The Bradys and the Fatal Despatch; or, The Mystery of Five Words”）。卷名是排产工具，不等于每卷只能写同一件事。
+2. 每卷一个卷名：同一句式，只换关键词。卷名是排产工具，不等于每卷只能写同一件事。
 3. 写本卷主事件、目标篇幅（字数或章数）和节点；容量细节转 SV-13。
 4. 写闭合度（全闭合、半开、全开）和“下一卷第一步”（一句能执行的动作）。
 5. 多视点作品加一列“本卷视点线”：哪条线加入，哪条线收掉。
@@ -56,11 +56,11 @@
 **卡住时**：故事还没想好，也先填卷号、篇幅、闭合度三列，故事列写“待定”，列三个要作者定的问题：系列多长？下一卷定没定？每卷能不能单独读？
 
 **依据**：
-- 原文：作者先交书名和插图场景，再写稿。PG47455 L3873：“First it is necessary to submit titles, and scenes for illustration.” L3883–3886：插图构思“days or even weeks in advance of the stories themselves”交给画师，作者要据此“weave around it a group of logical stories”。
-- 原文：卷首书目把本书排进出版月份。PG61174 L165–168：“To be published in May, 1925.”，下面是 114 号（本书）和 115 号。
-- 原文：卷末预告下一号书名和章题。PG47901 L3872：“THE NEXT NUMBER (10) WILL CONTAIN”；PG49197 L3881：“THE NEXT NUMBER (16) WILL CONTAIN”。
-- 原文：周刊公示规格，书末书目里几十期都是同一种双题句式。PG37092 L4885：“Price 5 cents. 32 Pages. Colored Covers. Issued Weekly.”
-- 反例：PG64347 正文以 L8883 “THE END.” 收，后面只有丛书广告，没有下一号预告。PG62428 L8894 在 THE END 后紧接一条 1002 号的预告，但本书自己的编号文本里没写，看不出是不是紧挨着的下一号。
+- 原文：作者先交书名和插图场景，再写稿。：“First it is necessary to submit titles, and scenes for illustration.” ：插图构思“days or even weeks in advance of the stories themselves”交给画师，作者要据此“weave around it a group of logical stories”。
+- 原文：卷首书目把本书排进出版月份。：“To be published in May, 1925.”，下面是 114 号（本书）和 115 号。
+- 原文：卷末预告下一号书名和章题。：“THE NEXT NUMBER (10) WILL CONTAIN”；：“THE NEXT NUMBER (16) WILL CONTAIN”。
+- 原文：周刊公示规格，书末书目里几十期都是同一种双题句式。：“Price 5 cents. 32 Pages. Colored Covers. Issued Weekly.”
+- 反例： 正文以  “THE END.” 收，后面只有丛书广告，没有下一号预告。 在 THE END 后紧接一条 1002 号的预告，但本书自己的编号文本里没写，看不出是不是紧挨着的下一号。
 - 推断：书目和预告证明卷被当成可排期的商品；Cook 的自述证明至少有一类作者是先定题目和场景再写。
 
 **可信度**：中。作者自述一族，加两族出版装置；反例说明“卷末必须预告下一号”不成立。
@@ -88,11 +88,11 @@
 **卡住时**：说不清某个卷界属于哪类，就看这一卷开头时间有没有跳、地点有没有换：都没有是连续型，都有是旅行型。
 
 **依据**：
-- 原文：连续型。PG1083 第一部末，天亮时 Mills 对主人公说 L1830：“you may oversleep yourself.”；第二部（L1840）首句就回指这句话，L1846：“Sometimes I wonder yet whether Mills wished me to oversleep myself”，接着写当天中午的约（L1861–1862）。
-- 原文：任务型转场。PG1083 第五部（L7154）以上船开场，L7160：“That night I didn’t get on board till just before midnight”。第五部约占正文三成，是这一本的测量，不是比例。
-- 原文：不等长。PG1752 三部分别从 L179、L7306、L10272 开始，约占正文 51%、21%、28%。
-- 原文：终局后的结算。PG611 第 21 章（L6548）在全书约 89% 处，之后是回程和结算。
-- 原文：终卷换人续写。PG711 L9843–9848，第 24 章“BY ANOTHER HAND”：“A year has elapsed since our most dear friend Allan Quatermain wrote the words”。
+- 原文：连续型。 第一部末，天亮时 Mills 对主人公说 ：“you may oversleep yourself.”；第二部首句就回指这句话，：“Sometimes I wonder yet whether Mills wished me to oversleep myself”，接着写当天中午的约。
+- 原文：任务型转场。 第五部以上船开场，：“That night I didn’t get on board till just before midnight”。第五部约占正文三成，是这一本的测量，不是比例。
+- 原文：不等长。 三部分别从 、、 开始，约占正文 51%、21%、28%。
+- 原文：终局后的结算。 第 21 章在全书约 89% 处，之后是回程和结算。
+- 原文：终卷换人续写。，第 24 章“BY ANOTHER HAND”：“A year has elapsed since our most dear friend Allan Quatermain wrote the words”。
 - 推断：边界逻辑由主线类型决定；比例不是规律。
 
 **可信度**：中。四个作者族，各是一本里的观察。
@@ -120,11 +120,11 @@
 **卡住时**：作者坚持“每卷必须留大钩子”：照做，同时写出代价（下一卷必须兑现、新读者门槛），给一个半开的替代方案。
 
 **依据**：
-- 原文，全闭合：PG2020 L9587–9590 新王登基，最后一章题为“Home”；PG45455 L6054 主犯“never leaving the prison alive”，L6071–6073 以“bid adieu to the history”收；PG64347 L8880：“I have won, as pluck and purpose and cheerfulness always win!”
-- 原文，全闭合而宿敌未受罚：PG1752 结尾主角一行脱险上船，L14261：“when all danger was past”；对手 Heron 被捆在车里（L14169–14171），Chauvelin 没有受罚。
-- 原文，半开：PG61174 结尾墨西哥对手逃走，主角说 L9810–9812：“I fancy the struggle between that man and myself has just begun.”；PG42545 L5633：“It's a chart.”，下一个目标直接出现。
-- 原文，全开：PG42569 结尾只凭一个预感去追一艘货轮，L6384–6385：“Keep that tramp within sight”；PG1401 L11587：“She lives!”，主角动身去找妻子。
-- 原文：上一卷全开，下一卷兑现。PG1401 的“找妻子”在 PG2020 里收清。
+- 原文，全闭合： 新王登基，最后一章题为“Home”； 主犯“never leaving the prison alive”， 以“bid adieu to the history”收；：“I have won, as pluck and purpose and cheerfulness always win!”
+- 原文，全闭合而宿敌未受罚： 结尾主角一行脱险上船，：“when all danger was past”；对手 Heron 被捆在车里，Chauvelin 没有受罚。
+- 原文，半开： 结尾墨西哥对手逃走，主角说 ：“I fancy the struggle between that man and myself has just begun.”；：“It's a chart.”，下一个目标直接出现。
+- 原文，全开： 结尾只凭一个预感去追一艘货轮，：“Keep that tramp within sight”；：“She lives!”，主角动身去找妻子。
+- 原文：上一卷全开，下一卷兑现。 的“找妻子”在  里收清。
 - 推断：选择取决于下一卷和本卷承诺；没有证据说明哪种留住更多读者。
 
 **可信度**：“三种状态都存在”高（六个以上作者族）；“按下一卷定没定选”是推断。
@@ -149,10 +149,10 @@
 **卡住时**：说不出下一卷的第一步，就别开口。开口变成了第二条主线，把它转进台账（SV-08），本卷只留一句。
 
 **依据**：
-- 原文，结账：PG61174 L7366–7383，报纸登出全季积分表，L7382–7383：“Honesty and true manhood had triumphed and received their well-merited reward.”；PG62428 L8878–8879：“They had got back their money, with a large bonus”。
-- 原文，开口是一个动作：PG49197 L3828：“I am under sealed orders”，L3868–3870 原班人马签约同行；PG47071 L3796–3797 败方留下纸条：“one of my men, named Pima Pete, will try to get your help”；PG42545 L5633 残骸里翻出的海图。
-- 原文，收束动作：PG47901 L3855–3859 主角和伙伴睡前闲谈（“I _like_ it”），叙述者随后预告 L3864–3866：“Brady was by no means done with Matt”。PG49197 L3816–3817 先一句“You all know how that worked out.”结掉本卷，再宣布新任务。
-- 原文：开口在最后一章，紧接结账。PG42545 的海图在第 12 章（L5045 起），离全书结束约 40 行；PG49197 的密令在第 16 章（L3664 起）。
+- 原文，结账：，报纸登出全季积分表，：“Honesty and true manhood had triumphed and received their well-merited reward.”；：“They had got back their money, with a large bonus”。
+- 原文，开口是一个动作：：“I am under sealed orders”， 原班人马签约同行； 败方留下纸条：“one of my men, named Pima Pete, will try to get your help”； 残骸里翻出的海图。
+- 原文，收束动作： 主角和伙伴睡前闲谈（“I _like_ it”），叙述者随后预告 ：“Brady was by no means done with Matt”。 先一句“You all know how that worked out.”结掉本卷，再宣布新任务。
+- 原文：开口在最后一章，紧接结账。 的海图在第 12 章（ 起），离全书结束约 40 行； 的密令在第 16 章（ 起）。
 - 建议：一个口、写成动作、四问。旧版要求“账和钩之间留一章缓冲”，来源里找不到，本版改为一个收束动作。
 
 **可信度**：中。“先结账后开口”有四个作者族；“只开一个口”是建议。
@@ -183,11 +183,11 @@
 **卡住时**：没有载具、没有常驻机构的类型，把“世界”换成能继续生活的基线：住处、单位、关系网、日常秩序。
 
 **依据**：
-- 原文：PG49644 L3774：“For the present, the _Grampus_ was still under Matt's care”，机构的决定暂缓。
-- 原文：PG49197 L3868–3870 原班人马签约，同一艘潜艇出发。
-- 原文：不复位的政治变化。PG2020 L9587–9590，Ja-don 被拥立为王。
-- 原文：财产安排是预测，不是既成。PG51127 L3742：“liable to make Mrs. Traquair a rich woman”，L3746 估计“a hundred thousand dollars”。
-- 原文，反派转性：Cook 写五分钱小说的惯例，PG47455 L3929–3931：反派受伤后“is quite apt to recover, thank the hero for hurting him--and become his sworn friend.”；PG49644 L121–123 人物表：“An old friend whom Matt found to be an enemy and then made a friend again.”
+- 原文：：“For the present, the _Grampus_ was still under Matt's care”，机构的决定暂缓。
+- 原文： 原班人马签约，同一艘潜艇出发。
+- 原文：不复位的政治变化。，Ja-don 被拥立为王。
+- 原文：财产安排是预测，不是既成。：“liable to make Mrs. Traquair a rich woman”， 估计“a hundred thousand dollars”。
+- 原文，反派转性：Cook 写五分钱小说的惯例，：反派受伤后“is quite apt to recover, thank the hero for hurting him--and become his sworn friend.”； 人物表：“An old friend whom Matt found to be an enemy and then made a friend again.”
 - 建议：“至少一个不可逆变化”只有两族支持，是本条最弱的一半。
 
 **可信度**：中（前半句）；低（不可逆变化的数量）。
@@ -217,9 +217,9 @@
 **卡住时**：没有前卷的稿，不写回顾，标“未核”；只给结构，等作者补上一卷的结果。
 
 **依据**：
-- 原文：PG42545 第一章先写残破驱逐舰上的一群人（L50–79），再说 L80–81：“To those who have followed the Radio Detectives through their previous adventures”，L86–87：“for the benefit of those who now meet the Radio Detectives for the first time”；回顾 L89–164，约 4,900 字符；L165 回到当下。
-- 原文：同系列 PG42569 先写抵达巴哈马（L57 起），回顾插在 L109–234，约 7,100 字符，L235 回到船上的对话。
-- 原文：短版。PG51127 L182–184，面试时一句“I have had a good deal to do with dirigible balloons”就交代了主角会什么。
+- 原文： 第一章先写残破驱逐舰上的一群人，再说 ：“To those who have followed the Radio Detectives through their previous adventures”，：“for the benefit of those who now meet the Radio Detectives for the first time”；回顾 ，约 4,900 字符； 回到当下。
+- 原文：同系列  先写抵达巴哈马（ 起），回顾插在 ，约 7,100 字符， 回到船上的对话。
+- 原文：短版。，面试时一句“I have had a good deal to do with dirigible balloons”就交代了主角会什么。
 - 推断：长短和发行间隔、跳读的可能性相配。具体字数没有读者数据，只是两例的测量；旧版说约 8,000 字符的回顾是“被批评的反例”，来源里没有这样的批评，本版删去。
 
 **可信度**：中。两个作者族；长度是测量值，不是最优值。

@@ -118,14 +118,7 @@
 
 ---
 
-## 6. 来源
+## 6. 反馈采纳原则
 
-三本书都已通读；引号里的原话都回原文核过。
+读者反馈与评论用于发现体验断层和阅读阻力，不作为自动改稿指令；坚持“听问题、不照搬改法”，区分目标读者与非目标读者，保持作品自身的美学自洽。
 
-| Source ID | 作者 | 作品 | 核过的原话（行号） | 用在 |
-|---|---|---|---|---|
-| PG10420 | George Henry Lewes | *The Principles of Success in Literature* | L199–201 “the luck”“the public taste is degraded and prefers trash. Both opinions are serious mistakes”；L203–207 “Rigorously considered it is an absolute test”；L255–257 “the public is composed of the class or classes directly addressed by any work…”；L259–262 “surely the fault lies with the speaker”；L353 “A writer misdirects his talent if he lowers his standard of excellence”；L355–356 “simply measures the extent of his”；L456、L458、L460 Vision、Sincerity、Beauty 三条原则 | RF-01、RF-02、RF-03、RF-09 |
-| PG64385 | Grant M. Overton | *Why Authors Go Wrong and Other Explanations*（1919） | L729–733 “Not at all. His writings have really nothing to do with the case. What is his Purpose?”；L3093–3097 “prints a first edition of from 5,000 to 25,000 copies” | RF-04、RF-05、RF-06 |
-| PG71691 | Sherwood Anderson | *The Modern Writer*（1925） | L43–46 “the writer who attempts to express in his work something national is in an almost impossible position… California is not Maine”；L588–591 “bend or twist them to suit the needs of some cleverly thought out plot to give your readers a false emotion” | RF-07、RF-08、RF-09 |
-
-限制：三本书是英美的文学批评和出版评论，带着各自年代的出版环境；没有当代的读者研究，也没有销售数据。

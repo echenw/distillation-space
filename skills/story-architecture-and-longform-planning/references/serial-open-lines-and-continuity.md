@@ -48,12 +48,12 @@
 - 卷已发表、没法补交代：在下一卷开头用一段桥段补，不改已发表的内容。
 
 **依据**：
-- 原文，半解密坐标：PG39576 L4582–4585，垂死者“was giving us the latitude and longitude and had gasped out three figures when he died”，主谋的名字 L4585 “unspoken”。同系列后几卷一直在追这个主谋（PG42545 L165：“their quarry had once more escaped them”）。
-- 原文，在逃的人转成下一卷的线，再转性：PG47901 结尾 L3864–3866：“Brady was by no means done with Matt--as will be made clear in the story to follow.”；下一号 PG47975 的人物表（L94–98）里 Brady 父女又出现；更后的 PG48252 人物表 L99–108，Brady 越狱报仇，“a queer twist of circumstances causes Brady to ask aid of Motor Matt”。
-- 原文，被关的人当筹码：PG49644 人物表 L111–114，领事被绑，为的是换回“a captured filibuster named James Sixty”。
-- 原文，身世和财产：PG61830 L10827–10833，“you are the rightful heir to a rich estate”，“some day you shall possess the riches”。
-- 原文，余敌：PG66724 L8025–8026：“We are rid of Rogers, Tom; but we have an implacable enemy left still.”
-- 原文，反派转性是丛书惯例：PG47455 L3929–3931（见 SV-06）。
+- 原文，半解密坐标：，垂死者“was giving us the latitude and longitude and had gasped out three figures when he died”，主谋的名字  “unspoken”。同系列后几卷一直在追这个主谋。
+- 原文，在逃的人转成下一卷的线，再转性： 结尾 ：“Brady was by no means done with Matt--as will be made clear in the story to follow.”；下一号  的人物表里 Brady 父女又出现；更后的  人物表 ，Brady 越狱报仇，“a queer twist of circumstances causes Brady to ask aid of Motor Matt”。
+- 原文，被关的人当筹码： 人物表 ，领事被绑，为的是换回“a captured filibuster named James Sixty”。
+- 原文，身世和财产：，“you are the rightful heir to a rich estate”，“some day you shall possess the riches”。
+- 原文，余敌：：“We are rid of Rogers, Tom; but we have an implacable enemy left still.”
+- 原文，反派转性是丛书惯例：（见 SV-06）。
 - 推断：可回收的线都是具体的人、物、承诺；空的谜写不出下一步。
 - 建议：两三条活动线的上限、每卷推进一条，都是保守的默认值，没有实证的最优数。
 

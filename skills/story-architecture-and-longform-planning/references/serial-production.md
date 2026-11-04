@@ -27,13 +27,13 @@
 **卡住时**：没有合同和字数，容量表只填假设值，标“假设”，不下“排期可行”的结论；作者要“保证不超支”，说明容量表是计划，不是保证。
 
 **依据**：
-- 原文，版式倒推章数：PG47455 L3867–3871，打字稿 80 页一篇，每章 5 页，“Thus there were always sixteen chapters in every story.”
-- 原文，交稿节奏：PG47455 L1356–1358，每两周交一篇丛书小说，忙的月份三篇，每篇四万词；L1886–1887，一部连载“twelve installments of 5,250 words each, totalling some 63,000 words”。
-- 原文，配额簿：PG5978 L3007–3021，每开一本书就备一本按周分栏的日记，逐日记页数，每周配额平均约 40 页，低到 20，高到 112，“my page has been made to contain 250 words”。
-- 原文，日程：PG5978 L6647–6648 每天早上五点半到桌前；L6666–6671 对着表每一刻钟写 250 词，动笔先花半小时读前一天的稿。
-- 原文，计划不保证完成：PG33148 L7584–7586 Stevenson 列了章目，L7666–7667：“Fifteen days I stuck to it, and turned out fifteen chapters; and then, in the early paragraphs of the sixteenth, ignominiously lost hold.”
-- 原文，另一种速度：PG27621 L129–130，一夜构思出“three of four chapters”，第二天写。
-- 原文，反方：PG32328 L3241–3252，Freeman 说定时定量写想象力作品，“it is strange that works of imagination did not suffer”；L3254–3255，Payn 认为 Trollope 公开写作方法伤了名声。
+- 原文，版式倒推章数：，打字稿 80 页一篇，每章 5 页，“Thus there were always sixteen chapters in every story.”
+- 原文，交稿节奏：，每两周交一篇丛书小说，忙的月份三篇，每篇四万词；，一部连载“twelve installments of 5,250 words each, totalling some 63,000 words”。
+- 原文，配额簿：，每开一本书就备一本按周分栏的日记，逐日记页数，每周配额平均约 40 页，低到 20，高到 112，“my page has been made to contain 250 words”。
+- 原文，日程： 每天早上五点半到桌前； 对着表每一刻钟写 250 词，动笔先花半小时读前一天的稿。
+- 原文，计划不保证完成： Stevenson 列了章目，：“Fifteen days I stuck to it, and turned out fifteen chapters; and then, in the early paragraphs of the sixteenth, ignominiously lost hold.”
+- 原文，另一种速度：，一夜构思出“three of four chapters”，第二天写。
+- 原文，反方：，Freeman 说定时定量写想象力作品，“it is strange that works of imagination did not suffer”；，Payn 认为 Trollope 公开写作方法伤了名声。
 - 推断：容量先定时，由容量推章数能降低排产的不确定；参数不可移植。
 
 **可信度**：高。四个作者族，作者自述和成品的版式互证；具体数字不可移植。
@@ -65,10 +65,10 @@
 **卡住时**：作者要“你替我定”：给判据表和检查表，按作者填的条件写出更合适的一条和理由，作者拍板。不写“缓冲三章以上才安全”这类没有来源的门槛。
 
 **依据**：
-- 原文，路线 A：PG5978 L3485–3487：“no part of a novel should be published till the entire story was completed”；理由之一 L3490–3492，狄更斯、萨克雷、盖斯凯尔夫人“died with unfinished novels”；L3494–3495：“an artist should keep in his hand the power of fitting the beginning of his work to the end”；第一部连载破了例，L3521–3522：“I have never broken it since.”
-- 原文，存稿：PG5978 L6687–6693，手边常年压着一到三部没发表的完成稿，其中一部完成了六年还没出版。
-- 原文，路线 B：PG32328 L3297–3301：“When a number of chapters are finished M. Daudet finds it well to begin publishing his novel in a journal. Thus he is obliged to finish within a certain date; he cannot go back to make alterations”。
-- 原文，路线 B 的代价：PG33148 L972–978，Rice 给自己的刊物写的连载，有几章一直想重写，“never did”，还抱怨不得不匆忙交出某一期。
+- 原文，路线 A：：“no part of a novel should be published till the entire story was completed”；理由之一 ，狄更斯、萨克雷、盖斯凯尔夫人“died with unfinished novels”；：“an artist should keep in his hand the power of fitting the beginning of his work to the end”；第一部连载破了例，：“I have never broken it since.”
+- 原文，存稿：，手边常年压着一到三部没发表的完成稿，其中一部完成了六年还没出版。
+- 原文，路线 B：：“When a number of chapters are finished M. Daudet finds it well to begin publishing his novel in a journal. Thus he is obliged to finish within a certain date; he cannot go back to make alterations”。
+- 原文，路线 B 的代价：，Rice 给自己的刊物写的连载，有几章一直想重写，“never did”，还抱怨不得不匆忙交出某一期。
 - 推断：两条路线都成立，没有质量或销量的对比数据。
 
 **可信度**：中。三个作者族；判据是归纳的。
@@ -93,10 +93,10 @@
 **卡住时**：没有反馈渠道，不建日志，不假装有读者数据；编辑下了硬性要求（必须加婚礼、必须收尾），按 SV-13 的容量表重排，写出代价。
 
 **依据**：
-- 原文：PG5978 L6744–6755，两位牧师在俱乐部抱怨“I reintroduced the same characters so often!”，Trollope 当场说“I will go home and kill her before the week is over.”，照办了；L6759 又说“I have sometimes regretted the deed”。同一件事在 PG32328 L3048–3050 有另一个版本（“unknown critic”），不算第二个来源。
-- 原文，编辑定配方：PG47455 L1890–1891：“make sure of at least one wedding and that in the beginning of the story.”
-- 原文，出版方叫停：PG47455 L3187–3191，电报让作者先压住第 47 号，来信要他“close up finally the adventures of the hero and his friends”，丛书改为每本换一个新主角。
-- 原文，作者被锁在类型里：PG74755 L11560–11564，一位写了多年同类故事的作者想写得成熟一点，“the magazine editors would not let him”。
+- 原文：，两位牧师在俱乐部抱怨“I reintroduced the same characters so often!”，Trollope 当场说“I will go home and kill her before the week is over.”，照办了； 又说“I have sometimes regretted the deed”。同一件事在  有另一个版本（“unknown critic”），不算第二个来源。
+- 原文，编辑定配方：：“make sure of at least one wedding and that in the beginning of the story.”
+- 原文，出版方叫停：，电报让作者先压住第 47 号，来信要他“close up finally the adventures of the hero and his friends”，丛书改为每本换一个新主角。
+- 原文，作者被锁在类型里：，一位写了多年同类故事的作者想写得成熟一点，“the magazine editors would not let him”。
 - 推断：反馈能改变人物命运、卷长和收尾，但常是即兴和被动的。
 
 **可信度**：低。以回忆和轶事为主，可作可选的检查表。
@@ -105,7 +105,7 @@
 
 这些不是规则，排产和签约时可以拿来问自己。
 
-- **连载能救一时，不保渠道**：Besant 和 Rice 合写的连载，PG33148 L995–996 “gave an upward turn--a last gasp--to the circulation of the dying paper”。
-- **发行形态试验不保成功**：Trollope 的一部长篇改用六便士月刊分册发行，他记得，PG5978 L6712–6713 “the enterprise was not altogether successful”；当时先令杂志夹带连载，单卖小说分册的市场已经被挤压（L6704–6708）。
-- **系列的版权分散，合集难出**：Barsetshire 五部小说的版权在四个人手里，作者一度谈不拢（PG5978 L6791–6794）；脚注说后来谈成了（L6796–6798）。签系列合同时，想清楚整套再版的权利在谁手里。
-- **零碎时间写作会被打断**：Doyle 在行医间隙写一部长篇，PG33148 L3035–3036 “in the intervals of a busy though ill-paying practice”，好不容易有个清净的早上，管家就来报坏消息（L3037–3040）。
+- **连载能救一时，不保渠道**：Besant 和 Rice 合写的连载， “gave an upward turn--a last gasp--to the circulation of the dying paper”。
+- **发行形态试验不保成功**：Trollope 的一部长篇改用六便士月刊分册发行，他记得， “the enterprise was not altogether successful”；当时先令杂志夹带连载，单卖小说分册的市场已经被挤压。
+- **系列的版权分散，合集难出**：Barsetshire 五部小说的版权在四个人手里，作者一度谈不拢；脚注说后来谈成了。签系列合同时，想清楚整套再版的权利在谁手里。
+- **零碎时间写作会被打断**：Doyle 在行医间隙写一部长篇， “in the intervals of a busy though ill-paying practice”，好不容易有个清净的早上，管家就来报坏消息。

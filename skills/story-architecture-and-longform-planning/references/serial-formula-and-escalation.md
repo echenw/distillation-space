@@ -40,12 +40,12 @@
 **卡住时**：变化表填不出来，说明还没有稳定的套路，先做卷表（SV-02）和容量表（SV-13），不硬造“每期一个花样”。
 
 **依据**：
-- 原文，市场要重复：出版方约稿，PG47455 L1117–1119：“with the same hero and the same class of incidents”。
-- 原文，编辑也嫌重复：PG47455 L1455–1457 希望作者带来“a desirable variation from the former Stella Edwards' stories”；L1459–1460：“there was little plot and the action was rarely varied.”；对丛书的通用要求是 L3904–3905：“A multitude of incidents--none of them hackneyed”。
-- 原文，同一本里同一节拍两次：PG62072 的棒球段（L5023–5857：对手押上全部现钱，L5048 “I’ve bet every”，还想过 L5062 “fixed Merriwell”）和拳击段（L6461–7730：L6619“I fixed it with Branch and the others to meet him out here”，看客赌他撑不过一回合，L7174–7175），都是对手设局下注、主角反制、赌注落空，只换了项目。
-- 原文，固定场景和人物：PG27621 L91–94，构思从“a garden, a flower-show, a ball-room”和一对年轻人开始，“They are always young with me”。
-- 原文，读者对老面孔的抱怨：PG5978 L6745–6747：“I reintroduced the same characters so often!”
-- 原文，批评：PG74755 L6338–6344，杂志作者学会了包“the little neatly wrapped packages of sentiment”，出版商包的是“sawdust”。
+- 原文，市场要重复：出版方约稿，：“with the same hero and the same class of incidents”。
+- 原文，编辑也嫌重复： 希望作者带来“a desirable variation from the former Stella Edwards' stories”；：“there was little plot and the action was rarely varied.”；对丛书的通用要求是 ：“A multitude of incidents--none of them hackneyed”。
+- 原文，同一本里同一节拍两次： 的棒球段（：对手押上全部现钱， “I’ve bet every”，还想过  “fixed Merriwell”）和拳击段（：“I fixed it with Branch and the others to meet him out here”，看客赌他撑不过一回合，），都是对手设局下注、主角反制、赌注落空，只换了项目。
+- 原文，固定场景和人物：，构思从“a garden, a flower-show, a ball-room”和一对年轻人开始，“They are always young with me”。
+- 原文，读者对老面孔的抱怨：：“I reintroduced the same characters so often!”
+- 原文，批评：，杂志作者学会了包“the little neatly wrapped packages of sentiment”，出版商包的是“sawdust”。
 - 推断：市场要重复、读者会疲劳，两件事同时成立；变化要换代价，而不只是换项目。
 - 建议：每卷一两样、不在同一章一起换、第二次换代价、第三次删，都是保守的默认值，没有留存数据。
 
@@ -63,10 +63,10 @@
 
 | 做法 | 例子 | 它做了什么 | 它没做什么 | 选了以后查 |
 |---|---|---|---|---|
-| 换地方 | 走进一座有城墙的城、一座疯子的城（PG1401）；从芝加哥到海上、到墨西哥（PG331） | 每段一个新地点、新对手 | 不一定提高赌注 | 每段会不会都从零开始；上一段的代价有没有带过来 |
-| 身份和位置翻转 | 被奉为神 → 成了囚犯 → 拥立新王（PG2020） | 在同一个世界里换主角的位置 | 没有扩大世界 | 翻转有没有当地的理由 |
-| 换成经营和产权 | 买下一半权益、付五百元，冲突从救人变成产权和破产（PG51127） | 换赌注的种类 | 没提高武力和地图等级 | 读者是不是冲着动作来的 |
-| 代价加大，主角不变强 | 施救者被俘，妻子成了人质（PG1752 第二部） | 用缴械制造危险 | 没给主角新能力 | 主角自己动手的机会有没有被拿走 |
+| 换地方 | 走进一座有城墙的城、一座疯子的城；从芝加哥到海上、到墨西哥 | 每段一个新地点、新对手 | 不一定提高赌注 | 每段会不会都从零开始；上一段的代价有没有带过来 |
+| 身份和位置翻转 | 被奉为神 → 成了囚犯 → 拥立新王 | 在同一个世界里换主角的位置 | 没有扩大世界 | 翻转有没有当地的理由 |
+| 换成经营和产权 | 买下一半权益、付五百元，冲突从救人变成产权和破产 | 换赌注的种类 | 没提高武力和地图等级 | 读者是不是冲着动作来的 |
+| 代价加大，主角不变强 | 施救者被俘，妻子成了人质 | 用缴械制造危险 | 没给主角新能力 | 主角自己动手的机会有没有被拿走 |
 
 3. 赌注要配得上篇幅：花几万字追的东西，分量要撑得住这么多字。
 4. 选定后写进卷表（SV-02）的“本卷主事件”，并在套路与变化表（SV-11）里勾掉对应的可变项。
@@ -77,12 +77,12 @@
 **卡住时**：作者要“每卷必须升级”：照做，同时写出代价（数值膨胀、旧对手失效、世界规则要不断补丁），给一个“换地方不加码”或“换赌注种类”的替代方案。
 
 **依据**：
-- 原文，换地方：PG1401 第 XVII 章 L7800 “The Walled City”、第 XVIII 章 L8216 “Among the Maniacs”；PG331 第二部（L6772）从回到芝加哥写起，后半转到墨西哥（L8673 起）。
-- 原文，身份翻转：PG2020 L3453：“Have mercy, O Dor-ul-Otho”（被当作神）；L8090：“The prisoner has escaped”；L9587–9590 主角站在新王身旁。
-- 原文，换成产权：PG51127 L818：“I am buying a half interest”；L1402–1405 付了五百元，“It was different from anything Matt had yet undertaken.”
-- 原文，代价加大：PG1752 第二部（L7306 起），主角身陷囹圄，L9157 说起“yielded to these brutes in this prison”。
-- 原文，赌注配篇幅：PG47455 L3909–3916，一个作者让侦探“strain his massive intellect through 20,000 words merely to recover $100”，失败了；丛书主角冒险，L3915–3916 “certainly never for the mere bagatelle of $100”。
+- 原文，换地方： 第 XVII 章  “The Walled City”、第 XVIII 章  “Among the Maniacs”； 第二部从回到芝加哥写起，后半转到墨西哥（ 起）。
+- 原文，身份翻转：：“Have mercy, O Dor-ul-Otho”（被当作神）；：“The prisoner has escaped”； 主角站在新王身旁。
+- 原文，换成产权：：“I am buying a half interest”； 付了五百元，“It was different from anything Matt had yet undertaken.”
+- 原文，代价加大： 第二部（ 起），主角身陷囹圄， 说起“yielded to these brutes in this prison”。
+- 原文，赌注配篇幅：，一个作者让侦探“strain his massive intellect through 20,000 words merely to recover $100”，失败了；丛书主角冒险， “certainly never for the mere bagatelle of $100”。
 - 推断：几种做法都成立，但没有证据说明哪种对应更多读者。
-- 更正：旧版说 PG1752 的王太子“未救”、结尾“全开”，原文里王太子早已救出（L9147：“on his way to safety”），结尾全闭合，见 SV-04。
+- 更正：旧版说  的王太子“未救”、结尾“全开”，原文里王太子早已救出（：“on his way to safety”），结尾全闭合，见 SV-04。
 
 **可信度**：“几种做法都存在”中；“先定系列承诺”是建议；“赌注配篇幅”是一族的自述。

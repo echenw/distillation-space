@@ -19,7 +19,7 @@
 
 ## 几处容易弄错的出处
 
-- 《Homo Inferior》（PG31692，Mari Wolf，刊源题注 1953 年 11 月）：“He's got his whole life to be lonely in”是父亲 Myron 说儿子 Eric 的话（L179–180），是人物的忧虑，不是叙述确认的事实，不证明 Eric 终身孤独。
+- 《Homo Inferior》：“He's got his whole life to be lonely in”是父亲 Myron 说儿子 Eric 的话（L179–180），是人物的忧虑，不是叙述确认的事实，不证明 Eric 终身孤独。
 - 《The Hell Ship》（Ray Palmer，刊源题注 1952 年 3 月）：写的是被绑架上船后的工作处境，书里没有上面那句孤独的话；两部作品的作者不同。
 - 《Plague Ship》（Andre Norton，署名 Andrew North，1956 年版权题注）：Sinbad 是一只船猫，被 Sargol 的气味吸引，用叫声和爪子反抗，后来被送回船上；它不是机器人，不能拿来证明“机器会不会反噬”。
 - 体裁：旅者的历史预期与另一时间分支冲突，最后把口号移作胜方的通报；写给 Travis 的措辞、Houston 战败和民族评价，都是小说场景或人物话语，不因此成为史实或真实文献。这部作品是小说，不是非虚构的历史短文（见 SF-K016、SF-E05）。

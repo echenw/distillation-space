@@ -46,26 +46,16 @@
 | RO-HB31 | 为对方付出过，对方就欠了爱 | RO-26/RO-04 | 能用钱结清的债、承诺和不能索取的感情，三者分开。付出者自认为是债主，不证明对方欠他的爱。 |
 | RO-HB32 | 传言必须半真半假才好用 | RO-09/RO-06 | 半真只是一种写法。完全编造的传言、完全属实却被拿来做道德评判的传言，都能撑起情节。 |
 | RO-HB33 | 排练求婚只能写成讽刺 | RO-14/RO-21 | 可以写真诚、羞怯、练习说话或自恋，看人物的动机和实际说出口时的落差。 |
-| RO-HB34 | 《Juana》（PG1437）的女主角整部书都很被动，现代读者一定不喜欢 | RO-35/RO-32 | 可以诊断具体场景里她能做什么，但读者效果没有验证过，也不能一笔抹掉历史人物自己的选择。 |
-| RO-HB35 | 《Camille》（PG1608）里一句“她是例外”，就洗清了全篇的污名 | RO-01/RO-32 | “例外”的说法可以限制外推，但不能自动消除前文的污名，也代替不了逐场辨认叙述的距离。 |
+| RO-HB34 | 《Juana》的女主角整部书都很被动，现代读者一定不喜欢 | RO-35/RO-32 | 可以诊断具体场景里她能做什么，但读者效果没有验证过，也不能一笔抹掉历史人物自己的选择。 |
+| RO-HB35 | 《Camille》里一句“她是例外”，就洗清了全篇的污名 | RO-01/RO-32 | “例外”的说法可以限制外推，但不能自动消除前文的污名，也代替不了逐场辨认叙述的距离。 |
 | RO-HB36 | 写代理婚姻，必须先让人物请现代律师 | RO-07/RO-34 | 小说要写清作品里的婚姻规则；现实中的法律问题另外查。写虚构故事不必走现代的咨询流程。 |
-| RO-HB37 | 《Doctor Thorne》（PG3166）的 Mary 得到遗产后，要先把财产退回去才算自由 | RO-04/RO-15 | 新增的财产和选择的权利分开看。保留、分享、拒绝都可以，不要求放弃财产来证明真爱。 |
+| RO-HB37 | 《Doctor Thorne》的 Mary 得到遗产后，要先把财产退回去才算自由 | RO-04/RO-15 | 新增的财产和选择的权利分开看。保留、分享、拒绝都可以，不要求放弃财产来证明真爱。 |
 
 ## 两处容易读错的场景
 
-- 《Mansfield Park》（PG141）里，责难 Fanny 拒绝 Henry Crawford 的是姨父 Sir Thomas。他用家庭利益、服从和忘恩施压，还说她自私、固执。见 RO-05、RO-16、RO-23、RO-K123、RO-E10。
-- 《A Modern Instance》（PG8203）的结尾：报上登出 Bartley 中枪身亡；Atherton 夫妇读 Halleck 的信，争论他有没有道德资格娶寡居的 Marcia。这是 Atherton 对 Halleck 的有条件判断，书里没有写他怎么回信。不能读成“作者已经安排了新的婚姻”，也不能读成“作品判定复合失败”；按“婚姻有可能、争议没有结论”处理。见 RO-29、RO-K155–156、RO-E14。
+- 《Mansfield Park》里，责难 Fanny 拒绝 Henry Crawford 的是姨父 Sir Thomas。他用家庭利益、服从和忘恩施压，还说她自私、固执。见 RO-05、RO-16、RO-23、RO-K123、RO-E10。
+- 《A Modern Instance》的结尾：报上登出 Bartley 中枪身亡；Atherton 夫妇读 Halleck 的信，争论他有没有道德资格娶寡居的 Marcia。这是 Atherton 对 Halleck 的有条件判断，书里没有写他怎么回信。不能读成“作者已经安排了新的婚姻”，也不能读成“作品判定复合失败”；按“婚姻有可能、争议没有结论”处理。见 RO-29、RO-K155–156、RO-E14。
 
-## 作者与版本
-
-- 作者以书头署名为准：《Children of the Whirlwind》（PG3321）的作者是 Leroy Scott，不是 Packard。
-- 《Margaret Dashwood》（PG77271）书头写明初版于 1929 年，署名 Mrs Francis Brown；书头没有出现“E. C. Hubback”这个名字。书头提到了《Sense and Sensibility》，但这部书不是 Austen 写的。
-- 《Victorian Short Stories: Stories of Successful Marriages》（PG15252）收了五篇各自署名的作品（The Manchester Marriage、A Mere Interlude、A Faithful Heart、The Solid Gold Reef Company Limited、The Tree of Knowledge）；单篇刊载年（如 Christmas 1858）不是合集出版年。
-- 《The Whole Family》（PG5066）列了十二位作者，每章对应一位；Howells 不是全书唯一责任者，共同作者关系与声音分配分别记录。
-- 若干当前版本书头年（如 1897、1913、1878、1922、1903）是版本/版权年，不能自动称首版年；《Orley Farm》（PG23000）书头写明 1861 年 3 月至 1862 年 10 月连载，1862 年出书。
-- 底本、出版商与转录者信息不能填作作者。
-- 《The Unlit Lamp》（PG70237）是 Elisabeth Sanxay Holding 的小说，版权年 1922，和 Radclyffe Hall 的同名小说不是同一部书。
-- 有一部书里，中间人撮合的其实是父女之间的相处习惯，不是一段爱情（见 RO-11）。
 
 ## 保留边界
 

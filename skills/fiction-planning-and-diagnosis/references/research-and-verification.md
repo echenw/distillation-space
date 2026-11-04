@@ -227,15 +227,7 @@
 - 还有没判定的反证时，先用条件句、报道式的归因或明确的争议，不写成很确定的结论。
 - 把命中过的 RS 编号写回断言表。
 
-## 9. 来源
+## 9. 考证与核实原则
 
-四本书都已通读；引号里的原话都回原文核过。
+所有历史、职业、引语、统计、原型与首创等事实性主张，均须回溯至独立可靠的一手依据或可验证的公开文献；不同年代、不同立场或未获公认的记录，并列呈现争议，不将虚构设定混同于客观史实。
 
-| Source ID | 作者 | 作品 | 核过的原话（行号） | 用在 |
-|---|---|---|---|---|
-| PG1232 | Niccolò Machiavelli 著，W. K. Marriott 译 | *The Prince*（附 Castruccio 传） | L404–406 “my aim has been to achieve at all costs an exact literal rendering…”；L470 “Those who strive to obtain the good graces of a prince are accustomed”；L1087–1088 “all armed prophets have conquered…”；L4570–4572 “Of the Florentines there fell twenty thousand two hundred and thirty-one men…” | RS-02、RS-03、RS-06、RS-13、RS-14 |
-| PG15718 | Willard Grosvenor Bleyer | *How to Write Special Feature Articles* | L2866–2867 “must be fairly typical of that of others in the same situation”；L2874 “112”；L10999–11000 “the presence of colon bacilli in drinking water…”；L11003–11004 “he did not fear the thing that he saw…”；L11454–11456 “on Sundays and holidays and on rainy days…”；L15305 “The launching of the Savannah…”；L15445–15446 “The beginning of real transatlantic steam voyages…”；L15455 “In 1839 the Cunard Company was formed”；L12644–12649 “no fewer than twenty-five women…”；L12712 “No; that is a part of the fiction of the book” | RS-01、RS-04、RS-09、RS-11、RS-13 |
-| PG25559 | 鲁迅 | 《中國小說史略》 | L1119 “《拾遺記》十卷，題晉隴西王嘉撰，梁蕭綺錄”；L6244 “實劉鶚”；L6246 “鶚字鐵云，江蘇丹徒人”；L6251–6252 “《五十日夢痕錄》”；L6405 “識力儉隘”；L6428 “時慮訛謬”；L6524 “在當時并非有意作小說，乃是當作真實事情做的”；L6582–6583 “大抵一如今日之記新聞，在當時并非有意做小說”；L6626–6628 “看鬼事和人事，是一樣的，統當作事實……一直到了宋歐陽修才把它歸到小說里” | RS-06、RS-07、RS-08；§7.2 |
-| PG26557 | Charles Phelps Cushing | *If You Don't Write Fiction*（1920） | L221–222 “no jury could agree upon the prize-winning description”；L808–809 “It is nothing of the sort…”；L850–851 “The newspaper office files of clippings…”；L1228 “We could not tell old stuff from new”；L1237 “Anything on Manhattan is everybody's”；L1247–1248 “If reports from unveracious employees of Coney Island are to be trusted”；L1277 “We never meant them to be taken seriously”；L1292 “Scientific American”；L1294 “Human Diabolo” | RS-05、RS-10、RS-12、RS-14 |
-
-限制：四本书是 1920 年前后的新闻写作手册、文学史和政治论著，例文带着各自年代的知识；不代表现代的核查标准，也不提供现代的科学或医学结论。

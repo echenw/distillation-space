@@ -4,10 +4,7 @@
 
 ## 0. 读法
 
-- **锚点**：`PGxxxx Lxxx` 是本手册所用纯文本阅读版的行号，不是原书页码；换版本可能漂移，重找时用 PG 编号 + 引文片段检索。
 - **引文**：英文引文逐字，≤40 词；标“转述”的句子不是逐字引文，不得反加引号当原文。引文中的 `_..._` 是原文斜体强调标记，保留下来的按原文照录，不另行改写。
-- **来源类型**：作法＝作者明确教怎么写/怎么改；评论＝评论者或理论家从成品反推、或作规范性判断；作品案例＝作品现象，升格为规则时标“推断”；史料＝实务、史料、传记。
-- **独立来源数**：按不同 PG ID 计；同一本书的多段只算 1。
 - **可信度**：高＝≥3 个独立来源、方向一致、失效条件明确；中＝2 个来源，或 1 个强来源且条件清楚；低＝单来源且无对照。单来源参数即使写进规则，也只作默认值或可选项。
 - **冲突状态**：无＝未发现真冲突；按条件＝按条件分支处理，禁止平均；未定＝证据不足，只给安全出口（本手册 16 条中没有未定；框架/离题的未定见 `references/plot-scope-and-conflicts.md`）。
 - **验证状态**：16 条规则均只做过静态核对；**没有在真实稿件上运行过，效果未证明**。规则是检验器，不是生成器：照表填不保证写出好作品，只帮助发现已知的结构问题。
@@ -47,7 +44,7 @@
 | A 因果汇合 | 存在一个事件能同时结算两条以上线 | 按“共同落点”重排各线起点 |
 | B 对照并置 | 不存在共同结算事件，但两线共享同一个问题（中点照面可选，不是 B 型成立条件） | 保留双终点；中点照面可选，不要求 |
 
-  - **B 型的成立条件**：共享问题 + 各自收束；**中点照面只是可选结构**（PG43435 单来源、仅莎剧，见 PL-08 与 `references/plot-scope-and-conflicts.md` §1.2），缺它不改变 A/B/C 判型。
+  - **B 型的成立条件**：共享问题 + 各自收束；**中点照面只是可选结构**，缺它不改变 A/B/C 判型。
   - **区分信号**：删掉一条线，主落点是否仍成立——A 会变轻但不倒；B 完全不受影响。
   - **反信号**：某线只能靠“主题相似”挂上去、事件上零接触 → 它是并列短文，不是副线。
   - **误判代价**：B 强并为 A → 动机不通、巧合感；A 误判为 B → 结尾分两次收，读者觉得两本书。
@@ -59,18 +56,11 @@
   5. 通读：删掉任一副线，检查主落点是否仍“被挣得”；不成立说明该线其实是承重墙，改回 A。
 - **输出字段**：`一句主行动` + `逐线挂载表（线名 / 终点 / 挂载步 / 承重或对照 / 删并建议）` + `B 型可附中点场（可选）`。
 - **失效条件与反例**：
-  1. 集锦/框架故事：主行动只是容器（PG2037 全书离题，框架从未闭合仍成立）。
+  1. 集锦/框架故事：主行动只是容器。
   2. 以“杂多/生活流”为效果的作品：强行单终点会砍掉价值。
-  3. 短篇强戏剧故事：PG5957 明说短篇戏剧叙事不得插支线，“the action must be quick and uninterrupted”（L276-277）——此时“副线”本身不合法。
+  3. 短篇强戏剧故事： 明说短篇戏剧叙事不得插支线，“the action must be quick and uninterrupted”（-277）——此时“副线”本身不合法。
 - **适用边界**：舞台剧、单卷小说（直接证据）；多幕剧、系列单卷只作保守默认；**长篇小说/多卷系列标“推断”**（本包没有以长篇多线为对象的方法来源）。不适用于随笔体、纯氛围短篇、口头故事集。“主行动”概念来自 17 世纪传奇序言与 1609 年西班牙剧作法，可作**当代诊断问句**，但不是跨时代法则；效果未证实（证据窗口 1609–1929，没有 1945 年后的材料）。
-- **来源锚点**：
-  - PG14525 L476-478 — "there is a principal action whereunto all the rest, which reign over all the work, are fastned"（逐字，17 词）
-  - PG7148 L8604-8605 — "action is an activity dependent on the will of man. Its unity will consist in the direction towards a single end"（逐字，21 词）
-  - PG30183 L2704-2705 — "The word _plot_ signifies a weaving together; and a weaving together presupposes the coexistence of more than one strand."（逐字，19 词；保留原文斜体标记）
-  - PG76719 L567-570 — "this subject should contain one action only, seeing to it that the story in no manner be episodic"（逐字，18 词）
-- **独立来源数**：4（PG14525、PG76719、PG7148、PG30183）
-- **来源类型**：作法×3（PG14525、PG76719、PG30183）/ 评论×1（PG7148）
-- **冲突状态**：按条件（“一个行动”与“两条以上线索”按“一个落点、多条来路”合并；依据是 Lope 自己对 episodic 的定义 L568-570 与 Schlegel 的支流汇合 L8783-8785）。不得写成“单线多线都对”；先判落点是否同一。
+- **冲突状态**：按条件（“一个行动”与“两条以上线索”按“一个落点、多条来路”合并；依据是 Lope 自己对 episodic 的定义 -570 与 Schlegel 的支流汇合 -8785）。不得写成“单线多线都对”；先判落点是否同一。
 - **可信度**：高（4 个独立来源、跨 1609–1918、跨戏剧/小说；失效条件与反例明确）。但“几条算多”无来源，故不设阈值。
 
 ---
@@ -98,20 +88,12 @@
   5. 检查终局是否“意外但唯一正确”：若读者能轻易想出第二个同样成立的结局，说明前文没锁定它。
 - **输出字段**：`终局句` + `倒推链（段/章 → 必须先知道的事实）` + `删并清单`。
 - **失效条件与反例**：
-  1. 探索式写作：PG77656 自认老手可靠直觉，“通常对初学者致命”（L443-444），说明此法有适用人群。
-  2. 有机形式论：PG7148 主张形式 "unfolds itself from within"（L12272-12273），终点是长出来的，不是先定的。
-  3. 反例：Carroll 同用“末节先写”（PG11483 L4226-4227，转述）与“先积素材后拼装”（L7990-7993，转述），后者被评 "no unity"；说明工序是每部作品的选择，不是作者属性。
+  1. 探索式写作： 自认老手可靠直觉，“通常对初学者致命”（-444），说明此法有适用人群。
+  2. 有机形式论： 主张形式 "unfolds itself from within"（-12273），终点是长出来的，不是先定的。
+  3. 反例：Carroll 同用“末节先写”与“先积素材后拼装”（-7993，转述），后者被评 "no unity"；说明工序是每部作品的选择，不是作者属性。
 - **适用边界**：短篇、舞台剧（直接证据）；单卷长篇、商业类型中的长篇部分只作保守默认，**标“推断”**（跨卷/多卷无直接方法证据）。不适用于连载接龙、多人合写、以过程为目的的长篇。时代：1609–1922 的舞台/期刊/短篇工业证据；当代长系列未覆盖。
-- **来源锚点**：
-  - PG30183 L2558-2560 — "His narrative, as a matter of construction, must be finished, before, as a matter of writing, it is begun"（逐字，19 词）
-  - PG36837 L4993-4994 — "The climax must be in the author's mind from the very first sentence"（逐字，13 词）
-  - PG77656 L860-862 — "the four pivots around which a plot revolves--the opening, the crisis, the crucial situation, and the climax"（逐字，18 词）
-  - PG18230 L481 — "By beginning at the end."（逐字，5 词）
-  - PG11483 L4226-4227（转述，史料/传记）——Carroll 先写全诗最后一节
-- **独立来源数**：5（PG30183、PG36837、PG77656、PG18230、PG11483）
-- **来源类型**：作法×4 / 史料×1（PG11483 传记转述）
 - **冲突状态**：按条件（闭合型适用；开放/探索型改用 PL-05 审计，不把终点先行当通则）
-- **可信度**：高（5 来源、跨 1886–1922、跨法/英/美）；“先写末段”这一具体动作只有 PG11483 一例，降到中，故规则只要求“写定”不要求“先写”。
+- **可信度**：高（5 来源、跨 1886–1922、跨法/英/美）；“先写末段”这一具体动作只有  一例，降到中，故规则只要求“写定”不要求“先写”。
 
 ---
 
@@ -140,17 +122,10 @@
   5. 若 C：确认末场之前没有提前泄底（PL-09）。
 - **输出字段**：`三点时间轴（起点 / 打结 / 解结）` + `类型判定（A/B/C/D）` + `需挪动的场次`。
 - **失效条件与反例**：
-  1. 《李尔王》转折在开场末却仍成立（PG43435 B4）——D 型，不能按 B 判“太早”。
-  2. 《安提戈涅》《埃阿斯》在顶点后仍演数百行，因为“事情办完”包含埋葬（PG69095 B10）——文化定义优先于百分比。
+  1. 《李尔王》转折在开场末却仍成立——D 型，不能按 B 判“太早”。
+  2. 《安提戈涅》《埃阿斯》在顶点后仍演数百行，因为“事情办完”包含埋葬——文化定义优先于百分比。
   3. 连载单章：每章都要一个小解结（PL-10），全篇的 3/4 不适用于单章。
-- **适用边界**：舞台剧、单卷小说、短篇；不适用于多卷系列、互动叙事。3/4 只对 19–20 世纪散文虚构有直接证据（PG30183，且作者自称无必然理由）；**3/4 是单来源默认值，不是硬门**。
-- **来源锚点**：
-  - PG76719 L603-607 — "do not permit the untying of the plot until reaching the last scene"（逐字，13 词）
-  - PG30183 L2755-2757 — "this objective point of the entire narrative, is seldom set at the very end of a story, but usually at a point about three quarters of the way"（逐字，28 词）
-  - PG69095 L8722-8725 — "set the audience, as it were, at the post where the race is to be concluded"（逐字，18 词；作者引 Dryden 并认可）
-  - PG36837 L2023-2025 — "there must be a climax, concealed from the reader, so far as possible, till the last moment"（逐字，17 词）
-- **独立来源数**：5（PG76719、PG30183、PG69095、PG36837、PG43435）
-- **来源类型**：作法×3 / 评论×2
+- **适用边界**：舞台剧、单卷小说、短篇；不适用于多卷系列、互动叙事。3/4 只对 19–20 世纪散文虚构有直接证据；**3/4 是单来源默认值，不是硬门**。
 - **冲突状态**：按条件（真实冲突，按媒介/预知度/后果需求分型，未平均）。不能写“高潮可以早也可以晚”；必须给出 A/B/C/D 与判据。
 - **可信度**：高（分型有 4 个独立来源支撑）；“3/4”单来源，标中，作为默认值而非法则。
 
@@ -181,18 +156,9 @@
 - **输出字段**：`首段契约句（谁/要什么/挡什么/类型）` + `主元素` + `基调词` + `后置背景清单`。
 - **失效条件与反例**：
   1. 以“迷失/漂流”为效果的开篇：仍须在首章内给出可陈述的欲望，否则读者无锚。
-  2. 框架/随笔体：PG2037 开篇无主行动仍成立（作品案例，非方法）。
+  2. 框架/随笔体： 开篇无主行动仍成立（作品案例，非方法）。
   3. 群像/多主角：一句契约可能容纳两人，需允许“谁们要什么”。
 - **适用边界**：小说、舞台剧；不适用于目录式工具书、散文集。**影视首场只作结构类比（推断，未证实；本包无影视样本）**。证据跨 1641–1922，主要是英美/法国。
-- **来源锚点**：
-  - PG7148 L9771-9772 — "Nothing can be more ill-judged than to begin at once to instruct us without any dramatic movement."（逐字，17 词）
-  - PG77656 L584-586 — "The modern reader likes to plunge directly into the action of a story"（逐字，13 词）
-  - PG30183 L6534-6535 — "The opening of a perfectly constructed tale fulfills two purposes, one of which is intellectual and the other emotional"（逐字，19 词）
-  - PG36837 L4970 — "Begin with some everyday happening and invest it with personality."（逐字，10 词）
-  - PG14525 L965-967（转述，作法/Manley）——开场应立即交代时间与场景
-  - PG69095 L9924-9928（转述，评论）——无法戏剧化的前史可快速、甚至程式化地交代
-- **独立来源数**：6（PG7148、PG77656、PG30183、PG36837、PG14525、PG69095）
-- **来源类型**：作法×4 / 评论×2
 - **冲突状态**：无（“给契约”与“藏答案”分属两层，见 PL-09）
 - **可信度**：高（6 来源、跨 1641–1922、跨小说/戏剧/传奇序言）
 
@@ -222,18 +188,10 @@
 - **输出字段**：`事件—因对照表` + `补伏笔清单` + `改事件清单`。
 - **失效条件与反例**：
   1. 荒诞/反情节：偶然本身是主题，必须被显式标记（否则读者按写实标准判失败）。
-  2. 童话/神话：世界规则允许奇迹，但奇迹仍须“在世界内可解释”（PG36837 L3600-3601）。
-  3. 反例：PG30183 自认正典结尾常失真（Dickens 一夜改造人物），说明“必然”是程度而非绝对。
+  2. 童话/神话：世界规则允许奇迹，但奇迹仍须“在世界内可解释”。
+  3. 反例： 自认正典结尾常失真（Dickens 一夜改造人物），说明“必然”是程度而非绝对。
 - **适用边界**：全部虚构叙事；对奇幻/科幻要求“内部规则”而非“现实概率”。证据跨 1641–1922；当代类型小说的“硬魔法系统”未覆盖。
-- **来源锚点**：
-  - PG30183 L1067-1070 — "The incidents of fiction at its best are not only probable but inevitable: they happen because in the nature of things they have to happen, and not because the author wants them to."（逐字，33 词）
-  - PG36837 L3600-3601 — "the improbable must be bounded by probability in its own sphere"（逐字，11 词）
-  - PG14525 L886-887 — "he if obliged to Write nothing that is improbable"（逐字，9 词；原文如此，[sic]）
-  - PG7148 L8766-8769 — "Logical coherence, the causal connexion, I hold to be equally essential to Tragedy and every serious drama"（逐字，17 词）
-  - PG76438 L901-902、L909（转述，评论反方）——不要听“improbability”警告；故事靠自身成立，但须内部自洽
-- **独立来源数**：5（PG30183、PG36837、PG14525、PG7148、PG76438〔反方，可解释〕）
-- **来源类型**：作法×4 / 评论×1（PG7148）
-- **冲突状态**：按条件（PG76438 的“别听不可能性警告”不是反因果，而是把标准从外部似真换成内部自洽）
+- **冲突状态**：按条件
 - **可信度**：高（4 个支持来源 + 1 个可解释的反方；跨 1641–1922）
 
 ---
@@ -266,15 +224,8 @@
 - **失效条件与反例**：
   1. 喜剧/闹剧：巧合是类型快感本身，读者预期它发生（此时“太巧”不是缺陷）。
   2. 写实主义/推理：读者要求公平线索，B2/B3 都不成立，只剩 B1。
-  3. 反例：PG77656 的示范小说用“临终忏悔”解结，作者自认可行；若读者不接受，修复是提前让凶手父亲病重在场，而不是换更巧的机关。
-- **适用边界**：类型小说、童话、喜剧、惊险；不适用于写实主义、犯罪推理的“公平 play”。证据：1 个方法来源（PG30183）+ 1 个评论反推（PG7148，评论）+ 2 个作品归纳（推断），故可信度受限。
-- **来源锚点**：
-  - PG7148 L14098-14099 — "the one consequently is rendered natural and probable by means of the other"（逐字，13 词；评论反推）
-  - PG30183 L1063-1066 — "We seldom believe in the long-lost will that is discovered at last on the back of a decaying picture-canvas; or in the chance meeting and mutual discovery of long-separated relatives"（逐字，30 词）
-  - PG26177 L5027-5081（转述，作品案例，推断）——放生熊/鸭/鱼，后由它们逐层破障
-  - PG77656 L1342-1344、L1013-1021（转述，作品案例，推断）——临终供认、电报、误认、假死
-- **独立来源数**：4（PG7148、PG30183、PG26177、PG77656），其中方法来源 1
-- **来源类型**：作法×1（PG30183）/ 评论×1（PG7148）/ 作品案例×2（推断）
+  3. 反例： 的示范小说用“临终忏悔”解结，作者自认可行；若读者不接受，修复是提前让凶手父亲病重在场，而不是换更巧的机关。
+- **适用边界**：类型小说、童话、喜剧、惊险；不适用于写实主义、犯罪推理的“公平 play”。证据：1 个方法来源+ 1 个评论反推+ 2 个作品归纳（推断），故可信度受限。
 - **冲突状态**：按条件（“禁止巧合”与“使用巧合”按位置分治）
 - **可信度**：中（方法来源仅 1，B2 为评论反推；童话路径是归纳推断；无读者接受度数据）
 
@@ -304,20 +255,12 @@
   5. 对每场再问一次“这场内部是否有交代—纠葛—收束”；缺两项则合并（PL-07 子检查）。
 - **输出字段**：`场景功能表（场号 / 欲求 / 阻力 / 变化 / 功能 / 处置）` + `删并清单`。
 - **失效条件与反例**：
-  1. 静止场：《浮士德》多场 "action stands quite still" 仍是高诗艺（PG7148 B16）——功能是思辨密度，须在功能栏写明。
-  2. 纯抒情/独白场：可无外部变化，但全剧须另有推进机制（PG7148 R2 失效条件）。
+  1. 静止场：《浮士德》多场 "action stands quite still" 仍是高诗艺——功能是思辨密度，须在功能栏写明。
+  2. 纯抒情/独白场：可无外部变化，但全剧须另有推进机制。
   3. 群像/多线：单场可能只服务一条线，“局面变化”要按该线判，不按全篇判。
 - **适用边界**：多场/多章叙事、舞台剧；不适用于以氛围/音乐性为唯一目的的作品。**影视只作结构类比（推断，未证实；本包无影视样本）**。证据跨 1609–1918，戏剧为主；小说场景证据较弱（推断）。
-- **来源锚点**：
-  - PG7148 L18843-18845 — "the separate parts must be fashioned after the figure of the whole, so that we may say, each scene may have its exposition, its intrigue, and winding up"（逐字，28 词）
-  - PG18230 L460-461 — "A play is a thousand-legged creature which must keep on going."（逐字，11 词）
-  - PG18769 L603-604 — "now that Lilian saved herself in her own strength, the child had no dramatic function to fulfill."（逐字，17 词）
-  - PG30183 L2522-2524 — "the only way to attain unity of narrative is to exclude consideration of any event which does not, directly or indirectly, contribute to the progress of the series"（逐字，28 词）
-  - PG43435 L10053-10054 — "Economy may be defined as that perfection of design which lies midway between incompleteness and waste"（逐字，16 词）
-- **独立来源数**：5（PG7148、PG18230、PG18769、PG30183、PG43435）；PG5957 只作边界条件（短篇戏剧故事不得插支线），不计入支持来源。
-- **来源类型**：作法×3（PG18230、PG18769、PG30183）/ 评论×2（PG7148、PG43435）
 - **冲突状态**：无（5 个来源方向一致；分歧只在“功能是否必须是推进”，已用功能类型解决）
-- **可信度**：高（5 个支持来源 + PG5957 边界；跨 1609–1918、跨戏剧/小说/讲述；反例明确）
+- **可信度**：高
 
 ---
 
@@ -334,7 +277,7 @@
 | B 对照并置 | 无共同结算事件，但共享问题（中点照面可选，不是 B 型成立条件） | 定共享问题、各自收束；中点场可选 |
 | C 伪多线 | 只是“同时发生”，无共同问题、无交汇 | 合并为一条线，或改成“同时性编织” |
 
-  - **B 型的判型口径**：只要求“共享问题 + 各自收束”；中点照面是 PG43435 单来源、仅莎剧的可选结构，缺它不改变 A/B/C 判型，也不因此判 C 或合并。
+  - **B 型的判型口径**：只要求“共享问题 + 各自收束”；中点照面是  单来源、仅莎剧的可选结构，缺它不改变 A/B/C 判型，也不因此判 C 或合并。
   - **区分信号**：删掉一条线，另一条的结局是否改变（A 会变；B 不变但会失去对照）。
   - **反信号**：靠“主题相似”宣布统一，事件上零接触。
   - **误判代价**：B 强并为 A → 人物去解决不属于自己的问题；A 误判为 B → 结尾断成两截。
@@ -346,19 +289,12 @@
   5. 复查：结尾是否需要一个“总落点”？A 必须有；B 可以有两个，但须在同一场/同一画面内并置。
 - **输出字段**：`汇合类型（A/B/C）` + `两线终点` + `共同落点或共享问题` + `各自收束` + `B 型中点场（可选）`。
 - **失效条件与反例**：
-  1. 短篇强戏剧故事：不得插支线（PG5957 L276-277），多线本身不合法。
+  1. 短篇强戏剧故事：不得插支线，多线本身不合法。
   2. 群像/编年：可以无总落点，靠主题并置；强行汇合会造作。
   3. 反例：《Middlemarch》被 Hamilton 判三线未交织，但它是 B 型；修复是先写清共享问题与各自收束，中点照面只是可选补强，不是硬造汇合。
-- **适用边界**：多幕剧（直接证据）、长篇（**标“推断”**：本包没有以长篇多线为对象的方法来源）；不适用于短篇、单线成长小说。**双线电影只作结构类比（推断，未证实；本包无影视样本）**。证据：小说 1 + 戏剧 2 + 新闻 1；“中点”只有 PG43435 一个来源，且只覆盖莎剧，**“中点照面”是可选结构，不是硬门，也不是 B 型成立条件**。
-- **来源锚点**：
-  - PG30183 L2709-2711 — "progress, each in its own way, toward a common culmination,--a single momentous event which stands therefore at the apex of each series"（逐字，23 词）
-  - PG7148 L8783-8785 — "Why should not the poet be allowed to carry on several, and, for a while, independent streams of human passions and endeavours, down to the moment of their raging junction"（逐字，30 词）
-  - PG43435 L10370-10372 — "actions of this intricate plot, so numerous and so separate at first, been found to converge to a common centre and then move together to a common _dénouement_"（逐字，28 词；保留原文斜体标记）
-  - PG65884 L4302-4304 — "different threads of narrative must be woven together skillfully to make it evident how the several incidents took place at the same time"（逐字，23 词）
-- **独立来源数**：4（PG30183、PG7148、PG43435、PG65884）
-- **来源类型**：作法×2（PG30183、PG65884〔新闻，外域〕）/ 评论×2（PG7148、PG43435）
+- **适用边界**：多幕剧（直接证据）、长篇（**标“推断”**：本包没有以长篇多线为对象的方法来源）；不适用于短篇、单线成长小说。**双线电影只作结构类比（推断，未证实；本包无影视样本）**。证据：小说 1 + 戏剧 2 + 新闻 1；“中点”只有  一个来源，且只覆盖莎剧，**“中点照面”是可选结构，不是硬门，也不是 B 型成立条件**。
 - **冲突状态**：按条件（因果汇合 vs 对照并置是两种合法模式，未平均）
-- **可信度**：中到高（4 来源，但“中点”单来源，且全部为戏剧/新闻，小说直接证据仅 PG30183）
+- **可信度**：中到高
 
 ---
 
@@ -386,17 +322,10 @@
   5. C：确认反讽不解决主线问题，只加压。
 - **输出字段**：`信息差表` + `主线策略（A/B）` + `inkling 位置` + `兑现场` + `回看线索清单`。
 - **失效条件与反例**：
-  1. 纯文学/开放式短篇：可允许不解答（PG30183 A20 举 Stockton《The Lady or the Tiger?》）。
-  2. 希腊悲剧：观众全知仍成立（PG69095 B11）——A/B 是选择，不是进化。
+  1. 纯文学/开放式短篇：可允许不解答。
+  2. 希腊悲剧：观众全知仍成立——A/B 是选择，不是进化。
   3. 系列/连载：单章可以只给新问题不兑现（接 PL-10）。
 - **适用边界**：悬疑、言情、连载、类型小说；不适用于以“不确定/迷失”为效果的作品。证据跨 1609–1918。
-- **来源锚点**：
-  - PG30183 L5402-5404 — "there is no use in making the reader wait unless he is first given an inkling of what he is to wait for"（逐字，23 词）
-  - PG36837 L2023-2025 — "there must be a climax, concealed from the reader, so far as possible, till the last moment, but ever-present in the writer's mind"（逐字，23 词）
-  - PG76719 L603-607 — "do not permit the untying of the plot until reaching the last scene"（逐字，13 词）
-  - PG69095 L10314-10377（转述，评论）——客观反讽（说话人不知真意）与主观反讽（说话人故意）分层
-- **独立来源数**：4（PG30183、PG36837、PG76719、PG69095）
-- **来源类型**：作法×3 / 评论×1
 - **冲突状态**：无（“早给问题/晚给答案”消解了表面的“藏 vs 预告”冲突）
 - **可信度**：高（4 来源、跨 1609–1918、跨戏剧/小说）
 
@@ -425,18 +354,11 @@
   5. 复查：把章末问题单独抄出，若连续三章是同一问题 → 中段无进展。
 - **输出字段**：`章末问题清单（章号 / 问题 / 属主线或副线 / 下章是否回答）` + `事件分布表`。
 - **失效条件与反例**：
-  1. 一次性出版的单行本：不必设钩（PG36837 明说 curtain 为连载而设）。
-  2. 口述多故事场：PG5957 反而要求强情境后“放下来”（L1134-1136），与“抛问题”方向相反——载体不同。
-  3. 反例：PG36837 自己讥讽 "To be continued to-morrow" 式假悬念（L5166-5173）。
-- **适用边界**：分章连载的散文虚构、分幕剧；不适用于单行本、短篇集单篇。**有声书分章只作载体类比（推断）；网文平台机制（推荐/追读算法）不适用（未证实）**。方法来源只有 PG36837 一个。
-- **来源锚点**：
-  - PG36837 L5081-5083 — "while the climax is generally the solution of a problem, a "curtain" is usually a problem needing solution"（逐字，18 词）
-  - PG36837 L5107-5108 — "good "curtains" are worth as much to a serial as a good plot"（逐字，13 词）
-  - PG30183 L5133-5161（转述，作品案例，推断）——Dumas 在末句引入新线索引人续读
-  - PG11483 L2455-2458（转述，史料，推断）——口述连载 "that's all till next time"
-- **独立来源数**：3（PG36837、PG30183、PG11483），方法来源 1
-- **来源类型**：作法×1 / 作品案例×1（推断）/ 史料×1（推断）
-- **冲突状态**：按条件（与 PG5957 的“降落”相反，按载体分治）
+  1. 一次性出版的单行本：不必设钩。
+  2. 口述多故事场： 反而要求强情境后“放下来”（-1136），与“抛问题”方向相反——载体不同。
+  3. 反例： 自己讥讽 "To be continued to-morrow" 式假悬念（-5173）。
+- **适用边界**：分章连载的散文虚构、分幕剧；不适用于单行本、短篇集单篇。**有声书分章只作载体类比（推断）；网文平台机制（推荐/追读算法）不适用（未证实）**。方法来源只有  一个。
+- **冲突状态**：按条件
 - **可信度**：中（1 个方法来源 + 2 个作品归纳；无连载效果数据）
 
 ---
@@ -466,18 +388,10 @@
   6. 故意不兑现 → 让“不兑现”本身成为主题，并在末段明示（不能假装兑现）。
 - **输出字段**：`承诺结算表（承诺 / 兑现场 / 状态）` + `截断点` + `回补理由`。
 - **失效条件与反例**：
-  1. 多线长篇：末章需收束多条线（PG30183 自认长篇例外，L5163-5169）。
+  1. 多线长篇：末章需收束多条线。
   2. 系列/连载：末章需留钩子（PL-10）。
-  3. 反例：PG2037 框架永不闭合，但每篇承诺自足（B1）；不适用“必须兑现框架”。
+  3. 反例： 框架永不闭合，但每篇承诺自足（B1）；不适用“必须兑现框架”。
 - **适用边界**：短篇、单卷长篇、舞台剧；不适用于系列单卷、开放式艺术片。证据跨 1641–1922。
-- **来源锚点**：
-  - PG30183 L6631-6633 — "In no other single feature of construction may the work of the inexperienced author be so readily detected as in the final passage of his story"（逐字，26 词）
-  - PG5957 L2160-2162 — "I should suggest stopping at the words: "The Tub is full," as any addition seems to destroy the subtlety of the story."（逐字，22 词）
-  - PG77656 L605 — "Never leave the plot-problem unsolved."（逐字，5 词）
-  - PG36837 L5023-5024 — "it must be an ending leaving a sense of right completion with the reader"（逐字，14 词）
-  - PG14525 L1059（转述，作法/Manley）——故事必须结束
-- **独立来源数**：5（PG30183、PG5957、PG77656、PG36837、PG14525）
-- **来源类型**：作法×5
 - **冲突状态**：无（“闭合”与“留白”分属承诺层与余赘层，可同时满足）
 - **可信度**：高（5 个方法来源、跨 1641–1922、跨小说/戏剧/讲述）
 
@@ -508,19 +422,10 @@
   6. C：在结尾给一个“读法信号”（一个人物的选择、一个画面），防止误读。
 - **输出字段**：`判断权声明（A/B/C）` + `评断句清单（保留/删）` + `奖惩结构表`。
 - **失效条件与反例**：
-  1. 儿童/寓言：A 是契约，不是落后（PG16693 的“教训型:生活型 = 1:3”只适用于幼儿课堂）。
+  1. 儿童/寓言：A 是契约，不是落后。
   2. 悲剧：B 不排除“恶有恶报”，但报应须由人物行动带来，不由叙述者宣布。
-  3. 反例：PG14525 自己承认“德者未必最幸”，故其诗性正义是“合式”而非因果报应；照字面执行会写出假结局。
-- **适用边界**：虚构叙事；非虚构（报道/纪实/回忆录/评论/学术）只作判断权问句的旁证（**标“推断”**），本 skill 不处理事实核验与论证结构。对儿童/类型/纯文学需分别设默认值。证据跨 1641–1922，价值判断带时代性（PG36837 的性别/道德观、PG76438 的反童子军审查立场）。**本 skill 不替作者决定道德立场，只要求立场一致、判断权明确。**
-- **来源锚点**：
-  - PG14525 L637-639 — "here Vertue is seen to be alwayes recompenced, and Vice alwayes punished"（逐字，12 词）
-  - PG18769 L548 — "The dignity of this moral saved John Strebelow's life"（逐字，9 词）
-  - PG5957 L3270-3271 — "we must refrain from holding, as Burroughs says, "a brief for either side,""（逐字，13 词）
-  - PG76438 L1342-1343 — "Give them reading for reading's sake and not for some ulterior motive."（逐字，12 词）
-  - PG30183 L1206-1207 — "There is no such thing as an immoral subject for a novel"（逐字，12 词）
-  - PG36837 L6559-6573（转述，作法）——作者应有健康向上之责，但“善不免闷”
-- **独立来源数**：6（PG14525、PG18769、PG5957、PG76438、PG30183、PG36837）
-- **来源类型**：作法×6
+  3. 反例： 自己承认“德者未必最幸”，故其诗性正义是“合式”而非因果报应；照字面执行会写出假结局。
+- **适用边界**：虚构叙事；非虚构（报道/纪实/回忆录/评论/学术）只作判断权问句的旁证（**标“推断”**），本 skill 不处理事实核验与论证结构。对儿童/类型/纯文学需分别设默认值。证据跨 1641–1922，价值判断带时代性。**本 skill 不替作者决定道德立场，只要求立场一致、判断权明确。**
 - **冲突状态**：按条件（真实价值冲突，按读者契约分治，不平均）
 - **可信度**：中（来源多但方向分裂；“判断权”是本手册对分歧的归纳，不是任何一本书的术语）
 
@@ -544,26 +449,16 @@
   - **误判代价**：按 1904 年章数写当代长篇连载 → 节奏过慢；按 1922 年 8,000 词上限砍长篇 → 结构断裂。
 - **操作步骤**：
   1. 写容器参数：`载体 / 总词数或总时长 / 章或幕数 / 单章上限`。
-  2. 按“起/中/收”（或幕/章）分配三段预算：三段大致相等；若有一段更长，应是中段（PG36837 L2955-2957）。不写死百分比，不取历史数字的平均值。
+  2. 按“起/中/收”（或幕/章）分配三段预算：三段大致相等；若有一段更长，应是中段。不写死百分比，不取历史数字的平均值。
   3. 把副线数、配角数、场景密度按容器缩放（短篇：一章的对照事件压成一段，配角减到两三个）。
   4. 写后按初稿重估配比；头重脚轻则删/移。
   5. 超限时二选一：删内容或换容器；不许“先写完再想办法”。
 - **输出字段**：`容器参数表` + `分段预算（段/章 → 词数/场数）` + `超限处置`。
 - **失效条件与反例**：
-  1. 舞台剧剧本可出全本 128 页，破 32/64 页规则（PG78066 L685-687）——容器可议，但须显式议定。
+  1. 舞台剧剧本可出全本 128 页，破 32/64 页规则——容器可议，但须显式议定。
   2. 插图本/特殊开本：页数—词数换算失效。
-  3. 反例：PG36837 说“3,000–100,000 词同一套规则”，若理解为“容器无关”则与本规则冲突；正解是“因果脊不变，粒度变”。
+  3. 反例： 说“3,000–100,000 词同一套规则”，若理解为“容器无关”则与本规则冲突；正解是“因果脊不变，粒度变”。
 - **适用边界**：投稿、约稿、丛书、改编；不适用于无载体的自由创作。所有数字均为 1904–1929 历史参数，**不得作当代规范**。
-- **来源锚点**：
-  - PG36837 L2972-2973 — "it is necessary to fix the length of your story before you start to work"（逐字，15 词）
-  - PG36837 L2955-2957 — "The three parts may, or may not, be about equal in length; but if one is longer than the other, it should be the middle part."（逐字，26 词）
-  - PG36837 L2011-2012 — "The same rules apply to all stories, whether 3,000 or 100,000 words in length"（逐字，14 词）
-  - PG77656 L1715-1716 — "Proportion in story-writing, be it said, is as essential as it is in plot building."（逐字，15 词）
-  - PG78066 L426-427 — "A 32-page Little Blue Book contains--when set as above--about 7,500 words"（逐字，11 词）
-  - PG53520 L1666 — "A short story is usually supposed to contain from 3000 to 6000 words."（逐字，13 词）
-  - PG77776 L212-214 — "A book containing 80,000 words should have at least ten chapters."（逐字，11 词）
-- **独立来源数**：5（PG36837、PG77656、PG78066、PG53520、PG77776）
-- **来源类型**：作法×2 / 史料×3
 - **冲突状态**：按条件（数字互斥，程序一致；数字全部降级为历史参数，禁止取平均值）
 - **可信度**：高（程序 5 来源）；分段配比（三段大致相等、可长则长中段）单来源、中，只作默认；数字可信度低，已在规则内标“不作规范”。
 
@@ -593,19 +488,10 @@
   5. 二稿后再跑一次 PL-07 场景功能表。
 - **输出字段**：`段落地图（段号 / 调用点 / 承重或余赘 / 处置）` + `压缩保留清单` + `回补过渡`。
 - **失效条件与反例**：
-  1. 以繁复/氛围为效果的作品：删到“光秃轮廓”即失败（PG36837 自认）。
-  2. 框架/离题体：PG2037 的离题若按此删会毁全书（框架即结构）。
+  1. 以繁复/氛围为效果的作品：删到“光秃轮廓”即失败。
+  2. 框架/离题体： 的离题若按此删会毁全书（框架即结构）。
   3. 反例：“砍一半”是新手经验值，不是测量；成熟稿照砍会伤及承重段。
 - **适用边界**：小说二稿、舞台剧剧本围读后、改编压缩；不适用于已高度压缩的稿、以语言为价值的作品。
-- **来源锚点**：
-  - PG36837 L5705-5706 — "A beginner's MS. usually needs to be cut down to about half its original length."（逐字，15 词）
-  - PG36837 L5746-5748 — "it is better to err on the side of drastic deletion, rather than leave in matter that is no actual gain to the picture"（逐字，24 词）
-  - PG30183 L2522-2524 — "the only way to attain unity of narrative is to exclude consideration of any event which does not, directly or indirectly, contribute to the progress of the series"（逐字，28 词）
-  - PG5957 L3740-3741 — "present many of the characteristic passages which seem to sum up the situation."（逐字，13 词）
-  - PG18769 L603-604 — "now that Lilian saved herself in her own strength, the child had no dramatic function to fulfill."（逐字，17 词）
-  - PG43435 L10053-10054（转述，评论）——Economy：不缺、不冗、按分量展开
-- **独立来源数**：5（PG36837、PG30183、PG5957、PG18769、PG43435）
-- **来源类型**：作法×4 / 评论×1
 - **冲突状态**：无（删什么一致；删多少无共识，已在规则内标“经验值”）
 - **可信度**：高（5 来源、跨 1886–1922、跨小说/戏剧/讲述）
 
@@ -638,16 +524,7 @@
   1. 连载/接龙/多人合写：终点可能不可先定，只能定“本卷终点”。
   2. 以语言/氛围为目的的作品：因果审计可能误杀（此时只审计“人物行为是否可信”，不审计“事件是否必然”）。
   3. 反例：Carroll 同用两种工序（Snark 末节先写；Sylvie and Bruno 先积素材后拼装，后者被评无统一）——工序是每部作品的选择。
-- **适用边界**：小说、舞台剧剧本、短篇；不适用于即兴口头讲述（PG16693/PG5957 的现场讲述另有工序）。证据跨 1609–1922。
-- **来源锚点**：
-  - PG77656 L443-444 — "Such a plan, if consistently followed, usually proves fatal to the beginner."（逐字，12 词）
-  - PG77656 L457-459 — "no really great short story was ever written the plot of which was not clearly outlined in the writer's mind before he began to write"（逐字，25 词）
-  - PG18230 L684-686 — "to know quite exactly where you are going and to take the best road that leads there"（逐字，17 词）
-  - PG7148 L12272-12273 — "Organical form, again, is innate; it unfolds itself from within"（逐字，10 词）
-  - PG76438 L808-811（转述，作法）——先造人物，情境自生
-  - PG11483 L4226-4227（转述，史料）——Carroll 末节先写
-- **独立来源数**：5（PG77656、PG18230、PG7148、PG76438、PG11483）
-- **来源类型**：作法×3 / 评论×1 / 史料×1
+- **适用边界**：小说、舞台剧剧本、短篇；不适用于即兴口头讲述。证据跨 1609–1922。
 - **冲突状态**：按条件（“纸面/心中/发现”三分，未把任何一派写成通则）
 - **可信度**：中到高（5 来源，但“心中大纲”不可核，只能作自述处理）
 
@@ -662,9 +539,9 @@
 
 | 分支 | 选择条件 | 动作 |
 |---|---|---|
-| A 人物入口 | 先有欲求与缺点 | 让人物在情境中碰撞出事件（PG76438） |
-| B 事件入口 | 先有一个异常事件 | 补行动者与环境（PG30183） |
-| C 胚情节入口 | 先有一条带 twist 的新闻/画面 | 用连环设问展开（PG77656） |
+| A 人物入口 | 先有欲求与缺点 | 让人物在情境中碰撞出事件 |
+| B 事件入口 | 先有一个异常事件 | 补行动者与环境 |
+| C 胚情节入口 | 先有一条带 twist 的新闻/画面 | 用连环设问展开 |
 
   - **区分信号**：三要素能否各自落成一句具体的话。
   - **反信号**：只有“设定/世界观/奇观”，没有具体的人要具体的东西 → 还不能写。
@@ -679,18 +556,10 @@
 - **失效条件与反例**：
   1. 纯氛围/散文诗：可以无行动者，但不属于本分类的“情节”。
   2. 群像/社会小说：行动者可以是“一群人”，但须有一个可指认的代表。
-  3. 反例：PG77656 的报纸胚情节大量产出类型化故事（B3），说明“有入口”不等于“有戏”；PG76438 承认九成投稿都写同一母题（L980-981，转述）。
+  3. 反例： 的报纸胚情节大量产出类型化故事（B3），说明“有入口”不等于“有戏”； 承认九成投稿都写同一母题（-981，转述）。
 - **适用边界**：短篇、长篇、类型小说、舞台剧剧本；不适用于非虚构、散文。证据跨 1918–1922，均为英语通俗市场。
-- **来源锚点**：
-  - PG30183 L2273-2274 — "Only when all three elements conspire can something happen"（逐字，9 词）
-  - PG76438 L810-811 — "the situation is the plot."（逐字，5 词）
-  - PG77656 L117-118 — "A germ-plot is an idea which may be broadened out and used as a foundation upon which to build a short story"（逐字，22 词）
-  - PG30183 L2107-2109 — "In every art there are two steps; first, the selection of essentials, and secondly, the arrangement of these essentials according to a pattern"（逐字，23 词）
-  - PG3388 L914-916（转述，评论，弱）——人物最终来自作者自身；只作入口偏好的旁证
-- **独立来源数**：3（PG30183、PG76438、PG77656）+ 1 弱（PG3388）
-- **来源类型**：作法×3 / 评论×1（弱）
 - **冲突状态**：无（入口自由是三条来源的共同点；“人物先行 vs 事件先行”是入口偏好，不构成规则冲突）
-- **可信度**：中（3 个方法来源，但都在 1918–1922 美国市场；“三要素齐备”是 PG30183 的术语，另两本只是实践）
+- **可信度**：中
 
 ---
 
