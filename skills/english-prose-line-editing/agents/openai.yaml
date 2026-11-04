@@ -1,4 +1,0 @@
-interface:
-  display_name: "英语散文精修与校对"
-  short_description: "保留意义与作者声口，按条件校对英文句子和段落"
-  default_prompt: "校对这段英文，按适用条件修改并指出实质未决项。"
