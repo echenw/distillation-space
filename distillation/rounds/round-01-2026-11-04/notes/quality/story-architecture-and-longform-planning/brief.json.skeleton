@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "story-architecture-and-longform-planning",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "ST-T1",
+      "kind": "positive",
+      "scenario": "12 万字单本",
+      "expected": "交付主行动、终点、中点、高潮时点"
+    },
+    {
+      "id": "ST-T2",
+      "kind": "missing",
+      "scenario": "连载已发 80 章，只给后续想法，没给已发大纲",
+      "expected": "先要已发内容的状态账，再规划"
+    },
+    {
+      "id": "ST-T3",
+      "kind": "conflict",
+      "scenario": "已发布章节锁定，新卷设定与已发内容矛盾",
+      "expected": "只改未发部分，列出最小冲突集合，由作者裁决"
+    },
+    {
+      "id": "ST-T4",
+      "kind": "boundary",
+      "scenario": "每篇独立、共享人物的系列短篇",
+      "expected": "说明篇幅容器和分卷规则哪些适用"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

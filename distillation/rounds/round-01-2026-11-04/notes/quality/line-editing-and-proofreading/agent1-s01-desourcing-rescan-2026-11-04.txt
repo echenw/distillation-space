@@ -1,0 +1,148 @@
+# Agent 1 独立复核 · S01 附录 B 全 11 类扫描（W2/W1.5）
+日期：2026-11-04
+角色：Agent 1（门禁仲裁员）只读复核，不改 Agent 2 任何文件
+范围：/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading 全部 10 个文件
+命令：/usr/bin/grep -rnE '<模式>' <S01 output 目录>（本机 grep 是 ugrep，中文长模式会报错）
+说明：保留每一类的原始 stdout 与命中行数；逐条判断见下方结论与 loss-inventory-S01.md 摘要。
+
+======================================================================
+## #1 书名号作品名
+模式：`《[^》]+》`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #2a 来源编号 PG
+模式：`PG[ -]?[0-9]+`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #2b 来源编号残片
+模式：`(^|[^A-Za-z0-9])-[0-9]{3,5}([^0-9]|$)`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #3a 数量年代 本材料
+模式：`[0-9]+ ?本(材料|书|手册)`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #3b 材料标称
+模式：`材料标称`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #3c 年代+市场/手册
+模式：`(1[5-9]|20)[0-9]{2} ?年(代)?.{0,8}(市场|手册|杂志|出版|建议)`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #4 指向学习材料
+模式：`书内|书里|同书|该书|此书|原书|来源是|出自|引自|据称|这批材料|学习材料|原文库|批次`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #5a 作者/名人
+模式：`作家|小说家|评论家|大师|名著|经典作品`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #5b 拉丁人名
+模式：`[A-Z][a-z]+ [A-Z][a-z]+`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #6 英文原句
+模式：`\"[A-Z][a-z]+( [a-z]+){4,}`
+退出码：0  命中行数：1
+--- 原始 stdout ---
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-mechanics-and-punctuation.md:92:- **自拟例**：`She said, "The meeting starts at noon."` / `She said that the meeting started at noon.`
+
+======================================================================
+## #7 包外路径
+模式：`notes/|results/|/home/|materials/|rounds/`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #8 改动痕迹
+模式：`旧版|本版|更正|早先的版本|融合版|上一版`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #9 审计词
+模式：`NOT_PROVEN|VERIFIED|NOT_RUN|STATIC_CHECKED|DESIGN_EXAMPLE|OBSERVED|F/H/P|GQ[1-5]|R1[78]`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## #10 删除残迹
+模式：`（\s*）|\(\s*\)|见\s*[，。；]|据\s*[，。；]|与\s*同`
+退出码：0  命中行数：14
+--- 原始 stdout ---
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/zh-mechanics.md:17:- 中文正文用全角标点（，。？！：；“”‘’（）《》——……）。输入法切换造成的半角逗号、句号、引号（`,` `.` `"`）要改成全角。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/zh-mechanics.md:34:| 在后 | “我明天走。”他说。／“我明天走，”他说。 | 两种写法都常见，选一种全稿统一 |
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/workflow.md:11:3. **每条修改说得出依据。** 依据是本 skill 的规则编号（SR 或 EN），或者明确写“编辑判断”。不把个人语感说成规则。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/workflow.md:119:- 把这一轮暴露出来的新误判写进下一轮的复查项，避免重复出现；没有依据的地方写「没有依据，按作者判断」。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:12:- **不用**：技术、法律、医学里的精确限定；`all/only/unless/except` 一类范围词；否定证据；有意的重复、排比和人物声音；不设词数上限；不删到论点失去证据或反例。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:13:- **反例**：自拟把 `Only the night shift may sign the log.` 里的 `Only` 删掉，范围从「仅夜班」扩大成所有人；为简短删掉一句支撑结论的证据。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:39:- **出口**：项目体例要求保留某种正式写法、或替换会改变法律含义时，保留原表达并写明依据，停在待作者决定。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:43:- **规则**：抽象表达可以概括，具体细节可以帮助读者理解；选择取决于文本目的和原稿证据。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:82:历史词形、拼写和标点清单只能作为历史文本校勘的候选证据，不是现代英文的硬性规则。只有项目明确要求某一历史时期或特定体例时，才按该项目规范处理；现代稿默认遵循作者指定的当代词典和 style sheet。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:96:- **出口**：需要补事实、或改动会改变命题强度时，撤销该处，改为建议交作者决定；交付时逐条给依据，不把未经核实的判断写成已完成。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/references/en-mechanics-and-punctuation.md:102:- **检查**：改完核对词典依据，确认没有改到专名、引文或作者有意拼写。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/examples/worked-example.md:137:| 是否补可见细节 | 原稿没有依据，未补 | 未能核实 | 台账 SR-11 行 |
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/SKILL.md:104:**SR-14 对白格式全稿统一。** 提示语在前用冒号：他说：“……”。说话动词插在中间：“……，”他说，“……。”中间是动作而不是“说”时，前后各自成句：“你来了。”他放下杯子。“坐吧。”提示语在后时，“……。”他说。和“……，”他说。两种写法都常见，选一种全稿统一。
+/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation/rounds/round-01-2026-11-04/output/line-editing-and-proofreading/SKILL.md:143:对作者交付只用这四个词，逐项给依据，不写审计词或状态码：
+
+======================================================================
+## #11 分档/禁用说法
+模式：`夯|拉完了|硬规则|用户明确要求`
+退出码：1  命中行数：0
+--- 原始 stdout ---
+(零命中)
+
+======================================================================
+## 汇总
+
+- #1 书名号作品名：0 条
+- #2a 来源编号 PG：0 条
+- #2b 来源编号残片：0 条
+- #3a 数量年代 本材料：0 条
+- #3b 材料标称：0 条
+- #3c 年代+市场/手册：0 条
+- #4 指向学习材料：0 条
+- #5a 作者/名人：0 条
+- #5b 拉丁人名：0 条
+- #6 英文原句：1 条
+- #7 包外路径：0 条
+- #8 改动痕迹：0 条
+- #9 审计词：0 条
+- #10 删除残迹：14 条
+- #11 分档/禁用说法：0 条
+
+零命中类：1, 2a, 2b, 3a, 3b, 3c, 4, 5a, 5b, 7, 8, 9, 11（共 13 类）
+有命中类：#6=1、#10=14
+合计命中：15 条
+

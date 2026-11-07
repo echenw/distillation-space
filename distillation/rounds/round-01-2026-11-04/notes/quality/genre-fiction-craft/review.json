@@ -1,0 +1,912 @@
+{
+ "version": 1,
+ "kind": "review",
+ "skill": "genre-fiction-craft",
+ "status": "review-independent-r1",
+ "reviewer": "RV-genre（W4 第 8 席·非作者独立复核：本席未参与本包 SKILL.md／references／agents、brief.json、K4-r2.md、GR-fix 16 处补丁及 55 条去来源补丁的任何编写或落笔；与 K4-r2-genre 席、GR-fix 落笔席无人员连续性）。本轮只读被审包 101 件、brief.json、K4-r2.md、grfix-desourcing-selfcheck.md、k5-bindings-2026-11-05.tsv、suite-contract.md、w4-review-queue.md（W4-116/117/118/126/128 条）；为接口验证只读 7 个对端包被引行并整树复测；对前 7 份正式件只读 story/character/cross-media 三件以对齐格式与口径。本席为全量独立复核（非采纳重验）：brief 五组 65 条逐条回原文，五组无 review-draft.json 前身",
+ "reviewed_at": "2026-11-06",
+ "brief_sha256": "7872b7917168b836232bab98b9f6c7dda85a7b3450c3697217c1ad4c99731053",
+ "skill_tree_sha256": "ef3668e4ca8c1934d1df98feb828580e3fe7ae53f2127797c95a7595cc38dabc",
+ "tree_method_note": "递归枚举 output/genre-fiction-craft/ 全部 101 文件（SKILL.md＋agents/openai.yaml＋references/ 下 14 题材目录 99 件），按相对路径字节序升序拼 \"<relpath>\\t<sha256(文件原始字节)>\\n\" 后整串取 sha256——与 skills/knowledge-compiler/scripts/kd_round_output.py 同算法，本席直接经该脚本 --expected 实测三跑同值（开工、五组核验中、写盘前）。件数与字节另以 find/stat 独立复算（101 件／1,058,213 B）",
+ "bound_to_tree_sha": {
+  "algorithm": "同上 tree_method_note（kd_round_output.py 同算法）",
+  "self": "output/genre-fiction-craft",
+  "self_tree_sha256": "ef3668e4ca8c1934d1df98feb828580e3fe7ae53f2127797c95a7595cc38dabc",
+  "self_files": 101,
+  "self_bytes": 1058213,
+  "three_way_check": "实测 = k5-bindings-2026-11-05.tsv genre 行 = ef3668e4ca8c1934d1df98feb828580e3fe7ae53f2127797c95a7595cc38dabc（101 件／1,058,213 B），三者一致；brief_sha256 7872b791… 亦与 tsv 一致（本席对 brief.json 原始字节 shasum 实测）。历史沿革：07d638e5…（1,058,179 B，brief 取证与 K4-r2 时点）→ GR-fix 16 处行内替换 +34 B → 当前 ef3668e4…，与 grfix §4 表闭合。story 席正式件内的 genre 对端值 07d638e5… 为其复核时点旧值，非漂移。一致，未触发停手",
+  "matches_tsv": true,
+  "peers_measured": {
+   "story-architecture-and-longform-planning": {
+    "peer_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+    "files": 21,
+    "bytes": 283891,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "scene-conflict-and-rhythm": {
+    "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+    "files": 17,
+    "bytes": 168166,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "character-and-narrative-control": {
+    "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+    "files": 17,
+    "bytes": 193531,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "fiction-planning-and-diagnosis": {
+    "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+    "files": 27,
+    "bytes": 348056,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "cross-media-drama-adaptation": {
+    "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+    "files": 13,
+    "bytes": 76222,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "line-editing-and-proofreading": {
+    "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+    "files": 10,
+    "bytes": 114211,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   },
+   "preset-card-generation": {
+    "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+    "files": 11,
+    "bytes": 113900,
+    "measured_at": "2026-11-06T00:40:49+0800",
+    "matches_tsv": true
+   }
+  }
+ },
+ "gq": [
+  {
+   "id": "GQ1",
+   "name": "功能真实性",
+   "status": "STATIC_CHECKED",
+   "evidence_ref": "五组 65 条逐条回原文：19 requirements／16 capabilities／7 interfaces／11 applicability／12 cases 的 brief 结构化锚 228 个唯一值（453 处出现）全数机械解址（文件在、行号在范围内、行非空），语义抽验 32 行全部承载对应声明；两档取词复测 442 声明父号槽全被提及、441 有卡体；capabilities 分型（14 workflow＋2 external）与载体一致（external 两条对应 agents/openai.yaml 8 行与跨包路由，automation 类工件 0：find 非 md/yaml 文件仅 openai.yaml）",
+   "residual": "①PR-07 无编号卡体（1/442，F-04）；②GE-R16 出口承诺 8/14 缺（归 GQ2 同根）；两者均为点状/承诺面缺口并已在 brief gaps 与能力 limit 披露，不动摇能力清单为真的判定，故 GQ1=STATIC_CHECKED 而非 FAIL（判档口径与多数席一致：矛盾归 GQ2/GQ3）"
+  },
+  {
+   "id": "GQ2",
+   "name": "语义自洽",
+   "status": "FAIL",
+   "evidence_ref": "SEM-1/SEM-2/SEM-3（genre Q6 族）：SKILL.md:101 对 14 个 guide 的公开承诺与实况不符——「读哪个文件」H2 10/14、「触发与负触发」0/14、「做不下去时」独立 H2 4/14 且八目录无承载；SEM-4：四词状态词 SKILL 层 0 定义；SEM-5 为反向验证（§7 取舍顺序与题材内公平条款方向一致）。跨文件互斥探针另测「同场≤3 句」阈值仅以否定式出现一次、无对立阈值",
+   "why_fail": "①SKILL.md:101 需要时补读列承诺「该题材的触发与负触发」，14 个 guide 0 提供，包内无消歧条——读者按 §6 指针补读必然落空；②同行列承诺「『读哪个文件』那张分流表」，03/04/06/13 四目录以其他标题承载、承诺字面 10/14；③同列承诺「按 guide 的『做不下去时』一栏停下或改做设计」，八目录 guide.md 无该语义（GE-R16 fail 同根）；④「没证实的部分／要作者决定的事」（SKILL.md:60）与 references 层四词用法之间无集中定义（GE-G04）。①②③为公开契约缺口（在册 genre Q6，W4-126），两种修法（改 §6 承诺措辞 vs 给 guide 补栏目）待作者决定件 #11，本席不修"
+  },
+  {
+   "id": "GQ3",
+   "name": "跨 Skill 接口",
+   "status": "FAIL",
+   "evidence_ref": "7 条接口逐条实测：两侧路由行逐行读取，7 棵对端树整树摘要复测且全部与 tsv 一致（见 bound_to_tree_sha.peers_measured）。5 边双向闭合（IF-01/02/05/06/07，其中 IF-05/IF-07 为终批补丁后由单侧变双向）；2 边 fail（IF-03/IF-04，Owner 面）",
+   "why_fail": "题材契约 Owner 无唯一登记：IF-03（character 用公平/可靠性契约当判据、登记只在本包 03-horror/testimony-and-information.md:130）与 IF-04（fp 自有 FC-20 承诺-验收规则与本包 §1:17/§7:108 承诺判断双承载互不引用）——同一业务语义涉及 fp/genre/character 三方并存，待决定件 #10（W4-128），本席不修。其余五边路由、字段指向与转回行均实测在位；brief 对 IF-05/IF-07 的单侧旧记录属记录面缺陷（F-01），不折算成品 fail"
+  },
+  {
+   "id": "GQ4",
+   "name": "适用性与反例",
+   "status": "STATIC_CHECKED",
+   "evidence_ref": "11 条 applicability 逐条核：每条有边界名＋适用条件＋限制＋反例锚，全部锚解址且承载行语义相符（AP-02/06 的 03-horror/templates-and-cases.md:169「不提供现实诈骗、下药或规避调查的操作步骤」、AP-03 的 03-t&c:5「空白处不是配额」与 13-rules:23「披露时机不作硬阈值」、AP-04 的 09-beats:31「舞台节奏只作试排」与 11-claims:21「三件套旧名称与实际四字段不一致，只把字段当检查项」、AP-05 五锚（08-mech:27、05-rules:111、14-t&e:36 等）、AP-08 的 01-guide:27 四层分开、AP-09 的 01-guide:36「缺正文时可以给原创方案，但要标明是方案」均逐行读实）；成品不提来源、示例自创（§8:112-113 与 B 类复扫零命中互证）",
+   "residual": "AP-11 自带的四词无集中定义披露（GE-G04）复测成立，归 SEM-4/GQ2 处理，不否定本条边界本身"
+  },
+  {
+   "id": "GQ5",
+   "name": "最终版真实任务",
+   "status": "NOT_PROVEN",
+   "note": "无真实任务测试（用户裁决 D3=C，未授权）；本席权限 static，未启动宿主、未跑任何测试。效果类表述一律不得写成已验证",
+   "evidence_ref": null
+  }
+ ],
+ "gq_status_note": "gq[].status 按 W4-133 用三档 FAIL/STATIC_CHECKED/NOT_PROVEN；sections 五组行用 pass/fail/not_proven，两组字面集不同。本件无草案映射（genre 无 review-draft.json，本席全量独立复核后直接落档）。brief 记 partial 的 GE-R16 按二档重判为 fail（依据见该行 note）；brief 记 missing 的 GE-R18 按当前树改判为 pass（终批补丁新增 SKILL.md:30，依据见该行 note）——两处均为判定级改判并附实测依据，其余 63 行与 brief 结论一致。brief 侧陈旧结论（GE-G05/G06、GE-IF-05/IF-07、GE-T6 括注）记 F-01，不折算成品 fail",
+ "sections": {
+  "requirements": [
+   {
+    "id": "GE-R01",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:62",
+     "SKILL.md:66",
+     "SKILL.md:79",
+     "SKILL.md:104"
+    ],
+    "record_ref": "brief.json#/requirements/0（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R02",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:11",
+     "SKILL.md:51",
+     "SKILL.md:114"
+    ],
+    "record_ref": "brief.json#/requirements/1（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R03",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:17",
+     "SKILL.md:56",
+     "SKILL.md:60"
+    ],
+    "record_ref": "brief.json#/requirements/2（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R04",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:18",
+     "SKILL.md:51",
+     "SKILL.md:83",
+     "SKILL.md:87",
+     "SKILL.md:92",
+     "SKILL.md:95"
+    ],
+    "record_ref": "brief.json#/requirements/3（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R05",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:40",
+     "SKILL.md:41",
+     "SKILL.md:52"
+    ],
+    "record_ref": "brief.json#/requirements/4（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R06",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:40",
+     "SKILL.md:42",
+     "SKILL.md:55"
+    ],
+    "record_ref": "brief.json#/requirements/5（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R07",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:42",
+     "SKILL.md:56"
+    ],
+    "record_ref": "brief.json#/requirements/6（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R08",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:53",
+     "SKILL.md:95"
+    ],
+    "record_ref": "brief.json#/requirements/7（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R09",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:54",
+     "SKILL.md:108"
+    ],
+    "record_ref": "brief.json#/requirements/8（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R10",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:55",
+     "SKILL.md:60",
+     "SKILL.md:102"
+    ],
+    "record_ref": "brief.json#/requirements/9（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R11",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:58",
+     "SKILL.md:60"
+    ],
+    "record_ref": "brief.json#/requirements/10（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R12",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:106",
+     "SKILL.md:108"
+    ],
+    "record_ref": "brief.json#/requirements/11（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R13",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:34",
+     "SKILL.md:43",
+     "SKILL.md:115"
+    ],
+    "record_ref": "brief.json#/requirements/12（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R14",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:45",
+     "SKILL.md:112",
+     "SKILL.md:113"
+    ],
+    "record_ref": "brief.json#/requirements/13（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   },
+   {
+    "id": "GE-R15",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:46",
+     "references/02-romance/guide.md:8",
+     "references/01-mystery/guide.md:8"
+    ],
+    "record_ref": "brief.json#/requirements/14（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）",
+    "note": "02-romance/guide.md:8 与 01-mystery/guide.md:8 现文均已随 GR-fix 改「案例只是示例」，语义仍承载本条（无真实读者测试不称证明）；锚行号未位移"
+   },
+   {
+    "id": "GE-R16",
+    "status": "fail",
+    "refs": [
+     "SKILL.md:101",
+     "references/03-horror/guide.md:75",
+     "references/04-wuxia-xianxia-fantasy/guide.md:51",
+     "references/06-historical-alternate/guide.md:45",
+     "references/13-isekai-time-travel/guide.md:114",
+     "references/02-romance/guide.md:24"
+    ],
+    "record_ref": "brief.json#/requirements/15（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）",
+    "note": "本席改判（brief 记 partial，按 W4-133 二档并入正式件）：「每题材自带缺料／做不下去的出口」是全称承诺，实测独立「做不下去时／停止与继续」H2 仅 03/04/06/13 四目录；01-mystery 在交付内文承载部分出口语义（:34「无法判断的部分单独列出」）、05-science-fiction 经分流行 SF-28 承载（guide.md:19）；02/07/08/09/10/11/12/14 八个 guide.md 通读无该语义（02-romance/guide.md 全 26 行仅「证据不足的部分单独列出」一句属证据处理、非停下或改做设计出口）。SKILL.md:101 出口列承诺「按 guide 的『做不下去时』一栏停下或改做设计」对八目录落空。根因与 genre Q6 同一承诺面，两种修法待作者决定件 #11（W4-126）"
+   },
+   {
+    "id": "GE-R17",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:81",
+     "references/02-romance/templates.md:9",
+     "references/03-horror/templates-and-cases.md:69",
+     "references/05-science-fiction/mechanisms.md:1"
+    ],
+    "record_ref": "brief.json#/requirements/16（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）",
+    "note": "442 个声明父号槽位实测全部在文中被提及、441 个有标题卡头或表行卡体（本席两档取词复测）；唯一例外 PR-07 无编号卡体亦无字母子卡族（见 F-04 与 GE-CAP-10 limit），单槽例外已在 brief GE-G02 与能力 limit 双处披露"
+   },
+   {
+    "id": "GE-R18",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:30",
+     "SKILL.md:32",
+     "SKILL.md:3",
+     "preset-card-generation/SKILL.md:3",
+     "preset-card-generation/SKILL.md:40"
+    ],
+    "record_ref": "brief.json#/requirements/17（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）",
+    "note": "本席按当前树改判（brief 记 missing 已陈旧）：终批补丁后 SKILL.md:30 已有「生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 → preset-card-generation」转出行，:32 明写「不接，走上表末行」；对侧 preset-card-generation/SKILL.md:3 与 :40 转回行实测在位。残余差：description（SKILL.md:3）仍列六家兄弟包未列 preset（见 F-06）"
+   },
+   {
+    "id": "GE-R19",
+    "status": "pass",
+    "refs": [
+     "SKILL.md:32",
+     "SKILL.md:38"
+    ],
+    "record_ref": "brief.json#/requirements/18（brief 原始记录，本席逐条回原文复核；228 结构化锚机械寻址全数解址后另做语义抽验）"
+   }
+  ],
+  "capabilities": [
+   {
+    "id": "GE-CAP-01",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/0（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-02",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/1（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-03",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/2（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-04",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/3（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-05",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/4（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-06",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/5（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-07",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/6（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-08",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/7（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-09",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/8（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-10",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/9（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）",
+    "note": "载体实测：PR-07 为全包唯一「被声明、被提及、但无编号卡体且无字母子卡族」的父号（case-notes.md:1 H1 括注＋guide.md:3 区间声明＋guide.md:24 分流行，3 处提及；实际承载为 case-notes.md 内无编号 3 列机制表）；同族 MY-07/CO-07/IR-07 无裸父卡但各有字母子卡族（MY-07 案例库 H1、CO-07A…、IR-07A–G），与本条 limit 引 GE-G02 的披露一致"
+   },
+   {
+    "id": "GE-CAP-11",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/10（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-12",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/11（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-13",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/12（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-14",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/13（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）"
+   },
+   {
+    "id": "GE-CAP-15",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/14（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）",
+    "note": "本席按当前树复测：六类转出（SKILL.md:24-29）＋preset-card 第七行（:30，终批补丁新增）均在盘；limit 末句「preset-card 一类未写（GE-G05）」已陈旧（见 F-01）；description 仍未列 preset（F-06）"
+   },
+   {
+    "id": "GE-CAP-16",
+    "status": "pass",
+    "record_ref": "brief.json#/capabilities/15（brief 原始记录；本席核其 anchors 全部解址并抽验承载行）",
+    "note": "agents/openai.yaml 8 行逐行读：display_name／short_description（含「混合题材定主次」）／default_prompt／policy.allow_implicit_invocation: false 与 :1-:2 两条自陈免责均在盘；SKILL.md 正文无 allow_implicit_invocation 对应声明行（grep 0 命中，GE-G07 该项复测成立）"
+   }
+  ],
+  "interfaces": [
+   {
+    "id": "GE-IF-01",
+    "status": "pass",
+    "peer": "story-architecture-and-longform-planning",
+    "refs": [
+     "SKILL.md:25",
+     "SKILL.md:66",
+     "story-architecture-and-longform-planning/SKILL.md:31",
+     "story-architecture-and-longform-planning/SKILL.md:64"
+    ],
+    "note": "双向实测闭合：本包 :25 转出全书层；对侧 :31「某一题材的写法…→ genre-fiction-craft」转回行与 :64 题材契约 Owner 归属声明（genre 负责推理公平、言情/恐怖题材承诺及专门机制）均在位，与 SKILL.md:66 的 MY 区间入口互指",
+    "record_ref": "brief.json#/interfaces/0（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+    "peer_tree_files": 21,
+    "peer_tree_bytes": 283891,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800"
+   },
+   {
+    "id": "GE-IF-02",
+    "status": "pass",
+    "peer": "scene-conflict-and-rhythm",
+    "refs": [
+     "SKILL.md:26",
+     "SKILL.md:69",
+     "scene-conflict-and-rhythm/SKILL.md:3",
+     "scene-conflict-and-rhythm/SKILL.md:42",
+     "scene-conflict-and-rhythm/SKILL.md:289"
+    ],
+    "note": "双向实测闭合：本包 :26 转出、:69 为 04 目录入口行；对侧 :3 description、:42 题材契约行、:289「武侠打斗写不好」分工判据均在位。本包无一行复述该分工判据（brief 已记），属信息冗余度问题、不判接口缺失",
+    "record_ref": "brief.json#/interfaces/1（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+    "peer_tree_files": 17,
+    "peer_tree_bytes": 168166,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800"
+   },
+   {
+    "id": "GE-IF-03",
+    "status": "fail",
+    "peer": "character-and-narrative-control",
+    "refs": [
+     "SKILL.md:27",
+     "character-and-narrative-control/SKILL.md:3",
+     "character-and-narrative-control/SKILL.md:31",
+     "character-and-narrative-control/SKILL.md:47",
+     "character-and-narrative-control/SKILL.md:307",
+     "references/03-horror/testimony-and-information.md:130"
+    ],
+    "note": "路由面双向闭合（本包 :27；对侧 :3/:31/:47/:307 全在位）。判 fail 为 Owner 面：公平解谜承诺／可靠性契约这一共享语义由对侧当判据用（对侧 SKILL.md:153「要与作品的公平和可靠性契约一致」、:229 出口行）而登记只存在于本包题材内文件（03-horror/testimony-and-information.md:130「公平解谜的伏笔责任来自所选合同」），两侧无唯一登记 Owner 与互引——与对端席 CQ-IF-05 的 fail 同一事实（对端席实测时本包树为 07d638e5，相关行文字未变）。归属裁决待决定件 #10（W4-128），本席不修",
+    "record_ref": "brief.json#/interfaces/2（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+    "peer_tree_files": 17,
+    "peer_tree_bytes": 193531,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800"
+   },
+   {
+    "id": "GE-IF-04",
+    "status": "fail",
+    "peer": "fiction-planning-and-diagnosis",
+    "refs": [
+     "SKILL.md:24",
+     "SKILL.md:17",
+     "fiction-planning-and-diagnosis/SKILL.md:3",
+     "fiction-planning-and-diagnosis/SKILL.md:32",
+     "fiction-planning-and-diagnosis/SKILL.md:147",
+     "fiction-planning-and-diagnosis/SKILL.md:83",
+     "fiction-planning-and-diagnosis/SKILL.md:213"
+    ],
+    "note": "路由面双向闭合（本包 :24 转出选题／核验／反馈；对侧 :3/:32/:147 转回，:147 为「不像这个类型…FC-20→genre」行）。判 fail 为 Owner 面：类型契约承诺-验收语义双承载——对侧自有 FC-20 规则（:83/:213，正文在对侧 references/rules-revision-and-method.md，含「写之前列三到五个必要的特征和承诺，写完逐条验收」），本包 §1:17 同持「判断题材承诺有没有兑现」并按 §7:108 把「对读者的题材承诺」排在第二取舍位，两处互不引用、无仲裁行；对侧 :147 路由行把该问题的出口指向本包而 FC-20 留守对侧。题材契约 Owner 三方并存问题（fp/genre/character）待决定件 #10（W4-128）",
+    "record_ref": "brief.json#/interfaces/3（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+    "peer_tree_files": 27,
+    "peer_tree_bytes": 348056,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800"
+   },
+   {
+    "id": "GE-IF-05",
+    "status": "pass",
+    "peer": "cross-media-drama-adaptation",
+    "refs": [
+     "SKILL.md:29",
+     "SKILL.md:3",
+     "cross-media-drama-adaptation/SKILL.md:238",
+     "cross-media-drama-adaptation/SKILL.md:240",
+     "cross-media-drama-adaptation/SKILL.md:241"
+    ],
+    "note": "本席按当前树改判（brief 记 one-way 已陈旧，见 F-01）：对侧 §12.4「与 genre-fiction-craft 的双向转介」（:238-241）实测在位，含接本包转出的收行（:241）与本包→对侧的让出行（:240），与本包 :29 转出行构成双向闭合；对端席 F-11 已记该边为「实体侧双向成立、brief 清单未收录」。残余差：对侧 description（:3）与 §1 转介表仍无 genre 行（对端席职权，不在本席改判范围）",
+    "record_ref": "brief.json#/interfaces/4（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+    "peer_tree_files": 13,
+    "peer_tree_bytes": 76222,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800",
+    "brief_staleness": "brief GE-IF-05／GE-G06 的「对侧 0 回执」结论对 19:3x 补丁前旧树成立，对当前树（77269b54…，13 件）不成立"
+   },
+   {
+    "id": "GE-IF-06",
+    "status": "pass",
+    "peer": "line-editing-and-proofreading",
+    "refs": [
+     "SKILL.md:28",
+     "SKILL.md:55",
+     "line-editing-and-proofreading/SKILL.md:3",
+     "line-editing-and-proofreading/SKILL.md:41",
+     "line-editing-and-proofreading/SKILL.md:188"
+    ],
+    "note": "双向实测闭合：本包 :28 转出、:55 反向出口（只措辞润色不填整套题材表，未点名对方）；对侧 :3 description、:41「某一题材的写法 → genre-fiction-craft」、:188 武侠打斗判据均在位",
+    "record_ref": "brief.json#/interfaces/5（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+    "peer_tree_files": 10,
+    "peer_tree_bytes": 114211,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800"
+   },
+   {
+    "id": "GE-IF-07",
+    "status": "pass",
+    "peer": "preset-card-generation",
+    "refs": [
+     "SKILL.md:30",
+     "SKILL.md:32",
+     "preset-card-generation/SKILL.md:3",
+     "preset-card-generation/SKILL.md:40"
+    ],
+    "note": "本席按当前树改判（brief 记 one-way 已陈旧，见 F-01）：本包 :30 转出行＋:32 不接声明在盘（终批补丁新增），对侧 :3 description「题材规则转genre-fiction-craft」与 :40 路由行转回在位——双向闭合。brief GE-G05 的四条 -Fx 零命中断言对旧 SKILL.md（113 行）成立、对当前 117 行不成立",
+    "record_ref": "brief.json#/interfaces/6（brief 原始记录；本席对两侧行号逐行复测并整树复测对端）",
+    "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+    "peer_tree_files": 11,
+    "peer_tree_bytes": 113900,
+    "peer_tree_measured_at": "2026-11-06T00:40:49+0800",
+    "brief_staleness": "brief GE-G05／GE-IF-07 结论对终批补丁前旧树成立，对当前树不成立"
+   }
+  ],
+  "applicability": [
+   {
+    "id": "GE-AP-01",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/0（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-02",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/1（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-03",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/2（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-04",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/3（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-05",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/4（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-06",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/5（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-07",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/6（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-08",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/7（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-09",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/8（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-10",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/9（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）"
+   },
+   {
+    "id": "GE-AP-11",
+    "status": "pass",
+    "record_ref": "brief.json#/applicability/10（brief 原始记录；本席核其 anchors 全部解址并逐条读承载行）",
+    "note": "条件（SKILL.md:116 当前树当前版本、:102 模板未知处置）与限制（本包对作者只用四词口径）实测在位；该条自带的 GE-G04 披露（SKILL.md 无四词集中定义处，grep 已完成/未能核实/待作者决定 均 0 命中）复测成立，归 SEM-4"
+   }
+  ],
+  "cases": [
+   {
+    "id": "GE-T1",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/0（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）",
+    "note": "T1 推演成立：停点（作者未定的代价换算比）由 GE-R05（:41 只在假设彻底改变方案时停）与 WX 族 limit 共同支撑；04-wuxia/power-and-limits.md:5（WX-01 能力来源/限制/代价/承认）与 guide:20 快速路由实测在位"
+   },
+   {
+    "id": "GE-T2",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/1（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）",
+    "note": "T2 推演成立：mechanism-and-causality.md:36「宣告、激活、违约、惩罚须分开…减杀与退出要单独填一格：有没有赦免」与停点（赦免由谁判定）逐句对应"
+   },
+   {
+    "id": "GE-T3",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/2（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T4",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/3（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T5",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/4（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T6",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/5（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）",
+    "note": "T6 推演成立；expected 末句括注「（本包目前无该行，见 GE-G05）」已陈旧——SKILL.md:30 转出行现已在盘（F-01），推演本身不受影响（转出行为与 :30 一致）"
+   },
+   {
+    "id": "GE-T7",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/6（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）",
+    "note": "T7 推演成立：停点依据（题材承诺高于主题材规则）与 SKILL.md:108 取舍顺序第二、四位逐字对应；三选一分支与 01-mystery contract-and-disclosure（MY-01）承载一致"
+   },
+   {
+    "id": "GE-T8",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/7（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T9",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/8（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T10",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/9（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T11",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/10（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   },
+   {
+    "id": "GE-T12",
+    "status": "pass",
+    "record_ref": "brief.json#/cases/11（brief 原始记录；本席按 synthetic 静态推演复判，锚行逐条读取）"
+   }
+  ]
+ },
+ "sections_counts": {
+  "requirements": 19,
+  "capabilities": 16,
+  "interfaces": 7,
+  "applicability": 11,
+  "cases": 12,
+  "equal_to_brief": true,
+  "id_sequences_equal": true
+ },
+ "semantics": [
+  {
+   "id": "SEM-1",
+   "subject": "genre Q6-a：SKILL.md §6 承诺每题材 guide 有「读哪个文件」分流表",
+   "a": "SKILL.md:101「该题材的入口：先读的几句、读哪个文件、任务顺序、交付与做不下去时｜需要时补读：…『读哪个文件』那张分流表」",
+   "b": "14 个 guide.md 实测：^## 读哪个文件 命中 10/14（01/02/05/07/08/09/10/11/12/14）；03/04/06/13 四目录以「任务入口／快速路由／从任务进入／导航」等其他标题承载同类内容（如 04-wuxia/guide.md:20「## 快速路由」）",
+   "finding": "承诺字面与实况 10/14；内容大体有承载、标题不对表。属公开契约缺口（在册 genre Q6／brief GE-G08），修法待作者决定件 #11（W4-126）",
+   "record_ref": "brief.json#/gaps/7（GE-G08）"
+  },
+  {
+   "id": "SEM-2",
+   "subject": "genre Q6-b：SKILL.md §6 承诺补读「该题材的触发与负触发」",
+   "a": "SKILL.md:101 需要时补读列「该题材的触发与负触发、任务顺序表、「读哪个文件」那张分流表」",
+   "b": "全 14 个 guide.md grep「触发与负触发｜负触发」0 命中；「触发」一词仅以题材内机制语义出现（如 03-horror 禁令触发、04-wuxia 能力触发），无任何目录设该补读栏目",
+   "finding": "0/14，承诺完全落空且包内无消歧条——读者按 §6 指针补读必空手。与 SEM-1 同根（在册 Q6，W4-126 待裁）",
+   "record_ref": "brief.json#/gaps/7（GE-G08）；K4-r2 无涉，W4-126 在册"
+  },
+  {
+   "id": "SEM-3",
+   "subject": "SKILL.md §6 出口列承诺「按 guide 的『做不下去时』一栏停下或改做设计」",
+   "a": "SKILL.md:101 出口列「缺该题材样本、只有梗概时按 guide 的『做不下去时』一栏停下或改做设计，不套别的题材的规则」",
+   "b": "独立「做不下去时／停止与继续」H2 仅 03/04/06/13（13-isekai/guide.md:114「## 9. 最少要交什么，做不下去时」）；01-mystery 于交付内文承载部分语义（guide.md:34「无法判断的部分单独列出」）、05-science-fiction 经分流行承载（guide.md:19→SF-28）；02-romance/guide.md 全 26 行通读无停下或改做设计语义（仅 :24「证据不足的部分单独列出」）",
+   "finding": "全称承诺对 02/07/08/09/10/11/12/14 八目录落空——GE-R16 判 fail 的直接依据；与 SEM-1/2 同属 §6 承诺面（W4-126）",
+   "record_ref": "brief.json#/requirements/15（GE-R16）、#/gaps/7（GE-G08）"
+  },
+  {
+   "id": "SEM-4",
+   "subject": "交付状态四词无集中定义处",
+   "a": "SKILL.md:58-60 交付清单第 5、6 项「没证实的部分；要作者决定的事」（未绑定任何状态词表）",
+   "b": "SKILL.md 全文「已完成／未能核实／待作者决定」各 0 命中、「依据」1 处且非状态词语义（:59）；references 层四词分散使用（已完成 8 文件、未能核实 4 文件、待作者决定 3 文件），各文件自解释",
+   "finding": "第 5、6 项与四词的对应关系靠推断；与 story 席 SEM-1 同族现象（该席判 GQ2 FAIL 的依据之一）。在册 GE-G04 复测成立",
+   "record_ref": "brief.json#/gaps/3（GE-G04）"
+  },
+  {
+   "id": "SEM-5",
+   "subject": "反向验证：取舍顺序与题材内公平条款方向一致（判一致项）",
+   "a": "SKILL.md:108「作者已定的事实和授权 → 对读者的题材承诺 → 因果、知情和资源的连续 → 主题材的规则 → 辅助题材的规则 → 个案里的数字和偏好」",
+   "b": "01-mystery/contract-and-disclosure.md:1/:5（MY-01 解谜契约与信息披露／先界定可解范围）与 03-horror/testimony-and-information.md:130（公平解谜的伏笔责任来自所选合同）均把题材承诺置于机制规则之前；GE-T7 的停点推演（承诺归属由作者定）与两处一致",
+   "finding": "未发现互斥；本条为 GQ2 的对立假设检验（寻找两处真实文本互斥而不得的对照组）",
+   "record_ref": "brief.json#/cases/6（GE-T7）"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F-01",
+   "title": "brief 六处结论被 19:3x/终批补丁超越（记录面漂移，非成品缺陷）",
+   "severity": "记录面（brief 侧）",
+   "detail": "当前树实测：①SKILL.md:30 已有 preset-card 转出行、:32 有不接声明——GE-G05／GE-IF-07「全包 0 提及」与 GE-R18「missing」对旧树（113 行）成立、对当前树（117 行）不成立；②cross-media §12.4 双向转介（:238-241）在盘——GE-G06／GE-IF-05「对侧 0 回执」同前；③GE-CAP-15 limit 末句「preset-card 一类未写（GE-G05）」、GE-T6 expected 括注「（本包目前无该行，见 GE-G05）」随之陈旧。brief.json mtime 2026-11-05 19:33:17，早于两批补丁",
+   "impact": "按冻结 brief 逐条验收会对两条已闭合的接口缺口继续记 fail、对 GE-R18 继续记 missing，GQ3 状态被反向污染（本件已按当前树改判，不受污染）",
+   "repro": {
+    "command": "cd output/genre-fiction-craft；grep -n 'preset-card-generation' SKILL.md；grep -n 'genre-fiction-craft' ../cross-media-drama-adaptation/SKILL.md",
+    "output_summary": ":30 命中转出行；对侧 :238/:240/:241 三行命中（§12.4）"
+   },
+   "recommend": "brief 归属方（主代理/K5）按 R09 §6.1 第 3 条裁决：更正 GE-G05/G06、GE-IF-05/IF-07、GE-R18、GE-T6 六处口径并重冻结（与 cross-media 席 F-11 的 brief 覆盖缺口同族同批）；本席不改 brief"
+  },
+  {
+   "id": "F-02",
+   "title": "genre Q6 公开契约缺口（在册复测同值）：§6 对 14 guide 的承诺 10/14、0/14、4/14",
+   "severity": "公开契约缺口",
+   "detail": "本席独立复测与 W4-126 登记完全同值：「读哪个文件」H2 10/14；「触发与负触发」0/14（grep 0 命中）；「交付」H2 9/14；「做不下去时」独立 H2 4/14 且八目录 guide.md 无承载语义。SEM-1/2/3 全组证据",
+   "impact": "§6 是 SKILL.md 公开路由契约；读者按承诺补读落空（触发与负触发）或找不到承诺栏目（八目录出口）",
+   "repro": {
+    "command": "for d in references/*/; do grep -c '^## 读哪个文件' $d/guide.md; done；grep -rn '负触发' references/*/guide.md",
+    "output_summary": "10 个 1、4 个 0；负触发 0 命中"
+   },
+   "recommend": "在册待决定件 #11（W4-126）：改 §6 承诺措辞（行内型、不动锚）vs 给 10 篇 guide 补栏目（增行、位移锚）。本席不修"
+  },
+  {
+   "id": "F-03",
+   "title": "题材契约 Owner 三方并存（在册 #10）：fp FC-20／genre 承诺判断／character 用而不登记",
+   "severity": "接口 Owner 缺登记",
+   "detail": "三方现状文本：fp SKILL.md:83/:213（FC-20 类型契约自有规则，正文在 fp references/rules-revision-and-method.md）＋:147 路由行把「不像这个类型」指向本包；本包 SKILL.md:17（判断题材承诺有没有兑现）＋:108（取舍顺序把「对读者的题材承诺」列第二位）；character SKILL.md:153/:229 把「公平和可靠性契约」当判据用而登记只在本包 03-horror/testimony-and-information.md:130。三方互不引用、无唯一登记 Owner",
+   "impact": "同一业务语义（类型/题材承诺的登记与验收）三处承载，冲突时无仲裁依据；GE-IF-03/GE-IF-04 判 fail 的直接依据",
+   "repro": {
+    "command": "grep -n '题材契约\\|FC-20' fiction-planning-and-diagnosis/SKILL.md；grep -n '题材承诺' genre-fiction-craft/SKILL.md；grep -n '公平和可靠性契约' character-and-narrative-control/SKILL.md",
+    "output_summary": "fp :83/:213/:269/:306 命中 FC-20；genre :17/:95/:108 命中；character :153/:229 命中（对端席 CQ-IF-05 已就同一事实判其 genre 边 fail）"
+   },
+   "recommend": "在册待决定件 #10（W4-128）裁决唯一 Owner 与登记位置；本席不修"
+  },
+  {
+   "id": "F-04",
+   "title": "PR-07 无编号卡体（在册 GE-G02 复测证实，全包唯一寻址孔）",
+   "severity": "寻址孔（单槽）",
+   "detail": "本席两档取词复测：442 个声明父号槽位（§4 表 14 区间合计）全部被文中提及（mention-form 442=442）；标题∪表行卡体 439-441（按取词宽严两档），唯一两档全缺的是 PR-07——仅 3 处提及（case-notes.md:1 H1 括注「职业竞争机制与边界（PR-07）」、guide.md:3 区间声明、guide.md:24 分流行），无 ^# PR-07 卡头、无 | PR-07 表行、无字母子卡族；实际承载为 case-notes.md 内无编号 3 列机制表。同形态的 MY-07/CO-07/IR-07 均有字母子卡族兜底（CO-07A…、IR-07A–G），PR-07 没有",
+   "impact": "按 §4「PR-01 至 PR-07」的编号口径，PR-07 不可按号寻址；GE-R17「可寻址」承诺 441/442",
+   "repro": {
+    "command": "grep -rn 'PR-07' output/genre-fiction-craft/；两档取词脚本（标题式 ^#{1,4} FAM-NN／表行式 ^\\| *FAM-NN）",
+    "output_summary": "3 处提及、0 卡体；declare 442＝mention 442＞union 439（差集含取词宽严差，唯一实质孔＝PR-07）"
+   },
+   "recommend": "随下次触达给 case-notes.md 的机制表补编号卡体或在 §4 把 PR 区间改为 PR-01 至 PR-06＋机制表行——属行内/增行型修改，归修复批；本席不修"
+  },
+  {
+   "id": "F-05",
+   "title": "brief 寻址缺陷复测定位（W4-116/117 在册 16 处的现位与定性）",
+   "severity": "记录面（brief 侧）",
+   "detail": "登记口径「19:3x 位移修复实移 175 处后仍余 16 处」复核成立：①W4-116 的 4 处裸对端 SKILL.md 行号仍在 brief interfaces 行文内——IF-02.handoff_condition「SKILL.md:290」、IF-03「SKILL.md:308」、IF-04「SKILL.md:148」、IF-06「SKILL.md:189」；按条目上下文归属应为 scene:289／character:307／fp:147／line:188（与各自结构化 peer_side_anchors 一致），行文数字一律 +1 且指向空行。②W4-117 形态现存：gaps.1（GE-G02）行文 3 处裸同目录文件名（case-notes.md:1／guide.md:3／guide.md:24，上下文限定 10-profession-competition）、gaps.7（GE-G08）1 处「01-mystery/guide.md:34」缺 references/ 前缀、另有约 10 处 notes/ 元数据自引（brief 本身在 notes/ 层，此类为合法自引非缺陷）。登记数 12 与现位数之差属登记时口径并计（notes/ 自引是否计缺陷）——本席定性：notes/ 自引合法，真缺陷＝4＋4＝8 处",
+   "impact": "全部为 brief 行文层寻址缺陷；结构化锚不受影响——228 唯一锚（453 处出现）对当前树 100% 解址（0 失败、0 越界、0 空行），GR-fix 16 处行内替换零位移断言与本席复测互证",
+   "repro": {
+    "command": "对 brief.json 全量字符串跑 ^(SKILL\\.md|agents/openai\\.yaml|references/…)：\\d+$ 结构化锚解址测试；再对 4 个裸行号逐一对四对端取行",
+    "output_summary": "228/228 解址 PASS；scene:290/character:308/fp:148/line:189 均为空行，:289/:307/:147/:188 为实文"
+   },
+   "recommend": "主代理按本席归属补前缀＋行号（8 处行内改）；notes/ 自引不改。brief 层动作，本席不代改"
+  },
+  {
+   "id": "F-06",
+   "title": "genre description 未列 preset-card-generation（转引面残余差）",
+   "severity": "观察（转引面）",
+   "detail": "SKILL.md:3 description 列六家兄弟包（fiction-planning/story/scene/character/line/cross-media）而未列 preset-card-generation；路由表 :30 已列。suite-contract §7.2 要求 description 写全会转去的兄弟 skill 名；七个兄弟包的 description 均已列 preset-card（cross-media 席 F-11 亦记其 §1/description 无 genre 行的对偶缺口）",
+   "impact": "仅 description 触发面窄一层；路由表与 :32 不接声明已承载完整契约",
+   "repro": {
+    "command": "grep -c 'preset' genre-fiction-craft/SKILL.md 前置行 :3 范围读",
+    "output_summary": ":3 无 preset 字样，:30/:32 有"
+   },
+   "recommend": "随下次 SKILL.md 触达在 description 末尾补「生成或修订预设卡转 preset-card-generation」一句（行内型）；归修复批，本席不修"
+  }
+ ],
+ "addressing_defects": {
+  "registered": "W4-116（brief 内 4 个裸 SKILL.md:NNN 现指 :148/:189/:290/:308，超出本包 SKILL.md 行数，应为他包 SKILL.md 丢前缀）＋W4-117（12 处解址失败：缺 references/ 前缀的 guide 引用与 case-notes.md／notes/ 元数据引用）；两批合计 16 处，19:3x 位移修复（实移 175 处）后余量",
+  "retest": {
+   "structured_anchors_unique": 228,
+   "structured_anchor_occurrences": 453,
+   "resolution_failures": 0,
+   "out_of_range": 0,
+   "empty_line_anchors": 0,
+   "self_unique_anchors": 210,
+   "peer_unique_anchors": 18,
+   "prose_embedded_bare_peer_line_refs": 4,
+   "prose_bare_same_directory_file_refs": 4,
+   "notes_metadata_selfrefs": "约 10 处（合法自引，不计缺陷）",
+   "retest_time": "2026-11-06T00:40:49+0800"
+  },
+  "qualification": "全部 16 处登记形态定性为 brief 层记录缺陷（寻址/清单面），不折算成品 fail；其中 8 处为真缺陷（4 裸对端行号＋4 裸同目录文件名，现位与归属见 F-05），其余为合法 notes 自引的口径并计。结构化锚 228/228 对当前树全解址，成品侧无锚缺陷",
+  "owner_action": "brief 归属方（主代理）按 F-05 recommend 补前缀与行号；与 F-01 的六处陈旧口径同批重冻结"
+ },
+ "anchor_census": {
+  "rule": "本席对 brief.json 全文可解析字符串跑 path:lineno 全量提取，两档计数（结构化字段 vs 行文内嵌），逐锚测试文件存在、行号在范围内、行非空；对端锚对 7 棵对端树同法测试",
+  "unique_anchors": 228,
+  "total_occurrences": 453,
+  "self_unique": 210,
+  "peer_unique": 18,
+  "resolution": "228/228 PASS（0 失败／0 越界／0 空行）；对端 18/18 PASS",
+  "note": "与 K4-r2 §8 所记「brief.json 228 锚」同值；453＞449 的 4 处为 interfaces 行文内嵌的裸对端行号（F-05①）"
+ },
+ "tree_inventory": {
+  "files": 101,
+  "total_bytes": 1058213,
+  "total_lines": 8074,
+  "composition": "SKILL.md（117 行）＋agents/openai.yaml（8 行）＋references/ 14 题材目录 99 件",
+  "per_directory_files": {
+   "01-mystery": 9,
+   "02-romance": 8,
+   "03-horror": 6,
+   "04-wuxia-xianxia-fantasy": 7,
+   "05-science-fiction": 9,
+   "06-historical-alternate": 10,
+   "07-survival-disaster": 6,
+   "08-adventure-treasure": 6,
+   "09-comedy": 8,
+   "10-profession-competition": 8,
+   "11-identity-revenge-intrigue": 8,
+   "12-children-youth": 7,
+   "13-isekai-time-travel": 3,
+   "14-period-realism": 4
+  },
+  "automation_artifacts": "0（find 全包仅 .md 与 agents/openai.yaml，无 py/sh/json/scripts/schemas）",
+  "id_census_independent": {
+   "declared_parent_slots": 442,
+   "mention_form_unique": 442,
+   "head_row_union_unique": "439-441（两档宽严）",
+   "hole": [
+    "PR-07"
+   ]
+  }
+ },
+ "unproven": [
+  {
+   "id": "U-01",
+   "title": "规则与模板的真实写作效果",
+   "status": "not_proven",
+   "why": "包内自述静态交付（SKILL.md:116 当前树当前版本）；GQ5 未授权（D3=C）；本席权限 static",
+   "missing": "真实任务的输入／交付／效果对照记录与读者数据口径"
+  },
+  {
+   "id": "U-02",
+   "title": "宿主是否加载 openai.yaml 的哪些字段",
+   "status": "not_proven",
+   "why": "yaml:1 自陈以实际宿主为准；本席未启动宿主（brief GE-G12-3 同项）",
+   "missing": "宿主运行回执"
+  },
+  {
+   "id": "U-03",
+   "title": "§4 声明区间与卡体的逐条语义对齐",
+   "status": "not_proven",
+   "why": "本席做到 442:442:439-441 三档总量与唯一孔定位（PR-07），未做 442×616 逐条语义核对；包内无 delivery-preflight spec 对照表（brief GE-G12-1/2 同项）",
+   "missing": "编号全集对照表或逐条配对读"
+  },
+  {
+   "id": "U-04",
+   "title": "14 目录规则内容层的跨目录实质矛盾",
+   "status": "not_proven",
+   "why": "本席核到编号形态、guide 结构、免责措辞与 5 组语义抽验；规则内容层逐条配对读未做（brief GE-G12-2 同项，属未覆盖而非无矛盾）",
+   "missing": "逐对目录的内容层比对"
+  },
+  {
+   "id": "U-05",
+   "title": "补丁句与 v0 语料案例的骨架距离",
+   "status": "not_proven",
+   "why": "v0 语料面本席不可读；以注册骨架词全零（B 类复扫）＋GR-fix/K4-r2 两席独立判定间接覆盖（K4-r2 §8 同项）",
+   "missing": "v0 语料只读面或骨架比对台账"
+  }
+ ],
+ "round_complete": {
+  "seal": "RV-genre review-independent-r1 complete（genre-fiction-craft，套件第 8／8 份正式 review）",
+  "time": "2026-11-06T00:40:49+0800",
+  "spot_checks": 39,
+  "spot_check_detail": "32 行语义抽验（19 requirements 全部锚行＋capabilities 4 行＋applicability 12 行＋cases 8 行，含改判行 R16/R18、fail 行 IF-03/IF-04 两侧）＋7 接口双向测试（每边 2-5 行逐行读，对端树整树摘要复测）",
+  "mechanical_layers": "brief 228 唯一锚（453 处）全量解址测试；§4 两档取词普查（442/442/439-441）；Q6 三项计数（10/14、0/14、4/14）；附录 B 11 类约 25 式全包扫描（LC_ALL=en_US.UTF-8，/usr/bin/grep -rnE，逐词分跑）；10b/10c token 分布核验（32/108 处全为完整词尾）",
+  "binding_recheck": {
+   "self_tree_sha256": "ef3668e4ca8c1934d1df98feb828580e3fe7ae53f2127797c95a7595cc38dabc",
+   "brief_sha256": "7872b7917168b836232bab98b9f6c7dda85a7b3450c3697217c1ad4c99731053",
+   "three_way": "一致（实测＝tsv；genre 无 review-draft，brief_sha 与 tsv 同值）",
+   "measured_at": "2026-11-06T00:40:49+0800"
+  },
+  "partial_rerejudged": {
+   "GE-R16": "fail（brief partial→fail：八目录无出口承载）",
+   "GE-R18": "pass（brief missing→pass：SKILL.md:30 终批补丁后在盘）"
+  },
+  "desourcing_rescan": "附录 B 11 类独立复扫：9 类 0 命中；3d 3 处、4a 7 处、5a 1 处、8a 7 处、10b/10c 32/108 处、10d 3 处——逐条比照 K4-r2 §2 与 grfix §3 的 B.2 例外档定性，全部为域内语义或子串误报，0 新违规；四个必零词（硬规则／用户明确要求／小说家／裸 PG）实测全 0，与 grfix 改后宣称一致，非零即新发现的条件未触发",
+  "k4r2_rework_set_followup": "最小返工集 4 项中 1、2 已由 GR-fix 16 处补丁落笔（本席复扫证实旧串全 0）；3、4（W4-125 更正注、W4-123 补记）系台账动作，GR-fix 自检 §1/§5 记已完成，台账本身不在本席复核范围"
+ },
+ "method": {
+  "verification_authority": "static：只读、检索、文本比较、逐行取行、哈希与整树指纹；未跑测试／lint／构建／宿主加载，未执行任何成品脚本，未做 git 写操作；落盘改动仅限本文件（唯一可写件）",
+  "scope": "全量独立复核（非采纳重验）：绑定三方比对→五组条数与 ID 集比对→brief 228 锚全量机械解址→五组 65 条逐条回原文（19+16+7+11+12）→语义抽验 32 行→7 接口两侧逐行＋7 棵对端树复测→§4 取词普查与 PR-07 定位→Q6 三项计数→附录 B 11 类独立复扫→GQ2 互斥探针→gaps GE-G01…G12 现状态逐条复核→K4-r2/grfix 台账对账",
+  "independent_rescan_note": "附录 B 复扫为本席独立执行（非引用他席扫描结果）；命中定性允许引用在册逐条结论（K4-r2 §2/§3、grfix §3 的 B.2 例外档），引用处已注明",
+  "not_done": "未整读 7 个对端包全文（各只读被引行及上下文 2-5 行；对端树整树摘要为本席实测）；未复核 desourcing-ledger/w4-review-queue 台账本身的登记质量；GQ5 未授权"
+ },
+ "limits": [
+  "修复归属：GQ2（FAIL）之 Q6 族与 GQ3（FAIL）之 Owner 两边的修复归主代理修复批，且需作者决定件先行——#11（W4-126：Q6 两种修法二选一）与 #10（W4-128：题材契约 Owner 唯一化）；本席不修复、不代改任何成品（output/ 与 brief.json 均零触碰）",
+  "brief 层动作（非成品）：F-01 六处陈旧口径更正＋F-05 八处寻址补缀，归 brief 归属方与 R09 §6.1 第 3 条裁决（与 cross-media 席 F-11 同批）；本席不改 brief",
+  "GQ5 保持 NOT_PROVEN：无真实任务授权（用户裁决 D3=C），长期不变；不得写成效果已验证",
+  "验证权限＝static：全部结论来自只读、检索、文本比较与哈希；不证明宿主加载、模型执行或读者效果",
+  "对端读取面：对端包只读被 interfaces 引用的行及上下文（每边 2-5 行），未整读；对端树整树摘要为本席 2026-11-06 实测（全部与 tsv 同值），非对端席位会签；若对端再动，行号与 peer_tree_sha256 需重测重绑",
+  "判档说明：GE-IF-03（fail）与对端席 CQ-IF-05（fail）就同一 Owner 事实双侧同判，修复落地后两行需同批复议；GE-R17（pass）与 F-04（PR-07 孔）并存的口径＝441/442 且已在 brief 与能力 limit 双处披露",
+  "三处相邻观察未入缺陷（供后续席）：03-horror/guide.md:80「样本撑不起普遍效果」（grfix §5.3 在册观察，域内语义）；08-templates:34「书内规则」（W4-39 在册待裁）；10-competition:33「来源是」（W4-43 余项在册）——三处均为 B.2 例外档维持原判"
+ ],
+ "tree_recheck_after_write": {
+  "tree_sha256": "ef3668e4ca8c1934d1df98feb828580e3fe7ae53f2127797c95a7595cc38dabc",
+  "files": 101,
+  "bytes": 1058213,
+  "measured_at": "2026-11-06T00:40:49+0800（写本文件前一刻复测，--expected PASS）",
+  "note": "本文件写入 notes/quality/…，不触及 output/，写后绑定应仍为本值；写后断言（JSON 可解析、五组条数与 ID 集＝brief、gq 三档、树复测）已另行执行"
+ }
+}

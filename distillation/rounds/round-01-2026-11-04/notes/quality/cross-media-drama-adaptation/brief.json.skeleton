@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "cross-media-drama-adaptation",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "CM-T1",
+      "kind": "positive",
+      "scenario": "3 万字中篇改编成 90 分钟舞台剧",
+      "expected": "给改编合同、分场表和信息载体方案"
+    },
+    {
+      "id": "CM-T2",
+      "kind": "missing",
+      "scenario": "只有梗概，没有原作文本",
+      "expected": "只出方案草稿，依赖原文的部分标明「未能核实」"
+    },
+    {
+      "id": "CM-T3",
+      "kind": "conflict",
+      "scenario": "要保留全部内心独白，又不许用旁白",
+      "expected": "列出冲突和替代载体，由作者选"
+    },
+    {
+      "id": "CM-T4",
+      "kind": "boundary",
+      "scenario": "改成多结局的互动音频",
+      "expected": "走互动改编分支，交付分支表"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

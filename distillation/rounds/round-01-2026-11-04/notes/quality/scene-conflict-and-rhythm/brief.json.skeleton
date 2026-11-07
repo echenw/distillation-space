@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "scene-conflict-and-rhythm",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "SC-T1",
+      "kind": "positive",
+      "scenario": "设计一场两人谈判戏",
+      "expected": "写明进场和离场各变了什么、约束从哪来、知情差"
+    },
+    {
+      "id": "SC-T2",
+      "kind": "missing",
+      "scenario": "只说「这一章节奏慢」，不给正文",
+      "expected": "先要正文；先给检查清单，不臆断原因"
+    },
+    {
+      "id": "SC-T3",
+      "kind": "conflict",
+      "scenario": "作者把高潮定在第 10 章，但第 6 章已有更强的对决",
+      "expected": "给「降级前文」和「重定峰值」两条路，由作者裁决"
+    },
+    {
+      "id": "SC-T4",
+      "kind": "boundary",
+      "scenario": "几十人的群战",
+      "expected": "走群战与转述规则，不逐人写打斗"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

@@ -1,0 +1,1321 @@
+{
+  "version": 1,
+  "kind": "frozen-for-review",
+  "skill": "cross-media-drama-adaptation",
+  "status": "adopted-for-review-not-final",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）／五组盘点草案由本轮只读盘点代理补",
+  "assembled_at": "2026-11-04",
+  "drafted_at": "2026-11-05",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "本文件是 R09 §6.1 质量 brief 的草案：把 W3 骨架的五组空数组补成真实产物盘点，只写事实与位置，不给通过结论，不作独立 review。成品包实测 13 文件 897 行（逐件相加见 notes_on_method）。锚点为 /usr/bin/grep -n 实测行号。骨架的 requirements/capabilities/interfaces/applicability 四项在本草案中已由空数组补齐；cases 保留骨架 4 条并扩到 10 条；gaps 与 notes_on_method 为草案新增键。",
+  "artifact_inventory": {
+    "files": 13,
+    "lines_total": 898,
+    "per_file_lines": {
+      "SKILL.md": 242,
+      "references/interactive-adaptation.md": 86,
+      "references/conflicts.md": 74,
+      "references/information-carriers.md": 57,
+      "references/plot-and-ending.md": 44,
+      "references/pictorial-checks.md": 46,
+      "references/stage-realization.md": 55,
+      "references/transferability.md": 60,
+      "references/scenes-and-continuity.md": 39,
+      "agents/openai.yaml": 8,
+      "examples/adaptation-cases.md": 68,
+      "templates/adaptation-workbook.md": 63,
+      "templates/interactive-branch-sheet.md": 56
+    },
+    "rule_family": "AD-01 至 AD-40，全包唯一 40 个，两端无缺号（实测 /usr/bin/grep -o -E 'AD-[0-9]{2}' | sort -u 计数＝40）",
+    "scripts": "全包 0 脚本、0 automation 声明"
+  },
+  "requirements": [
+    {
+      "id": "XQ-R01",
+      "text": "舞台与分场：把既有文本改到舞台，先在改编合同里定本项目的「场」是什么，再切分场并记录时间、地点、人物、行动与切换理由。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:17",
+        "SKILL.md:18",
+        "SKILL.md:113",
+        "references/scenes-and-continuity.md:5",
+        "references/scenes-and-continuity.md:8",
+        "templates/adaptation-workbook.md:23"
+      ]
+    },
+    {
+      "id": "XQ-R02",
+      "text": "舞台落地：文本三类读法（必须执行的机械信息／氛围建议／可供导演选择的解释）、走位理由、群众按舞台条件分组、布景灯光按功能与成本取舍、旁白约定、排练按复杂度。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:136",
+        "SKILL.md:138",
+        "SKILL.md:139",
+        "SKILL.md:140",
+        "SKILL.md:141",
+        "SKILL.md:143",
+        "references/stage-realization.md:5",
+        "references/stage-realization.md:11",
+        "references/stage-realization.md:17",
+        "references/stage-realization.md:23",
+        "references/stage-realization.md:35",
+        "references/stage-realization.md:47"
+      ]
+    },
+    {
+      "id": "XQ-R03",
+      "text": "镜头与调度（画面层）：构图优先级、运动与方向自洽、重复与地点功能、三个视觉风险、氛围先写效果再选写实程度。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:146",
+        "SKILL.md:148",
+        "SKILL.md:149",
+        "SKILL.md:150",
+        "SKILL.md:151",
+        "SKILL.md:152",
+        "references/pictorial-checks.md:5",
+        "references/pictorial-checks.md:11",
+        "references/pictorial-checks.md:17",
+        "references/pictorial-checks.md:23",
+        "references/pictorial-checks.md:32",
+        "references/pictorial-checks.md:38"
+      ]
+    },
+    {
+      "id": "XQ-R04",
+      "text": "音频与有声媒介：改到音频／广播剧时的通道判断与声音载体规则。包内自述音频没有专属规则卡，纯声音设计按待核验假设标注。",
+      "status": "部分成文（包内自述无音频专属规则卡）",
+      "anchors": [
+        "SKILL.md:17",
+        "SKILL.md:126",
+        "references/information-carriers.md:35",
+        "references/transferability.md:46",
+        "references/stage-realization.md:32"
+      ]
+    },
+    {
+      "id": "XQ-R05",
+      "text": "互动分支：目标媒介为互动叙事时走 AD-35 至 AD-40，先固定不变量、分类选择、定义状态、画分支与回收、分两轨知识、核对反馈与路线验证，不得把增加选项当完整改编。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:180",
+        "SKILL.md:182",
+        "SKILL.md:184",
+        "SKILL.md:185",
+        "SKILL.md:186",
+        "SKILL.md:187",
+        "SKILL.md:188",
+        "SKILL.md:189",
+        "references/interactive-adaptation.md:5",
+        "references/interactive-adaptation.md:16",
+        "references/interactive-adaptation.md:28",
+        "references/interactive-adaptation.md:40",
+        "references/interactive-adaptation.md:58",
+        "references/interactive-adaptation.md:67",
+        "templates/interactive-branch-sheet.md:25",
+        "templates/interactive-branch-sheet.md:31",
+        "templates/interactive-branch-sheet.md:37"
+      ]
+    },
+    {
+      "id": "XQ-R06",
+      "text": "媒介转换的不变量：先定必须保留什么（决定性行动、关系、情绪目标、不可随意改写的因果），再判断原媒介表达功能在目标媒介怎么实现；不把文字逐句搬成镜头或舞台动作，不擅改作者锁定的事实、关系和结局。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:11",
+        "SKILL.md:50",
+        "SKILL.md:104",
+        "references/transferability.md:7",
+        "references/interactive-adaptation.md:9",
+        "references/interactive-adaptation.md:12",
+        "references/interactive-adaptation.md:14"
+      ]
+    },
+    {
+      "id": "XQ-R07",
+      "text": "信息载体：字幕与文字插入的功能与可读性、信件消息文件成为行动、声音要有接收者或后果，并按选载体四步比较载体。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:120",
+        "SKILL.md:122",
+        "SKILL.md:123",
+        "SKILL.md:124",
+        "SKILL.md:125",
+        "SKILL.md:126",
+        "references/information-carriers.md:5",
+        "references/information-carriers.md:12",
+        "references/information-carriers.md:23",
+        "references/information-carriers.md:29",
+        "references/information-carriers.md:35",
+        "references/information-carriers.md:41",
+        "references/information-carriers.md:50"
+      ]
+    },
+    {
+      "id": "XQ-R08",
+      "text": "情节与结局：因果三栏映射到场景、先定高潮再排递进、四种结局形态按作品承诺选、悬念与披露顺序分开、兴趣中心与同情可辨。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:128",
+        "SKILL.md:130",
+        "SKILL.md:131",
+        "SKILL.md:132",
+        "SKILL.md:133",
+        "SKILL.md:134",
+        "references/plot-and-ending.md:5",
+        "references/plot-and-ending.md:11",
+        "references/plot-and-ending.md:18",
+        "references/plot-and-ending.md:30",
+        "references/plot-and-ending.md:38",
+        "references/conflicts.md:23"
+      ]
+    },
+    {
+      "id": "XQ-R09",
+      "text": "取舍与裁决：五组分歧各带适用条件、风险与「怎么判」，同级冲突按固定顺序取舍，作者未选时停在默认处理并交裁决备忘。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:170",
+        "SKILL.md:172",
+        "SKILL.md:212",
+        "references/conflicts.md:1",
+        "references/conflicts.md:5",
+        "references/conflicts.md:14",
+        "references/conflicts.md:23",
+        "references/conflicts.md:34",
+        "references/conflicts.md:44",
+        "references/conflicts.md:53",
+        "references/conflicts.md:57",
+        "references/conflicts.md:68"
+      ]
+    },
+    {
+      "id": "XQ-R10",
+      "text": "模板字段：改编工作表七节（合同、功能转换、分场与连续性、问题与修改、分歧裁决、交付收口、逐编号台账）与互动分支表六节（项目边界、玩家与信息位置、选择与状态、状态变量、路线验证、未决项与交接）。",
+      "status": "已成文",
+      "anchors": [
+        "templates/adaptation-workbook.md:5",
+        "templates/adaptation-workbook.md:17",
+        "templates/adaptation-workbook.md:23",
+        "templates/adaptation-workbook.md:31",
+        "templates/adaptation-workbook.md:37",
+        "templates/adaptation-workbook.md:43",
+        "templates/adaptation-workbook.md:51",
+        "templates/interactive-branch-sheet.md:5",
+        "templates/interactive-branch-sheet.md:16",
+        "templates/interactive-branch-sheet.md:25",
+        "templates/interactive-branch-sheet.md:31",
+        "templates/interactive-branch-sheet.md:37",
+        "templates/interactive-branch-sheet.md:50",
+        "SKILL.md:167",
+        "SKILL.md:168"
+      ]
+    },
+    {
+      "id": "XQ-R11",
+      "text": "交付状态词：对作者只用已完成／依据／未能核实／待作者决定四词并逐项给依据，「未知」为台账状态列合法值且不得写成已完成。",
+      "status": "已成文（两处定义口径不一，见 GAP-01；分支表状态列取值集合不一，见 GAP-06）",
+      "anchors": [
+        "SKILL.md:193",
+        "SKILL.md:199",
+        "SKILL.md:200",
+        "SKILL.md:201",
+        "SKILL.md:202",
+        "SKILL.md:204",
+        "references/interactive-adaptation.md:54",
+        "references/interactive-adaptation.md:55",
+        "references/interactive-adaptation.md:56",
+        "references/interactive-adaptation.md:57",
+        "references/interactive-adaptation.md:54",
+        "templates/adaptation-workbook.md:53",
+        "templates/adaptation-workbook.md:57",
+        "templates/interactive-branch-sheet.md:39",
+        "templates/interactive-branch-sheet.md:41"
+      ]
+    },
+    {
+      "id": "XQ-R12",
+      "text": "失败出口：八类情形各有出口（只有梗概、媒介未定、冲突未裁决、缺版本／授权／平台规范、要求照抄、作者不答、问题在别的层、卡片请求），三项全缺时改交问题清单不出成品稿。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:49",
+        "SKILL.md:206",
+        "SKILL.md:210",
+        "SKILL.md:211",
+        "SKILL.md:212",
+        "SKILL.md:213",
+        "SKILL.md:214",
+        "SKILL.md:215",
+        "SKILL.md:216",
+        "SKILL.md:217",
+        "SKILL.md:219"
+      ]
+    },
+    {
+      "id": "XQ-R13",
+      "text": "权利与许可：确认归属、授权范围与合同限制，记录原作／版本／权利人／期限／媒介／地域／署名，不给法律意见，不复制受保护的具体表达。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:27",
+        "SKILL.md:144",
+        "SKILL.md:178",
+        "SKILL.md:214",
+        "references/stage-realization.md:41",
+        "references/stage-realization.md:43",
+        "examples/adaptation-cases.md:40"
+      ]
+    },
+    {
+      "id": "XQ-R14",
+      "text": "适用、负触发与转介：六条负触发、六行转介表、转介是深化路径不是前提、范围外事项标需核验但不停整个任务、与 preset-card 的双向对照。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:3",
+        "SKILL.md:15",
+        "SKILL.md:21",
+        "SKILL.md:23",
+        "SKILL.md:24",
+        "SKILL.md:25",
+        "SKILL.md:26",
+        "SKILL.md:27",
+        "SKILL.md:28",
+        "SKILL.md:32",
+        "SKILL.md:39",
+        "SKILL.md:41",
+        "SKILL.md:43",
+        "SKILL.md:221",
+        "SKILL.md:227",
+        "SKILL.md:229",
+        "SKILL.md:237"
+      ]
+    },
+    {
+      "id": "XQ-R15",
+      "text": "不交付边界：游戏系统、数值平衡、关卡、成长曲线、商业化、引擎、界面规范、可访问性、制作预算列为外部依赖，不用叙事改编结果冒充。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:191",
+        "references/interactive-adaptation.md:80",
+        "references/interactive-adaptation.md:84",
+        "templates/interactive-branch-sheet.md:14"
+      ]
+    },
+    {
+      "id": "XQ-R16",
+      "text": "自创例子与效果口径：例子须标自创、不当作用户原稿或真实制作案例；观众反应判断都是设计假设，没有真实观众测试不宣称效果已验证。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:52",
+        "SKILL.md:53",
+        "SKILL.md:177",
+        "examples/adaptation-cases.md:3",
+        "references/transferability.md:58"
+      ]
+    },
+    {
+      "id": "XQ-R17",
+      "text": "最短路径与交付清单：六步（定材料与授权 → 写改编合同 → 按问题选规则 → 最小转换 → 回看受影响部分 → 交付实际改编）与七项交付清单。",
+      "status": "已成文",
+      "anchors": [
+        "SKILL.md:56",
+        "SKILL.md:58",
+        "SKILL.md:59",
+        "SKILL.md:60",
+        "SKILL.md:61",
+        "SKILL.md:62",
+        "SKILL.md:63",
+        "SKILL.md:65",
+        "SKILL.md:67"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "XQ-C01",
+      "name": "舞台改编：文本到可执行舞台方案",
+      "kind": "workflow",
+      "rule_ids": [
+        "AD-01",
+        "AD-02",
+        "AD-23",
+        "AD-24",
+        "AD-25",
+        "AD-26",
+        "AD-27",
+        "AD-28"
+      ],
+      "anchors": [
+        "SKILL.md:136",
+        "SKILL.md:138",
+        "SKILL.md:139",
+        "SKILL.md:140",
+        "SKILL.md:141",
+        "SKILL.md:142",
+        "SKILL.md:143",
+        "references/stage-realization.md:5",
+        "references/stage-realization.md:8",
+        "references/stage-realization.md:14",
+        "references/stage-realization.md:20",
+        "references/stage-realization.md:26",
+        "references/stage-realization.md:32",
+        "references/stage-realization.md:38",
+        "references/stage-realization.md:47",
+        "templates/adaptation-workbook.md:23"
+      ],
+      "limit": "场地、演员数量、排练时间、成本、安全等制作条件未确认时，只给与文本相关的部分，其余标需核验（SKILL.md:162）；不设固定人数、固定周数与统一换景标准（SKILL.md:140、SKILL.md:143）；布景细节与执导层可决定的执行处理不写满（references/scenes-and-continuity.md:9）。",
+      "counterexample_ref": [
+        "references/stage-realization.md:9",
+        "references/stage-realization.md:21",
+        "references/stage-realization.md:39",
+        "examples/adaptation-cases.md:23"
+      ]
+    },
+    {
+      "id": "XQ-C02",
+      "name": "分场稿与镜头：场定义、连续性与画面检查",
+      "kind": "workflow",
+      "rule_ids": [
+        "AD-07",
+        "AD-08",
+        "AD-09",
+        "AD-10",
+        "AD-11",
+        "AD-12",
+        "AD-30",
+        "AD-31",
+        "AD-32",
+        "AD-33",
+        "AD-34"
+      ],
+      "anchors": [
+        "SKILL.md:111",
+        "SKILL.md:113",
+        "SKILL.md:114",
+        "SKILL.md:115",
+        "SKILL.md:116",
+        "SKILL.md:117",
+        "SKILL.md:118",
+        "SKILL.md:146",
+        "SKILL.md:148",
+        "SKILL.md:149",
+        "SKILL.md:150",
+        "SKILL.md:151",
+        "SKILL.md:152",
+        "references/scenes-and-continuity.md:5",
+        "references/scenes-and-continuity.md:11",
+        "references/scenes-and-continuity.md:17",
+        "references/scenes-and-continuity.md:23",
+        "references/scenes-and-continuity.md:29",
+        "references/scenes-and-continuity.md:35",
+        "references/pictorial-checks.md:5",
+        "references/pictorial-checks.md:11",
+        "references/pictorial-checks.md:17",
+        "references/pictorial-checks.md:23",
+        "references/pictorial-checks.md:32",
+        "templates/adaptation-workbook.md:23",
+        "templates/adaptation-workbook.md:29"
+      ],
+      "limit": "历史制作格式的场定义、编号方式、片长、场数、布景数量和排练安排不自动适用于现代媒介（references/scenes-and-continuity.md:9、references/conflicts.md:72、SKILL.md:176）；现代平台专属格式未确认时标明需要规范、不套历史格式（references/conflicts.md:74）；场类定不下来时列两种定义各自的结果并停待作者决定，缺正文不判连续性错误（SKILL.md:159）；焦段、机型、承重等镜头执行参数属现实制作事实，标需专业核验、不在本包下结论（references/pictorial-checks.md:3、SKILL.md:163）。",
+      "counterexample_ref": [
+        "references/scenes-and-continuity.md:15",
+        "references/scenes-and-continuity.md:39",
+        "references/pictorial-checks.md:9",
+        "references/pictorial-checks.md:21",
+        "examples/adaptation-cases.md:34"
+      ]
+    },
+    {
+      "id": "XQ-C03",
+      "name": "音频与有声媒介改编：通道与声音载体",
+      "kind": "workflow",
+      "rule_ids": [
+        "AD-02",
+        "AD-16",
+        "AD-17",
+        "AD-27"
+      ],
+      "anchors": [
+        "SKILL.md:17",
+        "SKILL.md:126",
+        "SKILL.md:142",
+        "references/information-carriers.md:35",
+        "references/information-carriers.md:41",
+        "references/transferability.md:46",
+        "references/stage-realization.md:32"
+      ],
+      "limit": "包内自述目标媒介是音频或广播剧时没有专属规则卡，只按判断步骤与选载体步骤逐条处理；纯声音的空间、转场和声音视角设计超出已验证范围，按待核验的设计假设标注（references/transferability.md:46）。字幕长度、剪辑与信息顺序须按目标媒介实际测试（references/transferability.md:29）。",
+      "counterexample_ref": [
+        "references/information-carriers.md:39",
+        "references/information-carriers.md:50",
+        "references/information-carriers.md:55"
+      ]
+    },
+    {
+      "id": "XQ-C04",
+      "name": "互动改编与分支：既有文本改到互动叙事的叙事层",
+      "kind": "workflow",
+      "rule_ids": [
+        "AD-35",
+        "AD-36",
+        "AD-37",
+        "AD-38",
+        "AD-39",
+        "AD-40"
+      ],
+      "anchors": [
+        "SKILL.md:180",
+        "SKILL.md:182",
+        "SKILL.md:184",
+        "SKILL.md:185",
+        "SKILL.md:186",
+        "SKILL.md:187",
+        "SKILL.md:188",
+        "SKILL.md:189",
+        "SKILL.md:191",
+        "references/interactive-adaptation.md:5",
+        "references/interactive-adaptation.md:16",
+        "references/interactive-adaptation.md:28",
+        "references/interactive-adaptation.md:40",
+        "references/interactive-adaptation.md:58",
+        "references/interactive-adaptation.md:67",
+        "references/interactive-adaptation.md:73",
+        "references/interactive-adaptation.md:80",
+        "templates/interactive-branch-sheet.md:16",
+        "templates/interactive-branch-sheet.md:25",
+        "templates/interactive-branch-sheet.md:31",
+        "templates/interactive-branch-sheet.md:37"
+      ],
+      "limit": "目标媒介是互动叙事时先整篇读 interactive-adaptation.md 并用分支表记录叙事层分支，不得把增加选项当完整改编（SKILL.md:182）；平台规范或结局未定时被挡住的检查标待作者决定、先补输入（SKILL.md:165）；路线图不代替工程实现图或关卡流程图（references/interactive-adaptation.md:61）；不交付战斗与经济系统、数值平衡、关卡、成长曲线、商业化、引擎、界面交互规范、可访问性与制作预算，只列为外部依赖（references/interactive-adaptation.md:89）。",
+      "counterexample_ref": [
+        "references/interactive-adaptation.md:26",
+        "references/interactive-adaptation.md:38",
+        "references/interactive-adaptation.md:71",
+        "references/interactive-adaptation.md:76"
+      ]
+    },
+    {
+      "id": "XQ-C05",
+      "name": "既有文本转换的验证：回看、逐编号台账与路线验证",
+      "kind": "workflow",
+      "rule_ids": [
+        "AD-01",
+        "AD-08",
+        "AD-09",
+        "AD-10",
+        "AD-11",
+        "AD-21",
+        "AD-38",
+        "AD-39",
+        "AD-40"
+      ],
+      "anchors": [
+        "SKILL.md:62",
+        "SKILL.md:65",
+        "SKILL.md:67",
+        "SKILL.md:193",
+        "SKILL.md:204",
+        "references/conflicts.md:73",
+        "references/interactive-adaptation.md:44",
+        "references/interactive-adaptation.md:52",
+        "references/interactive-adaptation.md:54",
+        "templates/adaptation-workbook.md:43",
+        "templates/adaptation-workbook.md:51",
+        "templates/adaptation-workbook.md:53",
+        "templates/adaptation-workbook.md:57",
+        "templates/interactive-branch-sheet.md:37",
+        "templates/interactive-branch-sheet.md:39",
+        "examples/adaptation-cases.md:59"
+      ],
+      "limit": "改后回读范围限于因果、人物知情、空间位置、时间、资源、关系和观众承诺（SKILL.md:62、references/conflicts.md:73）；稿件证据位置只指向用户当前稿件或已交付样例段落，不指向包外位置（templates/adaptation-workbook.md:61）；「未知」与「未能核实」不得写成已完成（templates/adaptation-workbook.md:60、SKILL.md:204）；没有真实观众测试时不宣称悬念、笑点、恐惧或情绪效果已验证（SKILL.md:53、SKILL.md:177）；只有梗概时不编造场次或镜头问题（SKILL.md:49）。",
+      "counterexample_ref": [
+        "references/interactive-adaptation.md:54",
+        "examples/adaptation-cases.md:57",
+        "examples/adaptation-cases.md:63"
+      ]
+    },
+    {
+      "id": "XQ-C06",
+      "name": "外部依赖与转介：权利、现实核验与兄弟 skill 的分层",
+      "kind": "external",
+      "rule_ids": [
+        "AD-29"
+      ],
+      "anchors": [
+        "SKILL.md:3",
+        "SKILL.md:30",
+        "SKILL.md:34",
+        "SKILL.md:39",
+        "SKILL.md:41",
+        "SKILL.md:43",
+        "SKILL.md:47",
+        "SKILL.md:144",
+        "SKILL.md:178",
+        "SKILL.md:216",
+        "SKILL.md:229",
+        "SKILL.md:237",
+        "references/stage-realization.md:41",
+        "references/stage-realization.md:44",
+        "references/interactive-adaptation.md:86",
+        "examples/adaptation-cases.md:40"
+      ],
+      "limit": "不给现实法律意见、版权许可结论、医学或技术参数认证、市场预测（SKILL.md:43、SKILL.md:178）；标需专业核验时不把整个改编任务停掉（SKILL.md:43）；转介是深化路径不是完成改编任务的前提，本包合同、检查表和规则可独立使用（SKILL.md:41）；宿主规定了输出格式时按宿主格式交付（SKILL.md:47）；权利状态不明时标待核验并交权利人或法律专业人士，本包不作现行侵权判断（references/stage-realization.md:44、references/stage-realization.md:45）。",
+      "counterexample_ref": [
+        "examples/adaptation-cases.md:42",
+        "references/stage-realization.md:45",
+        "SKILL.md:214"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "XQ-I01",
+      "peer": "character-and-narrative-control",
+      "relation": "人物知识、叙述视角与时间连续性的角色层回归",
+      "provider": "character-and-narrative-control（人物知识规则、视角与叙述权限、关系变化与时间连续性判定）",
+      "consumer": "cross-media-drama-adaptation（AD-39 信息与时间回归、互动叙事双轨知识核对、分支表未决项交接）",
+      "fields": [
+        "玩家知识／角色知识两轨（templates/interactive-branch-sheet.md:20 已知信息行、:21 未知信息行）",
+        "节点 ID 与入口条件（templates/interactive-branch-sheet.md:27）",
+        "状态变量的含义、写入事件与读取节点（templates/interactive-branch-sheet.md:33）",
+        "回收点与回收后人物是否仍记得已发生的事（references/interactive-adaptation.md:49）",
+        "需人物／视角／时间线回归的交接项（templates/interactive-branch-sheet.md:53）"
+      ],
+      "anchors": [
+        "SKILL.md:37",
+        "SKILL.md:188",
+        "references/interactive-adaptation.md:62",
+        "references/interactive-adaptation.md:65",
+        "references/interactive-adaptation.md:86",
+        "templates/interactive-branch-sheet.md:53"
+      ],
+      "peer_refs": [
+        "output/character-and-narrative-control/SKILL.md:3",
+        "output/character-and-narrative-control/SKILL.md:32",
+        "output/character-and-narrative-control/SKILL.md:48",
+        "output/character-and-narrative-control/SKILL.md:327",
+        "output/character-and-narrative-control/SKILL.md:330"
+      ],
+      "missing_field_branch": "交接行空缺或对方未回结论时，本包该项检查按 references/interactive-adaptation.md:57 标「待作者决定」并先补输入，按 :59 在分支表「证据或限制」列写明原因与影响；本包不重复定义人物知识规则（references/interactive-adaptation.md:70），对白、选项和反馈不得让人物使用尚未获得的信息（同处）。",
+      "bidirectional": "齐。本包 4 处成文调用（含 AD-39 与互动 §5 的显式调用）；对方 SKILL.md:322 声明本包拥有媒介转换与互动分支结构、:325 划定互动中双方分工。注意本包 §1 转介表行（SKILL.md:37）只写「人物动机、叙述视角、信息控制和时间模型」，未提互动分支场景，互动侧调用只存在于 §9 与 interactive-adaptation.md。"
+    },
+    {
+      "id": "XQ-I02",
+      "peer": "scene-conflict-and-rhythm",
+      "relation": "场与章的写法归属 vs 分场与镜头编号归属",
+      "provider": "scene-conflict-and-rhythm（单场冲突、悬念、节奏与章末的写法判定）",
+      "consumer": "cross-media-drama-adaptation（本项目的「场」定义、分场表、跨场转场与镜头/场次编号规则）",
+      "fields": [
+        "场类定义（戏剧场景／舞台场面／镜头拍摄单位／剪辑段，references/scenes-and-continuity.md:7）",
+        "场景表列：时间、地点、人物、行动、切换理由（references/scenes-and-continuity.md:8）",
+        "分场表八列（templates/adaptation-workbook.md:25）",
+        "编号规则与跨场／跨幕／跨集是否重新编号（references/scenes-and-continuity.md:8）"
+      ],
+      "anchors": [
+        "SKILL.md:36",
+        "SKILL.md:113",
+        "SKILL.md:159",
+        "references/scenes-and-continuity.md:7",
+        "references/scenes-and-continuity.md:8",
+        "templates/adaptation-workbook.md:23"
+      ],
+      "peer_refs": [
+        "output/scene-conflict-and-rhythm/SKILL.md:3",
+        "output/scene-conflict-and-rhythm/SKILL.md:32",
+        "output/scene-conflict-and-rhythm/SKILL.md:43"
+      ],
+      "missing_field_branch": "场类定不下来时本包列两种定义各自的结果并停在待作者决定，缺正文不判连续性错误（SKILL.md:159）；请求落在单场写法而非媒介转换时留在对方（对方 SKILL.md:43 把「改成舞台方案、分场稿、镜头」路由回本包）；对方 SKILL.md:32 把游戏关卡与战斗数值之外的互动改编归本包。",
+      "bidirectional": "两侧各有成文路由行，形式上齐；实测本包全包对 scene-conflict-and-rhythm 的命中只有 SKILL.md:3（description）与 SKILL.md:36（转介表）两处，无字段级契约，「场与章」的分界只靠双方路由表行的一句话。"
+    },
+    {
+      "id": "XQ-I03",
+      "peer": "fiction-planning-and-diagnosis",
+      "relation": "原创规划与诊断 vs 既有文本的媒介转换",
+      "provider": "fiction-planning-and-diagnosis（原作读者契约、人物与事实核验、原创故事的规划与诊断）",
+      "consumer": "cross-media-drama-adaptation（既有文本改编为舞台、影视、音频、互动的媒介转换）",
+      "fields": [
+        "原作和版本（templates/adaptation-workbook.md:9）",
+        "必须保留的决定性行动与人物关系、情绪效果（templates/adaptation-workbook.md:11、:12）",
+        "可以改的内容和授权范围（templates/adaptation-workbook.md:13）",
+        "现实事实核验结论与虚构世界内部一致性（SKILL.md:51）",
+        "问题所在层（规划／结构／人物／句子）（SKILL.md:216）"
+      ],
+      "anchors": [
+        "SKILL.md:34",
+        "SKILL.md:49",
+        "SKILL.md:51",
+        "SKILL.md:191",
+        "SKILL.md:210",
+        "SKILL.md:216",
+        "references/interactive-adaptation.md:86",
+        "templates/adaptation-workbook.md:9"
+      ],
+      "peer_refs": [
+        "output/fiction-planning-and-diagnosis/SKILL.md:3",
+        "output/fiction-planning-and-diagnosis/SKILL.md:33",
+        "output/fiction-planning-and-diagnosis/SKILL.md:362",
+        "output/fiction-planning-and-diagnosis/SKILL.md:358",
+        "output/fiction-planning-and-diagnosis/references/rules-units-and-endings.md:43"
+      ],
+      "missing_field_branch": "只有梗概没有原作文本时本包只做梗概层分析，依赖原文的项标「未能核实」并写明需补输入，不编造场次或镜头问题（SKILL.md:210、SKILL.md:49）；问题出在原作的规划、结构、人物或句子层时停在改编层并按 §1 转介表转出（SKILL.md:216）；对方 SKILL.md:358 明确既有文本改互动转本包、自己不再输出玩家选择／状态变量／分支拓扑。",
+      "bidirectional": "齐。对方三处（SKILL.md:33 路由行、:355 Owner 声明、:358 互动分工）加 references 一处与本包 §1、§9、§11 及 interactive §8 一致。"
+    },
+    {
+      "id": "XQ-I04",
+      "peer": "line-editing-and-proofreading",
+      "relation": "对白与界面文本的语言层修订，不改选择逻辑",
+      "provider": "line-editing-and-proofreading（对白、字幕和界面文本的语言编辑与体例校对）",
+      "consumer": "cross-media-drama-adaptation（选择逻辑、状态条件、分支结果与载体选择）",
+      "fields": [
+        "需语言编辑的对白／字幕／界面文本清单（templates/interactive-branch-sheet.md:54）",
+        "原位置／目标位置与改法、保留的功能（templates/adaptation-workbook.md:33）",
+        "文字插入的功能标注与可读性判据（references/information-carriers.md:21、:26）"
+      ],
+      "anchors": [
+        "SKILL.md:38",
+        "SKILL.md:191",
+        "references/information-carriers.md:26",
+        "references/interactive-adaptation.md:86",
+        "templates/interactive-branch-sheet.md:54"
+      ],
+      "peer_refs": [
+        "output/line-editing-and-proofreading/SKILL.md:3",
+        "output/line-editing-and-proofreading/SKILL.md:41",
+        "output/line-editing-and-proofreading/SKILL.md:207"
+      ],
+      "missing_field_branch": "分支表该行空缺时，语言修订列为外部依赖（references/interactive-adaptation.md:89、:91），本包不代替对方改句子与标点，也不因语言修订改变选择逻辑、状态条件或分支结果；本包对界面文本只做载体与判据层面的检查（references/information-carriers.md:26）。",
+      "bidirectional": "齐。对方 SKILL.md:204 与本包 SKILL.md:191、interactive §8 :91 三处口径一致（语言层归对方，选择逻辑归本包）。"
+    },
+    {
+      "id": "XQ-I05",
+      "peer": "preset-card-generation",
+      "relation": "产物类型分界：改编文档 vs 给模型的卡",
+      "provider": "preset-card-generation（推进模式卡、文风卡、表达约束卡的生成／诊断／修订，按推进／文风／表达三轴审章节）",
+      "consumer": "cross-media-drama-adaptation（改编合同、分场表、载体方案、裁决备忘等改编文档）",
+      "fields": [
+        "产物类型（改编文档／给模型的卡）（SKILL.md:227）",
+        "是否使用三轴（SKILL.md:231、SKILL.md:232）",
+        "目标媒介与是否写成卡（SKILL.md:28）"
+      ],
+      "anchors": [
+        "SKILL.md:28",
+        "SKILL.md:39",
+        "SKILL.md:217",
+        "SKILL.md:227",
+        "SKILL.md:229",
+        "SKILL.md:231",
+        "SKILL.md:232",
+        "SKILL.md:237"
+      ],
+      "peer_refs": [
+        "output/preset-card-generation/SKILL.md:3",
+        "output/preset-card-generation/SKILL.md:43"
+      ],
+      "missing_field_branch": "产物类型未说明时按 §12.1 的产物判断分流（SKILL.md:227：产物是改编文档留在本包，是卡则转出）；作者要求把改编方案写成推进卡时走失败出口转出（SKILL.md:217）；§12.3 规定 A 说转给 B 处 B 必须说接收什么（SKILL.md:236），双向对照由该条自检。",
+      "bidirectional": "齐。本包 §12.2 两行（SKILL.md:231、:232）与对方路由行（peer SKILL.md:43）互为逆关系；SKILL.md:227 如实登记套件合同的重叠请求表没有直接点名改编的行。"
+    }
+  ],
+  "applicability": [
+    {
+      "id": "XQ-A01",
+      "scope": "媒介与平台条件：历史制作格式（片长、场数、布景数量、排练周期、旧格式的场定义与编号）不自动适用于现代媒介",
+      "limitation": "迁移时先核对目标媒介的实际条件（SKILL.md:176）；执行边界明写历史制作数字不自动适用（references/conflicts.md:72）；不把旧格式场数当作品质量指标（references/scenes-and-continuity.md:9）；片长与场数按目标媒介、平台、预算、体裁和场景功能定（SKILL.md:118、references/scenes-and-continuity.md:35）；不把历史业余制作的排练周期当专业标准（references/stage-realization.md:39）；不套用历史时期的法律说法与金额（references/stage-realization.md:45）。",
+      "anchors": [
+        "SKILL.md:118",
+        "SKILL.md:176",
+        "references/conflicts.md:72",
+        "references/scenes-and-continuity.md:9",
+        "references/scenes-and-continuity.md:35",
+        "references/stage-realization.md:39",
+        "references/stage-realization.md:45"
+      ]
+    },
+    {
+      "id": "XQ-A02",
+      "scope": "媒介与平台条件：现代平台专属格式未确认时的处理",
+      "limitation": "没有确认时标明需要规范、不套历史格式，也不据此给出现行法律或市场结论（references/conflicts.md:74）；缺版本、缺授权信息、缺目标平台规范时列缺口清单与各自影响，能继续的部分标明假设往下做，被挡住的检查标「待作者决定」（SKILL.md:213）；改编目标为互动叙事且平台规范或结局未定时，被挡住的检查标待作者决定、先补输入（SKILL.md:165）；合同里专设「目标格式缺的规范」一行填要补的资料（templates/adaptation-workbook.md:15）；制式剧本或拍摄软件的行业排版规范按交付方格式要求办，本包不存这类规范（SKILL.md:24）。",
+      "anchors": [
+        "SKILL.md:24",
+        "SKILL.md:165",
+        "SKILL.md:213",
+        "references/conflicts.md:74",
+        "templates/adaptation-workbook.md:15"
+      ]
+    },
+    {
+      "id": "XQ-A03",
+      "scope": "观众反应与效果判断",
+      "limitation": "所有关于观众反应的判断都是设计假设；没有真实观众测试时不宣称悬念、笑点、恐惧或情绪效果已验证（SKILL.md:177、SKILL.md:53）；字幕长度、剪辑与信息顺序要按目标媒介实际测试（references/transferability.md:29）；个案只说明手段合法，不能反推通用要求（references/transferability.md:47、:58）。",
+      "anchors": [
+        "SKILL.md:53",
+        "SKILL.md:177",
+        "references/transferability.md:29",
+        "references/transferability.md:47",
+        "references/transferability.md:58"
+      ]
+    },
+    {
+      "id": "XQ-A04",
+      "scope": "音频与纯声音媒介",
+      "limitation": "本包自述目标媒介是音频或广播剧时没有专属规则卡，只按 transferability 的判断步骤与 information-carriers 的选载体步骤逐条处理；纯声音的空间、转场和声音视角设计超出已验证范围，按待核验的设计假设标注（references/transferability.md:46）。",
+      "anchors": [
+        "SKILL.md:17",
+        "references/transferability.md:46",
+        "references/transferability.md:49",
+        "references/information-carriers.md:35",
+        "references/information-carriers.md:41"
+      ]
+    },
+    {
+      "id": "XQ-A05",
+      "scope": "画面层与现实制作参数",
+      "limitation": "本包管画面设计；焦段、机型、承重等镜头执行参数属现实制作事实，按边界标为需专业核验、不在本包下结论（references/pictorial-checks.md:3、SKILL.md:163）；视觉警示三项是诊断提醒不是硬禁令（references/pictorial-checks.md:30）。",
+      "anchors": [
+        "SKILL.md:163",
+        "references/pictorial-checks.md:3",
+        "references/pictorial-checks.md:30"
+      ]
+    },
+    {
+      "id": "XQ-A06",
+      "scope": "不交付边界：游戏系统与制作类交付",
+      "limitation": "不交付战斗与经济系统、数值平衡、关卡设计、成长曲线、商业化、引擎实现、界面交互规范、可访问性评估、制作预算；需要时明确列为外部依赖并交游戏系统设计、UX、技术或制作负责人，不得用叙事改编结果冒充这些专业交付（references/interactive-adaptation.md:89）；叙事层之外不负责游戏系统、数值平衡、关卡、UX、引擎或制作管理（SKILL.md:191）；分支表自带「不交付范围」字段（templates/interactive-branch-sheet.md:14）；路线图不代替工程实现图或关卡流程图（references/interactive-adaptation.md:61）；对方包同样把关卡与战斗数值排除在自己范围外（scene-conflict SKILL.md:32，见 XQ-I02）。",
+      "anchors": [
+        "SKILL.md:191",
+        "references/interactive-adaptation.md:56",
+        "references/interactive-adaptation.md:80",
+        "references/interactive-adaptation.md:84",
+        "templates/interactive-branch-sheet.md:14"
+      ],
+      "peer_refs": [
+        "output/scene-conflict-and-rhythm/SKILL.md:32"
+      ]
+    },
+    {
+      "id": "XQ-A07",
+      "scope": "不交付边界：法律、版权许可、市场与医学技术结论",
+      "limitation": "不提供法律意见、版权许可结论、医学或技术参数认证、市场预测；涉及时标明需要的专业核验，不把整个改编任务停掉（SKILL.md:43）；是否采纳由作者决定（SKILL.md:178）；AD-29 只作创作层提醒、不当法律规则对外引用（references/stage-realization.md:45）；铺垫服务戏剧可信度、不构成医学判断，现实病因与治疗需独立核验（references/plot-and-ending.md:34）；只要市场预测票房流量而不做文本分析时不接（SKILL.md:26）；按平台算法或流量数据调节奏不做（SKILL.md:25）。",
+      "anchors": [
+        "SKILL.md:25",
+        "SKILL.md:26",
+        "SKILL.md:43",
+        "SKILL.md:144",
+        "SKILL.md:178",
+        "references/plot-and-ending.md:34",
+        "references/stage-realization.md:45"
+      ]
+    },
+    {
+      "id": "XQ-A08",
+      "scope": "范围外媒介与产物：漫画分镜、卡类产物、原作其它层的问题",
+      "limitation": "漫画、图像小说或分镜稿的格序与页面节奏不做（SKILL.md:23）；生成／修订／诊断预设卡转 preset-card-generation（SKILL.md:28、SKILL.md:217）；问题出在原作的规划、结构、人物或句子层时停在改编层并转出（SKILL.md:216）；这些转介是深化路径不是前提（SKILL.md:41）。",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:28",
+        "SKILL.md:41",
+        "SKILL.md:216",
+        "SKILL.md:217"
+      ]
+    },
+    {
+      "id": "XQ-A09",
+      "scope": "交付格式与宿主条件",
+      "limitation": "宿主规定了输出格式就按宿主格式交付（SKILL.md:47）；界面文件自述宿主是否加载、采用哪些字段以实际宿主为准，不授予权限也不承诺自动执行（agents/openai.yaml:1、:2）；无脚本与自动执行声明（全包实测 0 脚本）。",
+      "anchors": [
+        "SKILL.md:47",
+        "agents/openai.yaml:1",
+        "agents/openai.yaml:2",
+        "agents/openai.yaml:8"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "CM-T1",
+      "kind": "positive",
+      "scenario": "3 万字中篇改编成 90 分钟舞台剧",
+      "expected": "给改编合同、分场表和信息载体方案",
+      "stop_at": "制作条件（演员数、场地、换景、成本）未知处不写成已定方案，只给与文本相关的部分并标需核验。",
+      "decided_by": "媒介取舍与结局形态由作者定；本包只列条件、代价与默认处理。",
+      "rest_as_usual": "合同、场定义、分场表、载体方案、逐编号台账与改后回看照常交付。",
+      "rule_ids": [
+        "AD-01",
+        "AD-07",
+        "AD-13",
+        "AD-18",
+        "AD-23"
+      ],
+      "anchors": [
+        "SKILL.md:58",
+        "SKILL.md:59",
+        "SKILL.md:162",
+        "templates/adaptation-workbook.md:5",
+        "templates/adaptation-workbook.md:23",
+        "references/information-carriers.md:41"
+      ]
+    },
+    {
+      "id": "CM-T2",
+      "kind": "missing",
+      "scenario": "只有梗概，没有原作文本",
+      "expected": "只出方案草稿，依赖原文的部分标明「未能核实」",
+      "stop_at": "停在依赖原文的检查（抽台词测试、连续性、镜头与场次问题），不编造场次或镜头号。",
+      "decided_by": "需要补的输入（原作文本与版本）由作者提供；本包不代选文本。",
+      "rest_as_usual": "梗概层判断、方案草稿与缺口清单照常给，交付清单列明尚未核实项。",
+      "rule_ids": [
+        "AD-01",
+        "AD-02"
+      ],
+      "anchors": [
+        "SKILL.md:49",
+        "SKILL.md:210",
+        "references/transferability.md:17",
+        "references/transferability.md:51",
+        "SKILL.md:159"
+      ]
+    },
+    {
+      "id": "CM-T3",
+      "kind": "conflict",
+      "scenario": "要保留全部内心独白，又不许用旁白",
+      "expected": "列出冲突和替代载体，由作者选",
+      "stop_at": "停在动稿之前：先交裁决备忘，不动稿，两版都不整稿铺开。",
+      "decided_by": "路线 A／B 由作者选；作者不答或只回「你看着办」时按最小改动出样例段落并逐条列假设。",
+      "rest_as_usual": "合同、载体功能标注、负面回归清单和逐编号台账照常；丢失落点的独白内容列清单标「未能核实」。",
+      "rule_ids": [
+        "AD-02",
+        "AD-13",
+        "AD-27"
+      ],
+      "anchors": [
+        "SKILL.md:212",
+        "SKILL.md:215",
+        "references/conflicts.md:53",
+        "references/conflicts.md:68",
+        "examples/adaptation-cases.md:44",
+        "examples/adaptation-cases.md:55",
+        "examples/adaptation-cases.md:57"
+      ]
+    },
+    {
+      "id": "CM-T4",
+      "kind": "boundary",
+      "scenario": "改成多结局的互动音频",
+      "expected": "走互动改编分支，交付分支表",
+      "stop_at": "停在音频媒介的专属载体判断（包内自述音频无专属规则卡）与未确认的平台规范；系统、关卡与界面规范不代做。",
+      "decided_by": "结局条件与平台规范由作者或交付方确认；战斗、数值、UX、引擎归外部负责人。",
+      "rest_as_usual": "不变量表、选择分类表、状态表、分支与回收图、路线验证清单照常交付。",
+      "rule_ids": [
+        "AD-35",
+        "AD-38",
+        "AD-40"
+      ],
+      "anchors": [
+        "SKILL.md:180",
+        "SKILL.md:182",
+        "references/transferability.md:46",
+        "references/interactive-adaptation.md:73",
+        "references/interactive-adaptation.md:82",
+        "references/interactive-adaptation.md:84",
+        "templates/interactive-branch-sheet.md:37"
+      ]
+    },
+    {
+      "id": "CM-T5",
+      "kind": "positive",
+      "scenario": "侦探中篇改无声短片：逐场做抽台词测试并检查证据路径与揭示顺序",
+      "expected": "停在没逐段核过的判断（没有全稿时不说已经抽掉台词测试过）；披露顺序按作品对公平推理或惊奇效果的承诺由作者定；其余逐场给出功能转换、载体替换与依据照常做。",
+      "stop_at": "未逐段验证的段落停在「未能核实」；揭晓不得临时加入此前未出现的物品。",
+      "decided_by": "两种揭晓方式（先给身份还是保留揭晓）由作者按作品承诺选。",
+      "rest_as_usual": "案件事实、人物推断、观众已知与最后揭示分开记录，每条结论附当前作品内可核位置。",
+      "rule_ids": [
+        "AD-02",
+        "AD-03",
+        "AD-06",
+        "AD-13",
+        "AD-21"
+      ],
+      "anchors": [
+        "SKILL.md:105",
+        "SKILL.md:106",
+        "SKILL.md:109",
+        "references/transferability.md:17",
+        "references/transferability.md:21",
+        "references/transferability.md:54",
+        "examples/adaptation-cases.md:5",
+        "examples/adaptation-cases.md:14"
+      ]
+    },
+    {
+      "id": "CM-T6",
+      "kind": "missing",
+      "scenario": "只给一个现成改编版要求逐镜头照抄，原作与授权都未提供",
+      "expected": "停在受保护表达的具体复制（授权不明确就不逐句对应）；权利归属与授权范围由权利人或法律专业人士定；其余可继续做结构功能分析与按作者原作独立设计。",
+      "stop_at": "停在复制具体表达与出法律结论两处；缺原作与授权时列缺口清单与各自影响。",
+      "decided_by": "授权范围由作者与权利人确认；本包不作现行侵权判断。",
+      "rest_as_usual": "改编合同、权利记录字段（版本、权利人、期限、媒介、地域、署名）与替代方案照常给。",
+      "rule_ids": [
+        "AD-29",
+        "AD-01"
+      ],
+      "anchors": [
+        "SKILL.md:27",
+        "SKILL.md:144",
+        "SKILL.md:178",
+        "SKILL.md:214",
+        "references/stage-realization.md:41",
+        "references/stage-realization.md:44",
+        "examples/adaptation-cases.md:40",
+        "examples/adaptation-cases.md:42"
+      ]
+    },
+    {
+      "id": "CM-T7",
+      "kind": "conflict",
+      "scenario": "两条路线在同一点回收，但一条人物已获知秘密、另一条不知道，作者要求回收后状态一致",
+      "expected": "停在回收点的无解释抹平（关系、知识、承诺差异必须先处理再回收）；是否保留知识差由作者定；其余路线验证、状态表与反馈核对照常做。",
+      "stop_at": "停在抹平操作与该回收节点的落稿；同一时间点出现互相排斥状态时不下已完成。",
+      "decided_by": "知识差保留还是清除由作者裁决；角色层「谁在何时知道什么」的判定调用 character-and-narrative-control。",
+      "rest_as_usual": "分支表的状态变量五要素、可达与结局条件检查、双轨知识核对照常交付，未决项写进交接行。",
+      "rule_ids": [
+        "AD-37",
+        "AD-38",
+        "AD-39",
+        "AD-40"
+      ],
+      "anchors": [
+        "SKILL.md:186",
+        "SKILL.md:187",
+        "SKILL.md:188",
+        "references/interactive-adaptation.md:42",
+        "references/interactive-adaptation.md:49",
+        "references/interactive-adaptation.md:50",
+        "references/interactive-adaptation.md:65",
+        "templates/interactive-branch-sheet.md:33",
+        "templates/interactive-branch-sheet.md:53"
+      ]
+    },
+    {
+      "id": "CM-T8",
+      "kind": "conflict",
+      "scenario": "要求把舞台提示直接当游戏机制，并用选项数量当改编完成",
+      "expected": "停在机制化直搬与「选项多即改编完成」两处（舞台提示转节点条件、行动窗口或关系状态，不直接当机制）；机制与系统交付由游戏系统／UX／技术负责人定；其余叙事层不变量、分类、状态与分支回收照常做。",
+      "stop_at": "停在无后续影响选项被包装成重大分歧；不为造分支让人物违背既有目标、知识或关系。",
+      "decided_by": "系统层机制归属外部负责人；叙事层取舍由作者裁决。",
+      "rest_as_usual": "场面调度与演员可见行动转成节点条件与关系状态，分支表与路线验证照常出。",
+      "rule_ids": [
+        "AD-35",
+        "AD-36",
+        "AD-40"
+      ],
+      "anchors": [
+        "SKILL.md:182",
+        "SKILL.md:185",
+        "references/interactive-adaptation.md:26",
+        "references/interactive-adaptation.md:71",
+        "references/interactive-adaptation.md:76",
+        "references/interactive-adaptation.md:84"
+      ]
+    },
+    {
+      "id": "CM-T9",
+      "kind": "boundary",
+      "scenario": "平台规范未确认，要求把片长和场数定成固定值",
+      "expected": "停在定长与固定场数指标（不套历史格式、不自造数字），被挡住的检查标待作者决定；片长与格式规格由交付方或作者补规范后定；其余按每场的功能承担来分配、合并与压缩照常做。",
+      "stop_at": "停在指标来源：没有外部规格时不给固定数，也不据历史数字得出现行平台结论。",
+      "decided_by": "平台规范与目标格式由交付方／作者确认；本包只标明需要规范。",
+      "rest_as_usual": "每场是否改变信息、行动、关系或观众期待照常判，合并与压缩建议照常给。",
+      "rule_ids": [
+        "AD-12",
+        "AD-01"
+      ],
+      "anchors": [
+        "SKILL.md:118",
+        "SKILL.md:165",
+        "SKILL.md:176",
+        "SKILL.md:213",
+        "references/conflicts.md:44",
+        "references/conflicts.md:51",
+        "references/conflicts.md:74",
+        "references/scenes-and-continuity.md:35",
+        "references/scenes-and-continuity.md:39",
+        "templates/adaptation-workbook.md:15"
+      ]
+    },
+    {
+      "id": "CM-T10",
+      "kind": "boundary",
+      "scenario": "目标媒介未定（舞台与音频两可）就要求出定稿分场稿",
+      "expected": "停在落稿：并列两套媒介的检查与各自代价，两套都不落稿，媒介通道两可时不替作者选；目标媒介由作者定；其余合同、不变量与可用通道清单照常做，音频侧纯声音设计按待核验假设标注。",
+      "stop_at": "停在跨媒介的载体结论与定稿；纯声音的空间、转场与声音视角超出包内已验证范围。",
+      "decided_by": "舞台还是音频由作者定；本包只给两套条件与代价。",
+      "rest_as_usual": "改编合同、场定义、载体比较步骤与缺口清单照常交付。",
+      "rule_ids": [
+        "AD-01",
+        "AD-06",
+        "AD-07",
+        "AD-13"
+      ],
+      "anchors": [
+        "SKILL.md:158",
+        "SKILL.md:211",
+        "references/transferability.md:46",
+        "references/transferability.md:49",
+        "references/information-carriers.md:3",
+        "references/scenes-and-continuity.md:7"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP-01",
+      "type": "同一状态词两处口径不一（合同 X-1 的实测复核）",
+      "finding": "「未能核实」在 SKILL.md:201 写作「检查已执行，但结论依赖未核实的判断、设计假设或缺失的输入」；在 references/interactive-adaptation.md:56 写作「结论依赖标明的设计假设或尚未核实的判断」并额外加一条「该项检查本轮没有执行时也记这一档」。两侧各少一种情形：SKILL 侧无「本轮没执行也记这一档」，interactive 侧把「缺失的输入」挪到「待作者决定」。SKILL.md:202 把「待作者决定」限定为冲突、取舍或锁定内容矛盾；references/interactive-adaptation.md:57 把它扩为「检查被缺失的决定性输入挡住（作者未定结局、平台规范未确认、需外部专业核验）或两条路线的取舍需要作者裁决」。同一输入缺失项按 SKILL 记「未能核实」、按 interactive 记「待作者决定」，用哪一档不确定。另 SKILL.md:168 与 templates/interactive-branch-sheet.md:39 都把状态词判据指向 interactive-adaptation.md 第 4 节，而 SKILL.md §10（193-204）自称对作者交付的唯一四词表，权威侧未定。",
+      "anchors": [
+        "SKILL.md:168",
+        "SKILL.md:199",
+        "SKILL.md:200",
+        "SKILL.md:201",
+        "SKILL.md:202",
+        "SKILL.md:204",
+        "references/interactive-adaptation.md:52",
+        "references/interactive-adaptation.md:54",
+        "references/interactive-adaptation.md:56",
+        "references/interactive-adaptation.md:57",
+        "references/interactive-adaptation.md:54",
+        "templates/interactive-branch-sheet.md:39"
+      ],
+      "side_refs": [
+        "notes/operations-contract/cross-media-drama-adaptation.md:66",
+        "notes/w4-review-queue.md:83"
+      ],
+      "conflict_note": "与旁证一致，无冲突：合同 §五 X-1 的行号与措差实测复核成立。",
+      "disposition": "登记不修（本草案不改成品；裁决权交作者／W4）"
+    },
+    {
+      "id": "GAP-02",
+      "type": "逐编号台账与速查表的结构缺口（合同 X-2 的实测复核）",
+      "finding": "templates/adaptation-workbook.md:53 声明「每个编号独占一行」，:55 给出四列表头（编号／值／状态／稿件证据位置），表体只有 :57 一行占位示例（占位文本 `<规则编号，如 AD-01 / AD-07 / AD-19>`），40 个 AD 编号没有逐项可填行。填好的样例 examples/adaptation-cases.md:63-67 也只示范 5 个编号（AD-01、AD-02、AD-13、AD-17、AD-22），余 35 个无样例。SKILL.md §4 问题速查（73-96）实测具名唯一编号 32 个，另有 8 个编号只以区间写法出现：AD-14、AD-31、AD-32、AD-33（区间行 SKILL.md:83、:95）、AD-36、AD-37、AD-38、AD-39（区间行 SKILL.md:96），从速查表无法逐条定位到这 8 条。32＋8＝40，与规则族总数闭合。",
+      "anchors": [
+        "SKILL.md:73",
+        "SKILL.md:83",
+        "SKILL.md:95",
+        "SKILL.md:96",
+        "SKILL.md:167",
+        "templates/adaptation-workbook.md:53",
+        "templates/adaptation-workbook.md:55",
+        "templates/adaptation-workbook.md:57",
+        "examples/adaptation-cases.md:59",
+        "examples/adaptation-cases.md:63",
+        "examples/adaptation-cases.md:67"
+      ],
+      "side_refs": [
+        "notes/operations-contract/cross-media-drama-adaptation.md:67",
+        "notes/w4-review-queue.md:84",
+        "notes/delivery-preflight-spec/field-id-matrix.md:90"
+      ],
+      "conflict_note": "与旁证一致，无冲突；但占位行是否算可填字段的判据仍未裁（notes/delivery-preflight-spec/field-id-matrix.md:91、notes/w4-review-queue.md:66）。",
+      "disposition": "登记不修"
+    },
+    {
+      "id": "GAP-03",
+      "type": "spec 条目是否已建：合同表述与实测文件冲突（对应合同 X-3）",
+      "finding": "实测：本包的逐 skill spec 条目文件已存在——notes/delivery-preflight-spec/cross-media-drama-adaptation.md（本轮复测 27 行，含 §一 枚举模板与编号全集、§二 §2a 可填性判定、§三 待裁与不执行声明；该文件与 INDEX 属并发写入面，行号以本条实测时刻为准）；notes/delivery-preflight-spec/INDEX.md:8 有本包一行（结论「有模板件、无 ID 独占行｜§2a 不满足」）；notes/delivery-preflight-spec/field-id-matrix.md:34、:80、:81 有本包两模板的实测行数。而机器载体 notes/delivery-preflight-spec/delivery-preflight-spec.json（151 行）内本包条目为 0：其中 8 个 path 字段（:5、:23、:39、:69、:78、:96、:116、:134）全部属 story-architecture、character-and-narrative-control、fiction-planning-and-diagnosis 三包，无一条指向 output/cross-media-drama-adaptation/。",
+      "anchors": [
+        "SKILL.md:167",
+        "SKILL.md:168",
+        "templates/adaptation-workbook.md:57",
+        "templates/interactive-branch-sheet.md:41"
+      ],
+      "side_refs": [
+        "notes/delivery-preflight-spec/cross-media-drama-adaptation.md:3",
+        "notes/delivery-preflight-spec/cross-media-drama-adaptation.md:14",
+        "notes/delivery-preflight-spec/cross-media-drama-adaptation.md:18",
+        "notes/delivery-preflight-spec/INDEX.md:8",
+        "notes/delivery-preflight-spec/field-id-matrix.md:34",
+        "notes/delivery-preflight-spec/field-id-matrix.md:80",
+        "notes/delivery-preflight-spec/field-id-matrix.md:91",
+        "notes/delivery-preflight-spec/delivery-preflight-spec.json:5",
+        "notes/operations-contract/cross-media-drama-adaptation.md:68",
+        "notes/w4-review-queue.md:85"
+      ],
+      "conflict_note": "冲突点（以实测文件为准）：合同 §五 X-3 写作「delivery-preflight-spec 维持『不为本包建条目』」，notes/w4-review-queue.md:85（W4-38）同口径写作「不进 spec」；实际 markdown 条目与 INDEX／field-id-matrix 行都已建，只有 JSON 载体 0 条。故该表述只对 delivery-preflight-spec.json 成立，不构成「本包无任何 spec 记录」。",
+      "disposition": "登记不修；合同与队列的措辞修正须由作者／主代理裁决，本草案不改旁证文件"
+    },
+    {
+      "id": "GAP-04",
+      "type": "接口承诺无规则支撑与摘要覆盖面（对 agents/openai.yaml 的实测）",
+      "finding": "agents/openai.yaml:6 的 default_prompt 承诺「材料不全时给出标明『假设』的方案，最多问我三个问题」——「最多问我三个问题」在全包无对应规则：实测 /usr/bin/grep -rn 三个问题 与 最多问 在本包 13 个文件里只命中该行，SKILL.md、8 份 references、2 份模板均无提问上限或提问顺序判据；材料不全时包内实际出口是列缺口清单并继续（SKILL.md:213）或按最小改动并逐条列假设（SKILL.md:215），未定义先问几问。agents/openai.yaml:5 的 short_description 只写「把小说或剧本改成舞台方案或分场稿」，未提 SKILL.md:3 与 :17 承诺的音频与互动叙事；互动与音频只在 SKILL.md:180、:223 成文，接口摘要小于包承诺。另实测该文件 8 行、无脚本与自动执行声明，agents/openai.yaml:1、:2 自述以实际宿主为准、不授予权限，:8 为 allow_implicit_invocation: false。",
+      "anchors": [
+        "SKILL.md:3",
+        "SKILL.md:17",
+        "SKILL.md:49",
+        "SKILL.md:213",
+        "SKILL.md:215",
+        "SKILL.md:223",
+        "agents/openai.yaml:1",
+        "agents/openai.yaml:2",
+        "agents/openai.yaml:5",
+        "agents/openai.yaml:6",
+        "agents/openai.yaml:8"
+      ],
+      "side_refs": [
+        "notes/operations-contract/cross-media-drama-adaptation.md:73",
+        "notes/loss-inventory/cross-media-drama-adaptation-S02.md:119"
+      ],
+      "conflict_note": "新增实测发现，合同三条 X 未覆盖此项；旁证只登记了「本包无脚本，automation 不存在」（合同 §六 :73）与「allow_implicit_invocation: false 已有」（S02 :119），未登记 default_prompt 的提问上限无规则支撑与 short_description 的覆盖面差。",
+      "disposition": "登记不修"
+    },
+    {
+      "id": "GAP-05",
+      "type": "状态列取值集合三处不一致",
+      "finding": "SKILL.md:204 写作四词也用于逐编号台账与互动分支表的「状态」列，并称「未知」是那一列的合法值；templates/adaptation-workbook.md:57 的状态列实测列出五值（已完成／依据／未能核实／待作者决定／未知）；templates/interactive-branch-sheet.md:41 的结果列表头只列四值，不含「未知」。判据权威侧 references/interactive-adaptation.md 第 4 节（52-59）实测「未知」零命中（全包该文件 0 处），因此分支表按判据文件也推不出「未知」档。同文件 templates/interactive-branch-sheet.md:21 的「未知信息」是信息轨字段名，不是状态值，两处词面同形不同义。",
+      "anchors": [
+        "SKILL.md:204",
+        "references/interactive-adaptation.md:52",
+        "references/interactive-adaptation.md:54",
+        "templates/adaptation-workbook.md:53",
+        "templates/adaptation-workbook.md:57",
+        "templates/adaptation-workbook.md:60",
+        "templates/interactive-branch-sheet.md:21",
+        "templates/interactive-branch-sheet.md:39",
+        "templates/interactive-branch-sheet.md:41"
+      ],
+      "side_refs": [
+        "notes/operations-contract/cross-media-drama-adaptation.md:55"
+      ],
+      "conflict_note": "冲突点：合同第三节「格式」行写作「workbook §7 与分支表用同一套四词状态列（SKILL.md:204）」；实测两模板的状态列取值集合不同（五值 vs 四值），SKILL.md:204 自身则同时声明四词与「未知」合法。以模板原文为准。",
+      "disposition": "登记不修"
+    },
+    {
+      "id": "GAP-06",
+      "type": "裁决主体口径不一（作者 vs 导演）",
+      "finding": "references/conflicts.md:42（分歧四「怎么判」）末句写作「缺少决定性条件时再请导演或作者选择」；SKILL.md:202 的状态词只承认「由作者裁决」，SKILL.md:212 的出口也只写作者未裁决时停在默认处理并标「待作者决定」。分歧四本身是排练与执导层问题（references/stage-realization.md:5、:38 同域），当裁决落到导演时，成品没有对应的状态词或交接路径说明谁来标这一档。",
+      "anchors": [
+        "SKILL.md:202",
+        "SKILL.md:212",
+        "references/conflicts.md:34",
+        "references/conflicts.md:42",
+        "references/stage-realization.md:5",
+        "references/stage-realization.md:38"
+      ],
+      "side_refs": [
+        "notes/operations-contract/cross-media-drama-adaptation.md:53"
+      ],
+      "conflict_note": "新增实测发现。",
+      "disposition": "登记不修"
+    },
+    {
+      "id": "GAP-07",
+      "type": "音频限制只在 references 一处，主文档导航不到",
+      "finding": "「目标媒介是音频或广播剧时，本 Skill 没有专属规则卡」与「纯声音的空间、转场和声音视角设计超出已验证范围」两处限制实测只出现在 references/transferability.md:46（全包「广播剧」唯一命中）。SKILL.md 的「音频」命中为 :3、:17、:23、:223、:232，均无该限制；§4 问题速查（73-96）无音频条目行；§6 参考文件表 transferability 行的出口列（SKILL.md:158）只写梗概与媒介两可两种出口，未写音频；§9 互动叙事（180-191）也未提音频媒介。骨架用例 CM-T4（多结局互动音频）须跨到 references 第 46 行才能取到该限制。",
+      "anchors": [
+        "SKILL.md:3",
+        "SKILL.md:17",
+        "SKILL.md:73",
+        "SKILL.md:158",
+        "SKILL.md:180",
+        "SKILL.md:223",
+        "references/transferability.md:46"
+      ],
+      "side_refs": [
+        "notes/suite-contract.md:213",
+        "notes/operations-contract/cross-media-drama-adaptation.md:62"
+      ],
+      "conflict_note": "新增实测发现；与 X-2 的「区间写法导致定位不到」同型，但对象是媒介限制而非规则编号。",
+      "disposition": "登记不修"
+    },
+    {
+      "id": "GAP-08",
+      "type": "模板自述列数与表头列数不一致（措辞级）",
+      "finding": "templates/adaptation-workbook.md:53 写作「三列齐全」、:59 写作「三列每行都在」；:55 的表头实测四列（编号／值／状态／稿件证据位置），:57 占位行同样四格，样例 examples/adaptation-cases.md:61 亦是四列。可读作「编号列之外的三列」，但成品未写明该口径，机器取数时按列数判会两解。",
+      "anchors": [
+        "templates/adaptation-workbook.md:53",
+        "templates/adaptation-workbook.md:55",
+        "templates/adaptation-workbook.md:57",
+        "templates/adaptation-workbook.md:59",
+        "examples/adaptation-cases.md:61"
+      ],
+      "side_refs": [
+        "notes/delivery-preflight-spec/cross-media-drama-adaptation.md:19"
+      ],
+      "conflict_note": "新增实测发现；spec 条目 §二 亦记「三列要求没有承载体」，与本地实测的措辞歧义同源。",
+      "disposition": "登记不修"
+    }
+  ],
+  "notes_on_method": {
+    "scope_statement": "本文件是草案：只登记事实与位置，不给 GQ 状态、不判通过，不作独立 review（独立一席另派）。同目录 brief.json／review.json／s02-desourcing-selfcheck.md 未改动。",
+    "permissions": "验证权限＝static：只读检索、find／wc／grep 取数与 JSON 解析校验；未运行 tests、lint、typecheck、build、benchmark、smoke，未运行 kd_* 检查器，未启动应用。未使用 sed -i 或 perl -i。",
+    "commands": [
+      "find output/cross-media-drama-adaptation -type f | sort | xargs wc -l",
+      "/usr/bin/grep -o -E 'AD-[0-9]{2}' + sort -u 计数（SKILL.md 与全包各一次）",
+      "/usr/bin/grep -n \"至 AD\" output/cross-media-drama-adaptation/SKILL.md",
+      "/usr/bin/sed -n '71,96p' SKILL.md | /usr/bin/grep -o -E 'AD-[0-9]{2}' | sort -u（§4 具名编号集合）",
+      "/usr/bin/grep -rn '<五个 peer skill 名>' output/cross-media-drama-adaptation/（本包侧全部命中）",
+      "/usr/bin/grep -r -n cross-media-drama-adaptation output/<peer>/（对方侧回指行号）",
+      "/usr/bin/grep -rn \"不要这样用\" references/（反例位置逐行）",
+      "/usr/bin/grep -n \"^## \" references/*.md templates/*.md examples/*.md（章节行号）",
+      "/usr/bin/grep -rn 三个问题 与 最多问（全包，仅 agents/openai.yaml:6 命中）",
+      "/usr/bin/grep -rn 广播剧（全包，仅 transferability.md:46 命中）",
+      "/usr/bin/grep -n 音频 output/cross-media-drama-adaptation/SKILL.md",
+      "/usr/bin/grep -c 未知 references/interactive-adaptation.md（0）",
+      "/usr/bin/grep -rn cross-media notes/delivery-preflight-spec/（spec 三文件命中）",
+      "/usr/bin/grep -n '\"path\"' notes/delivery-preflight-spec/delivery-preflight-spec.json（8 条 path，无本包）",
+      "python3 内联脚本：解析 brief-draft.json 并逐条校验 anchors／peer_refs 指向的行存在且非空"
+    ],
+    "artifact_recount": "13 文件 897 行，逐件相加：236＋8＋68＋74＋57＋91＋46＋44＋39＋55＋60＋63＋56＝897（SKILL.md 236｜agents/openai.yaml 8｜examples/adaptation-cases.md 68｜references：conflicts 74、information-carriers 57、interactive-adaptation 91、pictorial-checks 46、plot-and-ending 44、scenes-and-continuity 39、stage-realization 55、transferability 60｜templates：adaptation-workbook 63、interactive-branch-sheet 56）。",
+    "files_read_full": [
+      "output/cross-media-drama-adaptation/SKILL.md（236 行全读）",
+      "output/cross-media-drama-adaptation/agents/openai.yaml（8 行全读）",
+      "output/cross-media-drama-adaptation/references/transferability.md（60）",
+      "output/cross-media-drama-adaptation/references/scenes-and-continuity.md（39）",
+      "output/cross-media-drama-adaptation/references/information-carriers.md（57）",
+      "output/cross-media-drama-adaptation/references/plot-and-ending.md（44）",
+      "output/cross-media-drama-adaptation/references/stage-realization.md（55）",
+      "output/cross-media-drama-adaptation/references/pictorial-checks.md（46）",
+      "output/cross-media-drama-adaptation/references/conflicts.md（74）",
+      "output/cross-media-drama-adaptation/references/interactive-adaptation.md（91）",
+      "output/cross-media-drama-adaptation/templates/adaptation-workbook.md（63）",
+      "output/cross-media-drama-adaptation/templates/interactive-branch-sheet.md（56）",
+      "output/cross-media-drama-adaptation/examples/adaptation-cases.md（68）",
+      "notes/operations-contract/cross-media-drama-adaptation.md（旁证，读不抄结论）",
+      "notes/delivery-preflight-spec/cross-media-drama-adaptation.md（旁证）",
+      "inputs/requirements.md（总需求，84 行）",
+      "notes/suite-contract.md 第六节（骨架 cases 来源，只读相关段）",
+      "notes/w4-review-queue.md 的 W4-11／W4-36／W4-37／W4-38 行（旁证）",
+      "notes/quality/cross-media-drama-adaptation/brief.json 与 review.json（骨架与待填状态）"
+    ],
+    "peer_packages_read_for_interfaces": "五个兄弟包只读命中行及其邻近段落（SKILL.md 的转介表、Owner 声明与互动分工行；fiction 包另读 references/rules-units-and-endings.md:43），未做整包审查。",
+    "group_counts": {
+      "requirements": 17,
+      "capabilities": 6,
+      "interfaces": 5,
+      "applicability": 9,
+      "cases": 10,
+      "cases_kind_distribution": "positive 2（CM-T1、CM-T5）／missing 2（CM-T2、CM-T6）／conflict 3（CM-T3、CM-T7、CM-T8）／boundary 3（CM-T4、CM-T9、CM-T10）",
+      "gaps": 8
+    },
+    "evidence_insufficient": [
+      "XQ-R04 音频族：包内自述无专属规则卡（references/transferability.md:46），本包只能给「按判断步骤＋选载体步骤」的间接覆盖；音频媒介本身的规则族效果证据不够，不是本草案填不满，而是成品未承诺。",
+      "GQ 类效果与运行证据一律不填：无真实任务测试授权（GQ5 NOT_PROVEN）、kd_* 未运行、宿主实际加载未测，故本草案不含任何通过性结论。",
+      "「最多问我三个问题」的实际行为无法静态判定（GAP-04）：包内无判据，是否算承诺超出规则支撑需作者裁，本草案不下结论。",
+      "占位行是否算可填字段的判据归属未裁（GAP-02、GAP-03）：本草案只登记两模板与三处旁证的实测差异。",
+      "对方包接口字段的类型与版本：五份兄弟包只用路由行与 Owner 声明表达分工，未见字段级 schema；本草案按现有成文字段登记，不推断对方内部结构。"
+    ],
+    "writing_isolation": "本轮只新建并写 notes/quality/cross-media-drama-adaptation/brief-draft.json 一个文件；未写 output/、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md。",
+    "concurrency_note": "同一工作树有其他代理在写：本轮复核时发现 notes/delivery-preflight-spec/ 多份文件与 output/genre-fiction-craft/ 在近 30 分钟内被改动，其中本包 spec 条目文件由 28 行变为 27 行。成品包 output/cross-media-drama-adaptation/ 的 13 个文件 mtime 仍为 11-05 00:02，未被改动，本草案对其行号引用不受影响；对 notes 旁证的行号引用（GAP-03 的 spec 条目）按实测时刻登记，W4 复审须重取。"
+  },
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  },
+  "round_complete": "draft-complete crossmedia-brief",
+  "adopted_by": "Agent 1 / main agent 采纳（草案席原内容未改，仅改 kind/status 并加本三字段）",
+  "adopted_at": "2026-11-05 16:2x",
+  "draft_source_sha256": "b148b2b13ddd42ca"
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "fiction-planning-and-diagnosis",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "FP-T1",
+      "kind": "positive",
+      "scenario": "从一个点子做新作计划",
+      "expected": "定赛道，交付骨架和场景表"
+    },
+    {
+      "id": "FP-T2",
+      "kind": "missing",
+      "scenario": "要诊断，只给了梗概",
+      "expected": "只做梗概层的诊断，列出还需要哪些正文"
+    },
+    {
+      "id": "FP-T3",
+      "kind": "conflict",
+      "scenario": "读者反馈要求加感情线，作者的契约是纯推理",
+      "expected": "给反馈分级，说明对契约的影响，由作者决定"
+    },
+    {
+      "id": "FP-T4",
+      "kind": "boundary",
+      "scenario": "半纪实作品里的统计数字",
+      "expected": "走事实核验流程，核实不了的标「未能核实」"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

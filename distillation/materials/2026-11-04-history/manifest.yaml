@@ -1,0 +1,37 @@
+# 材料批次清单：v0–v3 历史版本登记
+# 只登记提交 SHA、路径与规模；不复制原件，不放任何作品全文或来源编号。
+# 数据由 `git ls-tree -r -l <提交> -- skills` 实测（2026-11-04），非估计值。
+
+batch: 2026-11-04-history
+baseline: main@c734510          # 基线不是材料版本；knowledge-compiler 规范依据
+read_method: git show <提交>:<路径>   # 只读，不检出、不改仓库
+
+versions:
+  - id: v0
+    commit: d23c461
+    path: skills/<name>/...             # 74 个独立 skill 目录
+    scale:
+      skill_dirs: 74
+      files: 765
+      bytes: 5167671
+  - id: v1
+    commit: d2003e4
+    path: skills/<merged-skill>/...     # 7 个合并 skill（含 english-prose-line-editing）
+    scale:
+      skill_dirs: 7
+      files: 175
+      bytes: 1462997
+  - id: v2
+    commit: 3c1cb5f
+    path: skills/<merged-skill>/...     # 7 个合并 skill（line-editing-and-proofreading、题材目录改英文名）
+    scale:
+      skill_dirs: 7
+      files: 201
+      bytes: 1973526
+  - id: v3
+    commit: 2a10c07
+    path: skills/<merged-skill>/...     # 7 个合并 skill
+    scale:
+      skill_dirs: 7
+      files: 206
+      bytes: 1847794

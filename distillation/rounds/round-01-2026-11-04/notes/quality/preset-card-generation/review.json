@@ -1,0 +1,2789 @@
+{
+  "version": 1,
+  "skill": "preset-card-generation",
+  "status": "review-independent-r1",
+  "producer": "Agent 1（W3 第 1 批，规范维护）",
+  "reviewer": "RV-presetcard（只读子代理，非作者）",
+  "brief_sha256": "cfe0c1fdf92feb1ad6f088ef1333cf9abdb8d9d3beadaff9c83ad341786ab241",
+  "skill_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+  "tree_files": 11,
+  "tree_bytes": 113900,
+  "bound_to_tree_sha": {
+    "algorithm": "递归枚举 → 相对路径按字节序升序（key=lambda r: r[0].encode('utf-8')）→ 拼 \"<relpath>\\t<sha256(bytes)>\\n\" → 再取 sha256",
+    "self": "output/preset-card-generation",
+    "self_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+    "self_files": 11,
+    "self_bytes": 113900,
+    "peers_measured": {
+      "genre-fiction-craft": {
+        "tree_sha256": "59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352",
+        "files": 101,
+        "bytes": 1053170
+      },
+      "cross-media-drama-adaptation": {
+        "tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+        "files": 13,
+        "bytes": 76222
+      }
+    },
+    "tsv": "/tmp/k5-bindings-2026-11-05.tsv",
+    "matches_tsv": true,
+    "checked_at": "本席实测，与 tsv 本包行整串一致（brief cfe0c1fd…、tree be89d163…、11 件、113900 B），故未停手。"
+  },
+  "freeze_note": "D3-C 独立复核（非作者、只读、static-only）。上一批同范围席被额度击杀、零落盘，本席为重派，未复用其任何中间结果。对象包 11 件未在本席期间变动（SKILL.md mtime 2026-11-05 16:36:05，早于 brief 冻结 16:55）；两个对端包 SKILL.md 的 mtime 为 2026-11-05 19:32，晚于 brief 冻结，故 brief 的对端行号与对端零命中类结论按当前 bound 树重判（F-01／F-04）。review.json.v0-2026-11-05 只取作字段模板，其 status／全 not_proven 状态位未被继承；同目录旧 review.json 与该 v0 副本逐字节相同（cmp 实测 IDENTICAL），覆盖不丢历史。本文件不构成冻结批准，也不替代汇总席门禁。",
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "STATIC_CHECKED",
+      "basis": "12 条能力逐条有真实承载（294 条 anchors 全命中、无越界无空行）；kind 申报与包内实态一致（workflow／external，无 automation，实测无 scripts/）；每条带 limit 与 counterexample_ref 且抽检为真（如 card-pitfalls 22 条、style.md:69 冒名表、card-method:56）；负触发单点承载与 openai.yaml 字段实测相符。",
+      "evidence_ref": "sections.capabilities",
+      "residual": "能力效果未经任何生成测试（GQ5）；C11 的跨包外部声明未闭合、C12 无宿主回执。"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "FAIL",
+      "basis": "SKILL.md:200 的可核自设承诺与 §1／§9.2 实际结构矛盾（SEM-01，F-03）；禁令部件强制程度在 SKILL.md:68 与 card-method.md:56／expression.md:102 间口径不同且无回链（SEM-02）；默认文风同一措辞两处承载、一处缺定位与冒名回链（SEM-03）。",
+      "evidence_ref": "semantics[]",
+      "residual": "未发现阈值／术语类的第二型冲突；八个维度（style.md:9 八项＝定位＋七小节）与三卡小节数实测自洽。"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "FAIL",
+      "basis": "两向均核到闭合的只有 cross-media（peer tree 77269b54…）；genre（peer tree 59ffd6ab…）的 peer→this 已由对端 SKILL.md:30 补上、与本包接收行 SKILL.md:192/:194 对得上，但 this→peer（本包 SKILL.md:40）在对方包内仍无接收行（F-02）；其余五包本席按隔离禁读，interface 只能记 not_proven（5 条）；§9.3 的本包内互逆表述不成立（F-03）；IF8 汇总含已被否证项。",
+      "evidence_ref": "sections.interfaces",
+      "residual": "brief 的 interfaces[] 未带 peer_tree_sha256，对端行号不可复现；本席已为 genre／cross-media 两条实测绑定。"
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "STATIC_CHECKED",
+      "basis": "9 条均具 scope／limitation／counterexample／ref／record_ref，反例为包内真实行且本席逐条回读（card-pitfalls:36/:38/:42、:94、:131/:180、card-method:104/:119、style:103/:104、expression:95/:116、progression:3/:27）；三处否定式实测复核为真（F-09）；成品不提来源、例子自创（PC-T1–T12 全部为自创场景）。",
+      "evidence_ref": "sections.applicability",
+      "residual": "A09 的「四词口径由 notes/suite-contract.md 第二节统一」属跨包约定，本席只在该 notes 一侧核对，其余七包未读。"
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "NOT_PROVEN",
+      "basis": "本轮无真实任务测试授权；12 个 cases 全部 mode=synthetic、runtime_verified=false。",
+      "evidence_ref": null,
+      "residual": null
+    }
+  ],
+  "sections": {
+    "requirements": [
+      {
+        "id": "PQ-R01",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:23",
+          "SKILL.md:24",
+          "SKILL.md:53",
+          "SKILL.md:92",
+          "references/progression.md:7",
+          "references/progression.md:115",
+          "references/progression.md:124",
+          "references/planning.md:68"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/planning.md",
+            "sha256": "5789a787b3de4c4f7afccf2954fba5080719f8ef1afb267056caf55867dc45fa"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "8 anchors 全部命中在题行；progression.md:124 承载五小节顺序，planning.md:68 承载「规划→卡」归属。"
+      },
+      {
+        "id": "PQ-R02",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:23",
+          "SKILL.md:54",
+          "references/style.md:3",
+          "references/style.md:7",
+          "references/style.md:90",
+          "references/style.md:99",
+          "references/style.md:101"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "「六个 600–750／七小节」有 anchor；「八个维度」的承载行是 style.md:9「下列八项」（实测八项＝定位+七小节）、「四到八行」承载行是 style.md:100，两行均不在 anchors[] 内（见 anchor_census 与 F-05）。"
+      },
+      {
+        "id": "PQ-R03",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:23",
+          "SKILL.md:55",
+          "references/expression.md:3",
+          "references/expression.md:87",
+          "references/expression.md:95",
+          "references/expression.md:96",
+          "references/expression.md:104"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "300 字与首句「正文」有 anchor；「一张卡只管一种通病」的承载行是 expression.md:97，不在 anchors[] 内。"
+      },
+      {
+        "id": "PQ-R04",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:23",
+          "SKILL.md:52",
+          "SKILL.md:58",
+          "references/card-diagnosis.md:3",
+          "references/card-diagnosis.md:5",
+          "references/card-diagnosis.md:10",
+          "references/card-diagnosis.md:104"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "card-diagnosis.md:10 与 :104 承载「只诊断不改写／审校一组卡片」，逐条对得上。"
+      },
+      {
+        "id": "PQ-R05",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:25",
+          "SKILL.md:56",
+          "SKILL.md:75",
+          "SKILL.md:79",
+          "SKILL.md:82",
+          "references/revision.md:5",
+          "references/revision.md:11",
+          "references/revision.md:59"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "SKILL.md:79 与 revision.md:48 两处独立承载「按对读者影响排序＋改法」，revision.md:59 承载「只审阅不改原文」。"
+      },
+      {
+        "id": "PQ-R06",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:26",
+          "SKILL.md:57",
+          "SKILL.md:84",
+          "SKILL.md:87",
+          "SKILL.md:90",
+          "references/writing.md:5",
+          "references/writing.md:14"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/writing.md",
+            "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+          },
+          {
+            "path": "references/writing.md",
+            "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "SKILL.md:87 承载「写完逐条对照卡核对」，writing.md:5/:14 承载缺项处理。"
+      },
+      {
+        "id": "PQ-R07",
+        "status": "fail",
+        "brief_status_in_source": "anchored-partial",
+        "anchors_checked": [
+          "SKILL.md:3",
+          "SKILL.md:31",
+          "SKILL.md:33",
+          "SKILL.md:37",
+          "SKILL.md:40",
+          "SKILL.md:45",
+          "SKILL.md:60",
+          "SKILL.md:172",
+          "SKILL.md:188",
+          "SKILL.md:200"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "fail：需求含「双向转介」，实测双向未闭合——genre 侧对本包 §1:40 的题材规则转出无接收行（bound tree 59ffd6ab 全 101 件仅 SKILL.md:30 提及 preset-card，且为反方向）；partial_reason 所据「genre 零提及」与「SKILL.md:191-195」（191 为分隔行、五行为 192-196）在 bound tree 上均不成立，见 F-01/F-04/F-06。"
+      },
+      {
+        "id": "PQ-R08",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:30",
+          "SKILL.md:3"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "pass：single_carrier_note 复核为真——/usr/bin/grep -rn '图像|视频' 整包仅命中 SKILL.md:30 一行；openai.yaml:5 确实未带该条。"
+      },
+      {
+        "id": "PQ-R09",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:71",
+          "SKILL.md:116",
+          "SKILL.md:118",
+          "SKILL.md:126",
+          "SKILL.md:128",
+          "SKILL.md:132",
+          "references/card-diagnosis.md:31",
+          "references/card-pitfalls.md:3"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "pass（需求实质成立：两套检查各自成组、卡片类交付前过缺陷目录）。但记录文本「正文类四条」与 bound tree 矛盾：SKILL.md:120-124 实为五条，卡片类 :128-132 五条；anchors[] 未收 120-124，故条数无承载（见 F-05）。"
+      },
+      {
+        "id": "PQ-R10",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:148",
+          "SKILL.md:150",
+          "SKILL.md:157",
+          "SKILL.md:159",
+          "SKILL.md:161",
+          "SKILL.md:165",
+          "SKILL.md:166",
+          "SKILL.md:167",
+          "SKILL.md:173",
+          "SKILL.md:175",
+          "references/card-method.md:11"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "四状态词、缺料出口、锁定冲突出口、效果未测不记通过均有逐行 anchor（150/157/159/165/166/167/173/175）。"
+      },
+      {
+        "id": "PQ-R11",
+        "status": "pass",
+        "brief_status_in_source": "anchored",
+        "anchors_checked": [
+          "SKILL.md:106",
+          "SKILL.md:108",
+          "SKILL.md:109",
+          "SKILL.md:110",
+          "SKILL.md:112",
+          "SKILL.md:113",
+          "SKILL.md:114"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "七条中的第 4 条「改根因，不换词」承载行 SKILL.md:111 未列入 anchors[]（其余六条均有行）。"
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "PQ-C01",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R01",
+          "PQ-R07"
+        ],
+        "anchors_checked": [
+          "SKILL.md:51",
+          "SKILL.md:64",
+          "SKILL.md:92",
+          "references/progression.md:7",
+          "references/progression.md:119",
+          "references/planning.md:1"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/planning.md",
+            "sha256": "5789a787b3de4c4f7afccf2954fba5080719f8ef1afb267056caf55867dc45fa"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-pitfalls.md:36 第 4 条「配额被机械执行」；references/card-pitfalls.md:42 规律：数字门槛在推进卡中容易适得其反；references/card-pitfalls.md:128 第 16 条「内容不专属」",
+        "note": "kinds=workflow 与包内实际一致；无 scripts/、无 automation 申报。"
+      },
+      {
+        "id": "PQ-C02",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R02",
+          "PQ-R08"
+        ],
+        "anchors_checked": [
+          "SKILL.md:54",
+          "references/style.md:7",
+          "references/style.md:58",
+          "references/style.md:90",
+          "references/style.md:94"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/style.md:69-87 表右列「冒名形态」即逐风格反例；references/card-pitfalls.md:161 第 21 条「以排版代替文风」；references/card-pitfalls.md:22 第 2 条「感受词充当判据」",
+        "note": "style.md:58「模仿一段文字的口气」独立承载，anchor 命中。"
+      },
+      {
+        "id": "PQ-C03",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R03",
+          "PQ-R11"
+        ],
+        "anchors_checked": [
+          "SKILL.md:55",
+          "references/expression.md:5",
+          "references/expression.md:17",
+          "references/expression.md:87",
+          "references/expression.md:100",
+          "references/expression.md:113"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/expression.md:25-71 病灶表每行第四列「不可改成」；references/card-pitfalls.md:69 第 8 条「禁令范围过大，误伤正常写法」；references/card-pitfalls.md:90 第 11 条「替代写法变成新套路」",
+        "note": "expression.md:5/:17/:87/:100/:113 逐段承载。"
+      },
+      {
+        "id": "PQ-C04",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R04",
+          "PQ-R10"
+        ],
+        "anchors_checked": [
+          "SKILL.md:52",
+          "references/card-diagnosis.md:10",
+          "references/card-diagnosis.md:15",
+          "references/card-diagnosis.md:104"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-pitfalls.md:155 第 20 条「同义重复与无效尾句」；references/card-diagnosis.md:96 outline-pollution.template-residue 模板残留",
+        "note": "card-diagnosis.md:15 处理顺序与 :10 修订口径一致。"
+      },
+      {
+        "id": "PQ-C05",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R04"
+        ],
+        "anchors_checked": [
+          "SKILL.md:58",
+          "references/card-diagnosis.md:5",
+          "references/card-diagnosis.md:7",
+          "references/card-diagnosis.md:8",
+          "references/card-diagnosis.md:17",
+          "references/card-diagnosis.md:42"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          },
+          {
+            "path": "references/card-diagnosis.md",
+            "sha256": "328175127f8140672c0bc3128498e2fa11de223639c9626f11a1f288412a4c79"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-diagnosis.md:94 voice.promotional-self-praise（「烧脑体验优秀」是给自己打分 → 删除）；references/card-diagnosis.md:100-102 写不出可照做条款的卡",
+        "note": "三种情况分法 card-diagnosis.md:8 实测在文。"
+      },
+      {
+        "id": "PQ-C06",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R05",
+          "PQ-R07"
+        ],
+        "anchors_checked": [
+          "SKILL.md:75",
+          "SKILL.md:77",
+          "SKILL.md:79",
+          "references/revision.md:5",
+          "references/revision.md:43",
+          "references/revision.md:48"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "SKILL.md:80 与 references/revision.md:22 的过度纠正形态（一串碎句、人人说谜语、没有任何情绪、流水账）；references/card-pitfalls.md:97 第 12 条「护栏压制了本卡的核心效果」",
+        "note": "三轴顺序 SKILL.md:75-79 与 revision.md:5/:11 两套承载一致。"
+      },
+      {
+        "id": "PQ-C07",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R06",
+          "PQ-R09"
+        ],
+        "anchors_checked": [
+          "SKILL.md:84",
+          "SKILL.md:86",
+          "SKILL.md:87",
+          "references/writing.md:5",
+          "references/writing.md:63",
+          "references/writing.md:72"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/writing.md",
+            "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+          },
+          {
+            "path": "references/writing.md",
+            "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+          },
+          {
+            "path": "references/writing.md",
+            "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/writing.md:19 说不出变化的章回到规划去解决，不靠文笔填充；references/writing.md:76 不引入此前没有的设定／人物／规则来解旧问题",
+        "note": "writing.md:63/:72 承载自查与续写。"
+      },
+      {
+        "id": "PQ-C08",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R02",
+          "PQ-R03",
+          "PQ-R01",
+          "PQ-R10"
+        ],
+        "anchors_checked": [
+          "SKILL.md:73",
+          "SKILL.md:150",
+          "references/progression.md:121",
+          "references/style.md:96",
+          "references/expression.md:93",
+          "references/card-pitfalls.md:176"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-method.md:98 「不靠标签区分正反」与 references/expression.md:111 「不是卡上的标签」⇒ 卡面不出现字段名，可编辑字段只能靠小节标题承载（references/style.md:115-154、references/progression.md:140-163）",
+        "note": "「用户格式优先」三处各一行（progression:121/style:96/expression:93）实测逐字一致。"
+      },
+      {
+        "id": "PQ-C09",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R09",
+          "PQ-R11"
+        ],
+        "anchors_checked": [
+          "SKILL.md:67",
+          "SKILL.md:68",
+          "references/card-method.md:23",
+          "references/card-method.md:27",
+          "references/card-method.md:41",
+          "references/card-method.md:54"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-pitfalls.md:22 第 2 条（感受词充当判据）、references/card-pitfalls.md:29 第 3 条（计量单位未定义）、references/card-pitfalls.md:60 第 7 条（豁免架空禁令）",
+        "note": "card-method.md:23/:54 承载四判据与五部件。"
+      },
+      {
+        "id": "PQ-C10",
+        "status": "pass",
+        "kind_declared": "workflow",
+        "rule_ids": [
+          "PQ-R09",
+          "PQ-R10"
+        ],
+        "anchors_checked": [
+          "SKILL.md:71",
+          "references/card-pitfalls.md:3",
+          "references/card-pitfalls.md:10",
+          "references/card-pitfalls.md:12",
+          "references/card-pitfalls.md:141",
+          "references/card-pitfalls.md:172"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "references/card-pitfalls.md:14-171 每条的「病灶示例」即反例集；references/card-pitfalls.md:180 越出本卡职责的批评不照改",
+        "note": "card-pitfalls.md 编号条目实测 22 条（### N. 计数=22，末条 22. ），与申报「22 条目录」一致。"
+      },
+      {
+        "id": "PQ-C11",
+        "status": "fail",
+        "kind_declared": "external",
+        "rule_ids": [
+          "PQ-R07",
+          "PQ-R08"
+        ],
+        "anchors_checked": [
+          "SKILL.md:33",
+          "SKILL.md:37",
+          "SKILL.md:43",
+          "SKILL.md:188",
+          "SKILL.md:192",
+          "SKILL.md:200"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          }
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "counterexample_ref_checked": "SKILL.md:30 图像／视频提示词卡判负触发；SKILL.md:45 声明转介是深化路径不是前提，本包可独立使用",
+        "note": "fail：limit 文本断言「genre-fiction-craft 一侧实测零提及本包、该行没有可对接的 provider」，在 bound tree 59ffd6ab 上被 genre SKILL.md:30 直接否证；同时本包接收表未按包建行，路由闭合只到形态层。"
+      },
+      {
+        "id": "PQ-C12",
+        "status": "not_proven",
+        "kind_declared": "external",
+        "rule_ids": [
+          "PQ-R08",
+          "PQ-R10"
+        ],
+        "anchors_checked": [
+          "agents/openai.yaml:1",
+          "agents/openai.yaml:2",
+          "agents/openai.yaml:5",
+          "agents/openai.yaml:6",
+          "agents/openai.yaml:8"
+        ],
+        "anchor_receipts": [
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          }
+        ],
+        "record_ref": {
+          "path": "agents/openai.yaml",
+          "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+        },
+        "counterexample_ref_checked": "SKILL.md:172 三项关键输入全缺时改交问题清单（与 default_prompt 的先问口径一致，但包内未说明两处谁优先）",
+        "note": "not_proven：openai.yaml:1-2 自陈宿主是否加载以实际宿主为准、不承诺自动执行，本轮无任何宿主加载或调用回执，只可证静态设计存在。"
+      }
+    ],
+    "interfaces": [
+      {
+        "id": "PQ-IF0",
+        "status": "pass",
+        "peer": "口径说明（无对端）",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:33",
+          "SKILL.md:188",
+          "SKILL.md:200"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本包侧约定可用（294 条 anchors 全部相对 output/preset-card-generation/ 命中）；43 条对端 ref 为该约定所声明的裸名，见 addressing_defects[]。"
+      },
+      {
+        "id": "PQ-IF1",
+        "status": "not_proven",
+        "peer": "character-and-narrative-control",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:41",
+          "SKILL.md:192"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本侧转出行 SKILL.md:41 已核；对端接收行未证——隔离禁读该包目录。peer_receiving_refs=SKILL.md:313 与 present 文字「SKILL.md:312」自相矛盾（相差一行），须在 bound 对端树后收敛。"
+      },
+      {
+        "id": "PQ-IF2",
+        "status": "not_proven",
+        "peer": "scene-conflict-and-rhythm",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:42",
+          "SKILL.md:90",
+          "SKILL.md:193"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本侧转出行 SKILL.md:42/:90 已核；对端接收行未证。另本包接收行 SKILL.md:193 只枚举「规划、结构或改编安排」，未含「把单场设计写成卡」，该组合在本侧无承接（brief 自己在 IF2.missing 已记，实测为真）。"
+      },
+      {
+        "id": "PQ-IF3",
+        "status": "not_proven",
+        "peer": "story-architecture-and-longform-planning",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:38",
+          "SKILL.md:53",
+          "SKILL.md:104",
+          "SKILL.md:193"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本侧四处（38/53/104/planning.md:68）已核；对端接收行 SKILL.md:43 未证（禁读）。"
+      },
+      {
+        "id": "PQ-IF4",
+        "status": "not_proven",
+        "peer": "fiction-planning-and-diagnosis",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:37",
+          "SKILL.md:90",
+          "SKILL.md:186"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本侧转出行 37/90 与 §9.1 SKILL.md:186 已核；对端接收行 SKILL.md:45 未证（禁读）。"
+      },
+      {
+        "id": "PQ-IF5",
+        "status": "not_proven",
+        "peer": "line-editing-and-proofreading",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:39",
+          "SKILL.md:82",
+          "SKILL.md:195"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "本侧四处（39/82/143/revision.md:59）已核；对端接收行 SKILL.md:194 未证（禁读）。"
+      },
+      {
+        "id": "PQ-IF6",
+        "status": "fail",
+        "peer": "genre-fiction-craft",
+        "provider_ref": "output/genre-fiction-craft/SKILL.md",
+        "consumer_ref": "8f7a4205523cba1dffa67c61cbf8744cb9f6f6a8e23f6b73a538fde7f0ee8a04",
+        "provider_record": {
+          "path": "output/genre-fiction-craft/SKILL.md",
+          "sha256": "8f7a4205523cba1dffa67c61cbf8744cb9f6f6a8e23f6b73a538fde7f0ee8a04"
+        },
+        "peer_tree_sha256": "59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352",
+        "consumer_ref_in_this_package": [
+          "SKILL.md:40",
+          "SKILL.md:200"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "peer_tree_sha256 实测 59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352（101 件／1053170 B，与 /tmp/k5-bindings-2026-11-05.tsv 本行一致）。对端 SKILL.md:30 已新增「生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 → preset-card-generation」，故 peer→this 方向现可闭合，映射到本包接收行 SKILL.md:192（生成／修订／诊断三类卡，超集）与 SKILL.md:194（三轴审章节，逐字对应）。但 this→peer 方向仍未闭合：本包 SKILL.md:40 把「题材规则、机制、混合题材」转给 genre，genre 全包仅 SKILL.md:30 一处提及 preset-card（grep -rn 'preset|预设卡' 实测），且无接收／双向节（其 §8 为「适用边界与自足验收」）。brief 所记「两侧全缺、101 件 preset 零命中」在 bound 树上已被否证。"
+      },
+      {
+        "id": "PQ-IF7",
+        "status": "pass",
+        "peer": "cross-media-drama-adaptation",
+        "provider_ref": "output/cross-media-drama-adaptation/SKILL.md",
+        "consumer_ref": "7e18e9a55790759006c6335e33a8abbde16a7dfc588165cde321539cc6f95b3d",
+        "provider_record": {
+          "path": "output/cross-media-drama-adaptation/SKILL.md",
+          "sha256": "7e18e9a55790759006c6335e33a8abbde16a7dfc588165cde321539cc6f95b3d"
+        },
+        "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+        "consumer_ref_in_this_package": [
+          "SKILL.md:43",
+          "SKILL.md:193"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "peer_tree_sha256 实测 77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5（13 件／76222 B，与 tsv 本行一致）。两向均闭合：peer→this 由该包 SKILL.md:28、:39、:217、:231 承载，映射到本包接收行 SKILL.md:192/:193（含「把改编方案写成卡」括号承接）；this→peer 由本包 SKILL.md:43 承载，对端接收句为该包 SKILL.md:232，与本包 §1 转给行「（不写成卡的部分）」口径一致。引用缺陷单列：peer_receiving_refs=[SKILL.md:233] 与 peer_refs 内 SKILL.md:218 在 bound 树上为空行，peer_refs 的 SKILL.md:232 是反方向行（正解 231）——该包 SKILL.md mtime 2026-11-05 19:32:38，晚于 brief 冻结（16:55），行号未随 bound 树复测（见 F-04）。"
+      },
+      {
+        "id": "PQ-IF8",
+        "status": "fail",
+        "peer": "组合级缺项汇总",
+        "provider_ref": null,
+        "consumer_ref": null,
+        "provider_record": null,
+        "peer_tree_sha256": null,
+        "consumer_ref_in_this_package": [
+          "SKILL.md:37",
+          "SKILL.md:43",
+          "SKILL.md:183",
+          "SKILL.md:192",
+          "SKILL.md:196",
+          "SKILL.md:200"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "note": "条目二、三在 bound 树上复测为真：转给表 7 行（SKILL.md:37-43，逐行点名一个包）对接收表 5 行（SKILL.md:192-196，逐行是请求形态，实测零包名字符串），维度与条数都不同；§9.1 四行（SKILL.md:183-186）与 §1 内容重复承载且未声明唯一权威。条目一「genre-fiction-craft 两侧全缺（对方包内零提及，实测 0 命中）」已被 bound 树否证（genre SKILL.md:30 存在），汇总因此不再是可信闭合清单。"
+      }
+    ],
+    "applicability": [
+      {
+        "id": "PQ-A01",
+        "status": "pass",
+        "scope": "卡片消费条件：包内一切「每一条都会被执行」的规则前提，依赖宿主真把卡喂给模型。宿主是否加载 openai.yaml 字段、是否调用本 skill 均无运行回执 ⇒ 本盘点只作静态设计。",
+        "limitation": "静态行号能证明原文写了什么，不能证明宿主读过、模型执行过；本包无 scripts/，无任何自动化回执。",
+        "counterexample": "references/card-method.md:11 自陈「下列前提尚未经过本 Skill 的生成测试验证」，即包内承认前提未证。",
+        "ref": [
+          "agents/openai.yaml:1",
+          "agents/openai.yaml:2",
+          "SKILL.md:159",
+          "SKILL.md:175",
+          "references/card-method.md:9",
+          "references/card-method.md:11"
+        ],
+        "record_ref": [
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          }
+        ],
+        "note": "openai.yaml:1-2 与 SKILL.md:159/:175 承载「静态可证、效果未测」；card-method.md:11 自陈前提未经生成测试。"
+      },
+      {
+        "id": "PQ-A02",
+        "status": "pass",
+        "scope": "外部格式对齐：宿主或用户指定格式时优先于包内默认列形（三卡默认格式各写一句「用户指定了格式时以用户为准」）。",
+        "limitation": "包内没写「宿主格式与固定字数／小节顺序冲突时谁让步」的过程条款，只有 references/card-pitfalls.md:176 裁定顺序第 1 条「用户指定的格式和契约优先」承担该判断；默认列形无空白模板文件承载（实测包内无 templates/）。",
+        "counterexample": "SKILL.md:132「字数在格式规定之内」与 references/style.md:101「600 到 750 字」构成下限硬门；宿主只给单行字段时的取舍包内无条文。",
+        "ref": [
+          "SKILL.md:73",
+          "references/progression.md:121",
+          "references/style.md:96",
+          "references/expression.md:93",
+          "references/card-pitfalls.md:176"
+        ],
+        "record_ref": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          }
+        ],
+        "note": "三处「用户指定了格式时以用户为准」逐字一致（progression.md:121/style.md:96/expression.md:93），card-pitfalls.md:176 裁定第 1 条在文；实测包内无 templates/。"
+      },
+      {
+        "id": "PQ-A03",
+        "status": "pass",
+        "scope": "非叙事文本不适用：本包只处理小说创作用的预设卡；图像／视频提示词卡判负触发；产物是规划文档或改好文本、审查框架不是三轴的请求一律转出。",
+        "limitation": "包内对「非小说／散文／公文等非叙事文本」没有一般性排除条款（grep -rn 散文｜非小说｜非叙事 实测零命中），不适用只靠 SKILL.md:30 的图像视频一条与 §1 转给表推断；「公文」二字仅出现在误伤豁免列举里（references/expression.md:35、references/card-method.md:61），不是适用范围声明。",
+        "counterexample": "SKILL.md:30 给图片生成模型、视频模型写提示词卡或分镜提示词＝负触发，说明不适用。",
+        "ref": [
+          "SKILL.md:30",
+          "SKILL.md:31",
+          "SKILL.md:37",
+          "SKILL.md:38",
+          "SKILL.md:39",
+          "agents/openai.yaml:5"
+        ],
+        "record_ref": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "sha256": "fe089282d03609a91b94ef20e4e9115280c802176c80df1d74d7036809b2fa49"
+          }
+        ],
+        "note": "限制项复核为真：grep -rn '散文|非小说|非叙事' 整包 0 命中；「公文」仅 expression.md:35 与 card-method.md:61 两处，均为误伤豁免列举，非适用范围声明。"
+      },
+      {
+        "id": "PQ-A04",
+        "status": "pass",
+        "scope": "真实模型效果不可由静态检查证明：卡的格式、字数、样文比对可逐项核对；卡能不能改善生成结果属真实任务测试，未授权。",
+        "limitation": "本包所有能力条目均为静态承载，无一次真实生成回执；GQ5 记 NOT_PROVEN 不等于能力失败。",
+        "counterexample": "references/card-diagnosis.md:94 voice.promotional-self-praise 把「烧脑体验优秀」列为给自己打分，改法是删除——包内禁止卡片自评。",
+        "ref": [
+          "SKILL.md:159",
+          "SKILL.md:175",
+          "SKILL.md:207",
+          "references/card-method.md:11"
+        ],
+        "record_ref": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          }
+        ],
+        "note": "SKILL.md:159/:175/:207 三处一致声明效果不作保证。"
+      },
+      {
+        "id": "PQ-A05",
+        "status": "pass",
+        "scope": "数量判据的适用范围：数字门槛在文风卡和表达约束卡中有效，在推进卡中容易适得其反；推进卡的力量来自机制条款。",
+        "limitation": "同一判据（能数）在三个卡种的适用性不同，写卡时须按卡种取舍，包内未给出跨卡种的统一判定表。",
+        "counterexample": "references/card-pitfalls.md:38 病灶示例：「小循环三章一圈」跑到三百章照样合规；「一段不超过两句」叠「单句成段常见」连写三十章成电报体。",
+        "ref": [
+          "references/card-pitfalls.md:42",
+          "references/card-pitfalls.md:36",
+          "references/card-pitfalls.md:38",
+          "SKILL.md:128",
+          "references/progression.md:27"
+        ],
+        "record_ref": [
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          }
+        ],
+        "note": "card-pitfalls.md:42 规律行与 :36/:38 病灶行在文，SKILL.md:128 与 progression.md:27 构成正反面。"
+      },
+      {
+        "id": "PQ-A06",
+        "status": "pass",
+        "scope": "条件化做法适用范围：references/card-method.md:102-119 的十二条做法或仅适用部分题材、或依据尚单薄，确有需要才采用，不作每张卡的固定要求。",
+        "limitation": "「依据尚单薄」是包内自陈（references/card-method.md:104），未逐项写明哪几条依据单薄到什么程度；采用与否由写卡者判断。",
+        "counterexample": "references/card-method.md:119 允许写明不确定，仅适用专业、纪实类卡。",
+        "ref": [
+          "references/card-method.md:102",
+          "references/card-method.md:104",
+          "references/card-method.md:119"
+        ],
+        "record_ref": [
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          },
+          {
+            "path": "references/card-method.md",
+            "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+          }
+        ],
+        "note": "card-method.md:102-119 实测数据行 12 条，与「十二条做法」一致；:104「依据尚单薄」自陈在文；:119 行右列确为「专业、纪实类卡」。"
+      },
+      {
+        "id": "PQ-A07",
+        "status": "pass",
+        "scope": "三轴诊断一章的输入条件：必须有正文；只有梗概时只做梗概层判断并列出还需哪些正文。",
+        "limitation": "梗概层能判的范围包内未定义边界，只给「不编造章内问题」的禁令。",
+        "counterexample": "SKILL.md:166 只有梗概、没有正文却要按三轴诊断时的出口。",
+        "ref": [
+          "SKILL.md:25",
+          "SKILL.md:166",
+          "SKILL.md:77",
+          "references/revision.md:5",
+          "references/revision.md:11"
+        ],
+        "record_ref": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          },
+          {
+            "path": "references/revision.md",
+            "sha256": "49f885a351a0d08722fdb6b9d0b42155d1b514400d474168755343106ef1924c"
+          }
+        ],
+        "note": "SKILL.md:166 与 revision.md:5/:11 承载梗概层边界。"
+      },
+      {
+        "id": "PQ-A08",
+        "status": "pass",
+        "scope": "卡种职责边界：文风卡不布置剧情任务、不重复表达约束已管的通病；表达约束卡只管正文、不管规划大纲分析文字；推进卡不规定句子怎么写。",
+        "limitation": "三条边界分散在三个卡种文件与缺陷目录里，SKILL.md 未集中声明；跨卡互斥的机器可检形式不存在。",
+        "counterexample": "references/card-pitfalls.md:131 成因：文风卡布置剧情任务、推进卡规定句式、表达约束管到规划文字；references/card-pitfalls.md:180 越出本卡职责的批评不照改。",
+        "ref": [
+          "references/style.md:103",
+          "references/style.md:104",
+          "references/expression.md:95",
+          "references/expression.md:116",
+          "references/progression.md:3",
+          "references/card-pitfalls.md:131",
+          "references/card-pitfalls.md:180"
+        ],
+        "record_ref": [
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/style.md",
+            "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/expression.md",
+            "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+          },
+          {
+            "path": "references/progression.md",
+            "sha256": "f43c18ec609f9273fa0c8340114e6e54d08d064b0d6ee0d02d4ffaeb7e2b2f53"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          },
+          {
+            "path": "references/card-pitfalls.md",
+            "sha256": "b93e8d4eb10cb916e18801bed470fd84d205a34329149531dce98f1bf3a445b0"
+          }
+        ],
+        "note": "style.md:103/:104、expression.md:95/:116、progression.md:3、card-pitfalls.md:131/:180 逐条承载卡种互斥。"
+      },
+      {
+        "id": "PQ-A09",
+        "status": "pass",
+        "scope": "交付状态词的适用范围：对作者交付只用已完成／依据／未能核实／待作者决定四个词并逐项给依据，不把未验证项写成通过。",
+        "limitation": "四词是本包口径，与其他七个兄弟包的同一口径靠 notes/suite-contract.md 第二节统一，包内不互相引用；无外部标准背书。",
+        "counterexample": "SKILL.md:156 未能核实的定义：检查已执行但结论依赖未核实的判断、设计假设或缺失输入，不能记作已完成；SKILL.md:157 待作者决定：存在冲突、取舍或锁定内容矛盾时由作者裁决，不擅自覆盖。",
+        "ref": [
+          "SKILL.md:148",
+          "SKILL.md:150",
+          "SKILL.md:154",
+          "SKILL.md:156",
+          "SKILL.md:157",
+          "SKILL.md:159"
+        ],
+        "record_ref": [
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          },
+          {
+            "path": "SKILL.md",
+            "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+          }
+        ],
+        "note": "SKILL.md:148-159 四词表在文，limitation 关于「靠 notes/suite-contract.md 第二节统一、包内不互引」经对 suite-contract 第二节核对为真。"
+      }
+    ],
+    "cases": [
+      {
+        "id": "PC-T1",
+        "status": "pass",
+        "kind": "positive",
+        "mode": "synthetic",
+        "scenario": "为一部都市异能连载生成推进模式卡",
+        "expected": "交付推进卡，并通过交付前检查",
+        "ref": [
+          "SKILL.md:51",
+          "SKILL.md:64",
+          "SKILL.md:126",
+          "SKILL.md:128",
+          "references/progression.md:119",
+          "references/progression.md:124"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "推进卡格式 progression.md:119-125（含 500–700 字）与交付前检查 SKILL.md:126-132 承载。"
+      },
+      {
+        "id": "PC-T2",
+        "status": "pass",
+        "kind": "missing",
+        "mode": "synthetic",
+        "scenario": "要文风卡，但没给样文，也没描述",
+        "expected": "先要样文；先给几种候选文风让作者选",
+        "ref": [
+          "SKILL.md:165",
+          "SKILL.md:140",
+          "references/style.md:65",
+          "references/style.md:69"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "SKILL.md:165 与 :140 出口列两处独立承载「先要样文＋给候选文风」。"
+      },
+      {
+        "id": "PC-T3",
+        "status": "pass",
+        "kind": "conflict",
+        "mode": "synthetic",
+        "scenario": "已锁定的文风卡要求短句，新的表达约束卡写「不要碎句」",
+        "expected": "走版本和锁定内容的冲突出口，不擅自覆盖已锁定的卡",
+        "ref": [
+          "SKILL.md:167",
+          "SKILL.md:157",
+          "SKILL.md:108",
+          "references/card-pitfalls.md:46",
+          "references/card-pitfalls.md:176"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "SKILL.md:167 逐字含「已锁定的文风卡要求短句，新的表达约束卡写『不要碎句』」，与该用例原文同源。"
+      },
+      {
+        "id": "PC-T4",
+        "status": "pass",
+        "kind": "boundary",
+        "mode": "synthetic",
+        "scenario": "要给图片生成模型写提示词卡（不是小说）",
+        "expected": "判为负触发，说明不适用",
+        "ref": [
+          "SKILL.md:30",
+          "SKILL.md:3",
+          "SKILL.md:172"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "负触发单行承载（见 PQ-R08 复核）。"
+      },
+      {
+        "id": "PC-T5",
+        "status": "pass",
+        "kind": "missing",
+        "mode": "synthetic",
+        "scenario": "要求产卡，但只给一章梗概，没有正文也没有样文",
+        "expected": "停在缺料出口：文风卡缺样文时先要样文并给候选文风（SKILL.md:165），只有梗概的三轴判断只做梗概层（SKILL.md:166）；推进卡可依据梗概起草小节但标明假设与待决项（references/planning.md:68）；缺的是「卡要管哪段正文」这类关键输入时由作者补并裁决（SKILL.md:172）；其余照做——能依据梗概成立的条款先出，不能的列成问题清单。",
+        "ref": [
+          "SKILL.md:165",
+          "SKILL.md:166",
+          "SKILL.md:173",
+          "references/planning.md:68",
+          "references/style.md:65"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "三个出口 165/166/173 与 planning.md:68 构成多输入缺料路径。"
+      },
+      {
+        "id": "PC-T6",
+        "status": "pass",
+        "kind": "positive",
+        "mode": "synthetic",
+        "scenario": "作者已有一张文风卡作为输入，要求据此写这一章",
+        "expected": "不停在本包外：成品原文把这一步判为内（SKILL.md:26、SKILL.md:57、SKILL.md:84、SKILL.md:195），按卡写正文并逐条对照核对（SKILL.md:87）、核对连续性（SKILL.md:88）；同一请求里若还要单场设计或把改后正文交付，那部分才按 SKILL.md:90 转 scene-conflict-and-rhythm、按 SKILL.md:39 转 line-editing-and-proofreading；转不转由作者决定，其余照做。",
+        "ref": [
+          "SKILL.md:26",
+          "SKILL.md:57",
+          "SKILL.md:84",
+          "SKILL.md:87",
+          "SKILL.md:88",
+          "SKILL.md:90",
+          "SKILL.md:196",
+          "references/writing.md:5"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "brief_conflict 成立：以成品为准判为内（26/57/84/87/196），只有无卡起草才转（:90）。"
+      },
+      {
+        "id": "PC-T7",
+        "status": "pass",
+        "kind": "positive",
+        "mode": "synthetic",
+        "scenario": "作者指定按「推进／文风／表达」三轴审一章正文",
+        "expected": "不停在本包外：三轴诊断是本包职责（SKILL.md:25、SKILL.md:56、SKILL.md:75、SKILL.md:193），交付按对读者影响排序的问题清单与改法（references/revision.md:48）；推进层要改情节时先报告不自行改故事（references/revision.md:11），是否改由作者裁决；若同一请求还要改后文本，那一条转 line-editing-and-proofreading（SKILL.md:82）；其余照做。",
+        "ref": [
+          "SKILL.md:25",
+          "SKILL.md:56",
+          "SKILL.md:75",
+          "SKILL.md:79",
+          "SKILL.md:82",
+          "SKILL.md:194",
+          "references/revision.md:5",
+          "references/revision.md:48",
+          "references/revision.md:59"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "brief_conflict 成立：三轴审为内（25/56/75/194），框架非三轴才转（:186）。"
+      },
+      {
+        "id": "PC-T8",
+        "status": "pass",
+        "kind": "boundary",
+        "mode": "synthetic",
+        "scenario": "要求给这张卡打分评级（例如「打个 8 分」或按 A 到 D 定级），并据此判断卡好不好",
+        "expected": "停在交付口径：包内只有已完成／依据／未能核实／待作者决定四个状态词且要逐项给依据（SKILL.md:150），没有分数或等级机制；卡片自评与被评都属缺陷（references/card-diagnosis.md:38、references/card-diagnosis.md:94）；由作者决定是否接受四词交付与缺陷清单；其余照做——按 references/card-pitfalls.md 逐条给命中的缺陷标识、位置与改法，不给总分，也不把未经生成测试的效果写成保证（SKILL.md:159）。",
+        "ref": [
+          "SKILL.md:148",
+          "SKILL.md:150",
+          "SKILL.md:159",
+          "references/card-diagnosis.md:38",
+          "references/card-diagnosis.md:94",
+          "references/revision.md:48"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "包内无打分／分级机制：全文只四状态词（:150），card-diagnosis.md:94 明确把「烧脑体验优秀」判为自评缺陷。"
+      },
+      {
+        "id": "PC-T9",
+        "status": "fail",
+        "kind": "conflict",
+        "mode": "synthetic",
+        "scenario": "作者要「规则怪谈流的机制卡」，genre-fiction-craft 与本包都声称拥有这张卡的 Owner：本包把类型机制写进推进模式卡，genre 包把同类机制写成题材规则",
+        "expected": "停在两包无成对契约可裁：本包按「产物是不是卡」自证归本包（SKILL.md:53、SKILL.md:192、references/progression.md:55、references/progression.md:69、references/progression.md:92），genre 侧既无转出也无接收行（该包 101 个文件实测「preset」零命中），而 output/genre-fiction-craft/references/03-horror/mechanism-and-causality.md:1 与 output/genre-fiction-craft/SKILL.md:18、output/genre-fiction-craft/SKILL.md:49 确实主张题材机制归它；裁决者是套件合同的 Owner 口径与作者（唯一权威承载在 notes/suite-contract.md 第一节 C.1，属包外记录，不进成品），本包不擅自合并两案也不替作者改判（SKILL.md:169）；其余照做——先按本包格式交付推进模式卡本体，纯题材规则与反例仍按 SKILL.md:40 指回 genre。",
+        "ref": [
+          "SKILL.md:40",
+          "SKILL.md:53",
+          "SKILL.md:169",
+          "SKILL.md:193",
+          "SKILL.md:200",
+          "references/progression.md:55",
+          "references/progression.md:69",
+          "references/progression.md:92"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "fail：expected 的前提「genre 侧既无转出也无接收行（该包 101 个文件实测 preset 零命中）」被 bound 树否证——genre SKILL.md:30 已把「生成或修订卡、按三轴审章节」转出给本包，即已承认卡片产物归本包；本用例的裁决路径需改写为「形态判据已定，剩余的是题材机制承载（progression.md:55/:69 实测 39 个类型行，非 brief 所称 37）与 genre 机制文件之间的 Owner 归属，本包 §1:40 仍无对端接收行」。"
+      },
+      {
+        "id": "PC-T10",
+        "status": "pass",
+        "kind": "missing",
+        "mode": "synthetic",
+        "scenario": "只丢来一句「把卡弄好」，卡的目标、要管的正文范围、锁定状态三项都没说",
+        "expected": "停在整条路径无法判定的出口：改为交付问题清单和需要补的输入，不擅自出卡或改卡（SKILL.md:172）；宿主界面层的先问口径是最多问三个问题（agents/openai.yaml:6），由作者回答后裁决；其余照做——逐条写明三项各会改变卡的哪一节（如范围决定表达约束卡第一句、锁定状态决定能否覆盖旧卡）。",
+        "ref": [
+          "SKILL.md:173",
+          "SKILL.md:86",
+          "references/writing.md:14",
+          "agents/openai.yaml:6"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "SKILL.md:173 与 openai.yaml:6「最多问三个问题」构成缺料停点。"
+      },
+      {
+        "id": "PC-T11",
+        "status": "pass",
+        "kind": "conflict",
+        "mode": "synthetic",
+        "scenario": "同一张卡有两个版本，文件名相近，作者说「按最新版改，但别改坏之前定过的东西」，没指明基准版本",
+        "expected": "停在版本基准未定：先请作者确认基准版本，确认不了就列出各版差异和影响并标「待作者决定」（SKILL.md:168）；涉及已锁定内容与新约束冲突时裁决前两版都不落稿（SKILL.md:167）；作者不回话或只回「你看着办」时按最小改动处理并逐条列出假设（SKILL.md:170）；裁决者是作者；其余照做——把两版的条款差集列成可逐项回答的清单。",
+        "ref": [
+          "SKILL.md:167",
+          "SKILL.md:168",
+          "SKILL.md:171",
+          "SKILL.md:157"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "版本基准出口 168/167/171 逐条承载。"
+      },
+      {
+        "id": "PC-T12",
+        "status": "pass",
+        "kind": "boundary",
+        "mode": "synthetic",
+        "scenario": "宿主字段只容得下一段不分行的纯文本，要求把 300 字的表达约束卡压成一行",
+        "expected": "停在格式冲突：按「用户指定格式时以用户为准」（SKILL.md:73、references/expression.md:93）与裁定顺序第 1 条「用户指定的格式和契约优先」（references/card-pitfalls.md:176）让步，仍出卡但放弃「分行书写，一条一件事」（references/expression.md:98）与「超过三环的链条分行书写」（references/card-pitfalls.md:147）；由作者确认是否接受失去分行判据后带来的可读性与逐条可改性（references/card-method.md:94 的「作者只看行首」前提失效）；其余照做——条款文字与判据保持不变，用句号分隔并在卡外说明放弃了哪两条。",
+        "ref": [
+          "SKILL.md:73",
+          "references/expression.md:93",
+          "references/expression.md:98",
+          "references/card-pitfalls.md:143",
+          "references/card-pitfalls.md:147",
+          "references/card-pitfalls.md:176",
+          "references/card-method.md:94"
+        ],
+        "record_ref": {
+          "path": "SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        },
+        "runtime_verified": false,
+        "note": "格式让步链 73 + expression.md:93/:98 + card-pitfalls.md:143/:147/:176 + card-method.md:94 全部命中。"
+      }
+    ]
+  },
+  "semantics": [
+    {
+      "id": "SEM-01",
+      "rule": "§9.3 双向对照承诺 vs §1 转给表／§9.2 接收表的实际结构",
+      "refs": [
+        "SKILL.md:200",
+        "SKILL.md:37",
+        "SKILL.md:38",
+        "SKILL.md:39",
+        "SKILL.md:40",
+        "SKILL.md:41",
+        "SKILL.md:42",
+        "SKILL.md:43",
+        "SKILL.md:192",
+        "SKILL.md:193",
+        "SKILL.md:194",
+        "SKILL.md:195",
+        "SKILL.md:196"
+      ],
+      "texts": [
+        "SKILL.md:200｜A 说转给 B 的地方，B 都要说接收什么：§1 的转给表与本节 9.2 的接收表互为逆关系，逐行可对上。兄弟 skill 的 description 未提到本 Skill 时，不影响本侧接收行的执行。",
+        "SKILL.md:40｜| 题材规则、机制、混合题材 | `genre-fiction-craft` |",
+        "SKILL.md:41｜| 视角合同、人物声口、信息控制 | `character-and-narrative-control` |",
+        "SKILL.md:42｜| 单场设计、强度节奏、章末钩子 | `scene-conflict-and-rhythm` |",
+        "SKILL.md:192｜| 生成／修订／诊断推进模式卡、文风卡、表达约束卡 | 产物是「给模型的卡」，本 Skill 接 |"
+      ],
+      "conflict": "SKILL.md:200 断言两表「互为逆关系、逐行可对上」，实测两表在不同维度上组织：转给表 7 行逐行点名兄弟包（SKILL.md:37-43），接收表 5 行逐行是请求形态且不含任何包名（实测 192-196 行零包名字符串）。逐行结果：L38↔L193、L39↔L195、L43↔L193（括号）可配；L37 只经 §9.1（L185/L186）间接可配；L40（genre）、L41（character）、L42（scene）在接收表中无任何对应行；反向 L192、L194、L196 在转给表中无对应行（它们是「适用」项，见 SKILL.md:23/:25/:26）。7 对 5、维度不同，承诺不成立。",
+      "explanation": "真正该闭合的是跨包逐行（A 转出↔B 接收），而 §9.3 把承诺写成本包内两表互逆，属自设且不可成立的命题；genre 补行后仍不改变本包内 3 条无对应。",
+      "counterexample": "SKILL.md:42（单场设计转给 scene）在本包接收表无对应行；同时 SKILL.md:193 只写「规划、结构或改编安排」，「把单场设计／视角合同／题材机制写成卡」在本包无承接行。",
+      "record_ref": {
+        "path": "SKILL.md",
+        "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+      }
+    },
+    {
+      "id": "SEM-02",
+      "rule": "禁令部件的强制程度：写齐五条 vs 字数紧张可只保前三",
+      "refs": [
+        "SKILL.md:68",
+        "references/card-method.md:56",
+        "references/expression.md:102",
+        "references/expression.md:104"
+      ],
+      "texts": [
+        "SKILL.md:68｜3. 每条禁令写齐病灶、判据、同位替代、封闭豁免、反向护栏。",
+        "references/card-method.md:56｜一条禁令完整时包含五个部件。字数紧张时，前三个不可省。",
+        "references/expression.md:102｜字数有限，按下列顺序取舍，排在前面的优先保留：",
+        "references/expression.md:104-109｜1. 范围与主张 … 5. 放行范围，封闭列举，与被禁对象不同类 … 6. 护栏，这条约束被执行过度的形态。"
+      ],
+      "conflict": "SKILL.md §3 第 3 步无条件要求「写齐」五部件，card-method.md:56 与 expression.md:102 则规定字数紧张时按序取舍（只锁前三个／前项优先），即后两部件可被舍；两处均未回链，且同一语义有三套名（封闭豁免／放行范围；反向护栏／护栏），包内无映射表。",
+      "explanation": "按 SKILL.md 顺序执行的写卡者会认为豁免与护栏不可省，与两份 reference 的取舍口径不一致；豁免缺失正是 card-pitfalls.md 第 7 条「豁免架空禁令」与 SKILL.md:130「豁免不放行被禁对象本身」所禁的形态。",
+      "counterexample": "expression.md:102 的取舍顺序把「范围与主张」列为第 1 项，而 card-method.md:56 的「前三个」是病灶具名／原词构式判据／同位替代——两套保护集不同首项，字数紧张时按哪一套取舍无唯一答案。",
+      "record_ref": [
+        {
+          "path": "references/card-method.md",
+          "sha256": "df0cfcef72c8d972de2a2cc2e869ef554aa5a44fbc6c8cac8f1fd8079c436740"
+        },
+        {
+          "path": "references/expression.md",
+          "sha256": "07ff5d2480e19310e282d89bbea0396a557d7894624946e1401b3cbe66f0e4e7"
+        }
+      ]
+    },
+    {
+      "id": "SEM-03",
+      "rule": "默认文风的两处承载：是否需定位、是否回链冒名形态",
+      "refs": [
+        "references/writing.md:12",
+        "references/style.md:71",
+        "references/style.md:15"
+      ],
+      "texts": [
+        "references/writing.md:12｜| 文风 | 用哪种口气。未指定时按“一句一件事、按发生顺序写、谁在哪里做什么一读即明”来写 |",
+        "references/style.md:71｜| 清楚利落 | 一句一件事；按发生顺序写；谁在哪里做什么一读即明 | 流水账；一串碎句；清楚到没有口气 |",
+        "references/style.md:15｜先用几个词写出读感，再写适合的题材。默认文风同样需要定位，写明它不做什么。"
+      ],
+      "conflict": "同一套默认文风措辞在两个文件各写一次（writing.md:12 与 style.md:71 辨识点逐字同），writing.md 侧未回链 style.md:71 右列的冒名形态（流水账／一串碎句／清楚到没有口气），也未满足 style.md:15 对「默认文风同样需要定位、写明它不做什么」的要求。",
+      "explanation": "同一语义规则有两个承载点且无权威声明，修订其一时另一处不会同步；style.md:15 对默认文风额外要求「定位＋不做什么」，writing.md:12 未带，两处强度不同。",
+      "counterexample": "只读 writing.md 的作者按 :12 写默认文风，会产出的正是 style.md:71 右列点名的「一串碎句／流水账」退化形态而无预警。",
+      "record_ref": [
+        {
+          "path": "references/writing.md",
+          "sha256": "808a4abd7d299a7db6864ca2490a3c3233778404c27a731c9fca04f1a77da8d1"
+        },
+        {
+          "path": "references/style.md",
+          "sha256": "145640aac1973356362facf093fe0e9ad526190ff7578502c52b5c2376267ee2"
+        }
+      ]
+    }
+  ],
+  "anchor_census": {
+    "scope": "逐 ID 读该行及其上下文；本包 anchors[] 294 条＋对端 peer_refs／peer_receiving_refs 43 条。",
+    "this_side_anchor_refs": {
+      "total": 294,
+      "in_range": 294,
+      "resolve_to_non_blank_on_topic": 294,
+      "supported": 290,
+      "partially_supported": 4,
+      "not_supported": 0,
+      "partial_detail": [
+        {
+          "anchor": "references/style.md:7",
+          "id": "PQ-R02",
+          "whole_line": "## 设计一种文风",
+          "why": "该行为小节标题；「八项」的实际承载是 style.md:9「一种文风由下列八项确定」，未列入 anchors[]。"
+        },
+        {
+          "anchor": "references/style.md:90",
+          "id": "PQ-R02",
+          "whole_line": "## 写成卡：文风卡",
+          "why": "「四到八行」的实际承载是 style.md:100，未列入 anchors[]。"
+        },
+        {
+          "anchor": "references/expression.md:87",
+          "id": "PQ-R03",
+          "whole_line": "## 写成卡：表达约束卡",
+          "why": "「一张卡只管一种通病」的实际承载是 expression.md:97，未列入 anchors[]。"
+        },
+        {
+          "anchor": "SKILL.md:106",
+          "id": "PQ-R11",
+          "whole_line": "## 4. 通用原则",
+          "why": "七条中第 4 条的实际承载 SKILL.md:111「4. **改根因，不换词。**…」未列入 anchors[]。"
+        }
+      ],
+      "note": "本包 anchors[] 无一例越界、空行或错文件；上述四条是「承载行另在他行」的覆盖缺口，不构成伪证。"
+    },
+    "peer_side_refs": {
+      "total": 43,
+      "resolvable_under_isolation": 5,
+      "supported": 2,
+      "partially_supported": 1,
+      "not_supported": 2,
+      "not_resolved_by_isolation": 38,
+      "detail": [
+        {
+          "anchor": "output/cross-media-drama-adaptation/SKILL.md:218",
+          "id": "PQ-IF7",
+          "whole_line": "",
+          "verdict": "not_supported",
+          "why": "bound 树上该行为空行；意图行是 :217「| 生成或修订预设卡、按三轴审章节 | 转 `preset-card-generation` |」。"
+        },
+        {
+          "anchor": "output/cross-media-drama-adaptation/SKILL.md:233",
+          "id": "PQ-IF7",
+          "whole_line": "",
+          "verdict": "not_supported",
+          "why": "bound 树上该行为空行；意图行是 :232「- `preset-card-generation` → 本 Skill：改编为舞台／影视／音频／互动这类不写成卡、也不用三轴的请求。」。"
+        },
+        {
+          "anchor": "output/cross-media-drama-adaptation/SKILL.md:232",
+          "id": "PQ-IF7",
+          "whole_line": "- `preset-card-generation` → 本 Skill：改编为舞台／影视／音频／互动这类不写成卡、也不用三轴的请求。",
+          "verdict": "partially_supported",
+          "why": "被列在 direction_peer_to_this（该包→本包）下，实际是反方向行；正解为 :231。"
+        },
+        {
+          "anchor": "output/cross-media-drama-adaptation/SKILL.md:28",
+          "id": "PQ-IF7",
+          "whole_line": "- 生成／修订／诊断预设卡（推进卡、文风卡、表达约束卡），或把改编方案写成给模型用的卡 → 转 `preset-card-generation`。",
+          "verdict": "supported"
+        },
+        {
+          "anchor": "output/cross-media-drama-adaptation/SKILL.md:39",
+          "id": "PQ-IF7",
+          "whole_line": "| 生成或修订推进模式卡、文风卡、表达约束卡，按三轴审章节，把改编方案写成给模型用的卡 | `preset-card-generation` |",
+          "verdict": "supported"
+        }
+      ],
+      "genre_side_recheck": "genre 的 peer_refs／peer_receiving_refs 两个数组在 brief 中均为空，据称「101 件 preset 零命中」；bound 树 59ffd6ab 实测该包 SKILL.md:30 存在转给本包行，故该两处空数组不再是有效证据（见 F-01）。",
+      "isolation": "其余 38 条指向 character／scene／story／fiction-planning／line-editing 五包，本席禁读这些目录，未做内容核读，只按寻址缺陷登记。"
+    },
+    "id_level": {
+      "total": 53,
+      "supported": 37,
+      "partially_supported": 12,
+      "not_supported": 4,
+      "partially_supported_ids": [
+        "PQ-R02",
+        "PQ-R03",
+        "PQ-R07",
+        "PQ-R11",
+        "PQ-IF0",
+        "PQ-IF1",
+        "PQ-IF2",
+        "PQ-IF3",
+        "PQ-IF4",
+        "PQ-IF5",
+        "PQ-IF8",
+        "PQ-A09"
+      ],
+      "not_supported_ids": [
+        "PQ-R09",
+        "PQ-C11",
+        "PQ-IF6",
+        "PC-T9"
+      ],
+      "not_supported_whole_lines": [
+        {
+          "id": "PQ-R09",
+          "claim": "交付前检查分两套：正文类四条、卡片类五条",
+          "anchor": "SKILL.md:118-124（实测五条）",
+          "whole_lines": [
+            "SKILL.md:118｜正文类交付：",
+            "SKILL.md:120｜- 本章有可指认的变化，章末落在实际发生的变化上。",
+            "SKILL.md:121｜- 视角没有越界，状态与前文一致。",
+            "SKILL.md:122｜- 没有演完之后再解释一遍的句子，没有结尾的总结和升华。",
+            "SKILL.md:123｜- 没有出现过度纠正的形态。",
+            "SKILL.md:124｜- 篇幅、格式符合用户要求。"
+          ],
+          "why": "实测正文类为五条（120-124），「四条」无承载；需求实质（两套检查）成立，故 ID 状态记 pass，条数错误记 F-05。"
+        },
+        {
+          "id": "PQ-C11",
+          "claim": "genre-fiction-craft 一侧实测零提及本包（gaps PQ-G02），该行没有可对接的 provider",
+          "anchor": "output/genre-fiction-craft/SKILL.md:30（bound tree 59ffd6ab）",
+          "whole_lines": [
+            "output/genre-fiction-craft/SKILL.md:30｜| 生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 | `preset-card-generation` |"
+          ],
+          "why": "该断言被否证。"
+        },
+        {
+          "id": "PQ-IF6",
+          "claim": "该包全包 101 个文件实测「preset」命中 0 …⇒ 无接收行；两侧都缺（唯一未闭合的组合）",
+          "anchor": "output/genre-fiction-craft/SKILL.md:30",
+          "whole_lines": [
+            "output/genre-fiction-craft/SKILL.md:30｜| 生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 | `preset-card-generation` |"
+          ],
+          "why": "peer→this 已闭合；this→peer（本包 SKILL.md:40 题材规则）仍无对端接收行，故接口状态为 fail 而非「两侧全缺」。"
+        },
+        {
+          "id": "PC-T9",
+          "claim": "genre 侧既无转出也无接收行（该包 101 个文件实测「preset」零命中）",
+          "anchor": "output/genre-fiction-craft/SKILL.md:30",
+          "whole_lines": [
+            "output/genre-fiction-craft/SKILL.md:30｜| 生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 | `preset-card-generation` |"
+          ],
+          "why": "前提被否证，用例的裁决路径须改写（见 cases 注）。"
+        }
+      ]
+    }
+  },
+  "addressing_defects": {
+    "measured_note": "本席实测 brief 的对端寻址裸名为 43 条（peer_receiving_refs 6＋peer_refs 37），条数高于 W4-72 登记的 19 处；W4 台账不在本席可读范围，故只报本席口径，不据条数差异改判任何主张。",
+    "nature": "表述／寻址缺陷：缺包名前缀，可依 PQ-IF0 约定唯一还原，不作伪证、不据此判主张不成立。",
+    "items": [
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:313",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:313",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:34",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:34",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:49",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:49",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:291",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:291",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:303",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:303",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:304",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:304",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:305",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:305",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:306",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:306",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:312",
+        "resolved_to": "output/character-and-narrative-control/SKILL.md:312",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF1",
+        "peer": "character-and-narrative-control",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "examples/pov-cases.md:102",
+        "resolved_to": "output/character-and-narrative-control/examples/pov-cases.md:102",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:295",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:295",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:27",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:27",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:44",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:44",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:274",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:274",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:285",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:285",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:286",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:286",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:287",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:287",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:294",
+        "resolved_to": "output/scene-conflict-and-rhythm/SKILL.md:294",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "references/rhythm-diagnosis.md:100",
+        "resolved_to": "output/scene-conflict-and-rhythm/references/rhythm-diagnosis.md:100",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF2",
+        "peer": "scene-conflict-and-rhythm",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "examples/scene-cases.md:82",
+        "resolved_to": "output/scene-conflict-and-rhythm/examples/scene-cases.md:82",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF3",
+        "peer": "story-architecture-and-longform-planning",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:43",
+        "resolved_to": "output/story-architecture-and-longform-planning/SKILL.md:43",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF3",
+        "peer": "story-architecture-and-longform-planning",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:33",
+        "resolved_to": "output/story-architecture-and-longform-planning/SKILL.md:33",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF3",
+        "peer": "story-architecture-and-longform-planning",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:40",
+        "resolved_to": "output/story-architecture-and-longform-planning/SKILL.md:40",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:45",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:45",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:34",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:34",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:40",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:40",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:41",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:41",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:42",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:42",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF4",
+        "peer": "fiction-planning-and-diagnosis",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:43",
+        "resolved_to": "output/fiction-planning-and-diagnosis/SKILL.md:43",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:194",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:194",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:30",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:30",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:43",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:43",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:166",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:166",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:184",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:184",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:185",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:185",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:186",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:186",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:193",
+        "resolved_to": "output/line-editing-and-proofreading/SKILL.md:193",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF5",
+        "peer": "line-editing-and-proofreading",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "examples/worked-example.md:93",
+        "resolved_to": "output/line-editing-and-proofreading/examples/worked-example.md:93",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": false,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF7",
+        "peer": "cross-media-drama-adaptation",
+        "field": ".direction_this_to_peer.peer_receiving_refs",
+        "ref_as_written": "SKILL.md:233",
+        "resolved_to": "output/cross-media-drama-adaptation/SKILL.md:233",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": true,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF7",
+        "peer": "cross-media-drama-adaptation",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:28",
+        "resolved_to": "output/cross-media-drama-adaptation/SKILL.md:28",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": true,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF7",
+        "peer": "cross-media-drama-adaptation",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:39",
+        "resolved_to": "output/cross-media-drama-adaptation/SKILL.md:39",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": true,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF7",
+        "peer": "cross-media-drama-adaptation",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:218",
+        "resolved_to": "output/cross-media-drama-adaptation/SKILL.md:218",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": true,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF7",
+        "peer": "cross-media-drama-adaptation",
+        "field": ".direction_peer_to_this.peer_refs",
+        "ref_as_written": "SKILL.md:232",
+        "resolved_to": "output/cross-media-drama-adaptation/SKILL.md:232",
+        "basis": "PQ-IF0 约定：对端 peer_refs／peer_receiving_refs 一律相对对端包根 output/<peer>/；条目内 peer 字段给出唯一候选包名",
+        "content_checked": true,
+        "kind": "bare-filename（缺包名前缀）"
+      },
+      {
+        "id": "PQ-IF6",
+        "peer": "genre-fiction-craft",
+        "field": "direction_this_to_peer.peer_receiving_refs（空数组）",
+        "ref_as_written": "[]",
+        "resolved_to": "output/genre-fiction-craft/SKILL.md:30",
+        "basis": "该包目前唯一提及本包之行的实测位置；空数组在 bound 树上已不成立",
+        "content_checked": true,
+        "kind": "empty-array-addendum（brief 此处为空数组，非裸名）"
+      }
+    ],
+    "bare_filename_refs": 43,
+    "addendum_entries": 1,
+    "items_count": 44
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "sev": "major",
+      "gq": "GQ3",
+      "title": "brief 的 genre 侧证据在 bound 树上已被否证（对端已补转给行）",
+      "text": "genre SKILL.md:30（bound tree 59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352，101 件／1053170 B，mtime 2026-11-05 19:32:21）新增「生成或修订推进模式卡、文风卡、表达约束卡，或按推进／文风／表达三轴审章节 → preset-card-generation」。PQ-IF6、PQ-C11、PC-T9、PQ-R07.partial_reason 与 PQ-G02 所据的「genre 全包 preset 零命中／两侧全缺／没有可对接的 provider」不再成立。",
+      "impact": "peer→this 方向已闭合，映射到本包接收行 SKILL.md:192（生成／修订／诊断三类卡）与 SKILL.md:194（三轴审章节，逐字对应），故本包 §9.2 无需新增接收行即已覆盖该行。",
+      "fix": "以上五处的 genre 结论须按当前树改写。"
+    },
+    {
+      "id": "F-02",
+      "sev": "major",
+      "gq": "GQ3",
+      "title": "this→genre 方向仍未闭合",
+      "text": "本包 SKILL.md:40 单方面把「题材规则、机制、混合题材」转给 genre；对端整包（101 件）中提及本包的只有 SKILL.md:30 一行，方向相反，且 genre 无「接收」或双向节（其章节为 §1 适用与转介…§8 适用边界与自足验收）。按 notes/suite-contract.md 第七节第 4 条「A 说转给 B 的地方，B 都要说接收什么」，该组合仍不闭合。",
+      "impact": "GQ3 不能记 pass 的直接原因之一；责任在对端包。",
+      "fix": "genre §1 增一条接收／双向小节，或本包撤下该行并在 §9.1 用产物判据表达。"
+    },
+    {
+      "id": "F-03",
+      "sev": "major",
+      "gq": "GQ2",
+      "title": "§9.3 自设的「两表互为逆关系、逐行可对上」不成立",
+      "text": "见 SEM-01。转给表 7 行按包组织、接收表 5 行按请求形态组织（实测 192-196 无包名字符串），L40／L41／L42 三条在接收表无对应，L192／L194／L196 三条在转给表无对应。",
+      "impact": "包内一条可核承诺为假，且被 PQ-IF0／IF6／IF8 当作核对基准引用；brief 自己在 PQ-G07 已登记同一结论，本席复测为真。",
+      "fix": "把 §9.3 改写为跨包逐行核对（本包转给行 ↔ 对端接收行），并删去本包内互逆的表述；或在 §9.2 增按包接收行。"
+    },
+    {
+      "id": "F-04",
+      "sev": "minor",
+      "gq": "GQ3",
+      "title": "对端行号未随 bound 树复测：两处命中空行、一处方向错",
+      "text": "PQ-IF7 的 peer_receiving_refs=[SKILL.md:233] 与 peer_refs 中的 SKILL.md:218 在 cross-media bound 树（77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5，13 件／76222 B，mtime 19:32:38）上均为空行，意图行分别是 :232 与 :217；peer_refs 的 :232 是反方向行（正解 :231）。同类相差一行的引用还见于本包侧：IF6／IF8／G07 把 §9.3 那句写作「SKILL.md:199」（实测 199 为空行、正文在 200）、把接收表写作「SKILL.md:191-195」（实测 191 为 |---|---| 分隔行、五数据行为 192-196）、把 §9.1 四行写作「SKILL.md:182-185」（实测 182 为分隔行、四数据行为 183-186）。",
+      "impact": "表述缺陷：不影响主张本身成立与否（对端接收句内容本席已逐行核到，见 IF7 判定 pass）。",
+      "fix": "按 bound 树逐处 ±1 校正，并在 review 侧固定 peer_tree_sha256。"
+    },
+    {
+      "id": "F-05",
+      "sev": "minor",
+      "gq": "GQ2",
+      "title": "记录侧条数与实际不符（不影响产品）",
+      "text": "PQ-R09 记「正文类四条」，实测 SKILL.md:120-124 为五条（卡片类 :128-132 五条正确）。PQ-IF6／PC-T9 记 progression.md:55/:69「承载 37 个类型的机制」，实测「各类型的引擎要点」表数据行 39 条。PQ-G09 记本包 SKILL.md「wc -l 实测 218 行、总行数 1344」，本席实测 SKILL.md 219 行（文件以 \\n 结尾）、全包 11 件共 1345 行。",
+      "impact": "盘点文本自身不可靠，三处均可一行改。",
+      "fix": "按实测值改：五／五、39、219／1345。"
+    },
+    {
+      "id": "F-06",
+      "sev": "minor",
+      "gq": "GQ1",
+      "title": "三处子主张的承载行未进 anchors[]",
+      "text": "见 anchor_census.this_side_anchor_refs.partial_detail：「八个维度」（style.md:9）、「四到八行」（style.md:100）、「一种通病」（expression.md:97）、七条中第 4 条（SKILL.md:111）在包内确有原文承载，但不在所引行内。",
+      "impact": "不是伪证；补齐 anchor 即可。",
+      "fix": "四行补入 anchors[]。"
+    },
+    {
+      "id": "F-07",
+      "sev": "minor",
+      "gq": "GQ2",
+      "title": "禁令部件强制程度两处口径不同且无回链",
+      "text": "见 SEM-02 与 SEM-03。",
+      "impact": "按 §3 顺序写卡与按 reference 取舍会得到不同完整度；命名三套无映射（PQ-G06 亦登记）。",
+      "fix": "在 SKILL.md:68 或 card-method.md:56 任一处声明优先关系与映射。"
+    },
+    {
+      "id": "F-08",
+      "sev": "info",
+      "gq": "GQ3",
+      "title": "cross-media 新增 §12.4 与本包表无冲突（因为它不是本包接口）",
+      "text": "该包尾部新增的 §12.4 是 cross-media ↔ genre-fiction-craft 的双向转介（该包 SKILL.md:238-241），全文不出现 preset-card-generation；与本包 §1／§9.2 无可对项，也无矛盾。本包的接口对端是该包 §12.2（:231-:232）、§1（:28、:39）、§11（:217）与 description（:3），四处与本包 SKILL.md:43 与 SKILL.md:192/:193 口径一致。",
+      "impact": "「核对 §12.4 是否与你的表相符」这一项按文本不成立为可核对对象；已改对 §12.2 等四处完成核对。",
+      "fix": "无需改动本包。"
+    },
+    {
+      "id": "F-09",
+      "sev": "info",
+      "gq": "GQ4",
+      "title": "PQ-IF6 与 PQ-A03 的否定式实测全部复核为真",
+      "text": "grep -rn '图像|视频' 整包仅 SKILL.md:30；'散文|非小说|非叙事' 0 命中；「公文」仅 expression.md:35 与 card-method.md:61；PC-[0-9]+／SR-[0-9]+ 0 命中；包内无 templates／examples／scripts／schemas（非 md 文件只有 agents/openai.yaml）；card-pitfalls 编号条目 22 条；card-method §8 数据行 12 条。",
+      "impact": "GQ4 记 pass 的依据；也说明本包确无枚举编号体系，与 brief 的无 spec 结论一致。",
+      "fix": "无。"
+    }
+  ],
+  "limits": [
+    "验证权限＝static：只读、检索、摘要计算与文本比对；未跑测试／lint／构建／冒烟，未启动任何应用，未做 git 写操作；唯一写入是本文件，未用 sed -i／perl -i／> 重定向。",
+    "隔离：只读 output/preset-card-generation/ 全部 11 件、本包 brief.json、同目录 review.json.v0-2026-11-05、notes/suite-contract.md 与 /tmp/k5-bindings-2026-11-05.tsv。对端包只读 genre-fiction-craft/SKILL.md 与 cross-media-drama-adaptation/SKILL.md 中与本包接口相关的行，并对这两棵子做整树摘要（任务点名要求）；未读本包既有 K4／selfcheck、其余五包目录、notes/w4*、notes/operations-contract/*、log.md、checklist.md、git 与测试。",
+    "因此 IF1–IF5（character／scene／story／fiction-planning／line-editing）的对端接收行未经内容核读，只能记 not_proven；其 38 条裸名 ref 只完成寻址还原，未完成行号命中判定。",
+    "对端行号在 bound 树上的错位（F-04）不排除是 brief 冻结后对方包又改版所致；本席只报「当前树上不命中」，不断言历史上错。",
+    "寻址缺陷条数（本席 43 对 W4-72 登记的 19）差异无法在本席权限内对账，属未知，不影响任何 ID 判定。",
+    "本席未执行任何真实任务或用例，GQ5 与全部「效果」类结论保持 NOT_PROVEN；12 个 cases 的 pass 只表示该分支在包内有可核承载，不表示行为已被运行验证。",
+    "PQ-IF6／PC-T9 提及的 genre 侧机制承载（output/genre-fiction-craft/references/03-horror/mechanism-and-causality.md:1 的 HO-01–HO-18、SKILL.md:18/:49）只在对方 SKILL.md 可读范围内间接核对（§1 转给表与「不在范围」段），对方 references 文件未读，Owner 重叠的严重程度按「未完全核实」处理。"
+  ],
+  "round_complete": "K5-rv-presetcard",
+  "gq_status_note": "主代理档名归一（2026-11-05 20:0x）：本件 gq[] 原用 pass/fail/not_proven，契约（notes/suite-contract.md R09 §6.1 与 review.json.v0 骨架）对 GQ1–GQ4 只允许 FAIL/STATIC_CHECKED/NOT_PROVEN ⇒ 仅改档名字面，判定与证据未动；sections[] 的五组状态（pass/fail/not_proven 三档）未作任何改动。"
+}

@@ -1,0 +1,396 @@
+{
+  "status": "review-independent-r1",
+  "producer": "R09 §6.1 质量 brief 草案（成品盘点，非独立审核方）",
+  "reviewer": "RV-lineediting（只读子代理，非作者）",
+  "brief_sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef",
+  "skill_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+  "tree_files": 10,
+  "tree_bytes": 114211,
+  "bound_to_tree_sha": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+  "freeze_note": "对象包＝output/line-editing-and-proofreading/（10 件／114211 B／1303 行，逐件行数 206+8+147+133+98+133+96+134+143+205 与 brief.artifact_inventory 全等）。整树算法按本席约定：递归枚举→相对路径字节序升序（key=lambda r: r[0].encode('utf-8')）→拼 \"<relpath>\\t<sha256(bytes)>\\n\"→再取 sha256；实测摘要与 /tmp/k5-bindings-2026-11-05.tsv 本包行整串一致（brief 9d29bd3c…、tree 63d89e5f…、10 件、114211 B 四项全中），绑定成立，未停手。六个对端包的树摘要以同一算法实测（只取摘要，未读对端正文）：character f32f4dca…17件/193531、scene b00f59d1…17/168166、preset-card be89d163…11/113900、fiction-planning 2d07177a…27/348056、genre 54fa7905…101/1057703、cross-media 77269b54…13/76222，六条与收口时刻的 tsv 全等。genre-fiction-craft 在复核期间被作者席改动过一次（1053170→1057703，摘要 59ffd6ab…→54fa7905…，tsv 19:52 重生成），其余五包与本包全程未变。本文件是独立回读结论，不构成冻结：brief.kind＝frozen-for-review、status＝adopted-for-review-not-final；本轮判定含 1 处 fail 与 9 处 not_proven，且 GQ5 未授权，包不得据此记作完整通过。",
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "STATIC_CHECKED",
+      "evidence_ref": {
+        "path": "output/line-editing-and-proofreading/references/en-sentence-revision.md",
+        "sha256": "72cb28da61222ddb138d03ad3f6120e45fce79d25078772d63aaf6efc442ca02"
+      },
+      "note": "9 条能力逐条回读：可区分分支在文本内成行（英文族每条规则自带 规则/用于/怎么做/不用/反例/检查/自拟例/出口；中文族自带 做法/例/不适用/对应），排除条件与修后复验有实体行（en-sentence-revision.md:64、en-paragraph-and-emphasis.md:73、en-word-choice-and-concision.md:93、workflow.md:112、workflow.md:116–119）。workflow／external 与 automation 的区分实测成立：全包 0 脚本、无 templates/，非 md/yaml 文件 0，无自动化执行声明；「批量」三处（SKILL.md:29、SKILL.md:165、workflow.md:134）均为拒绝自动执行的出口条款，agents/openai.yaml:8 为 allow_implicit_invocation: false。编号全集实测 SR-01…SR-16（16）＋EN-01…EN-40（40）＝56，两端无缺号；SR-14 以三级标题 zh-mechanics.md:27 挂位，brief 的登记与实测一致。两个 external 能力（LE-C08 宿主侧、LE-C09 对端侧）不在静态可证范围，见 GQ3 与 limits。"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "FAIL",
+      "evidence_ref": {
+        "path": "output/line-editing-and-proofreading/examples/worked-example.md",
+        "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65"
+      },
+      "note": "两组跨文件互斥经当前树逐行复验为真，成品内无归口声明：semantics[S-01] 台账「每个编号独占一行」（references/workflow.md:21、:27）与例三 SR-10 占两行（examples/worked-example.md:109、:110）；semantics[S-02] 同一交付物四套列名并存（SKILL.md:138／references/workflow.md:77／examples/worked-example.md:25 与 :63／examples/worked-example.md:119）。S-03、S-04 两组潜在冲突经复验不成立（有让渡与限定行）。S-05 为未写明适用范围的歧义，记 not_proven。"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "NOT_PROVEN",
+      "evidence_ref": {
+        "path": "notes/quality/line-editing-and-proofreading/brief.json",
+        "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"
+      },
+      "note": "本席隔离权限禁止读取其它包目录，故六个接口的对端侧只核到（1）peer_anchors 指向的 12 个对端文件确实存在、（2）六个对端包的树摘要实测并与 tsv 一致、（3）brief 已登记对端行号与原话；对端行的当前内容与「双向都有实体行」未独立回读，按契约不得记 pass，也未发现可引两侧原文的单向声明证据，故六条全部 not_proven、GQ3 整体 NOT_PROVEN。本包侧转出／接收声明逐条在位（SKILL.md:27–43、:163–166、:177–197、:199–204），六个接口的 consumer_ref 全部支撑。字段名与缺字段分支取自两侧登记行，宿主是否真的把字段传起来无运行授权。"
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "STATIC_CHECKED",
+      "evidence_ref": {
+        "path": "output/line-editing-and-proofreading/references/zh-sentence-and-wording.md",
+        "sha256": "3e0f3a037d0604b3677092a88dee3a687a65f192aa6c8f8943f9352fc0ddb1f6"
+      },
+      "note": "六条适用性逐条回读：AP-01…AP-05 的适用条件、限制与反例句均能在成品内找到承载行，阈值类写法都带解除条款（zh-sentence-and-wording.md:122「三句只是扫描提示，不是规定」、:150「不设字数上限」、en-paragraph-and-emphasis.md:21「不设句数指标」、en-word-choice-and-concision.md:12「不设词数上限」、en-mechanics-and-punctuation.md:3 与 en-word-choice-and-concision.md:82 的项目规范让渡）。AP-06 的负面半（其他语种不适用）只有实测缺席推断、无成品声明行，记 not_proven（applicability 组内 1/6 未证，不构成互斥，不升 FAIL）。成品不提来源、例子自创：包内 0 处包外路径、0 处来源编号、0 处书名号内容、审计词与禁用词（分档词／硬规则／用户明确要求／融合版／旧版本版更正）全部 0 命中。"
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "NOT_PROVEN",
+      "note": "无真实任务测试（GQ5 未授权）。本席为静态只读，未运行 tests/lint/typecheck/build/benchmark/smoke、未启动应用、未调用模型执行任何用例。12 条 cases 的 pass 只表示成品条款覆盖 expected 的静态对应，不表示用例已执行；效果档保持未证，与 brief.gq5.status 一致。"
+    }
+  ],
+  "sections": {
+    "requirements": [
+      {"id": "LQ-R01", "status": "pass", "note": "句子层定位四锚齐验：SKILL.md:11、:27、:177、:201。"},
+      {"id": "LQ-R02", "status": "pass", "note": "触发实测 5 条（SKILL.md:19–23）、负触发 7 条（:27–33）、转介 7 行（:37–43）与 §8.2 出口表（:158–167）逐条对应；workflow.md:102 与例三 :83/:95 支撑判定顺序。"},
+      {"id": "LQ-R03", "status": "pass", "note": "第 0 轮三件事与「先改确定错误」均有承载行（SKILL.md:55、:56、:57、:59；workflow.md:18–20、:33）。"},
+      {"id": "LQ-R04", "status": "pass", "note": "六轮表逐行在位（SKILL.md:67–72），workflow.md 各轮标题与「一层只改一类」（:10）、「可跳轮须说明」（:13）支撑。"},
+      {"id": "LQ-R05", "status": "pass", "note": "12 项中文句子段细则对应 SR-01…SR-12 定义行（SKILL.md:78–100 逐条、zh-sentence-and-wording.md:18/31/45/59/71/89/100/114/126/138/154/169）。"},
+      {"id": "LQ-R06", "status": "pass", "note": "SR-13 七个分项全部在位（zh-mechanics.md:17–18 全角半角、:22 引号套层级、:43/:46 占位、:51/:53 顿号与概数、:59–:61 问叹号、:65/:66 书名号与间隔号、:67/:68 括号与连接号）；体例让渡与「未逐条对照标准原文」同句成文（:7）。标准号未据以降级，见 findings[F-06]。"},
+      {"id": "LQ-R07", "status": "pass", "note": "五种提示语写法独占五行成表（zh-mechanics.md:31–35），:37 连续多段、:38 内心独白、:39 电话书信、:34 全稿统一均在位。"},
+      {"id": "LQ-R08", "status": "pass", "note": "SR-15 五族齐验：的地得（:74–:83）、数字分工与〇/年份（:87–:92）、易错字与错别字清单（:96–:111）、成语误用只标不改（:113、:123）、异形词推荐写法（:127）。"},
+      {"id": "LQ-R09", "status": "pass", "note": "体例表四列五类项目（zh-mechanics.md:133–:141）、先列各写法位置＋一般项按稿内多数＋人名专名先问作者（:143、SKILL.md:56、:164）、「只是体例不同」单列不算错误（workflow.md:72）全部成文。brief 在 status 里把该条挂到 GAP-02，实际应为 GAP-04，见 addressing_defects[AD-03]。"},
+      {"id": "LQ-R10", "status": "pass", "note": "EN-01…EN-10＋EN-34、EN-35 十二个编号的定义节全部在 en-mechanics-and-punctuation.md（:7/:18/:29/:40/:51/:62/:73/:84/:95/:106/:113/:124），12 个主题词与节标题逐一对得上。"},
+      {"id": "LQ-R11", "status": "pass", "note": "EN-11…EN-33、EN-36…EN-40 共 28 个编号分布在三份英文文件末尾与正文（en-sentence-revision.md:7/18/29/40/51/62/69/80/91/102/113/124、en-paragraph-and-emphasis.md:5/16/27/38/49/60/71/78/89、en-word-choice-and-concision.md:7/18/41/52/69/80/91）；文本列举的主题无落空项。"},
+      {"id": "LQ-R12", "status": "pass", "note": "六类 AI 腔成表（zh-sentence-and-wording.md:177–182 神态／气氛／情绪直陈／比喻堆叠／段尾升华／程式化起句）、整句重写不换同义词（:171、SKILL.md:100）、换观察角度而非事实清单（en-word-choice-and-concision.md:65）、对白套话可能是性格（:184）齐验。"},
+      {"id": "LQ-R13", "status": "pass", "note": "不变量四禁（SKILL.md:173、:201–:203）＋触碰即停转交（:197、:202）＋声口三问（zh-sentence-and-wording.md:10/12/14）＋不静默替换（:192、en-sentence-revision.md:64、en-word-choice-and-concision.md:5）。"},
+      {"id": "LQ-R14", "status": "fail", "note": "承诺本身成文（workflow.md:21/:25/:27/:28/:29/:30 台账四列、一编号一行、未知合法、证据位只指当前稿件、缺分隔行即格式不合；:112 六项闭环；:116–:119 负面回归四项；SKILL.md:145–:152 四词），但该 ID 的「编号独占一行」被同包规范示例直接违反且成品未声明何者为准（见 semantics[S-01]），同族交付物列名四套并存无归口（S-02）。静态即可见的自相矛盾，按状态词表不得记 pass；brief 自标「部分成文」与此一致。brief 把该矛盾挂到 GAP-03／GAP-02，实际为 GAP-05／GAP-04，见 addressing_defects[AD-03]。"},
+      {"id": "LQ-R15", "status": "pass", "note": "宿主优先（SKILL.md:47）、两类交付（:137、:138）、缺原文不编造（:139、workflow.md:127/:128）、作者不回话按最小改动并列假设（:167、workflow.md:79）齐备。列名口径分歧归 S-02/LQ-R14 计一，本条不重复降级。"},
+      {"id": "LQ-R16", "status": "pass", "note": "非评分标准与作者决定权（SKILL.md:171）、事实疑点一律标出转核查、宁可多标（:172、:32、:42、workflow.md:133）、不打分不批量（:29、workflow.md:134）、不声称已写盘已授权（workflow.md:9、agents/openai.yaml:2/:8）全部成文。"}
+    ],
+    "capabilities": [
+      {"id": "LE-C01", "status": "pass", "kind": "workflow", "note": "16 锚全部在位；SR-01…SR-12 定义行齐；limit 六项与 counterexample_ref 十项逐条回读，均为对应规则的 例／不适用 承载行。"},
+      {"id": "LE-C02", "status": "pass", "kind": "workflow", "note": "错误与体例差异分开（zh-mechanics.md:9）、让渡只到体例层（:7）、稿内多数与各半先不改（SKILL.md:164、workflow.md:132）、列表逗号与引号位置不判错（en-mechanics-and-punctuation.md:78/:86、worked-example.md:67）齐验；7 条反例锚全部指到实际反例行。"},
+      {"id": "LE-C03", "status": "pass", "kind": "workflow", "note": "能力实体（机械校对轮、逐编号台账、体例表、负面回归、四词交付）在文本层齐备且可执行。其 anchor workflow.md:21 所带的「每编号独占一行」与例三互斥，按 S-01/LQ-R14 计一，不在能力档重复降级；ledger 列名分歧已在 brief GAP-04 登记。"},
+      {"id": "LE-C04", "status": "pass", "kind": "workflow", "note": "12 个 EN 编号定义节齐、11 条反例锚逐条为 **反例** 行；限制五项（:3/:23/:34/:100/:71/:82）内容与文本一致。"},
+      {"id": "LE-C05", "status": "pass", "kind": "workflow", "note": "14 个中文 mechanics 小节锚全部为标题或清单承载行；限制（:7/:83/:113/:123/:127/:67）齐。反例锚 :98、:115 为表头行，代表其下整表，计入部分支撑档。"},
+      {"id": "LE-C06", "status": "pass", "kind": "workflow", "note": "不变量边界能力有九编号支撑，限制七项全部回读到行（SKILL.md:31/:197/:202、en-sentence-revision.md:23/:25/:33/:64、en-word-choice-and-concision.md:5/:65）；反例锚含 worked-example.md:145/:146 负面回归两行，语义相符。"},
+      {"id": "LE-C07", "status": "pass", "kind": "workflow", "note": "25 个 EN 编号定义节齐、19 条反例锚为反例行、限制五项（en-paragraph:10/:21/:87、en-sentence:74、en-word-choice:82、workflow.md:65）逐条承载。"},
+      {"id": "LE-C08", "status": "not_proven", "kind": "external", "note": "声明侧完整（SKILL.md:47 宿主优先、:135–:143 两类交付与四词、workflow.md:9 不声称已写盘、agents/openai.yaml:1/:2/:6/:8 不授权不自动执行）。但「宿主是否加载并采用这些字段」「宿主格式与内部取值的映射」需宿主实际行为，静态不可证；GAP-09 登记的映射空白未闭合。记 not_proven，非成品缺陷。"},
+      {"id": "LE-C09", "status": "not_proven", "kind": "external", "note": "本包侧 17 个锚全部在位（负触发行、§10 三表、协作边界四条），转出内容自洽；但能力的另一半是「七个兄弟包真的接收」，对端正文不在本席可读范围，按 GQ3 同一理由记 not_proven。counterexample_ref 指向 examples/worked-example.md:85（表头行），计入部分支撑档。"}
+    ],
+    "interfaces": [
+      {
+        "id": "LE-IF-01",
+        "peer": "character-and-narrative-control",
+        "status": "not_proven",
+        "provider_ref": "../character-and-narrative-control/SKILL.md:70、SKILL.md:145、SKILL.md:312、references/diagnosis.md:126（brief 登记行号；对端正文本席未读，不作独立断言）",
+        "consumer_ref": "SKILL.md:39、SKILL.md:57、SKILL.md:163、SKILL.md:197、SKILL.md:201、SKILL.md:202、references/workflow.md:20、references/zh-sentence-and-wording.md:10、references/zh-sentence-and-wording.md:192（本包逐行回读为真）",
+        "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+        "record_ref": {"path": "notes/quality/line-editing-and-proofreading/brief.json", "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"},
+        "note": "本包侧接收与转出成对（:202「暂停该处并转交确认」＋:39 转出行）；对端侧未独立回读。缺字段分支（对端未给声口）在本包有承载行（SKILL.md:57、zh-sentence-and-wording.md:12/:14、workflow.md:91）。prose 内五处对端锚写成裸 SKILL.md:NN／references/diagnosis.md:126，见 addressing_defects[AD-02]。"
+      },
+      {
+        "id": "LE-IF-02",
+        "peer": "scene-conflict-and-rhythm",
+        "status": "not_proven",
+        "provider_ref": "../scene-conflict-and-rhythm/SKILL.md:26、SKILL.md:41、SKILL.md:114、SKILL.md:284、references/rhythm-diagnosis.md:58（brief 登记）",
+        "consumer_ref": "SKILL.md:11、SKILL.md:27、SKILL.md:38、SKILL.md:80、SKILL.md:104、SKILL.md:186、references/workflow.md:102、examples/worked-example.md:90",
+        "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+        "record_ref": {"path": "notes/quality/line-editing-and-proofreading/brief.json", "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"},
+        "note": "分工判据（问题的尺度）在本包两处成文（SKILL.md:186、:27）；本包侧 SR-02/SR-14 与「只改措辞不改对白内容」有承载行。对端「句子措辞转 line-editing」层判定行未独立回读。"
+      },
+      {
+        "id": "LE-IF-03",
+        "peer": "preset-card-generation",
+        "status": "not_proven",
+        "provider_ref": "../preset-card-generation/SKILL.md:23、SKILL.md:39、SKILL.md:54、SKILL.md:55、SKILL.md:82、SKILL.md:141、SKILL.md:143、SKILL.md:183（brief 登记；本席未读）",
+        "consumer_ref": "SKILL.md:30、SKILL.md:43、SKILL.md:166、SKILL.md:183、SKILL.md:192、SKILL.md:193、references/zh-sentence-and-wording.md:169、references/en-word-choice-and-concision.md:52、examples/worked-example.md:93",
+        "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+        "record_ref": {"path": "notes/suite-contract.md", "sha256": "49a50b20cc7780da82f3075c05c5d1b1f233c0c435608157923b14546867534c"},
+        "note": "本包侧双向两行齐（:192 转出、:193 接收），判据「产物是文本还是卡」在 SKILL.md:183 与本包 §10.2 一致；套件合同 D2=A 双向表已把该行定为必须互指，本包侧符合。对端是否写回同一判据未独立回读，故 not_proven 而非 pass；无「引两侧原文」的单向证据，故不判 fail。"
+      },
+      {
+        "id": "LE-IF-04",
+        "peer": "fiction-planning-and-diagnosis",
+        "status": "not_proven",
+        "provider_ref": "../fiction-planning-and-diagnosis/SKILL.md:31、SKILL.md:43、SKILL.md:154、SKILL.md:356、references/self-check-language.md:48、references/self-check-diagnosis.md:70、references/self-check-modern-and-zh.md:20、references/self-check-modern-and-zh.md:33（brief 登记）",
+        "consumer_ref": "SKILL.md:32、SKILL.md:40、SKILL.md:42、SKILL.md:163、SKILL.md:172、SKILL.md:185、SKILL.md:203、references/workflow.md:133",
+        "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+        "record_ref": {"path": "notes/quality/line-editing-and-proofreading/brief.json", "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"},
+        "note": "本包侧「只标疑点、核实转对端」（:32/:42/:172）与「不用润色掩盖结构问题」（:203）成文；bidirectional  prose 出现裸 SKILL.md:356（本包只有 206 行，按裸路径不可解），见 addressing_defects[AD-02]。"
+      },
+      {
+        "id": "LE-IF-05",
+        "peer": "genre-fiction-craft",
+        "status": "not_proven",
+        "provider_ref": "../genre-fiction-craft/SKILL.md:3、SKILL.md:28（brief 登记）",
+        "consumer_ref": "SKILL.md:11、SKILL.md:41、SKILL.md:188、references/zh-sentence-and-wording.md:165、references/zh-sentence-and-wording.md:184",
+        "peer_tree_sha256": "54fa79055b78db1205da722cb69c2c02356451a54c2a36c1f3ca5146355c32e6",
+        "record_ref": {"path": "notes/quality/line-editing-and-proofreading/brief.json", "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"},
+        "note": "本包侧接收/转出与「先题材约束再通用手法」的分配行在位（SKILL.md:188），题材固定说法不一律清除有承载行（zh-sentence-and-wording.md:184）。只有两个对端锚且指向对端 SKILL.md，未独立回读。并发提醒：该对端包在本席复核期间被作者席改过（101 件不变，字节 1053170→1057703，树摘要 59ffd6ab…→54fa7905…，tsv 于 19:52 重生成并同步），本字段记的是收口时刻的实测值；若对端 SKILL.md:3/:28 两行内容随该次改动变化，GQ3 的这条须由有对端读取权限的席位重跑。"
+      },
+      {
+        "id": "LE-IF-06",
+        "peer": "cross-media-drama-adaptation",
+        "status": "not_proven",
+        "provider_ref": "../cross-media-drama-adaptation/SKILL.md:3、SKILL.md:38、SKILL.md:191、references/interactive-adaptation.md:91（brief 登记）",
+        "consumer_ref": "SKILL.md:27、SKILL.md:41、SKILL.md:163、SKILL.md:204、references/zh-sentence-and-wording.md:41、references/en-paragraph-and-emphasis.md:54",
+        "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+        "record_ref": {"path": "notes/quality/line-editing-and-proofreading/brief.json", "sha256": "9d29bd3cfe72950bce48c26b7fcbb50b3c734bee22b0756c43b1d782c89514ef"},
+        "note": "本包侧三个不改（选择逻辑／状态条件／分支结果）与剧本分段例外均成文（SKILL.md:204、zh-sentence-and-wording.md:41、en-paragraph-and-emphasis.md:54），是本包唯一把让渡范围写到不变量级的接口行。prose 里裸对端锚出现 6 次（含 SKILL.md:191、SKILL.md:38），按裸路径解析落到本包空行/异义行，见 addressing_defects[AD-02]。"
+      }
+    ],
+    "applicability": [
+      {
+        "id": "LE-AP-01",
+        "status": "pass",
+        "scope": "宿主任务规定了输出格式时的交付形态、表格字段与状态词选择。",
+        "limitation": "本包表格与字段只在未规定时使用；宿主字段是否被加载与采用以宿主实际行为为准，成品未写「宿主取值映射」，与内部四词＋未知的衔接留空（GAP-09 未闭合）。",
+        "counterexample": "宿主自带状态列时两套取值并存：SKILL.md:152 允许台账状态列用「未知」，而四词表（:145–:150）不含它；workflow.md:25 把五值写进同一格——让渡后取哪套无声明行。",
+        "ref": ["SKILL.md:47", "SKILL.md:135", "SKILL.md:143", "agents/openai.yaml:1", "agents/openai.yaml:2"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/agents/openai.yaml", "sha256": "5e53e76472ffa167931cff779e5699ae482b1dc50e2308a956b9a72d20295d00"}
+      },
+      {
+        "id": "LE-AP-02",
+        "status": "pass",
+        "scope": "非叙事文本（说明、论辩、报告、评论、摘要、网页与屏幕文字、技术写作）与中文说明性段落。",
+        "limitation": "英文族显式覆盖并区分技术写作「结论先行」；中文族以小说叙述为主语境，只有说明性段落才默认主题句；合同、法律、技术文本的精确限定与范围词不得当冗词删。",
+        "counterexample": "en-word-choice-and-concision.md:12 明确「不删到论点失去证据或反例」；en-paragraph-and-emphasis.md:10 明确小说段不必有显式主题句——两读相反的实例各归一族。",
+        "ref": ["references/en-paragraph-and-emphasis.md:8", "references/en-paragraph-and-emphasis.md:10", "references/en-paragraph-and-emphasis.md:21", "references/en-paragraph-and-emphasis.md:80", "references/en-sentence-revision.md:56", "references/en-sentence-revision.md:113", "references/en-word-choice-and-concision.md:12", "references/en-word-choice-and-concision.md:23", "references/zh-sentence-and-wording.md:27", "references/workflow.md:39"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/references/en-paragraph-and-emphasis.md", "sha256": "5b44cc01dd71c962dbad15d41134ee05c055198a30566af6345d25697c621f9c"}
+      },
+      {
+        "id": "LE-AP-03",
+        "status": "pass",
+        "scope": "中文稿上不适用的英文结构规则族（时态、冠词、主谓一致、插入语逗号与限制性从句、历史用法）。",
+        "limitation": "替代检查写明为时间标记（了、着、过＋时间词）是否让读者弄错先后；视角与叙述距离属对端职责，本包只在英文代词与专名取舍时把它当考虑因素。",
+        "counterexample": "zh-sentence-and-wording.md:202–:205 逐条列出「中文不适用」的四族规则并给出替代；en-sentence-revision.md:45 反向限定「重复专名并非总比代词好，节奏和视角距离也要考虑」，两向都不越界改视角。",
+        "ref": ["references/zh-sentence-and-wording.md:200", "references/zh-sentence-and-wording.md:202", "references/zh-sentence-and-wording.md:203", "references/zh-sentence-and-wording.md:204", "references/zh-sentence-and-wording.md:205", "references/en-sentence-revision.md:45", "SKILL.md:201", "SKILL.md:202"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-sentence-and-wording.md", "sha256": "3e0f3a037d0604b3677092a88dee3a687a65f192aa6c8f8943f9352fc0ddb1f6"}
+      },
+      {
+        "id": "LE-AP-04",
+        "status": "pass",
+        "scope": "中英混排稿：语言判定、半全角分工、英文引文与专名不改、体例表的外文项。",
+        "limitation": "先判语言再路由，英文稿走四份英文参考文件；混排时中文部分按中文规则，英文引文内部标点按英文。",
+        "counterexample": "zh-mechanics.md:141 体例表把「外文与字母＝半角」列为独立可填项，未填时按稿内多数——与 SKILL.md:49 的「英文引文和专名不改」构成同一规则的两向证据。",
+        "ref": ["SKILL.md:49", "SKILL.md:110", "references/zh-mechanics.md:18", "references/zh-mechanics.md:141", "references/zh-sentence-and-wording.md:3"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-mechanics.md", "sha256": "cb4e288085345826cf12d6cf51e29e5608b446a8f97b0d15d2697cf2257c8641"}
+      },
+      {
+        "id": "LE-AP-05",
+        "status": "pass",
+        "scope": "不适用即停的七类范围（无正文或只一句、打分评级、批量自动替换、裁定唯一正确、预设卡与三轴审章、外部事实核实、整段重写未授权、作者保留的口语方言意识流与实验文体）。",
+        "limitation": "判定顺序先判负触发再定接不接；任一判不出就停在问题清单不开始改。",
+        "counterexample": "SKILL.md:29 与 workflow.md:134 把「批量替换」限定为只对确定的错别字和标点做且须先列清单——即在同一出口内给出可用子集，未写成整单拒绝。",
+        "ref": ["SKILL.md:15", "SKILL.md:27", "SKILL.md:28", "SKILL.md:29", "SKILL.md:30", "SKILL.md:31", "SKILL.md:32", "SKILL.md:33", "references/workflow.md:100", "references/workflow.md:121", "references/workflow.md:134"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/references/workflow.md", "sha256": "f7f33643faf936ab6f31b87cd48e90e843e7d42fc7e1f4d3ff0ad5f54a1a138e"}
+      },
+      {
+        "id": "LE-AP-06",
+        "status": "not_proven",
+        "scope": "语言与范围前提：面向中文与英文小说、散文；规则族只有 SR 中文族与 EN 英文族两套。",
+        "limitation": "正面声明成文（SKILL.md:3、agents/openai.yaml:5、SKILL.md:76）；「其他语种不适用／第三语种混排怎么办」在成品内没有声明行，只有本席与 brief 的实测缺席推断（全包编号 56 个全属 SR／EN 两族）。",
+        "counterexample": "找不到反例也找不到支持行：SKILL.md:49 的语言判定只给「中文还是英文」两分支，未写「两者都不是」时的出口；宿主语言与目标读者未给时按 :49/:56 处理，不另立体例，同样不覆盖第三语种。",
+        "ref": ["SKILL.md:3", "SKILL.md:49", "SKILL.md:56", "SKILL.md:76", "agents/openai.yaml:5"],
+        "record_ref": {"path": "output/line-editing-and-proofreading/SKILL.md", "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436"}
+      }
+    ],
+    "cases": [
+      {"id": "LE-T1", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/SKILL.md", "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436"}, "note": "无 anchors 的骨架 4 条之一，本席补位：三件事 SKILL.md:51–:59；分层改 SKILL.md:63–:72；交付改后文本＋逐条说明 SKILL.md:137/:138；保留口吻 :57/:33。静态对应成立，未执行。"},
+      {"id": "LE-T2", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/workflow.md", "sha256": "f7f33643faf936ab6f31b87cd48e90e843e7d42fc7e1f4d3ff0ad5f54a1a138e"}, "note": "先要正文（SKILL.md:28、workflow.md:127）；不回话按最小改动并列假设（SKILL.md:167、workflow.md:79）。静态对应成立，未执行。"},
+      {"id": "LE-T3", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/examples/worked-example.md", "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65"}, "note": "先判负触发（SKILL.md:15、workflow.md:100）；口语与意识流不改（SKILL.md:33、:161）；冲突列给作者（SKILL.md:162、worked-example.md:87/:95 演示同一冲突的两版与裁决归属）。静态对应成立。"},
+      {"id": "LE-T4", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/en-mechanics-and-punctuation.md", "sha256": "83495655a3da1ce37d0ca8851ee744194ccc2d18ec8534f2803618632c43b362"}, "note": "只做机械层不碰风格：SKILL.md:55（作者划更窄范围）、workflow.md:13（轻校对只做第 5 轮）、EN-09 拼写与 EN-01/EN-07 标点有承载；对白分段按 EN-21（en-paragraph-and-emphasis.md:49）只做格式不做内容。静态对应成立。"},
+      {"id": "LE-T5", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-mechanics.md", "sha256": "cb4e288085345826cf12d6cf51e29e5608b446a8f97b0d15d2697cf2257c8641"}, "note": "四个锚逐行支撑：SKILL.md:49 语言判定、SKILL.md:56 人名专名不适用稿内多数、zh-mechanics.md:18 半角与英文引文内部标点、:141 体例表「外文与字母：半角」项。"},
+      {"id": "LE-T6", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/workflow.md", "sha256": "f7f33643faf936ab6f31b87cd48e90e843e7d42fc7e1f4d3ff0ad5f54a1a138e"}, "note": "停在第 5 轮并说明跳轮（SKILL.md:71、workflow.md:67/:13）；外部体例只改「同一类写法选哪种」（zh-mechanics.md:7）；体例不同单列不算错误（workflow.md:72）；人名专名由作者裁决（zh-mechanics.md:143）。全部承载行在位。"},
+      {"id": "LE-T7", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-sentence-and-wording.md", "sha256": "3e0f3a037d0604b3677092a88dee3a687a65f192aa6c8f8943f9352fc0ddb1f6"}, "note": "体例分歧出口（SKILL.md:164、workflow.md:132、zh-mechanics.md:143）；术语由作者裁决不按稿内多数改（SKILL.md:56）；不碰区未划出时声口三问自判、判不清只列建议（zh-sentence-and-wording.md:10/:14）；确定错误照改（SKILL.md:59）。"},
+      {"id": "LE-T8", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/examples/worked-example.md", "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65"}, "note": "视角与信息不在句子层（SKILL.md:27、workflow.md:102）；该处转对端并停在待作者决定（SKILL.md:39/:163/:202）；只暂停这一项其余照做（workflow.md:91）；同型场景在 worked-example.md:92 有逐行演示。"},
+      {"id": "LE-T9", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/en-sentence-revision.md", "sha256": "72cb28da61222ddb138d03ad3f6120e45fce79d25078772d63aaf6efc442ca02"}, "note": "批量替换只限确定错误并先列清单（SKILL.md:29/:165、workflow.md:134）；连接词重复按 SR-08／EN-38 只换几句（SKILL.md:92、en-sentence-revision.md:129「没有固定的词数或句数阈值」）；写盘需授权、只交文本与清单（workflow.md:9、agents/openai.yaml:2）；全稿统一由作者裁决（SKILL.md:108）。"},
+      {"id": "LE-T10", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/en-word-choice-and-concision.md", "sha256": "ffcdd31e12ef23acfd88c25f3ced80a0a5b77359290b287bc36e6af5109bc6aa"}, "note": "「只有一句」出口（SKILL.md:139、workflow.md:128）；变体与语域不静默替换（en-mechanics-and-punctuation.md:93 英式美式冲突列两版、en-word-choice-and-concision.md:78 两种用法成立即标未能核实停待作者决定）；口吻属人物声音转对端（SKILL.md:202）。锚点全部在位且承载。"},
+      {"id": "LE-T11", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/SKILL.md", "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436"}, "note": "产物是卡一律转出（SKILL.md:30/:166/:183/:192），本包不落卡格式；同批正文留本包照做（:193 接收行＋:100 套话整句重写）。六个锚全为承载行。"},
+      {"id": "LE-T12", "status": "pass", "mode": "synthetic", "record_ref": {"path": "output/line-editing-and-proofreading/references/en-sentence-revision.md", "sha256": "72cb28da61222ddb138d03ad3f6120e45fce79d25078772d63aaf6efc442ca02"}, "note": "事实核查出口（SKILL.md:32/:42/:172、workflow.md:133）＋语言层照做（:59）＋不得为显得可信把待核断言改得更肯定：结构化锚 en-sentence-revision.md:34（EN-13「不要为更积极把不确定性改成确定事实」）支撑，expected 里另写的 en-word-choice-and-concision.md:34 是固定冗语表数据行、不承载该声称，判为引用串写错文件，见 addressing_defects[AD-01]。ID 状态按锚点计 pass。"}
+    ]
+  },
+  "semantics": [
+    {
+      "id": "S-01",
+      "status": "fail",
+      "gq": "GQ2",
+      "claim": "逐编号台账的「一编号一行」口径",
+      "refs": ["output/line-editing-and-proofreading/references/workflow.md:21", "output/line-editing-and-proofreading/references/workflow.md:27", "output/line-editing-and-proofreading/examples/worked-example.md:109", "output/line-editing-and-proofreading/examples/worked-example.md:110"],
+      "record_ref": {"path": "output/line-editing-and-proofreading/examples/worked-example.md", "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65"},
+      "verbatim_a": "references/workflow.md:21 → 「4. 需要逐条审阅时建台账。**每个编号独占一行**，三列齐全，允许填「未知」：」；references/workflow.md:27 → 「   - 编号与规则一一对应，不合为一行；三列每行都在。」",
+      "verbatim_b": "examples/worked-example.md:109 → 「| SR-10 | 第 1 段「……的时候」冗余，删 | 已完成 | 第 1 段第 1 句 |」；examples/worked-example.md:110 → 「| SR-10 | 「嘟囔了一句」压缩为「嘟囔道」 | 已完成 | 第 1 段第 2 句 |」",
+      "conflict_or_reading": "按字面读，规范示例违反自身措辞（同一编号 SR-10 占两行）；按「一编号一待办」读，则 :21/:27 的措辞需要改写。成品内没有任何一行说明取哪种读法，示例又恰好是交付模板的唯一填好的样例（workflow.md:31 指向它），故两处真实文本互斥且无归口，静态即可判不自洽。",
+      "counterexample": "若按 :21 实现，例三台账须把 SR-10 两待办并为一行，而这会破坏「每行四列齐全」的样例形态；若按示例实现，「每个编号独占一行」变成不成立承诺。两个方向都不能同时满足，属需作者／归口裁决项，不由本席裁决。"
+    },
+    {
+      "id": "S-02",
+      "status": "fail",
+      "gq": "GQ2",
+      "claim": "逐条交付物的列名集合",
+      "refs": ["output/line-editing-and-proofreading/SKILL.md:138", "output/line-editing-and-proofreading/references/workflow.md:77", "output/line-editing-and-proofreading/examples/worked-example.md:25", "output/line-editing-and-proofreading/examples/worked-example.md:119"],
+      "record_ref": {"path": "output/line-editing-and-proofreading/references/workflow.md", "sha256": "f7f33643faf936ab6f31b87cd48e90e843e7d42fc7e1f4d3ff0ad5f54a1a138e"},
+      "verbatim_a": "SKILL.md:138 → 「- **要求审阅的**（“看看哪里有问题”）：逐条列出 `位置 | 原文 | 改后 | 依据 | 风险或需作者确认`。」；references/workflow.md:77 → 「2. 改动清单每条写：`位置 | 原文 | 改后 | 理由`。」",
+      "verbatim_b": "examples/worked-example.md:25（与 :63 同）→ 「| 位置 | 问题 | 改法 | 依据 | 风险或需作者确认 |」；examples/worked-example.md:119 → 「每条修改写「位置 | 原文 | 改后 | 依据 | 复查」」",
+      "conflict_or_reading": "同一「逐条清单」族在成品内有四套列名（5 列两套、4 列一套、内联一套），SKILL.md:125 的路由表与各轮步骤都未声明哪套用于改稿附说明、哪套用于审阅或誊清。四套之间不是纯粹的同义改写（「依据」对「理由」、末列「风险或需作者确认」对「复查」会改变交付物必填项），因此按任一实现都会违反另一处措辞。",
+      "counterexample": "例一与例二用「问题｜改法」两列名给出示范（worked-example.md:25、:63），而 SKILL.md:138 规定的是「原文｜改后」；照 SKILL.md 做的作者无法产出与包内示范同形的清单。"
+    },
+    {
+      "id": "S-03",
+      "status": "pass",
+      "gq": "GQ2",
+      "claim": "国家标准通行要点 vs 出版社／平台体例优先（是否互相否定）",
+      "refs": ["output/line-editing-and-proofreading/references/zh-mechanics.md:7", "output/line-editing-and-proofreading/references/zh-mechanics.md:9", "output/line-editing-and-proofreading/SKILL.md:102", "output/line-editing-and-proofreading/references/workflow.md:72"],
+      "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-mechanics.md", "sha256": "cb4e288085345826cf12d6cf51e29e5608b446a8f97b0d15d2697cf2257c8641"},
+      "verbatim_a": "references/zh-mechanics.md:7 → 「**依据**：标点按国家标准 GB/T 15834-2011（标点符号用法），数字按国家标准 GB/T 15835-2011（出版物上数字用法）……出版社或平台有自己的体例时，以它们为准；让渡只到体例层——外部体例改变“同一类写法选哪种”，不覆盖错别字、引文原貌和事实、专业含义方面的错误。」",
+      "verbatim_b": "SKILL.md:102 → 「**SR-13 标点按国家标准（GB/T 15834-2011）。** 中文用全角标点……」；references/workflow.md:72 → 「4. 把“只是体例不同”的项单独列出，不算作错误。」",
+      "conflict_or_reading": "两两读来像冲突（国标 vs 体例优先），实际由同句的让渡范围限定消解：外部体例只覆盖选择层，错误层不让渡；:9 的「先分清错误和体例差异」＋workflow.md:72 的分单列规定给出执行落点。复验：三处措辞一致，无剩余矛盾。",
+      "counterexample": "若删掉「让渡只到体例层」这半句，zh-mechanics.md:7 与 SKILL.md:102 会真的互斥（作者体例可推翻标点规范）；该半句是解冲突的唯一承载，属需保留的关键限定。"
+    },
+    {
+      "id": "S-04",
+      "status": "pass",
+      "gq": "GQ2",
+      "claim": "交付只用四词 vs 台账状态列出现五值",
+      "refs": ["output/line-editing-and-proofreading/SKILL.md:143", "output/line-editing-and-proofreading/SKILL.md:152", "output/line-editing-and-proofreading/references/workflow.md:25", "output/line-editing-and-proofreading/examples/worked-example.md:115"],
+      "record_ref": {"path": "output/line-editing-and-proofreading/references/workflow.md", "sha256": "f7f33643faf936ab6f31b87cd48e90e843e7d42fc7e1f4d3ff0ad5f54a1a138e"},
+      "verbatim_a": "SKILL.md:143 → 「对作者交付只用这四个词，逐项给依据，不写审计词或状态码：」；SKILL.md:152 → 「四词也用于逐条台账的「状态」列；「未知」是那一列的合法值，但不得把未知写成已完成。」",
+      "verbatim_b": "references/workflow.md:25 → 「   | `<规则编号，如 SR-10 / EN-27>` | `<这一项的值或待办>` | 已完成 / 依据 / 未能核实 / 待作者决定 / 未知 | `<当前稿件内可核位置，如「第 1 段第 2 句」；无则填「未知」>` |」；examples/worked-example.md:115 → 「| SR-16 | 作者是否已选定 A／B 版 | 未知 | 未知 |」",
+      "conflict_or_reading": "五值只出现在台账的「状态」列且由 SKILL.md:152 显式授权，交付叙述仍限四词（例三第 6 步 :134–:141 只用四词，:141 另声明不写状态码与分档说法）。复验结论：不构成矛盾；GAP-09 登记的宿主格式取值映射空白是未写而非互斥。",
+      "counterexample": "若宿主自带状态列且只允许两值，本包四词＋未知无处映射；成品未写这一映射，属剩余项不是自洽缺陷。"
+    },
+    {
+      "id": "S-05",
+      "status": "not_proven",
+      "gq": "GQ2",
+      "claim": "SR-13 引号条款的适用对象（用户稿件 vs 本包文档自身写法）",
+      "refs": ["output/line-editing-and-proofreading/references/zh-mechanics.md:22", "output/line-editing-and-proofreading/references/zh-mechanics.md:66", "output/line-editing-and-proofreading/SKILL.md:152", "output/line-editing-and-proofreading/references/workflow.md:28"],
+      "record_ref": {"path": "output/line-editing-and-proofreading/references/zh-mechanics.md", "sha256": "cb4e288085345826cf12d6cf51e29e5608b446a8f97b0d15d2697cf2257c8641"},
+      "verbatim_a": "references/zh-mechanics.md:22 → 「- 用“”，引号里再引用时用‘’。不用「」『』，除非全稿体例如此。」；references/zh-mechanics.md:66 → 「- 间隔号用于外国人名、少数民族人名内部的分界，例如自拟的音译人名“玛丽亚·罗西”。」",
+      "verbatim_b": "SKILL.md:152 → 「四词也用于逐条台账的「状态」列；「未知」是那一列的合法值……」；references/workflow.md:28 → 「   - 「未知」是合法值，但不得把未知写成已完成。」",
+      "conflict_or_reading": "本包文档自身大量用「」作术语标签（SKILL.md 25 处、worked-example.md 31 处、四份英文参考各 17–29 处），而 zh-mechanics.md:22 把「」写成稿件侧禁用形制。把条款读成「只约束用户稿件」则无冲突，但成品没有任何一行写下这个适用范围；本席不能替作者补定，故记 not_proven（连同本轮 :66 的引号形制改动落在同一文件，见 findings[F-07]）。",
+      "counterexample": "SKILL.md:138 用反引号内联的形式给出列名、而 :152 用「」标注同一类标签，两种引用形制在同一文件内并存且都无适用说明；读者若把 SR-13 当作文档自身的排版约束，就会判成品自相矛盾。"
+    }
+  ],
+  "anchor_census": {
+    "unit": "brief 五组内每个 (ID, 字段, 可解析引用串) 证据位；含 anchors／peer_anchors／counterexample_ref／limit 内联／text·status·expected·fields·bidirectional·missing_field_branch 内联；不含 gaps[] 的登记串",
+    "total_slots": 820,
+    "in_package_adjudicated": 748,
+    "supported": 553,
+    "partial_support": 194,
+    "unsupported": 1,
+    "cross_package_deferred": 72,
+    "tier_definitions": {
+      "supported": "该行本身即承载所声称的内容（规则条款行、不用／出口／反例数据行、表数据行、负触发行等）。",
+      "partial_support": "该行在位且相关，但只以结构身份代表其下整块内容：章节与规则标题行（180 处，含 ## EN-xx、### 全角与半角、**SR-xx** 定义行等）、GFM 表头与分隔行（代表其下整表）、文件级路由表行（代表整份参考文件）；另有 counterexample_ref 落在表头的 3 处与内联 11 处。",
+      "unsupported": "按人工判读，1 处：LE-T12 的 expected 内联 en-word-choice-and-concision.md:34 指向固定冗语表的「条件强度」数据行，不承载所挂的声称（应为同 ID 锚点里的 en-sentence-revision.md:34）。机械档另有 2 处落空行（SKILL.md:46、SKILL.md:54），实为未加 ../peer/ 前缀的对端引用，已并入跨包档，不记作成品缺陷。"
+    },
+    "cross_package_deferred_breakdown": "peer_anchors 数组 37 位（六个接口的结构化对端锚，12 个目标文件全部实测存在）＋ prose 内裸对端引用 33 位（六个接口各 3–7 处）＝70；再加上述 2 个落空行的裸对端引用＝72。本席无对端正文读取权限，这 72 位一律不判支撑与否。",
+    "unsupported_detail": [
+      {
+        "id": "LE-T12",
+        "ref": "output/line-editing-and-proofreading/references/en-word-choice-and-concision.md:34",
+        "verbatim": "| `in the event that` | `if` | 条件强度有没有改变 |",
+        "why": "该行的声称对象是条件强度是否改变，与 expected 里「不得为显得可信把待核断言改成更肯定的说法」不同一；同一 expected 的正确承载行是本 ID 已登记的另一锚 references/en-sentence-revision.md:34「……不要为「更积极」把不确定性改成确定事实……」。"
+      }
+    ],
+    "positive_checks": "320 条锚点之外本席另取 820 证据位全量：本包可解析的 748 位无越界、无指向不存在文件、无空行；brief.artifact_inventory 的逐件行数（206/8/147/133/98/133/96/134/143/205）与 wc -l、grep -c '' 两路实测全等，合计 1303；相对链接 8 条全部解析成功、0 断链。"
+  },
+  "addressing_defects": [
+    {
+      "id": "AD-01",
+      "kind": "wrong_file_inline_citation",
+      "where": "notes/quality/line-editing-and-proofreading/brief.json → sections.cases[LE-T12].expected",
+      "defect": "内联串 en-word-choice-and-concision.md:34 与同 ID 的结构化锚 references/en-sentence-revision.md:34 指向两个不同文件；34 号在 word-choice 里是固定冗语表数据行，不支撑该句声称。",
+      "verbatim": "「……不得为显得可信把待核断言改成更肯定的说法（SKILL.md:173、en-word-choice-and-concision.md:34）」",
+      "correction": "文件名应为 en-sentence-revision.md；成品侧无需改动，改 brief 的引用串即可。严重度中（不影响成品，影响复核可追性）。"
+    },
+    {
+      "id": "AD-02",
+      "kind": "bare_cross_package_anchor_in_prose",
+      "where": "brief.json → interfaces[LE-IF-01…06] 的 fields／bidirectional／missing_field_branch",
+      "defect": "33 处对端行引用写成裸 SKILL.md:NN 或裸 references/<对端专有名>.md:NN，未带 peer_anchors 数组里那种 ../<peer>/ 前缀。其中 21 处的编号在本包 SKILL.md 里也存在且内容不同（例如「对端 SKILL.md:28」vs 本包 SKILL.md:28「只要梗概或只给一句、却要求逐条改稿」；「对端 SKILL.md:39」vs 本包 SKILL.md:39「人物、视角越界……转 character-and-narrative-control」），4 处（SKILL.md:26、:46、:54、:191）按裸路径解析落到本包空行，10 处的 references/ 文件名在本包不存在（diagnosis.md、rhythm-diagnosis.md、self-check-language.md、self-check-diagnosis.md、self-check-modern-and-zh.md、interactive-adaptation.md）。",
+      "verbatim": "例：LE-IF-01.bidirectional「本包 SKILL.md:39 转出行 ↔ 对端 SKILL.md:28、SKILL.md:46 接收行」；LE-IF-04.bidirectional「↔ 对端 SKILL.md:31 归属表行与对端 SKILL.md:356『本 Skill 给出结构与内容层面的修订目标，不替代逐句编辑』」",
+      "correction": "靠「对端」二字与 peer 字段仍可解址，故非断链；但同名字文件＋纯数字的形式会让自动核锚与后续读者静默命中错误行。建议 prose 统一补 ../<peer>/ 前缀（与 peer_anchors 一致）。严重度中。"
+    },
+    {
+      "id": "AD-03",
+      "kind": "gap_id_misreference",
+      "where": "brief.json → requirements[LQ-R09].status、requirements[LQ-R14].status",
+      "defect": "交叉编号错位 3 处：LQ-R09 写「见 GAP-02」（表列名与逐条清单列名不一致实际登记在 GAP-04，GAP-02 是 zh-mechanics.md:17 空括号）；LQ-R14 写「『每个编号独占一行』与例三同号两行并存，见 GAP-03」（实为 GAP-05）与「台账列名与改动清单列名口径不一，见 GAP-02」（实为 GAP-04）。",
+      "verbatim": "LQ-R14.status → 「部分成文（「每个编号独占一行」与例三同号两行并存，见 GAP-03；台账列名与改动清单列名口径不一，见 GAP-02）」",
+      "correction": "所描述的两个事实本身经本席复验为真（S-01、S-02），只是指向错条目。严重度低—中（brief 侧，不改成品）。"
+    },
+    {
+      "id": "AD-04",
+      "kind": "brief_stale_against_bound_tree",
+      "where": "brief.json → artifact_inventory.rule_id_universe.other_id_like_tokens、gaps[GAP-03]",
+      "defect": "两处登记 references/en-word-choice-and-concision.md:60 含非 SR/EN 形态编号「L-2」并称全包唯一。本轮按绑定树实测：全包 L-2 与 L0／L1／L3／L4 均 0 命中（/usr/bin/grep -rn 'L-2|L0|L1|L3|L4' 退出码 1），:60 现为「**示范（自创）**：」。即 brief 的这两条登记相对它所绑定的树（63d89e5f…）已过期。",
+      "verbatim": "GAP-03.fact → 「全包另见 1 处孤立 token：en-word-choice-and-concision.md:60 的「示范（自创，L-2）」，全包仅此一次出现，包内无 L-2 定义」",
+      "correction": "GAP-03 的处置建议（改写说法或补定义）已按前半在成品侧落实，登记应改为「已落实、留档」而不是继续挂孤立 token。严重度中（属 brief 与树的同步问题，不属成品缺陷）。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-01", "gq": "GQ2", "severity": "medium", "ids": ["LQ-R14", "LE-C03"],
+      "finding": "台账「每个编号独占一行」与包内唯一填好的样例（SR-10 占两行）互斥，且 workflow.md:31 明确把该样例当填法参照。属口径裁决项：需要归口方定「一编号一行」还是「一待办一行」，再决定改措辞还是改样例。本席不裁决、不修正品。"
+    },
+    {
+      "id": "F-02", "gq": "GQ2", "severity": "medium", "ids": ["LQ-R14", "LQ-R15"],
+      "finding": "逐条交付物四套列名并存且无归口行（SKILL.md:138 五列、workflow.md:77 四列、worked-example.md:25/:63 问题｜改法形、worked-example.md:119 末列「复查」形）。与套件合同第三节「三列齐全／编号独占一行」的要求叠加时，作者无法判断交付该产哪套表头。建议归口方先定「一种清单一种列名」的对应关系。"
+    },
+    {
+      "id": "F-03", "gq": "GQ4", "severity": "low", "ids": ["LE-AP-06"],
+      "finding": "「其他语种不适用」只有实测缺席支撑（全包 56 个编号 100% 属 SR／EN 两族，无第三条族），成品内没有声明行，SKILL.md:49 的语言判定也只给两分支、未给第三语种出口。brief 的 groups_not_complete 已自述这一点，本席复验为真，故记 not_proven 而非 fail。"
+    },
+    {
+      "id": "F-04", "gq": "GQ2", "severity": "low", "ids": ["S-05"],
+      "finding": "SR-13 的「不用「」『』」条款与本包文档自身的标签写法（SKILL.md 25 处、worked-example.md 31 处、四份英文参考各 17–29 处）之间，缺一行适用对象说明。:22 的「除非全稿体例如此」能兜住稿件侧，兜不住「本包文档算不算全稿」这一读法。属可补一句即闭合的文档歧义，非规则冲突。"
+    },
+    {
+      "id": "F-05", "gq": "GQ1", "severity": "info", "ids": ["LQ-R10", "LQ-R11", "LE-C04", "LE-C07"],
+      "finding": "brief GAP-06 的入口颗粒度登记经复验为真：13 个 EN 编号只出现在自己的定义文件里（EN-02/03/06/08/09/13/19/22/28/30/36/37/39，与 GAP-06 名单全等），其中 EN-13、EN-19、EN-22、EN-28、EN-30 五个在六轮表与路由表里只有文件级入口、无逐编号点名。不判不可达（§6 表与 §7 表都指向含该编号的文件），保持原处置。"
+    },
+    {
+      "id": "F-06", "gq": "GQ4", "severity": "info", "ids": ["LQ-R06", "LQ-R08", "LE-C05"],
+      "finding": "专项一结论：zh-mechanics.md:7 与 SKILL.md:102、SKILL.md:106 共 4 处 GB/T 15834-2011／15835-2011 标准号保留。判据落档＝suite-contract §4.2bis 对附录 B 的补档第 2 条新增标准号形态 GB/?T? ?[0-9]{4,6} ?- ?[0-9]{4}（2b）；本席实测原表 2b 的两条子模式（PG 形态与 (\\|[^A-Za-z0-9])-?[0-9]{3,5}）对 15834-2011 不命中，与 §4.2bis 「现 2b 对 15834-2011 实测不命中」一致；而 2b 在 §4.2bis 的覆盖诚实线里属 13 条「检测有效性未证」之一，未证档不得写成零违规，B.2 现有允许类也没有「外部国家标准号」这一类。故这四处落在「补档新命中＋需配套 B.2 例外」的登记裁决档（已登记 W4-96／W4-102 交作者），不构成成品质量缺陷，本席不据此判任何 ID 为 fail。去掉标准号的损失：SR-13 与 SR-15 的规则名和「依据」句失去版本锚定（15834 管标点、15835 管数字，两条依据不同，去号后会同化为一个无名来源）；zh-mechanics.md:7 后半「没有逐条对照标准原文」的未核面（GAP-08）失去对象，无法说明未核的是哪一版；「出版社或平台体例优先、让渡只到体例层」也失去让渡参照物（见 S-03 的 counterexample）。"
+    },
+    {
+      "id": "F-07", "gq": "GQ2", "severity": "low", "ids": ["LQ-R12", "LE-C07", "LQ-R06", "LE-C05"],
+      "finding": "专项二结论（本轮两处改动）：(1) en-word-choice-and-concision.md:60 现为「**示范（自创）**：」，内部编号后缀已全包清零（AD-04）。改动后语义完整：:58 反例结尾的「见下示范」直接指向 :60，:62–:65 的输入／不合格改法／合格改法／「具体化不能补写事实」四段俱在，EN-27 的示范功能与出口条款（:67）未受影响。(2) zh-mechanics.md:66 现为「例如自拟的音译人名“玛丽亚·罗西”」，引号形制与该文件 :22 规定的稿件侧形制一致，句子主干（间隔号用于外国人名、少数民族人名内部分界）完整，示例仍是自创、无来源人名。两处都没把自创标记变成新负担：全包 0 个模板字段或交付列要求回填「示范（自创）」/「自拟」，作者侧无新增必填项。附带两条一致性观察（低severity，不建议为此再改文件）：同一英文文件内 :60 用（自创）而 :62–:64 用（自拟）；10 件里 6 件有整件级自创声明（四份英文参考＋zh-sentence-and-wording.md:6＋worked-example.md:3），zh-mechanics.md 是唯一含示例却无声明行的文件，其去来源职责全部压在 :66 一处，workflow.md 无声明但也不需要（该文件不含例句）。"
+    },
+    {
+      "id": "F-08", "gq": "GQ4", "severity": "info", "ids": ["LQ-R06", "LE-C05"],
+      "finding": "brief GAP-01／GAP-02 的两处扫描命中复验为真且例外成立：附录 B #6 英文原句模式（含 §4.2bis 改后的 \"“ 起点字符集）全包实测 1 处，即 en-mechanics-and-punctuation.md:92 的 EN-08 自拟例，与同规则反例行 :90、整件声明行 :5 同族；「（）」空括号形态全包实测 1 处，即 zh-mechanics.md:17 被列举的全角符号本身。两处均属「主题语言与例句语言一致／符号用法列举」允许类，不改成品，维持 brief 的处置建议。"
+    },
+    {
+      "id": "F-09", "gq": "GQ1", "severity": "info", "ids": ["LE-C01", "LE-C05", "LE-C07", "LE-C08"],
+      "finding": "去来源与措辞禁口的本包实测：审计词（NOT_PROVEN／VERIFIED／NOT_RUN／STATIC_CHECKED／DESIGN_EXAMPLE／OBSERVED／GQ1-5／R17／R18／PASS／FAIL 形态）、分档词与禁用说法（夯／拉完了／硬规则／用户明确要求）、改动痕迹（旧版／本版／更正／旧例／原例／融合版／上一版）、包外路径（notes/／results/／/home/／materials/／rounds/）、书名号内内容，全部 0 命中；「没有依据，按作者判断」按合同口径成文于 workflow.md:119。表格分隔行齐备（含 §4.2bis 的 locale 声明：本轮逐类计数均在 LC_ALL=en_US.UTF-8 下取，未走 sort|uniq 并组）。"
+    },
+    {
+      "id": "F-10", "gq": "GQ3", "severity": "medium", "ids": ["LE-IF-01", "LE-IF-02", "LE-IF-03", "LE-IF-04", "LE-IF-05", "LE-IF-06"],
+      "finding": "六条接口的对端半边全部停在未证：本席权限禁读其它包目录，无法对 brief 登记的对端行号做当前内容核对，也不能据「两侧原文」判任一单向声明。已确证的部分：本包侧 35 个锚全部在位且语义相符；六个对端包的树摘要实测并与 tsv 逐条一致（对端树未变动）；12 个 peer_anchors 目标文件存在。若需要闭合 GQ3，须由有对端读取权限的席位重跑，或允许本席按 peer_anchors 逐行回读。"
+    }
+  ],
+  "limits": [
+    "验证权限＝static：全程只读＋检索＋计数＋文本核对＋哈希；未运行任何 tests/lint/typecheck/build/benchmark/smoke，未启动或重启应用，未调用模型执行用例，未做 git 写操作，未用 sed -i／perl -i／> 重定向；本目录只写入本文件一个产物。",
+    "隔离执行范围：只读了 output/line-editing-and-proofreading/ 全部 10 件、notes/quality/line-editing-and-proofreading/brief.json、同目录 review.json.v0-2026-11-05（只当字段模板，其 not_proven 状态与 sha 占位未抄）、notes/suite-contract.md、/tmp/k5-bindings-2026-11-05.tsv。未读本包既有 K4／selfcheck 文件（agent1-s01-*、s01-desourcing-selfcheck.md、brief-draft.json、brief.json.skeleton、既有 review.json）、其它包正文、notes/w4*、notes/operations-contract/*、log.md、checklist.md。",
+    "对端证据的取得方式：六个对端包的树摘要由哈希脚本实测，只回显摘要／件数／字节数，未回显也未读入对端文件名之外的任何正文；peer_anchors 只做存在性检查（os.path.isfile），未取行内容。因此 GQ3 与 LE-C09 的 not_proven 是权限所致，不是成品失败。",
+    "宿主侧未证：LE-C08／LE-AP-01 依赖宿主实际是否加载 agents/openai.yaml 字段与是否规定输出格式，静态不可证；GAP-09 的取值映射空白未闭合。",
+    "外部规范未证：GB/T 15834-2011／15835-2011 的逐条符合性、目标出版方 house style（zh-mechanics.md:7 自述、worked-example.md:73 自述）与项目当代词典依据，均需外部文本与另项授权，本轮未核（GAP-08 保持）。",
+    "用例执行未证：12 条 cases 的 pass 一律指「成品条款覆盖 expected 的静态对应」，其中 LE-T1—T4 原为无锚骨架条，本席补齐了承载行；无一条有运行回执，GQ5 保持 NOT_PROVEN。",
+    "状态档口径：本次共 49 条 ID 判定＝pass 39／fail 1／not_proven 9（requirements 15/1/0，capabilities 7/0/2，interfaces 0/0/6，applicability 5/0/1，cases 12/0/0）；semantics 5 条＝fail 2／pass 2／not_proven 1。fail 只由 GQ2 的两组跨文件互斥驱动，未据标准号（F-06）或 brief 侧缺陷（AD-01…AD-04）降级任何成品 ID。",
+    "并发与时效：/tmp/k5-bindings-2026-11-05.tsv 在本席会话内被重生成过一次（mtime 19:52），genre-fiction-craft 的树摘要与字节随之改变；本席以收口时刻的第二次全量实测为准（本包 63d89e5f…／10 件／114211 B 两次实测相同，brief 9d29bd3c… 相同）。这是共享工作树上的并行写入，不属本包缺陷，但意味着 GQ3 的对端快照有时效性。",
+    "哈希与档判据的可复现性：整树算法与件数字节均按本席约定实测；逐类中文正则计数在 LC_ALL=en_US.UTF-8 下取，未把不同中文匹配串经 sort|uniq 并组。brief 的 74415 B 与其 kind/status（frozen-for-review／adopted-for-review-not-final）本轮未改动。"
+  ],
+  "round_complete": "K5-rv-lineediting"
+}

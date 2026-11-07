@@ -1,0 +1,28 @@
+# kd_workspace_audit.py 原始输出与退出码（W1，D3-C）
+日期：2026-11-04
+命令：python3 kd_workspace_audit.py --workspace /Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/distillation
+工作目录：/Users/aizou/Desktop/工作台/distillation-space/distill-release-chronology/skills/knowledge-compiler/scripts（脚本需要同目录 import kd_round_output / kd_skill_metadata）
+
+## 退出码
+0
+
+## stdout（原始 JSON）
+{
+  "exit_code": 0,
+  "findings": [],
+  "limits": "advisory static check; does not verify actual human approval or task quality",
+  "rounds": [
+    {
+      "name": "round-01-2026-11-04",
+      "status": "进行中"
+    }
+  ],
+  "rounds_active": 1,
+  "rounds_cancelled": 0,
+  "rounds_completed": 0,
+  "rounds_counted": 1,
+  "rounds_total": 1,
+  "status": "PASS"
+}
+
+## stderr（原始）

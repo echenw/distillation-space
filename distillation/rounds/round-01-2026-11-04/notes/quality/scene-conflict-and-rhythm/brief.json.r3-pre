@@ -1,0 +1,1809 @@
+{
+  "version": 1,
+  "kind": "frozen-for-review",
+  "skill": "scene-conflict-and-rhythm",
+  "status": "adopted-for-review-not-final",
+  "assembled_by": "W4 质量 brief 草案席位（scene-conflict-and-rhythm）",
+  "assembled_at": "2026-11-05",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "草案：在五组里补齐真实产物盘点，只写事实与位置，不含通过结论。骨架 brief.json 保持原状未覆盖。anchors 全部以 /usr/bin/grep -Fn 实测命中该行。requirements 的 text 取自 inputs/requirements.md、notes/suite-contract.md 与 R18/R09 条款口径，未逐条回查 v0–v3 git 历史。",
+  "requirements": [
+    {
+      "id": "SQ-R01",
+      "text": "总需求：重点是反例、失败出口、适用条件、模板字段和机制卡（inputs/requirements.md:13）。反例须随机制卡落在包内，读者不必回查包外。",
+      "status": "partial",
+      "anchors": [
+        "SKILL.md:142",
+        "references/intensity-and-rhythm.md:21",
+        "references/suspense-and-reveal.md:17",
+        "references/setup-and-payoff.md:22",
+        "references/chapter-ends-and-endings.md:26",
+        "references/scene-units.md:67",
+        "references/action-and-fight.md:175"
+      ]
+    },
+    {
+      "id": "SQ-R02",
+      "text": "反例与例子一律自创、不与来源案例混同；成品不提来源（inputs/requirements.md:81-82）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:59",
+        "references/intensity-and-rhythm.md:5",
+        "references/suspense-and-reveal.md:5",
+        "references/setup-and-payoff.md:5",
+        "references/chapter-ends-and-endings.md:5",
+        "examples/scene-cases.md:3",
+        "examples/suspense-and-hooks.md:3",
+        "examples/refrain-case.md:3"
+      ]
+    },
+    {
+      "id": "SQ-R03",
+      "text": "每个主要操作要有失败出口与安全收口（R18 §2 Failure 行；notes/suite-contract.md:262 第 3 条）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:262",
+        "SKILL.md:266",
+        "SKILL.md:274",
+        "references/rhythm-diagnosis.md:90",
+        "references/rhythm-diagnosis.md:94"
+      ]
+    },
+    {
+      "id": "SQ-R04",
+      "text": "缺料：没有正文不出定位式诊断，先要正文或改做设计路径（notes/suite-contract.md:217 用例 SC-T2 同口径）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:29",
+        "SKILL.md:56",
+        "SKILL.md:267",
+        "references/rhythm-diagnosis.md:8",
+        "references/rhythm-diagnosis.md:20",
+        "references/scene-and-action-diagnosis.md:44",
+        "references/scene-and-action-diagnosis.md:146",
+        "examples/scene-cases.md:41"
+      ]
+    },
+    {
+      "id": "SQ-R05",
+      "text": "冲突：互斥要求、已锁定内容要列最小冲突集合，给 A/B 两版、由作者裁决、不擅自覆盖（R18 §2d 末段）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:268",
+        "SKILL.md:269",
+        "references/intensity-and-rhythm.md:24",
+        "references/rhythm-diagnosis.md:60",
+        "examples/scene-cases.md:80",
+        "examples/scene-cases.md:110",
+        "examples/scene-cases.md:114"
+      ]
+    },
+    {
+      "id": "SQ-R06",
+      "text": "作者不答或只回「你看着办」时按最小改动并逐条列假设。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:274",
+        "references/intensity-and-rhythm.md:24",
+        "references/rhythm-diagnosis.md:99",
+        "examples/scene-cases.md:116"
+      ]
+    },
+    {
+      "id": "SQ-R07",
+      "text": "停下时写明缺什么、要谁定、补上什么才能继续（SC-14）。",
+      "status": "covered",
+      "anchors": [
+        "references/scene-and-action-diagnosis.md:153",
+        "references/scene-and-action-diagnosis.md:154",
+        "references/scene-and-action-diagnosis.md:155",
+        "references/scene-and-action-diagnosis.md:156",
+        "SKILL.md:105",
+        "SKILL.md:215"
+      ]
+    },
+    {
+      "id": "SQ-R08",
+      "text": "局部转出不整体停摆：只暂停冲突及其依赖，其余照常交付。",
+      "status": "covered",
+      "anchors": [
+        "templates/action-checklist.md:38",
+        "references/scene-and-action-diagnosis.md:136",
+        "SKILL.md:269",
+        "examples/scene-cases.md:114"
+      ]
+    },
+    {
+      "id": "SQ-R09",
+      "text": "规则要自带适用条件、限制和判断边界，不借来源背书（R18 §2b；GQ4）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:142",
+        "references/scene-units.md:18",
+        "references/scene-units.md:100",
+        "references/scene-information-and-space.md:21",
+        "references/scope-and-conflicts.md:37",
+        "references/scope-and-conflicts.md:43"
+      ]
+    },
+    {
+      "id": "SQ-R10",
+      "text": "场景规则在不同体裁与条件下的适用性要成表：短篇、长篇连载、诗、明说寓意、公平解谜、中文口语。",
+      "status": "covered",
+      "anchors": [
+        "references/scope-and-conflicts.md:47",
+        "references/scope-and-conflicts.md:51",
+        "references/scope-and-conflicts.md:52",
+        "references/scope-and-conflicts.md:53",
+        "references/scope-and-conflicts.md:54",
+        "references/scope-and-conflicts.md:55",
+        "references/scope-and-conflicts.md:56"
+      ]
+    },
+    {
+      "id": "SQ-R11",
+      "text": "现实格斗、战术、武器、医学、历史参数不当事实；材料没依据处不编造阈值（inputs/requirements.md:65）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:48",
+        "SKILL.md:244",
+        "SKILL.md:245",
+        "references/scope-and-conflicts.md:62",
+        "references/scope-and-conflicts.md:66",
+        "references/action-and-fight.md:108",
+        "references/scene-and-action-diagnosis.md:116",
+        "templates/action-checklist.md:26"
+      ]
+    },
+    {
+      "id": "SQ-R12",
+      "text": "包内数字（1–5、级数、次数、篇幅）只作相对自评或练习值，不升级为门槛。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:57",
+        "SKILL.md:216",
+        "references/intensity-and-rhythm.md:7",
+        "references/suspense-and-reveal.md:58",
+        "references/rhythm-diagnosis.md:30",
+        "references/scope-and-conflicts.md:41",
+        "templates/scene-workbook.md:51",
+        "templates/scene-workbook.md:55"
+      ]
+    },
+    {
+      "id": "SQ-R13",
+      "text": "硬排除：不把叙事分析变成现实伤害或规避追查方案，不把偏见当现实规律。",
+      "status": "covered",
+      "anchors": [
+        "references/scope-and-conflicts.md:79",
+        "references/scope-and-conflicts.md:81",
+        "references/scope-and-conflicts.md:82",
+        "references/scope-and-conflicts.md:83"
+      ]
+    },
+    {
+      "id": "SQ-R14",
+      "text": "来源个案不得升级为通则；「不写成通用规则的说法」要逐条给出处理。",
+      "status": "covered",
+      "anchors": [
+        "references/scope-and-conflicts.md:85",
+        "references/scope-and-conflicts.md:92",
+        "references/scope-and-conflicts.md:95",
+        "references/scope-and-conflicts.md:39",
+        "examples/scene-cases.md:45",
+        "examples/scene-cases.md:51"
+      ]
+    },
+    {
+      "id": "SQ-R15",
+      "text": "模板字段：有枚举编号的模板每个编号独占一行，值／状态／稿件证据位置三列齐全，允许填「未知」（notes/suite-contract.md:110-119；R18 §2a）。",
+      "status": "partial",
+      "anchors": [
+        "templates/scene-workbook.md:57",
+        "templates/scene-workbook.md:59",
+        "templates/scene-workbook.md:61",
+        "templates/scene-workbook.md:63",
+        "templates/scene-workbook.md:65",
+        "templates/scene-workbook.md:66",
+        "SKILL.md:235",
+        "examples/scene-cases.md:92"
+      ]
+    },
+    {
+      "id": "SQ-R16",
+      "text": "「稿件证据位置」只指向用户当前稿件，不指包外位置或来源编号。",
+      "status": "covered",
+      "anchors": [
+        "templates/scene-workbook.md:67",
+        "SKILL.md:235",
+        "examples/scene-cases.md:102"
+      ]
+    },
+    {
+      "id": "SQ-R17",
+      "text": "含数据行的表格必须有 GFM 分隔行（R09 §6.4 第 2 条）。",
+      "status": "covered",
+      "anchors": [
+        "templates/scene-workbook.md:68",
+        "templates/scene-workbook.md:8",
+        "templates/scene-workbook.md:62",
+        "templates/action-checklist.md:8"
+      ]
+    },
+    {
+      "id": "SQ-R18",
+      "text": "模板行内要带真实规则编号，避免「列出即算完成」（R18 §2a 反向验证）。",
+      "status": "partial",
+      "anchors": [
+        "templates/action-checklist.md:10",
+        "templates/action-checklist.md:12",
+        "templates/action-checklist.md:16",
+        "templates/action-checklist.md:24",
+        "templates/action-checklist.md:25",
+        "templates/scene-workbook.md:16",
+        "templates/scene-workbook.md:63"
+      ]
+    },
+    {
+      "id": "SQ-R19",
+      "text": "设计路径的每一步要有可填字段：场景卡、知情表、阶梯与母题、章链表、修改单。",
+      "status": "covered",
+      "anchors": [
+        "templates/scene-workbook.md:5",
+        "templates/scene-workbook.md:21",
+        "templates/scene-workbook.md:29",
+        "templates/scene-workbook.md:35",
+        "templates/scene-workbook.md:41",
+        "SKILL.md:52",
+        "SKILL.md:66"
+      ]
+    },
+    {
+      "id": "SQ-R20",
+      "text": "动作场面检查表按动笔前、写完后、回看三个时点分组。",
+      "status": "covered",
+      "anchors": [
+        "templates/action-checklist.md:3",
+        "templates/action-checklist.md:5",
+        "templates/action-checklist.md:19",
+        "templates/action-checklist.md:30",
+        "SKILL.md:90"
+      ]
+    },
+    {
+      "id": "SQ-R21",
+      "text": "机制卡：SC 族 14 张（场景单位 7、知情与空间 3、诊断与交付 4）要各有做法、边界与例外。",
+      "status": "covered",
+      "anchors": [
+        "references/scene-units.md:7",
+        "references/scene-units.md:22",
+        "references/scene-units.md:38",
+        "references/scene-units.md:55",
+        "references/scene-units.md:71",
+        "references/scene-units.md:88",
+        "references/scene-units.md:104",
+        "references/scene-information-and-space.md:9",
+        "references/scene-information-and-space.md:25",
+        "references/scene-information-and-space.md:48",
+        "references/scene-and-action-diagnosis.md:7",
+        "references/scene-and-action-diagnosis.md:35",
+        "references/scene-and-action-diagnosis.md:129",
+        "references/scene-and-action-diagnosis.md:143"
+      ]
+    },
+    {
+      "id": "SQ-R22",
+      "text": "机制卡：SU 族 19 张（伏笔兑现 4、悬念揭晓 4、强度节奏 6、章末结尾 4、节奏审计 1）。",
+      "status": "covered",
+      "anchors": [
+        "references/setup-and-payoff.md:7",
+        "references/setup-and-payoff.md:27",
+        "references/setup-and-payoff.md:47",
+        "references/setup-and-payoff.md:59",
+        "references/suspense-and-reveal.md:7",
+        "references/suspense-and-reveal.md:22",
+        "references/suspense-and-reveal.md:48",
+        "references/suspense-and-reveal.md:65",
+        "references/intensity-and-rhythm.md:9",
+        "references/intensity-and-rhythm.md:26",
+        "references/intensity-and-rhythm.md:42",
+        "references/intensity-and-rhythm.md:57",
+        "references/intensity-and-rhythm.md:73",
+        "references/intensity-and-rhythm.md:89",
+        "references/chapter-ends-and-endings.md:7",
+        "references/chapter-ends-and-endings.md:31",
+        "references/chapter-ends-and-endings.md:47",
+        "references/chapter-ends-and-endings.md:74",
+        "references/rhythm-diagnosis.md:24"
+      ]
+    },
+    {
+      "id": "SQ-R23",
+      "text": "机制卡：AF 族编号 1–18 被提及，实卡 15 张；AF-01 并入 SC-08、AF-15 并入 AF-14、AF-09 未设卡，须在包内写明。",
+      "status": "covered",
+      "anchors": [
+        "references/action-and-fight.md:5",
+        "references/action-and-fight.md:23",
+        "references/action-and-fight.md:189",
+        "SKILL.md:88",
+        "SKILL.md:192"
+      ]
+    },
+    {
+      "id": "SQ-R24",
+      "text": "v2→v3 被连带删除的规则体（如 SU-02）按严格处理：降级限定与两条路由要写回规则体（inputs/requirements.md:65）。",
+      "status": "covered",
+      "anchors": [
+        "references/intensity-and-rhythm.md:16",
+        "references/intensity-and-rhythm.md:17",
+        "references/intensity-and-rhythm.md:24",
+        "SKILL.md:176",
+        "examples/scene-cases.md:110"
+      ]
+    },
+    {
+      "id": "SQ-R25",
+      "text": "交付状态词统一四词，四词也用于台账「状态」列，「未知」合法但不得写成已完成（notes/suite-contract.md:68-77）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:249",
+        "SKILL.md:253",
+        "SKILL.md:255",
+        "SKILL.md:258",
+        "SKILL.md:260",
+        "templates/scene-workbook.md:63",
+        "templates/scene-workbook.md:66"
+      ]
+    },
+    {
+      "id": "SQ-R26",
+      "text": "负触发清单：相近但不适用的输入要逐条排除或转介（R18 §2 Trigger 行）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:22",
+        "SKILL.md:23",
+        "SKILL.md:28",
+        "SKILL.md:29",
+        "SKILL.md:30",
+        "SKILL.md:31",
+        "SKILL.md:32",
+        "examples/scene-cases.md:73"
+      ]
+    },
+    {
+      "id": "SQ-R27",
+      "text": "路由表要带「需要时补读」和「缺料或冲突时的出口」两列（notes/suite-contract.md:262 第 3 条）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:218",
+        "SKILL.md:220",
+        "SKILL.md:222",
+        "SKILL.md:231",
+        "SKILL.md:236"
+      ]
+    },
+    {
+      "id": "SQ-R28",
+      "text": "D2=A：与 preset-card-generation 的双向转介逐条写死（inputs/requirements.md:72）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:27",
+        "SKILL.md:291",
+        "SKILL.md:293",
+        "SKILL.md:294",
+        "SKILL.md:296",
+        "SKILL.md:298",
+        "references/rhythm-diagnosis.md:100",
+        "examples/scene-cases.md:82"
+      ]
+    },
+    {
+      "id": "SQ-R29",
+      "text": "职责边界：单元内钩子与兑现（SU-15/SU-16）不替代跨卷记账（SV-08），全书承诺清算归 PL-11。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:46",
+        "SKILL.md:187",
+        "references/scene-units.md:90",
+        "references/chapter-ends-and-endings.md:18",
+        "references/chapter-ends-and-endings.md:33",
+        "references/chapter-ends-and-endings.md:50"
+      ]
+    },
+    {
+      "id": "SQ-R30",
+      "text": "跨 Skill 接口要能核对 Owner、provider/consumer、字段与缺字段分支（R09 §6 GQ3）。",
+      "status": "partial",
+      "anchors": [
+        "SKILL.md:34",
+        "SKILL.md:46",
+        "SKILL.md:298",
+        "references/rhythm-diagnosis.md:58",
+        "references/scene-information-and-space.md:5"
+      ]
+    },
+    {
+      "id": "SQ-R31",
+      "text": "诊断入口：症状速查表把症状指向规则与常见原因。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:108",
+        "SKILL.md:110",
+        "SKILL.md:112",
+        "SKILL.md:137",
+        "SKILL.md:138",
+        "references/scene-and-action-diagnosis.md:54"
+      ]
+    },
+    {
+      "id": "SQ-R32",
+      "text": "目标优先：已达成的效果、作者定的实验与非写实契约保留，不因惯例纠正（SC-01）。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:30",
+        "SKILL.md:54",
+        "references/scene-and-action-diagnosis.md:15",
+        "references/scene-and-action-diagnosis.md:29",
+        "references/scene-and-action-diagnosis.md:31",
+        "references/rhythm-diagnosis.md:38",
+        "examples/scene-cases.md:60"
+      ]
+    },
+    {
+      "id": "SQ-R33",
+      "text": "两套修改单按诊断入口并存：场景与动作用 SC-12/SC-13 六栏，节奏与伏笔用 §2 表。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:95",
+        "references/rhythm-diagnosis.md:16",
+        "references/rhythm-diagnosis.md:22",
+        "references/scene-and-action-diagnosis.md:3",
+        "references/scene-and-action-diagnosis.md:164",
+        "templates/scene-workbook.md:43"
+      ]
+    },
+    {
+      "id": "SQ-R34",
+      "text": "复杂操作要有判断标准、步骤、诊断到修订闭环与负面回归（R18 §2d）。",
+      "status": "covered",
+      "anchors": [
+        "references/rhythm-diagnosis.md:50",
+        "references/rhythm-diagnosis.md:56",
+        "references/rhythm-diagnosis.md:64",
+        "references/rhythm-diagnosis.md:68",
+        "references/rhythm-diagnosis.md:83",
+        "references/rhythm-diagnosis.md:86",
+        "SKILL.md:60"
+      ]
+    },
+    {
+      "id": "SQ-R35",
+      "text": "示例要承载复杂分支：负触发、逐编号台账、A/B 分支、失败出口、负面回归各有一处示范。",
+      "status": "covered",
+      "anchors": [
+        "examples/scene-cases.md:67",
+        "examples/scene-cases.md:73",
+        "examples/scene-cases.md:92",
+        "examples/scene-cases.md:104",
+        "examples/scene-cases.md:108",
+        "examples/scene-cases.md:116",
+        "examples/scene-cases.md:127",
+        "examples/scene-cases.md:132"
+      ]
+    },
+    {
+      "id": "SQ-R36",
+      "text": "agents 入口关隐式调用，且声明不授权、不承诺自动执行（notes/suite-contract.md:264 第 5 条）。",
+      "status": "covered",
+      "anchors": [
+        "agents/openai.yaml:2",
+        "agents/openai.yaml:8"
+      ]
+    },
+    {
+      "id": "SQ-R37",
+      "text": "交付分层：按任务交必要部分，不把全部表塞给只要正文的人；改写不覆盖原稿并说明改动。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:101",
+        "SKILL.md:55",
+        "SKILL.md:52",
+        "templates/scene-workbook.md:3"
+      ]
+    },
+    {
+      "id": "SQ-R38",
+      "text": "关于读者反应的判断写成待验证的设计假设，不承诺追读、完读或留存。",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:58",
+        "SKILL.md:246",
+        "references/action-and-fight.md:152",
+        "references/intensity-and-rhythm.md:53",
+        "examples/refrain-case.md:67"
+      ]
+    },
+    {
+      "id": "SQ-R39",
+      "text": "R18 §2 Failure 行要求「无许可」也要安全收口：没有修改文件的授权时只给文本、不写文件。该出口目前只在 reference 一处承载，入口层（SKILL.md §2 使用方式、§10 失败出口表）没有对应条目。",
+      "status": "missing",
+      "anchors": [
+        "references/scene-and-action-diagnosis.md:147"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "SC-C01",
+      "name": "场景单位与跳接设计（进场／离场状态差、约束、场内场外、结构、章链、出口）",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-02",
+        "SC-03",
+        "SC-04",
+        "SC-05",
+        "SC-09",
+        "SC-10",
+        "SC-11"
+      ],
+      "anchors": [
+        "SKILL.md:64",
+        "SKILL.md:67",
+        "SKILL.md:69",
+        "SKILL.md:70",
+        "SKILL.md:71",
+        "SKILL.md:72",
+        "references/scene-units.md:7",
+        "references/scene-units.md:22",
+        "references/scene-units.md:38",
+        "references/scene-units.md:55",
+        "references/scene-units.md:71",
+        "references/scene-units.md:88",
+        "references/scene-units.md:104",
+        "templates/scene-workbook.md:5"
+      ],
+      "limit": "跨卷开放线的开启与最晚回收归 SV-08，本能力只记单元内（references/scene-units.md:90）。只给一句话、没有正文时不做空转诊断（references/scene-units.md:16）。幕数与固定要素不作必守项（references/scene-units.md:82）。",
+      "counterexample_ref": "references/scene-units.md:67 是本文件唯一一条「反例」段；SC-02、SC-10、SC-11 用「例外／判断边界」承担同一位置（references/scene-units.md:16、:98、:115）"
+    },
+    {
+      "id": "SC-C02",
+      "name": "三层知情、长谈三问与空间定位（全场共用一张知情表）",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-06",
+        "SC-07",
+        "SC-08",
+        "SU-04",
+        "AF-06",
+        "AF-13"
+      ],
+      "anchors": [
+        "SKILL.md:68",
+        "SKILL.md:156",
+        "SKILL.md:157",
+        "SKILL.md:158",
+        "references/scene-information-and-space.md:5",
+        "references/scene-information-and-space.md:9",
+        "references/scene-information-and-space.md:25",
+        "references/scene-information-and-space.md:48",
+        "references/scene-information-and-space.md:66",
+        "templates/scene-workbook.md:21"
+      ],
+      "limit": "全篇视角越界与全篇信息控制转 character-and-narrative-control（SKILL.md:24）；单场内的视角标记、知情差与倒叙场仍由本包处理（SKILL.md:24）。兄弟包另有「全书只用一张信息表」口径（../character-and-narrative-control/references/information-control.md:38），两包未写明同场并存时以哪张为准。",
+      "counterexample_ref": "references/scene-information-and-space.md:44「不要这样用」承担反用法；本文件无「反例」段名"
+    },
+    {
+      "id": "SC-C03",
+      "name": "伏笔、误认与现实解释线（终点倒推）",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-01",
+        "SU-06",
+        "SU-07",
+        "SU-08"
+      ],
+      "anchors": [
+        "SKILL.md:76",
+        "SKILL.md:80",
+        "SKILL.md:162",
+        "SKILL.md:163",
+        "SKILL.md:164",
+        "SKILL.md:165",
+        "references/setup-and-payoff.md:7",
+        "references/setup-and-payoff.md:27",
+        "references/setup-and-payoff.md:47",
+        "references/setup-and-payoff.md:59"
+      ],
+      "limit": "太显眼或太隐蔽判断不清、需补原稿没有的信息时标未能核实交作者（references/setup-and-payoff.md:45）。设定本身超常的作品改为守住内部规则（references/setup-and-payoff.md:71）。不设「每个揭晓必须几处伏笔」门槛（references/setup-and-payoff.md:41）。",
+      "counterexample_ref": "references/setup-and-payoff.md:22、:42、:73 三条自创反例；SU-07 无「反例」行，只有边界句（references/setup-and-payoff.md:57）"
+    },
+    {
+      "id": "SC-C04",
+      "name": "悬念方式选择、问题时机与阶梯、收紧空间",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-03",
+        "SU-04",
+        "SU-05",
+        "SU-09"
+      ],
+      "anchors": [
+        "SKILL.md:78",
+        "SKILL.md:79",
+        "SKILL.md:169",
+        "SKILL.md:170",
+        "SKILL.md:171",
+        "SKILL.md:172",
+        "references/suspense-and-reveal.md:7",
+        "references/suspense-and-reveal.md:22",
+        "references/suspense-and-reveal.md:35",
+        "references/suspense-and-reveal.md:48",
+        "references/suspense-and-reveal.md:65"
+      ],
+      "limit": "三种方式都能成立或知识表缺关键行时给两版并停在待作者决定（references/suspense-and-reveal.md:46）。级数不设门槛（references/suspense-and-reveal.md:56）。开放景观与群体行动可扩展空间，不强制收窄（references/suspense-and-reveal.md:73）。",
+      "counterexample_ref": "references/suspense-and-reveal.md:17（本文件四条：:17、:43、:60、:74）"
+    },
+    {
+      "id": "SC-C05",
+      "name": "强度上限、阅读单元排峰、松弛与急转、母题与基调",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-02",
+        "SU-10",
+        "SU-11",
+        "SU-12",
+        "SU-13",
+        "SU-14"
+      ],
+      "anchors": [
+        "SKILL.md:77",
+        "SKILL.md:81",
+        "SKILL.md:176",
+        "SKILL.md:177",
+        "SKILL.md:178",
+        "SKILL.md:179",
+        "SKILL.md:180",
+        "SKILL.md:181",
+        "references/intensity-and-rhythm.md:9",
+        "references/intensity-and-rhythm.md:26",
+        "references/intensity-and-rhythm.md:42",
+        "references/intensity-and-rhythm.md:57",
+        "references/intensity-and-rhythm.md:73",
+        "references/intensity-and-rhythm.md:89"
+      ],
+      "limit": "1–5 只是同一篇内部相对自评，不是测量或跨作品量表（references/intensity-and-rhythm.md:7、SKILL.md:57）。卷级安排转长篇规划包（references/intensity-and-rhythm.md:3）。「单元」在本包有两至三种口径，见 gaps G-03。",
+      "counterexample_ref": "references/intensity-and-rhythm.md:21（本文件六卡各一条：:21、:37、:52、:68、:84、:100）"
+    },
+    {
+      "id": "SC-C06",
+      "name": "峰值冲突的两条路由与作者裁决（降级限定）",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-02",
+        "SC-01",
+        "SC-13",
+        "SC-14"
+      ],
+      "anchors": [
+        "SKILL.md:176",
+        "SKILL.md:268",
+        "references/intensity-and-rhythm.md:16",
+        "references/intensity-and-rhythm.md:17",
+        "references/intensity-and-rhythm.md:24",
+        "references/rhythm-diagnosis.md:60",
+        "examples/scene-cases.md:108",
+        "examples/scene-cases.md:110",
+        "examples/scene-cases.md:112",
+        "examples/scene-cases.md:116"
+      ],
+      "limit": "降级只降强度、篇幅、修辞，不降因果必要性、信息量、人物动机（references/intensity-and-rhythm.md:17）。不擅自改已锁定章节（SKILL.md:268）；作者不答时按最小改动并列出假设（references/intensity-and-rhythm.md:24）。跨章重排越出单元内时须与长篇包同看（examples/scene-cases.md:111）。",
+      "counterexample_ref": "references/intensity-and-rhythm.md:21 的反例即「削弱前文」被误读成「中段注水」"
+    },
+    {
+      "id": "SC-C07",
+      "name": "章末三查、兑现日志、结尾两步与暗线收束",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-15",
+        "SU-16",
+        "SU-17",
+        "SU-18",
+        "SC-10",
+        "SC-11"
+      ],
+      "anchors": [
+        "SKILL.md:82",
+        "SKILL.md:185",
+        "SKILL.md:186",
+        "SKILL.md:187",
+        "SKILL.md:188",
+        "references/chapter-ends-and-endings.md:7",
+        "references/chapter-ends-and-endings.md:23",
+        "references/chapter-ends-and-endings.md:31",
+        "references/chapter-ends-and-endings.md:47",
+        "references/chapter-ends-and-endings.md:74",
+        "templates/scene-workbook.md:35"
+      ],
+      "limit": "卷级收束不由本卡裁决，转 PL-11／SV-04／SV-05（references/chapter-ends-and-endings.md:9、:18、:50）。一次读完的短篇不强制抛钩子（references/chapter-ends-and-endings.md:24）。象征读法不能代替破案或救人所需证据（references/chapter-ends-and-endings.md:80）。",
+      "counterexample_ref": "references/chapter-ends-and-endings.md:26（本文件四条：:26、:42、:69、:85）"
+    },
+    {
+      "id": "SC-C08",
+      "name": "动作场面的读数、后果、资源、群战与转述",
+      "kind": "workflow",
+      "rule_ids": [
+        "AF-02",
+        "AF-03",
+        "AF-04",
+        "AF-05",
+        "AF-06",
+        "AF-07",
+        "AF-08",
+        "AF-10",
+        "AF-11",
+        "AF-12",
+        "AF-13",
+        "AF-14",
+        "AF-16",
+        "AF-17",
+        "AF-18"
+      ],
+      "anchors": [
+        "SKILL.md:84",
+        "SKILL.md:86",
+        "SKILL.md:88",
+        "SKILL.md:89",
+        "SKILL.md:90",
+        "references/action-and-fight.md:3",
+        "references/action-and-fight.md:23",
+        "references/action-and-fight.md:96",
+        "references/action-and-fight.md:110",
+        "references/action-and-fight.md:121",
+        "references/action-and-fight.md:142",
+        "references/action-and-fight.md:154",
+        "references/action-and-fight.md:189",
+        "templates/action-checklist.md:5"
+      ],
+      "limit": "15 张实卡；AF-01 并入 SC-08、AF-15 并入 AF-14、AF-09 未设卡（references/action-and-fight.md:5）。卡片是叙事设计工具，不是现实格斗、战术、武器或医学知识（references/action-and-fight.md:3）。主卡选择行只列 11 张卡，未列 AF-16、AF-17（SKILL.md:88），两张卡靠 references 速查表进入（references/action-and-fight.md:17、:18）。",
+      "counterexample_ref": "references/action-and-fight.md:175 是 AF 族唯一一条「反例」段；其余 14 卡以「边界」行承担（如 :36、:61、:119、:164）"
+    },
+    {
+      "id": "SC-C09",
+      "name": "场景与动作的症状诊断：目标优先、区分检验、保存功能、退出与边界",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-01",
+        "SC-12",
+        "SC-13",
+        "SC-14",
+        "AF-02",
+        "AF-05",
+        "AF-06",
+        "AF-07",
+        "AF-08",
+        "AF-10",
+        "AF-11",
+        "AF-12",
+        "AF-14",
+        "AF-17",
+        "AF-18"
+      ],
+      "anchors": [
+        "SKILL.md:92",
+        "SKILL.md:94",
+        "SKILL.md:95",
+        "SKILL.md:96",
+        "SKILL.md:97",
+        "references/scene-and-action-diagnosis.md:7",
+        "references/scene-and-action-diagnosis.md:35",
+        "references/scene-and-action-diagnosis.md:54",
+        "references/scene-and-action-diagnosis.md:129",
+        "references/scene-and-action-diagnosis.md:143",
+        "references/scene-and-action-diagnosis.md:162"
+      ],
+      "limit": "严重度分高／中／低，高需关键定位或前因在文本里缺失或已有真实反馈（references/scene-and-action-diagnosis.md:58、:59）。没有正文时只给检查表，不做针对正文的诊断（references/scene-and-action-diagnosis.md:44）。作者对齐外部格式时须写明「这是外部要求」（references/scene-and-action-diagnosis.md:29）。",
+      "counterexample_ref": "references/scene-and-action-diagnosis.md:39「什么时候不改」列（:39 至 :43 六行）承担不改情形"
+    },
+    {
+      "id": "SC-C10",
+      "name": "节奏审计（SU-19）与复杂操作闭环：判断标准、八步、诊断到修订、负面回归",
+      "kind": "workflow",
+      "rule_ids": [
+        "SU-19",
+        "SU-02",
+        "SU-05",
+        "SU-06",
+        "SU-13",
+        "SU-15",
+        "SU-16",
+        "SU-18"
+      ],
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:97",
+        "SKILL.md:216",
+        "references/rhythm-diagnosis.md:5",
+        "references/rhythm-diagnosis.md:14",
+        "references/rhythm-diagnosis.md:24",
+        "references/rhythm-diagnosis.md:50",
+        "references/rhythm-diagnosis.md:64",
+        "references/rhythm-diagnosis.md:68",
+        "references/rhythm-diagnosis.md:83"
+      ],
+      "limit": "三项判据任一判不出就停在问题清单，不开始改（references/rhythm-diagnosis.md:56）。回归检查栏不齐的不落稿（references/rhythm-diagnosis.md:68）。审计表 7 列只能承载 SU-19 五项中的两项，另三项须表外另数（references/rhythm-diagnosis.md:34）。",
+      "counterexample_ref": "包内无「反例」段；最接近的禁止项是负面回归清单（references/rhythm-diagnosis.md:85、:86、:87）"
+    },
+    {
+      "id": "SC-C11",
+      "name": "交付状态词与逐编号台账",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-14",
+        "SU-19"
+      ],
+      "anchors": [
+        "SKILL.md:99",
+        "SKILL.md:101",
+        "SKILL.md:105",
+        "SKILL.md:249",
+        "SKILL.md:253",
+        "SKILL.md:260",
+        "templates/scene-workbook.md:57",
+        "templates/scene-workbook.md:61",
+        "examples/scene-cases.md:118",
+        "examples/scene-cases.md:120"
+      ],
+      "limit": "只用已完成／依据／未能核实／待作者决定四词，逐项给依据（SKILL.md:251 至 :258）。「未知」是台账状态列的合法值，但不得写成已完成（templates/scene-workbook.md:66）。",
+      "counterexample_ref": "templates/scene-workbook.md:66 为禁令型反例；本组无自创反例句"
+    },
+    {
+      "id": "SC-C12",
+      "name": "模板表族：场景卡、知情表、阶梯与母题、章链表、修改单、动作三时点表",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-01",
+        "SC-04",
+        "SC-05",
+        "SC-06",
+        "SC-08",
+        "SC-10",
+        "SC-11",
+        "SC-12",
+        "SC-13",
+        "SU-04",
+        "SU-05",
+        "SU-07",
+        "SU-13",
+        "SU-16",
+        "AF-05",
+        "AF-06",
+        "AF-08",
+        "AF-10"
+      ],
+      "anchors": [
+        "templates/scene-workbook.md:5",
+        "templates/scene-workbook.md:21",
+        "templates/scene-workbook.md:29",
+        "templates/scene-workbook.md:35",
+        "templates/scene-workbook.md:41",
+        "templates/scene-workbook.md:49",
+        "templates/scene-workbook.md:57",
+        "templates/action-checklist.md:5",
+        "templates/action-checklist.md:19",
+        "templates/action-checklist.md:30"
+      ],
+      "limit": "scene-workbook 共 6 张表 16 条数据行，其中 §1 有 11 条命名可填行、其余 5 条为占位行（templates/scene-workbook.md:27、:33、:39、:47、:63）。行内带真实编号的只有 2 行（:16、:63）。action-checklist 18 行全部逐项可填，行内带编号 5 行。",
+      "counterexample_ref": "templates/scene-workbook.md:63 的尖括号占位符是模板内唯一带真实编号与填法的行；§2 至 §5 四张表不给列名以外的填法示例"
+    },
+    {
+      "id": "SC-C13",
+      "name": "现实专业参数核实（武器、医学、战术、年代、通信）",
+      "kind": "external",
+      "rule_ids": [
+        "AF-08",
+        "AF-10",
+        "AF-17",
+        "SC-14"
+      ],
+      "anchors": [
+        "SKILL.md:48",
+        "SKILL.md:228",
+        "SKILL.md:244",
+        "SKILL.md:245",
+        "references/scope-and-conflicts.md:62",
+        "references/scope-and-conflicts.md:66",
+        "references/scene-and-action-diagnosis.md:116",
+        "references/action-and-fight.md:108",
+        "templates/action-checklist.md:26"
+      ],
+      "limit": "本包不提供核实手段，需外部资料或转 fiction-planning-and-diagnosis 的资料核验。「另找资料核实」未写明由代理还是作者执行（包内两种读法都成立）；不能核实时标「未核实」并限定受影响结论（references/scene-and-action-diagnosis.md:116）。",
+      "counterexample_ref": "references/scope-and-conflicts.md:66 写明不能凭机制卡证明现实中可行；references/scope-and-conflicts.md:82 为硬排除"
+    },
+    {
+      "id": "SC-C14",
+      "name": "读者效果验证（试读、追读、留存）",
+      "kind": "external",
+      "rule_ids": [
+        "SU-19",
+        "SU-06",
+        "AF-13",
+        "SC-14"
+      ],
+      "anchors": [
+        "SKILL.md:58",
+        "SKILL.md:246",
+        "references/action-and-fight.md:152",
+        "references/intensity-and-rhythm.md:53",
+        "examples/refrain-case.md:55",
+        "examples/refrain-case.md:67"
+      ],
+      "limit": "包内只把效果判断写成待验证设计假设，并给「还不能声称的」清单；无试读数据即不宣称效果达到。模型模拟不等于真实试读（references/setup-and-payoff.md:36）。",
+      "counterexample_ref": "examples/refrain-case.md:55 表列出五项「还不能声称的」，是包内最接近反例的位置"
+    },
+    {
+      "id": "SC-C15",
+      "name": "跨 skill 转介导航（负触发、转介表、重叠分法、双向转介）",
+      "kind": "workflow",
+      "rule_ids": [
+        "SC-01",
+        "SC-14"
+      ],
+      "anchors": [
+        "SKILL.md:22",
+        "SKILL.md:34",
+        "SKILL.md:36",
+        "SKILL.md:46",
+        "SKILL.md:276",
+        "SKILL.md:280",
+        "SKILL.md:291",
+        "SKILL.md:296",
+        "references/rhythm-diagnosis.md:58",
+        "references/scene-information-and-space.md:5"
+      ],
+      "limit": "全部为文字导航，无自动路由或宿主强制。agents 入口关隐式调用并自述不授权（agents/openai.yaml:8、:2）。游戏关卡与战斗数值不在接口内（SKILL.md:32）。",
+      "counterexample_ref": "SKILL.md:32 与 SKILL.md:31 列出不接的情形（非叙事文本、游戏关卡）"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "SQ-IF01",
+      "topic": "单元内钩子与兑现 vs 跨卷记账（分界）",
+      "provider": "scene-conflict-and-rhythm 提供 SU-15／SU-16／SC-10 的单元内钩子与兑现日志；story-architecture-and-longform-planning 提供 SV-08 跨卷开放线台账、SV-04／SV-05 卷级闭合、PL-11 全书承诺清算",
+      "consumer": "双向：本包把跨卷项转出，peer 把章末写法与单章兑现转回本包",
+      "payload_or_ids": [
+        "SU-15",
+        "SU-16",
+        "SC-10",
+        "SV-08",
+        "SV-04",
+        "SV-05",
+        "PL-11"
+      ],
+      "missing_field_branch": "本包章链表与兑现日志不设跨卷字段：跨卷开放线的开启、推进和最晚回收位置归 SV-08，不在本表重复记账（references/scene-units.md:90）；全书承诺结算转 PL-11、卷级闭合转 SV-04／SV-05（references/chapter-ends-and-endings.md:18、:50）。缺字段时的分支只有「转出」一句，未定义转出后回传什么、由谁确认已接。",
+      "scene_side_refs": [
+        "SKILL.md:46",
+        "SKILL.md:187",
+        "references/scene-units.md:90",
+        "references/scene-units.md:92",
+        "references/chapter-ends-and-endings.md:18",
+        "references/chapter-ends-and-endings.md:33",
+        "references/chapter-ends-and-endings.md:50",
+        "examples/scene-cases.md:111"
+      ],
+      "peer_side_refs": [
+        "peer:story-architecture-and-longform-planning/SKILL.md:27",
+        "peer:story-architecture-and-longform-planning/SKILL.md:41",
+        "peer:story-architecture-and-longform-planning/SKILL.md:61",
+        "peer:story-architecture-and-longform-planning/SKILL.md:223",
+        "peer:story-architecture-and-longform-planning/SKILL.md:225",
+        "peer:story-architecture-and-longform-planning/SKILL.md:276",
+        "peer:story-architecture-and-longform-planning/SKILL.md:308",
+        "peer:story-architecture-and-longform-planning/references/serial-chapters-and-installments.md:5",
+        "peer:story-architecture-and-longform-planning/references/serial-chapters-and-installments.md:46"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 8 处，peer 9 处）；peer 的 SU-15／SU-16／SV-08 行均按编号点名单包",
+      "note": "本包 §6 参考表与 SKILL.md:46 明写「SU-15／SU-16 只处理单元内的钩子与兑现，不替代 SV-08 的跨卷记账」，peer 侧 serial-chapters-and-installments.md:5 给出同一分界的反向表述。"
+    },
+    {
+      "id": "SQ-IF02",
+      "topic": "单场知情差 vs 全篇信息控制与视角",
+      "provider": "character-and-narrative-control 提供全篇视角合同与信息控制（PV 族）；scene-conflict-and-rhythm 提供单场内的 SU-04 知识表、SC-06 三层知情、SU-07 误认、AF-06 感官范围",
+      "consumer": "双向：本包把全篇越界与全篇信息控制转出，peer 把悬念强度、伏笔位置与回收清单转回本包",
+      "payload_or_ids": [
+        "SU-04",
+        "SC-06",
+        "SU-07",
+        "AF-06",
+        "AF-13"
+      ],
+      "missing_field_branch": "本包转出行写明「全篇视角越界、全篇信息控制、非线性时间（全篇级）」转出，单场内的视角标记、知情差与倒叙场仍由本包处理（SKILL.md:24）。发现场景修改会改变全篇视角、信息控制或结构不变量时，暂停该处并转交确认（SKILL.md:298），未写转交后的回执字段。",
+      "scene_side_refs": [
+        "SKILL.md:24",
+        "SKILL.md:39",
+        "references/scene-information-and-space.md:5",
+        "references/scene-information-and-space.md:9",
+        "references/scene-information-and-space.md:66",
+        "examples/scene-cases.md:25"
+      ],
+      "peer_side_refs": [
+        "peer:character-and-narrative-control/SKILL.md:29",
+        "peer:character-and-narrative-control/SKILL.md:43",
+        "peer:character-and-narrative-control/SKILL.md:57",
+        "peer:character-and-narrative-control/SKILL.md:306",
+        "peer:character-and-narrative-control/references/information-control.md:5",
+        "peer:character-and-narrative-control/references/information-control.md:38",
+        "peer:character-and-narrative-control/references/information-control.md:84",
+        "peer:character-and-narrative-control/references/scene-summary-and-time.md:97",
+        "peer:character-and-narrative-control/references/zh-and-serial.md:57"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 6 处，peer 9 处）",
+      "note": "冲突点待裁：本包写「只用一张知情表」并限定同一场戏不另建第二张（references/scene-information-and-space.md:5），peer 写「全书只用一张信息表」（peer:character-and-narrative-control/references/information-control.md:38）。两处作用域不同（场 vs 全书），两包均未写同时使用由哪张表承载、由谁合并。本草案不判对错。"
+    },
+    {
+      "id": "SQ-IF03",
+      "topic": "产卡与三轴审章节的转出（D2=A 双向转介）",
+      "provider": "scene-conflict-and-rhythm 在请求产物是「给模型的卡」或审查框架是三轴时转出；preset-card-generation 在非卡、非三轴的单场设计、强度节奏、章末钩子上转回",
+      "consumer": "双向：本包 → preset-card-generation；preset-card-generation → 本包",
+      "payload_or_ids": [
+        "推进模式卡",
+        "文风卡",
+        "表达约束卡",
+        "三轴（推进／文风／表达）"
+      ],
+      "missing_field_branch": "本包五类卡片请求一律转出（SKILL.md:27、SKILL.md:273、SKILL.md:293），复杂操作分层判据也把卡片请求列为转出（references/rhythm-diagnosis.md:58、:100）。缺字段分支只有转介方向，未定义本包交出什么（场景描述文本？约束条目？），也未定义 peer 转回时须带哪些输入。",
+      "scene_side_refs": [
+        "SKILL.md:27",
+        "SKILL.md:44",
+        "SKILL.md:273",
+        "SKILL.md:291",
+        "SKILL.md:293",
+        "SKILL.md:294",
+        "SKILL.md:296",
+        "references/rhythm-diagnosis.md:58",
+        "references/rhythm-diagnosis.md:100",
+        "examples/scene-cases.md:82"
+      ],
+      "peer_side_refs": [
+        "peer:preset-card-generation/SKILL.md:42",
+        "peer:preset-card-generation/SKILL.md:90",
+        "peer:preset-card-generation/SKILL.md:184"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 10 处，peer 3 处）；本包另有 §11.2 双向转介专节（SKILL.md:291）",
+      "note": "notes/suite-contract.md:40-50 的兄弟 skill → preset-card 表与 preset-card → 兄弟 skill 表互为逆关系，本包 SKILL.md:293／:294 两行分别落两侧；peer 侧 SKILL.md:42 为接收行。"
+    },
+    {
+      "id": "SQ-IF04",
+      "topic": "句子与措辞 vs 单元节奏（尺度分界）",
+      "provider": "line-editing-and-proofreading 拥有句子级精修、标点、体例与句子层 AI 腔；scene-conflict-and-rhythm 拥有单元内节奏、场景与章末",
+      "consumer": "双向：本包按尺度转出，peer 把「更有力若指节奏或张力」转回本包",
+      "payload_or_ids": [
+        "位置｜症状｜原因｜规则｜改法｜代价（本包修改单，不改句子措辞）"
+      ],
+      "missing_field_branch": "「去 AI 味」按产物分：改具体稿子给 peer，写成约束卡给 preset-card（SKILL.md:284）。本包只写归属判断，未写同时使用两包时的交付合并方式；peer 侧在示例里给出判定行（peer:line-editing-and-proofreading/examples/worked-example.md:90）。",
+      "scene_side_refs": [
+        "SKILL.md:26",
+        "SKILL.md:41",
+        "SKILL.md:284",
+        "references/rhythm-diagnosis.md:58"
+      ],
+      "peer_side_refs": [
+        "peer:line-editing-and-proofreading/SKILL.md:38",
+        "peer:line-editing-and-proofreading/SKILL.md:184",
+        "peer:line-editing-and-proofreading/SKILL.md:186",
+        "peer:line-editing-and-proofreading/examples/worked-example.md:90"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 4 处，peer 4 处）",
+      "note": "本包的「按套件合同」节（SKILL.md:276 起）与 peer 的 11.x 重叠分法表逐行对应；两侧均无字段或版本级约定。"
+    },
+    {
+      "id": "SQ-IF05",
+      "topic": "题材契约与武打体系 vs 通用手法",
+      "provider": "genre-fiction-craft 拥有题材特有规则、机制与混合题材；scene-conflict-and-rhythm 拥有不分题材的场景、悬念、节奏与动作写法",
+      "consumer": "双向：本包把题材约束与解谜公平转出，peer 把单场写法与章末钩子转回",
+      "payload_or_ids": [
+        "SU-08 两读与现实解释线（题材契约冲突时停）",
+        "scope §2 表内「解谜公平转类型小说 Skill」"
+      ],
+      "missing_field_branch": "「武侠打斗写不好」先用题材约束、再用通用手法（SKILL.md:289）；本包把推理的线索公平转出（SKILL.md:42、references/scope-and-conflicts.md:55）。公平解谜承诺与开放式恐怖承诺不能混用标准（references/setup-and-payoff.md:70），但两包之间没有交接字段。",
+      "scene_side_refs": [
+        "SKILL.md:42",
+        "SKILL.md:289",
+        "references/scope-and-conflicts.md:55",
+        "references/setup-and-payoff.md:70",
+        "references/chapter-ends-and-endings.md:84"
+      ],
+      "peer_side_refs": [
+        "peer:genre-fiction-craft/SKILL.md:26",
+        "peer:genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:93"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 5 处，peer 2 处）；peer 侧只有一行转出表加一行 reference 内的转回句，接收内容比本包薄",
+      "note": "本包不裁题材契约，题材冲突按 SKILL.md:240 顺序处理并给两版；未写题材契约与本包规则同时命中时的先后字段。"
+    },
+    {
+      "id": "SQ-IF06",
+      "topic": "跨媒介改编与互动形式",
+      "provider": "scene-conflict-and-rhythm 只做叙事文本内的场与章；cross-media-drama-adaptation 拥有舞台方案、分场稿、镜头与互动分支",
+      "consumer": "双向：本包把改编请求转出，peer 把单场冲突、悬念、节奏与章末转回本包",
+      "payload_or_ids": [
+        "SC-04 的「先看媒介，再选呈现通道」（references/scope-and-conflicts.md:13）"
+      ],
+      "missing_field_branch": "游戏关卡、战斗数值、技能树不在本包接口，改编成互动形式归 peer（SKILL.md:32）。非叙事文本结构重排不接（SKILL.md:31）。转出后本包不提供场与章之外的媒介判断。",
+      "scene_side_refs": [
+        "SKILL.md:31",
+        "SKILL.md:32",
+        "SKILL.md:43",
+        "references/scene-units.md:51",
+        "references/scope-and-conflicts.md:13"
+      ],
+      "peer_side_refs": [
+        "peer:cross-media-drama-adaptation/SKILL.md:36"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 5 处，peer 1 处）；peer 侧为单行转出表",
+      "note": "本包 references/scene-units.md:51 与 references/scope-and-conflicts.md:13 处理跨媒介推断，均自标「（推断）」或不外推，未要求回读 peer 规则。"
+    },
+    {
+      "id": "SQ-IF07",
+      "topic": "规划入口与症状级编号消费（补充盘点，指令清单外但包内有实际双向引用）",
+      "provider": "fiction-planning-and-diagnosis 是总流程与读者反馈入口；scene-conflict-and-rhythm 提供 SU-15／SU-17 等单元内规则供其按编号消费",
+      "consumer": "双向：本包把选题、资料核验与读者反馈转出（SKILL.md:25、:40），peer 按症状点名单包编号",
+      "payload_or_ids": [
+        "SU-15",
+        "SU-17",
+        "FC-08",
+        "FC-10"
+      ],
+      "missing_field_branch": "peer 侧直接把本包编号写进自己的症状表（peer:fiction-planning-and-diagnosis/SKILL.md:145、:155），属编号级消费；本包未声明编号稳定性或版本，peer 侧也没有回传通道。",
+      "scene_side_refs": [
+        "SKILL.md:25",
+        "SKILL.md:40",
+        "SKILL.md:286",
+        "SKILL.md:288"
+      ],
+      "peer_side_refs": [
+        "peer:fiction-planning-and-diagnosis/SKILL.md:29",
+        "peer:fiction-planning-and-diagnosis/SKILL.md:41",
+        "peer:fiction-planning-and-diagnosis/SKILL.md:145",
+        "peer:fiction-planning-and-diagnosis/SKILL.md:155"
+      ],
+      "bidirectional": "两侧都有实测行号（本包 4 处，peer 4 处）",
+      "note": "登记此条是为避免 interfaces 组漏项：本包 §1 转介表含 fiction-planning 行，peer 亦按 SU 编号点名本包。"
+    }
+  ],
+  "applicability": [
+    {
+      "id": "SQ-A01",
+      "text": "非写实契约与实验文体：作者已达成目标的选择按 SC-01 保留，不因不合惯例纠正。",
+      "limit": "本包把它写在负触发区和退出条里，优先于任何规则；仍要检查是否产生作者想要的效果。",
+      "anchors": [
+        "SKILL.md:30",
+        "SKILL.md:215",
+        "references/scene-and-action-diagnosis.md:31",
+        "references/scene-and-action-diagnosis.md:148",
+        "references/action-and-fight.md:51"
+      ]
+    },
+    {
+      "id": "SQ-A02",
+      "text": "一次读完（短篇、单行本大部分章节）与分次阅读（连载、日更、分章发布）的章末做法不同。",
+      "limit": "分次阅读才要求留未解真问题；一次读完的短篇只需一个总收束，章末可阶段性收束。先问「读者真的会在这里停下来吗」（references/chapter-ends-and-endings.md:19）。",
+      "anchors": [
+        "references/chapter-ends-and-endings.md:19",
+        "references/chapter-ends-and-endings.md:23",
+        "references/chapter-ends-and-endings.md:24",
+        "references/chapter-ends-and-endings.md:25",
+        "SKILL.md:185"
+      ]
+    },
+    {
+      "id": "SQ-A03",
+      "text": "诗：可借用节奏、意象和转折诊断，格律、押韵、分行不在本包范围。",
+      "limit": "scope 表只给一行「可借用／要调整」，本包没有针对诗的机制卡或示例。",
+      "anchors": [
+        "references/scope-and-conflicts.md:47",
+        "references/scope-and-conflicts.md:53"
+      ]
+    },
+    {
+      "id": "SQ-A04",
+      "text": "明说寓意的作品（含寓言、儿童文学）：节奏规则照用，是否明说按本作契约调整。",
+      "limit": "儿童文学不等于必须明说；要明说时改为开头明示、每次变奏加深。SU-18 的暗线做法是可选，不是硬要求。",
+      "anchors": [
+        "references/scope-and-conflicts.md:54",
+        "references/chapter-ends-and-endings.md:76",
+        "references/chapter-ends-and-endings.md:84",
+        "SKILL.md:188"
+      ]
+    },
+    {
+      "id": "SQ-A05",
+      "text": "承诺公平解谜的推理：氛围暗线不能代替公平线索，解谜公平转题材 skill。",
+      "limit": "本包保留检查线索与信息权限的部分，把题材层的公平性契约转出；象征读法不能代替破案或救人所需证据。",
+      "anchors": [
+        "references/scope-and-conflicts.md:55",
+        "references/chapter-ends-and-endings.md:80",
+        "references/chapter-ends-and-endings.md:84",
+        "references/setup-and-payoff.md:70"
+      ]
+    },
+    {
+      "id": "SQ-A06",
+      "text": "中文口语叙事：声音可用同韵、同句尾、称呼或语气变化，不照搬外语语音做法与外语词数上限。",
+      "limit": "本包明确中文不套「不超过三个词」的英文上限；示例只作自创示范。",
+      "anchors": [
+        "references/scope-and-conflicts.md:56",
+        "SKILL.md:180",
+        "examples/refrain-case.md:31",
+        "templates/scene-workbook.md:54"
+      ]
+    },
+    {
+      "id": "SQ-A07",
+      "text": "喜剧暴力与死亡哀悼按本作契约选，不按题材标签决定。",
+      "limit": "六组取舍给出「喜剧能否贴着动作发生」「死亡要不要哀悼」两条，均按语调契约与功能判断；本包不宣布黑色幽默一律不能用。",
+      "anchors": [
+        "references/scope-and-conflicts.md:72",
+        "references/scope-and-conflicts.md:73",
+        "references/action-and-fight.md:161",
+        "references/action-and-fight.md:162",
+        "references/action-and-fight.md:164",
+        "references/action-and-fight.md:71",
+        "SKILL.md:205"
+      ]
+    },
+    {
+      "id": "SQ-A08",
+      "text": "现实技术参数不可当事实：武器、急救、工程参数、通信与战术不在覆盖范围，使用时标明「未核实」。",
+      "limit": "本包只分析已设定虚构时代与媒介条件；架空技术可作为设定继续写，不冒充史实；核实不了要限定受影响的结论。",
+      "anchors": [
+        "SKILL.md:48",
+        "SKILL.md:244",
+        "SKILL.md:245",
+        "references/scope-and-conflicts.md:62",
+        "references/scope-and-conflicts.md:63",
+        "references/scope-and-conflicts.md:66",
+        "references/scene-and-action-diagnosis.md:116",
+        "references/scene-and-action-diagnosis.md:150"
+      ]
+    },
+    {
+      "id": "SQ-A09",
+      "text": "慢场景、过场、抒情段、仪式与有意停滞不受「每场都必须付代价」约束。",
+      "limit": "强度阶梯与代价检查只在作者希望推高某个峰值时使用；无损胜利、无变化观察或余韵都可能成立。",
+      "anchors": [
+        "references/scope-and-conflicts.md:35",
+        "references/scope-and-conflicts.md:37",
+        "references/scene-units.md:13",
+        "references/scene-units.md:18",
+        "references/intensity-and-rhythm.md:20",
+        "references/intensity-and-rhythm.md:51"
+      ]
+    },
+    {
+      "id": "SQ-A10",
+      "text": "群像多线与长篇连载：每条线各有自己的 5 分，线与线之间不比较绝对值；章与章之间换峰值类型。",
+      "limit": "本包的 SU-02／SU-10 只在单元内比较；卷级安排转长篇规划包（references/intensity-and-rhythm.md:3）。连载钩子与卷级悬念转交（references/intensity-and-rhythm.md:36）。",
+      "anchors": [
+        "references/intensity-and-rhythm.md:20",
+        "references/intensity-and-rhythm.md:36",
+        "references/intensity-and-rhythm.md:3",
+        "SKILL.md:176",
+        "SKILL.md:177"
+      ]
+    },
+    {
+      "id": "SQ-A11",
+      "text": "跨长时间跨度的跳接：小说不受「不能演出数年」约束，但受注意力与篇幅约束；主动留白要写明是本作契约。",
+      "limit": "此判断标注为（推断），由舞台侧限制迁移而来；跨度超出篇幅承载时先考虑换处理法，不只补一句转述。",
+      "anchors": [
+        "references/scene-units.md:40",
+        "references/scene-units.md:47",
+        "references/scene-units.md:51",
+        "references/scope-and-conflicts.md:13"
+      ]
+    },
+    {
+      "id": "SQ-A12",
+      "text": "超自然与现实两读：仅在两条解释各有可观察支持与边界时保留；设定本身超常的作品改守内部规则。",
+      "limit": "人物信哪条不当作作品结论；结尾裁决要符合本作类型契约。",
+      "anchors": [
+        "references/setup-and-payoff.md:59",
+        "references/setup-and-payoff.md:71",
+        "references/setup-and-payoff.md:74",
+        "examples/refrain-case.md:37"
+      ]
+    },
+    {
+      "id": "SQ-A13",
+      "text": "单一证据与经验参数：只作低置信度设计假设，须写明与当前任务的相似条件，不得写成体裁规律。",
+      "limit": "多个转述同一案例不算独立验证；强度等级、轻重拍、段落数量只作练习值。",
+      "anchors": [
+        "references/scope-and-conflicts.md:39",
+        "references/scope-and-conflicts.md:41",
+        "templates/scene-workbook.md:51",
+        "templates/scene-workbook.md:53",
+        "templates/scene-workbook.md:55"
+      ]
+    },
+    {
+      "id": "SQ-A14",
+      "text": "开放式结尾与反高潮可成立：「未解」是设计不是缺陷，前提是结尾方式符合此前承诺。",
+      "limit": "本包不强迫给已达成目标的静章加反转（references/chapter-ends-and-endings.md:25）；开放式作品可以不解答，但解答与否服务主题或语调目标。",
+      "anchors": [
+        "references/suspense-and-reveal.md:16",
+        "references/chapter-ends-and-endings.md:25",
+        "references/chapter-ends-and-endings.md:27",
+        "references/intensity-and-rhythm.md:40"
+      ]
+    },
+    {
+      "id": "SQ-A15",
+      "text": "封闭空间法不适用时：以移动为结构的故事可用「移动中的封闭单元」，开放景观与群体行动需要扩展就扩展。",
+      "limit": "不要求每次都收窄，不把人物跑出场景再回来自动判为错误；边界与题材契约冲突时停在待作者决定。",
+      "anchors": [
+        "references/suspense-and-reveal.md:65",
+        "references/suspense-and-reveal.md:73",
+        "references/suspense-and-reveal.md:77"
+      ]
+    },
+    {
+      "id": "SQ-A16",
+      "text": "非叙事文本与游戏数值不在适用面：说明书、论文、报告的结构重排不接；关卡、战斗数值、技能树不属于本包接口。",
+      "limit": "本包只处理叙事文本的场与章；要改编成互动形式归 cross-media-drama-adaptation。",
+      "anchors": [
+        "SKILL.md:31",
+        "SKILL.md:32"
+      ]
+    },
+    {
+      "id": "SQ-A17",
+      "text": "无稿件输入时适用性收缩：只到设计路径与检查清单层，不产出定位式诊断。",
+      "limit": "「没有稿子」和「只有构思」是两种情形（SKILL.md:266），本包对两者都禁止位置引用；空表可填见 templates/scene-workbook.md:5。",
+      "anchors": [
+        "SKILL.md:29",
+        "SKILL.md:266",
+        "SKILL.md:267",
+        "references/rhythm-diagnosis.md:8",
+        "references/scene-and-action-diagnosis.md:44",
+        "examples/scene-cases.md:35"
+      ]
+    },
+    {
+      "id": "SQ-A18",
+      "text": "历史戏剧形式的幕数、转接数量与分支不作必守结构：形态是约束的解。",
+      "limit": "借用某种形式取决于本作媒介、任务与读者契约；有意模仿古典结构则登记为本作契约。",
+      "anchors": [
+        "references/scope-and-conflicts.md:43",
+        "references/scene-units.md:82",
+        "references/scene-units.md:117",
+        "examples/scene-cases.md:45",
+        "examples/scene-cases.md:52"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "SC-T1",
+      "kind": "positive",
+      "scenario": "设计一场两人谈判戏",
+      "expected": "写明进场和离场各变了什么、约束从哪来、知情差",
+      "rule_ids": [
+        "SC-01",
+        "SC-02",
+        "SC-03",
+        "SC-06",
+        "SC-08",
+        "SC-11",
+        "SU-04"
+      ],
+      "note": "骨架原条目，scenario／expected 原文未改；本草案只补 rule_ids。"
+    },
+    {
+      "id": "SC-T2",
+      "kind": "missing",
+      "scenario": "只说「这一章节奏慢」，不给正文",
+      "expected": "先要正文；先给检查清单，不臆断原因",
+      "rule_ids": [
+        "SC-14",
+        "SU-10",
+        "SC-07",
+        "SC-02",
+        "SU-19"
+      ],
+      "note": "骨架原条目，scenario／expected 原文未改；本草案只补 rule_ids。"
+    },
+    {
+      "id": "SC-T3",
+      "kind": "conflict",
+      "scenario": "作者把高潮定在第 10 章，但第 6 章已有更强的对决",
+      "expected": "给「降级前文」和「重定峰值」两条路，由作者裁决",
+      "rule_ids": [
+        "SU-02",
+        "SC-01",
+        "SC-13",
+        "SC-14"
+      ],
+      "note": "骨架原条目，scenario／expected 原文未改；本草案只补 rule_ids。"
+    },
+    {
+      "id": "SC-T4",
+      "kind": "boundary",
+      "scenario": "几十人的群战",
+      "expected": "走群战与转述规则，不逐人写打斗",
+      "rule_ids": [
+        "AF-11",
+        "AF-12",
+        "AF-13",
+        "SC-08",
+        "SC-06"
+      ],
+      "note": "骨架原条目，scenario／expected 原文未改；本草案只补 rule_ids。"
+    },
+    {
+      "id": "SC-T5",
+      "kind": "positive",
+      "scenario": "写一场夜间看不见的一对一近身争夺，作者要读者能跟住局面变化，已有正文",
+      "expected": "知情表加感官范围一行（AF-06、SC-06），按控制／位置与条件／结果组织（AF-03），一次重要动作之后切到局面—威胁—下一步（AF-02），用身体可观察变化代替强度形容词（AF-05）；打完在下一场第一次相关处对上伤与资源（AF-08、AF-10）。",
+      "rule_ids": [
+        "AF-02",
+        "AF-03",
+        "AF-05",
+        "AF-06",
+        "AF-08",
+        "AF-10",
+        "SC-06",
+        "SC-08"
+      ],
+      "note": "补齐用例：正面动作场，走 SKILL.md §3「写或改一场动作戏」五步。"
+    },
+    {
+      "id": "SC-T6",
+      "kind": "positive",
+      "scenario": "设计一个约八千字悬疑短篇：作者只给构思、没有稿件，要铺垫、悬念、高潮和收尾",
+      "expected": "走设计路径而非逐段诊断：先定最后一拍与目标情绪（SU-01，写不出给两三个候选），按知识表选悬念方式（SU-04、SU-03），排阶梯并写每级代价（SU-05），伏笔要另有当下用处（SU-06），一次读完的收尾按 SU-17 试删其后内容；交付场景卡与知情表，自创示例明确标注（SKILL.md:59）。",
+      "rule_ids": [
+        "SU-01",
+        "SU-03",
+        "SU-04",
+        "SU-05",
+        "SU-06",
+        "SU-17",
+        "SC-01"
+      ],
+      "note": "补齐用例：无稿的正面设计，与 SC-T2 的缺料出口区分。"
+    },
+    {
+      "id": "SC-T7",
+      "kind": "missing",
+      "scenario": "作者说「第 10 章高潮不够响，前文肯定有抢戏的」，不给第 6 章与第 10 章正文或场次日",
+      "expected": "停在「未能核实」：看不出哪一场更强时不臆断峰值（references/intensity-and-rhythm.md:24）。要谁定：要作者补章节或场次日、正文与「不能改的东西」。其余照常做：可先交 1–5 自评表、逐编号台账空表（templates/scene-workbook.md:57）与不依赖正文的检查项；不写任何「第 N 段有问题」的定位结论（SKILL.md:29）。",
+      "rule_ids": [
+        "SU-02",
+        "SC-14",
+        "SU-19"
+      ],
+      "note": "补齐用例：缺料 + 峰值判断依赖缺失输入。"
+    },
+    {
+      "id": "SC-T8",
+      "kind": "missing",
+      "scenario": "「帮我把三段长谈删短，节奏太慢」，正文贴了但没贴这三段所在章的前后场",
+      "expected": "停在局部缺料：先过 SC-01 与长谈三问（references/scene-information-and-space.md:25、:32），把每段承担的功能抄进 SC-13（references/scene-and-action-diagnosis.md:129）；判「慢」是否需要跨场比较时缺前后场正文，就写明缺哪几场、补上能做什么（references/scene-and-action-diagnosis.md:154）。其余照常做：已给正文那段可先出修改单（位置｜症状｜原因｜规则｜改法｜代价），不因局部缺料整体停摆。",
+      "rule_ids": [
+        "SC-01",
+        "SC-07",
+        "SC-12",
+        "SC-13",
+        "SC-14"
+      ],
+      "note": "补齐用例：部分有稿部分缺料的缺料分支。"
+    },
+    {
+      "id": "SC-T9",
+      "kind": "conflict",
+      "scenario": "作者要求「每章都必须有一个 5 分主峰」，同时本作用是三条线交替的群像长篇，且第 7 章有意写成观察章",
+      "expected": "停在这里不强行统一：多峰与群像各有规则（references/intensity-and-rhythm.md:20 群像每线自己的 5 分、线与线不比绝对值；references/scope-and-conflicts.md:37 观察章不受「每场必须付代价」约束），两种要求不能同时满足时给两版与各自代价，裁决者是作者（SKILL.md:240、SKILL.md:269）。其余照常做：先按单元列出峰值分布与第 7 章功能，不动已定的观察章。",
+      "rule_ids": [
+        "SU-02",
+        "SU-10",
+        "SC-01",
+        "SC-14"
+      ],
+      "note": "补齐用例：通则与作者目标互斥。"
+    },
+    {
+      "id": "SC-T10",
+      "kind": "boundary",
+      "scenario": "作者要按某古典戏剧形式的固定幕数与转接数量逐章照做",
+      "expected": "判为把历史格式当通则，不照做：幕数与要素清单不是必守项（references/scene-units.md:82），先写本章要解决的约束再选组织方式（SKILL.md:70）。停在与作者确认是否为本作契约：作者确认有意模仿旧形式，就登记「这是本作的契约」（references/scene-units.md:47、examples/scene-cases.md:52）；未确认前列两版。其余照常做：约束—退出条件—分节理由的检查照走。",
+      "rule_ids": [
+        "SC-09",
+        "SC-04",
+        "SC-01"
+      ],
+      "note": "补齐用例：外部格式与包内规则的边界。"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "SC-G01",
+      "text": "交付状态词四行表在两处逐字重复：SKILL.md §9（255 至 258 行）与 references/rhythm-diagnosis.md §6「状态词」小节（76 至 79 行）四行判据文本相同，同一规则两个承载处，改一处易漏另一处。两处表外说明已分叉：SKILL.md:260 多出台账列与「未知」合法值条款，rhythm 侧只有禁令句（references/rhythm-diagnosis.md:81），且 rhythm:70 的小节未指回 SKILL.md §9。",
+      "anchors": [
+        "SKILL.md:253",
+        "SKILL.md:255",
+        "SKILL.md:256",
+        "SKILL.md:257",
+        "SKILL.md:258",
+        "SKILL.md:260",
+        "references/rhythm-diagnosis.md:70",
+        "references/rhythm-diagnosis.md:74",
+        "references/rhythm-diagnosis.md:76",
+        "references/rhythm-diagnosis.md:79",
+        "references/rhythm-diagnosis.md:81"
+      ]
+    },
+    {
+      "id": "SC-G02",
+      "text": "失败出口表在两处行数不等：SKILL.md §10 有 9 条数据行（266 至 274），references/rhythm-diagnosis.md §7 只有 7 条（94 至 100）。rhythm 版缺两条：「体例、峰值类型、暗线是否明说定不下来」（SKILL.md:271）与「要打分、批量自动替换、裁定唯一正确」（SKILL.md:272）。另有四处用词分叉：没有稿子／没有正文（266 对 94）、两种读法／两读（269 对 97）、全书结构／结构（270 对 98）。只读 rhythm 单文件的消费者拿不到后两条出口。",
+      "anchors": [
+        "SKILL.md:262",
+        "SKILL.md:266",
+        "SKILL.md:269",
+        "SKILL.md:270",
+        "SKILL.md:271",
+        "SKILL.md:272",
+        "references/rhythm-diagnosis.md:90",
+        "references/rhythm-diagnosis.md:94",
+        "references/rhythm-diagnosis.md:97",
+        "references/rhythm-diagnosis.md:98"
+      ]
+    },
+    {
+      "id": "SC-G03",
+      "text": "「单元」在两处定义不同、第三处又引入「幕」：SKILL.md:177 说短篇的单元是全篇、长篇是章或场景（无卷）；references/intensity-and-rhythm.md:28 说单位是场、章、卷或整篇（含卷）；references/chapter-ends-and-endings.md:9 写场景或章节单元（场、章、幕）。references/intensity-and-rhythm.md:11 另称高潮是「全篇强度的标尺」。跨章峰值比较（如第 6 章对第 10 章）按前一读法越出单元、按后两读法在单元内，包内未写以哪条为准。",
+      "anchors": [
+        "SKILL.md:177",
+        "references/intensity-and-rhythm.md:11",
+        "references/intensity-and-rhythm.md:28",
+        "references/chapter-ends-and-endings.md:9",
+        "examples/scene-cases.md:67"
+      ]
+    },
+    {
+      "id": "SC-G04",
+      "text": "模板层行内真实编号覆盖率低（实测）：templates/action-checklist.md 共 18 条数据行（A1 至 A9、B1 至 B6、C1 至 C3），行内带规则编号的 5 行（10、12、16、24、25），其余 13 行（含 A1、A3、A5、A6、A7、A9、B1、B4、B5、B6、C1、C2、C3）靠文件头整链引用（templates/action-checklist.md:3）。templates/scene-workbook.md 共 16 条数据行，行内带编号的 2 行（16、63），其余 14 行靠节标题带编号。",
+      "anchors": [
+        "templates/action-checklist.md:3",
+        "templates/action-checklist.md:9",
+        "templates/action-checklist.md:10",
+        "templates/action-checklist.md:14",
+        "templates/action-checklist.md:26",
+        "templates/action-checklist.md:36",
+        "templates/scene-workbook.md:16",
+        "templates/scene-workbook.md:25",
+        "templates/scene-workbook.md:63"
+      ]
+    },
+    {
+      "id": "SC-G05",
+      "text": "逐编号台账没有预印的逐行结构：templates/scene-workbook.md §7 只给 1 行尖括号占位符（63 行）加「每个编号独占一行」的填写约束（59、65 行）。包内唯一编号实测 51 个（SC 14、SU 19、AF 18，其中 AF-01／AF-09／AF-15 只在 references/action-and-fight.md:5 作交叉引用、无卡体，实卡 15 张），消费者须自行枚举才能成行。示例仅在 examples/scene-cases.md:92 至 :102 给出 5 行片段。",
+      "anchors": [
+        "templates/scene-workbook.md:57",
+        "templates/scene-workbook.md:59",
+        "templates/scene-workbook.md:61",
+        "templates/scene-workbook.md:63",
+        "templates/scene-workbook.md:65",
+        "references/action-and-fight.md:5",
+        "examples/scene-cases.md:92",
+        "examples/scene-cases.md:100"
+      ]
+    },
+    {
+      "id": "SC-G06",
+      "text": "反例承载不均（实测计数）：全包「反例」标记行 19 行，分布为 intensity-and-rhythm 6、suspense-and-reveal 4、chapter-ends-and-endings 4、setup-and-payoff 3、scene-units 1、action-and-fight 1；scope-and-conflicts、scene-information-and-space、scene-and-action-diagnosis、rhythm-diagnosis 四文件为 0。AF 族 15 张卡只有 AF-16 一条反例（references/action-and-fight.md:175）；SU-07 无「反例」行，只有边界句（references/setup-and-payoff.md:57）；SC 族 14 张卡只有 SC-05 一条（references/scene-units.md:67）。相近承担位置分别是「不要这样用」（references/scene-information-and-space.md:44）、「什么时候不改」列（references/scene-and-action-diagnosis.md:39 至 :43）、「负面回归」清单（references/rhythm-diagnosis.md:85 至 :88）、「不写成通用规则的说法」表（references/scope-and-conflicts.md:85）。",
+      "anchors": [
+        "references/intensity-and-rhythm.md:21",
+        "references/suspense-and-reveal.md:17",
+        "references/chapter-ends-and-endings.md:26",
+        "references/setup-and-payoff.md:22",
+        "references/setup-and-payoff.md:57",
+        "references/scene-units.md:67",
+        "references/action-and-fight.md:175",
+        "references/scene-information-and-space.md:44",
+        "references/scene-and-action-diagnosis.md:39",
+        "references/scene-and-action-diagnosis.md:43",
+        "references/rhythm-diagnosis.md:85",
+        "references/rhythm-diagnosis.md:88",
+        "references/scope-and-conflicts.md:85"
+      ]
+    },
+    {
+      "id": "SC-G07",
+      "text": "旁证与实测数字不一致：notes/operations-contract/scene-conflict-and-rhythm.md:66 记「53 个编号（SC14＋SU19＋AF 提及 18／实卡 15）」，按其自列加数为 51；本席位对 17 个文件实测唯一编号 51 个（SC 14、SU 19、AF 18），实卡 48 张（SC 14＋SU 19＋AF 15）。本草案按 51 记。差异在旁证侧的加法，不涉成品文本。",
+      "anchors": [
+        "references/action-and-fight.md:5",
+        "SKILL.md:144",
+        "SKILL.md:210"
+      ],
+      "notes_refs": [
+        "notes/operations-contract/scene-conflict-and-rhythm.md:66"
+      ]
+    },
+    {
+      "id": "SC-G08",
+      "text": "骨架文件字段与任务描述不符：任务说明称骨架 status 为「skeleton_not_frozen」，实测 notes/quality/scene-conflict-and-rhythm/brief.json:4 为「skeleton」。本草案另建 brief-draft.json，未覆盖骨架，也未改其 status。",
+      "anchors": [],
+      "notes_refs": [
+        "notes/quality/scene-conflict-and-rhythm/brief.json:4",
+        "notes/quality/scene-conflict-and-rhythm/brief-draft.json:1"
+      ]
+    },
+    {
+      "id": "SC-G09",
+      "text": "跨 skill 接口只到编号级：六条主要接口都以规则编号交接（SKILL.md:46、references/scene-units.md:90、references/chapter-ends-and-endings.md:18、references/chapter-ends-and-endings.md:33），没有字段名、类型、版本或输出落点，也没有转出后回传与确认格式。SKILL.md:298 只写「暂停该处并转交确认」；§6 参考表的「缺料或冲突时的出口」列同为文字方向（SKILL.md:220）。",
+      "anchors": [
+        "SKILL.md:46",
+        "SKILL.md:220",
+        "SKILL.md:298",
+        "references/scene-units.md:90",
+        "references/chapter-ends-and-endings.md:18",
+        "references/chapter-ends-and-endings.md:33",
+        "references/rhythm-diagnosis.md:58"
+      ]
+    },
+    {
+      "id": "SC-G10",
+      "text": "「同一场只用一张表」在两包作用域不同且未写合并责任：本包 references/scene-information-and-space.md:5 规定一张知情表由 SU-04 建立、全场共用、不另建第二张；peer 包 character-and-narrative-control/references/information-control.md:38 规定全书只用一张信息表并另加列。两包均未写同时使用时由哪张承载、何时失效、由谁合并。本包 templates/scene-workbook.md §2（21 行）与 peer 的 narrative-workbook 都各有表体。",
+      "anchors": [
+        "references/scene-information-and-space.md:5",
+        "references/scene-information-and-space.md:11",
+        "templates/scene-workbook.md:21",
+        "templates/scene-workbook.md:23",
+        "references/suspense-and-reveal.md:27"
+      ]
+    },
+    {
+      "id": "SC-G11",
+      "text": "「没有修改文件的授权」这条出口只在 reference 一处承载（references/scene-and-action-diagnosis.md:147）：SKILL.md §2 使用方式与 §10 失败出口表（266 至 274 九行）都没有对应条目；全包「授权」二字在 SKILL.md 内实测 0 命中。只读 §10 的消费者不知道有这条收口。",
+      "anchors": [
+        "references/scene-and-action-diagnosis.md:147",
+        "SKILL.md:264",
+        "SKILL.md:266",
+        "SKILL.md:274"
+      ]
+    },
+    {
+      "id": "SC-G12",
+      "text": "AF-13、AF-16、AF-17 三张卡在入口层没有指向：卡体存在（references/action-and-fight.md:142、:166、:179）、规则清单有行（SKILL.md:204、:206、:207）、速查表也在 references 内列它们（references/action-and-fight.md:15、:17、:18），但最短路径的主卡选择行（SKILL.md:88）与 §4 症状速查（112 至 138 的 27 行）都未指向这三个编号；症状速查里出现的 AF 编号为 AF-02、03、04、05、06、07、08、10、11、12、14、18。",
+      "anchors": [
+        "SKILL.md:88",
+        "SKILL.md:112",
+        "SKILL.md:138",
+        "SKILL.md:204",
+        "SKILL.md:206",
+        "SKILL.md:207",
+        "references/action-and-fight.md:15",
+        "references/action-and-fight.md:142",
+        "references/action-and-fight.md:166",
+        "references/action-and-fight.md:179"
+      ]
+    },
+    {
+      "id": "SC-G13",
+      "text": "agents 入口提示与正文失败出口方向不同、无优先级声明：agents/openai.yaml:6 写「材料不全时给出标明『假设』的草案」，SKILL.md:267 写「只说这一章节奏慢、不给正文时先要正文，先给检查清单」；yaml:2 自述不授予权限、以宿主为准，SKILL.md:56 后半句限住无稿情形。包内未写两份文本冲突时以哪份为准（本席位只登记位置，不判是否构成缺陷）。",
+      "anchors": [
+        "agents/openai.yaml:2",
+        "agents/openai.yaml:6",
+        "agents/openai.yaml:8",
+        "SKILL.md:56",
+        "SKILL.md:267"
+      ]
+    },
+    {
+      "id": "SC-G14",
+      "text": "同义限定句多处重复承载、彼此不指回：「1–5 只是同一篇内部相对自评、不是测量结果」出现在 SKILL.md:57、SKILL.md:176、references/intensity-and-rhythm.md:7、:15、:32、references/suspense-and-reveal.md:58 六处；「数字只用来发现问题、不是及格线」出现在 SKILL.md:216、references/chapter-ends-and-endings.md:41、references/setup-and-payoff.md:41、references/rhythm-diagnosis.md:30 四处。措辞略有差异，无一处声明权威版本。",
+      "anchors": [
+        "SKILL.md:57",
+        "SKILL.md:176",
+        "SKILL.md:216",
+        "references/intensity-and-rhythm.md:7",
+        "references/intensity-and-rhythm.md:15",
+        "references/intensity-and-rhythm.md:32",
+        "references/suspense-and-reveal.md:58",
+        "references/setup-and-payoff.md:41",
+        "references/chapter-ends-and-endings.md:41",
+        "references/rhythm-diagnosis.md:30"
+      ]
+    },
+    {
+      "id": "SC-G15",
+      "text": "节奏审计表与 SU-19 清单不同构，靠表下自述兜住：表只有 7 列（references/rhythm-diagnosis.md:26），SU-19 六项清单（SKILL.md:216）中的阶梯每级升了什么、母题出现几次、钩子有无兑现章三项无对应列，由 references/rhythm-diagnosis.md:34 声明「表内没有对应列，按清单逐项另数」。SKILL.md:97 的回看句只指向「§3 表下的象征检查」，未指向这段列位分工；象征检查本身在 references/rhythm-diagnosis.md:32 与 references/chapter-ends-and-endings.md:86 各写一遍。",
+      "anchors": [
+        "SKILL.md:97",
+        "SKILL.md:216",
+        "references/rhythm-diagnosis.md:26",
+        "references/rhythm-diagnosis.md:32",
+        "references/rhythm-diagnosis.md:34",
+        "references/chapter-ends-and-endings.md:86"
+      ]
+    },
+    {
+      "id": "SC-G16",
+      "text": "本包无脚本，automation 为空：实测全包 17 个文件，扩展名只有 .md 与 .yaml，唯一的 yaml 是 agents 入口描述（agents/openai.yaml），无 scripts／schemas 目录、无运行回执。capabilities 组的 kind 因此只取 workflow 与 external 两种；包内也没有「确定性校验／自动替换」的能力承诺，只在出口里说明不接批量自动替换（SKILL.md:272）。",
+      "anchors": [
+        "agents/openai.yaml:2",
+        "SKILL.md:272",
+        "SKILL.md:52"
+      ]
+    }
+  ],
+  "notes_on_method": {
+    "verification_authority": "static：只读、检索、文本统计；未跑测试／构建／应用，未做任何 git 写，未运行 knowledge-compiler 的 kd_* 脚本。",
+    "commands_used": [
+      "/usr/bin/grep -n <短模式> <绝对或相对包内路径>（逐 anchor 断言命中行号；本机 /usr/bin/grep 为 BSD grep 2.6.0，非 PATH 上的 ugrep）",
+      "命中判定写法：/usr/bin/grep -Fn \"<原文短串>\" <file> 取行号列表，断言目标行号在列表内；每批逐条回显命中或未命中，不合并报告",
+      "/usr/bin/grep -rhoE \"\\b(SC|SU|AF)-[0-9]{2}\\b\" . | /usr/bin/sort -u（唯一编号 51；回显清单）",
+      "/usr/bin/grep -c \"^## AF-\" references/action-and-fight.md（实卡 15）",
+      "/usr/bin/grep -c \"^\\- \\*\\*反例\\*\\*|^\\*\\*反例\\*\\*\" 逐文件计数（合计 19，含 4 个零命中文件，逐文件回显非空表）",
+      "/usr/bin/find . -type f | wc -l（读到的文件数＝17，先断言再取词）",
+      "/usr/bin/grep -rn <禁用词与状态码> . 逐词计数（《＝0，硬规则＝0，用户明确要求＝0，融合版＝0，旧版＝0，本版＝0，更正＝0，来源是＝0，书内＝0，四类审计状态码＝0；原文＝2，两处均指用户稿件）",
+      "/usr/bin/grep -c \"^| [ABC][0-9] \" templates/action-checklist.md（18 行）与行内编号 5 行的差集回显",
+      "peer 包行号同样以 /usr/bin/grep -Fn 实测，前缀 peer: 标明不在本包内"
+    ],
+    "files_read_in_full": [
+      "SKILL.md（298 行，全文读）",
+      "references/scene-units.md（117 行，全文）",
+      "references/scene-information-and-space.md（68 行，全文）",
+      "references/setup-and-payoff.md（76 行，全文）",
+      "references/suspense-and-reveal.md（77 行，全文）",
+      "references/intensity-and-rhythm.md（103 行，全文）",
+      "references/chapter-ends-and-endings.md（88 行，全文）",
+      "references/action-and-fight.md（199 行，全文）",
+      "references/rhythm-diagnosis.md（100 行，全文）",
+      "references/scene-and-action-diagnosis.md（176 行，全文）",
+      "references/scope-and-conflicts.md（96 行，全文）",
+      "templates/scene-workbook.md（69 行，全文）",
+      "templates/action-checklist.md（38 行，全文）",
+      "examples/scene-cases.md（132 行，全文）",
+      "examples/suspense-and-hooks.md（78 行，全文）",
+      "examples/refrain-case.md（67 行，全文）",
+      "agents/openai.yaml（8 行，全文）",
+      "旁证：notes/operations-contract/scene-conflict-and-rhythm.md（74 行）、notes/quality/scene-conflict-and-rhythm/K4-r1.md（119 行）、notes/suite-contract.md 第一节至第七节、inputs/requirements.md（84 行）、skills/knowledge-compiler/references/r09-checks.md §6、r18-consumer-operations.md §2 至 §2d（只作判据口径，不抄结论）"
+    ],
+    "peer_files_grepped": [
+      "story-architecture-and-longform-planning/SKILL.md、references/serial-chapters-and-installments.md",
+      "character-and-narrative-control/SKILL.md、references/information-control.md、references/scene-summary-and-time.md、references/zh-and-serial.md",
+      "preset-card-generation/SKILL.md",
+      "line-editing-and-proofreading/SKILL.md、examples/worked-example.md",
+      "genre-fiction-craft/SKILL.md、references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md",
+      "cross-media-drama-adaptation/SKILL.md",
+      "fiction-planning-and-diagnosis/SKILL.md",
+      "以上只取与本包相接的行号，未整读 peer 包"
+    ],
+    "insufficient_evidence": [
+      "requirements 组：每条 text 的「原始需求」只按本轮正式文档（inputs/requirements.md、notes/suite-contract.md 与 R18／R09 条款）取语义，未逐条回查 v0 d23c461、v1 d2003e4、v2 3c1cb5f、基线 2a10c07 的 git 历史与 docs/plans/novel-skill-improvement-plan.md 全文映射，因此「是否漏承接某条历史需求」证据不够，不下结论。",
+      "capabilities 组：全部 kind 只能按静态文本判定 workflow／external；真实宿主是否加载、是否被实际执行、执行到什么程度，无运行证据（本轮未授权真实任务测试），故不写任何「已验证」字样。",
+      "interfaces 组：只核对到编号与转出／接收句两侧都有行号；字段名、类型、版本、缺字段回传契约在三方包内都不存在（见 SC-G09），故无法填「字段级一致性」这一层，证据不够。peer 包只取相接行、未整读，peer 侧是否另有承接段落未逐文件排查。",
+      "applicability 组：SQ-A03（诗）在本包只有 scope 表一行，没有专门限制或反例可引；SQ-A16（非叙事文本与游戏数值）只有 SKILL 两条负触发行。这两条的「限制」字段是从少句原文推得，标记为证据薄。",
+      "cases 组：10 条用例全部为本草案自创的静态场景，未实投任何模型或宿主，未观察输出；不写通过与否。",
+      "gaps 组：SC-G03、SC-G09、SC-G13 三条只登记位置差异与缺失的收口句，是否构成缺陷交后续 review 席位与作者裁；本草案未做语义裁决。",
+      "未执行 knowledge-compiler 的两支只读预检脚本（static 权限，脚本执行需另行授权），因此没有机器预检回执可引。"
+    ],
+    "scope_notes": [
+      "只新建并写了本文件；同目录 brief.json、review.json、K4-r1.md、s03a／s03b-desourcing-selfcheck.md 未改（写前与写后各测一次存在与行数）。",
+      "未写 output／、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md。",
+      "anchors 一律为包内相对路径加行号；以 peer: 开头的条目属兄弟包路径，不在本包内。",
+      "骨架的 gq5 字段本草案不带：任务纪律要求不写 GQ 状态，GQ 判定留给 review 席位与 Agent 1。",
+      "正文里出现的 GQ3／GQ4 字样只在 requirements 的 text 中标明该条需求出自 R09 §6 的哪一项门禁条目，不带任何状态判定；本草案不设门禁结论字段。"
+    ]
+  },
+  "round_complete": "draft-complete scene-brief",
+  "adopted_by": "Agent 1 / main agent 采纳（草案席原内容未改，仅改 kind/status 并加本三字段）",
+  "adopted_at": "2026-11-05 16:2x",
+  "draft_source_sha256": "514e75e823797b12"
+}

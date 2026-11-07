@@ -1,0 +1,1494 @@
+{
+  "version": 1,
+  "kind": "frozen-for-review",
+  "skill": "story-architecture-and-longform-planning",
+  "status": "adopted-for-review-not-final",
+  "assembled_by": "W4 质量 brief 草案席（非独立审核方；通过结论与 GQ 状态留给后续 review 席位）",
+  "assembled_at": "2026-11-05",
+  "case_source": "骨架 4 条来自 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）；草案新增 8 条取自成品包自身的负触发、卡住时与示例出口，逐条在 note 标位置",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "R09 §6.1 的 brief 草案，不是冻结件；只写事实与位置，不给通过结论、不写 GQ 状态。本席未写 brief.json（读取时它是 49 行骨架）。成品包＝output/story-architecture-and-longform-planning/：20 份 md、3,326 行（wc -l 实测 SKILL 401＋references 2,059＋examples 479＋templates 387＝3,326），另有 agents/openai.yaml 8 行。锚点格式 file.md:NN，包内路径相对包根，对端包路径带包名前缀；全部锚点写入前用 /usr/bin/grep -n 逐行实测。 并发状态：本席落盘期间同目录出现 brief.json（71,333 B）、brief.json.skeleton（1,731 B）与 K4-r1.md（31,032 B），均为其他席位写入；其中 brief.json 是本席草案 16:24 前后的快照（status＝adopted-for-review-not-final，gaps 与 notes_on_method 为空），本草案 16:29 版已补齐 10 条 gaps 与 notes_on_method，两者 draft_source_sha256 不同（快照记 cddbeae201d57ce9，本草案现值 dbd252fd854b43a6…）；是否以本草案覆盖冻结件交收口席决定。本席在 16:20 前读到的 brief.json 是 49 行骨架并只取其 cases 四条原文，本席未写 brief.json、review.json、s05*-desourcing-selfcheck.md 与 K4-r1.md。",
+  "requirements": [
+    {
+      "id": "YQ-R01",
+      "text": "先定形态：单本闭合／系列卷／一部书分卷连载／连续追捕，并问下一卷定没定（总需求「全书与分卷结构」的入口）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:92",
+        "SKILL.md:251",
+        "SKILL.md:94",
+        "references/serial-rules.md:9",
+        "references/serial-volume-and-closure.md:5",
+        "references/serial-volume-and-closure.md:13",
+        "references/serial-volume-and-closure.md:24",
+        "references/serial-volume-and-closure.md:26"
+      ]
+    },
+    {
+      "id": "YQ-R02",
+      "text": "单本与全书骨架：三要素入口、一句主行动与副线挂载、工序判断、终点先行、起点/打结/解结时点、容器预算、开篇契约、信息差、结尾两步、判断权（总需求「全书结构」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:100",
+        "SKILL.md:102",
+        "SKILL.md:108",
+        "SKILL.md:186",
+        "SKILL.md:190",
+        "SKILL.md:195",
+        "SKILL.md:199",
+        "SKILL.md:203",
+        "SKILL.md:208",
+        "SKILL.md:214",
+        "SKILL.md:217",
+        "SKILL.md:225",
+        "SKILL.md:229",
+        "references/plot-planning.md:22",
+        "references/plot-planning.md:180",
+        "references/plot-rules.md:1",
+        "references/plot-rules.md:533",
+        "templates/plot-canvas.md:7"
+      ]
+    },
+    {
+      "id": "YQ-R03",
+      "text": "因果验收与巧合处置：承重转折要「不得不发生」；巧合可开局不可白拿解结，三条合法化路径（总需求「因果与多线」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:234",
+        "SKILL.md:237",
+        "references/plot-rules.md:167",
+        "references/plot-rules.md:199",
+        "references/plot-diagnosis.md:131",
+        "references/plot-scope-and-conflicts.md:78"
+      ]
+    },
+    {
+      "id": "YQ-R04",
+      "text": "多线汇合与线的分层：因果汇合／对照并置／伪多线三判；卷内多线用 PL-08，跨卷的线进 SV-08 台账（总需求「因果与多线」「跨卷承诺台账」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:243",
+        "SKILL.md:304",
+        "SKILL.md:311",
+        "references/plot-rules.md:267",
+        "references/plot-scope-and-conflicts.md:18",
+        "references/plot-planning.md:121",
+        "templates/plot-canvas.md:14",
+        "references/serial-volume-and-closure.md:180"
+      ]
+    },
+    {
+      "id": "YQ-R05",
+      "text": "场景功能与删改：逐场填欲求/阻力/场末变化/功能/后文调用点；删场用可删除性不用舍得；章末只在分次交付载体设真问题（总需求「全书结构」的场景层）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:240",
+        "SKILL.md:246",
+        "SKILL.md:221",
+        "references/plot-rules.md:234",
+        "references/plot-rules.md:467",
+        "templates/plot-scene-table.md:36",
+        "templates/plot-scene-table.md:71"
+      ]
+    },
+    {
+      "id": "YQ-R06",
+      "text": "诊断闭环：范围与版本→先证伪→文本证据→症状映射→严重度→最小验证动作→回归检查；判 OOC 需四项事实（总需求「失败出口」与诊断侧承诺）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:129",
+        "SKILL.md:148",
+        "references/plot-diagnosis.md:7",
+        "references/plot-diagnosis.md:18",
+        "references/plot-diagnosis.md:46",
+        "references/plot-diagnosis.md:54",
+        "references/plot-diagnosis.md:64",
+        "references/plot-diagnosis.md:277",
+        "references/plot-diagnosis.md:313",
+        "templates/plot-diagnosis-report.md:5"
+      ]
+    },
+    {
+      "id": "YQ-R07",
+      "text": "修订闭环与授权纪律：默认不改原文、副本工作、W0–W5、三个层级一次只选一层、二稿回归强制、越权红线（总需求「失败出口」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:137",
+        "SKILL.md:77",
+        "references/plot-revision.md:5",
+        "references/plot-revision.md:22",
+        "references/plot-revision.md:69",
+        "references/plot-revision.md:117",
+        "references/plot-revision.md:137",
+        "references/plot-revision.md:157"
+      ]
+    },
+    {
+      "id": "YQ-R08",
+      "text": "分卷结构与卷表卷界：卷表先于故事、卷界按主线类型选切法、没定的卷只写卷号（总需求「分卷结构」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:110",
+        "SKILL.md:254",
+        "SKILL.md:257",
+        "references/serial-rules.md:11",
+        "references/serial-rules.md:13",
+        "references/serial-volume-and-closure.md:28",
+        "references/serial-volume-and-closure.md:48",
+        "templates/serial-tables.md:5"
+      ]
+    },
+    {
+      "id": "YQ-R09",
+      "text": "卷末的收与接：闭合度按下一卷定没定、先结账再开口、复位世界不复位角色、续卷开头三段式前情（总需求「跨卷承诺台账」的收接侧）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:121",
+        "SKILL.md:262",
+        "SKILL.md:265",
+        "SKILL.md:268",
+        "SKILL.md:271",
+        "references/serial-volume-and-closure.md:70",
+        "references/serial-volume-and-closure.md:92",
+        "references/serial-volume-and-closure.md:119",
+        "references/serial-volume-and-closure.md:144",
+        "templates/serial-tables.md:25",
+        "templates/serial-tables.md:36",
+        "templates/serial-tables.md:89"
+      ]
+    },
+    {
+      "id": "YQ-R10",
+      "text": "跨卷承诺台账：每条线写是什么/哪卷开/下一卷推进什么/最晚哪卷收/怎么收/预估章数，含转性、活动线计数与系列—卷—章依赖矩阵（总需求「跨卷承诺台账」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:276",
+        "references/serial-rules.md:27",
+        "references/serial-open-lines-and-continuity.md:9",
+        "references/serial-open-lines-and-continuity.md:34",
+        "references/serial-open-lines-and-continuity.md:41",
+        "references/serial-open-lines-and-continuity.md:51",
+        "templates/serial-tables.md:45",
+        "templates/serial-tables.md:115"
+      ]
+    },
+    {
+      "id": "YQ-R11",
+      "text": "连载章与期：章末四种收法＋下章落地＋平收条件、每一期至少推进一件事、篇幅有下限而材料不够时的填充来源（总需求「连载章与期」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:279",
+        "SKILL.md:282",
+        "references/serial-rules.md:31",
+        "references/serial-rules.md:33",
+        "references/serial-chapters-and-installments.md:7",
+        "references/serial-chapters-and-installments.md:16",
+        "references/serial-chapters-and-installments.md:35",
+        "references/serial-chapters-and-installments.md:52",
+        "templates/serial-tables.md:53"
+      ]
+    },
+    {
+      "id": "YQ-R12",
+      "text": "套路与升级：固定骨架每卷换一两样、重复的代价检查、四种升级方向都成立、赌注配篇幅（总需求「连载章与期」的系列侧）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:287",
+        "SKILL.md:290",
+        "references/serial-rules.md:37",
+        "references/serial-rules.md:39",
+        "references/serial-formula-and-escalation.md:9",
+        "references/serial-formula-and-escalation.md:27",
+        "references/serial-formula-and-escalation.md:42",
+        "templates/serial-tables.md:59"
+      ]
+    },
+    {
+      "id": "YQ-R13",
+      "text": "容量与排产：容量表八字段＋按周期核对、开载路线三条件与存稿、反馈日志/退场预案/备用结局、发行与现金流风险检查（总需求「容量与排产」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:144",
+        "SKILL.md:293",
+        "SKILL.md:296",
+        "SKILL.md:299",
+        "references/serial-rules.md:43",
+        "references/serial-production.md:5",
+        "references/serial-production.md:29",
+        "references/serial-production.md:55",
+        "references/serial-production.md:74",
+        "templates/serial-tables.md:13",
+        "templates/serial-tables.md:65",
+        "templates/serial-tables.md:79"
+      ]
+    },
+    {
+      "id": "YQ-R14",
+      "text": "单期载体审计：旧刊/分册/合集/电子刊另做六项核对，区分原始出版结构与后续转写校勘层（总需求「连载章与期」的载体侧）",
+      "status": "partial",
+      "note": "卡体与核对项清单在位（references/serial-chapters-and-installments.md:54–67），但 SKILL.md §5 的加粗规则卡只有 SV-01 至 SV-15，SV-16 未进卡体；模板面也没有对应记录表。详见 ST-G03、ST-G05。",
+      "anchors": [
+        "SKILL.md:119",
+        "SKILL.md:173",
+        "SKILL.md:327",
+        "SKILL.md:375",
+        "SKILL.md:378",
+        "references/serial-chapters-and-installments.md:54",
+        "references/serial-chapters-and-installments.md:58",
+        "references/serial-rules.md:1"
+      ]
+    },
+    {
+      "id": "YQ-R15",
+      "text": "模板字段：四件模板、79 个唯一编号（PL 16＋SV 16＋PA 12＋ST 24＋DR 11）、每 ID 独占一行、13 类产物的交付面（总需求「模板字段」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:314",
+        "SKILL.md:318",
+        "SKILL.md:366",
+        "templates/plot-canvas.md:7",
+        "templates/plot-scene-table.md:7",
+        "templates/plot-diagnosis-report.md:5",
+        "templates/serial-tables.md:5"
+      ]
+    },
+    {
+      "id": "YQ-R16",
+      "text": "失败出口：规划/诊断/修订/排产四类操作的缺料出口、作者不答时的最小改动、超边界直接说做不到（总需求「失败出口」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:346",
+        "SKILL.md:350",
+        "SKILL.md:354",
+        "SKILL.md:56",
+        "SKILL.md:83",
+        "references/plot-planning.md:17",
+        "references/plot-revision.md:164",
+        "references/serial-open-lines-and-continuity.md:45",
+        "references/serial-production.md:27",
+        "references/serial-formula-and-escalation.md:40",
+        "templates/serial-tables.md:101"
+      ]
+    },
+    {
+      "id": "YQ-R17",
+      "text": "转介与职责边界：七条转出路由、三条重叠归属、九条负触发、五条跨 Skill Owner（总需求的包边界）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:25",
+        "SKILL.md:35",
+        "SKILL.md:45",
+        "SKILL.md:58",
+        "SKILL.md:60",
+        "SKILL.md:64",
+        "SKILL.md:66"
+      ]
+    },
+    {
+      "id": "YQ-R18",
+      "text": "数字是起点不是门槛，不承诺追读/订阅/完读/销量，声明规则只在静态核对层（总需求的验收与置信承诺）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:78",
+        "SKILL.md:79",
+        "SKILL.md:363",
+        "SKILL.md:390",
+        "SKILL.md:397",
+        "references/plot-rules.md:10",
+        "references/plot-scope-and-conflicts.md:100",
+        "references/plot-scope-and-conflicts.md:123",
+        "references/serial-zh-webnovel.md:31",
+        "examples/plot-examples.md:287"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "ST-CAP-01",
+      "family": "定形态与单本骨架",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-01",
+        "PL-13"
+      ],
+      "what": "回答两问定形态（哪种形态／下一卷定没定），据此路由到只用 PL 卡、PL＋SV-03/13，或卷内 PL＋卷间 SV。",
+      "anchors": [
+        "SKILL.md:92",
+        "SKILL.md:94",
+        "SKILL.md:98",
+        "references/serial-rules.md:9",
+        "references/serial-volume-and-closure.md:13",
+        "references/serial-volume-and-closure.md:20"
+      ],
+      "limit": "下一卷没定时按单本处理，不对读者许跨卷承诺；判断不了单本还是系列时先按单本做（references/serial-volume-and-closure.md:26）。",
+      "counterexample_ref": [
+        "examples/serial-examples.md:119",
+        "references/serial-volume-and-closure.md:24"
+      ]
+    },
+    {
+      "id": "ST-CAP-02",
+      "family": "定形态与单本骨架",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-16",
+        "PL-01",
+        "PL-15",
+        "PL-02",
+        "PL-03",
+        "PL-13",
+        "PL-04",
+        "PL-09",
+        "PL-10",
+        "PL-11",
+        "PL-12"
+      ],
+      "what": "从点子到骨架的七步主流程：三要素与矛盾句→主行动与副线挂载→工序→终点与倒推→三点时间轴→容器与分段预算→开篇契约，再加多线/信息/结尾/场景。",
+      "anchors": [
+        "SKILL.md:100",
+        "SKILL.md:102",
+        "SKILL.md:108",
+        "references/plot-planning.md:22",
+        "references/plot-planning.md:180",
+        "references/plot-planning.md:184",
+        "references/plot-rules.md:1",
+        "references/plot-rules.md:566"
+      ],
+      "limit": "§0 输入表实测四项（references/plot-planning.md:5），SKILL.md:371 却写「六项输入」（见 ST-G04）；顺序清单第 12 步（场景表）标可选。",
+      "counterexample_ref": [
+        "references/plot-planning.md:201",
+        "examples/plot-examples.md:58",
+        "examples/plot-examples.md:63"
+      ]
+    },
+    {
+      "id": "ST-CAP-03",
+      "family": "定形态与单本骨架",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-01",
+        "PL-02",
+        "PL-03",
+        "PL-13",
+        "PL-04",
+        "PL-12"
+      ],
+      "what": "交付情节画布：PA-01 至 PA-12 每 ID 一行＋§2–§6 展开表，六列口径（字段 ID／字段／填写口径／填写／状态／稿件证据位置）；最小交付集六项。",
+      "anchors": [
+        "SKILL.md:108",
+        "SKILL.md:318",
+        "templates/plot-canvas.md:3",
+        "templates/plot-canvas.md:7",
+        "templates/plot-canvas.md:9",
+        "templates/plot-canvas.md:26",
+        "templates/plot-canvas.md:69",
+        "references/plot-planning.md:199"
+      ],
+      "limit": "人工工作纸，不含脚本、不自动校验（templates/plot-canvas.md:3）；留空不等于完成；未知是合法值但不得写成已完成。",
+      "counterexample_ref": [
+        "templates/plot-canvas.md:65",
+        "references/plot-planning.md:182"
+      ]
+    },
+    {
+      "id": "ST-CAP-04",
+      "family": "因果与多线验收与修订闭环",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-05",
+        "PL-06"
+      ],
+      "what": "对承重转折与结算逐件问「被前文哪条已成立事实推出」；对解结巧合三选一（前文付账／同量级配平／世界规则明示），都不满足则改因或改果。",
+      "anchors": [
+        "SKILL.md:234",
+        "SKILL.md:237",
+        "references/plot-rules.md:167",
+        "references/plot-rules.md:199",
+        "references/plot-diagnosis.md:141",
+        "references/plot-diagnosis.md:149",
+        "references/plot-scope-and-conflicts.md:78"
+      ],
+      "limit": "主题性荒诞、神话奇迹按本作读者契约另判（SKILL.md:235）；开局巧合不判缺陷（references/plot-diagnosis.md:151）。",
+      "counterexample_ref": [
+        "examples/plot-examples.md:88",
+        "examples/plot-examples.md:94",
+        "references/plot-diagnosis.md:146"
+      ]
+    },
+    {
+      "id": "ST-CAP-05",
+      "family": "因果与多线验收与修订闭环",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-08",
+        "PL-07",
+        "PL-14"
+      ],
+      "what": "删线测试判 A 因果汇合／B 对照并置／C 伪多线；逐场填功能与后文调用点；删场用可删除性，压缩时保留总括段。",
+      "anchors": [
+        "SKILL.md:243",
+        "SKILL.md:240",
+        "SKILL.md:246",
+        "references/plot-rules.md:267",
+        "references/plot-rules.md:234",
+        "references/plot-scope-and-conflicts.md:18",
+        "references/plot-revision.md:31",
+        "templates/plot-scene-table.md:36",
+        "templates/plot-scene-table.md:79"
+      ],
+      "limit": "中点照面可选、不是 B 型成立条件；跨卷的线不在此判，转 SV-08（SKILL.md:244）。",
+      "counterexample_ref": [
+        "examples/plot-examples.md:60",
+        "examples/plot-examples.md:61",
+        "references/plot-diagnosis.md:171"
+      ]
+    },
+    {
+      "id": "ST-CAP-06",
+      "family": "因果与多线验收与修订闭环",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-04",
+        "PL-07",
+        "PL-10",
+        "PL-11",
+        "PL-12",
+        "PL-05",
+        "PL-06",
+        "PL-08",
+        "PL-13",
+        "PL-15"
+      ],
+      "what": "诊断工作流：D0 定范围与版本→D1 先证伪（五类「不是缺陷」解释）→D2 三类文本证据→D3 症状映射八类→D4 严重度与最小验证动作→D5 建议与回归；另有 D6 全稿十一问与 OOC 四项事实。",
+      "anchors": [
+        "SKILL.md:129",
+        "references/plot-diagnosis.md:7",
+        "references/plot-diagnosis.md:18",
+        "references/plot-diagnosis.md:32",
+        "references/plot-diagnosis.md:40",
+        "references/plot-diagnosis.md:44",
+        "references/plot-diagnosis.md:46",
+        "references/plot-diagnosis.md:64",
+        "references/plot-diagnosis.md:277",
+        "references/plot-diagnosis.md:313"
+      ],
+      "limit": "没有原文只给检查清单与空白模板，不给诊断结论（references/plot-diagnosis.md:7）；范围不清时严重度一律降一级（:16）；D6 是清单不是计分表（:335）。",
+      "counterexample_ref": [
+        "references/plot-diagnosis.md:25",
+        "references/plot-diagnosis.md:304",
+        "templates/plot-diagnosis-report.md:66",
+        "examples/plot-examples.md:121"
+      ]
+    },
+    {
+      "id": "ST-CAP-07",
+      "family": "因果与多线验收与修订闭环",
+      "kind": "workflow",
+      "rule_ids": [
+        "PL-14",
+        "PL-07",
+        "PL-05",
+        "PL-13",
+        "PL-06",
+        "PL-15"
+      ],
+      "what": "修订工作流：授权表（默认不改原文、只在副本）、W0 冻结→W1 诊断→W2 选层级→W3 最小改动→W4 二稿回归→W5 记录；三个层级各自的必跑回归；输出定位＋建议＋可选最小改写。",
+      "anchors": [
+        "SKILL.md:137",
+        "references/plot-revision.md:5",
+        "references/plot-revision.md:7",
+        "references/plot-revision.md:22",
+        "references/plot-revision.md:44",
+        "references/plot-revision.md:69",
+        "references/plot-revision.md:101",
+        "references/plot-revision.md:117",
+        "references/plot-revision.md:137"
+      ],
+      "limit": "未授权改稿只给定位、建议与可选最小改写（references/plot-revision.md:13、SKILL.md:352）；没有回归记录的修订按「未能核实」交付（:135）。",
+      "counterexample_ref": [
+        "references/plot-revision.md:157",
+        "references/plot-revision.md:166",
+        "references/plot-revision.md:176"
+      ]
+    },
+    {
+      "id": "ST-CAP-08",
+      "family": "分卷与卷末收接与跨卷台账",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-02",
+        "SV-03"
+      ],
+      "what": "先填卷表（卷号／卷名／本卷主事件／篇幅／闭合度／下一卷第一步／节点／状态／视点线），再按主线类型选卷界切法。",
+      "anchors": [
+        "SKILL.md:110",
+        "SKILL.md:254",
+        "SKILL.md:257",
+        "references/serial-rules.md:11",
+        "references/serial-volume-and-closure.md:34",
+        "references/serial-volume-and-closure.md:48",
+        "references/serial-volume-and-closure.md:56",
+        "templates/serial-tables.md:5"
+      ],
+      "limit": "没定的卷只写卷号不填入口；已写的卷只改状态不改历史；目录与预告不证明下一卷已构思（references/serial-volume-and-closure.md:35）。",
+      "counterexample_ref": [
+        "references/serial-volume-and-closure.md:44",
+        "references/serial-volume-and-closure.md:66"
+      ]
+    },
+    {
+      "id": "ST-CAP-09",
+      "family": "分卷与卷末收接与跨卷台账",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-04",
+        "SV-05",
+        "SV-06",
+        "SV-07"
+      ],
+      "what": "闭合度三态按条件选；卷末四问（结账／只开一个口／收束动作／下一卷第一步）；复位四问（对手／据点／下一步可执行／角色状态变化）；续卷开头落当下—补前情—回当下。",
+      "anchors": [
+        "SKILL.md:121",
+        "SKILL.md:262",
+        "SKILL.md:265",
+        "SKILL.md:268",
+        "SKILL.md:271",
+        "references/serial-volume-and-closure.md:70",
+        "references/serial-volume-and-closure.md:78",
+        "references/serial-volume-and-closure.md:98",
+        "references/serial-volume-and-closure.md:125",
+        "references/serial-volume-and-closure.md:133",
+        "references/serial-volume-and-closure.md:156",
+        "templates/serial-tables.md:25",
+        "templates/serial-tables.md:36"
+      ],
+      "limit": "三态都是选择项不是升级路线；没有读者数据时不宣称哪种留存更高（references/serial-volume-and-closure.md:86）；回顾不设固定字数（references/serial-rules.md:23）。",
+      "counterexample_ref": [
+        "examples/serial-examples.md:86",
+        "examples/serial-examples.md:112",
+        "references/serial-volume-and-closure.md:90",
+        "references/serial-volume-and-closure.md:133"
+      ]
+    },
+    {
+      "id": "ST-CAP-10",
+      "family": "分卷与卷末收接与跨卷台账",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-08"
+      ],
+      "what": "建开放线台账（八列）＋活动线计数；只开写得出下一步动作的线；每卷末推进/回收/转性/关闭至少一条；连续性检查七步；接手旧稿加填系列—卷—章依赖矩阵。",
+      "anchors": [
+        "SKILL.md:276",
+        "SKILL.md:324",
+        "references/serial-rules.md:27",
+        "references/serial-open-lines-and-continuity.md:9",
+        "references/serial-open-lines-and-continuity.md:19",
+        "references/serial-open-lines-and-continuity.md:27",
+        "references/serial-open-lines-and-continuity.md:34",
+        "references/serial-open-lines-and-continuity.md:41",
+        "references/serial-open-lines-and-continuity.md:51",
+        "templates/serial-tables.md:45",
+        "templates/serial-tables.md:115"
+      ],
+      "limit": "两三条活动线只是初始提醒不是硬上限（SKILL.md:277）；没有前卷时跨卷判断标「未能核实」，不计入活动线（references/serial-open-lines-and-continuity.md:46）。",
+      "counterexample_ref": [
+        "references/serial-open-lines-and-continuity.md:29",
+        "references/serial-open-lines-and-continuity.md:48",
+        "examples/serial-examples.md:107"
+      ]
+    },
+    {
+      "id": "ST-CAP-11",
+      "family": "分卷与卷末收接与跨卷台账",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-02",
+        "SV-05",
+        "SV-08",
+        "PL-11"
+      ],
+      "what": "跨卷承诺按层级核对（系列／卷／角色弧／章／场景），已发表内容作核对基准，变更沿六步链查最低范围，冲突只列方案与代价交作者。",
+      "anchors": [
+        "references/serial-volume-and-closure.md:168",
+        "references/serial-volume-and-closure.md:172",
+        "references/serial-volume-and-closure.md:182",
+        "references/serial-volume-and-closure.md:184",
+        "references/serial-volume-and-closure.md:193",
+        "references/serial-volume-and-closure.md:195",
+        "SKILL.md:77",
+        "templates/serial-tables.md:139"
+      ],
+      "limit": "表不创造情节事实；不维护两个都自称最终的版本；没有前卷文本时只输出空表并把结论标「未能核实」。",
+      "counterexample_ref": [
+        "examples/serial-examples.md:118",
+        "examples/serial-examples.md:120",
+        "references/serial-volume-and-closure.md:111"
+      ]
+    },
+    {
+      "id": "ST-CAP-12",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-09",
+        "SV-10",
+        "PL-10"
+      ],
+      "what": "章末四种收法表（到场／问题／新事实／场景收束）＋下章首句落地＋平收条件；每期一句「本期推进了什么」；章末钩检查填 ST-14 至 ST-19。",
+      "anchors": [
+        "SKILL.md:279",
+        "SKILL.md:282",
+        "SKILL.md:221",
+        "references/serial-chapters-and-installments.md:7",
+        "references/serial-chapters-and-installments.md:16",
+        "references/serial-chapters-and-installments.md:23",
+        "references/serial-chapters-and-installments.md:35",
+        "references/serial-chapters-and-installments.md:52",
+        "templates/serial-tables.md:53",
+        "templates/plot-scene-table.md:61"
+      ],
+      "limit": "钩子写法与单章兑现转 SU-15/SU-16，本包只决定要不要章末问题及分布（SKILL.md:61）；单行本不填章末节（templates/plot-scene-table.md:69）。",
+      "counterexample_ref": [
+        "references/serial-chapters-and-installments.md:18",
+        "references/serial-chapters-and-installments.md:33",
+        "references/serial-chapters-and-installments.md:48"
+      ]
+    },
+    {
+      "id": "ST-CAP-13",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "workflow",
+      "rule_ids": [
+        "SV-11",
+        "SV-12"
+      ],
+      "what": "套路与变化表：固定项／可变项／不宜机械固定三列，节拍出现次数的第二、第三次检查；升级四方向按系列承诺选，赌注配篇幅。",
+      "anchors": [
+        "SKILL.md:287",
+        "SKILL.md:290",
+        "references/serial-formula-and-escalation.md:9",
+        "references/serial-formula-and-escalation.md:18",
+        "references/serial-formula-and-escalation.md:25",
+        "references/serial-formula-and-escalation.md:42",
+        "references/serial-formula-and-escalation.md:52",
+        "templates/serial-tables.md:59"
+      ],
+      "limit": "一两项变化焦点只是可选起点不是配额（references/serial-rules.md:37）；重复本身可以是设计，写明功能即不按疲劳处理（references/serial-formula-and-escalation.md:23）。",
+      "counterexample_ref": [
+        "references/serial-formula-and-escalation.md:20",
+        "references/serial-formula-and-escalation.md:38",
+        "references/serial-formula-and-escalation.md:64"
+      ]
+    },
+    {
+      "id": "ST-CAP-14",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "external",
+      "rule_ids": [
+        "SV-13"
+      ],
+      "what": "容量表（载体／每章字数／总章数／总字数／钩位／交稿节点／缓冲章／备用结局／未知参数／参数依据）＋按周期核对实际字数；依赖合同、版式与作者产能等外部输入。",
+      "anchors": [
+        "SKILL.md:293",
+        "SKILL.md:322",
+        "references/serial-production.md:5",
+        "references/serial-production.md:12",
+        "references/serial-production.md:19",
+        "references/serial-production.md:23",
+        "templates/serial-tables.md:13",
+        "templates/serial-tables.md:19"
+      ],
+      "limit": "容量表是计划不保证写得完（references/serial-rules.md:43）；拿不到参数按假设排并标「假设」，不编造平台标准（SKILL.md:353）；别人的数字不照搬。",
+      "counterexample_ref": [
+        "references/serial-production.md:25",
+        "references/serial-production.md:27",
+        "references/plot-planning.md:102"
+      ]
+    },
+    {
+      "id": "ST-CAP-15",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "external",
+      "rule_ids": [
+        "SV-14"
+      ],
+      "what": "开载路线两案比较（完稿再发／完成一批后开载）按三条件选，开载检查表九行含存稿可撑几期、返工预算、合同条款、谁拍板；依赖合同与发布窗口。",
+      "anchors": [
+        "SKILL.md:144",
+        "SKILL.md:296",
+        "references/serial-production.md:29",
+        "references/serial-production.md:36",
+        "references/serial-production.md:39",
+        "references/serial-production.md:45",
+        "templates/serial-tables.md:65"
+      ],
+      "limit": "不写「缓冲三章以上才安全」这类无依据门槛（references/serial-production.md:53）；作者没有开载决定权时只写清谁拍板（:51）。",
+      "counterexample_ref": [
+        "references/serial-production.md:42",
+        "references/serial-production.md:51",
+        "examples/serial-examples.md:173"
+      ]
+    },
+    {
+      "id": "ST-CAP-16",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "external",
+      "rule_ids": [
+        "SV-15"
+      ],
+      "what": "反馈先进日志（日期／渠道／具体要求／影响／代价／决定／复核日期），常驻人物退场预案，合同允许时留备用结局分叉；依赖读者与编辑等外部渠道。",
+      "anchors": [
+        "SKILL.md:299",
+        "references/serial-production.md:55",
+        "references/serial-production.md:62",
+        "references/serial-production.md:64",
+        "references/serial-production.md:65",
+        "references/serial-production.md:74",
+        "templates/serial-tables.md:79",
+        "templates/serial-tables.md:85"
+      ],
+      "limit": "不设统一票数（references/serial-rules.md:47）；没有反馈渠道就不建日志、不假装有读者数据（references/serial-production.md:72）；发行与现金流表只作风险检查，不描述平台现状（:76）。",
+      "counterexample_ref": [
+        "references/serial-production.md:66",
+        "references/serial-production.md:70",
+        "references/serial-production.md:84",
+        "examples/serial-examples.md:179"
+      ]
+    },
+    {
+      "id": "ST-CAP-17",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "external",
+      "rule_ids": [
+        "SV-16"
+      ],
+      "what": "单期/号/册载体审计六项核对（载体身份／正文边界／非正文栏目／发行提示／回溯入口／转写校勘），区分原始出版结构、后续整理版本与当前平台展示；依赖外部出版与版本事实。",
+      "anchors": [
+        "references/serial-chapters-and-installments.md:54",
+        "references/serial-chapters-and-installments.md:56",
+        "references/serial-chapters-and-installments.md:58",
+        "references/serial-chapters-and-installments.md:67",
+        "SKILL.md:119",
+        "SKILL.md:327"
+      ],
+      "limit": "SKILL 卡体未列 SV-16（见 ST-G03）；无模板记录面，清单兼作记录面（SKILL.md:327）；缺项只标「未能核实」，不从相邻期或相似版本推定（:67）。",
+      "counterexample_ref": [
+        "references/serial-chapters-and-installments.md:62",
+        "references/serial-chapters-and-installments.md:64",
+        "references/serial-production.md:14"
+      ]
+    },
+    {
+      "id": "ST-CAP-18",
+      "family": "章与期与套路升级与容量排产",
+      "kind": "external",
+      "rule_ids": [
+        "SV-04",
+        "SV-05",
+        "SV-08",
+        "SV-13"
+      ],
+      "what": "跨平台迁移设计检查 T1–T6（权利与付费单元／正文版本元数据／读者连续性／更新与容量／完结承诺与开放线／验收回退）＋迁移记录表；依赖官方政策、合同与账号环境。",
+      "anchors": [
+        "references/serial-platform-migration.md:3",
+        "references/serial-platform-migration.md:7",
+        "references/serial-platform-migration.md:11",
+        "references/serial-platform-migration.md:15",
+        "references/serial-platform-migration.md:19",
+        "references/serial-platform-migration.md:23",
+        "references/serial-platform-migration.md:27",
+        "references/serial-platform-migration.md:41",
+        "references/serial-platform-migration.md:52",
+        "SKILL.md:382",
+        "references/serial-zh-webnovel.md:40"
+      ],
+      "limit": "不是平台政策说明，涉及权利与合同条款标「须作者核验」（SKILL.md:382）；本包只维护唯一清单，serial-zh-webnovel.md 不重复定义；不据展示推断点击或留存。",
+      "counterexample_ref": [
+        "references/serial-platform-migration.md:17",
+        "references/serial-platform-migration.md:29",
+        "SKILL.md:396"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "ST-IF-01",
+      "peer": "scene-conflict-and-rhythm",
+      "topic": "单元内钩子与兑现（SU-15/SU-16）vs 跨卷记账（SV-08）＋卷末入口（SV-04/SV-05）",
+      "provider": "story-architecture-and-longform-planning（本包）：SV-08 开放线台账、SV-04/SV-05 卷级闭合与入口、SV-09 章末断点位置",
+      "consumer": "scene-conflict-and-rhythm：钩子写法、单元末三查、单章兑现日志（SU-15/SU-16）、章链表（SC-10）",
+      "fields": "本包侧＝台账八列「线｜类型｜开启（卷、章）｜当前状态（开／推进／转性／回收／关闭／未能核实）｜下一卷必须推进什么｜最晚回收卷｜回收方式｜预估章数」（templates/serial-tables.md:47）＋章末问题清单四列（章号／问题／属主线或副线／下章是否回答，references/plot-rules.md:355、templates/plot-scene-table.md:27）；对端侧＝兑现日志（抛出章、回答章，对端 scene-conflict-and-rhythm/SKILL.md:186）与章链表 SC-10 两列（对端 scene-conflict-and-rhythm/references/scene-units.md:90），并把「属于主线还是副线」并入「仍悬置、计划在哪章回收」格（对端 scene-conflict-and-rhythm/SKILL.md:151）",
+      "missing_field_branch": "本包口径：没有前卷时只建本卷台账，跨卷判断标「未能核实」且不计入活动线（references/serial-open-lines-and-continuity.md:46）；接手旧稿没有台账时先列开放线清单标「待登记」，不臆断各线状态（SKILL.md:377）。分工口径：ST-17「属主线／副线」只作分布登记，单章兑现记录归 SU-16（SKILL.md:61、references/plot-rules.md:355）；钩子若形成跨卷承诺，同时登记 SV-08（references/serial-chapters-and-installments.md:27）。对端缺字段分支未写「对端字段缺失时按谁的口径补」。",
+      "both_sides_referenced": "齐（双向都按 ID 引，未给行号）。本包侧：SKILL.md:27、SKILL.md:61、SKILL.md:219（SU-03/SU-04）、SKILL.md:223、references/plot-rules.md:236、references/plot-rules.md:336、references/plot-rules.md:355、references/serial-rules.md:31、references/serial-chapters-and-installments.md:5、references/serial-chapters-and-installments.md:27。对端侧（行号实测）：scene-conflict-and-rhythm/SKILL.md:23、:38、:46、:151、:186、:187、scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:18、:33、:50、scene-conflict-and-rhythm/references/scene-units.md:90、scene-conflict-and-rhythm/references/rhythm-diagnosis.md:58。对端 SU-15 卡体在对端 scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:7、SU-16 在 :31，本包未给这些行号。",
+      "anchors_own": [
+        "SKILL.md:27",
+        "SKILL.md:61",
+        "SKILL.md:223",
+        "references/plot-rules.md:336",
+        "references/plot-rules.md:355",
+        "references/serial-rules.md:31",
+        "references/serial-chapters-and-installments.md:5",
+        "references/serial-chapters-and-installments.md:26",
+        "references/serial-chapters-and-installments.md:27",
+        "references/serial-open-lines-and-continuity.md:46",
+        "templates/serial-tables.md:45",
+        "templates/plot-scene-table.md:27"
+      ],
+      "anchors_peer": [
+        "scene-conflict-and-rhythm/SKILL.md:23",
+        "scene-conflict-and-rhythm/SKILL.md:38",
+        "scene-conflict-and-rhythm/SKILL.md:46",
+        "scene-conflict-and-rhythm/SKILL.md:151",
+        "scene-conflict-and-rhythm/SKILL.md:185",
+        "scene-conflict-and-rhythm/SKILL.md:186",
+        "scene-conflict-and-rhythm/SKILL.md:187",
+        "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:7",
+        "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:18",
+        "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:31",
+        "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:33",
+        "scene-conflict-and-rhythm/references/scene-units.md:90",
+        "scene-conflict-and-rhythm/references/rhythm-diagnosis.md:58"
+      ],
+      "conflict_note": "「不重复记账」两侧都写了（本包 SKILL.md:61、references/serial-chapters-and-installments.md:27；对端 scene-conflict-and-rhythm/SKILL.md:46、scene-conflict-and-rhythm/references/scene-units.md:90），口径一致。未见冲突。"
+    },
+    {
+      "id": "ST-IF-02",
+      "peer": "character-and-narrative-control",
+      "topic": "卷级视点线的加入与退出（本包卷表）vs 单场视角许可、叙述者与全篇信息控制（对端）",
+      "provider": "story-architecture-and-longform-planning（本包）：卷表「本卷视点线」列、连续性检查第 6 步视点线台账",
+      "consumer": "character-and-narrative-control：人物心理、叙述者、单场视角许可、全篇信息控制",
+      "fields": "本包侧＝卷表列「本卷视点线（多视点时）」（templates/serial-tables.md:7；填法 references/serial-volume-and-closure.md:39）＋连续性检查「每条视点线在哪卷加入、哪卷收」（references/serial-open-lines-and-continuity.md:60）；对端侧＝视点合同、切换账本、信息控制表（对端 character-and-narrative-control/SKILL.md:30、:44 转出条目按问题类别给，未按本包字段名对齐）",
+      "missing_field_branch": "本包只在卷表记录加入／退出，不裁决单场 POV（SKILL.md:62）；多视点作品才加该列，单视点留空；对端侧「哪一卷加入或收掉一条视点线，在本 skill 的卷表里排」写在转出行的括号里（对端无对应义务条款，本包 SKILL.md:28 单侧声明）",
+      "both_sides_referenced": "齐（双向按问题类别互指，均无行号）。本包侧：SKILL.md:28、SKILL.md:62、references/serial-open-lines-and-continuity.md:60。对端侧（实测）：character-and-narrative-control/SKILL.md:30、:44、:306、character-and-narrative-control/references/zh-and-serial.md:59、character-and-narrative-control/references/diagnosis.md:125。",
+      "anchors_own": [
+        "SKILL.md:28",
+        "SKILL.md:62",
+        "references/serial-volume-and-closure.md:39",
+        "references/serial-open-lines-and-continuity.md:60",
+        "templates/serial-tables.md:7"
+      ],
+      "anchors_peer": [
+        "character-and-narrative-control/SKILL.md:30",
+        "character-and-narrative-control/SKILL.md:44",
+        "character-and-narrative-control/SKILL.md:306",
+        "character-and-narrative-control/references/zh-and-serial.md:59",
+        "character-and-narrative-control/references/diagnosis.md:125"
+      ],
+      "conflict_note": "视点线的「谁裁决」只在本包侧写明（SKILL.md:62）；对端 character-and-narrative-control/references/zh-and-serial.md:59 把卷级视点分配转出，未声明本包卷表用哪个字段承接。字段名两侧不对齐：本包＝「本卷视点线」，对端＝「卷级的视点分配」。"
+    },
+    {
+      "id": "ST-IF-03",
+      "peer": "fiction-planning-and-diagnosis",
+      "topic": "项目定位、载体选择、读者契约、资料核验、读者反馈分析（对端）→ 载体转换为情节/分卷容量与排期（本包）；注水与删段判据转出",
+      "provider": "fiction-planning-and-diagnosis：赛道、载体、读者契约、事实核验、读者反馈分析、成稿注水自检（对端 CL-09）",
+      "consumer": "story-architecture-and-longform-planning：把已定载体转成容器（PL-13）、容量（SV-13）、排期（SV-14）与连载反馈日志（SV-15）；「帮我规划一本书」由对端做入口（SKILL.md:39）",
+      "fields": "本包侧＝容器参数（载体／总字数／章幕数／单章上限／交稿或更新节奏，templates/plot-canvas.md:17）＋容量表参数依据列（合同／平台／作者／假设，templates/serial-tables.md:15）＋反馈日志七列（templates/serial-tables.md:81）；对端侧＝FC/CL 卡按症状转 PL-07、PL-04、PL-06（对端 fiction-planning-and-diagnosis/SKILL.md:137、:138、:142、:146）",
+      "missing_field_branch": "载体与读者契约没定：本包按假设填并标「假设」，判断权缺读者契约时只列选项（SKILL.md:350、references/plot-planning.md:13）；缺交付载体时先问载体，问不到按标准分期处理并标「假设」（SKILL.md:378）；注水与删段判据转对端（references/serial-rules.md:33、references/serial-chapters-and-installments.md:46）",
+      "both_sides_referenced": "齐（双向都有 ID 级引用）。本包侧：SKILL.md:29、SKILL.md:39、SKILL.md:64、SKILL.md:353、references/serial-rules.md:33、references/serial-chapters-and-installments.md:46。对端侧（实测）：fiction-planning-and-diagnosis/SKILL.md:28、:40、:137、:138、:142、:146、fiction-planning-and-diagnosis/references/self-check-diagnosis.md:31。",
+      "anchors_own": [
+        "SKILL.md:29",
+        "SKILL.md:39",
+        "SKILL.md:64",
+        "references/plot-planning.md:13",
+        "references/serial-rules.md:33",
+        "references/serial-chapters-and-installments.md:46",
+        "templates/serial-tables.md:15",
+        "templates/plot-canvas.md:17"
+      ],
+      "anchors_peer": [
+        "fiction-planning-and-diagnosis/SKILL.md:28",
+        "fiction-planning-and-diagnosis/SKILL.md:40",
+        "fiction-planning-and-diagnosis/SKILL.md:137",
+        "fiction-planning-and-diagnosis/SKILL.md:142",
+        "fiction-planning-and-diagnosis/SKILL.md:146",
+        "fiction-planning-and-diagnosis/references/self-check-diagnosis.md:31"
+      ],
+      "conflict_note": "「注水／删段」有两个写入面：对端 CL-09 按三类功能判删（fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:18），本包 PL-14 与修订层 §3.3 也做删冗余段（references/plot-revision.md:93）。本包把判据转出（references/serial-rules.md:33），但未写明 SV-10／PL-14 与 CL-09 的裁决先后；见 ST-G07。"
+    },
+    {
+      "id": "ST-IF-04",
+      "peer": "preset-card-generation",
+      "topic": "规划文档（本包产物）vs 给模型的推进卡／文风卡／表达约束卡（对端产物）；按三轴审章节归对端",
+      "provider": "story-architecture-and-longform-planning：单本结构、分卷、卷纲、章纲、结构方案（产物是规划文档）",
+      "consumer": "preset-card-generation：把规划、卷纲、章纲或结构方案写成推进模式卡、文风卡、表达约束卡；按推进／文风／表达三轴审章节",
+      "fields": "本包侧＝交付格式表 13 类产物与模板列（SKILL.md:316–330）＋归属行「规划一卷／排章纲：产物是规划文档；要写成给模型的卡时交给 preset-card-generation」（SKILL.md:40）＋从对端转入的条件（SKILL.md:43）；对端侧＝planning.md 只取写成卡的小节素材（对端 preset-card-generation/references/planning.md:3），转出行为「单本结构、分卷、排章纲（产物是规划文档，不是给模型的卡）」（对端 preset-card-generation/SKILL.md:38）",
+      "missing_field_branch": "本包侧无「卡字段缺失」分支：转出即停，由对端按其合同补字段；本包仅在负触发与归属表声明边界（SKILL.md:33、SKILL.md:40、SKILL.md:43）",
+      "both_sides_referenced": "齐（D2=A 双向转介）。本包侧：SKILL.md:33、SKILL.md:40、SKILL.md:43、SKILL.md:58（跨 Skill Owner 未列本项，仅归属表）。对端侧（实测）：preset-card-generation/SKILL.md:3（description 转出句）、:38、:104、:138、:182、preset-card-generation/references/planning.md:3。",
+      "anchors_own": [
+        "SKILL.md:33",
+        "SKILL.md:40",
+        "SKILL.md:43",
+        "SKILL.md:314"
+      ],
+      "anchors_peer": [
+        "preset-card-generation/SKILL.md:38",
+        "preset-card-generation/SKILL.md:104",
+        "preset-card-generation/SKILL.md:138",
+        "preset-card-generation/SKILL.md:182",
+        "preset-card-generation/references/planning.md:3"
+      ],
+      "conflict_note": "本包 references／templates 内无任何 preset-card 提及（grep 实测 0 命中，读取 20 份 md 已回显），转出条款只存在于 SKILL 层；对端 preset-card-generation/references/planning.md:3 单侧写明规划文档归本包。裁决口径靠「产物是什么」这一列，两侧措辞一致。"
+    },
+    {
+      "id": "ST-IF-05",
+      "peer": "line-editing-and-proofreading",
+      "topic": "结构与篇幅层（本包）vs 句子、用词、标点、AI 腔、校对（对端）；修订三层的「句段压缩」与对端措辞精修重叠",
+      "provider": "story-architecture-and-longform-planning：结构修订、场景修订、篇幅与容量分配、删场与并场",
+      "consumer": "line-editing-and-proofreading：理顺长句、删冗词、改套话与 AI 腔、标点与体例、校对",
+      "fields": "本包侧＝修订层级表「句段压缩」行（删余赘句／合并同义句／补一句过渡，references/plot-revision.md:75、references/plot-revision.md:93）与诊断严重度分级「句子不在本 skill」（SKILL.md:133）；对端侧＝SR-08 连续同型句（对端 line-editing-and-proofreading/SKILL.md:92）、SR-10 删不起作用的词（对端 line-editing-and-proofreading/SKILL.md:96）",
+      "missing_field_branch": "本包口径：句段问题只在结构与场景层修完之后处理，且转对端（SKILL.md:30、SKILL.md:51、SKILL.md:133）；作者只说「更有力」时按结构／句子分流（对端 line-editing-and-proofreading/amples/worked-example.md:91）；本包 references 未写「句子层发现如何回灌对端」的字段",
+      "both_sides_referenced": "齐（双向按问题类别互指，均无行号）。本包侧只在 SKILL 层出现：SKILL.md:30、SKILL.md:51、SKILL.md:133（references／examples／templates 实测 0 命中）。对端侧（实测）：line-editing-and-proofreading/SKILL.md:37、:186、:187、line-editing-and-proofreading/examples/worked-example.md:91。",
+      "anchors_own": [
+        "SKILL.md:30",
+        "SKILL.md:51",
+        "SKILL.md:133",
+        "references/plot-revision.md:75",
+        "references/plot-revision.md:93"
+      ],
+      "anchors_peer": [
+        "line-editing-and-proofreading/SKILL.md:37",
+        "line-editing-and-proofreading/SKILL.md:92",
+        "line-editing-and-proofreading/SKILL.md:96",
+        "line-editing-and-proofreading/SKILL.md:186",
+        "line-editing-and-proofreading/SKILL.md:187",
+        "line-editing-and-proofreading/examples/worked-example.md:91"
+      ],
+      "conflict_note": "「删冗余」在本包修订层仍保留动作（references/plot-revision.md:95「删清单、重复、官阶／乐器式枚举、同义堆叠」），与对端 SR-10／SR-12 的同一语义动作并存；本包 references 无转出句，只有 SKILL.md:51 单侧声明。见 ST-G07。"
+    },
+    {
+      "id": "ST-IF-06",
+      "peer": "genre-fiction-craft",
+      "topic": "通用结构规则（本包）vs 题材承诺、公平、专门机制（对端）；题材惯例不得升级为所有作品规则",
+      "provider": "genre-fiction-craft：十四类题材的写法、契约、机制与反例（对端 WX-80、RO-17/19 等）",
+      "consumer": "story-architecture-and-longform-planning：主行动、因果、多线、分卷、容量与连续性",
+      "fields": "本包侧＝跨 Skill Owner「题材契约」行（SKILL.md:63）＋转出行「某一题材的写法转 genre-fiction-craft」（SKILL.md:31）；对端侧＝分卷规划／长线排布转出（对端 genre-fiction-craft/SKILL.md:25、genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45、:93、genre-fiction-craft/references/05-science-fiction/subgenres-and-worldbuilding.md:106、genre-fiction-craft/references/02-romance/tropes-and-serial.md:72）",
+      "missing_field_branch": "本包不给题材结论：题材惯例不升级为通则（SKILL.md:63）；诊断时类型惯例先过 D1 证伪、不判缺陷（references/plot-diagnosis.md:24、:307）；对端要求分卷时按其转出句回到本包，未指定本包哪个字段承接",
+      "both_sides_referenced": "齐（双向按类别互指，均无行号）。本包侧仅 SKILL 层：SKILL.md:31、SKILL.md:63（references／examples／templates 实测 0 命中）。对端侧（实测）：genre-fiction-craft/SKILL.md:25、genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45、:93、genre-fiction-craft/references/05-science-fiction/subgenres-and-worldbuilding.md:106、genre-fiction-craft/references/02-romance/tropes-and-serial.md:72。",
+      "anchors_own": [
+        "SKILL.md:31",
+        "SKILL.md:63",
+        "references/plot-diagnosis.md:24",
+        "references/plot-diagnosis.md:307"
+      ],
+      "anchors_peer": [
+        "genre-fiction-craft/SKILL.md:25",
+        "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45",
+        "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:93",
+        "genre-fiction-craft/references/05-science-fiction/subgenres-and-worldbuilding.md:106",
+        "genre-fiction-craft/references/02-romance/tropes-and-serial.md:72"
+      ],
+      "conflict_note": "对端把「分卷规划」转给本包时未指名承接卡（SV-02/SV-13），本包也未声明接收条件；只有 SKILL.md:43 声明从 preset-card 转入的条件，genre 转入路径未写。"
+    }
+  ],
+  "applicability": [
+    {
+      "id": "ST-AP-01",
+      "topic": "宿主格式优先与平台规范未确认时不套历史格式",
+      "scope": "宿主规定了输出格式就按宿主格式；没有规定时才用本包 §7 产物与 templates（SKILL.md:70、templates/serial-tables.md:3）。",
+      "limitation": "平台、合同与版式参数由作者给，不自编；拿不到就按假设排并标「假设」，不编造平台标准（SKILL.md:353、SKILL.md:364）；平台惯例拿不准先问交付平台，不套用印刷惯例（SKILL.md:381）；历史数字只进「历史参数」栏，不作当代规范、不取平均值（references/plot-planning.md:102、references/plot-rules.md:210 区段的 PL-13 条、references/plot-scope-and-conflicts.md:80）。",
+      "counterexample": "references/plot-planning.md:102「只有历史数字（7,500 词/32 页/3,000–6,000 词/10–20 章）→ 只放历史参数栏」；references/plot-scope-and-conflicts.md:80 C-11「禁止把历史数字写成短篇/长篇标准；禁止取平均值」。",
+      "anchors": [
+        "SKILL.md:70",
+        "SKILL.md:353",
+        "SKILL.md:364",
+        "SKILL.md:381",
+        "references/plot-planning.md:102",
+        "references/plot-scope-and-conflicts.md:80",
+        "templates/serial-tables.md:3",
+        "references/serial-zh-webnovel.md:3"
+      ]
+    },
+    {
+      "id": "ST-AP-02",
+      "topic": "中文网文与跨平台迁移是适配建议，不是平台规则",
+      "scope": "把各卡用到中文网文时按 serial-zh-webnovel.md 的差别项走；跨平台迁移只走 serial-platform-migration.md 的 T1–T6 唯一清单。",
+      "limitation": "单章字数、更新频率、上架节点须按目标平台当前官方说明、合同与真实产能核验，本 Skill 不回答「应该日更多少」（references/serial-zh-webnovel.md:3）；迁移清单不代表任何平台现行政策，权利与合同条款标「须作者核验」（SKILL.md:382、references/serial-platform-migration.md:3）；不据章末可见性推断点击或留存（references/serial-platform-migration.md:17）。",
+      "counterexample": "references/serial-zh-webnovel.md:36 要求写成「在（平台、更新节奏、类型）条件下，可以先试（做法）；这是设计假设」，禁止「网文都应该……」；references/serial-zh-webnovel.md:40 声明本文件不重复定义迁移步骤或 T1–T6。",
+      "anchors": [
+        "references/serial-zh-webnovel.md:3",
+        "references/serial-zh-webnovel.md:36",
+        "references/serial-zh-webnovel.md:40",
+        "references/serial-platform-migration.md:3",
+        "references/serial-platform-migration.md:17",
+        "SKILL.md:382",
+        "SKILL.md:396",
+        "SKILL.md:401"
+      ]
+    },
+    {
+      "id": "ST-AP-03",
+      "topic": "日更与卷的结构差异（期 × 卷口径、阅读间隔）",
+      "scope": "「一期」是一次发表单位（一章／一个分册／一个刊期），「一卷」是编号卷或合订卷通常含多期（references/serial-formula-and-escalation.md:7）；期级规则与卷级规则分别生效。",
+      "limitation": "卷末是否留入口、续卷回顾长短按读者隔多久回来定，不设固定字数（references/serial-rules.md:23）；更新越密回顾可以越短，但章末收法仍需变化（references/serial-zh-webnovel.md:29）；收费单位（章／卷／合集／订阅包）不等于叙事单位（references/serial-zh-webnovel.md:27）。",
+      "counterexample": "references/serial-volume-and-closure.md:156 回顾长度按「可以跳着读／连续追读／同一卷内」三档，明确「不要逐章复述上一卷」；references/serial-chapters-and-installments.md:48 SV-10 不用「一次读完、以氛围和密度为目标的文学长篇」。",
+      "anchors": [
+        "references/serial-formula-and-escalation.md:7",
+        "references/serial-rules.md:23",
+        "references/serial-zh-webnovel.md:27",
+        "references/serial-zh-webnovel.md:29",
+        "references/serial-volume-and-closure.md:156",
+        "references/serial-chapters-and-installments.md:39",
+        "templates/serial-tables.md:89"
+      ]
+    },
+    {
+      "id": "ST-AP-04",
+      "topic": "非连载／一次性交付作品不必用章末与排产条款",
+      "scope": "短篇、单章没有卷级边界，SV 卡不适用；分期发表的短篇仍可用 SV-09、SV-10 期级规则，章末取舍用 PL-10（SKILL.md:66）。",
+      "limitation": "单行本连续阅读时章末不需要硬钩子（SKILL.md:222）；章末钩检查节「单行本不填本节」（templates/plot-scene-table.md:69）；SV-01 不用短篇／单章／没有分部的作品（references/serial-volume-and-closure.md:24）；SV-13 不用「没有长度约束的开放连载」「以单本文学密度为目标的写法」（references/serial-production.md:25）；SV-14 不用完稿后一次发布（:51）；SV-15 不用完稿后一次发布、作者无修改权（:70）；SV-08 不用单本闭合与下一卷没定（references/serial-open-lines-and-continuity.md:43）。",
+      "counterexample": "references/plot-diagnosis.md:199「单行本 → 不判章末无力（最多建议删假钩）」；references/serial-chapters-and-installments.md:31「一次读完的书章末可以是场景收束」。",
+      "anchors": [
+        "SKILL.md:66",
+        "SKILL.md:222",
+        "references/serial-volume-and-closure.md:24",
+        "references/serial-open-lines-and-continuity.md:43",
+        "references/serial-chapters-and-installments.md:31",
+        "references/serial-production.md:25",
+        "references/serial-production.md:51",
+        "references/serial-production.md:70",
+        "templates/plot-scene-table.md:69",
+        "references/plot-diagnosis.md:199"
+      ]
+    },
+    {
+      "id": "ST-AP-05",
+      "topic": "现实产能、合同与容量",
+      "scope": "周期由更新频率、合同节点和作者产能决定（SKILL.md:294）；开载路线、存稿与返工预算按合同与产能选（SKILL.md:296、references/serial-production.md:36）。",
+      "limitation": "容量表是计划，不保证写得完（references/serial-rules.md:43、references/serial-production.md:27）；作者拒绝删任何线时只写超支算术与备选方案，由作者决定（references/serial-production.md:16）；不写「缓冲三章以上才安全」这类无依据门槛（:53）；产能与合同节点没给时按假设排并标「假设」，给保守、激进两案（SKILL.md:380）。",
+      "counterexample": "references/serial-production.md:19 的算例自标「假设值，不是行业标准」；references/serial-production.md:74–87 把发行、渠道与现金流列为需外部验证的风险检查，不是写作方法可保证的结果。",
+      "anchors": [
+        "SKILL.md:294",
+        "SKILL.md:296",
+        "SKILL.md:380",
+        "references/serial-rules.md:43",
+        "references/serial-production.md:16",
+        "references/serial-production.md:19",
+        "references/serial-production.md:27",
+        "references/serial-production.md:53",
+        "references/serial-production.md:74",
+        "templates/serial-tables.md:13"
+      ]
+    },
+    {
+      "id": "ST-AP-06",
+      "topic": "数字是起点不是门槛",
+      "scope": "四分之三处、章数、字数、线数、回顾长度、严重度阈值全部是可调默认值或诊断提示（SKILL.md:78、SKILL.md:344）。",
+      "limitation": "3/4 只作 B 型默认值（references/plot-planning.md:90、references/plot-scope-and-conflicts.md:104）；两三条活动线只是初始提醒不是硬上限（SKILL.md:277、templates/serial-tables.md:51）；诊断严重度阈值（中段 40%、余赘 10%、单场 15%）可按作品与载体调整（references/plot-scope-and-conflicts.md:107、references/plot-diagnosis.md:125、:223、:271）；中点照面可选（references/plot-scope-and-conflicts.md:105）。",
+      "counterexample": "examples/plot-examples.md:63「作者要求 3/4 必须精确：拒绝；3/4 是有限经验形成的可选起点」；references/serial-formula-and-escalation.md:22「一两项只是可选起点，不是配额」；references/serial-production.md:27「作者要『保证不超支』，说明容量表是计划，不是保证」。",
+      "anchors": [
+        "SKILL.md:78",
+        "SKILL.md:206",
+        "SKILL.md:277",
+        "SKILL.md:344",
+        "references/plot-planning.md:90",
+        "references/plot-scope-and-conflicts.md:100",
+        "references/plot-scope-and-conflicts.md:104",
+        "references/plot-diagnosis.md:125",
+        "templates/serial-tables.md:51",
+        "examples/plot-examples.md:63",
+        "examples/plot-examples.md:288"
+      ]
+    },
+    {
+      "id": "ST-AP-07",
+      "topic": "包边界：负触发与不接的请求",
+      "scope": "九类不在范围：非虚构事实核验与论证结构、影视剧本与分镜、平台算法与流量运营、互动/分支/游戏引擎、纯文字润色与校对、排版出版印刷、角色声音与对白腔调专项、世界观设定专书、保证爆款/自动评分/自动写全文/预测读者反应（SKILL.md:45–55）。",
+      "limitation": "只有一句「帮我写个故事」且不愿给素材时，只给检查清单与空白模板，不代编情节（SKILL.md:56）；证据范围外（影视、游戏、当代平台）用结构问题作类比并标「推断」，不给「规律」（SKILL.md:343）；本 Skill 不裁决道德立场，只查一致性（SKILL.md:230）。",
+      "counterexample": "references/plot-planning.md:203「不替作者决定道德立场、结局善恶、读者群；只给选项与代价」；references/plot-revision.md:160「不借修订加入自己的主题/道德判断」。",
+      "anchors": [
+        "SKILL.md:45",
+        "SKILL.md:47",
+        "SKILL.md:49",
+        "SKILL.md:52",
+        "SKILL.md:54",
+        "SKILL.md:55",
+        "SKILL.md:56",
+        "SKILL.md:343",
+        "SKILL.md:230",
+        "references/plot-planning.md:203",
+        "references/plot-revision.md:160"
+      ]
+    },
+    {
+      "id": "ST-AP-08",
+      "topic": "验证边界：规则是检验器不是生成器",
+      "scope": "PL 16 条与 SV 卡的分支细则只做过静态核对；效果、留存、销量未证明（references/plot-rules.md:10、SKILL.md:397）。",
+      "limitation": "同一案例在多文件重复出现不构成多次独立验证（SKILL.md:394、references/plot-scope-and-conflicts.md:116）；长篇多线应用标「推断」，没有完整卷纲或正文时不声称已验证（references/plot-rules.md:62、references/plot-scope-and-conflicts.md:94）；置信「高」只表示条件与边界较清楚（SKILL.md:395）；网文迁移是设计建议，平台政策与合同需独立核验（SKILL.md:396）。",
+      "counterexample": "references/plot-rules.md:9「本手册 16 条中没有未定；框架/离题的未定见 plot-scope-and-conflicts.md」，与 references/plot-scope-and-conflicts.md:77 C-08「未定→只给安全出口」并存；examples/plot-examples.md:287「不能当运行成功证据」。",
+      "anchors": [
+        "SKILL.md:390",
+        "SKILL.md:394",
+        "SKILL.md:395",
+        "SKILL.md:396",
+        "SKILL.md:397",
+        "references/plot-rules.md:8",
+        "references/plot-rules.md:9",
+        "references/plot-rules.md:10",
+        "references/plot-rules.md:62",
+        "references/plot-scope-and-conflicts.md:94",
+        "references/plot-scope-and-conflicts.md:116",
+        "references/plot-scope-and-conflicts.md:123",
+        "examples/plot-examples.md:287"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "ST-T1",
+      "kind": "positive",
+      "scenario": "12 万字单本",
+      "expected": "交付主行动、终点、中点、高潮时点"
+    },
+    {
+      "id": "ST-T2",
+      "kind": "missing",
+      "scenario": "连载已发 80 章，只给后续想法，没给已发大纲",
+      "expected": "先要已发内容的状态账，再规划"
+    },
+    {
+      "id": "ST-T3",
+      "kind": "conflict",
+      "scenario": "已发布章节锁定，新卷设定与已发内容矛盾",
+      "expected": "只改未发部分，列出最小冲突集合，由作者裁决"
+    },
+    {
+      "id": "ST-T4",
+      "kind": "boundary",
+      "scenario": "每篇独立、共享人物的系列短篇",
+      "expected": "说明篇幅容器和分卷规则哪些适用"
+    },
+    {
+      "id": "ST-T5",
+      "kind": "positive",
+      "scenario": "作者给一部书分卷连载：某按章付费平台，单章约 3,000 字、日更两章，第一卷 60 章约 18 万字，开书前存稿 30 章，问第一卷收在哪、卷末要不要让师父死",
+      "expected": "停在 SV-01 定形态＋SV-02 卷表＋SV-13 容量表＋SV-14 开载检查表的填写；闭合度与「师父死还是失踪」的取舍由作者定，包内只给两种方案与代价；平台参数只用作者给的值，不补平台标准；不承诺追读。其余照做（台账、章末、套路表照常填）",
+      "anchors": [
+        "SKILL.md:110",
+        "SKILL.md:293",
+        "SKILL.md:296",
+        "references/serial-production.md:12",
+        "references/serial-zh-webnovel.md:3",
+        "examples/serial-examples.md:125",
+        "examples/serial-examples.md:131"
+      ],
+      "note": "对应例 C（自创示范）"
+    },
+    {
+      "id": "ST-T6",
+      "kind": "positive",
+      "scenario": "已有 9 场短篇全文，编辑说中段闷、结尾太巧；要求诊断并给改法",
+      "expected": "停在先证伪（D1）再判缺陷：巧合解结判阻断、中段无功能场判删并，每条发现带章场号与短引文；改稿需作者授权范围，未授权时只给定位＋建议＋可选最小改写；判断权与道德立场归作者。其余照做（严重度、最小验证动作、回归项照常交付）",
+      "anchors": [
+        "SKILL.md:129",
+        "SKILL.md:352",
+        "references/plot-diagnosis.md:18",
+        "references/plot-diagnosis.md:149",
+        "references/plot-diagnosis.md:307",
+        "references/plot-revision.md:13",
+        "examples/plot-examples.md:68"
+      ],
+      "note": "对应例 B（自创示范）"
+    },
+    {
+      "id": "ST-T7",
+      "kind": "missing",
+      "scenario": "只给世界观设定、金手指规则与几个奇观画面，写不出矛盾句，要求「按这套设定写情节」",
+      "expected": "停在 PL-16 出口：明确说「还不能写情节」，只出三要素卡与三条补素材问句（谁要什么／谁阻挡／失败代价），不进结构、不代编矛盾；素材是否替换由作者定。其余照做（形态与容器仍可先按假设给并标「假设」）",
+      "anchors": [
+        "SKILL.md:186",
+        "SKILL.md:188",
+        "SKILL.md:350",
+        "references/plot-planning.md:30",
+        "references/plot-planning.md:32",
+        "templates/plot-canvas.md:3"
+      ],
+      "note": "取自 references/plot-planning.md:32 的缺料出口"
+    },
+    {
+      "id": "ST-T8",
+      "kind": "conflict",
+      "scenario": "要求「按这套卷末钩子方案保证追读和留存，并给出预测的完读率」",
+      "expected": "停在边界声明：不承诺追读、订阅、完读或销量（SKILL.md:79），爆款／自动评分／预测读者反应属负触发（SKILL.md:55），预测类结论不做，改写成「在（平台、节奏、类型）条件下可先试，这是设计假设」。其余照做：闭合度、章末收法、台账与容量表照常给方案与代价，取舍归作者；用数据时写清指标定义、样本与观察窗口",
+      "anchors": [
+        "SKILL.md:55",
+        "SKILL.md:79",
+        "SKILL.md:363",
+        "SKILL.md:263",
+        "references/serial-zh-webnovel.md:31",
+        "references/serial-zh-webnovel.md:36",
+        "references/serial-production.md:84",
+        "examples/serial-examples.md:121"
+      ],
+      "note": "取自负触发表与网文侧读者数据条款"
+    },
+    {
+      "id": "ST-T9",
+      "kind": "conflict",
+      "scenario": "要求把规划出来的卷纲、章纲和结构方案写成给模型用的推进模式卡／文风卡",
+      "expected": "停在转出：产物是给模型的卡时归 preset-card-generation（SKILL.md:33、SKILL.md:40），本包只交付规划文档；对端只取写成卡的小节素材。其余照做：画布、卷表、章末表与台账在本包内正常出，卡字段缺失由对端按其合同处理",
+      "anchors": [
+        "SKILL.md:33",
+        "SKILL.md:40",
+        "SKILL.md:43",
+        "preset-card-generation/SKILL.md:38",
+        "preset-card-generation/SKILL.md:182",
+        "preset-card-generation/references/planning.md:3"
+      ],
+      "note": "D2=A 双向转介的用例化"
+    },
+    {
+      "id": "ST-T10",
+      "kind": "boundary",
+      "scenario": "单行本一次性出版，作者要求每章末都断在生死关头做硬钩子",
+      "expected": "停在载体判断：单行本连续阅读时章末不需要硬钩子（SKILL.md:222），按 PL-10 的 B 支给阶段性收束方案，同时写明「强设钩子易做作」的代价与一个更省的替代，由作者定；章末钩检查节对单行本不填。其余照做（场景功能表与删场测试照常）",
+      "anchors": [
+        "SKILL.md:221",
+        "SKILL.md:222",
+        "references/plot-planning.md:145",
+        "references/plot-diagnosis.md:199",
+        "templates/plot-scene-table.md:69",
+        "SKILL.md:339"
+      ],
+      "note": "取自 references/plot-planning.md:145 的单行本分支"
+    },
+    {
+      "id": "ST-T11",
+      "kind": "boundary",
+      "scenario": "连载内容曾以月刊分册发行，现在要转电子刊；目录、期号、编者说明与正文混在一起，转写与版本差异没有记录",
+      "expected": "停在 SV-16：除故事章节外另做一次载体核对，六项逐项确认，缺的标「未能核实」，不从相邻期或相似版本推定；区分原始出版结构／后续整理版本／当前平台展示。其余照做：卷表、台账与章末表按正文层继续填",
+      "anchors": [
+        "SKILL.md:119",
+        "SKILL.md:173",
+        "SKILL.md:327",
+        "references/serial-chapters-and-installments.md:54",
+        "references/serial-chapters-and-installments.md:56",
+        "references/serial-chapters-and-installments.md:67"
+      ],
+      "note": "SV-16 卡体只在 references，见 ST-G03、ST-G05"
+    },
+    {
+      "id": "ST-T12",
+      "kind": "boundary",
+      "scenario": "作者要求按「某杂志七千五百词／一章 32 页」这类历史格式排容量，但目标平台规范还没确认",
+      "expected": "停在参数来源：历史数字只进「历史参数」栏、不作当代规范、不取平均值；平台规范未确认时先问交付平台，问不到就按假设排并标「假设」、给保守与激进两案。其余照做：容量表结构、周期核对与从属线处置照常",
+      "anchors": [
+        "SKILL.md:210",
+        "SKILL.md:353",
+        "SKILL.md:380",
+        "SKILL.md:381",
+        "references/plot-planning.md:102",
+        "references/plot-scope-and-conflicts.md:80",
+        "references/serial-zh-webnovel.md:3"
+      ],
+      "note": "取自 C-11 与网文侧参数条款"
+    },
+    {
+      "id": "ST-T13",
+      "kind": "boundary",
+      "scenario": "每篇独立、共享人物的系列短篇集，作者想知道本包哪几条规则用得上",
+      "expected": "停在形态与适用面：短篇／单章没有卷级边界、SV 卡不适用；只有分期发表时才用 SV-09、SV-10 期级规则，章末取舍用 PL-10；集锦或框架故事的主行动只是容器（PL-01 例外）；要不要在结尾收回框架属未定项，只给安全出口，由作者定。其余照做：单本层 PL 卡照常走",
+      "anchors": [
+        "SKILL.md:66",
+        "SKILL.md:193",
+        "SKILL.md:341",
+        "references/plot-scope-and-conflicts.md:77",
+        "references/serial-open-lines-and-continuity.md:43",
+        "references/serial-volume-and-closure.md:24"
+      ],
+      "note": "骨架 ST-T4 的展开版；ST-T4 原文保留不动"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "ST-G01",
+      "area": "状态词与交付口径",
+      "fact": "SKILL 层没有集中的交付状态词表：SKILL.md 实测「未能核实」0 命中（单查退出码 1）。状态词分散在 references 与 templates 各自成表且用词不同——templates/plot-canvas.md:3 与 :24＝已完成／依据／未能核实／待作者决定（＋未知）；templates/plot-scene-table.md:3、templates/plot-diagnosis-report.md:3 同上一套；templates/serial-tables.md:133＝已确认／未能核实／待作者决定／不适用（「已确认」与他处「已完成」不同词）；templates/serial-tables.md:3＝假设／未读／未知三词；references/serial-platform-migration.md:52＝已完成／依据／未能核实／待作者决定／不适用／未知六词。",
+      "measured": "「未能核实」全包 24 次、分布 12 个文件（逐行计数，读入 md 20 份已回显），与采纳注「24 处／12 个文件、SKILL.md 0 处」一致；采纳注同时记草稿侧「10 处／4 套」，两套计数并存，本草案不改任一方数字",
+      "anchors": [
+        "SKILL.md:356",
+        "templates/plot-canvas.md:3",
+        "templates/plot-canvas.md:24",
+        "templates/plot-scene-table.md:3",
+        "templates/plot-diagnosis-report.md:3",
+        "templates/serial-tables.md:3",
+        "templates/serial-tables.md:133",
+        "references/serial-platform-migration.md:52"
+      ],
+      "not_fix": "只登记位置与口径差异，不修正品、不改任一处用词"
+    },
+    {
+      "id": "ST-G02",
+      "area": "模板空行判据未统一",
+      "fact": "「模板空行」两个数字并存：采纳注记草稿侧「纯占位行 30」、主代理侧按「整行各格皆空」得 67（9／9／23／26）。本席按字面判据（去表头与分隔行后该行所有单元格 strip 为空）实测 3／3／17／7＝30，与草稿侧同值：templates/plot-canvas.md:65-67、templates/plot-diagnosis-report.md:62-64、templates/plot-scene-table.md:40-47 与 55-57 与 65-67 与 75-77、templates/serial-tables.md:23,49,83,87,109,113,137。",
+      "measured": "67 无法按字面「整行各格皆空」复现；另试 4 种判据亦不等：非表头行中至少一格空＝24／29／36／20；空格数≥列数-1＝17／20／17／17；空格数≥列数-2＝18／25／17／43；末格空＝30／24／17／17。差异来源未定：带提示词的行（templates/serial-tables.md:17「每章／每期」、:57「保留／换收法／补落地句／合并」、templates/plot-diagnosis-report.md:53「阻断/重要/建议」）是否算占位，两方口径不同",
+      "anchors": [
+        "templates/plot-canvas.md:65",
+        "templates/plot-diagnosis-report.md:62",
+        "templates/plot-scene-table.md:40",
+        "templates/serial-tables.md:17",
+        "templates/serial-tables.md:23",
+        "templates/serial-tables.md:57",
+        "templates/plot-diagnosis-report.md:53"
+      ],
+      "not_fix": "两值并存登记，不改主代理数字、不改草稿数字、不修正品"
+    },
+    {
+      "id": "ST-G03",
+      "area": "SV-16 未进 SKILL 卡体",
+      "fact": "SKILL.md §5 加粗规则卡实测 16 张 PL（:186–:246）＋15 张 SV（:251–:299，末张 SV-15），无 SV-16 卡体条目；SV-16 正文与核对项清单只在 references/serial-chapters-and-installments.md:54–67。SKILL 侧 SV-16 以 ID 出现在 §3 步骤 8（:119）、§4 症状表（:173）、§7 交付表（:327）、§10 文件表（:378）。",
+      "measured": "PL 卡体 16/16、SKILL 加粗档 16/16；SV 卡体 16/16（serial-rules.md 15 张＋serial-chapters-and-installments.md 1 张）、SKILL 加粗档 15/16，与采纳注一致",
+      "anchors": [
+        "SKILL.md:186",
+        "SKILL.md:246",
+        "SKILL.md:251",
+        "SKILL.md:299",
+        "SKILL.md:119",
+        "SKILL.md:173",
+        "SKILL.md:327",
+        "SKILL.md:378",
+        "references/serial-rules.md:1",
+        "references/serial-chapters-and-installments.md:54"
+      ],
+      "not_fix": "只登记缺位与正文位置，不补卡、不修正品"
+    },
+    {
+      "id": "ST-G04",
+      "area": "SKILL.md:371「六项输入」与实为四项不符",
+      "fact": "SKILL.md:371 把 references/plot-planning.md 的补读项写成「六项输入的收法」；该文件 §0 标题即「先收输入（四项，缺一不可假装齐）」，表体四行＝点子/素材、容器、目标读者、作者工序（:9–:14），另有 :16「四项至少各有一句具体值」、:18「输入表（四项）」、:186「点子/容器/读者/工序四项表」三处互证。全包另一处「六项」＝references/serial-platform-migration.md:5 的六项迁移检查（T1–T6），与规划输入无关。",
+      "measured": "六项 命中 2 处（SKILL.md:371、references/serial-platform-migration.md:5）；四项 命中 plot-planning.md 4 处（:5、:16、:18、:186）。结论：SKILL.md:371 的数字与所指文件不符",
+      "anchors": [
+        "SKILL.md:371",
+        "references/plot-planning.md:5",
+        "references/plot-planning.md:9",
+        "references/plot-planning.md:14",
+        "references/plot-planning.md:16",
+        "references/plot-planning.md:18",
+        "references/plot-planning.md:186",
+        "references/serial-platform-migration.md:5"
+      ],
+      "not_fix": "复核实测登记，不改 371 行措辞；是改数字还是补第六项交收口席"
+    },
+    {
+      "id": "ST-G05",
+      "area": "SV-16 没有模板记录面",
+      "fact": "SKILL.md:314 的交付格式表列 13 类产物，12 类指向 4 件模板，只有「单期载体审计」的模板列写「按 serial-chapters-and-installments.md 的核对项清单逐项记录（该清单兼作记录面）」（:327）；templates/serial-tables.md §1–§12 无载体审计表，另三件模板也不含。记录面落在 references 而非 templates。",
+      "measured": "模板 4 件（plot-canvas 69／plot-diagnosis-report 87／plot-scene-table 92／serial-tables 139 行）；serial-tables.md 二级节 12 个，无 SV-16 节；SKILL §10 文件表 19 行与实际 19 个非 SKILL 文件一一对应（集合差为空）",
+      "anchors": [
+        "SKILL.md:314",
+        "SKILL.md:316",
+        "SKILL.md:327",
+        "SKILL.md:366",
+        "templates/serial-tables.md:115",
+        "references/serial-chapters-and-installments.md:58"
+      ],
+      "not_fix": "登记不对称，不新建模板、不修正品"
+    },
+    {
+      "id": "ST-G06",
+      "area": "SV 权威正文位置声明不含 SV-16",
+      "fact": "SKILL.md:71 声明「PL 卡的权威正文在 references/plot-rules.md，SV 卡在 references/serial-rules.md」，未提 SV-16 的权威正文在 serial-chapters-and-installments.md；references/serial-rules.md:1 与 SKILL.md:375 都自述范围是「SV-01 至 SV-15」。按 :71 找 SV-16 会落空。",
+      "measured": "serial-rules.md 加粗 SV 卡 15 张（:9–:47）；SV-16 卡体在 references/serial-chapters-and-installments.md:54",
+      "anchors": [
+        "SKILL.md:71",
+        "SKILL.md:375",
+        "references/serial-rules.md:1",
+        "references/serial-chapters-and-installments.md:54"
+      ],
+      "not_fix": "登记声明缺口，不改 SKILL.md:71"
+    },
+    {
+      "id": "ST-G07",
+      "area": "删冗余语义有两个写入面",
+      "fact": "本包把「注水诊断和删段方法」转给 fiction-planning-and-diagnosis（references/serial-rules.md:33、references/serial-chapters-and-installments.md:46），但修订侧仍自带删段动作：references/plot-revision.md:62–67 压缩长文本（删清单、重复、同义堆叠）、:93–99 句段压缩最小动作、templates/plot-scene-table.md:71 起的 ST-20–ST-24 删场测试。对端另有 CL-09 注水判据（fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:18）与 SR-08／SR-10 句子级删冗（line-editing-and-proofreading/SKILL.md:92、:96）。本包 references 层未写「同一段落由谁裁决、按谁的口径删」的先后条款，只有 SKILL.md:51、SKILL.md:133 的单侧声明。",
+      "measured": "本包 references／examples／templates 对 line-editing-and-proofreading、preset-card-generation、genre-fiction-craft 的提及实测 0 命中（逐文件计数，读入 20 份 md 已回显）；scene-conflict／character／fiction-planning 三个对端在 references 层各有命中",
+      "anchors": [
+        "references/serial-rules.md:33",
+        "references/serial-chapters-and-installments.md:46",
+        "references/plot-revision.md:62",
+        "references/plot-revision.md:93",
+        "templates/plot-scene-table.md:71",
+        "SKILL.md:51",
+        "SKILL.md:133",
+        "fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:18",
+        "line-editing-and-proofreading/SKILL.md:92",
+        "line-editing-and-proofreading/SKILL.md:96"
+      ],
+      "not_fix": "登记并存，不裁定 Owner（Owner 归属属产品取舍，交用户或收口席）"
+    },
+    {
+      "id": "ST-G08",
+      "area": "第三套状态值与合法值不齐",
+      "fact": "除模板状态栏那几套外，流程侧还有独立口径：references/plot-planning.md:182 用「已完成／部分／未知」三值（与模板四／五值不同）；SKILL.md:377 用「待登记」标未入账的开放线，而台账「当前状态」列合法值是开／推进／转性／回收／关闭／未能核实（templates/serial-tables.md:47），「待登记」不在其中；references/plot-diagnosis.md:25 用「未定」作排除不了时的标记，references/plot-rules.md:9 又声明「本手册 16 条中没有未定」。",
+      "measured": "逐词计数（读入 20 份 md 已回显）：已完成 16 次/8 文件、未读 19 次/6 文件、未知 46 次/8 文件、不适用 22 次/6 文件、推断 16 次/7 文件、待作者决定 6 次/5 文件、已确认 1 次/1 文件",
+      "anchors": [
+        "references/plot-planning.md:182",
+        "SKILL.md:377",
+        "templates/serial-tables.md:47",
+        "references/plot-diagnosis.md:25",
+        "references/plot-rules.md:9"
+      ],
+      "not_fix": "登记并存，不合并词表"
+    },
+    {
+      "id": "ST-G09",
+      "area": "载体审计所需事实与模板证据列口径未接上",
+      "fact": "三份带「稿件证据位置」列的模板都规定该列只填用户当前稿件内的可核位置、「不指向来源编号或包外路径」（templates/plot-canvas.md:3、templates/plot-scene-table.md:3、templates/plot-diagnosis-report.md:3）；而 SV-16 的核对项要确认期号、日期、版本、目录、编者说明与转写校勘记录（references/serial-chapters-and-installments.md:58–65），这类事实本身在稿件之外。包内未写载体审计结论由哪个字段承接、是否受同一列口径约束。",
+      "measured": "审计词单查：出处／原著／P.1／页码／来源行 各 0 命中（读入 20 份 md 并断言文件数 20）；「来源编号」4 处命中，全部为否定式约束句（references/plot-scope-and-conflicts.md:66、templates/plot-canvas.md:3、templates/plot-diagnosis-report.md:3、templates/plot-scene-table.md:3），无泄漏",
+      "anchors": [
+        "templates/plot-canvas.md:3",
+        "templates/plot-scene-table.md:3",
+        "templates/plot-diagnosis-report.md:3",
+        "references/serial-chapters-and-installments.md:58",
+        "references/serial-chapters-and-installments.md:65",
+        "references/plot-scope-and-conflicts.md:66"
+      ],
+      "not_fix": "登记缺口，不新增字段、不修正品"
+    },
+    {
+      "id": "ST-G10",
+      "area": "ID 独占行计数不可复现",
+      "fact": "采纳注记本包「4 件模板／54 条 ID 独占行」。本席按「表格行首个单元格以 PA/ST/DR/T 编号开头」实测：三件带字段清单的模板合计 47 行（templates/plot-canvas.md:11–22＝12、templates/plot-scene-table.md:11–34＝24、templates/plot-diagnosis-report.md:9–19＝11），加 references/serial-platform-migration.md:45–50 的 6 行 T 项＝53；两种口径都得不到 54。判据在采纳注中未写明（是否含 serial-tables 的列说明行、是否含 DR-SUM 与 E-xx/F-xx 示例行）。",
+      "measured": "47（仅模板）／53（含迁移表 T 行）；另有 C-01–C-13（references/plot-scope-and-conflicts.md:70–82）、E-01–E-04 与 F-01–F-04（templates/plot-diagnosis-report.md:40、:53）三组编号不在「79 个唯一编号」口径内（79＝PL 16＋SV 16＋PA 12＋ST 24＋DR 11，Python 集合实测）",
+      "anchors": [
+        "templates/plot-canvas.md:11",
+        "templates/plot-scene-table.md:11",
+        "templates/plot-diagnosis-report.md:9",
+        "templates/plot-diagnosis-report.md:19",
+        "references/serial-platform-migration.md:45",
+        "references/plot-scope-and-conflicts.md:70",
+        "templates/plot-diagnosis-report.md:40",
+        "templates/plot-diagnosis-report.md:53"
+      ],
+      "not_fix": "不改主代理的 54，登记本席两种实测值与判据差异"
+    }
+  ],
+  "notes_on_method": {
+    "验证权限": "static。只读、检索、文本统计与结果核对；未运行 tests／lint／typecheck／build／benchmark／smoke，未启动应用，未做任何 git 写。",
+    "允许与禁区": "只新建并写 notes/quality/story-architecture-and-longform-planning/brief-draft.json；同目录 brief.json／review.json／s05a1／s05a2／s05b1／s05b2-desourcing-selfcheck.md 未改动；output/、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md 未写入；未用 sed -i／perl -i／覆盖式重定向，落盘统一用 Python json.dump（分四次写，每次写完整 JSON）。",
+    "命令（要点）": "ls -R；wc -l SKILL.md references/*.md templates/*.md examples/*.md agents/openai.yaml；/usr/bin/grep -n（绝对路径逐条，中文短模式）用于「六项」「四项」「未能核实」「SU-15／SU-16」「story-architecture」「注水」「七千五百」「脚本」「LE/SR 卡」；Python 做文件数断言、逐词计数、表格空行判据试算、相对链接完整性检查、§10 文件覆盖集合差。",
+    "读过的文件与行数": "成品包 20 份 md／3,326 行：SKILL.md 401；references 13 份 2,059（plot-rules 571、plot-diagnosis 335、plot-planning 207、serial-volume-and-closure 195、plot-revision 183、plot-scope-and-conflicts 148、serial-chapters-and-installments 67、serial-formula-and-escalation 64、serial-open-lines-and-continuity 63、serial-production 87、serial-platform-migration 52、serial-rules 47、serial-zh-webnovel 40）；examples 479（plot-examples 290、serial-examples 189）；templates 387（serial-tables 139、plot-scene-table 92、plot-diagnosis-report 87、plot-canvas 69）。另 agents/openai.yaml 8 行。",
+    "读过的旁证文件": "notes/operations-contract/story-architecture-and-longform-planning.md（只读「七、主代理采纳注」，2 KB，未抄结论）；notes/quality/story-architecture-and-longform-planning/brief.json（骨架 49 行，取 cases 4 条原文与键名）；notes/quality/character-and-narrative-control/brief-draft.json（只取条目字段命名习惯）；inputs/requirements.md 84 行（第①问「重点是反例、失败出口、适用条件、模板字段和机制卡」与 D2/D3 裁决）；对端 6 包的 SKILL.md 与若干 references 行（仅接口相关行，未整包盘点）。",
+    "锚点纪律": "每个 file.md:NN 写入前用 /usr/bin/grep -n 或 Python 按行取原文回显核对；包内锚点相对包根（SKILL.md、references/…、templates/…、examples/…），对端锚点一律带包名前缀（如 scene-conflict-and-rhythm/SKILL.md:46）；正文散文中的裸文件名已全部补成带目录路径。案例组的锚点在写入前额外断言行号不超过目标文件行数。数组锚点（anchors／anchors_own／anchors_peer／counterexample_ref）共 662 条、覆盖 38 个文件，全量回显核对：0 条 NOFILE、0 条越界、0 条空行。",
+    "与采纳注的关系": "冲突以成品原文为准并写明冲突点：① 模板空行——采纳注 67（9／9／23／26）与本席按字面「整行各格皆空」的 30（3／3／17／7）并存，本席无法复现 67，两值都不改（ST-G02）。② ID 独占行——采纳注 54 与本席实测 47（仅模板）／53（含迁移表 T 行）并存（ST-G10）。③ 状态词——采纳注的 24 处／12 文件、SKILL.md 0 处已由本席独立复现（ST-G01）。④ SV-16 与 3,326 行、PL 16/16、SV 卡体 16/16 均与本席实测一致。",
+    "证据不够（不猜）": "1）ST-G02／ST-G10 的对方判据未写全，本席只能给出自己试过的 4 种判据结果，不能判定谁对——原因：证据不够，需判据定义。2）采纳注提到的 244 处锚点全量核验依赖主代理的 scratchpad/ocverify.py 产物，本席只做了本包 20 文件的自身统计与相对链接检查（坏链 0），未复算跨包锚点总数——原因：未取用该脚本，不在本席盘点范围。3）delivery-preflight-spec 口径（4 件模板／54 条 ID／JSON 46 条）属于另一条流程的登记面，本席未核——原因：该文件不在本次盘点目标内，且其口径未在本包内声明。4）SV-16 记录面口径与模板「稿件证据位置」列的关系（ST-G09）只登记并存事实，未判定应改哪一侧——原因：属 Owner／契约取舍，交用户或收口席。5）对端 6 包只核到接口相关行，未做各包全量能力盘点——原因：本次任务只要求本包 brief 草案。",
+    "不写的东西": "不写通过结论、不写 GQ 状态、不改 gq5 字段（骨架 gq5 未复制到草案，冻结件 brief.json 原样保留）；不给规则补数字、不补第六项输入、不新增模板。"
+  },
+  "capabilities_automation_note": "本包无脚本、无自动校验、无自动判定、无自动评分：templates/plot-canvas.md:3、templates/plot-scene-table.md:3、templates/plot-diagnosis-report.md:3 自述「人工工作纸，不含脚本」，examples/plot-examples.md:289 自述「本 skill 没有脚本、没有自动校验」，serial-platform-migration.md 的验收与回退全为人工抽查。全包关键词扫描 python|bash|automat|工具调用 命中 0（读入 20 份 md 已回显文件数）。因此 capabilities[].kind 只取 workflow（包内人工流程）与 external（结论依赖包外事实：合同、平台政策、出版版本、读者渠道），不报 automation。agents/openai.yaml 仅界面信息与选择提示，policy.allow_implicit_invocation: false（agents/openai.yaml:8），不授予执行能力。",
+  "cases_kind_counts": {
+    "positive": 3,
+    "missing": 2,
+    "conflict": 3,
+    "boundary": 5
+  },
+  "round_complete": "draft-complete story-brief",
+  "adopted_by": "Agent 1 / main agent 采纳（草案席原内容未改，仅改 kind/status 并加 adopted_* 与 draft_source_sha256）",
+  "adopted_at": "2026-11-05 16:35",
+  "draft_source_sha256": "ee0f432719f4235d"
+}

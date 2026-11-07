@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "kind": "frozen-for-review",
+  "skill": "fiction-planning-and-diagnosis",
+  "status": "review-independent-r1",
+  "producer": "R09 §6.1 质量 brief 草案席（非独立审核方；只写事实与位置，通过结论与 GQ 状态留给后续 review 席位）",
+  "reviewer": "RV-fictionplanning（只读子代理，非作者）",
+  "review_kind": "D3-C 独立复核（只读、非作者、static 权限）；重派席，上一批同范围席零落盘",
+  "brief_sha256": "69ddd2b7f9074530baf70c1b68419c2187c6a56e11511723528c1321f3520f4e",
+  "skill_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+  "tree_files": 27,
+  "tree_bytes": 348056,
+  "bound_to_tree_sha": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+  "tree_method_note": "递归枚举包根普通文件 → 相对包根路径 → 按路径字节序升序（key=lambda r: r[0].encode('utf-8')）→ 逐行拼 \"<relpath>\\t<sha256(原始字节)>\\n\" → 对拼接串取 sha256。brief_sha256＝brief.json 原始字节 sha256。两项与 /tmp/k5-bindings-2026-11-05.tsv 第 4 行（pkg=fiction-planning-and-diagnosis）整串相符：brief 69ddd2b7…、tree 2d07177a…、files 27、bytes 348056；无差异，故继续复核。",
+  "freeze_note": "复核期间 output/fiction-planning-and-diagnosis/ 未被本席写入或改动（本席唯一落盘件在 notes/quality/ 下）；写后同法复算整树摘要，结果见 tree_recheck_after_write。对端包整树摘要按同法实测，与 tsv 各自行相符。",
+  "tree_recheck_after_write": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8（写后同法复算，27 件／348056 B，与绑定值一致＝包树未被触碰）；同批复算 brief.json 原始字节仍为 69ddd2b7f9074530baf70c1b68419c2187c6a56e11511723528c1321f3520f4e。回读断言：JSON 可解析；五组条数 brief↔review 逐组相等 14/14、10/10、7/7、9/9、12/12（合计 52 行）；行状态值域仅 pass(43)／fail(8)／not_proven(1)，无第四档、无格式违规；GQ 状态值域合法（GQ1 STATIC_CHECKED、GQ2 FAIL、GQ3 FAIL、GQ4 STATIC_CHECKED、GQ5 NOT_PROVEN）；semantics 7 条均 ≥2 refs 且带实测 record_ref；cases mode 全部 synthetic。",
+  "peer_tree_sha256_measured": [
+    {"peer": "character-and-narrative-control", "tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa", "files": 17, "bytes": 193531},
+    {"peer": "scene-conflict-and-rhythm", "tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67", "files": 17, "bytes": 168166},
+    {"peer": "story-architecture-and-longform-planning", "tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07", "files": 21, "bytes": 283891},
+    {"peer": "line-editing-and-proofreading", "tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1", "files": 10, "bytes": 114211},
+    {"peer": "genre-fiction-craft", "tree_sha256": "59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352", "files": 101, "bytes": 1053170},
+    {"peer": "cross-media-drama-adaptation", "tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5", "files": 13, "bytes": 76222},
+    {"peer": "preset-card-generation", "tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94", "files": 11, "bytes": 113900}
+  ],
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "STATIC_CHECKED",
+      "basis": "10 项能力逐条核到包内实体：FC 21 条（rules- 四文件条级标题计数 6/4/6/5＝21，SKILL.md 层 ID 字面 21/21）、CL 14/14、RS 14/14、RF 12/12、K 19 行、S1–S9 九行（diagnosis.md:43-:51）、规划闸门 10 问（planning.md:311）、起草 12 步＋前置（drafting.md §0–§12）、修订 R1–R6＋介入级别 L0–L4（revision.md:181-:191）、自检顺序 10 步（self-check-diagnosis.md:9-:18）、RF-10 六步（reader-feedback.md:81-:86）、核验十项属性（research-and-verification.md:23）、11 类断言表（同文件 :33-:43）、七步检索（:47-:53）、六种结论（:57-:64）、三层记录（:239-:261）。每条规则带分支／反例（21/21）／卡住时（21/21）；能力无 automation 声明——find 实测 27 件＝26 .md＋1 yaml，无 scripts/、schemas/、*.py、*.sh。",
+      "not_proven_scope": "能力是否真的做出好稿（效果）与宿主是否加载 agents/openai.yaml 均未实测。",
+      "counter_evidence": "CAP-09 的 what 段两处描述与包内实体不符（见 findings F-13）：把三步有限迁移协议记为 §9（实际在 §1，SKILL.md:49-:57；§9 为「适用范围外的转交判据」SKILL.md:315），并称 §4 再转列给出 9 条子规则级指向（实测再转非空 9 行，其中带子规则号 PL/SU 的 5 行：:138 :142 :145 :146 :155）。"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "FAIL",
+      "basis": "7 组 semantics 中 5 组为未收口的 A/B 冲突且互相矛盾的是同一包内的权威行：赛道缺项时「继续按最可能的一个往下做」vs「等作者选定再进入下一步」（SEM-01）、删减方案数（SEM-02）、提问数（SEM-03）、类型契约归属（SEM-04）、规则卡字段声明与实现（SEM-05）、路由具名口径（SEM-07）。SEM-01 的两种指令同现于 SKILL.md 同一文件（:65 与 :86），差别只在「两三个/三种」和「暂定/选定后」，且 :65 的兜底句「只有答案会彻底改变方案时才停下来问」与 :86 的无条件停等不可同时执行。",
+      "arbitration_gap": "包内唯一的冲突收口声明是 SKILL.md:354 的括号句「（口径与本文转介表一致，两处不一致时停下交作者，不自行选边）」，仅覆盖责任划分与转介表，不覆盖 §2 使用方式与 §3/§5 的分叉；references/scope-and-conflicts.md §2 的 K-01…K-19 只裁规则层争点，不裁这些交付口径。",
+      "verified_not_defect": "交付状态词四词口径在 SKILL.md:330、references/diagnosis.md:411、四张模板的填写纪律行三处一致，未并列两份回执（SEM-06 记 pass）。"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "FAIL",
+      "basis": "7 个方向的对端回执均实测到含本包名的真实行，两份树 SHA 按同法实测；但 3 个方向（IF-03／IF-05／IF-06）存在按类别的单向声明或双 Owner：story 把非虚构事实核验转给本包而本包两处明确拒绝（引两侧原文见 sections.interfaces）；genre 与本包同时声明拥有题材/类型承诺验收；cross-media 把「原作的人物」转给本包而本包把人物层转给 character。本包侧仅 1 行接收入口声明（SKILL.md:45，覆盖 preset 方向），对 story／scene／character／line／genre／cross-media 六向无对应接收行；§9 转交判据 5 行用泛称（:319-:323），按包名匹配全部落空，其中 :323 的「外部事实核验」在套件内无接收方指名；四张交付模板无「转出去向／接收包」留痕列，§8 交付前自查七问（:300-:306）无「该转的是否转了」一项。",
+      "receipt_method": "每条 interface 的 provider_ref／consumer_ref 为两侧原文行址，peer_tree_sha256 为该对端包整树实测摘要，record_ref 为对端 SKILL.md（或实际承载行所在文件）原始字节实测 sha256。"
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "STATIC_CHECKED",
+      "basis": "9 条 applicability 全部核到条件＋限制＋反例三类实体：限制行见各规则卡 适用范围／反例 bullet（21/21）与 self-check-* 的 不适用／不要这样用 小节；反例锚 counterexample_ref 全部实测在位；未覆盖域在 references/scope-and-conflicts.md §4.2 逐档记 较强／中等／弱／缺 与「不能说什么」（:114-:125），§3 把中点照面列为「不收入规则」（:67）、字数分段标「已过期」（:64、:74）。本席独立复扫成品自足：书名号 0、来源编号残片 0、包外路径 0、审计词 0、禁用分档词 0、四个 examples 文件全部带自创／编写声明。",
+      "residual": "（1）references/scope-and-conflicts.md:117 具名「Genette/Booth」，属附录 B #5 的名人姓名目标类且包内无登记理由；（2）21 条规则卡的「冲突处理」有 2 条未具 K 号（FC-17、FC-21，见 FQ-G05 复核）；（3）AP-09 的宿主调用条件为 not_proven。故 GQ4 只到静态核过，不写成效果已证。"
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "NOT_PROVEN",
+      "basis": "本轮验证权限＝static：未运行任何脚本／测试／构建／冒烟，未启动应用，未做真实稿件任务；brief 的 cases[] 12 条全部按 synthetic（自创用例＋包内条款静态推演）登记，无一条 host 运行。"
+    }
+  ],
+  "sections": {
+    "requirements": [
+      {"id": "FQ-R01", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:11 「把一部作品从素材带到可写、可诊断、可修订」", "references/planning.md:1 「# 规划工作流：从素材到可写的骨架」", "references/planning.md:332 「## 11. 输出映射（写入 templates/novel-plan.md）」"], "note": "11 个锚点逐行实读，均承载入口→骨架→规划单链路。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/planning.md", "sha256": "2a7ee5247ed4f1e6031ea48d1306dd527aa6a88f77eb6dd2a92ba3d347a8260c"}},
+      {"id": "FQ-R02", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:169 FC-01 四项", "SKILL.md:222 CL-01 契约两行", "templates/novel-plan.md:9 NP-01 含 reader_promise"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-contract.md", "sha256": "843838a06a243edbd24e27da007ee1a7e6bfa0c34c3294164072e3951168c2c5"}},
+      {"id": "FQ-R03", "brief_status": "covered", "status": "pass", "evidence": ["references/research-and-verification.md:21 断言拆分", ":73 「## 6. 十四条核查动作」且 RS-01…RS-14 全在位", ":55 「## 5. 六种结论」6 行（:59-:64）"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/research-and-verification.md", "sha256": "6b3ed4fe2f9535339b3497e93a284b4de5d31aa3c91b251aa45c9efecd2a321c"}},
+      {"id": "FQ-R04", "brief_status": "covered", "status": "pass", "evidence": ["references/diagnosis.md:39 「## 2. 症状总表」＋:43-:51 S1…S9 九行", ":21 严重度与证据强度分节", "templates/diagnosis-report.md:15 DR-08 「最小验证（15–30 分钟内可完成的一条检查）」"], "note": "「按九类症状找规则」在 diagnosis.md 成立；SKILL.md §4 症状速查不带 S 编号，对照缺口另记 FQ-G10（本席复核为真）。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/diagnosis.md", "sha256": "7d57230eaaf35d720dfb6f358d2f4557d4d2e7019678721fcce428314040f079"}},
+      {"id": "FQ-R05", "brief_status": "covered", "status": "pass", "evidence": ["references/reader-feedback.md:13 「同一条反馈保留：原话、时间、来源、读过的范围、利益关系、转发链」", ":17-:19 观察／偏好／没有依据的预测三类", ":88 RF-11 试读"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/reader-feedback.md", "sha256": "7d69928d0fe1b13c954b71c0a78799ebaceed114eef609dc6b0e89bf02f46cd0"}},
+      {"id": "FQ-R06", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:90 场景卡四项与 SP-02…SP-05 一致", "references/drafting.md:26-:306 §1–§12 十二步", "templates/scene-plan.md:9-:12 SP-02…SP-05 各独占行"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/drafting.md", "sha256": "347d9afd0e2327f995a5cb3d0857db899698bf38f9ff206aa2df27677eb4eddd"}},
+      {"id": "FQ-R07", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:28-:34 转介表实测 7 行", "SKILL.md:40-:43 重叠请求实测 4 行", "SKILL.md:49-:57 有限迁移协议三步", "SKILL.md:326 不交付清单"], "note": "兜底入口在文字层齐（:3、:22）；宿主是否自动触发属未实测（AP-09 not_proven、FQ-G07 索引缺件已复核为真）。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}},
+      {"id": "FQ-R08", "brief_status": "covered", "status": "pass", "evidence": ["references/revision.md:23 「## 1. 三个层级（不要跳层）」", ":185-:191 L0–L4 与「**默认只到 L1**；L2 需作者同意；L3/L4 必须有明确授权」", "templates/revision-sheet.md:16 RV-09 「默认 L1；L3/L4 需明确授权」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/revision.md", "sha256": "3d0e9f4bafbb075a21d4eefef4949a4566d6471a0bcf2b17b287c7cb33f92b95"}},
+      {"id": "FQ-R09", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:221-:241 CL-01…CL-14 十四条分四组", "references/self-check-diagnosis.md:9-:18 十步顺序", "SKILL.md:245-:246 自检报告表"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-diagnosis.md", "sha256": "dc00f7d92d3be8e5294128697e0dee918d3fa438172e2186a9a9f8193363b167"}},
+      {"id": "FQ-R10", "brief_status": "covered", "status": "fail", "evidence": ["templates/novel-plan.md:7 「| 字段 ID | 字段 | 填写内容 | 状态 | 稿件证据位置 | 依据规则 | 写不出的出口 |」（7 列）", "templates/diagnosis-report.md:6 「| 字段 ID | 字段 | 填写内容 | 状态 | 稿件证据位置 | 依据/说明 |」（6 列）", "templates/revision-sheet.md:6 同 6 列形"], "reason": "需求文本要求每行含「依据规则」与「写不出的出口」两列；实测 4 张表中只有 novel-plan 与 scene-plan 为 7 列，diagnosis-report 与 revision-sheet 为 6 列、两列合并为「依据/说明」。50 条 ID 独占行（14＋12＋12＋12）与「未知」合法值两子句实测成立，故 fail 只落在列形子句。DR-SUM（templates/diagnosis-report.md:20）在 12 条编号外另起一行，与 FQ-G02 一致。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/diagnosis-report.md", "sha256": "77fbe8b1ff8b8e05f26b22055a3fce2c7a675c3abf1e695d8bbf1aac81f4ab95"}},
+      {"id": "FQ-R11", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:86/96/105/114/123/131 六条流程各一行「缺料或冲突时」", "21 条规则卡「- **卡住时**」逐件计数 6/4/6/5＝21", "planning.md:22/328、drafting.md:22、diagnosis.md:17、revision.md:19、rules-revision-and-method.md:115"], "note": "两份 external 流程文件（reader-feedback.md、research-and-verification.md）不写「卡住时」标头，改以 RF-12 停下条件（:97-:106）与 §7 冲突处理（:187-:221）表达；需求的对象是「六条流程与 21 条规则卡」，两文件不在其列，故不据此扣分，仅记口径差异。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/rules-premise-and-structure.md", "sha256": "6e48e0ddbc92b90c7aee834580143fd87a6a28077d6611295ae50156af5208f2"}},
+      {"id": "FQ-R12", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:330 「交付状态只用四个词」＋:332-:335 四词定义", "references/diagnosis.md:411 「状态只用 SKILL.md §9 的四个词填写」", "SKILL.md:338-:348 交付回执模板、:350 历史回执不继承", "references/diagnosis.md:401 「## 三问回归：结构、证据与不交付」"], "note": "FQ-R12 锚点之一 references/scope-and-conflicts.md:127（「### 4.3 验证边界」）不承载状态词或回执机制，本席列为不支撑锚（见 anchor_census），不改变该行结论（其余四条锚已直接承载）。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/diagnosis.md", "sha256": "7d57230eaaf35d720dfb6f358d2f4557d4d2e7019678721fcce428314040f079"}},
+      {"id": "FQ-R13", "brief_status": "covered", "status": "pass", "evidence": ["SKILL.md:47 不在范围清单", "references/scope-and-conflicts.md:26 「明确拒绝，不冒充专业交付」", "SKILL.md:326 不交付清单", "references/research-and-verification.md:232 「## 9. 交付边界」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/scope-and-conflicts.md", "sha256": "325d62f98d161a0c8ed3d61463caa1b1b6434f9537a63a13e4dddf09f9394edc"}},
+      {"id": "FQ-R14", "brief_status": "partial", "status": "pass", "evidence": ["本席整包复扫（27 件，UTF-8 逐行）：《[^》]+》 0 命中；PG/残片编号 0；notes/|results/|/home/|materials/|rounds/ 0；NOT_PROVEN|VERIFIED|NOT_RUN|STATIC_CHECKED|DESIGN_EXAMPLE|OBSERVED|BLOCKED|NOT_APPLICABLE|PASS|FAIL|GQ1-5|R17|R18 0；夯|拉完了|硬规则|用户明确要求|融合版 0", "四个 examples 文件全带自创声明：planning-cases.md:1＋:3、rule-examples.md:1、research-and-feedback-cases.md:1＋:3、self-check-cases.md:3「三个例子都是为说明而编写的，不是真实稿件，也没有做过读者测试。」", "四张表各有「不指向任何来源编号或包外路径」行（novel-plan:41／scene-plan:34／diagnosis-report:48／revision-sheet:59）"], "reason": "brief 记 partial 的两条理由中，「self-check-cases 无自创标注」经本席实读不成立（该文件第 3 行即声明），另一条「全包来源实体未复扫」由本席补做并给出命中数，故按需求文本三子句判 pass。残留：references/scope-and-conflicts.md:117 出现理论家姓名「Genette/Booth」，属附录 B #5「作者、作家和名人」目标类，包内无登记理由；且本席 0 命中不等于零违规（19 条子模式中 13 条检测有效性未证）。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/examples/self-check-cases.md", "sha256": "58f59ef4a704a1d4dc71597d5932c0bc58f342a2d939b21fcfc4bea4d66f89cd"}}
+    ],
+    "capabilities": [
+      {"id": "FQ-CAP-01", "brief_kind": "workflow", "status": "pass", "review": "FC-01／FC-20／CL-01／CL-02／CL-14 条体齐（SKILL.md:169/:213/:222-:224＋self-check-contract.md §1-§4）；限制行（rules-premise:41、scope:64、scope:47 K-12）与 8 个 counterexample_ref 全部实测在位；「不承诺畅销」有 self-check-contract.md:82 侧的 CL-14 行支撑。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-contract.md", "sha256": "843838a06a243edbd24e27da007ee1a7e6bfa0c34c3294164072e3951168c2c5"}},
+      {"id": "FQ-CAP-02", "brief_kind": "workflow", "status": "pass", "review": "FC-02…FC-06＋FC-10 条体齐，规划八步（SKILL.md:77-:84）与 planning.md §1-§5 一一对应；NP-01…06/08/09/13/14 实存；「主汇聚 3/4 处、倒推 3 环、8–9 段是操作默认非硬门」经 scope:66/:71/:69 逐行核实；K-01/02/06/11/18 与 FC-06 例外（SKILL.md:179）支撑分档限制。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/rules-premise-and-structure.md", "sha256": "6e48e0ddbc92b90c7aee834580143fd87a6a28077d6611295ae50156af5208f2"}},
+      {"id": "FQ-CAP-03", "brief_kind": "workflow", "status": "pass", "review": "FC-07…FC-16 条体齐；起草 §0–§12 实测 13 节（§0 前置＋12 步）与 what 段一致；SP-01…SP-12 全在位；「写得是否好看记未能核实」在 drafting.md:320 实测为「均 **未能核实**；本 Skill 不提供自动评分」；探索稿不作定稿在 drafting.md:22。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/drafting.md", "sha256": "347d9afd0e2327f995a5cb3d0857db899698bf38f9ff206aa2df27677eb4eddd"}},
+      {"id": "FQ-CAP-04", "brief_kind": "workflow", "status": "pass", "review": "诊断前置五条（diagnosis.md:9-:17）、S1…S9（:43-:51）、每类症状的 可观察证据／对应规则／分支（:55-:368）、DR-01…DR-12＋DR-SUM（:370-:387 与模板）、严重度≠证据强度（:21、模板:14）齐；梗概分支与「片段不外推」在 :17、:14；rule_ids 里的 L0…L4 由 diagnosis-report.md:16/:46 与 revision.md:185-:191 支撑。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/diagnosis-report.md", "sha256": "77fbe8b1ff8b8e05f26b22055a3fce2c7a675c3abf1e695d8bbf1aac81f4ab95"}},
+      {"id": "FQ-CAP-05", "brief_kind": "workflow", "status": "pass", "review": "R1…R6（revision.md:37/:59/:81/:94/:132/:155）、四类对象三问四处置（:94、模板:33-:40）、回归六项（模板:42-:49）、回退点（模板 RV-11）、已发布不回改（:126、:217）、默认 L1（:191）、无 Owner 不交付完整新稿（SKILL.md:324）逐条实读；「修订提升质量」记未能核实在 :177。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/revision-sheet.md", "sha256": "4d0563e869193ab3516f7bfbae372e55b64ff04d2cfa8e8e94a90b9d24aacad7"}},
+      {"id": "FQ-CAP-06", "brief_kind": "workflow", "status": "pass", "review": "CL-01…CL-14 在 self-check-contract／character／scenes／language 四文件分节实存，另 self-check-diagnosis 提供顺序表、作者情形表、作者决定 6 项、误用表 8 行；counterexample_ref 13 条中 references/self-check-diagnosis.md:64 实测为表格分隔行「|---|---|---|」，不承载反例语义（另列寻址缺陷），其相邻 :63 表头与 :65-:72 数据行支撑同一「误用」主张。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-scenes.md", "sha256": "be38971ce0b18a9344f37ed0edeace6ed450c4b63984156a405522e245d0894b"}},
+      {"id": "FQ-CAP-07", "brief_kind": "external", "status": "pass", "review": "external 定性正确：核验结论依赖包外原件；「不声明 automation」与实测一致（27 件＝26 .md＋1 yaml，scripts/、schemas/、*.py、*.sh 命中 0）；RS-01…RS-14、六种结论、七步、11 类断言、三层记录全部数到；「拿不到原件标尚待原件核对」:48、「未实际打开」:259、「只有模型记忆不能冒充查证」:63、「规则本身未证写证据不够」:69 四句均逐字命中。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/research-and-verification.md", "sha256": "6b3ed4fe2f9535339b3497e93a284b4de5d31aa3c91b251aa45c9efecd2a321c"}},
+      {"id": "FQ-CAP-08", "brief_kind": "workflow", "status": "pass", "review": "RF-01…RF-12 十二节实存；反馈记录六项字段（:13）、三类拆分（:17-:19）、RF-10 六步（:81-:86）、不擅自联系别人（:86）、敏感推断只接受用户主动约束（:94）、一行交付格式九字段（:101）均核到；「销量不是免查理由」:106 与 RS-12 呼应。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/reader-feedback.md", "sha256": "7d69928d0fe1b13c954b71c0a78799ebaceed114eef609dc6b0e89bf02f46cd0"}},
+      {"id": "FQ-CAP-09", "brief_kind": "external", "status": "fail", "review": "路由实体（§1 转介表 7 行、重叠 4 行、§4 再转列、§9 判据、协作边界段）实存，external 定性亦成立；但 what 段两处描述与包内实体不符：（a）把「越界任务的有限迁移协议三步」记为 §9，实际该协议在 §1（SKILL.md:49「### 越界任务的有限迁移协议」、:53-:55 三步），§9 实为「适用范围外的转交判据」（:315）；（b）称 §4 再转列给出「9 条子规则级指向」，实测再转非空 9 行（:137 :138 :142 :143 :145 :146 :147 :154 :155），其中带子规则号者为 5 行（PL-07/PL-04/PL-06、SU-17/SU-15），另 4 行只给包名。据此判 fail（描述与产物不符），不据此否定路由入口本身存在。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}},
+      {"id": "FQ-CAP-10", "brief_kind": "external", "status": "pass", "review": "agents/openai.yaml 8 行全读：文件自述两行（:1 宿主是否加载、:2 不授予权限）、interface.display_name（:4）、short_description（:5）、default_prompt（:6）、policy.allow_implicit_invocation: false（:8）＝what 段四项字段声明成立；limit 段把宿主加载记为未实测，与本席权限一致。缺陷不在能力声明而在索引：SKILL.md 全文对该文件零命中（grep openai|agents/ 命中 0），即 FQ-G07 印证。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/agents/openai.yaml", "sha256": "46aebd0edd99ec418ca706979fe1ebb81cd4692ec9b54669d9ac27735b8ed112"}}
+    ],
+    "interfaces": [
+      {"id": "FQ-IF-01", "peer": "character-and-narrative-control", "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa", "provider_ref": "SKILL.md:30「| 谁来讲、视角越界与切换、信息控制、场景与概述、跨越时间、人物心理的呈现 | `character-and-narrative-control` |」", "consumer_ref": "character-and-narrative-control/SKILL.md:33「- 新作规划入口、成稿整体诊断、读者反馈、事实核验、不确定用哪个 skill：转 `fiction-planning-and-diagnosis`。」；同包 :45、:301、:303、:304、:320", "status": "pass", "note": "双向行实测具名；PV-12/PV-13 在对方包内实存（对方 references/scene-summary-and-time.md:21、references/diagnosis.md:12）。本包对「接对方转回」无独立声明行（只有 :45 覆盖 preset），计入 GQ3 缺口，不单独翻本行。", "record_ref": {"path": "output/character-and-narrative-control/SKILL.md", "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"}},
+      {"id": "FQ-IF-02", "peer": "scene-conflict-and-rhythm", "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67", "provider_ref": "SKILL.md:29 转单场类；SKILL.md:145「…| `scene-conflict-and-rhythm` 的 SU-17 |」；SKILL.md:155「…| `scene-conflict-and-rhythm` 的 SU-15 |」", "consumer_ref": "scene-conflict-and-rhythm/SKILL.md:25「- 选题、读者契约、资料核验、读者反馈、不确定用哪个 skill → 转 `fiction-planning-and-diagnosis`。」；同包 :40、:285、:286、:288", "status": "pass", "note": "SU-15／SU-16／SU-17 在对方包内实存（对方 references/chapter-ends-and-endings.md:7、:31、:47）。本包侧引用 SU-16 不在 §4 再转列，只在 references/self-check-scenes.md:97；brief 的 FQ-IF-02 note 写「两处子规则级指向（SU-15、SU-16、SU-17）」计数与列举不符，属 brief 侧描述误差。", "record_ref": {"path": "output/scene-conflict-and-rhythm/SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1"}},
+      {"id": "FQ-IF-03", "peer": "story-architecture-and-longform-planning", "peer_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07", "provider_ref": "SKILL.md:28 转出结构与连载规划；SKILL.md:137/:138/:142/:146 按症状转 PL-07/PL-04/PL-06", "consumer_ref": "story-architecture-and-longform-planning/SKILL.md:29、:39、:64 及 references/serial-chapters-and-installments.md:46「5. 注水诊断和删段方法转 `fiction-planning-and-diagnosis`」、references/serial-rules.md:33", "status": "fail", "one_way_evidence": ["对方 story-architecture-and-longform-planning/SKILL.md:47：「- **非虚构**（报道、纪实、回忆录、评论、学术）的事实核验与论证结构：不在范围；要核验现实断言转 `fiction-planning-and-diagnosis`。」", "本包 SKILL.md:47：「不在范围：非虚构的写作、翻译、排版出版、影视剧本格式和分镜、游戏系统设计及原创互动叙事的分支、状态与 UX 设计、诗歌歌词；现代的销量预测和市场数据；现实中的医疗、法律、科学结论。舞台和戏曲只取能迁移的结构（幕、折的收束，大收煞）。」", "本包 references/scope-and-conflicts.md:26：「| **非虚构 / 史传 / 新闻** | 不在本 Skill 范围；只借 FC-13 C 的「按实」边界 | 把小说「似真」标准套史传；把史传「按实」套小说 | 明确拒绝，不冒充专业交付 |」", "本包 references/research-and-verification.md:6：「- 这里管作品里的**现实断言**：历史、职业、地方、引语、统计、原型、「第一」。」"], "reason": "注水／删段／读者契约／反馈分析四项两侧齐（判据在 self-check-modern-and-zh.md:18 与 SKILL.md:116、:125），但「非虚构的事实核验与论证结构」一项为对方单方转出、本包两处明文拒绝且核验对象限定为作品内断言，无接收行→按契约「单向声明判 fail」，两侧原文已引。", "record_ref": {"path": "output/story-architecture-and-longform-planning/SKILL.md", "sha256": "1f87001f760054a1210e3be1d64c82e0266f8892314d43ba37099def32a84d26"}},
+      {"id": "FQ-IF-04", "peer": "line-editing-and-proofreading", "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1", "provider_ref": "SKILL.md:31 转出语言层；SKILL.md:154 句子症状转对方；SKILL.md:357「- `line-editing-and-proofreading` 拥有句子、段落和校对层面的语言编辑；本 Skill 给出结构与内容层面的修订目标，不替代逐句编辑。」", "consumer_ref": "line-editing-and-proofreading/SKILL.md:32、:40、:42、:184、:185、:187、:203「- `fiction-planning-and-diagnosis` 拥有原创故事结构、整体诊断和内容层修订；本 Skill 不用润色掩盖因果或结构问题。」", "status": "pass", "note": "对偶句两侧齐；本包 §9 的转交判据行（SKILL.md:322「需要逐句润色、校对或风格统一时，转交语言精修 Skill。」）用泛称而非包名，具名不一致记入 findings F-08，不改本行双向判定。", "record_ref": {"path": "output/line-editing-and-proofreading/SKILL.md", "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436"}},
+      {"id": "FQ-IF-05", "peer": "genre-fiction-craft", "peer_tree_sha256": "59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352", "provider_ref": "SKILL.md:32「| 推理、恐怖、言情等题材的契约和专项技法 | `genre-fiction-craft` |」；SKILL.md:147「| 不像这个类型，读者觉得货不对板 | FC-20 | `genre-fiction-craft` |」", "consumer_ref": "genre-fiction-craft/SKILL.md:24「| 选题、读者契约、事实核验、读者反馈，不确定用哪个 skill | `fiction-planning-and-diagnosis` |」", "status": "fail", "one_way_evidence": ["本包 SKILL.md:213：「**FC-20 类型契约**：把类型当作和读者的约定，不是本体上的硬边界。写之前列三到五个必要的特征和承诺，写完逐条验收；市场和审查的约束单独列，不和手艺混在一起判断。」", "本包 references/self-check-diagnosis.md:31：「| 要类型套路、节拍表、市场预测 | 本 skill 不提供现成套路与市场预测；结构转 `story-architecture-and-longform-planning`，章末与节拍转 `scene-conflict-and-rhythm`；类型契约是本 skill 自有的 FC-20，按契约自查，题材专项技法转 `genre-fiction-craft` |」", "本包 references/diagnosis.md:309（S8 类型失约节）：「**对应规则**：FC-20（类型契约/市场约束分层）。」", "对方 genre-fiction-craft/SKILL.md:17：「- 判断题材承诺有没有兑现：读者被许诺了什么，作品有没有给。」"], "reason": "「题材／类型承诺是否兑现」这一责任在两侧同时被声明为本包自有（FC-20 写完逐条验收、S8 症状在包内、self-check-diagnosis.md:31 明示「本 skill 自有的 FC-20」）与对方职责（genre SKILL.md:17），而本包 §1 转介表把「题材的契约」整体转出、§4 又把整条「类型失约」症状再转 genre，同一越界事项无唯一 Owner；按单 Owner 判据记 fail。另：brief 的对端锚 genre-fiction-craft/SKILL.md:33 实测为空行（真实声明在 :34），列入 addressing_defects。", "record_ref": {"path": "output/genre-fiction-craft/SKILL.md", "sha256": "8f7a4205523cba1dffa67c61cbf8744cb9f6f6a8e23f6b73a538fde7f0ee8a04"}},
+      {"id": "FQ-IF-06", "peer": "cross-media-drama-adaptation", "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5", "provider_ref": "SKILL.md:33「| 改成舞台方案、分场稿、镜头 | `cross-media-drama-adaptation` |」；SKILL.md:359「既有文本改编为互动叙事时，转交 `cross-media-drama-adaptation`；本 Skill 可继续提供原作结构诊断，但不输出玩家选择、状态变量或分支拓扑。」；references/rules-units-and-endings.md:43「…具体转换转交 `cross-media-drama-adaptation`…」", "consumer_ref": "cross-media-drama-adaptation/SKILL.md:34、:191 与 references/interactive-adaptation.md:91", "status": "fail", "one_way_evidence": ["对方 cross-media-drama-adaptation/SKILL.md:34：「| 原作的读者契约、人物和事实核验 | `fiction-planning-and-diagnosis` |」", "本包 SKILL.md:30：「| 谁来讲、视角越界与切换、信息控制、场景与概述、跨越时间、人物心理的呈现 | `character-and-narrative-control` |」", "本包 SKILL.md:355：「- `character-and-narrative-control` 拥有人物目标、叙述权限、视角、关系变化、人物知识边界和时间连续性；本 Skill 负责故事结构与整体诊断。」"], "reason": "三项转出中「读者契约」与「事实核验」本包有条款接收（SKILL.md:222、:116），但「人物」一项本包明文转给 character 且无接收声明，属对方单方声明的类别级单向接口；同时本包 references/rules-units-and-endings.md:43 的「具体转换转交 cross-media」在对方侧无对应回指行。", "record_ref": {"path": "output/cross-media-drama-adaptation/SKILL.md", "sha256": "7e18e9a55790759006c6335e33a8abbde16a7dfc588165cde321539cc6f95b3d"}},
+      {"id": "FQ-IF-07", "peer": "preset-card-generation", "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94", "provider_ref": "SKILL.md:34 转出预设卡与三轴审；SKILL.md:40-:43 四条重叠请求按「产物是什么」分；SKILL.md:45「从 `preset-card-generation` 转入本 skill 的：一般性的新作规划、定赛道、成稿诊断，且产物是规划文档或诊断意见、不是给模型的卡。」", "consumer_ref": "preset-card-generation/SKILL.md:37「| 一般性的新作规划、定赛道、成稿诊断 | `fiction-planning-and-diagnosis` |」；同包 :90、:184、:185", "status": "pass", "note": "7 个方向中唯一成对的转出／接收声明行（SKILL.md:45 ↔ preset SKILL.md:37），符合 suite-contract.md:263 字面判据；判据「有没有卡作为输入」在本包四张模板无留痕列（templates/ 全档 7/7/6/6 列形实测无转介字段），该缺口记入 GQ3 与 findings F-10。", "record_ref": {"path": "output/preset-card-generation/SKILL.md", "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"}}
+    ],
+    "applicability": [
+      {"id": "FQ-AP-01", "scope": "原创前提／赛道／单元规划／整体诊断／修订方案 vs 既有文本的媒介转换", "status": "pass", "limitation": "本包不设计改编分支、目标媒介结构或游戏系统（SKILL.md:356）；改编任务仍可要原作层结构诊断（:359）；纪实／改写／虚构可按对象分层（references/research-and-verification.md:14、self-check-character.md:94）。", "counterexample": "references/rules-units-and-endings.md:43「舞台、影视和互动媒介有各自的叙事单位；具体转换转交 `cross-media-drama-adaptation`」；scope-and-conflicts.md:18 银幕/影视行「本 Skill 不交付影视格式」。", "ref": ["SKILL.md:47", "SKILL.md:354", "SKILL.md:356", "SKILL.md:359", "references/research-and-verification.md:14", "references/self-check-character.md:94"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/rules-units-and-endings.md", "sha256": "761f632be119f1e010bcdb9852c352465ace2399cbb87a84bf5a15488c595744"}},
+      {"id": "FQ-AP-02", "scope": "作品内现实断言的核验方法；法律／医学／财务／职业规范／平台政策／史实专业结论", "status": "pass", "limitation": "只给断言拆分、证据类型、结论与记录格式，不给专业结论（SKILL.md:312、references/research-and-verification.md:8）；拿不到原件标「尚待原件核对」，未打开的链接写「未实际打开」（:48、:259）；越界走三步有限迁移且不构成替代性认证（SKILL.md:53-:57）。", "counterexample": "research-and-verification.md:63「只有模型的记忆，不能冒充查证」；:196「拿不到时只标「未核」，不借作者的名气认证」。", "ref": ["SKILL.md:53", "SKILL.md:57", "SKILL.md:121", "SKILL.md:312", "references/research-and-verification.md:48", "references/scope-and-conflicts.md:108"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/research-and-verification.md", "sha256": "6b3ed4fe2f9535339b3497e93a284b4de5d31aa3c91b251aa45c9efecd2a321c"}},
+      {"id": "FQ-AP-03", "scope": "读者反馈与效果验证分界", "status": "pass", "limitation": "「读者会……」一律待验证假设（SKILL.md:66、:313）；无试读交方案不交结果（reader-feedback.md:93）；模型复述只算代理（self-check-language.md:25）；回归通过≠效果验证（revision.md:149）；修订效果记未能核实（revision.md:177、:199）；诊断／起草不提供自动评分（diagnosis.md:399、drafting.md:320）。", "counterexample": "scope-and-conflicts.md:120「不能写「读者研究支持/读者都会/读者留存会提高」」；diagnosis.md:394。", "ref": ["SKILL.md:66", "SKILL.md:129", "references/reader-feedback.md:7", "references/revision.md:177", "references/drafting.md:320"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/reader-feedback.md", "sha256": "7d69928d0fe1b13c954b71c0a78799ebaceed114eef609dc6b0e89bf02f46cd0"}},
+      {"id": "FQ-AP-04", "scope": "宿主无格式规定时的交付默认", "status": "pass", "limitation": "templates 四表只在没有规定时使用（SKILL.md:61）；反馈按 RF-12 一行九字段（reader-feedback.md:101）；核验按 §10 三层（research-and-verification.md:239-:261）；回执只用四词并附模板（SKILL.md:330-:348、diagnosis.md:411）；格子不知道写「未知」（四表填写纪律行＋SKILL.md:336）。", "counterexample": "self-check-character.md:48「定位卡上如实标「未知」或「待作者决定」，不把未知写成已完成」；diagnosis-report.md:19「标「未知/未覆盖」，不假装已看」。", "ref": ["SKILL.md:61", "SKILL.md:336", "references/research-and-verification.md:251", "templates/novel-plan.md:41"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/novel-plan.md", "sha256": "3b6fe015152ce479ab2d77248ea588155b214d44bdfc3902dec0bc3b8d52e386"}},
+      {"id": "FQ-AP-05", "scope": "规则只在赛道标签内生效；跨赛道借用", "status": "pass", "limitation": "跨赛道必须重新取证（rules-premise-and-structure.md:16）；允许并列两标签但分别验收、不取平均（同 :29）；舞台/戏曲/口头/银幕只借结构层级（scope-and-conflicts.md:16、:18）；非虚构/史传/新闻明确拒绝（:26）；短篇单一效果与晚入场不上推长篇（:136、:137）。", "counterexample": "scope-and-conflicts.md:12 短篇行「字数界线是特定时期的市场约定，不是当代平台标准」；:64、:74 历史数值只作初判/历史注。", "ref": ["SKILL.md:73", "SKILL.md:169", "references/rules-premise-and-structure.md:29", "references/scope-and-conflicts.md:26"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/scope-and-conflicts.md", "sha256": "325d62f98d161a0c8ed3d61463caa1b1b6434f9537a63a13e4dddf09f9394edc"}},
+      {"id": "FQ-AP-06", "scope": "未覆盖域与状态词回退", "status": "pass", "limitation": "长篇多线／群像／系列世界观／互动叙事／儿童文学／跨文化／翻译／出版营销按「未能核实」或「缺」处理（scope-and-conflicts.md:107、:114-:125）；视角理论标弱（:117）、类型小说标弱/历史（:118）、修订实证标弱（:119）、读者反应无实验（:120）。", "counterexample": "同文件 :132「自建示例只用于演示判断步骤，不代表真实客户稿或已经验证的结果」；research-and-verification.md:7「不代表其效果已通过真实任务验证」。", "ref": ["references/scope-and-conflicts.md:107", "references/scope-and-conflicts.md:114", "references/scope-and-conflicts.md:117", "references/scope-and-conflicts.md:125"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/scope-and-conflicts.md", "sha256": "325d62f98d161a0c8ed3d61463caa1b1b6434f9537a63a13e4dddf09f9394edc"}},
+      {"id": "FQ-AP-07", "scope": "介入级别与授权边界", "status": "pass", "limitation": "默认只到 L1，L2 需同意，L3/L4 需明确授权，任何级别不覆盖原稿（revision.md:191、templates/revision-sheet.md:16）；已发布章节不回改，只补过渡或标「重启版」（revision.md:126、:217）；全文逐段改写没有外部 Owner，即使作者授权也不交付可直接发布的完整新稿（SKILL.md:324）。", "counterexample": "revision.md:193「作者要求「直接改好」但不给授权级别 → 先给 L1 方案＋问「要不要 L2 示例」；不要默认 L3/L4」；diagnosis-report.md:16「默认 L1；作者要改写时转修订，另起版本」。", "ref": ["SKILL.md:273", "SKILL.md:324", "references/revision.md:191", "templates/revision-sheet.md:31"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/revision-sheet.md", "sha256": "4d0563e869193ab3516f7bfbae372e55b64ff04d2cfa8e8e94a90b9d24aacad7"}},
+      {"id": "FQ-AP-08", "scope": "中文、网文与现代场合的迁移效力", "status": "pass", "limitation": "十条为迁移工作假设非平台规则（self-check-modern-and-zh.md:5）；历史字数分段已过期（scope-and-conflicts.md:64、rules-premise-and-structure.md:41）；单卷 5–8 万字只作历史注（:74）；拿不准平台惯例先问交付平台（SKILL.md:280）；AI 初稿句子层 AI 腔转 line-editing（self-check-modern-and-zh.md:33）。", "counterexample": "self-check-modern-and-zh.md:27（以内心为主的弱情节作品先重定义「推进」）、:19「章末钩子转 `scene-conflict-and-rhythm` 的 SU-15」不把「每章都要悬崖式结尾」当通则（self-check-scenes.md:97）。", "ref": ["references/self-check-modern-and-zh.md:5", "references/scope-and-conflicts.md:64", "references/scope-and-conflicts.md:74", "SKILL.md:280"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md", "sha256": "eda3337bcc4a421f8a2536dd1ab3449b95e676494454a4b10a8671d0915e413e"}},
+      {"id": "FQ-AP-09", "scope": "宿主调用条件（路由入口的实际触发）", "status": "not_proven", "reason": "本包只给出两侧声明：SKILL.md:3／:22 的兜底定位与 agents/openai.yaml:8「allow_implicit_invocation: false」，同文件 :1-:2 自述「宿主是否加载、采用哪些字段，以实际宿主为准」「不授予权限，也不承诺自动执行」；兜底是否真被触发取决于宿主，static 权限下无法取证，故本行不能判 pass 也不能判 fail。", "limitation": "宿主未加载时路由入口不生效；SKILL.md 对 agents/openai.yaml 全文零命中（FQ-G07 印证），正文也未说明与该文件的使用关系。", "counterexample": "SKILL.md:65「缺少关键输入时只问最影响判断的一项」与 openai.yaml:6「最多问我三个问题」在宿主按默认提示词执行时口径不同形。", "ref": ["SKILL.md:3", "SKILL.md:22", "agents/openai.yaml:1", "agents/openai.yaml:2", "agents/openai.yaml:8"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/agents/openai.yaml", "sha256": "46aebd0edd99ec418ca706979fe1ebb81cd4692ec9b54669d9ac27735b8ed112"}}
+    ],
+    "cases": [
+      {"id": "FP-T1", "brief_kind": "positive", "mode": "synthetic", "status": "fail", "reason": "用例要求「缺两项以上就出三种赛道方案…等作者选定」在包内有权威行（SKILL.md:86、rules-premise-and-structure.md:42、planning.md:43），但同一 SKILL.md 的 :65 对同一触发给出相反指令「给两三个赛道方案…按最可能的一个往下做，标「暂定」」；两种行为不可同时满足，静态下无法判定唯一预期行为。", "evidence": ["SKILL.md:86「…→ 给短篇/长篇/舞台或连载三种赛道方案…等作者选定再进入下一步（FC-01 卡住时）。」", "SKILL.md:65「- 缺赛道的信息时，给两三个赛道方案和各自的代价，按最可能的一个往下做，标「暂定」…」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/planning.md", "sha256": "2a7ee5247ed4f1e6031ea48d1306dd527aa6a88f77eb6dd2a92ba3d347a8260c"}},
+      {"id": "FP-T2", "brief_kind": "missing", "mode": "synthetic", "status": "pass", "evidence": ["SKILL.md:105「只给梗概 → 只做梗概层的诊断，列出还需要哪些正文，不假装读过全文。」", "diagnosis.md:17「只有梗概 → 只做规划层诊断（主行动/线/终点/类型），不做句段诊断」", "templates/diagnosis-report.md:4「只有梗概 → 走 references/diagnosis.md §0 的梗概分支（DR-01…09、DR-12 照填，全表标「句段层未诊断」）」"], "note": "用例正文的「填 DR-01/02/04/05/06/07/09/12」与模板 :4 的「DR-01…09、DR-12」在 DR-03 上口径略宽（用例明写 DR-03 以梗概文本为证据源），不矛盾。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/templates/diagnosis-report.md", "sha256": "77fbe8b1ff8b8e05f26b22055a3fce2c7a675c3abf1e695d8bbf1aac81f4ab95"}},
+      {"id": "FP-T3", "brief_kind": "conflict", "mode": "synthetic", "status": "pass", "evidence": ["reader-feedback.md:84「和作者定下的读者契约核对：目标读者真正的理解障碍优先处理；审美分歧给几个方案，不直接票决。」", "SKILL.md:294「读者体验与艺术完成标准发生冲突时，由作者明确优先级和代价。」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/reader-feedback.md", "sha256": "7d69928d0fe1b13c954b71c0a78799ebaceed114eef609dc6b0e89bf02f46cd0"}},
+      {"id": "FP-T4", "brief_kind": "boundary", "mode": "synthetic", "status": "pass", "evidence": ["research-and-verification.md:96「记四项：计数的口径、谁在数、记录的人离事件多远、有没有四舍五入。「来源记载的人数是 N」和「实际人数是 N」分开写」", "SKILL.md:121 六种结论＋限定语", "self-check-character.md:94 CL-06 分层"], "note": "brief 给本用例的锚 SKILL.md:304（「原稿保留了吗？改动的范围和作者的授权一致吗？」）不承载统计数字核验语义，列为不支撑锚；其余锚充分。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/research-and-verification.md", "sha256": "6b3ed4fe2f9535339b3497e93a284b4de5d31aa3c91b251aa45c9efecd2a321c"}},
+      {"id": "FP-T5", "brief_kind": "positive", "mode": "synthetic", "status": "fail", "reason": "用例的「停在给结构方案之前＋缺项在 NP-01/NP-02 记「未知」」在包内成立（planning.md:22/:43/:47、novel-plan.md:10、rules-premise-and-structure.md:31），但同一条「缺项标记词」在 SKILL.md:73 记「暂定」、rules-premise-and-structure.md:31 记「未定」、模板记「未知」，且 SKILL.md:65 允许「按最可能的一个往下做」与用例的「等作者选定」冲突，静态不可判唯一行为。", "evidence": ["planning.md:22「**卡住时**：六项中「素材/长度/媒介/类型」缺三项以上 → 不给结构方案…」", "rules-premise-and-structure.md:31「缺一项就标「未定」，不得用默认值冒充。」", "SKILL.md:73「缺项标「暂定」。」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/planning.md", "sha256": "2a7ee5247ed4f1e6031ea48d1306dd527aa6a88f77eb6dd2a92ba3d347a8260c"}},
+      {"id": "FP-T6", "brief_kind": "positive", "mode": "synthetic", "status": "pass", "evidence": ["drafting.md:22「…作者要求直接写，就选一组标「假设」，写成探索稿，稿头注明「探索稿，假设见文末」…探索稿不要当定稿交付。」", "drafting.md:47「写不成场景（缺阻力）→ 回到 SP-03 造阻力；造不出 → 降为概述」", "templates/scene-plan.md:44「缺 2 项以上 → 先补卡…」"], "note": "kind 标 positive 而场景是缺料分支，为 brief 侧分类漂移（同 FP-T5），不改行为可回溯性。", "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/drafting.md", "sha256": "347d9afd0e2327f995a5cb3d0857db899698bf38f9ff206aa2df27677eb4eddd"}},
+      {"id": "FP-T7", "brief_kind": "missing", "mode": "synthetic", "status": "fail", "reason": "用例与 revision.md 一致（「三个删减方案」「删减方案 A/B/C」、RV-06 承重先行、:128 三问答不清不删），但 SKILL.md:111 对同一「只说太长、没有目标字数」给「两三个删减方案」，方案数与 A/B/C 三项不可同时执行（brief 已在 FQ-G09 登记，本席复核为真）。", "evidence": ["SKILL.md:111「3. 只说「太长」、没有目标字数时，给两三个删减方案和代价，请作者选。」", "revision.md:14「| 范围 | … | 只说「太长」 → 给三个删减方案与代价 |」", "revision.md:19「…先做「删减方案 A/B/C」…」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/revision.md", "sha256": "3d0e9f4bafbb075a21d4eefef4949a4566d6471a0bcf2b17b287c7cb33f92b95"}},
+      {"id": "FP-T8", "brief_kind": "conflict", "mode": "synthetic", "status": "pass", "evidence": ["self-check-contract.md:49「作者坚持「设定就是主角」时，在「事实契约」一行写明这是另一种契约，再继续其余测试。」", "self-check-diagnosis.md:27 同义行", "SKILL.md:227 CL-03「世界观驱动的奇幻科幻…不删，改写成人物要付的代价和要过的障碍。」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-contract.md", "sha256": "843838a06a243edbd24e27da007ee1a7e6bfa0c34c3294164072e3951168c2c5"}},
+      {"id": "FP-T9", "brief_kind": "boundary", "mode": "synthetic", "status": "pass", "evidence": ["reader-feedback.md:40「用户真要营销预测时，说明本 Skill 没有实时市场数据能力，需要另行取证。」", "reader-feedback.md:106「不给假数字，建议另行取证」", "self-check-contract.md:86「### 4.1 被退稿或成绩不佳时」＋SKILL.md:269「退稿原因分技艺／市场／审查三栏，无证据的栏标「未知」」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-contract.md", "sha256": "843838a06a243edbd24e27da007ee1a7e6bfa0c34c3294164072e3951168c2c5"}},
+      {"id": "FP-T10", "brief_kind": "conflict", "mode": "synthetic", "status": "pass", "evidence": ["revision.md:126「- **已发布章节**：不能回改；只能在未发布部分补过渡/补偿…」", "revision.md:217「…或在新版标「重启版」。」", "revision.md:197/:201 三张图", "revision.md:222「作者未授权结构重排 → 只出方案。」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/revision.md", "sha256": "3d0e9f4bafbb075a21d4eefef4949a4566d6471a0bcf2b17b287c7cb33f92b95"}},
+      {"id": "FP-T11", "brief_kind": "missing", "mode": "synthetic", "status": "pass", "evidence": ["research-and-verification.md:187「### 7.1 先分型，再处理」、:197「剩下的真冲突…结论写「有争议」，不选更顺耳的一方」", "research-and-verification.md:17「没有资料时，换一种不依赖这个事实的写法，或者标「待核」。」", "research-and-verification.md:237「修改事实后，回看所有依赖该事实的时间、因果、人物选择和结局。」"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/research-and-verification.md", "sha256": "6b3ed4fe2f9535339b3497e93a284b4de5d31aa3c91b251aa45c9efecd2a321c"}},
+      {"id": "FP-T12", "brief_kind": "boundary", "mode": "synthetic", "status": "pass", "evidence": ["SKILL.md:324「- 全文逐段改写没有对应的外部 Owner：即使作者明确授权，也不交付「可直接发布的完整新稿」；按 references/revision.md 的介入级别分解执行（L4 结构重排方案 → L3 整场重写 → 分层修订），每一级对照授权，原稿不覆盖。」", "revision.md:188/:191 L3/L4 授权门槛", "SKILL.md:357 逐句编辑转 line-editing"], "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}}
+    ],
+    "semantics": [
+      {"id": "SEM-01", "verdict": "fail", "refs_count": 5, "record_ref": "output/fiction-planning-and-diagnosis/SKILL.md"},
+      {"id": "SEM-02", "verdict": "fail", "refs_count": 3, "record_ref": "output/fiction-planning-and-diagnosis/references/revision.md"},
+      {"id": "SEM-03", "verdict": "fail", "refs_count": 2, "record_ref": "output/fiction-planning-and-diagnosis/agents/openai.yaml"},
+      {"id": "SEM-04", "verdict": "fail", "refs_count": 5, "record_ref": "output/fiction-planning-and-diagnosis/references/self-check-diagnosis.md"},
+      {"id": "SEM-05", "verdict": "fail", "refs_count": 3, "record_ref": "output/fiction-planning-and-diagnosis/references/rules-premise-and-structure.md"},
+      {"id": "SEM-06", "verdict": "pass", "refs_count": 4, "record_ref": "output/fiction-planning-and-diagnosis/SKILL.md"},
+      {"id": "SEM-07", "verdict": "fail", "refs_count": 4, "record_ref": "output/fiction-planning-and-diagnosis/SKILL.md"}
+    ]
+  },
+  "semantics": [
+    {
+      "id": "SEM-01",
+      "group": "专门实测②相关",
+      "claim_under_test": "赛道四项缺项时，本包给的是「停下来等作者选定」还是「按最可能的一个继续做」，以及缺项标记词与方案数",
+      "status": "fail",
+      "refs": [
+        {"ref": "SKILL.md:65", "text": "- 缺赛道的信息时，给两三个赛道方案和各自的代价，按最可能的一个往下做，标“暂定”；只有答案会彻底改变方案时才停下来问，缺少关键输入时只问最影响判断的一项，其余列为假设或待确认。"},
+        {"ref": "SKILL.md:86", "text": "缺料或冲突时：赛道四项缺两项以上，或委托方不给字数/媒介/类型 → 给短篇/长篇/舞台或连载三种赛道方案，各写读者承诺、结构代价与工时，等作者选定再进入下一步（FC-01 卡住时）。写不出胚故事 → 先不做确定性情节处方；素材四堆都空时只给素材整理任务（FC-02 卡住时）。"},
+        {"ref": "references/rules-premise-and-structure.md:42", "text": "- **卡住时**：四项中缺失 ≥2 项，或委托方拒绝给字数/媒介/类型 → 输出三种赛道方案（短篇/长篇/舞台或连载），各写读者承诺、结构代价、所需工时，不写具体场景与比例；等作者选定后再进入下一步。"},
+        {"ref": "references/planning.md:43", "text": "- 四项缺两项以上 → 输出三种方案："},
+        {"ref": "references/rules-premise-and-structure.md:31", "text": "1. 写下 `篇幅`（词数/章数区间）、`媒介`、`类型`、`交付方式` 四项；缺一项就标“未定”，不得用默认值冒充。"}
+      ],
+      "reading": "同一触发（赛道缺项）在两个权威层给出可执行性互斥的指令：:65 要求继续（标暂定、只有会彻底改变方案时才停），:86 与规则卡 :42 要求停等选定且「不写具体场景与比例」；方案数 :65「两三个」对 :86/:42/planning:43「三种」；缺项标记词 :65/:73「暂定」对 rules:31「未定」对 templates/novel-plan.md:10「未知」。本包无适用于该分叉的仲裁行（SKILL.md:354 的「两处不一致时停下交作者」只覆盖责任划分与转介表）。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}
+    },
+    {
+      "id": "SEM-02",
+      "claim_under_test": "「只说太长、没有目标字数」时的删减方案数",
+      "status": "fail",
+      "refs": [
+        {"ref": "SKILL.md:111", "text": "3. 只说“太长”、没有目标字数时，给两三个删减方案和代价，请作者选。"},
+        {"ref": "references/revision.md:14", "text": "| 范围 | 全书/某几章/某场；目标字数/章数 | 只说“太长” → 给三个删减方案与代价 |"},
+        {"ref": "references/revision.md:19", "text": "**卡住时**：没有目标字数/必须保留项 → 不直接删；先做“删减方案 A/B/C”，各写删什么、代价、风险，让作者选。没有授权 → 只出修订单，不动正文。"}
+      ],
+      "reading": "brief FQ-G09 成立：正文允许「两个」，流程两处为「三个／A、B、C」。FC-19 作者拒绝删时的「删/压/并/留」四方案（rules-revision-and-method.md:115）是另一档，不计入本冲突。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/revision.md", "sha256": "3d0e9f4bafbb075a21d4eefef4949a4566d6471a0bcf2b17b287c7cb33f92b95"}
+    },
+    {
+      "id": "SEM-03",
+      "claim_under_test": "缺料时向作者提问的数量口径（正文 vs 宿主默认提示词）",
+      "status": "fail",
+      "refs": [
+        {"ref": "SKILL.md:65", "text": "缺少关键输入时只问最影响判断的一项，其余列为假设或待确认。"},
+        {"ref": "agents/openai.yaml:6", "text": "default_prompt: \"请先问清篇幅、媒介、类型和交付方式，再按我的素材、构思或稿子做规划、起草、诊断、修订、事实核验或反馈处理；材料不全时给出标明“假设”或“暂定”的方案，最多问我三个问题。\""}
+      ],
+      "reading": "brief FQ-G08 成立并再加一条：yaml 不仅问「最多三题」，还要求「先问清篇幅、媒介、类型和交付方式」（四项全问），与正文「只问最影响判断的一项」及「缺两项以上才出三方案」的默认推进口径不同形；yaml 自述不授予权限（:2），故这只是口径并存而非权限冲突，但宿主侧执行会与本包正文不同形。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/agents/openai.yaml", "sha256": "46aebd0edd99ec418ca706979fe1ebb81cd4692ec9b54669d9ac27735b8ed112"}
+    },
+    {
+      "id": "SEM-04",
+      "group": "专门实测②",
+      "claim_under_test": "SKILL.md 转介表／症状速查再转列／§9 转交判据／文末协作边界段，对同一越界事项是否同口径",
+      "status": "fail",
+      "refs": [
+        {"ref": "SKILL.md:32", "text": "| 推理、恐怖、言情等题材的契约和专项技法 | `genre-fiction-craft` |"},
+        {"ref": "SKILL.md:147", "text": "| 不像这个类型，读者觉得货不对板 | FC-20 | `genre-fiction-craft` |"},
+        {"ref": "SKILL.md:213", "text": "**FC-20 类型契约**：把类型当作和读者的约定，不是本体上的硬边界。写之前列三到五个必要的特征和承诺，写完逐条验收；市场和审查的约束单独列，不和手艺混在一起判断。"},
+        {"ref": "references/self-check-diagnosis.md:31", "text": "| 要类型套路、节拍表、市场预测 | 本 skill 不提供现成套路与市场预测；结构转 `story-architecture-and-longform-planning`，章末与节拍转 `scene-conflict-and-rhythm`；类型契约是本 skill 自有的 FC-20，按契约自查，题材专项技法转 `genre-fiction-craft` |"},
+        {"ref": "references/diagnosis.md:309", "text": "**对应规则**：FC-20（类型契约/市场约束分层）。"}
+      ],
+      "reading": "四处越界事项中三处同口径：语言层（:31/:154/:322/:357 均指 line-editing）、结构与长篇（:28/:137/:138/:142/:146/:319/:354 均指 story）、人物与视角（:30/:143/:321/:355 均指 character）、单场与章末（:29/:145/:155/:320/:354 均指 scene）、媒介改编（:33/:47/:323/:356/:359 均指 cross-media）——差别只在 §9 五行用泛称（见 SEM-07）。唯一实质不同口径是「类型／题材契约」：转介表 :32 把「题材的契约」整体转出、症状速查 :147 把整条「类型失约」再转 genre，而规则卡 :213 与诊断流程 diagnosis.md:309（S8）与 self-check-diagnosis.md:31 都把 FC-20 契约验收留在包内；协作边界段（:352-:359）未具名 genre，该分界无仲裁行。对端 genre-fiction-craft/SKILL.md:17「判断题材承诺有没有兑现」亦主张同一职责，形成跨包双 Owner（同时决定 FQ-IF-05 判 fail）。本席定档：不一致，按 fail，未沿用任何前席说法。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/self-check-diagnosis.md", "sha256": "dc00f7d92d3be8e5294128697e0dee918d3fa438172e2186a9a9f8193363b167"}
+    },
+    {
+      "id": "SEM-05",
+      "claim_under_test": "规则卡字段声明与 21 条规则的实际字段是否一致",
+      "status": "fail",
+      "refs": [
+        {"ref": "references/rules-premise-and-structure.md:6", "text": "- 每条规则包含：层级、规则、适用场景、观察信号、分支与反信号、操作步骤、交付、反例、适用范围、卡住时的处理和验证边界。不要把一条规则压成一句口号。"},
+        {"ref": "SKILL.md:266", "text": "| `references/rules-premise-and-structure.md` | FC-01 至 FC-06 的正文：层级、规则、用在、看什么、分支、怎么做、交付、反例、适用范围、卡住时、冲突处理与验证边界 | …"},
+        {"ref": "references/rules-premise-and-structure.md:43", "text": "- **冲突处理**：按 [scope-and-conflicts.md](scope-and-conflicts.md) §2 的 K-10、K-11 条件分流；未定时保留选项与代价。"}
+      ],
+      "reading": "brief FQ-G01 成立并经本席独立复算：四个 rules- 文件 :6 的读法行声明 10 个字段名（含「验证边界」），SKILL.md §6 表 :266-:269 亦把「冲突处理与验证边界」列为该文件内容；实测条级 bullet 名为 层级/规则/用在/看什么/分支/怎么做/交付/反例/适用范围/卡住时/冲突处理 共 11 项、每文件按条数 6/4/6/5 逐项等量，「- **验证边界」命中 0（四文件合计 0）；条级名与声明名亦不一致（适用场景↔用在、观察信号↔看什么、分支与反信号↔分支、操作步骤↔怎么做、卡住时的处理↔卡住时）。「验证边界」只以文件级小节存在（references/scope-and-conflicts.md:127「### 4.3 验证边界」）。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/references/rules-premise-and-structure.md", "sha256": "6e48e0ddbc92b90c7aee834580143fd87a6a28077d6611295ae50156af5208f2"}
+    },
+    {
+      "id": "SEM-06",
+      "group": "专门实测①",
+      "claim_under_test": "SKILL.md 把「未知」定义为填表值的那条，与模板／工作记录的实际用法是否一致",
+      "status": "pass",
+      "refs": [
+        {"ref": "SKILL.md:336", "text": "- **“未知”** 是台账和模板里的填表值，用来标缺输入的格子（没有就填“未知”，不得写成已完成）；它是第五种填法，不是第五个交付状态词。"},
+        {"ref": "templates/novel-plan.md:41", "text": "14. **每行的「状态」与「稿件证据位置」**：状态按交付状态词填“已完成／依据／未能核实／待作者决定”，允许填“未知”；“未知”是合法值，但不得把未知写成已完成。稿件证据位置只指用户当前稿件内的可核位置（如“第 3 章第 2 场”），没有就填“未知”；不指向任何来源编号或包外路径。"},
+        {"ref": "references/diagnosis.md:411", "text": "每项任务必须记录：真实输入（原文范围与版本）、预期结果、实际结果、证据位置、执行范围、限制、状态和未解决影响。状态只用 SKILL.md §9 的四个词填写：已完成、依据、未能核实、待作者决定。"},
+        {"ref": "references/research-and-verification.md:251", "text": "### 10.2 逐条断言记录（每条独立记录；允许空值或写“未知”）"}
+      ],
+      "reading": "本席全包枚举「未知」共 20 行（SKILL.md 3 行、四张模板 6 行、references 10 行、examples 1 行）：全部作为缺输入格子的填表值出现，无一处把「未知」列为交付状态词；四词口径在 SKILL.md:330、diagnosis.md:411、四张模板填写纪律行三处一致，且都重复「不得把未知写成已完成」，与 :336 同口径，故该行判 pass。两处措辞面残留（不改变 pass 判定，另记 findings）：（a）:336 称「未知」是「台账和模板里的填表值」，但包内无「台账」交付物——全包「台账」命中 1 处即该句自身，四张表名为模板、其余是流程表与工作记录行（planning.md:20、revision.md:16、rules-revision-and-method.md:150、self-check-contract.md:48、diagnosis.md:323），「台账」指向的是 notes 层工件；（b）同为「缺项占位」，本包并存 暂定（SKILL.md:65/:73）／未定（rules-premise-and-structure.md:31）／待定（self-check-diagnosis.md:30）／待核（research-and-verification.md:17）／假设（SKILL.md:64）／承重待定（revision.md:128）／类型未定（rules-revision-and-method.md:150）／契约未定（SKILL.md:268）／结构未定（planning.md:328）／未知（四张模板）多套词，其中「赛道缺项」一项在三处取三个不同词（见 SEM-01）。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}
+    },
+    {
+      "id": "SEM-07",
+      "claim_under_test": "§9 转交判据与 §1 转介表／§4 再转列／协作边界段的具名口径是否同形、可回查",
+      "status": "fail",
+      "refs": [
+        {"ref": "SKILL.md:319", "text": "- 故事结构、长篇/连载架构成为主要问题时，转交故事架构 Skill。"},
+        {"ref": "SKILL.md:322", "text": "- 需要逐句润色、校对或风格统一时，转交语言精修 Skill。"},
+        {"ref": "SKILL.md:323", "text": "- 题材专属规则、媒介改编或外部事实核验超出当前能力时，说明边界并交给相应专业流程。"},
+        {"ref": "SKILL.md:28", "text": "| 主行动、终点、因果与巧合、多线汇合、场景功能、删场的细则；分卷和连载的规划 | `story-architecture-and-longform-planning` |"}
+      ],
+      "reading": "去向口径实质一致（:319↔story、:320↔scene、:321↔character、:322↔line-editing、:323↔genre／cross-media／外部专业流程），不判为语义矛盾；判 fail 的理由是可回查性：§9 五行一律泛称，按包名字符串匹配时五行全部落空，与 :28-:34／:40-:43／:354-:357 的包名写法不同形；且 :323 的「外部事实核验」在套件内无接收方指名——本包自持 RS 核验（SKILL.md:116），超出 RS 之后交给谁未写，与 §9 自身「明确转交」的要求（:317）以及 :326 不交付清单、diagnosis.md:407「并给出正确 Owner」不闭合。",
+      "record_ref": {"path": "output/fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826"}
+    }
+  ],
+  "anchor_census": {
+    "scope": "brief 的五个受审组（requirements／capabilities／interfaces／applicability／cases）中出现的全部锚点字符串，含 anchors、counterexample_ref、this_side_anchors、peer_side_anchors；跨包锚按字符串中的包名解到 output/<peer>/；另附第二口径（并 gaps[].anchors 与 routing_one_way_combinations[].this_side）",
+    "per_group_raw_and_dedup": {
+      "requirements": {"raw": 151, "unique": 144},
+      "capabilities": {"raw": 302, "unique": 290},
+      "interfaces": {"raw": 82, "unique": 75},
+      "applicability": {"raw": 110, "unique": 104},
+      "cases": {"raw": 120, "unique": 110},
+      "five_groups_union_dedup": 545
+    },
+    "aux_union_with_gaps_routing": 574,
+    "tier_resolvable_supported": 541,
+    "tier_resolvable_unsupported": 4,
+    "tier_unresolvable": 0,
+    "support_judging_method": "逐锚点取该行原文并连同上下文判读（分节标题行按其标题文字是否承载该组主张判定；表格行按单元格内容判定）；先读文本解址，再判断支撑，未做机械正则解址后报「文件不存在」。机械分类：正文行 362、分节标题行 181、表格分隔行 1、空行 1。",
+    "unsupported_anchors": [
+      {"anchor": "genre-fiction-craft/SKILL.md:33", "used_by": ["FQ-IF-05 peer_side_anchors"], "raw_line": "（该行实测为空行）", "why": "brief 称此行「声明史实考据不在其范围」，实文为空行；该声明在对方 SKILL.md:34「不在范围：现实的法律、医学、技术参数、当代行业规则和史实考据。」", "also_addressing_defect": true},
+      {"anchor": "references/self-check-diagnosis.md:64", "used_by": ["FQ-CAP-06 counterexample_ref"], "raw_line": "|---|---|---|", "why": "表格分隔行不承载反例语义；同列 :63「| 误用 | 后果 | 纠正 |」为表头、:65-:72 为实际误用对照数据行。", "also_addressing_defect": true},
+      {"anchor": "SKILL.md:304", "used_by": ["FP-T4 anchors"], "raw_line": "- 原稿保留了吗？改动的范围和作者的授权一致吗？", "why": "该行为交付前自查的「原稿保留」项，不承载「半纪实作品里的统计数字」用例所需的核验语义（六种结论、RS-03 四项、纪实/改写/虚构分层）。"},
+      {"anchor": "references/scope-and-conflicts.md:127", "used_by": ["FQ-R12 anchors"], "raw_line": "### 4.3 验证边界", "why": "该行及其小节（:129-:132）讲方法的效果边界，不承载 FQ-R12 的交付状态词、回执模板或历史回执不继承。"}
+    ],
+    "unresolvable_anchors": [],
+    "peer_anchors_verified_present": "IF-01…IF-07 的 40 条对端锚点（含 2 条 references 级）逐行取原文：除 genre-fiction-craft/SKILL.md:33 外全部命中含本包名或对应子规则（PL-04/06/07、SU-15/16/17、PV-12/13）的真实行，包内子规则实体亦在对方包实测存在。"
+  },
+  "addressing_defects": [
+    {"id": "AD-01", "kind": "行号偏一（对端锚）", "where": "brief interfaces FQ-IF-05.peer_side_anchors", "raw": "genre-fiction-craft/SKILL.md:33", "correct": "genre-fiction-craft/SKILL.md:34", "note": "指向空行；真实声明在下一行。读文本可解址，故不判为文件不存在。"},
+    {"id": "AD-02", "kind": "锚落在表格分隔行", "where": "brief capabilities FQ-CAP-06.counterexample_ref", "raw": "references/self-check-diagnosis.md:64", "correct": "references/self-check-diagnosis.md:65-:72", "note": "分隔行无内容。"},
+    {"id": "AD-03", "kind": "章节号错标", "where": "brief capabilities FQ-CAP-09.what", "raw": "「§9 越界任务的有限迁移协议三步」", "correct": "该协议在 SKILL.md §1（SKILL.md:49-:57）；§9 的小节名是「适用边界与验证」，:315-:325 为「适用范围外的转交判据」。"},
+    {"id": "AD-04", "kind": "行号整体偏一＋内容判断失准", "where": "brief routing_one_way_combinations FQ-ONE-WAY-09", "raw": "「本包（:353）、character（:354）、cross-media（:355）、line-editing（:356），加 :358 的互动叙事转交」", "correct": "实文 :352 小节标题、:354 本包＋story＋scene、:355 character、:356 cross-media、:357 line-editing、:359 互动叙事；:353 为空行。该行号偏移且「story／scene 不出现在协作边界小节」的判断不成立（:354 已具名两者），实际未具名的只有 genre-fiction-craft 与 preset-card-generation。"},
+    {"id": "AD-05", "kind": "计数与列举不符", "where": "brief interfaces FQ-IF-02.note", "raw": "「本包两处子规则级指向（SU-15、SU-16、SU-17）」", "correct": "§4 再转列只有 SU-17（SKILL.md:145）与 SU-15（:155）两处；SU-16 只在 references/self-check-scenes.md:97 出现。"},
+    {"id": "AD-06", "kind": "计数虚高", "where": "brief capabilities FQ-CAP-09.what", "raw": "「§4 症状速查 25 行的「再转」列给出 9 条子规则级指向（PL-04/06/07、SU-15/17）」", "correct": "再转非空 9 行（:137 :138 :142 :143 :145 :146 :147 :154 :155），其中带子规则号 5 行；另 4 行只给包名。"},
+    {"id": "AD-07", "kind": "裸文件名／省略路径写法（不构成缺陷，记录解址结果）", "where": "brief capabilities limit 与 interfaces note 段：如 rules-premise-and-structure.md:41、scope-and-conflicts.md:64、drafting.md:320、diagnosis.md:14、research-and-verification.md:48、:259、:63、planning.md:47、revision.md:126、:217", "correct": "全部解到 references/<同名文件> 对应行且内容相符；须读文本解址，机械按字面判「文件不存在」会误报。"}
+  ],
+  "findings": [
+    {"id": "F-01", "severity": "high", "title": "专门实测②：SKILL.md 转介表与包内分工条款对「类型／题材契约」不同口径（唯一实质不一致项）", "detail": "SEM-04 已引五处原文。三处越界事项（语言层、结构长篇、人物视角、单场章末、媒介改编）去向同口径，仅 §9 用泛称（F-08）；「类型／题材契约」在 :32/:147 转出、在 :213 与 diagnosis.md:309 与 self-check-diagnosis.md:31 留包内，对端 genre-fiction-craft/SKILL.md:17 又主张「判断题材承诺有没有兑现」，同一业务语义无唯一 Owner。定档：按本席判据记不一致（fail），未沿用前席说法。", "refs": ["SKILL.md:32", "SKILL.md:147", "SKILL.md:213", "references/self-check-diagnosis.md:31", "references/diagnosis.md:309", "genre-fiction-craft/SKILL.md:17"]},
+    {"id": "F-02", "severity": "medium", "title": "专门实测①：「未知」口径核心一致，残留「台账」无包内对应物＋缺项标记词三套并存", "detail": "SEM-06 记录全包 20 行「未知」逐条判读：无一处当第五个交付状态词，四词口径与「不得写成已完成」在 SKILL.md:330/:336、diagnosis.md:411、四张模板一致；SKILL.md:336 用「台账」指称载体而包内「台账」零工件，赛道缺项在三处分别记 暂定／未定／未知。", "refs": ["SKILL.md:336", "SKILL.md:65", "SKILL.md:73", "references/rules-premise-and-structure.md:31", "templates/novel-plan.md:10", "references/research-and-verification.md:251"]},
+    {"id": "F-03", "severity": "high", "title": "同一文件内「停等作者」与「按最可能的一个继续做」互斥（赛道缺项）", "detail": "SEM-01。影响 FP-T1／FP-T5 两例的可判性，也是 brief FQ-R10/G09/G08 未覆盖的新增口径冲突（brief 只登记了删减方案数与提问数两处，未登记赛道分支的停/继续与「两三个 vs 三种」）。", "refs": ["SKILL.md:65", "SKILL.md:86", "references/rules-premise-and-structure.md:42", "references/planning.md:43"]},
+    {"id": "F-04", "severity": "medium", "title": "删减方案数两档并存（两三个 vs 三个／A-B-C）", "detail": "SEM-02；brief FQ-G09 独立复核为真。", "refs": ["SKILL.md:111", "references/revision.md:14", "references/revision.md:19"]},
+    {"id": "F-05", "severity": "medium", "title": "正文与宿主默认提示词口径不同形（提问数与先问四项）", "detail": "SEM-03；brief FQ-G08 为真并补出「请先问清篇幅、媒介、类型和交付方式」与正文「只问最影响判断的一项」的额外张力。", "refs": ["SKILL.md:65", "agents/openai.yaml:6"]},
+    {"id": "F-06", "severity": "medium", "title": "规则卡字段声明与实现不一致：声明「验证边界」条级字段，实测 0 条", "detail": "SEM-05；brief FQ-G01 为真，本席把 21 条规则的字段名逐项计数复算（6/4/6/5＝21，验证边界 0），并补出字段名本身的四处改名（适用场景↔用在 等）。", "refs": ["references/rules-premise-and-structure.md:6", "SKILL.md:266", "references/scope-and-conflicts.md:127"]},
+    {"id": "F-07", "severity": "high", "title": "跨包接口三项类别级单向／双 Owner：非虚构事实核验、原作人物、题材承诺验收", "detail": "见 FQ-IF-03／IF-05／IF-06 的 one_way_evidence（两侧原文已引）。brief 的 FQ-ONE-WAY-02／03／05 方向性描述与本席实测一致，但 brief 未把 IF-05 判为双 Owner（其原记 both-present），本席改判 fail。", "refs": ["story-architecture-and-longform-planning/SKILL.md:47", "SKILL.md:47", "references/scope-and-conflicts.md:26", "cross-media-drama-adaptation/SKILL.md:34", "SKILL.md:30", "SKILL.md:355", "genre-fiction-craft/SKILL.md:17"]},
+    {"id": "F-08", "severity": "medium", "title": "§9 转交判据五行全部泛称，按包名不可回查；:323 外部事实核验无套内接收方", "detail": "SEM-07；brief FQ-ONE-WAY-01…05 复核为真（SKILL.md:319-:323 逐行实读，包名零命中）。", "refs": ["SKILL.md:319", "SKILL.md:320", "SKILL.md:321", "SKILL.md:322", "SKILL.md:323"]},
+    {"id": "F-09", "severity": "medium", "title": "接收条形不对称：本包唯一接收声明行只覆盖 preset；协作边界段未具名 genre／preset（brief 的 story／scene 判断有误）", "detail": "SKILL.md:45 是唯一「转入本 skill 的」声明行；:354 具名 story 与 scene，:355 character，:356 cross-media，:357 line-editing，未具名 genre 与 preset。brief FQ-ONE-WAY-08 成立、FQ-ONE-WAY-09 需修正（见 AD-04）。", "refs": ["SKILL.md:45", "SKILL.md:352", "SKILL.md:354", "SKILL.md:357", "SKILL.md:359"]},
+    {"id": "F-10", "severity": "low", "title": "路由判据在交付物无留痕：四张表无「转出去向／接收包」列，自查七问无「该转的是否转了」", "detail": "templates 列形实测 7/7/6/6，无转介字段；SKILL.md:300-:306 七问无该项；只有 diagnosis.md:407 要求「给出正确 Owner」而无对应可填行。brief FQ-ONE-WAY-10 复核为真。", "refs": ["templates/novel-plan.md:7", "templates/diagnosis-report.md:6", "SKILL.md:300", "references/diagnosis.md:407"]},
+    {"id": "F-11", "severity": "low", "title": "编号口径：SP-10 同列混用 FC-07、K-16；FC-17／FC-21 冲突处理未具 K 号；DR-SUM 落在 DR 编号系外", "detail": "brief FQ-G02／G04／G05 全部复核为真（21 条冲突处理行中 2 条无 K 号；diagnosis-report.md:20 首格 DR-SUM）。", "refs": ["templates/scene-plan.md:17", "references/rules-revision-and-method.md:45", "references/rules-revision-and-method.md:186", "templates/diagnosis-report.md:20"]},
+    {"id": "F-12", "severity": "low", "title": "症状编号无对照表：§4 25 行不带 S 编号，DR-04 又要求「用 S1–S9 名称，不自造术语」", "detail": "brief FQ-G10 复核为真（§4 实测 25 数据行、diagnosis.md:43-:51 九行 S1…S9；「卡壳、写不下去」「被退稿、成绩差」等不落 S 系）。", "refs": ["SKILL.md:137", "SKILL.md:158", "SKILL.md:159", "references/diagnosis.md:43", "templates/diagnosis-report.md:11"]},
+    {"id": "F-13", "severity": "low", "title": "brief 侧三处描述与实文不符（不影响成品，但影响门禁对账）", "detail": "（1）FQ-G06 称 self-check-cases 无自创标注，实测该文件 :3「三个例子都是为说明而编写的，不是真实稿件，也没有做过读者测试。」；（2）CAP-09 的 §9 归属与「9 条子规则级指向」错标／虚高（AD-03、AD-06）；（3）FQ-ONE-WAY-09 行号偏一且误判 story／scene 缺席（AD-04）。故本席把 FQ-R14 由 brief 的 partial 改判 pass（理由见该行 reason）。", "refs": ["examples/self-check-cases.md:3", "examples/planning-cases.md:3", "examples/research-and-feedback-cases.md:3", "SKILL.md:354"]},
+    {"id": "F-14", "severity": "medium", "title": "成品自足独立复扫补出 brief FQ-G14 的未覆盖项：一处名人姓名", "detail": "本席整包 27 件逐行复扫：书名号 0、来源编号残片 0、包外路径 0、审计词 0、禁用分档词与「融合版」0、「N 本材料／材料标称／年代+市场」0；「改动痕迹」类 10 命中逐条判为词内假阳性（「文本版本」含「本版」）或允许用法（稿件版本、核验语境）；「学习材料指向词」3 命中：research:121「出自意译本」与 research:142「书里的情节」属事实核验语境（B.2 允许），self-check-character.md:55 系「超出自己」词内假阳性。唯一实质暴露：references/scope-and-conflicts.md:117「不能给 Genette/Booth 级聚焦类型学…」（附录 B #5 名人姓名目标类，包内无登记理由）。", "refs": ["references/scope-and-conflicts.md:117", "references/research-and-verification.md:121", "references/research-and-verification.md:142", "examples/rule-examples.md:1"]},
+    {"id": "F-15", "severity": "low", "title": "SKILL.md §6 索引不覆盖第 27 个文件", "detail": "brief FQ-G07 复核为真：§6 表 :266-:287 实测 22 行、覆盖 26 份 .md（末行一行代四表），agents/openai.yaml 在 SKILL.md 全文命中 0。", "refs": ["SKILL.md:262", "SKILL.md:287", "agents/openai.yaml:3"]},
+    {"id": "F-16", "severity": "low", "title": "「改写」一词在本包承担三种职责", "detail": "CL-06 的事实契约档（research-and-verification.md:14、self-check-character.md:94）、修订介入级别名（templates/revision-sheet.md:23「## 改写级别」）、媒介转换口语近义（cross-media 职责，SKILL.md:356）；上下文可辨，无仲裁行冲突，记为术语重载观察项。", "refs": ["references/research-and-verification.md:14", "templates/revision-sheet.md:23", "SKILL.md:356"]}
+  ],
+  "limits": [
+    "验证权限＝static：只读、检索、计数、文本核对；未运行 tests/lint/typecheck/build/benchmark/smoke，未启动任何应用，未做 git 写，未用 sed -i/perl -i/重定向；唯一落盘为本文件。",
+    "GQ5＝NOT_PROVEN：12 条 cases 全部按 mode:synthetic 登记，无 host 运行；「按规则写就更好／读者更追读／诊断能改进稿」等效果命题未取证，本席亦不写成通过。",
+    "宿主行为未取证：agents/openai.yaml 是否被加载、allow_implicit_invocation:false 与兜底定位的实际并存效果（AP-09 not_proven、F-05）均需宿主运行证据，本席未做。",
+    "隔离与跨包读取范围：为履行 brief 契约要求的 peer_tree_sha256 与两侧回执取证，本席按字符串中出现的包名只读了 interfaces[]／findings 实际引用的 10 个对端文件行（7 个对端 SKILL.md 的被引行、story 两处 references、cross-media 一处 references、genre 一处）与 3 处子规则标题行，未通读任何兄弟包正文；未读本包 K4-r1.md、s06*-selfcheck.md、notes/w4*、notes/operations-contract/、log.md、checklist.md、git 与测试文件；review.json.v0-2026-11-05 只作骨架模板，其状态值未抄用。",
+    "去来源与禁用词结论受检测有效性限制：suite-contract.md 4.2bis 记 19 条子模式中 13 条「检测有效性未证」，故本席的 0 命中只表述为「该组正则未命中」，不等于「零违规」；中文正则一律在 Python UTF-8 逐行执行，未走 grep 字节类，规避 4.2bis 记的 locale 并组问题。",
+    "counterexample_ref 与分节标题类锚点的支撑判定以「该行是否承载该组主张」为准，未逐条回查其语义覆盖度上限；semantics[] 为 7 组（≥1 满足契约），只覆盖本席实际取证的冲突，不声称穷举全包语义冲突。",
+    "brief 的 gaps[] 14 条中 FQ-G01、G02、G03、G04、G05、G07、G08、G09、G10、G11、G12、G13、G14 本席均独立复算并给出「为真／为真需修正／不成立」结论；FQ-G06 判为与实文不符（见 F-13）。",
+    "SHA 绑定只覆盖写入前的树；本席落盘件位于 notes/ 下，不参与包树，写后复算见 freeze_note 的 tree_recheck_after_write。"
+  ],
+  "round_complete": "K5-rv-fictionplanning"
+}

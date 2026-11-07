@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "genre-fiction-craft",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "GE-T1",
+      "kind": "positive",
+      "scenario": "仙侠长篇设计功法代价体系",
+      "expected": "题材规则加机制，交付代价账"
+    },
+    {
+      "id": "GE-T2",
+      "kind": "missing",
+      "scenario": "只说「写个言情」，没有人物和阻碍",
+      "expected": "先问；先给几种阻碍类型供选"
+    },
+    {
+      "id": "GE-T3",
+      "kind": "conflict",
+      "scenario": "推理要求线索先给，作者却想最后一章才让凶手出场",
+      "expected": "列出冲突，给「早出场但不显眼」这类折中方案"
+    },
+    {
+      "id": "GE-T4",
+      "kind": "boundary",
+      "scenario": "科幻、言情、悬疑混合",
+      "expected": "按混合题材规则确定主次"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

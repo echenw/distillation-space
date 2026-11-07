@@ -1,0 +1,8 @@
+# 界面信息与选择提示；宿主是否加载、采用哪些字段，以实际宿主为准。
+# 本文件不授予权限，也不承诺自动执行；实际能力受宿主工具与用户授权限制。
+interface:
+  display_name: "语言精修与校对"
+  short_description: "中英文小说与散文的润色、精修和校对，保留作者声口"
+  default_prompt: "请按我给的文字和要求的改动程度，润色或校对这段文字：只改语言层，保留人物和作者的声口；拿不准的地方列出来问我。"
+policy:
+  allow_implicit_invocation: false

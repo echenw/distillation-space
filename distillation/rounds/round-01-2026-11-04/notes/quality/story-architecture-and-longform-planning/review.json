@@ -1,0 +1,1509 @@
+{
+  "version": 1,
+  "kind": "review",
+  "skill": "story-architecture-and-longform-planning",
+  "status": "review-independent-r1",
+  "reviewer": "RV-story（W4 独立复核席·非作者：本席未参与本包 SKILL.md／references／templates／examples／agents、brief.json、review-draft.json 与 K4-r1.md 的任何编写）。本轮只读被审包 21 件（抽全读改判行与抽验行涉及文件）、brief.json、review-draft.json、k5-bindings-2026-11-05.tsv、suite-contract.md；为接口验证只读对端包被引行并对 7 棵对端树整树摘要复测；对前席草案做采纳重验：7 行非法档 partial 逐条回原文重判（无 partial 带入正式件），落盘改动仅限本文件。",
+  "reviewed_at": "2026-11-05",
+  "brief_sha256": "8537a5662c2dc3ff238d7f8cdb7a6fc1bdfd4f45f8528936375f00c449082863",
+  "skill_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+  "tree_hash_method": "递归包内全部文件（含 agents/openai.yaml，无隐藏文件），按相对路径字节序升序，逐文件拼 \"<relpath>\\t<sha256(文件字节)>\\n\"，整串取 sha256。本包＝21 个文件、283891 字节（find 实测文件数 21，字节数逐文件累加）。对端包用同一算法，各自文件数／字节数见 gq.GQ3.peers。",
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "STATIC_CHECKED",
+      "what_checked": "brief capabilities 18 条逐条核分支／反例／复验／真实 reference：每条都指到包内真实规则卡与卡住时（不用）分支，反例见各文件「失效条件与反例」「不用」行，复验见 §9 交付前自查（SKILL.md:356-364）、诊断的最小验证动作（references/plot-diagnosis.md:48）、修订的强制二稿回归（references/plot-revision.md:117-135）、迁移的 T6 验收（references/serial-platform-migration.md:27-29）。brief 全部 927 处 file:line 锚点用脚本逐条解析：除 1 处路径拼写错误外全部命中真实文件且行号在范围内。",
+      "automation": "空集成立。find 实测包内 21 个文件＝20 个 .md＋1 个 .yaml，无 .py/.sh/.js/.ts 等可执行文件；非 md/yaml 文件 0 个。全包（20 份 md，断言文件数＝20）关键词计数：python 0、bash 0、automat 0、工具调用 0、命令 0；「脚本」4 次全部是否定式自述（templates/plot-canvas.md:3、plot-scene-table.md:3、plot-diagnosis-report.md:3、examples/plot-examples.md:289）。agents/openai.yaml:2、:8 自述不授予权限、allow_implicit_invocation: false。",
+      "residual": "三条 capability 记为 partial（ST-CAP-03 最小交付集计数、ST-CAP-14 容量表字段口径、ST-CAP-17 SV-16 记录面），见 sections.capabilities 与 findings；不改变功能真实性总判。〔RV-story 复核：三条已重判——ST-CAP-03→pass、ST-CAP-14→pass、ST-CAP-17→fail，见 sections.capabilities 各行 note；本句为草案原记录，保留备考。〕"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "FAIL",
+      "items": [
+        {
+          "code": "GQ2-1",
+          "subject": "交付状态四词有无集中定义处",
+          "verdict": "无集中定义处（成立，定档 fail 的第一条）",
+          "evidence": [
+            "SKILL.md:385（SKILL 层唯一含义级文字「字段填不出写“未知”并记入未决项表；未知不当成已完成」，位于 §10 参考表 plot-canvas 行的「缺料或冲突时的出口」格内，不是术语定义）",
+            "references/serial-platform-migration.md:52（全包唯一逐词释义：已完成／依据／未能核实／待作者决定／不适用／未知，且限定语是「该项对本次迁移没有对应对象」）",
+            "templates/plot-canvas.md:3 与 :24、templates/plot-scene-table.md:3、templates/plot-diagnosis-report.md:3（值级枚举四词＋允许未知，无释义）",
+            "templates/serial-tables.md:133（已确认／未能核实／待作者决定／不适用）、:7（状态＝计划／在写／已发）、:47（开／推进／转性／回收／关闭／未能核实）、:3（假设／未读／未知）"
+          ]
+        },
+        {
+          "code": "GQ2-2",
+          "subject": "是否存在第三套状态词与四词并存",
+          "verdict": "存在，且不止三套（fail）",
+          "evidence": [
+            "references/plot-planning.md:182（「已完成／部分／未知」第三套，用于 §12 规划顺序清单的状态栏）",
+            "SKILL.md:72、:332（未读）、SKILL.md:340、:352（未解决）、SKILL.md:377（待登记）——SKILL 层自用的三个词在任何枚举里都不存在",
+            "examples/serial-examples.md:29 在卷表「状态」列填「未定」，模板合法值只有 计划／在写／已发（templates/serial-tables.md:7）",
+            "references/serial-open-lines-and-continuity.md:34（开、推进中、待回收、已关闭）与 templates/serial-tables.md:47（开／推进／转性／回收／关闭／未能核实）同一条 SV-08 两套值"
+          ]
+        },
+        {
+          "code": "GQ2-3",
+          "subject": "SKILL.md §10 参考表 19 行×4 列是否逐行有实质内容",
+          "verdict": "形式齐（19/19 行四格非空），内容 4 行不达标（fail）",
+          "evidence": [
+            "实测：表头 368、分隔 369、数据行 370-388＝19 行，每行 4 格，无空列；出口列 4 格写「同上」：SKILL.md:384、:386、:387、:388",
+            "我的判据（写明，供主代理复测）：「同上」算达标的条件是（a）指代无歧义＝只继承紧邻上一行且上一行本身不是「同上」；（b）被继承的出口语义对被指文件可迁移；（c）单行引用即可执行。三条全过才判达标。",
+            "判词：SKILL.md:384（examples/serial-examples.md）达标——上一行 :383 同为示例文件，「示例只示范写法／按作者材料」可原样迁移；SKILL.md:386（plot-scene-table）半达标——继承 :385 的「记入未决项表」，但场景表没有未决项表，其对应去处是 ST-08「待定」（templates/plot-scene-table.md:18）；SKILL.md:387、:388 不达标——两层与三层链式回指（387→386→385，388→387→386→385），markdown 表没有「同上」语义，链式继承在只读单行时不可解析，且语义不迁移：诊断报告有发现级 DR-10 与报告级 DR-SUM 两张未决项去处（templates/plot-diagnosis-report.md:19-21），serial-tables 的缺料去处是 §11 假设表／问题清单／冲突表（templates/serial-tables.md:101-113）且缺料词是 假设／未读／未知（:3），套 :385 会指错表并丢掉两个合法值。",
+            "结论：4 行「同上」中 1 行达标、1 行半达标、2 行不达标 ⇒ §10「逐行有实质内容」不达，GQ2 记 fail（不因 19/19 形式齐而放行）。"
+          ]
+        },
+        {
+          "code": "GQ2-4",
+          "subject": "容量与排期处是否承诺了不存在的「两案」",
+          "verdict": "包内现状：不再承诺（已改述）；冻结清单侧：仍在要求（fail 归属见 findings）",
+          "evidence": [
+            "SKILL.md:380 现文＝「产能与合同节点没给时按假设排并标“假设”，不下“排期可行”的结论；超支时按并一章、删一条从属线、合同允许再拆章的次序列选项交作者」，与 references/serial-production.md:27、:16 的实文本一致，无未落地的承诺",
+            "可复现：grep -rnE \"两案|激进\" 本包（21 文件）＝0 命中；「保守」2 命中均为无关用法（references/plot-rules.md:94、references/plot-scope-and-conflicts.md:97 的「保守默认」）",
+            "另一处「六项」现只在 references/serial-platform-migration.md:5（T1–T6），SKILL.md:371 已写「四项输入的收法」，与 references/plot-planning.md:5、:16、:18、:186 一致",
+            "区分：references/serial-production.md:37「按条件比较两条路线」＝开载路线 A/B（完稿再发 vs 完成一批后开载，:39-43 有表），不是产能/超支的「保守、激进两案」，二者不可互证"
+          ]
+        }
+      ],
+      "note": "GQ1 的 927 锚点扫描与 GQ2 的行级取证同一轮完成，脚本只读。"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "FAIL",
+      "what_checked": "brief interfaces 6 条逐条复核两侧实际行号、字段口径、缺字段分支与仲裁者；对端包按同一树哈希算法实测。",
+      "both_sides": "6/6 双向都有真实引用行（本席逐行打印核对）：对端 scene-conflict-and-rhythm/SKILL.md:23、:38、:46、:151、:186 及 references/chapter-ends-and-endings.md:7、:31、:33、:50、scene-units.md:90、rhythm-diagnosis.md:58；character-and-narrative-control/SKILL.md:30、:44、:306、references/zh-and-serial.md:59、references/diagnosis.md:125；fiction-planning-and-diagnosis/SKILL.md:28、:40、:137、:138、:142、:146、references/self-check-diagnosis.md:31、references/self-check-modern-and-zh.md:18；preset-card-generation/SKILL.md:3、:38、:104、:138、:183、references/planning.md:3；line-editing-and-proofreading/SKILL.md:37、:92、:96、:186、:187、examples/worked-example.md:91；genre-fiction-craft/SKILL.md:25、references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45、:93、references/05-science-fiction/subgenres-and-worldbuilding.md:106、references/02-romance/tropes-and-serial.md:72。",
+      "why_fail": [
+        "ST-IF-03／ST-IF-05：同一语义（注水／删冗余段）在本包与对端各有一个写入面（本包 references/plot-revision.md:62-67、:93-99 与 templates/plot-scene-table.md:71-77；对端 fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:18 的 CL-09、line-editing-and-proofreading/SKILL.md:92、:96 的 SR-08／SR-10），本包 references 层没有一句「由谁裁决、按谁的口径删」，转出只在 SKILL.md:51 与 serial-rules.md:33；Owner 未定 ⇒ 接口不闭合（brief 已登记为 ST-G07，但未裁）。",
+        "ST-IF-02：字段名两侧不对齐——本包「本卷视点线」（templates/serial-tables.md:7、references/serial-volume-and-closure.md:39）vs 对端「卷级的视点分配」（character-and-narrative-control/references/zh-and-serial.md:59）；对端只有转出句、无承接义务条款，本包 SKILL.md:28、:62 单侧声明。",
+        "ST-IF-06：对端四处把「分卷规划／长线排布」转给本包（cultivation-and-jianghu.md:45、:93 等），未指名承接卡；本包只在 SKILL.md:31、:63 给转出与边界，未写 genre 转入的接收条件与字段（对照 SKILL.md:43 对 preset 转入写了条件）。",
+        "brief 侧锚点两处不实（影响可复核性，不影响包内实现）：ST-IF-04 的 anchors_peer／both_sides_referenced 与 ST-T9 共 3 处写 preset-card-generation/SKILL.md:182，实测该行是表格分隔行，真实内容在 :183；ST-IF-05 的 missing_field_branch 把路径写成 line-editing-and-proofreading/amples/worked-example.md:91（缺 ex），按该路径检索为文件不存在。"
+      ],
+      "sv16": "SV-16 判词：不构成跨 Skill 接口缺陷（无对端、无字段往来），但构成本包内部权威声明与记录面缺陷——SKILL.md:71 声明「SV 卡的权威正文在 references/serial-rules.md」，而 SV-16 卡体不在该文件、在 references/serial-chapters-and-installments.md:54：serial-rules.md:1 有转指句「SV-16 载体审计见 serial-chapters-and-installments.md」，SKILL.md:327、:375、:378 亦显式点名去向，路由可达；「权威正文在 serial-rules.md」的声明与卡体实际分布不一致成立（草案「按 :71 找会落空」措辞过重，RV-story 复测更正，见 gq_status_note）。记录面更实：SKILL.md:327 称该核对项清单「兼作记录面」，但清单只有「核对项／要确认的内容」两列（references/serial-chapters-and-installments.md:58-65），没有结论／状态／证据位置格，而同文件 :67 要求缺项标「未能核实」——该词在本接口没有可落格的字段。",
+      "peers": [
+        {
+          "skill": "scene-conflict-and-rhythm",
+          "files": 17,
+          "bytes": 168166,
+          "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67"
+        },
+        {
+          "skill": "character-and-narrative-control",
+          "files": 17,
+          "bytes": 193531,
+          "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa"
+        },
+        {
+          "skill": "fiction-planning-and-diagnosis",
+          "files": 27,
+          "bytes": 348056,
+          "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8"
+        },
+        {
+          "skill": "preset-card-generation",
+          "files": 11,
+          "bytes": 113900,
+          "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94"
+        },
+        {
+          "skill": "line-editing-and-proofreading",
+          "files": 10,
+          "bytes": 114211,
+          "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1"
+        },
+        {
+          "skill": "genre-fiction-craft",
+          "files": 101,
+          "bytes": 1058179,
+          "peer_tree_sha256": "07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca",
+          "peer_tree_measured_at": "2026-11-06T00:04:23+08:00"
+        }
+      ]
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "FAIL",
+      "what_checked": "brief applicability 8 条＋cases 13 条逐条核 scope／limitation／counterexample／ref，并重点核三项。",
+      "key_checks": [
+        "章数／追读／读者反应预测：挡住（pass）。「预测读者反应」列负触发并直接说做不到（SKILL.md:55）；不承诺追读、订阅、完读、销量（SKILL.md:79，自查 SKILL.md:363）；平台机制排除且不得据可见性推断（SKILL.md:49、references/plot-rules.md:360、:362、references/serial-zh-webnovel.md:31、references/serial-platform-migration.md:17）；要数据时须写指标定义／样本／观察窗口（references/serial-production.md:84、examples/serial-examples.md:121）。章数不是预测而是计划量：由容量推章数并标来源（SKILL.md:294、templates/serial-tables.md:15 参数依据列、references/serial-production.md:27「不下排期可行的结论」）。",
+        "已发布内容不回改：有可执行窗口（pass）。SKILL.md:77、:135、:247、:312、:362 给规则；窗口本体在 references/serial-volume-and-closure.md:111-117 三阶段表（开写前／写作中／已发表 × 能改／不能改／替代），:182 与 :190 定正典权威与出版边界，references/serial-open-lines-and-continuity.md:49 给「下一卷开头桥段补」的具体替代。缺口：§10 第 376 行的「需要时补读」没点名这张表（K4 已记），本席复核确认。",
+        "容量与排期的数字是否被当硬门槛：未当门槛（pass）。SKILL.md:78、:344、:363；references/plot-scope-and-conflicts.md:100-114 逐项把 3/4、严重度阈值、章末问题列为可调默认；references/serial-production.md:19 算例自标「假设值，不是行业标准」、:53 禁止「缓冲三章以上才安全」；templates/serial-tables.md:51、:71 与 references/serial-production.md:45 把「存稿为零」写成风险而非判死；examples/serial-examples.md:175 的 60 天算例带「假设值」。",
+        "ST-AP-05／ST-T12：判 fail。冻结清单的 limitation／expected 要求「产能与合同节点没给时……给保守、激进两案」（引 SKILL.md:380），而当前树 SKILL.md:380 已改述为「次序列选项交作者」，包内「两案」「激进」0 命中 ⇒ 该子句按清单不可满足；同一 16:35 清单的 ST-G04／ST-CAP-02 仍记 SKILL.md:371 写「六项输入」，实测该行现为「四项输入的收法」。这两处是清单与冻结树的漂移，不改判包内功能缺失，但清单口径必须先更正才能逐条验收。",
+        "ST-AP-01：判 partial。锚点把 references/plot-rules.md:210 称为「区段的 PL-13 条」，实测 210 行属 PL-06 判断分支表（B1 前债行），PL-13 区段是 434-463（其中 :461 才是「不得把历史出版参数当作当代规范」）；其余 scope／limitation／counterexample 均可在包内核到。〔RV-story 复核：已改判 pass——锚点错位经本席实测确认在 brief 侧（plot-rules.md:210＝PL-06「B1 前债」行；PL-13 区段 :434–463、禁令在 :461），limitation 本体成立，见 sections.applicability.ST-AP-01 note。〕",
+        "适用面反例齐：8 条 AP 都指向包内「不用」行或负触发（如 references/serial-production.md:25、:51、:70，references/serial-chapters-and-installments.md:31、:48，references/serial-volume-and-closure.md:24、:44、:66，references/serial-open-lines-and-continuity.md:43，references/plot-diagnosis.md:199）；13 条 cases 的 expected 均可执行，ST-T4 无锚点（骨架条目）但 SKILL.md:66 与 ST-T13 展开版一致。"
+      ],
+      "why_fail": "唯一使 GQ4 落到 fail 的是清单侧不可满足口径（ST-AP-05／ST-T12 的「两案」）＋ST-AP-01 错段锚点；包内适用性与反例本体成立。"
+    },
+    {
+      "id": "GQ5",
+      "name": "真实任务效果验证",
+      "status": "NOT_PROVEN",
+      "reason": "包内自述与静态实测一致：references/plot-rules.md:10「16 条规则均只做过静态核对，没有在真实稿件上运行过」、SKILL.md:397、references/plot-scope-and-conflicts.md:125、examples/plot-examples.md:287-289；本席验证权限＝static，未运行任何测试／构建／应用，无真实写作任务运行证据。恒 not_proven。"
+    }
+  ],
+  "sections": {
+    "requirements": [
+      {
+        "id": "YQ-R01",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:92-98",
+          "SKILL.md:251-252",
+          "references/serial-volume-and-closure.md:13-26",
+          "references/serial-rules.md:9"
+        ],
+        "record_ref": "brief.json#/requirements/0（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R02",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:100-108",
+          "SKILL.md:186-229",
+          "references/plot-planning.md:22",
+          "references/plot-planning.md:180-199",
+          "references/plot-rules.md:533",
+          "templates/plot-canvas.md:7-22"
+        ],
+        "record_ref": "brief.json#/requirements/1（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R03",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:234-238",
+          "references/plot-rules.md:167-195",
+          "references/plot-rules.md:199-230",
+          "references/plot-diagnosis.md:131-153",
+          "references/plot-scope-and-conflicts.md:78"
+        ],
+        "record_ref": "brief.json#/requirements/2（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R04",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:243-244",
+          "SKILL.md:304-311",
+          "references/plot-rules.md:267-297",
+          "references/plot-planning.md:121-133",
+          "references/serial-volume-and-closure.md:180"
+        ],
+        "record_ref": "brief.json#/requirements/3（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R05",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:240-247",
+          "SKILL.md:221-222",
+          "references/plot-rules.md:234-263",
+          "references/plot-rules.md:467-496",
+          "templates/plot-scene-table.md:36-47",
+          "templates/plot-scene-table.md:71-77"
+        ],
+        "record_ref": "brief.json#/requirements/4（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R06",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:129-135",
+          "SKILL.md:148-178",
+          "references/plot-diagnosis.md:5-16",
+          "references/plot-diagnosis.md:18-52",
+          "references/plot-diagnosis.md:54-75",
+          "references/plot-diagnosis.md:277-293",
+          "references/plot-diagnosis.md:313-335"
+        ],
+        "record_ref": "brief.json#/requirements/5（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R07",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:137-142",
+          "SKILL.md:77",
+          "references/plot-revision.md:5-20",
+          "references/plot-revision.md:22-29",
+          "references/plot-revision.md:69-75",
+          "references/plot-revision.md:117-135",
+          "references/plot-revision.md:157-162"
+        ],
+        "record_ref": "brief.json#/requirements/6（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R08",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:110-118",
+          "SKILL.md:254-258",
+          "references/serial-rules.md:11-13",
+          "references/serial-volume-and-closure.md:28-47",
+          "references/serial-volume-and-closure.md:48-68",
+          "templates/serial-tables.md:5-11"
+        ],
+        "record_ref": "brief.json#/requirements/7（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R09",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:121-127",
+          "SKILL.md:262-272",
+          "references/serial-volume-and-closure.md:70-90",
+          "references/serial-volume-and-closure.md:92-117",
+          "references/serial-volume-and-closure.md:119-142",
+          "references/serial-volume-and-closure.md:144-166",
+          "templates/serial-tables.md:25-43"
+        ],
+        "record_ref": "brief.json#/requirements/8（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R10",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:276-277",
+          "references/serial-rules.md:27",
+          "references/serial-open-lines-and-continuity.md:9-41",
+          "references/serial-open-lines-and-continuity.md:51-63",
+          "templates/serial-tables.md:45-51",
+          "templates/serial-tables.md:115-139"
+        ],
+        "record_ref": "brief.json#/requirements/9（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R11",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:279-283",
+          "references/serial-rules.md:31-33",
+          "references/serial-chapters-and-installments.md:7-33",
+          "references/serial-chapters-and-installments.md:35-52",
+          "templates/serial-tables.md:53-57"
+        ],
+        "record_ref": "brief.json#/requirements/10（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R12",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:287-291",
+          "references/serial-rules.md:37-39",
+          "references/serial-formula-and-escalation.md:9-40",
+          "references/serial-formula-and-escalation.md:42-64",
+          "templates/serial-tables.md:59-63"
+        ],
+        "record_ref": "brief.json#/requirements/11（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R13",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:144-146",
+          "SKILL.md:293-300",
+          "references/serial-production.md:5-27",
+          "references/serial-production.md:29-53",
+          "references/serial-production.md:55-87",
+          "templates/serial-tables.md:13-23",
+          "templates/serial-tables.md:65-77",
+          "templates/serial-tables.md:79-87"
+        ],
+        "record_ref": "brief.json#/requirements/12（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R14",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:119",
+          "SKILL.md:173",
+          "SKILL.md:327",
+          "SKILL.md:375",
+          "SKILL.md:378",
+          "references/serial-chapters-and-installments.md:54-67",
+          "references/serial-rules.md:1"
+        ],
+        "record_ref": "brief.json#/requirements/13（brief 原始记录，本席逐条复核）",
+        "note": "本席改判 partial→pass：需求本体（旧刊/分册/合集/电子刊另做六项载体核对、区分原始出版结构与后续转写/校勘层）在包内已实现——六项核对与区分指令实存（references/serial-chapters-and-installments.md:54–67：:56 出版载体≠故事结构、:58–65 六行核对项、:65 转写校勘行、:67 区分原始出版结构／后续整理版本／当前平台展示），SKILL.md 六处挂接（:119 工序第 8 步、:134 诊断流程、:173 症状表、:327 §7 产物行、:375、:378 §10 两格）＋references/serial-rules.md:1 转指句，路由可达（本席逐行实测）。SV-16 无 §5 加粗卡体（§5 卡体实测仅 SV-01–SV-15）、无模板记录表，为 brief 已登记缺口（ST-G03/ST-G05）；其中「清单兼作记录面」的结构性缺陷（SKILL.md:327 声明 vs :58–65 两列无可填格，K5-F08）由 capability 侧 ST-CAP-17 行承载 fail，不在本行重复扣档。"
+      },
+      {
+        "id": "YQ-R15",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:314-330",
+          "SKILL.md:366-388",
+          "templates/plot-canvas.md:7-22",
+          "templates/plot-scene-table.md:7-34",
+          "templates/plot-diagnosis-report.md:5-19",
+          "templates/serial-tables.md:5-139"
+        ],
+        "record_ref": "brief.json#/requirements/14（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R16",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:346-354",
+          "SKILL.md:56",
+          "SKILL.md:83-88",
+          "references/plot-planning.md:16-18",
+          "references/plot-revision.md:164-174",
+          "references/serial-production.md:27",
+          "references/serial-formula-and-escalation.md:40",
+          "templates/serial-tables.md:101-113"
+        ],
+        "record_ref": "brief.json#/requirements/15（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R17",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:23-33",
+          "SKILL.md:35-43",
+          "SKILL.md:45-56",
+          "SKILL.md:58-66"
+        ],
+        "record_ref": "brief.json#/requirements/16（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "YQ-R18",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:78-79",
+          "SKILL.md:363",
+          "SKILL.md:390-397",
+          "references/plot-rules.md:8-10",
+          "references/plot-scope-and-conflicts.md:100-114",
+          "references/serial-zh-webnovel.md:31",
+          "examples/plot-examples.md:287"
+        ],
+        "record_ref": "brief.json#/requirements/17（brief 原始记录，本席逐条复核）"
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "ST-CAP-01",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:92-98",
+          "SKILL.md:251-252",
+          "references/serial-volume-and-closure.md:13-26",
+          "examples/serial-examples.md:19-31"
+        ],
+        "record_ref": "brief.json#/capabilities/0（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-02",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:100-108",
+          "references/plot-planning.md:22-176",
+          "references/plot-planning.md:180-199",
+          "references/plot-rules.md:566-571",
+          "examples/plot-examples.md:58-64"
+        ],
+        "record_ref": "brief.json#/capabilities/1（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-03",
+        "status": "pass",
+        "refs": [
+          "templates/plot-canvas.md:3",
+          "templates/plot-canvas.md:9-24",
+          "references/plot-planning.md:199",
+          "references/plot-planning.md:182",
+          "examples/plot-examples.md:38-56"
+        ],
+        "record_ref": "brief.json#/capabilities/2（brief 原始记录，本席逐条复核）",
+        "note": "本席改判 partial→pass：brief what 各要素逐项实测成立——templates/plot-canvas.md §1 有 PA-01–PA-12 每 ID 一行（12 行实测）、六列口径（字段 ID／字段／填写口径／填写／状态／稿件证据位置）、PA-04/06/09/10/12 对应 §2–§6 五张展开表；:3 自述「人工工作纸，不含脚本、不自动校验」「留空不等于完成」「未知是合法值但不得写成已完成」，与 limit 一致。「最小交付集」在源文为六项＋PA-12（references/plot-planning.md:199），brief 缩写为「六项」，不构成包内矛盾：plot-canvas.md:69 完成检查允许其余字段标「未知」且须进 PA-12，与最小集相容；计数口径分歧已记 K5-F09，属清单侧措辞，不构成包内功能缺失。"
+      },
+      {
+        "id": "ST-CAP-04",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:234-238",
+          "references/plot-rules.md:167-196",
+          "references/plot-rules.md:199-230",
+          "references/plot-diagnosis.md:141-153",
+          "examples/plot-examples.md:88-94"
+        ],
+        "record_ref": "brief.json#/capabilities/3（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-05",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:240-247",
+          "references/plot-rules.md:234-297",
+          "references/plot-scope-and-conflicts.md:18-26",
+          "references/plot-revision.md:31-42",
+          "templates/plot-scene-table.md:36-47",
+          "templates/plot-scene-table.md:79-90"
+        ],
+        "record_ref": "brief.json#/capabilities/4（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-06",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:129-135",
+          "references/plot-diagnosis.md:5-52",
+          "references/plot-diagnosis.md:54-75",
+          "references/plot-diagnosis.md:277-302",
+          "references/plot-diagnosis.md:313-335",
+          "templates/plot-diagnosis-report.md:66-76"
+        ],
+        "record_ref": "brief.json#/capabilities/5（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-07",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:137-142",
+          "references/plot-revision.md:5-29",
+          "references/plot-revision.md:69-75",
+          "references/plot-revision.md:117-145",
+          "references/plot-revision.md:157-174"
+        ],
+        "record_ref": "brief.json#/capabilities/6（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-08",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:110-118",
+          "SKILL.md:254-258",
+          "references/serial-volume-and-closure.md:28-47",
+          "references/serial-volume-and-closure.md:48-68",
+          "templates/serial-tables.md:5-11",
+          "examples/serial-examples.md:23-31"
+        ],
+        "record_ref": "brief.json#/capabilities/7（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-09",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:121-127",
+          "SKILL.md:262-272",
+          "references/serial-volume-and-closure.md:70-142",
+          "references/serial-volume-and-closure.md:144-166",
+          "examples/serial-examples.md:84-114"
+        ],
+        "record_ref": "brief.json#/capabilities/8（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-10",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:276-277",
+          "references/serial-open-lines-and-continuity.md:9-49",
+          "references/serial-open-lines-and-continuity.md:51-63",
+          "templates/serial-tables.md:45-51",
+          "templates/serial-tables.md:115-139"
+        ],
+        "record_ref": "brief.json#/capabilities/9（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-11",
+        "status": "pass",
+        "refs": [
+          "references/serial-volume-and-closure.md:168-195",
+          "SKILL.md:77",
+          "templates/serial-tables.md:139",
+          "examples/serial-examples.md:112-121"
+        ],
+        "record_ref": "brief.json#/capabilities/10（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-12",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:279-283",
+          "SKILL.md:221-223",
+          "references/serial-chapters-and-installments.md:7-52",
+          "templates/serial-tables.md:53-57",
+          "templates/plot-scene-table.md:61-69",
+          "examples/serial-examples.md:54-58"
+        ],
+        "record_ref": "brief.json#/capabilities/11（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-13",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:287-291",
+          "references/serial-formula-and-escalation.md:9-64",
+          "templates/serial-tables.md:59-63",
+          "examples/serial-examples.md:168-171"
+        ],
+        "record_ref": "brief.json#/capabilities/12（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-14",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:293-294",
+          "references/serial-rules.md:43",
+          "references/serial-production.md:12",
+          "templates/serial-tables.md:15",
+          "references/plot-planning.md:102"
+        ],
+        "record_ref": "brief.json#/capabilities/13（brief 原始记录，本席逐条复核）",
+        "note": "本席改判 partial→pass：容量表本体与周期核对在包内成立——templates/serial-tables.md:15 容量表十列与 brief what 十字段逐一对应（载体／平台…未知参数｜参数依据（合同／平台／作者／假设）），:19–23 核对记录表（计划字数／实际字数／差额／处理）承载「按周期核对实际字数」；SKILL.md:293–294 与 references/serial-rules.md:43 卡体同文，references/serial-production.md:12–27 给流程、算例与卡住时出口（本席逐行实测）。字段枚举三套口径（卡体 8／production 9／模板 10，「参数依据」只在模板层）实测属实（K5-F02、SEM-5），但填表面（模板）十列齐备、能力本体无缺；口径统一归主代理修复批。"
+      },
+      {
+        "id": "ST-CAP-15",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:144-146",
+          "SKILL.md:296-297",
+          "references/serial-production.md:29-53",
+          "templates/serial-tables.md:65-77",
+          "examples/serial-examples.md:60-64"
+        ],
+        "record_ref": "brief.json#/capabilities/14（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-16",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:299-300",
+          "references/serial-production.md:55-87",
+          "references/serial-rules.md:47",
+          "templates/serial-tables.md:79-87",
+          "examples/serial-examples.md:179-185"
+        ],
+        "record_ref": "brief.json#/capabilities/15（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-CAP-17",
+        "status": "fail",
+        "refs": [
+          "references/serial-chapters-and-installments.md:54-67",
+          "SKILL.md:119",
+          "SKILL.md:327",
+          "references/serial-production.md:14"
+        ],
+        "record_ref": "brief.json#/capabilities/16（brief 原始记录，本席逐条复核）",
+        "note": "本席改判 partial→fail：六项核对与区分指令实存（references/serial-chapters-and-installments.md:54–67，本席逐行实测），但能力的声明交付面不成立——SKILL.md:327 声明核对项清单「兼作记录面」，而该清单 :58–65 仅「核对项／要确认的内容」两列，无结论／状态／证据位置格；同文件 :67 要求缺项标「未能核实」，在该表结构上无处可落（K5-F08；ST-T11 expected「缺的标未能核实」的记录动作不可执行；对照包内其它记录面 templates/plot-canvas.md:9、plot-scene-table.md:9、plot-diagnosis-report.md:7、serial-tables.md:7/:47 均自带状态列）。声明与结构不符 ⇒ fail；修复归主代理修复批（清单加列或 templates 增设记录面），需作者/收口席决定件先行。SV-16 无 §5 卡体为 brief 已登记缺口（ST-G03），由 YQ-R14 行与 SEM-6 承载，不另扣本行。"
+      },
+      {
+        "id": "ST-CAP-18",
+        "status": "pass",
+        "refs": [
+          "references/serial-platform-migration.md:3-5",
+          "references/serial-platform-migration.md:7-29",
+          "references/serial-platform-migration.md:31-52",
+          "SKILL.md:382",
+          "references/serial-zh-webnovel.md:40"
+        ],
+        "record_ref": "brief.json#/capabilities/17（brief 原始记录，本席逐条复核）"
+      }
+    ],
+    "interfaces": [
+      {
+        "id": "ST-IF-01",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:27",
+          "SKILL.md:61",
+          "SKILL.md:223",
+          "references/plot-rules.md:336",
+          "references/plot-rules.md:355",
+          "references/serial-chapters-and-installments.md:5",
+          "references/serial-chapters-and-installments.md:27",
+          "templates/serial-tables.md:47",
+          "scene-conflict-and-rhythm/SKILL.md:46",
+          "scene-conflict-and-rhythm/SKILL.md:151",
+          "scene-conflict-and-rhythm/SKILL.md:186",
+          "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:7",
+          "scene-conflict-and-rhythm/references/chapter-ends-and-endings.md:31",
+          "scene-conflict-and-rhythm/references/scene-units.md:90"
+        ],
+        "record_ref": "brief.json#/interfaces/0（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "scene-conflict-and-rhythm",
+          "files": 17,
+          "bytes": 168166,
+          "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67"
+        }
+      },
+      {
+        "id": "ST-IF-02",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:28",
+          "SKILL.md:62",
+          "references/serial-volume-and-closure.md:39",
+          "references/serial-open-lines-and-continuity.md:60",
+          "templates/serial-tables.md:7",
+          "character-and-narrative-control/SKILL.md:30",
+          "character-and-narrative-control/SKILL.md:44",
+          "character-and-narrative-control/SKILL.md:306",
+          "character-and-narrative-control/references/zh-and-serial.md:59",
+          "character-and-narrative-control/references/diagnosis.md:125"
+        ],
+        "record_ref": "brief.json#/interfaces/1（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "character-and-narrative-control",
+          "files": 17,
+          "bytes": 193531,
+          "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+          "peer_tree_measured_at": "2026-11-06T00:04:23+08:00"
+        },
+        "note": "本席改判 partial→pass：双向引用逐行实测齐——本包侧 SKILL.md:28（转出行括注「哪一卷加入或收掉一条视点线，在本 skill 的卷表里排」）、SKILL.md:62（「本 Skill 只在卷表记录视点线的加入/退出，不裁决单场 POV」）、references/serial-volume-and-closure.md:39（卷表加「本卷视点线」列）、references/serial-open-lines-and-continuity.md:60（视点线台账＋单场视角转出）、templates/serial-tables.md:7（「本卷视点线（多视点时）」列）；对端侧 character-and-narrative-control/SKILL.md:30、:44、:306、references/zh-and-serial.md:59（「卷级的视点分配…转 story-architecture-and-longform-planning」）、references/diagnosis.md:125，全部命中。对端树实测 f32f4dca…（17 件／193,531 B，＝tsv，本席复测无变动）。字段名两侧不对齐（本包「本卷视点线」vs 对端「卷级的视点分配」）、对端无承接义务条款，brief conflict_note 已登记、GQ3 why_fail② 承载；本行按双向判定记 pass（同 fiction-planning FQ-IF-01/04 先例：缺口计入 GQ3，不单独翻行）。"
+      },
+      {
+        "id": "ST-IF-03",
+        "status": "fail",
+        "refs": [
+          "SKILL.md:29",
+          "SKILL.md:39",
+          "SKILL.md:64",
+          "SKILL.md:353",
+          "references/plot-planning.md:13",
+          "references/serial-rules.md:33",
+          "references/serial-chapters-and-installments.md:46",
+          "references/plot-revision.md:93-99",
+          "templates/plot-scene-table.md:71-77",
+          "fiction-planning-and-diagnosis/SKILL.md:28",
+          "fiction-planning-and-diagnosis/SKILL.md:40",
+          "fiction-planning-and-diagnosis/SKILL.md:137",
+          "fiction-planning-and-diagnosis/SKILL.md:142",
+          "fiction-planning-and-diagnosis/SKILL.md:146",
+          "fiction-planning-and-diagnosis/references/self-check-diagnosis.md:31",
+          "fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:18"
+        ],
+        "record_ref": "brief.json#/interfaces/2（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "fiction-planning-and-diagnosis",
+          "files": 27,
+          "bytes": 348056,
+          "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8"
+        }
+      },
+      {
+        "id": "ST-IF-04",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:33",
+          "SKILL.md:40",
+          "SKILL.md:43",
+          "SKILL.md:314-330",
+          "preset-card-generation/SKILL.md:3",
+          "preset-card-generation/SKILL.md:38",
+          "preset-card-generation/SKILL.md:104",
+          "preset-card-generation/SKILL.md:138",
+          "preset-card-generation/SKILL.md:183",
+          "preset-card-generation/references/planning.md:3"
+        ],
+        "record_ref": "brief.json#/interfaces/3（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "preset-card-generation",
+          "files": 11,
+          "bytes": 113900,
+          "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94"
+        }
+      },
+      {
+        "id": "ST-IF-05",
+        "status": "fail",
+        "refs": [
+          "SKILL.md:30",
+          "SKILL.md:51",
+          "SKILL.md:133",
+          "references/plot-revision.md:62-67",
+          "references/plot-revision.md:75",
+          "references/plot-revision.md:93-99",
+          "line-editing-and-proofreading/SKILL.md:37",
+          "line-editing-and-proofreading/SKILL.md:92",
+          "line-editing-and-proofreading/SKILL.md:96",
+          "line-editing-and-proofreading/SKILL.md:186",
+          "line-editing-and-proofreading/SKILL.md:187",
+          "line-editing-and-proofreading/examples/worked-example.md:91"
+        ],
+        "record_ref": "brief.json#/interfaces/4（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "line-editing-and-proofreading",
+          "files": 10,
+          "bytes": 114211,
+          "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1"
+        }
+      },
+      {
+        "id": "ST-IF-06",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:31",
+          "SKILL.md:63",
+          "references/plot-diagnosis.md:24",
+          "references/plot-diagnosis.md:307",
+          "genre-fiction-craft/SKILL.md:25",
+          "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45",
+          "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:93",
+          "genre-fiction-craft/references/05-science-fiction/subgenres-and-worldbuilding.md:106",
+          "genre-fiction-craft/references/02-romance/tropes-and-serial.md:72"
+        ],
+        "record_ref": "brief.json#/interfaces/5（brief 原始记录，两侧行号本席逐行复核）",
+        "peer": {
+          "skill": "genre-fiction-craft",
+          "files": 101,
+          "bytes": 1058179,
+          "peer_tree_sha256": "07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca",
+          "peer_tree_measured_at": "2026-11-06T00:04:23+08:00"
+        },
+        "note": "本席改判 partial→pass：双向引用逐行实测齐——本包侧 SKILL.md:31、:63、references/plot-diagnosis.md:24（类型惯例不判缺陷）、:307（先过 D1 证伪）；对端侧 genre-fiction-craft/SKILL.md:25、references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:45（WX-80 分卷规划转本包）、:93（分卷和长线规划转本包）、references/05-science-fiction/subgenres-and-worldbuilding.md:106、references/02-romance/tropes-and-serial.md:72（RO-17/19 长线排布转本包），全部命中。对端树本席实测刷新：07d638e5…（101 件／1,058,179 B，＝tsv；草案记 bc6e9175…／1,052,159 B 为过期值，见 gq_status_note）。对端转出未指名承接卡（SV-02/SV-13）、本包未写 genre 转入接收条件（对照 SKILL.md:43 对 preset 写了条件），brief conflict_note 已登记、GQ3 why_fail③ 承载；本行按双向判定记 pass（同 FQ-IF-01 先例）。"
+      }
+    ],
+    "applicability": [
+      {
+        "id": "ST-AP-01",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:70",
+          "SKILL.md:353",
+          "SKILL.md:364",
+          "SKILL.md:381",
+          "references/plot-planning.md:102",
+          "references/plot-scope-and-conflicts.md:80",
+          "references/serial-zh-webnovel.md:3",
+          "references/plot-rules.md:434-463"
+        ],
+        "record_ref": "brief.json#/applicability/0（brief 原始记录，本席逐条复核）",
+        "note": "本席改判 partial→pass：scope／limitation／counterexample 的包内核到全部复验——SKILL.md:70（宿主格式优先）、:353（拿不到按假设排并标「假设」，不编造平台标准）、:364（自查：有限经验数字不当门槛）、:381（平台惯例拿不准先问交付平台）、references/plot-planning.md:102（历史数字只放「历史参数」栏）、references/plot-scope-and-conflicts.md:80（C-11 禁止历史数字当标准／取平均值）、references/serial-zh-webnovel.md:3（不是平台规范），逐行命中。唯一错锚在 brief limitation 正文：references/plot-rules.md:210 实测是 PL-06 判断分支表「B1 前债」行，PL-13 区段为 :434–463、「不得把历史出版参数当作当代规范」在 :461（本席实测，K5-F07）；该禁令另有 plot-planning.md:102 与 C-11 双重锚定，limitation 本体成立。锚点更正（:445、:461）属清单侧修复，本行判 pass。"
+      },
+      {
+        "id": "ST-AP-02",
+        "status": "pass",
+        "refs": [
+          "references/serial-zh-webnovel.md:3",
+          "references/serial-zh-webnovel.md:36",
+          "references/serial-zh-webnovel.md:40",
+          "references/serial-platform-migration.md:3",
+          "references/serial-platform-migration.md:17",
+          "SKILL.md:382",
+          "SKILL.md:396",
+          "SKILL.md:401"
+        ],
+        "record_ref": "brief.json#/applicability/1（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-03",
+        "status": "pass",
+        "refs": [
+          "references/serial-formula-and-escalation.md:7",
+          "references/serial-rules.md:23",
+          "references/serial-zh-webnovel.md:27-29",
+          "references/serial-volume-and-closure.md:156-160",
+          "references/serial-chapters-and-installments.md:48"
+        ],
+        "record_ref": "brief.json#/applicability/2（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-04",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:66",
+          "SKILL.md:222",
+          "references/serial-volume-and-closure.md:24",
+          "references/serial-open-lines-and-continuity.md:43",
+          "references/serial-chapters-and-installments.md:31",
+          "references/serial-production.md:25",
+          "references/serial-production.md:51",
+          "references/serial-production.md:70",
+          "references/plot-diagnosis.md:199",
+          "templates/plot-scene-table.md:69"
+        ],
+        "record_ref": "brief.json#/applicability/3（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-05",
+        "status": "fail",
+        "refs": [
+          "SKILL.md:294",
+          "SKILL.md:296",
+          "SKILL.md:380",
+          "references/serial-rules.md:43",
+          "references/serial-production.md:16",
+          "references/serial-production.md:19",
+          "references/serial-production.md:27",
+          "references/serial-production.md:53",
+          "references/serial-production.md:74-87"
+        ],
+        "record_ref": "brief.json#/applicability/4（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-06",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:78",
+          "SKILL.md:206",
+          "SKILL.md:277",
+          "SKILL.md:344",
+          "references/plot-planning.md:90",
+          "references/plot-scope-and-conflicts.md:100-114",
+          "references/plot-diagnosis.md:125",
+          "templates/serial-tables.md:51",
+          "examples/plot-examples.md:63"
+        ],
+        "record_ref": "brief.json#/applicability/5（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-07",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:45-56",
+          "SKILL.md:343",
+          "SKILL.md:230",
+          "references/plot-planning.md:201-207",
+          "references/plot-revision.md:160"
+        ],
+        "record_ref": "brief.json#/applicability/6（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-AP-08",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:390-397",
+          "references/plot-rules.md:8-10",
+          "references/plot-rules.md:62",
+          "references/plot-scope-and-conflicts.md:94-98",
+          "references/plot-scope-and-conflicts.md:116-127",
+          "examples/plot-examples.md:287"
+        ],
+        "record_ref": "brief.json#/applicability/7（brief 原始记录，本席逐条复核）"
+      }
+    ],
+    "cases": [
+      {
+        "id": "ST-T1",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:100-108",
+          "references/plot-planning.md:180-199",
+          "references/plot-rules.md:100-130",
+          "templates/plot-canvas.md:15-17"
+        ],
+        "record_ref": "brief.json#/cases/0（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T2",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:134",
+          "SKILL.md:377",
+          "references/serial-open-lines-and-continuity.md:41-49",
+          "references/serial-open-lines-and-continuity.md:51-63",
+          "templates/serial-tables.md:115-139"
+        ],
+        "record_ref": "brief.json#/cases/1（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T3",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:77",
+          "SKILL.md:135",
+          "references/serial-volume-and-closure.md:111-117",
+          "references/serial-volume-and-closure.md:182-195",
+          "references/serial-open-lines-and-continuity.md:49"
+        ],
+        "record_ref": "brief.json#/cases/2（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T4",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:66",
+          "references/serial-volume-and-closure.md:13-24",
+          "references/serial-open-lines-and-continuity.md:43"
+        ],
+        "record_ref": "brief.json#/cases/3（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T5",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:110-118",
+          "SKILL.md:293-297",
+          "references/serial-production.md:12",
+          "references/serial-zh-webnovel.md:3",
+          "examples/serial-examples.md:125-133",
+          "examples/serial-examples.md:144-157"
+        ],
+        "record_ref": "brief.json#/cases/4（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T6",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:129-135",
+          "SKILL.md:352",
+          "references/plot-diagnosis.md:18-30",
+          "references/plot-diagnosis.md:141-153",
+          "references/plot-diagnosis.md:304-311",
+          "references/plot-revision.md:5-20",
+          "examples/plot-examples.md:68-127"
+        ],
+        "record_ref": "brief.json#/cases/5（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T7",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:186-188",
+          "SKILL.md:350",
+          "references/plot-planning.md:29-34",
+          "references/plot-planning.md:11",
+          "templates/plot-canvas.md:3"
+        ],
+        "record_ref": "brief.json#/cases/6（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T8",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:55",
+          "SKILL.md:79",
+          "SKILL.md:263",
+          "SKILL.md:363",
+          "references/serial-zh-webnovel.md:31",
+          "references/serial-zh-webnovel.md:36",
+          "references/serial-production.md:84",
+          "examples/serial-examples.md:121"
+        ],
+        "record_ref": "brief.json#/cases/7（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T9",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:33",
+          "SKILL.md:40",
+          "SKILL.md:43",
+          "preset-card-generation/SKILL.md:38",
+          "preset-card-generation/SKILL.md:104",
+          "preset-card-generation/references/planning.md:3"
+        ],
+        "record_ref": "brief.json#/cases/8（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T10",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:221-222",
+          "SKILL.md:339",
+          "references/plot-planning.md:145",
+          "references/plot-diagnosis.md:199",
+          "templates/plot-scene-table.md:69"
+        ],
+        "record_ref": "brief.json#/cases/9（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T11",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:119",
+          "SKILL.md:173",
+          "SKILL.md:327",
+          "references/serial-chapters-and-installments.md:54-67"
+        ],
+        "record_ref": "brief.json#/cases/10（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T12",
+        "status": "fail",
+        "refs": [
+          "SKILL.md:294",
+          "SKILL.md:353",
+          "SKILL.md:380",
+          "SKILL.md:381",
+          "references/plot-planning.md:102",
+          "references/plot-scope-and-conflicts.md:80",
+          "references/serial-zh-webnovel.md:3"
+        ],
+        "record_ref": "brief.json#/cases/11（brief 原始记录，本席逐条复核）"
+      },
+      {
+        "id": "ST-T13",
+        "status": "pass",
+        "refs": [
+          "SKILL.md:66",
+          "SKILL.md:193",
+          "SKILL.md:341",
+          "references/plot-scope-and-conflicts.md:77",
+          "references/serial-volume-and-closure.md:24",
+          "references/serial-open-lines-and-continuity.md:43"
+        ],
+        "record_ref": "brief.json#/cases/12（brief 原始记录，本席逐条复核）"
+      }
+    ]
+  },
+  "semantics": [
+    {
+      "id": "SEM-1",
+      "subject": "交付状态四词：含义级定义与使用面分离",
+      "a": "references/serial-platform-migration.md:52「状态栏口径：核验完成且证据在手填“已完成”；交付时附证据位置填“依据”；核验未完成或证据不足填“未能核实”；存在取舍或须作者/有权主体裁决填“待作者决定”；该项对本次迁移没有对应对象填“不适用”；缺输入填“未知”」",
+      "b": "templates/plot-canvas.md:24「状态栏写 “已完成” / “依据” / “未能核实” / “待作者决定” / “未知”；“未知” 是合法值，但不得把未知当成 “已完成”」＋SKILL.md:385 出口格「字段填不出写“未知”并记入未决项表；未知不当成已完成」",
+      "finding": "唯一逐词释义挂在「跨平台迁移」专用文件、且限定语为「对本次迁移」，没有一句被声明为全包口径；最常用三张模板只列值不列义；SKILL 层 0 处定义。路由关系与使用频率相反。",
+      "record_ref": "brief.json#/gaps/0（ST-G01）、#/gaps/7（ST-G08）；本席独立复核 SKILL.md 层「未能核实」「待作者决定」0 命中"
+    },
+    {
+      "id": "SEM-2",
+      "subject": "第三套状态词并存（清单只说「部分」，实测更多）",
+      "a": "references/plot-planning.md:182「每步完成后在“状态”栏写 “已完成” / “部分” / “未知”」",
+      "b": "templates/serial-tables.md:133「作者决定 | 已确认／未能核实／待作者决定／不适用」与 templates/serial-tables.md:7 卷表「状态（计划／在写／已发）」、:47 台账「开／推进／转性／回收／关闭／未能核实」、:3「假设／未读／未知」",
+      "finding": "四词＋未知之外至少还有四套值域（部分、已确认、计划/在写/已发、开/推进中/待回收/已关闭），且 SKILL.md:340「未解决」、:377「待登记」、examples/serial-examples.md:29「未定」三个值在任何枚举里都不存在。",
+      "record_ref": "brief.json#/gaps/7（ST-G08）；新增证据：SKILL.md:340、:377、examples/serial-examples.md:29、references/serial-open-lines-and-continuity.md:34"
+    },
+    {
+      "id": "SEM-3",
+      "subject": "「两案」：包内已改述、冻结清单仍按旧文验收",
+      "a": "SKILL.md:380（现文）「产能与合同节点没给时按假设排并标“假设”，不下“排期可行”的结论；超支时按并一章、删一条从属线、合同允许再拆章的次序列选项交作者」",
+      "b": "references/serial-production.md:37「2. 按条件比较两条路线：」＋:39-43 路线 A／B 表（完稿再发 vs 完成一批后开载）",
+      "finding": "包内不存在「保守／激进两案」（两案、激进各 0 命中），也没有把 :37 的两条路线称为两案；而 brief ST-AP-05 limitation 与 ST-T12 expected 仍要求该两案。结论：功能面已修，清单面未同步；两案与「两条路线」不可互证。",
+      "record_ref": "brief.json#/applicability/4（ST-AP-05）、#/cases/11（ST-T12）；对照 K4-r1.md:53、:94（16:25 时点该承诺确实未落地）"
+    },
+    {
+      "id": "SEM-4",
+      "subject": "「六项输入」错标已消，gap 记录未撤",
+      "a": "SKILL.md:371（现文）「四项输入的收法、每步的失败出口」",
+      "b": "references/plot-planning.md:5「## 0. 先收输入（四项，缺一不可假装齐）」＋:16「四项至少各有一句具体值」＋:18「输入表（四项）」＋:186「点子/容器/读者/工序四项表」",
+      "finding": "现树唯一「六项」在 references/serial-platform-migration.md:5（T1–T6，与规划输入无关）。brief ST-G04 的 fact／measured 仍写 SKILL.md:371 记「六项输入」，ST-CAP-02 limit 亦引用该说法；该 gap 在冻结树上已不可复现。",
+      "record_ref": "brief.json#/gaps/3（ST-G04）、#/capabilities/1（ST-CAP-02）"
+    },
+    {
+      "id": "SEM-5",
+      "subject": "容量表字段数：8／9／10 三套口径",
+      "a": "SKILL.md:294（＝references/serial-rules.md:43）「载体、每章字数、总章数、总字数、钩位、交稿节点、缓冲章、备用结局」＝8 项",
+      "b": "references/serial-production.md:12「……备用结局，以及未知参数」＝9 项 vs templates/serial-tables.md:15 十列「……｜未知参数｜参数依据（合同／平台／作者／假设）」",
+      "finding": "「参数依据」列是「不编造平台标准」（SKILL.md:353）与 ST-IF-03 字段口径的执行面，却不出现在 SV-13 的两处卡体里；brief 同时写「八字段」（YQ-R13）与十字段清单（ST-CAP-14），把分裂固定成两条记录。",
+      "record_ref": "brief.json#/requirements/12（YQ-R13）、#/capabilities/13（ST-CAP-14）"
+    },
+    {
+      "id": "SEM-6",
+      "subject": "SV-16：Owner 声明与正文位置相反，记录面无可填格",
+      "a": "SKILL.md:71「PL 卡的权威正文在 references/plot-rules.md，SV 卡在 references/serial-rules.md」＋references/serial-rules.md:1「SV-01 至 SV-15；SV-16 载体审计见 serial-chapters-and-installments.md」",
+      "b": "SKILL.md:327「按 serial-chapters-and-installments.md 的核对项清单逐项记录（该清单兼作记录面）」vs references/serial-chapters-and-installments.md:58-65 两列表（核对项／要确认的内容）＋:67「缺失的信息标“未能核实”」",
+      "finding": "卡体不在 :71 声明的文件（brief 已登记 ST-G03、ST-G06）；更进一层：被指定兼作记录面的清单没有结论／状态／证据位置列，「未能核实」无落格位，与包内其它记录面（templates/plot-canvas.md:9、plot-diagnosis-report.md:7、serial-tables.md:7/:47 都带状态列）不同构。",
+      "record_ref": "brief.json#/gaps/2（ST-G03）、#/gaps/4（ST-G05）、#/gaps/5（ST-G06）、#/gaps/8（ST-G09）"
+    },
+    {
+      "id": "SEM-7",
+      "subject": "跨包「不重复记账」口径两侧一致（正控制）",
+      "a": "SKILL.md:61「PL-10 输出的章末问题清单中“属主线或副线”一栏只作分布登记，单章兑现记录归 SU-16」",
+      "b": "scene-conflict-and-rhythm/references/scene-units.md:90「跨卷开放线的开启、推进和最晚回收位置由 story-architecture-and-longform-planning 的 SV-08 负责，不在本表重复记账」",
+      "finding": "该组语义双向一致、无冲突，作为 GQ3 的正控制：证明同一条「按责任层分表」的写法在两侧都能落到字段；ST-IF-03／ST-IF-05 的删冗余则没有这种双侧条款，故 fail 只落在那两条。",
+      "record_ref": "brief.json#/interfaces/0（ST-IF-01 conflict_note）"
+    }
+  ],
+  "findings": [
+    {
+      "id": "K5-F01",
+      "title": "冻结 brief 仍记两条已被 16:29 修订消除的 gap（SKILL.md:371「六项」、:380「保守、激进两案」）",
+      "severity": "阻断验收（清单侧）",
+      "detail": "包内实测：SKILL.md 全文 0 处「六项」，:371 现为「四项输入的收法」；全包 0 处「两案」「激进」。brief ST-G04（fact＋measured）、ST-CAP-02 limit、ST-AP-05 limitation、ST-T12 expected 四处仍按修订前文字写。SKILL.md mtime 16:29、brief adopted_at 16:35：清单在修订之后采纳却沿用修订前记录。",
+      "impact": "按冻结清单逐条验收会判一个不存在的缺陷（两案）并保留一条已修事实（六项），GQ2／GQ4 的状态被反向污染。",
+      "repro": {
+        "command": "cd output/story-architecture-and-longform-planning；grep -rnE '两案|激进' . ; grep -n '六项' SKILL.md ; python3 打印 SKILL.md 第 371、380 行",
+        "output_summary": "前两条命令 0 命中（本席用逐文件 count 复核：两案 0、激进 0、保守 2 且均为「保守默认」用法）；371 行含「四项输入的收法」，380 行含「不下“排期可行”的结论……次序列选项交作者」。"
+      },
+      "recommend": "主代理二选一并写明 Owner：更正 brief 的四处口径（推荐，属清单与树同步），或把两案作为真实需求补进 serial-production.md 的卡体。本席不改任一侧。"
+    },
+    {
+      "id": "K5-F02",
+      "title": "容量表字段数三套口径（8／9／10），「参数依据」列只在模板存在",
+      "severity": "口径分裂",
+      "detail": "SKILL.md:294 与 references/serial-rules.md:43 各列 8 项；references/serial-production.md:12 列 9 项（加未知参数）；templates/serial-tables.md:15 实际 10 列（再加参数依据（合同／平台／作者／假设））。",
+      "impact": "「不编造平台标准」的落格字段在规则卡层不可见；填表者按卡体只填 8 列时，来源标注纪律丢失。",
+      "repro": {
+        "command": "grep -n '参数依据' templates/serial-tables.md SKILL.md references/serial-rules.md references/serial-production.md",
+        "output_summary": "只有 templates/serial-tables.md:15 命中。"
+      },
+      "recommend": "未授权修改；交收口席定唯一字段数并把「参数依据」写回 SV-13 卡体。"
+    },
+    {
+      "id": "K5-F03",
+      "title": "SV-08 活动线状态值两套，示例还使用未登记值",
+      "severity": "口径分裂",
+      "detail": "references/serial-open-lines-and-continuity.md:34 写「开、推进中、待回收、已关闭」；templates/serial-tables.md:47 写「开／推进／转性／回收／关闭／未能核实」。前者无「转性」「未能核实」，「待回收」不是模板合法值。示例层再叠一层：examples/serial-examples.md:29 卷表「状态」列填「未定」，而 templates/serial-tables.md:7 合法值是 计划／在写／已发。",
+      "impact": "同一语义两个写法＋示例示范第三个写法，台账计数规则（templates/serial-tables.md:51「未能核实的线不计入」）在按卡体填的表上无法执行。",
+      "repro": {
+        "command": "grep -n '推进中\\|待回收' references/serial-open-lines-and-continuity.md ; grep -n '转性' templates/serial-tables.md ; grep -n '未定' examples/serial-examples.md",
+        "output_summary": "卡体 :34 用 推进中／待回收；模板 :47 用 推进／转性／回收／关闭／未能核实；示例 :29 状态列为 未定。"
+      },
+      "recommend": "未授权修改；建议状态值只在模板层定义一次，卡体引用而不重述。"
+    },
+    {
+      "id": "K5-F04",
+      "title": "示范表列数短于模板声明列数（台账 7／5 列 vs 8 列、反馈日志 6 列 vs 7 列、卷表 9／8 列 vs 10 列）",
+      "severity": "示范与契约不符",
+      "detail": "SKILL.md:276 与 brief YQ-R10 要求台账写到「预估章数」，templates/serial-tables.md:47 定 8 列；examples/serial-examples.md:48 只 7 列（缺预估章数），:161 只 5 列（缺当前状态、回收方式、预估章数）。反馈日志 templates/serial-tables.md:81 定 7 列，examples/serial-examples.md:181 定 6 列（缺代价）。卷表 templates/serial-tables.md:7 为 10 列，示例 :25 为 9 列、:139 为 8 列（缺节点、视点线）。",
+      "impact": "§10 第 384 行把示例文件定为「学习分卷连载的用法」的入口；学习者照示例建的表结构性缺列，而链式「同上」出口（K5-F05）不会提示缺列。",
+      "repro": {
+        "command": "python3 逐行 split 计数：examples/serial-examples.md:48＝7、:161＝5、:181＝6、:25＝9、:139＝8；templates/serial-tables.md:47＝8、:81＝7、:7＝10",
+        "output_summary": "5 处列数差，方向一致（示例少于模板）。"
+      },
+      "recommend": "未授权修改；要么示例补列，要么在示例首行声明「只演示部分列」。"
+    },
+    {
+      "id": "K5-F05",
+      "title": "§10 出口列「同上」出现两层与三层链式继承（SKILL.md:387、:388）",
+      "severity": "可达性缺陷",
+      "detail": "386→385 单层；387→386→385 双层；388→387→386→385 三层。markdown 表渲染不解析「同上」，只读单行时该格无内容可执行；被继承文字（templates/plot-canvas.md 的「记入未决项表」）与目标文件实际去处不同（诊断报告 DR-10 与 DR-SUM 两处，templates/plot-diagnosis-report.md:19-21；serial-tables 的缺料去处是 §11 三张表，templates/serial-tables.md:101-113，缺料词为 假设／未读／未知 :3）。",
+      "impact": "GQ2-3 判 4 行中 2 行不达标（判据见 gq.GQ2.items[GQ2-3]）；这是形式齐（19/19 四格非空）掩盖的内容缺。",
+      "repro": {
+        "command": "grep -n '| 同上 |$' SKILL.md",
+        "output_summary": "命中 11 行：§10 出口列 4 行（SKILL.md:384、:386、:387、:388）＋§7 模板列 7 行（:322、:323、:324、:326、:328、:329、:330）。§7 的「同上」一律回指 :321 已点名的 templates/serial-tables.md，可解析，不算缺陷（:325 写作「同上（§12）」）。"
+      },
+      "recommend": "未授权修改；建议四格逐行写实，或改为「同 :385，且未决项去处为 DR-SUM」这类带指明的写法。"
+    },
+    {
+      "id": "K5-F06",
+      "title": "brief 自身两处锚点不实：preset-card-generation/SKILL.md:182 是分隔行、ST-IF-05 一处路径少 ex",
+      "severity": "清单可复核性",
+      "detail": "ST-IF-04 的 anchors_peer、both_sides_referenced 与 ST-T9 的 anchors 三处引 preset-card-generation/SKILL.md:182，实测该行＝「|---|---|---|」，含 story-architecture-and-longform-planning 的实体行是 :183；ST-IF-05 的 missing_field_branch 把路径写成 line-editing-and-proofreading/amples/worked-example.md:91（缺 ex），按该路径检索为文件不存在，同条 anchors_peer 与 conflict_note 用的是正确路径 examples/worked-example.md:91（内容属实）。brief 全部 927 处 file:line 锚点逐条解析：仅这 1 处路径不可达，其余行号均在真实文件范围内。",
+      "impact": "复核者按清单取行会取到空行或不存在的文件，误判为「对端未引用」。",
+      "repro": {
+        "command": "python3 解析 brief.json 全部 file:line → os.path.exists 与行数上界；再打印 preset-card-generation/SKILL.md 第 182、183 行",
+        "output_summary": "927 条解析，PATH_NOT_FOUND 1 处（…/amples/worked-example.md:91）；182 行为表格分隔行，183 行含 story-architecture-and-longform-planning。"
+      },
+      "recommend": "清单侧修 4 个字符串（1 处路径＋3 处 :182→:183）；不涉及成品包。"
+    },
+    {
+      "id": "K5-F07",
+      "title": "ST-AP-01 把 references/plot-rules.md:210 称为 PL-13 区段，实为 PL-06 分支表行",
+      "severity": "清单锚点错位",
+      "detail": "plot-rules.md:210＝「| B1 前债 | 前文施恩/赠物/透露信息，后文恰好破障（童话常用） | …」属 PL-06（199-230）；PL-13 区段是 434-463，其中「不得把历史出版参数当作当代规范」在 :461，「C 伪容器」分支在 :445。",
+      "impact": "「历史数字不作规范」这条 limitation 的权威行号被指到巧合规则区，跨文件复核时容易得出「PL-13 没写该禁令」的错判。",
+      "repro": {
+        "command": "sed -n '210p;461p' references/plot-rules.md",
+        "output_summary": "210 行是 PL-06 的 B1 前债行；461 行才是 PL-13 的历史参数禁令。"
+      },
+      "recommend": "清单侧把锚点改为 references/plot-rules.md:445、:461。"
+    },
+    {
+      "id": "K5-F08",
+      "title": "SV-16 的记录面没有可填列：清单两列 vs「未能核实」要求",
+      "severity": "功能可达性",
+      "detail": "SKILL.md:327 声明核对项清单兼作记录面；references/serial-chapters-and-installments.md:58-65 的表只有「核对项／要确认的内容」两列，同文件 :67 要求缺失项标「未能核实」。全包另三张记录面都自带状态列（templates/plot-canvas.md:9、templates/plot-scene-table.md:9、templates/plot-diagnosis-report.md:7、templates/serial-tables.md:7/:47）。ST-T11 与 ST-CAP-17 的 expected「六项逐项确认、缺的标未能核实」在该表结构上无处可记。",
+      "impact": "SV-16 是本包唯一没有模板落点的产物（brief ST-G05 已登记不对称），本席补的是更深一层：连 references 层的清单形态也不可填。",
+      "repro": {
+        "command": "python3 按「strip('|') 后 split('|') 的格数」统计 references/serial-chapters-and-installments.md 第 58–65 行",
+        "output_summary": ":58 表头为 2 列（核对项／要确认的内容），:59 分隔行 2 列，:60–:65 六个数据行均 2 列；无状态／结论／证据位置格。包内其它记录面（templates/plot-canvas.md:9、plot-scene-table.md:9、plot-diagnosis-report.md:7 各 6–7 列且含「状态」，serial-tables.md:7 与 :47 含状态列）形态不同。"
+      },
+      "recommend": "未授权修改；交收口席决定在 references 表加第三列或在 templates 增设 §13。"
+    },
+    {
+      "id": "K5-F09",
+      "title": "「最小交付集」计数不稳：六项之外 PA-12 同句被写成必需",
+      "severity": "口径小分歧",
+      "detail": "references/plot-planning.md:199「最小交付集：PA-03、PA-05、PA-06、PA-07、PA-08、PA-11 + PA-12（未决项）。其余字段可先“未知”，但要在 PA-12 列出……」；brief ST-CAP-03 记「最小交付集六项」。同时 templates/plot-canvas.md:69 完成检查要求 PA-01–PA-12 每行有值或「未知」。",
+      "impact": "交付面最小集是三档口径（6／7／12＋未知），ST-T1 只要求四件产出，验收时无唯一判据。",
+      "repro": {
+        "command": "grep -n '最小交付集' references/plot-planning.md",
+        "output_summary": "1 处命中（:199），六项加 PA-12。"
+      },
+      "recommend": "未授权修改；建议清单侧统一为「六项＋PA-12」。"
+    },
+    {
+      "id": "K5-F10",
+      "title": "正控制：包内不存在第四套状态词由界面文件引入，且 §10 与 §7 交付面覆盖 20 个文件中的 19 个",
+      "severity": "澄清（非缺陷）",
+      "detail": "agents/openai.yaml 的 default_prompt（:6）只承诺「标明“假设”的草案，最多问我三个问题」，与 SKILL.md:73、:360 一致，未新增状态词；policy.allow_implicit_invocation: false（:8）。§10 表 19 行覆盖 19 个 md，未入表的是 SKILL.md 自身与 agents/openai.yaml（非补读文件）；brief ST-G05 的 measured 写「19 行与实际 19 个非 SKILL 文件一一对应（集合差为空）」，按 find 实测非 SKILL 文件为 20 个，集合差＝{agents/openai.yaml}。",
+      "impact": "该句若被当作「全包文件都登记」的验收依据会得出错误结论；界面文件不进参考表本身合理。",
+      "repro": {
+        "command": "find . -type f | grep -v '^./SKILL.md$' | wc -l",
+        "output_summary": "20（brief 记 19）。"
+      },
+      "recommend": "清单侧把该句限定为「19 个 md 文件」。"
+    }
+  ],
+  "unproven": [
+    {
+      "id": "K5-U01",
+      "title": "规则与模板的真实写作效果",
+      "status": "not_proven",
+      "why": "包内自述只做过静态核对（references/plot-rules.md:10、SKILL.md:397、references/plot-scope-and-conflicts.md:125、examples/plot-examples.md:287-289），无真实稿件运行记录；本席权限 static，未启动应用或跑任何测试。",
+      "missing": "真实任务的输入／交付／效果对照记录与读者数据口径。"
+    },
+    {
+      "id": "K5-U02",
+      "title": "「模板空行」唯一判据（30 vs 67）",
+      "status": "not_proven",
+      "why": "本席独立按「去掉表头与分隔行后，该行所有单元格 strip 为空」实测：templates/plot-canvas.md 3 行（65-67）、templates/plot-scene-table.md 17 行（40-47、55-57、65-67、75-77）、templates/plot-diagnosis-report.md 3 行（62-64）、templates/serial-tables.md 7 行（23、49、83、87、109、113、137）＝30，与 brief ST-G02 草案侧同值；主代理侧的 67 按该字面判据不可复现，另 4 种判据（至少一格空、空格数≥列数−1／−2、末格空）本席未重试。带提示词的行（templates/serial-tables.md:17「每章／每期」、:57、plot-diagnosis-report.md:53「阻断/重要/建议」）是否算占位属判据选择，不是文本事实。",
+      "missing": "主代理侧 67 的算式与判据 Owner；本席未读 checklist.md／log.md 故无从核对。"
+    },
+    {
+      "id": "K5-U03",
+      "title": "「54 条 ID 独占行」计数",
+      "status": "not_proven",
+      "why": "本席按「首个单元格以 PA/ST/DR 编号开头」实测 12＋24＋11＝47，加 references/serial-platform-migration.md:45-50 的 6 行 T 项＝53；templates/serial-tables.md 无 ID 独占行（实测 0）。两种判据都得不到 54，且 79 个唯一编号（PL16＋SV16＋PA12＋ST24＋DR11）已用集合实测。",
+      "missing": "54 的判据定义（是否含 serial-tables 列说明行或 E-xx／F-xx 示例行）。"
+    },
+    {
+      "id": "K5-U04",
+      "title": "brief 与 16:29 修订的先后意图",
+      "status": "not_proven",
+      "why": "SKILL.md mtime 16:29、brief adopted_at 16:35 且 adopted_by 注明「草案席原内容未改，仅改 kind/status 并加 adopted_*」，故 ST-G04／「两案」记录的滞留是有意保留还是漏同步，属主代理判断；本席未读 log.md、checklist.md、w4 队列。",
+      "missing": "主代理对「是否更正 brief 四处口径」的一次裁定。"
+    },
+    {
+      "id": "K5-U05",
+      "title": "对端是否有隐含承接字段（ST-IF-02／ST-IF-06）",
+      "status": "not_proven",
+      "why": "本席只读对端被 brief 点名的行，未整读对端包；character-and-narrative-control 与 genre-fiction-craft 是否在别处写了「视点线由本包卷表承接」「分卷归 SV-02／SV-13」，需对端席位按同一行号口径复核。",
+      "missing": "对端全包检索（本席为控制读取面而未做）。"
+    },
+    {
+      "id": "K5-U06",
+      "title": "「每篇独立、共享人物的系列短篇」的组合适用面（ST-T4／ST-T13）",
+      "status": "not_proven",
+      "why": "包内给的是两条分离条款——SV 卡不适用短篇（references/serial-volume-and-closure.md:24）与系列卷班底跨卷（:16），组合情形（多卷共享班底但每篇独立、是否按期级发表）没有一条规则直接判定；SKILL.md:66 只解决「分期发表的短篇」，未覆盖「成集出版的系列短篇」。",
+      "missing": "该组合的裁决条款或作者实例；本轮无运行证据。"
+    }
+  ],
+  "round_complete": {
+    "seal": "RV-story review-independent-r1 complete（story-architecture-and-longform-planning）",
+    "time": "2026-11-06T00:04:23+08:00",
+    "spot_checks": 11,
+    "partial_rerejudged": 7,
+    "binding_recheck": {
+      "self_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+      "brief_sha256": "8537a5662c2dc3ff238d7f8cdb7a6fc1bdfd4f45f8528936375f00c449082863",
+      "three_way": "一致（实测＝tsv＝draft）",
+      "peers_refreshed": [
+        "genre-fiction-craft → 07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca（101 件／1,058,179 B）"
+      ],
+      "peers_unchanged": 6,
+      "measured_at": "2026-11-06T00:04:23+08:00"
+    }
+  },
+  "gq_status_note": "gq[].status 档名按 W4-133 规范用 FAIL/STATIC_CHECKED/NOT_PROVEN（sections[] 五组行用 pass/fail/not_proven，两组字面集不同）。本件由草案 gq 档映射：GQ1 pass→STATIC_CHECKED、GQ2 fail→FAIL、GQ3 fail→FAIL、GQ4 fail→FAIL、GQ5 not_proven→NOT_PROVEN；映射不改变任何判定、证据与 note。两处数据级修正（非判定改动，均本席实测）：①GQ3.peers 与 ST-IF-06.peer 的 genre-fiction-craft 过期值 bc6e9175…／1,052,159 B 按 2026-11-06T00:04:23+08:00 实测刷新为 07d638e5…／1,058,179 B（＝k5-bindings-2026-11-05.tsv 该行；其余对端复测与草案一致）；②GQ3.sv16 判词中「按 :71 找会落空，只有 §10 的 :375、:378 两格有去向」与草案自引的 serial-rules.md:1 转指句及 SKILL.md:327 去向矛盾，已更正为「路由可达，但『SV 卡权威正文在 serial-rules.md』的声明与卡体实际分布不一致」——GQ3 的 FAIL 判定不变（why_fail①②③独立成立，记录面缺陷 K5-F08 成立）。另：草案 GQ1 residual／GQ4 key_checks 中两处「记为 partial／判 partial」原句保留并加 RV-story 复核括注。",
+  "tree_inventory": {
+    "files": 21,
+    "total_bytes": 283891,
+    "per_file_sha256": [
+      {
+        "path": "SKILL.md",
+        "sha256": "1f87001f760054a1210e3be1d64c82e0266f8892314d43ba37099def32a84d26"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "2c094aa84603dd787e0921619debbc9a05fbcfb4ba545fa425f8f8d8f0718e1d"
+      },
+      {
+        "path": "examples/plot-examples.md",
+        "sha256": "4e0c101e63d0ad3e4a0e73bba92fc6b4bed903d0be1b337c49889386b37b86b1"
+      },
+      {
+        "path": "examples/serial-examples.md",
+        "sha256": "6ef91b611fafde020f21ee9935bdc643cf39831f5b642754e84afa6622083a32"
+      },
+      {
+        "path": "references/plot-diagnosis.md",
+        "sha256": "8b1b67f8cc99d7909c7c059da20d6e3332ab7769fe30b6441cac3e47882cd767"
+      },
+      {
+        "path": "references/plot-planning.md",
+        "sha256": "387148d713fac26dda8d995a2b008388c0c5269a7c7465a47a03f274a951c860"
+      },
+      {
+        "path": "references/plot-revision.md",
+        "sha256": "9597e4c403e2d16c0491895e01da47155abcb49f42a17a8ba782ae0b07e5112e"
+      },
+      {
+        "path": "references/plot-rules.md",
+        "sha256": "c5526051a77a462432f07d44c2dacce5ef190d12cc5a357db5de4b0b2cdd7931"
+      },
+      {
+        "path": "references/plot-scope-and-conflicts.md",
+        "sha256": "6b9bff8a149e4defbdb97fc1877d4750aeeaca0b7b05ccd567e703b23ced2ad0"
+      },
+      {
+        "path": "references/serial-chapters-and-installments.md",
+        "sha256": "4423b122fff71505293d75f14f52bfc9c057971a14b65bd629e9690de8498ead"
+      },
+      {
+        "path": "references/serial-formula-and-escalation.md",
+        "sha256": "c7f31a22e1c28876421577e4009c5c66892509a4c263f026b6c24f540a88ec62"
+      },
+      {
+        "path": "references/serial-open-lines-and-continuity.md",
+        "sha256": "5bd315aba852d076e21eb7e78cddfd9128ed6356a4cbe38a06f36f03ada88df2"
+      },
+      {
+        "path": "references/serial-platform-migration.md",
+        "sha256": "dc4d71bfafd710353990fd161103ebd34aa91dce5008e501646d1fbf21260acd"
+      },
+      {
+        "path": "references/serial-production.md",
+        "sha256": "4d0b7d17799524201f8784843e3d02fa549db8e0fd14a5a3da4bf22fa3ea0b78"
+      },
+      {
+        "path": "references/serial-rules.md",
+        "sha256": "c2e93376875f923222f46f2331bae6506a459d30d9d332ac4eaa4504c1ee227c"
+      },
+      {
+        "path": "references/serial-volume-and-closure.md",
+        "sha256": "2bc2fae5c6abde3e251fd72c641a22c1b3e26254b229ff840f772b3b99e3a236"
+      },
+      {
+        "path": "references/serial-zh-webnovel.md",
+        "sha256": "0e09213ac90d4d1c3ae19f9be3f55a17b45e581691054cda3a3c7e0cb8fdd719"
+      },
+      {
+        "path": "templates/plot-canvas.md",
+        "sha256": "fc001c9019a157d79f6422e9dcf7a931ec4a11810661adffb9c26aa133eada47"
+      },
+      {
+        "path": "templates/plot-diagnosis-report.md",
+        "sha256": "ef33a0a47750f1ed6a9fb966c4aea76c041fed3f613bbb86d12aad7aa3dbbc03"
+      },
+      {
+        "path": "templates/plot-scene-table.md",
+        "sha256": "5729707cb3afdcd368ad7d2c187253e956c49461c572095a42bc7395ee9d31b9"
+      },
+      {
+        "path": "templates/serial-tables.md",
+        "sha256": "829cb9ce1f3e1cbf836c2b5097b181c7f402800d52f78259bf8bab38d08e9545"
+      }
+    ],
+    "composition": "20 个 .md＋1 个 agents/openai.yaml；无隐藏文件；与 tsv 行 21／283891 一致"
+  },
+  "method": {
+    "verification_authority": "static：只读、检索、文本比较、逐行取行与哈希；未跑测试／lint／构建／宿主加载，未执行任何成品脚本；落盘改动仅限本文件",
+    "scope": "采纳重验（非从头重审）：绑定三方比对→五组条数与 ID 集比对→7 行 partial 逐条回 brief 与被审包原文重判→五组各抽 ≥2 条核锚点（改判 7 行全在内）→GQ2/GQ4 fail 依据复验→GQ1 automation 抽查→对端树复测",
+    "anchor_recheck": "改判 7 行＋抽验 4 行（YQ-R10、ST-AP-02、ST-T1、ST-T11）的全部 refs 逐条回原文取行：文件在、行号在范围内、语义与判定相符（±0 漂移）；YQ-R14/ST-CAP-17/ST-CAP-14/ST-CAP-03/ST-IF-02/ST-IF-06/ST-AP-01 的每条依据行均在本席会话内实测打印",
+    "gq_spot_recheck": "GQ2-3 的 §10「同上」链（:386→:385 单层、:387 双层、:388 三层）、GQ2-4／K5-F01 的 grep 断言（两案 0、激进 0、SKILL.md 六项 0、:371 现文「四项输入的收法」）、K5-F07 的 :210/:461 行、GQ1 automation（openai.yaml 不授权＋allow_implicit_invocation: false、「脚本」4 处均为否定式自述、非 md/yaml 文件 0）均独立复现为真",
+    "not_done": "未重取 brief 全部 927 处锚点（草案已全扫，本席抽验未发现新错锚）；未整读对端包（K5-U05 仍开放）；未验证宿主加载与模型执行效果"
+  },
+  "bound_to_tree_sha": {
+    "algorithm": "对 output/story-architecture-and-longform-planning/ 递归枚举全部文件（含 agents/、templates/、examples/、references/），按相对路径字节序升序，逐文件拼 \"<relpath>\\t<sha256(该文件原始字节)>\\n\"，再对整串取 sha256（与 skills/knowledge-compiler/scripts/kd_round_output.py 同算法，本席经该脚本实测）",
+    "self": "output/story-architecture-and-longform-planning",
+    "self_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+    "self_files": 21,
+    "self_bytes": 283891,
+    "three_way_check": "实测 = k5-bindings-2026-11-05.tsv 本行 = review-draft.json skill_tree_sha256 = ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07（21 件／283,891 B）；brief_sha256 三方亦一致（8537a566…，本席对 brief.json 原始字节实测）。一致，未触发停手。",
+    "matches_tsv": true,
+    "checked_at": "本席会话内首测与写盘前复测同值（写盘前复测时点见 tree_recheck_after_write.measured_at）",
+    "peers_measured": {
+      "scene-conflict-and-rhythm": {
+        "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+        "files": 17,
+        "bytes": 168166,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "character-and-narrative-control": {
+        "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+        "files": 17,
+        "bytes": 193531,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "fiction-planning-and-diagnosis": {
+        "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+        "files": 27,
+        "bytes": 348056,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "preset-card-generation": {
+        "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+        "files": 11,
+        "bytes": 113900,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "line-editing-and-proofreading": {
+        "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+        "files": 10,
+        "bytes": 114211,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "genre-fiction-craft": {
+        "peer_tree_sha256": "07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca",
+        "files": 101,
+        "bytes": 1058179,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      },
+      "cross-media-drama-adaptation": {
+        "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+        "files": 13,
+        "bytes": 76222,
+        "measured_at": "2026-11-06T00:04:23+08:00"
+      }
+    }
+  },
+  "draft_provenance": {
+    "source_file": "review-draft.json",
+    "source_status": "draft-not-frozen",
+    "original_reviewer": "K5 质量审查席（非作者席位：本席未参与本包 SKILL.md／references／templates 与 brief 草案的任何写入，只读成品包＋同目录 brief.json＋K4-r1.md（仅作线索，状态逐条自证）；结论为草案，待主代理复测采纳）",
+    "original_round_complete": "review-draft-complete story",
+    "draft_sha256": "7a21f6ee5626f3543f5231ac7f5d8472c70b669922272dc6ca6d1e5b9ee9b963",
+    "covered_previous": "被覆盖的旧 review.json 经 cmp 与 review.json.v0-2026-11-05 完全一致（W3 骨架，skeleton_not_frozen），等值覆盖，无差异需留证",
+    "upgrade_note": "前席（K5 质量审查席）交付 draft 后被额度击杀，本席（RV-story，非作者）按采纳重验任务书重验后升为正式件：status→review-independent-r1；gq[] 档名归一（承 W4-133）；草案 7 行非法档 partial 逐条回原文重判（YQ-R14→pass、ST-CAP-03→pass、ST-CAP-14→pass、ST-CAP-17→fail、ST-IF-02→pass、ST-IF-06→pass、ST-AP-01→pass，共 6 pass＋1 fail，各附 note 与依据行），无 partial 带入正式件；genre 对端过期哈希按实测刷新；GQ3.sv16 一处过重措辞按实测更正（判定不变）。sections 其余行的判定与 refs、gq 五条的判定／证据、semantics、findings、unproven 均未改动；review-draft.json 原样保留。"
+  },
+  "rv_recheck": {
+    "date": "2026-11-05/06（跨零点会话，写盘前复测时点见 tree_recheck_after_write）",
+    "scope": "绑定三方比对；五组条数与 ID 集比对；gq 档名核查与 W4-133 归一；7 行 partial 逐条回原文重判；五组各抽 2 条（requirements YQ-R10、capabilities ST-CAP-03/14/17、interfaces ST-IF-02/06、applicability ST-AP-01/02、cases ST-T1/ST-T11，另含改判行 YQ-R14/ST-AP-01）回被审包原文核锚点；GQ2/GQ4 fail 依据复验；7 棵树复测（6 对端＋cross-media）。",
+    "section_counts": {
+      "requirements": 18,
+      "capabilities": 18,
+      "interfaces": 6,
+      "applicability": 8,
+      "cases": 13,
+      "equal_to_brief": true,
+      "id_sequences_equal": true
+    },
+    "partial_rerejudged": {
+      "YQ-R14": "pass",
+      "ST-CAP-03": "pass",
+      "ST-CAP-14": "pass",
+      "ST-CAP-17": "fail",
+      "ST-IF-02": "pass",
+      "ST-IF-06": "pass",
+      "ST-AP-01": "pass"
+    },
+    "spot_checks": [
+      "YQ-R14（partial→pass）",
+      "YQ-R10（pass）",
+      "ST-CAP-03（partial→pass）",
+      "ST-CAP-14（partial→pass）",
+      "ST-CAP-17（partial→fail）",
+      "ST-IF-02（partial→pass，双侧逐行）",
+      "ST-IF-06（partial→pass，双侧逐行）",
+      "ST-AP-01（partial→pass）",
+      "ST-AP-02（pass）",
+      "ST-T1（pass）",
+      "ST-T11（pass）"
+    ],
+    "spot_check_result": "11 条抽验锚点逐行命中（文件在、行号在范围内、语义与判定相符）；GQ2-3「同上」链、GQ2-4／K5-F01 grep 断言、K5-F07 :210/:461、GQ1 automation 断言均独立复现为真。抽验发现 1 处草案措辞与实测不符（GQ3.sv16「按 :71 找会落空」）与 1 处对端哈希过期（genre），均已按实测更正并在 gq_status_note 记录；无新增成品级缺陷。",
+    "peer_trees_remeasured": {
+      "scene-conflict-and-rhythm": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+      "character-and-narrative-control": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+      "fiction-planning-and-diagnosis": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+      "preset-card-generation": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+      "line-editing-and-proofreading": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+      "genre-fiction-craft": "07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca",
+      "cross-media-drama-adaptation": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5"
+    },
+    "peer_result": "7 棵树全部与 tsv 一致；草案仅 genre 一条过期（bc6e9175…→07d638e5…），已刷新；character 及其余 4 棵与草案同值。"
+  },
+  "limits": [
+    "修复归属：GQ2（FAIL）、GQ3（FAIL）、GQ4（FAIL）所列缺陷与 K5-F02/F03/F04/F05/F08 及 ST-CAP-17 记录面缺陷的修复归主代理修复批，需作者决定件先行（K5-F01 的 brief 四处口径二选一、F02 容量表字段数唯一化、F05 §10 出口列写实、F08 记录面加列或增设模板、F03/F04 状态词与示例列数统一等均为作者/收口席裁决项）；本席不修复、不代改任何成品（output/ 与 brief.json、review-draft.json 均零触碰）。",
+    "GQ5 保持 NOT_PROVEN：无真实任务授权（用户裁决 D3=C），长期不变；不得写成效果已验证。",
+    "验证权限＝static：全部结论来自只读、检索、文本比较与哈希；不证明宿主加载、模型执行或读者效果。",
+    "对端读取面：对端包只读被 interfaces 引用的指定行及上下文，未整读（K5-U05 仍成立——对端是否有隐含承接字段无法由本席证明）；对端树整树摘要为本席复测，非对端席位会签。",
+    "对端绑定时效：genre 树在草案读取后仍有变动史（bc6e9175→07d638e5，scene 席与本席两次实测同值）；若对端再动，interfaces 行号与 peer_tree_sha256 需重测重绑。",
+    "YQ-R14（pass）与 ST-CAP-17（fail）同指 SV-16：需求侧按「载体审计需求已实现」判、能力侧按「声明记录面不可填」判，分档口径见两行 note；主代理对记录面修复方式的裁决落地后，两行需同批复议。"
+  ],
+  "tree_recheck_after_write": {
+    "tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+    "files": 21,
+    "bytes": 283891,
+    "measured_at": "2026-11-06T00:04:23+08:00（写本文件前一刻复测）",
+    "note": "本文件写入 notes/quality/…，不触及 output/，写后绑定应仍为本值；写后断言已复核。"
+  }
+}

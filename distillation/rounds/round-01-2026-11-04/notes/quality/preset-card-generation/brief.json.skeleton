@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "preset-card-generation",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "PC-T1",
+      "kind": "positive",
+      "scenario": "为一部都市异能连载生成推进模式卡",
+      "expected": "交付推进卡，并通过交付前检查"
+    },
+    {
+      "id": "PC-T2",
+      "kind": "missing",
+      "scenario": "要文风卡，但没给样文，也没描述",
+      "expected": "先要样文；先给几种候选文风让作者选"
+    },
+    {
+      "id": "PC-T3",
+      "kind": "conflict",
+      "scenario": "已锁定的文风卡要求短句，新的表达约束卡写「不要碎句」",
+      "expected": "走版本和锁定内容的冲突出口，不擅自覆盖已锁定的卡"
+    },
+    {
+      "id": "PC-T4",
+      "kind": "boundary",
+      "scenario": "要给图片生成模型写提示词卡（不是小说）",
+      "expected": "判为负触发，说明不适用"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

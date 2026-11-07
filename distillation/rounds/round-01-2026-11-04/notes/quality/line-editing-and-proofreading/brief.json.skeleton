@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "line-editing-and-proofreading",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "LE-T1",
+      "kind": "positive",
+      "scenario": "一段约 800 字的中文小说正文，要求精修句子和标点，保留口吻",
+      "expected": "先定第 0 轮的三件事，再按层次改，交付改后文本和逐条说明"
+    },
+    {
+      "id": "LE-T2",
+      "kind": "missing",
+      "scenario": "只有一句「帮我润色」，不说用途、体例和读者",
+      "expected": "先问；用户不答时按最小改动处理，并列出所做的假设"
+    },
+    {
+      "id": "LE-T3",
+      "kind": "conflict",
+      "scenario": "要求「每句都更有力」，同时要求保留方言口语和意识流段落",
+      "expected": "先判负触发：口语和意识流段不改，冲突列给作者选"
+    },
+    {
+      "id": "LE-T4",
+      "kind": "boundary",
+      "scenario": "英文对白稿，只要拼写和标点校对",
+      "expected": "只做机械层，不碰风格"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

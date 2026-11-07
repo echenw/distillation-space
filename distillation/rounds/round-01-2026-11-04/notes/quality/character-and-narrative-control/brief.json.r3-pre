@@ -1,0 +1,1654 @@
+{
+  "version": 1,
+  "kind": "frozen-for-review",
+  "skill": "character-and-narrative-control",
+  "status": "adopted-for-review-not-final",
+  "assembled_by": "W4 质量 brief 草案席（非独立审核方；结论留给后续 review 席位）",
+  "assembled_at": "2026-11-05",
+  "case_source": "骨架 4 条来自 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）；草案新增 4 条为成品包条款盘点时观察到的真实难例，标注见各条 note",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "本文件是 R09 §6.1 的 brief 草案，不是冻结件；只写事实与位置，不给通过结论。骨架 brief.json 未改动。成品包＝output/character-and-narrative-control/（17 文件 2,117 行，wc -l 实测）。anchor 全部为本轮 /usr/bin/grep -n 绝对路径实测行号。",
+  "requirements": [
+    {
+      "id": "CQ-R01",
+      "text": "视角合同：说清谁在讲、从谁的眼睛看、视点人物此刻能不能知道、能进谁的意识（总需求「视角合同」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:70",
+        "SKILL.md:145",
+        "SKILL.md:295",
+        "references/narrator-and-viewpoint.md:55",
+        "references/narrator-and-viewpoint.md:65",
+        "templates/narrative-workbook.md:19"
+      ]
+    },
+    {
+      "id": "CQ-R02",
+      "text": "叙述距离：贴身／中距／远距、距离在一场内稳定、变化要重新锚定（总需求「叙述距离」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:148",
+        "SKILL.md:163",
+        "SKILL.md:295",
+        "references/narrator-and-viewpoint.md:127",
+        "references/scene-summary-and-time.md:81",
+        "references/zh-and-serial.md:16"
+      ]
+    },
+    {
+      "id": "CQ-R03",
+      "text": "信息控制：读者与人物各知道什么、什么时候知道，合法的隐瞒、不可靠证据、侧写与揭示、全书单一信息表（总需求「信息控制」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:57",
+        "SKILL.md:76",
+        "SKILL.md:153",
+        "SKILL.md:156",
+        "references/information-control.md:23",
+        "references/information-control.md:38",
+        "references/information-control.md:40",
+        "references/information-control.md:52",
+        "references/information-control.md:82",
+        "references/information-control.md:88"
+      ]
+    },
+    {
+      "id": "CQ-R04",
+      "text": "证词与自辩：多层证词、转述链、分版本记账（谁说／何时说／对谁说／外证与反证），更晚更坦白的一版不自动为真（总需求「证词与自辩」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:78",
+        "SKILL.md:182",
+        "SKILL.md:295",
+        "references/testimony-and-self-justification.md:8",
+        "references/testimony-and-self-justification.md:10",
+        "templates/narrative-workbook.md:35"
+      ]
+    },
+    {
+      "id": "CQ-R05",
+      "text": "心理落到动作、身体、沉默、物件和关系上，并守住「文学写法不等于临床知识」（总需求「心理落到动作」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:86",
+        "SKILL.md:193",
+        "SKILL.md:295",
+        "references/psychology-in-action.md:1",
+        "references/social-pressure-and-silence.md:1",
+        "references/objects-loss-and-change.md:1",
+        "templates/narrative-workbook.md:49"
+      ]
+    },
+    {
+      "id": "CQ-R06",
+      "text": "非线性与时间机制：先分类（披露重排／记忆重排／故事内异常）、四列并进同一张信息表、机制不可互相代替、TM-01 至 TM-18 机制卡（总需求「非线性与时间机制」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:92",
+        "SKILL.md:94",
+        "SKILL.md:166",
+        "references/nonlinear-time.md:7",
+        "references/nonlinear-time.md:21",
+        "references/nonlinear-time.md:48",
+        "references/time-mechanisms.md:1",
+        "templates/narrative-workbook.md:76"
+      ]
+    },
+    {
+      "id": "CQ-R07",
+      "text": "场景与概述：三种叙述单位、概述的三种正职、跨越时间先写日子、可选配比试算不作门槛（总需求「场景与概述」，suite-contract:17 责任行）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:160",
+        "SKILL.md:161",
+        "SKILL.md:162",
+        "references/scene-summary-and-time.md:5",
+        "references/scene-summary-and-time.md:13",
+        "references/scene-summary-and-time.md:23",
+        "references/scene-summary-and-time.md:58",
+        "references/scene-summary-and-time.md:64"
+      ]
+    },
+    {
+      "id": "CQ-R08",
+      "text": "模板字段：交付物五张卡加审稿十问、起点值表、逐编号台账，字段可填、缺省有「未知」口径（总需求「模板字段」）",
+      "status": "covered",
+      "anchors": [
+        "templates/narrative-workbook.md:7",
+        "templates/narrative-workbook.md:27",
+        "templates/narrative-workbook.md:49",
+        "templates/narrative-workbook.md:76",
+        "templates/narrative-workbook.md:91",
+        "templates/narrative-workbook.md:101",
+        "templates/narrative-workbook.md:116",
+        "templates/narrative-workbook.md:132",
+        "templates/narrative-workbook.md:134",
+        "SKILL.md:103"
+      ]
+    },
+    {
+      "id": "CQ-R09",
+      "text": "失败出口：缺料、冲突、越界、要打分、要真实诊断、作者不答等情形各自停在哪、转给谁（总需求「失败出口」）",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:260",
+        "SKILL.md:275",
+        "SKILL.md:279",
+        "SKILL.md:281",
+        "SKILL.md:287",
+        "SKILL.md:289",
+        "SKILL.md:291",
+        "references/diagnosis.md:190",
+        "references/diagnosis.md:198"
+      ]
+    },
+    {
+      "id": "CQ-R10",
+      "text": "文学层面与现实层面的分界：不给真人下病名、不提供自伤方法细节、不把文学结局说成现实疗效；现实判断退出后小说部分照常做",
+      "status": "partial",
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:35",
+        "SKILL.md:250",
+        "references/boundaries-and-ethics.md:13",
+        "references/boundaries-and-ethics.md:45",
+        "references/boundaries-and-ethics.md:58",
+        "references/boundaries-and-ethics.md:91",
+        "examples/psychology-cases.md:95"
+      ],
+      "partial_reason": "退出条款只有情形陈述（SKILL.md:60、examples/psychology-cases.md:95 均以「用户其实在问…」起句），包内无「什么信号算命中」的识别判据；亦无「疑似即时危险时建议求助」条文——/usr/bin/grep -rn 实测「求助」全包 1 命中（references/social-pressure-and-silence.md:47，指人物在故事里求助的对象，非现实建议），「热线」0 命中。见 CQ-G03。"
+    },
+    {
+      "id": "CQ-R11",
+      "text": "交付状态口径：对作者只用已完成／依据／未能核实／待作者决定四词，逐项给依据；判断按五档标注",
+      "status": "partial",
+      "anchors": [
+        "SKILL.md:262",
+        "SKILL.md:264",
+        "SKILL.md:268",
+        "SKILL.md:273",
+        "SKILL.md:105",
+        "references/boundaries-and-ethics.md:81",
+        "references/boundaries-and-ethics.md:91",
+        "templates/narrative-workbook.md:142"
+      ],
+      "partial_reason": "四词与五档并存无映射、「超出范围」在四词内无落位；「已完成」定义（SKILL.md:268）与包内唯一示范（examples/pov-cases.md:110-111、:136）互斥。见 CQ-G01、CQ-G02。"
+    },
+    {
+      "id": "CQ-R12",
+      "text": "诊断已有稿子的顺序与闭环：范围→主体→视点→合同→信息→场景与概述→时间→世界边界→人物心理；诊断→修订→复查→回退，含负面回归与连续性回归",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:97",
+        "SKILL.md:99",
+        "references/diagnosis.md:5",
+        "references/diagnosis.md:17",
+        "references/diagnosis.md:162",
+        "references/diagnosis.md:186",
+        "references/diagnosis.md:198",
+        "references/diagnosis.md:205"
+      ]
+    },
+    {
+      "id": "CQ-R13",
+      "text": "中文与网文连载的迁移条款：称呼即视点、无时态时的距离控制、面板弹幕类装置、重生文时间合同、日更锚定",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:239",
+        "references/zh-and-serial.md:7",
+        "references/zh-and-serial.md:16",
+        "references/zh-and-serial.md:25",
+        "references/zh-and-serial.md:35",
+        "references/zh-and-serial.md:44",
+        "references/zh-and-serial.md:54"
+      ]
+    },
+    {
+      "id": "CQ-R14",
+      "text": "跨 skill 边界：触发／负触发／转介表、重叠请求分法、与 preset-card-generation 的双向转介与「双向对照」不变量",
+      "status": "partial",
+      "anchors": [
+        "SKILL.md:13",
+        "SKILL.md:17",
+        "SKILL.md:26",
+        "SKILL.md:39",
+        "SKILL.md:41",
+        "SKILL.md:293",
+        "SKILL.md:299",
+        "SKILL.md:309",
+        "SKILL.md:314",
+        "SKILL.md:316",
+        "SKILL.md:318"
+      ],
+      "partial_reason": "本包侧的转出与反向接收条文齐（SKILL.md:309-317），但 interface 的对端引用不齐：与 scene-conflict-and-rhythm 的「SC-06」对端行号、与 cross-media 的互动叙事对端行号需两侧同时核对；本包 SKILL.md:325 与 :322 未给对端锚。逐条见 interfaces[] 与 CQ-G05。"
+    },
+    {
+      "id": "CQ-R15",
+      "text": "成品自足（长期约束 1／2）：不出现书名、作者、来源编号、别人的项目；例子一律自创并标明",
+      "status": "covered",
+      "anchors": [
+        "SKILL.md:61",
+        "references/narrator-and-viewpoint.md:3",
+        "references/information-control.md:3",
+        "references/nonlinear-time.md:77",
+        "references/time-mechanisms.md:6",
+        "examples/pov-cases.md:3",
+        "examples/psychology-cases.md:3"
+      ],
+      "verified": "/usr/bin/grep -rn 实测全包「出处」「原著」「页码」「来源行」各 0 命中（命中数按文件回显，非空扫描）"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "CQ-CAP-01",
+      "family": "叙述者与视点",
+      "kind": "workflow",
+      "rule_ids": [
+        "PV-01",
+        "PV-02",
+        "PV-03",
+        "PV-04",
+        "PV-05",
+        "PV-06",
+        "PV-07",
+        "PV-08"
+      ],
+      "what": "定主体→选视点中心→定叙述位置与人称→写视角合同三层→建切换账本→限知补光→定叙述距离→演出意识；交付视角方案卡。",
+      "anchors": [
+        "SKILL.md:142",
+        "SKILL.md:143",
+        "SKILL.md:144",
+        "SKILL.md:145",
+        "SKILL.md:146",
+        "SKILL.md:147",
+        "SKILL.md:148",
+        "SKILL.md:149",
+        "references/narrator-and-viewpoint.md:5",
+        "references/narrator-and-viewpoint.md:19",
+        "references/narrator-and-viewpoint.md:31",
+        "references/narrator-and-viewpoint.md:55",
+        "references/narrator-and-viewpoint.md:90",
+        "references/narrator-and-viewpoint.md:116",
+        "references/narrator-and-viewpoint.md:127",
+        "references/narrator-and-viewpoint.md:139",
+        "references/narrator-and-viewpoint.md:153",
+        "templates/narrative-workbook.md:7",
+        "SKILL.md:65"
+      ],
+      "limit": "不设固定人称或视点数量的硬门（SKILL.md:255）；「长篇一到三个主视点」是规划起点不是上限（RV:106、WB:123）；复调与多主体不压成单线（RV:17）；作者坚持全知插话、元叙事、说书体时只说代价不纠正趣味（DG:100、SKILL.md:288）。",
+      "counterexample_ref": [
+        "references/diagnosis.md:111",
+        "references/diagnosis.md:112",
+        "references/diagnosis.md:116",
+        "references/narrator-and-viewpoint.md:69",
+        "references/narrator-and-viewpoint.md:75",
+        "references/narrator-and-viewpoint.md:125",
+        "references/narrator-and-viewpoint.md:137"
+      ]
+    },
+    {
+      "id": "CQ-CAP-02",
+      "family": "信息控制",
+      "kind": "workflow",
+      "rule_ids": [
+        "PV-09",
+        "PV-10",
+        "PV-11",
+        "PV-16"
+      ],
+      "what": "画知识表（谁知道／读者知道吗／何时揭示／揭示后改变什么）→选五种合法隐瞒→不可靠叙述留四类证据→深层事实先侧写→揭示三查→高潮承重件提前就位；全书只维护一张信息表。",
+      "anchors": [
+        "SKILL.md:153",
+        "SKILL.md:154",
+        "SKILL.md:155",
+        "SKILL.md:156",
+        "references/information-control.md:7",
+        "references/information-control.md:12",
+        "references/information-control.md:23",
+        "references/information-control.md:40",
+        "references/information-control.md:52",
+        "references/information-control.md:67",
+        "references/information-control.md:82",
+        "references/information-control.md:88",
+        "references/information-control.md:97",
+        "templates/narrative-workbook.md:27",
+        "SKILL.md:76",
+        "SKILL.md:57"
+      ],
+      "limit": "四种信息结构都合法，按本作要的效果选（IC:10、IC:21）；没有公平解谜承诺时故意保留秘密不算错（IC:35、SKILL.md:153）；配比、侧影数、「一两处」都是起点不是条数要求（IC:34、IC:76、IC:84）；悬念强度、伏笔位置与回收清单不在此族（IC:5、SKILL.md:80）。",
+      "counterexample_ref": [
+        "references/information-control.md:50",
+        "references/information-control.md:99",
+        "references/information-control.md:100",
+        "references/information-control.md:101",
+        "references/information-control.md:102",
+        "references/information-control.md:106",
+        "references/diagnosis.md:114",
+        "references/diagnosis.md:115"
+      ]
+    },
+    {
+      "id": "CQ-CAP-03",
+      "family": "场景概述与时间（场内跨度层）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PV-12",
+        "PV-13",
+        "PV-14",
+        "PV-15",
+        "PV-17"
+      ],
+      "what": "判场景／概述／过渡→选叙述单位（含可选配比试算与核心兑现时刻清单）→场景经济删并拆→跨越时间先写日子→定叙述的时间距离三查→世界边界开放或封闭按主体定。",
+      "anchors": [
+        "SKILL.md:160",
+        "SKILL.md:161",
+        "SKILL.md:162",
+        "SKILL.md:163",
+        "SKILL.md:164",
+        "references/scene-summary-and-time.md:5",
+        "references/scene-summary-and-time.md:13",
+        "references/scene-summary-and-time.md:23",
+        "references/scene-summary-and-time.md:37",
+        "references/scene-summary-and-time.md:47",
+        "references/scene-summary-and-time.md:58",
+        "references/scene-summary-and-time.md:64",
+        "references/scene-summary-and-time.md:81",
+        "references/scene-summary-and-time.md:101",
+        "references/scene-summary-and-time.md:109",
+        "SKILL.md:82",
+        "SKILL.md:90"
+      ],
+      "limit": "配比区间是可选试算、不是统计标准或质量门槛，超出区间完全可能是正确选择（SS:25）；跨度四档只是分档（SS:66）；只需标定新时间位置时直接写「五年过去」即完成任务、不按失败判据处理（SS:79、SKILL.md:162）；「几年过去」「不用宣告式跨越」不是禁用句（DG:91）。",
+      "counterexample_ref": [
+        "references/diagnosis.md:113",
+        "references/diagnosis.md:91",
+        "references/scene-summary-and-time.md:62",
+        "references/scene-summary-and-time.md:115"
+      ]
+    },
+    {
+      "id": "CQ-CAP-04",
+      "family": "非线性与时间机制",
+      "kind": "workflow",
+      "rule_ids": [
+        "TM-01",
+        "TM-02",
+        "TM-03",
+        "TM-04",
+        "TM-05",
+        "TM-06",
+        "TM-07",
+        "TM-08",
+        "TM-09",
+        "TM-10",
+        "TM-11",
+        "TM-12",
+        "TM-13",
+        "TM-14",
+        "TM-15",
+        "TM-16",
+        "TM-17",
+        "TM-18",
+        "nonlinear-time §1-§5"
+      ],
+      "what": "先分三类（披露顺序重排／记忆重排／故事内因果异常）→把四列（世界时间 T／人物经历 M／展示顺序 O／读者已知 K）并进同一张信息表→按五类问题诊断→只有真异常才从 TM-01 至 TM-18 选机制→填时间机制卡→按 §5 的一行格式交付。",
+      "anchors": [
+        "references/time-mechanisms.md:1",
+        "references/time-mechanisms.md:5",
+        "references/time-mechanisms.md:9",
+        "SKILL.md:170",
+        "references/time-mechanisms.md:23",
+        "references/time-mechanisms.md:31",
+        "references/time-mechanisms.md:37",
+        "references/time-mechanisms.md:45",
+        "references/time-mechanisms.md:51",
+        "references/time-mechanisms.md:57",
+        "references/time-mechanisms.md:63",
+        "references/time-mechanisms.md:69",
+        "references/time-mechanisms.md:75",
+        "references/time-mechanisms.md:81",
+        "references/time-mechanisms.md:89",
+        "references/time-mechanisms.md:95",
+        "references/time-mechanisms.md:103",
+        "references/time-mechanisms.md:111",
+        "references/time-mechanisms.md:119",
+        "references/time-mechanisms.md:127",
+        "references/time-mechanisms.md:135",
+        "references/time-mechanisms.md:143",
+        "references/nonlinear-time.md:9",
+        "references/nonlinear-time.md:15",
+        "references/nonlinear-time.md:17",
+        "references/nonlinear-time.md:26",
+        "references/nonlinear-time.md:32",
+        "references/nonlinear-time.md:38",
+        "references/nonlinear-time.md:62",
+        "references/nonlinear-time.md:77",
+        "templates/narrative-workbook.md:76",
+        "SKILL.md:92"
+      ],
+      "limit": "十八张卡是「这篇这样做过」的归纳，不是时间故事的必备件；机制数量、镜像开场、纸条、毁掉机器、五到七拍结尾都不是门槛（TM:6、TM:7）；TM-14 只在选了「历史固定」时可用、TM-18 的等时只在选了等时约定时适用（TM:7）；整条世界线走向不同属世界观层，机制卡不适用（NL:13）；真实时空物理可行性不判断（NL:73、SKILL.md:35）；卡体在位 18/18，但 SKILL 索引层用区间行「TM-06 至 TM-09」，ID 级字面在 SKILL.md 层缺 2（见 CQ-G04）。",
+      "counterexample_ref": [
+        "references/nonlinear-time.md:50",
+        "references/nonlinear-time.md:52",
+        "references/nonlinear-time.md:54",
+        "references/nonlinear-time.md:56",
+        "references/nonlinear-time.md:72",
+        "references/time-mechanisms.md:35",
+        "references/time-mechanisms.md:61",
+        "references/time-mechanisms.md:93"
+      ]
+    },
+    {
+      "id": "CQ-CAP-05",
+      "family": "证词与心理（PS 全族）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PS-01",
+        "PS-02",
+        "PS-03",
+        "PS-04",
+        "PS-05",
+        "PS-06",
+        "PS-07",
+        "PS-08",
+        "PS-09",
+        "PS-10",
+        "PS-11",
+        "PS-12",
+        "PS-13",
+        "PS-14",
+        "PS-15",
+        "PS-16",
+        "PS-17",
+        "PS-18",
+        "PS-19",
+        "PS-20",
+        "PS-21",
+        "PS-22",
+        "PS-23",
+        "PS-24",
+        "PS-25",
+        "PS-26",
+        "PS-27",
+        "PS-28",
+        "PS-29",
+        "PS-30"
+      ],
+      "what": "PS-01 至 PS-08 管说法、证词与自辩并在知识表加四列分版本记账；PS-09 至 PS-17 把心理落到身体、动作、细节、梦与高强度节律；PS-18 至 PS-24 写拒绝、钱与身份、环境压力链、群体恐惧与沉默的社会成因；PS-25 至 PS-30 写物件轨迹、标题兑现、丧失的小事承载、求罚张力与关系转变。",
+      "anchors": [
+        "SKILL.md:184",
+        "SKILL.md:185",
+        "SKILL.md:186",
+        "SKILL.md:187",
+        "SKILL.md:188",
+        "SKILL.md:189",
+        "SKILL.md:190",
+        "SKILL.md:191",
+        "SKILL.md:195",
+        "SKILL.md:196",
+        "SKILL.md:197",
+        "SKILL.md:198",
+        "SKILL.md:199",
+        "SKILL.md:200",
+        "SKILL.md:201",
+        "SKILL.md:202",
+        "SKILL.md:203",
+        "SKILL.md:207",
+        "SKILL.md:208",
+        "SKILL.md:209",
+        "SKILL.md:210",
+        "SKILL.md:211",
+        "SKILL.md:212",
+        "SKILL.md:213",
+        "SKILL.md:217",
+        "SKILL.md:218",
+        "SKILL.md:219",
+        "SKILL.md:220",
+        "SKILL.md:221",
+        "SKILL.md:222",
+        "references/testimony-and-self-justification.md:30",
+        "references/testimony-and-self-justification.md:40",
+        "references/testimony-and-self-justification.md:50",
+        "references/testimony-and-self-justification.md:60",
+        "references/testimony-and-self-justification.md:70",
+        "references/testimony-and-self-justification.md:80",
+        "references/testimony-and-self-justification.md:90",
+        "references/testimony-and-self-justification.md:100",
+        "references/psychology-in-action.md:31",
+        "references/psychology-in-action.md:43",
+        "references/psychology-in-action.md:53",
+        "references/psychology-in-action.md:63",
+        "references/psychology-in-action.md:73",
+        "references/psychology-in-action.md:85",
+        "references/psychology-in-action.md:95",
+        "references/psychology-in-action.md:108",
+        "references/psychology-in-action.md:118",
+        "references/social-pressure-and-silence.md:29",
+        "references/social-pressure-and-silence.md:39",
+        "references/social-pressure-and-silence.md:49",
+        "references/social-pressure-and-silence.md:59",
+        "references/social-pressure-and-silence.md:69",
+        "references/social-pressure-and-silence.md:79",
+        "references/social-pressure-and-silence.md:89",
+        "references/objects-loss-and-change.md:28",
+        "references/objects-loss-and-change.md:38",
+        "references/objects-loss-and-change.md:48",
+        "references/objects-loss-and-change.md:58",
+        "references/objects-loss-and-change.md:70",
+        "references/objects-loss-and-change.md:80",
+        "references/testimony-and-self-justification.md:5",
+        "references/testimony-and-self-justification.md:10",
+        "references/psychology-in-action.md:5",
+        "references/psychology-in-action.md:10",
+        "references/social-pressure-and-silence.md:5",
+        "references/social-pressure-and-silence.md:10",
+        "references/objects-loss-and-change.md:5",
+        "references/objects-loss-and-change.md:10",
+        "templates/narrative-workbook.md:49"
+      ],
+      "limit": "PS 卡是文学写法不是临床知识，不给人物或真人下病名（SKILL.md:60、TS:6、PA:6、SP:6、OL:6）；卡里的拍数、顺序、出现次数只是示例（PA:7、OL:8）；材料没有的代价不自己发明（SP:47、SKILL.md:208）；不预设痊愈，保留拒绝和解、转变却不悔改的分支（OL:68、OL:88、SKILL.md:236）；现实心理、临床、法律、历史事实需独立核验（SKILL.md:256）。",
+      "counterexample_ref": [
+        "references/boundaries-and-ethics.md:66",
+        "references/boundaries-and-ethics.md:67",
+        "references/boundaries-and-ethics.md:68",
+        "references/boundaries-and-ethics.md:69",
+        "references/boundaries-and-ethics.md:70",
+        "references/boundaries-and-ethics.md:71",
+        "references/boundaries-and-ethics.md:72",
+        "references/boundaries-and-ethics.md:73",
+        "references/boundaries-and-ethics.md:74",
+        "references/boundaries-and-ethics.md:75",
+        "references/boundaries-and-ethics.md:76",
+        "references/boundaries-and-ethics.md:77",
+        "references/boundaries-and-ethics.md:49",
+        "references/boundaries-and-ethics.md:79",
+        "references/diagnosis.md:134"
+      ]
+    },
+    {
+      "id": "CQ-CAP-06",
+      "family": "横切：诊断与修订闭环",
+      "kind": "workflow",
+      "rule_ids": [
+        "diagnosis §1",
+        "§9",
+        "§10"
+      ],
+      "what": "按九步顺序诊断已读范围（范围→主体→视点→合同→信息→场景与概述→时间→世界边界→人物心理）；写位置＋短引文；修改单每条写「代价」；诊断→修订→复查→不通过回退到改动前那一稿；改完回看三件事＋连续性回归三问＋心理与关系另核五项＋负面回归四问。",
+      "anchors": [
+        "SKILL.md:97",
+        "SKILL.md:99",
+        "SKILL.md:104",
+        "references/diagnosis.md:5",
+        "references/diagnosis.md:7",
+        "references/diagnosis.md:17",
+        "references/diagnosis.md:61",
+        "references/diagnosis.md:69",
+        "references/diagnosis.md:130",
+        "references/diagnosis.md:157",
+        "references/diagnosis.md:162",
+        "references/diagnosis.md:172",
+        "references/diagnosis.md:186",
+        "references/diagnosis.md:190",
+        "references/diagnosis.md:196",
+        "references/diagnosis.md:203",
+        "references/diagnosis.md:205",
+        "references/diagnosis.md:214",
+        "templates/narrative-workbook.md:91",
+        "templates/narrative-workbook.md:101"
+      ],
+      "limit": "局部的权限、定位、声音问题直接修，不等全书主体定稿（DG:8、SKILL.md:100、DG:120）；没有稿子不做「第几段有问题」的诊断，改走设计路径（DG:17）；三问与五项是定位方法不是评分表（DG:170）；与本次改动无关的项标「不适用」（DG:164、DG:174）。",
+      "counterexample_ref": [
+        "references/diagnosis.md:120",
+        "references/diagnosis.md:209",
+        "references/diagnosis.md:210",
+        "references/diagnosis.md:211",
+        "references/diagnosis.md:212",
+        "references/diagnosis.md:180"
+      ]
+    },
+    {
+      "id": "CQ-CAP-07",
+      "family": "横切：交付物与状态词",
+      "kind": "workflow",
+      "rule_ids": [
+        "workbook §1-§8",
+        "SKILL §9.1"
+      ],
+      "what": "按任务挑五张卡（视角方案卡／统一信息表／人物心理场景卡／时间机制卡／修改单）＋静态审稿十问＋起点值表＋逐编号台账；对作者交付只用四词并逐项给依据。",
+      "anchors": [
+        "SKILL.md:101",
+        "SKILL.md:105",
+        "SKILL.md:262",
+        "SKILL.md:266",
+        "templates/narrative-workbook.md:3",
+        "templates/narrative-workbook.md:7",
+        "templates/narrative-workbook.md:27",
+        "templates/narrative-workbook.md:49",
+        "templates/narrative-workbook.md:76",
+        "templates/narrative-workbook.md:91",
+        "templates/narrative-workbook.md:101",
+        "templates/narrative-workbook.md:116",
+        "templates/narrative-workbook.md:132",
+        "templates/narrative-workbook.md:134",
+        "templates/narrative-workbook.md:142"
+      ],
+      "limit": "宿主规定了输出格式就按宿主格式（SKILL.md:53）；不知道的格子写「未知」、不为填满而编（WB:3、WB:134）；「未知」是台账状态列的合法值但不得写成已完成（SKILL.md:273、WB:134）；§8 三行是带具体值的示例行而非可填空行（见 CQ-G05）；「已完成」与例五示范互斥（见 CQ-G01）。",
+      "counterexample_ref": [
+        "templates/narrative-workbook.md:134",
+        "references/diagnosis.md:212",
+        "templates/narrative-workbook.md:105",
+        "templates/narrative-workbook.md:114"
+      ]
+    },
+    {
+      "id": "CQ-CAP-08",
+      "family": "横切：中文与网文连载迁移",
+      "kind": "workflow",
+      "rule_ids": [
+        "zh-and-serial §1-§6"
+      ],
+      "what": "用称呼定位视点并检查一场内称呼一致；无时态时靠「这句是谁的话」、语气词、时间词控制距离；网文常见视角做法表；面板弹幕群聊帖子按文件类装置定规则；重生文先写清三件事；日更每章重锚、章末视角、长期漂移抽查。",
+      "anchors": [
+        "SKILL.md:239",
+        "references/zh-and-serial.md:1",
+        "references/zh-and-serial.md:7",
+        "references/zh-and-serial.md:16",
+        "references/zh-and-serial.md:25",
+        "references/zh-and-serial.md:35",
+        "references/zh-and-serial.md:44",
+        "references/zh-and-serial.md:54",
+        "references/zh-and-serial.md:56",
+        "references/zh-and-serial.md:58"
+      ],
+      "limit": "是创作操作建议，不是平台统计或读者行为结论；节奏、章末钩子与反馈需按具体作品与真实读者证据验证（ZS:5）；装置规则一旦定下就是合同的一部分，不让装置随叫随到（ZS:39、ZS:42）；卷级视点分配转 story（ZS:59）；章末钩子做法转 scene 的 SU-15（ZS:57）。",
+      "counterexample_ref": [
+        "references/zh-and-serial.md:23",
+        "references/zh-and-serial.md:42",
+        "references/zh-and-serial.md:52",
+        "references/zh-and-serial.md:58"
+      ]
+    },
+    {
+      "id": "CQ-CAP-09",
+      "family": "横切：伦理边界与退出",
+      "kind": "workflow",
+      "rule_ids": [
+        "boundaries-and-ethics §1-§5"
+      ],
+      "what": "分「可以写」与「不在本 Skill 里做」两栏；四个争议的处置；创伤题材伦理表 8 行各带「可以做的创作处理／不支持的推论／出口」三栏；十二个反例逐条撤回一种过度推断；结论按五档标注。",
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:250",
+        "references/boundaries-and-ethics.md:9",
+        "references/boundaries-and-ethics.md:11",
+        "references/boundaries-and-ethics.md:13",
+        "references/boundaries-and-ethics.md:19",
+        "references/boundaries-and-ethics.md:45",
+        "references/boundaries-and-ethics.md:47",
+        "references/boundaries-and-ethics.md:49",
+        "references/boundaries-and-ethics.md:60",
+        "references/boundaries-and-ethics.md:62",
+        "references/boundaries-and-ethics.md:81",
+        "references/boundaries-and-ethics.md:83"
+      ],
+      "limit": "现实判断不因授权补足而解锁（BE:91）；不给真人下病名、不提供自伤方法细节、不把文学结局说成现实疗效（SKILL.md:250）；用户其实在问现实健康时退出那部分、小说部分照常做（SKILL.md:60）；无「疑似即时危险」的识别判据与求助条文（见 CQ-G03）。",
+      "counterexample_ref": [
+        "references/boundaries-and-ethics.md:51",
+        "references/boundaries-and-ethics.md:52",
+        "references/boundaries-and-ethics.md:53",
+        "references/boundaries-and-ethics.md:54",
+        "references/boundaries-and-ethics.md:55",
+        "references/boundaries-and-ethics.md:56",
+        "references/boundaries-and-ethics.md:57",
+        "references/boundaries-and-ethics.md:58"
+      ]
+    },
+    {
+      "id": "CQ-CAP-10",
+      "family": "横切：跨包转介与接收",
+      "kind": "external",
+      "rule_ids": [
+        "SKILL §1.2",
+        "§1.3",
+        "§10.1",
+        "§10.2",
+        "§10.3",
+        "协作边界"
+      ],
+      "what": "负触发 10 条与转介表 7 行把伏笔与单场写法交 scene、卷级结构交 story、句子交 line-editing、题材交 genre、舞台与互动分支交 cross-media、规划入口交 fiction-planning、产卡与三轴交 preset-card；并声明接收 preset-card 反向转回的视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间。",
+      "anchors": [
+        "SKILL.md:26",
+        "SKILL.md:28",
+        "SKILL.md:34",
+        "SKILL.md:39",
+        "SKILL.md:43",
+        "SKILL.md:293",
+        "SKILL.md:297",
+        "SKILL.md:309",
+        "SKILL.md:311",
+        "SKILL.md:312",
+        "SKILL.md:314",
+        "SKILL.md:316",
+        "SKILL.md:318",
+        "SKILL.md:320",
+        "SKILL.md:322",
+        "SKILL.md:323",
+        "SKILL.md:325"
+      ],
+      "limit": "external：转出后的执行由兄弟包承担，本包不含其规则；本包只在文字层声明转出与接收，未内联对端锚点行号；「产物是给模型的卡或审查框架是三轴」是判据（SKILL.md:34、SKILL.md:49）；发现改动会动到人物声音、叙述权限、视角等不变量时暂停该处并转交确认（SKILL.md:316）。",
+      "counterexample_ref": [
+        "references/diagnosis.md:122",
+        "references/diagnosis.md:124",
+        "references/diagnosis.md:125",
+        "references/diagnosis.md:126",
+        "references/diagnosis.md:127",
+        "references/diagnosis.md:128"
+      ]
+    },
+    {
+      "id": "CQ-CAP-11",
+      "family": "横切：宿主界面元数据",
+      "kind": "external",
+      "rule_ids": [
+        "agents/openai.yaml"
+      ],
+      "what": "给出界面显示名、短描述、默认提示词与 allow_implicit_invocation: false。",
+      "anchors": [
+        "agents/openai.yaml:3",
+        "agents/openai.yaml:4",
+        "agents/openai.yaml:6",
+        "agents/openai.yaml:7",
+        "agents/openai.yaml:8"
+      ],
+      "limit": "文件自述：宿主是否加载、采用哪些字段以实际宿主为准；不授予权限，不承诺自动执行，实际能力受宿主工具与用户授权限制（agents/openai.yaml:1-2）。宿主加载未实测。",
+      "counterexample_ref": [
+        "agents/openai.yaml:2"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "CQ-IF-01",
+      "peer": "scene-conflict-and-rhythm",
+      "topic": "全书知情表 vs 单场知情表切片；伏笔位置与回收的转出",
+      "provider": "character-and-narrative-control（本包）",
+      "consumer": "scene-conflict-and-rhythm",
+      "fields": "本包侧＝统一信息表 7 列「编号｜信息｜视点人物｜读者｜其他相关人物｜揭示在哪里｜由谁、怎样揭示｜揭示后改变什么」（information-control.md:27、narrative-workbook.md:31）；对端侧＝「读者已知｜行动者已知｜视角人物此刻能说出」三层（对端 SKILL.md:156），并由 SU-04 建立、SC-06 加一列（对端 references/scene-information-and-space.md:5、:14）",
+      "转出": "伏笔的位置与回收清单、悬念强度、章末钩子、一场戏的进出（SKILL.md:29、SKILL.md:43、SKILL.md:80、information-control.md:5、information-control.md:36 引 SU-04、information-control.md:84 引 SU-06、scene-summary-and-time.md:97、zh-and-serial.md:57 引 SU-15）",
+      "missing_field_branch": "本包口径：不知道的格子写「未知」，不为填满而编（narrative-workbook.md:3、:134）；对端多视点按「信息 × 知情者」拆行（information-control.md:31、narrative-workbook.md:29）。双方均未写「对端字段缺失时谁补、按谁的口径补」的分支条款。",
+      "both_sides_referenced": "部分：本包按 ID 引对端（SC-06 见 information-control.md:38；SU-04 见 :36；SU-06 见 :84；SU-15 见 zh-and-serial.md:57），对端 ID 实测均存在（对端 references/suspense-and-reveal.md:22、references/setup-and-payoff.md:27、references/chapter-ends-and-endings.md:7、references/scene-information-and-space.md:9）。对端回引本包按「问题类别」而非 ID（对端 SKILL.md:24、:39、:223、references/rhythm-diagnosis.md:58）。本包未给对端行号，对端未给本包行号。",
+      "anchors_own": [
+        "SKILL.md:57",
+        "SKILL.md:29",
+        "SKILL.md:43",
+        "SKILL.md:80",
+        "references/information-control.md:5",
+        "references/information-control.md:36",
+        "references/information-control.md:38",
+        "references/information-control.md:84",
+        "references/scene-summary-and-time.md:97",
+        "references/zh-and-serial.md:57"
+      ],
+      "anchors_peer": [
+        "scene-conflict-and-rhythm/SKILL.md:24",
+        "scene-conflict-and-rhythm/SKILL.md:39",
+        "scene-conflict-and-rhythm/SKILL.md:156",
+        "scene-conflict-and-rhythm/SKILL.md:223",
+        "scene-conflict-and-rhythm/references/scene-information-and-space.md:5",
+        "scene-conflict-and-rhythm/references/scene-information-and-space.md:9",
+        "scene-conflict-and-rhythm/references/scene-information-and-space.md:14",
+        "scene-conflict-and-rhythm/references/rhythm-diagnosis.md:58"
+      ],
+      "conflict_note": "「切片」关系只在本包侧写明（SKILL.md:57、information-control.md:38）；对端实测 grep「统一信息表／全书只用一张／切片」在本包外无命中（0 命中，读取文件数 17 已回显），对端把那张表说成由 SU-04 建立、同一场戏不另建第二张表（对端 scene-information-and-space.md:5），未声明它是本包全书表的派生投影。两侧表头字段名不同，未写映射。见 CQ-G06。"
+    },
+    {
+      "id": "CQ-IF-02",
+      "peer": "story-architecture-and-longform-planning",
+      "topic": "主线、多线、因果、删场、分卷与连载排产；卷级视点分配",
+      "provider": "scene／character 的视点设计 → story 的卷表；反向 story 只登记视点线的加入与退出",
+      "consumer": "story-architecture-and-longform-planning（接收卷级排产）；本包接收「哪一卷加入新视点」之外的全部视角裁决",
+      "fields": "视点线（每条线在哪卷加入、哪卷收）；本包交付的章级信息表行（编号／揭示在哪里）；story 侧卷表条目",
+      "转出": "SKILL.md:30、SKILL.md:44、zh-and-serial.md:59（卷级的视点分配转 story）、diagnosis.md:125（问题其实是情节因果断裂转 story）",
+      "missing_field_branch": "对端 SKILL.md:62 写明「本 Skill 只在卷表记录视点线的加入／退出，不裁决单场 POV」；本包未写卷表条目缺失时如何回填。双方都无「缺字段」显式分支。",
+      "both_sides_referenced": "两侧都有回指：本包 SKILL.md:30／:44／:302、zh-and-serial.md:59、diagnosis.md:125；对端 SKILL.md:28、:53、:62、references/serial-open-lines-and-continuity.md:60。均为类别级引用，两侧都未给对端行号。",
+      "anchors_own": [
+        "SKILL.md:30",
+        "SKILL.md:44",
+        "SKILL.md:302",
+        "references/zh-and-serial.md:59",
+        "references/diagnosis.md:125"
+      ],
+      "anchors_peer": [
+        "story-architecture-and-longform-planning/SKILL.md:28",
+        "story-architecture-and-longform-planning/SKILL.md:53",
+        "story-architecture-and-longform-planning/SKILL.md:62",
+        "story-architecture-and-longform-planning/references/serial-open-lines-and-continuity.md:60"
+      ],
+      "conflict_note": "未观测到条文冲突；分工句在两侧都在（本包 SKILL.md:295 不负责卷级结构，对端 SKILL.md:62 不裁决单场 POV）。"
+    },
+    {
+      "id": "CQ-IF-03",
+      "peer": "preset-card-generation",
+      "topic": "产卡与三轴审的转出、反向接收（SKILL.md:309-317）",
+      "provider": "preset-card-generation（产物是「给模型的卡」、审查框架是三轴时由它做）",
+      "consumer": "本包（接收不写成卡、也不用三轴的角色层设计与诊断）",
+      "fields": "本包侧声明接收 7 项：视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间（SKILL.md:312）；对端侧接收表只列 3 项：视角合同、人物声口、信息控制（对端 SKILL.md:41），描述行列「视角人物与声口」（对端 SKILL.md:3）",
+      "转出": "SKILL.md:34、SKILL.md:49、SKILL.md:290、SKILL.md:302、SKILL.md:304、SKILL.md:305、SKILL.md:311；examples/pov-cases.md:102（负触发行「要写成预设卡、按三轴审章节」）",
+      "missing_field_branch": "本包判据「产物是给模型的卡或审查框架是三轴一律转回」（SKILL.md:34／:49／:311）；对端判据「不写成卡、也不用三轴时转出」（对端 SKILL.md:3）。两侧均未写「同一请求同时既要卡又要视角裁决」时的分单规则；本包 SKILL.md:316 只给不变量级处置：发现改动会改变人物声音、叙述权限或视角等不变量时暂停该处并转交确认。",
+      "both_sides_referenced": "两侧都有引用；本包给了小节号（§10.2 两表互为逆关系，SKILL.md:314-316），未给对端行号；对端未给本包行号。",
+      "anchors_own": [
+        "SKILL.md:34",
+        "SKILL.md:49",
+        "SKILL.md:290",
+        "SKILL.md:302",
+        "SKILL.md:304",
+        "SKILL.md:305",
+        "SKILL.md:309",
+        "SKILL.md:311",
+        "SKILL.md:312",
+        "SKILL.md:314",
+        "SKILL.md:316",
+        "examples/pov-cases.md:102"
+      ],
+      "anchors_peer": [
+        "preset-card-generation/SKILL.md:3",
+        "preset-card-generation/SKILL.md:41"
+      ],
+      "conflict_note": "接收清单项数不一致：本包 SKILL.md:312 列 7 项，对端 SKILL.md:41 列 3 项。本包声称「§10.2 两表互为逆关系」（SKILL.md:316），按项数并不成立。见 CQ-G07。"
+    },
+    {
+      "id": "CQ-IF-04",
+      "peer": "line-editing-and-proofreading",
+      "topic": "句子、措辞、标点、语感、校对转出；人物声音与视角不变量交接",
+      "provider": "本包（拥有人物声音、叙述权限、视角、人物知识边界）",
+      "consumer": "line-editing-and-proofreading（句子层编辑）",
+      "fields": "人物声音与视角约束（本包 SKILL.md:323 声明「本 Skill 提供人物声音与视角约束，不替代逐句编辑」）；对端 SKILL.md:202 复述同一Owner 划分",
+      "转出": "SKILL.md:28、SKILL.md:46、SKILL.md:305、SKILL.md:323、diagnosis.md:126",
+      "missing_field_branch": "两侧都用「暂停该处并转交确认」：本包 SKILL.md:316；对端 SKILL.md:202。对端 examples/worked-example.md:92 给了「更有力若指人物动机或视角＝负触发，转介」的实例分支。",
+      "both_sides_referenced": "两侧都有：本包 SKILL.md:28／:46／:316／:323；对端 SKILL.md:3／:39／:202、examples/worked-example.md:92。未给行号。",
+      "anchors_own": [
+        "SKILL.md:28",
+        "SKILL.md:46",
+        "SKILL.md:305",
+        "SKILL.md:316",
+        "SKILL.md:323",
+        "references/diagnosis.md:126"
+      ],
+      "anchors_peer": [
+        "line-editing-and-proofreading/SKILL.md:39",
+        "line-editing-and-proofreading/SKILL.md:202",
+        "line-editing-and-proofreading/examples/worked-example.md:92"
+      ],
+      "conflict_note": "未见冲突；本包 SKILL.md:323 与对端 SKILL.md:202 的 Owner 语句同构，是不变量交接的双向声明。人物声口的「待定出口」在本包内未单列条款（骨架 CH-T2 期待它），实测全包（17 文件全读）grep「声口」2 命中（SKILL.md:312、references/diagnosis.md:211）、「待定」0 命中，包内无「声口待定」出口条款。见 CQ-G08。"
+    },
+    {
+      "id": "CQ-IF-05",
+      "peer": "genre-fiction-craft",
+      "topic": "题材契约与推理公平线索转出；视角越界与时间模型回递",
+      "provider": "genre-fiction-craft（14 类题材特有规则、机制、反例）",
+      "consumer": "本包（接收题材之外的通用视角与信息裁决）",
+      "fields": "「公平解谜的承诺」与「可靠性契约」——本包按此判隐瞒是否作弊（SKILL.md:153、information-control.md:35、information-control.md:84、SKILL.md:247）；genre 侧按「所选合同」判伏笔责任（对端 references/03-horror/testimony-and-information.md:130、references/01-mystery/worksheets-and-cases.md:71）",
+      "转出": "SKILL.md:31、SKILL.md:47、SKILL.md:307",
+      "missing_field_branch": "本包 SKILL.md:229（参考表 information-control 行的出口列）：「公平解谜的承诺没定时先问作者」；SKILL.md:247 另写「不从『推理』『言情』的标签推定全部约定」。对端把谜题专门检查转回题材内部（对端 03-horror:130「需要专门检查谜题时转推理题材」）。两侧都没写「公平解谜承诺」这一契约项的登记 Owner 与存放位置。",
+      "both_sides_referenced": "两侧都有：本包 SKILL.md:31／:47／:307；对端 SKILL.md:27（全篇的人物动机、谁来讲、视角越界、时间模型转本包）与题材内 4 处「人物动机／群像转 character」（references/04-wuxia-xianxia-fantasy/templates-and-cases.md:258、references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:121、references/05-science-fiction/subgenres-and-worldbuilding.md:85、references/05-science-fiction/examples.md:151）。未给行号。",
+      "anchors_own": [
+        "SKILL.md:31",
+        "SKILL.md:47",
+        "SKILL.md:229",
+        "SKILL.md:247",
+        "SKILL.md:307",
+        "references/information-control.md:35",
+        "references/information-control.md:84"
+      ],
+      "anchors_peer": [
+        "genre-fiction-craft/SKILL.md:27",
+        "genre-fiction-craft/references/03-horror/testimony-and-information.md:130",
+        "genre-fiction-craft/references/01-mystery/worksheets-and-cases.md:71",
+        "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:121"
+      ],
+      "conflict_note": "「谁登记公平解谜承诺」在本包与对端都没有唯一 Owner：本包用它做判据但不产登记表，genre 侧称「所选合同」。草案登记为待裁项，本文件不下结论。见 CQ-G09。"
+    },
+    {
+      "id": "CQ-IF-06",
+      "peer": "cross-media-drama-adaptation",
+      "topic": "互动叙事：每条路线内人物知识（本包）vs 玩家选择、状态变量与分支拓扑（对端）",
+      "provider": "本包（人物视角、知识权限、关系变化、时间连续性回归）",
+      "consumer": "cross-media-drama-adaptation（分支结构与选择逻辑）",
+      "fields": "本包 SKILL.md:325：「互动叙事中，本 Skill 只检查每条路线内人物知道什么、何时知道、关系如何变化以及时间是否连续；玩家选择、状态变量和分支拓扑由 cross-media-drama-adaptation 负责」；对端 references/interactive-adaptation.md:70 给出同一分界并加「对白、选项和反馈不得让人物使用尚未获得的信息」",
+      "转出": "SKILL.md:32、SKILL.md:48、SKILL.md:322",
+      "missing_field_branch": "对端 references/interactive-adaptation.md:70「涉及视角、叙述权限、关系变化或时间连续性时，调用 character-and-narrative-control 做角色层回归；本 Skill 负责分支结构，不重复定义人物知识规则」；对端 SKILL.md:188（AD-39）「需要时调用」。本包侧未写「被调用时交付什么格式」，也未给互动路线的表字段。",
+      "both_sides_referenced": "两侧都有：本包 SKILL.md:32／:48／:322／:325；对端 SKILL.md:3／:37／:188、references/interactive-adaptation.md:70、:91。未给行号。",
+      "anchors_own": [
+        "SKILL.md:32",
+        "SKILL.md:48",
+        "SKILL.md:322",
+        "SKILL.md:325"
+      ],
+      "anchors_peer": [
+        "cross-media-drama-adaptation/SKILL.md:37",
+        "cross-media-drama-adaptation/SKILL.md:188",
+        "cross-media-drama-adaptation/references/interactive-adaptation.md:70",
+        "cross-media-drama-adaptation/references/interactive-adaptation.md:91"
+      ],
+      "conflict_note": "分界不重复、无冲突；缺口是方向性的：对端已写「不重复定义人物知识规则」，本包未写「接收互动调用时的角色知识表字段与交付格式」。见 CQ-G10。"
+    },
+    {
+      "id": "CQ-IF-07",
+      "peer": "fiction-planning-and-diagnosis",
+      "topic": "总流程入口、成稿整体诊断与「不确定用哪个 skill」（草案补充：骨架未列，实际存在双向关系）",
+      "provider": "fiction-planning-and-diagnosis（入口、赛道、整体诊断、事实核验）",
+      "consumer": "本包（被它按 FC-11 转入视角与信息裁决）",
+      "fields": "对端 SKILL.md:193 的 FC-11「信息合同、距离稳定、切换代价」并把细则转本包；对端 SKILL.md:354 承认本包拥有人物目标、叙述权限、视角、关系变化、人物知识边界和时间连续性",
+      "转出": "SKILL.md:33、SKILL.md:45、SKILL.md:301、SKILL.md:303、SKILL.md:304、SKILL.md:320",
+      "missing_field_branch": "本包 SKILL.md:320「它拥有原创故事的前提、结构、单元规划与整体诊断；本 Skill 不替它决定故事是否成立」。对端 references/self-check-scenes.md:23 反向引用本包 PV-12、PV-13。未写「两者都接的诊断请求」的分单顺序。",
+      "both_sides_referenced": "两侧都有，且对端按 ID 引本包（references/self-check-scenes.md:23 引 PV-12、PV-13；SKILL.md:143 症状行指向本包）。本包未给对端行号。",
+      "anchors_own": [
+        "SKILL.md:33",
+        "SKILL.md:45",
+        "SKILL.md:301",
+        "SKILL.md:303",
+        "SKILL.md:304",
+        "SKILL.md:320"
+      ],
+      "anchors_peer": [
+        "fiction-planning-and-diagnosis/SKILL.md:30",
+        "fiction-planning-and-diagnosis/SKILL.md:143",
+        "fiction-planning-and-diagnosis/SKILL.md:193",
+        "fiction-planning-and-diagnosis/SKILL.md:354",
+        "fiction-planning-and-diagnosis/references/self-check-scenes.md:23"
+      ],
+      "conflict_note": "未见冲突。本包 SKILL.md:3 description 也列了它作为「不确定用哪个时」的入口。"
+    }
+  ],
+  "applicability": [
+    {
+      "id": "CQ-AP-01",
+      "topic": "文学层面 vs 现实层面的分界",
+      "scope": "本包全部 PS 卡与证词卡只在文学人物与叙述设计层生效；现实中的医疗、科学、司法判断不从文学案例推出。",
+      "limitation": "不给真人下病名、不提供自伤的方法细节、不把文学的结局说成现实的疗效（SKILL.md:250、SKILL.md:60）；现实心理、临床、法律和历史事实需要独立核验，本 Skill 不提供诊断或专业意见（SKILL.md:256）；「超出范围」不因授权补足而解锁（boundaries-and-ethics.md:91）。",
+      "counterexample": "boundaries-and-ethics.md:66-77 十二反例逐条撤回一种过度推断，如 :72「手发抖，可能是冷、累或受了伤：不是解离或神经疾病的诊断（PS-14）」、:66「侦探细看帽子，可能是在职业取证：观察细节不一定是焦虑（PS-13）」。",
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:250",
+        "SKILL.md:256",
+        "references/boundaries-and-ethics.md:5",
+        "references/boundaries-and-ethics.md:11",
+        "references/boundaries-and-ethics.md:13",
+        "references/boundaries-and-ethics.md:47",
+        "references/boundaries-and-ethics.md:93",
+        "references/psychology-in-action.md:6",
+        "examples/psychology-cases.md:3"
+      ]
+    },
+    {
+      "id": "CQ-AP-02",
+      "topic": "创伤题材伦理表的「出口」列",
+      "scope": "伦理表 8 行每行除「可以做的创作处理」「不支持的推论」外，另给一列「出口」，规定成因不明或没有依据时停在哪。",
+      "limitation": "出口列只给写作层的停法（标「未知」、限定为人物或时代的说法、不提供方法细节与疗效承诺），不给现实处置动作；表头自述「这是一套文学写作与叙事手艺的约定，不承担识别现实病症的功能」（boundaries-and-ethics.md:47）。",
+      "counterexample": "boundaries-and-ethics.md:51 出口「没有原因时标『未知』」；:52 出口「成因不明就标未知，不写性格结论」；:57 出口「限定为人物或时代的说法」；:58 行「高度危险的行为（自杀、自毁）」出口「不提供方法细节，不写疗效或解脱的承诺」。",
+      "anchors": [
+        "references/boundaries-and-ethics.md:45",
+        "references/boundaries-and-ethics.md:47",
+        "references/boundaries-and-ethics.md:49",
+        "references/boundaries-and-ethics.md:51",
+        "references/boundaries-and-ethics.md:52",
+        "references/boundaries-and-ethics.md:57",
+        "references/boundaries-and-ethics.md:58",
+        "SKILL.md:237"
+      ]
+    },
+    {
+      "id": "CQ-AP-03",
+      "topic": "数字是起点，不是门槛",
+      "scope": "包内出现的数量、比例、拍数、次数一律按起点或例子使用，按篇幅与体裁调整。",
+      "limitation": "narrative-workbook.md §7 用 7 行表把每个数字绑回对应场景或文本证据位置（WB:118-128）；SKILL.md:58 与 diagnosis.md:117 各重申一次；scene-summary-and-time.md:25 明确「超出区间完全可能是正确选择；不得仅凭比例判定作品好坏」。",
+      "counterexample": "diagnosis.md:117「把操作默认值当硬门」——用「一到三个主视点」「两三个侧影」「四拍节律」评判稿子，合理的结构被判违规；narrative-workbook.md:122「一句话说出主体」在复调或多主体时可换成几句话或一张关系图。",
+      "anchors": [
+        "SKILL.md:58",
+        "templates/narrative-workbook.md:116",
+        "templates/narrative-workbook.md:118",
+        "templates/narrative-workbook.md:122",
+        "templates/narrative-workbook.md:123",
+        "templates/narrative-workbook.md:126",
+        "templates/narrative-workbook.md:128",
+        "references/diagnosis.md:117",
+        "references/scene-summary-and-time.md:25",
+        "references/time-mechanisms.md:6"
+      ]
+    },
+    {
+      "id": "CQ-AP-04",
+      "topic": "中文与网文连载的特殊条款",
+      "scope": "把 PV／PS／TM 规则落到无时态中文与连载载体：称呼即视点（zh-and-serial.md:7-14）、无时态时靠「这句是谁的话」／语气词／时间词控制距离（:16-23）、面板弹幕群聊帖子按文件类装置定规则（:35-42）、重生文时间合同先写清三件事（:44-52）、日更每章重锚与长期漂移抽查（:54-58）。",
+      "limitation": "文件自述为创作操作建议，不是平台统计或读者行为结论；节奏、章末钩子与反馈需按具体作品与真实读者证据验证（zh-and-serial.md:5）；装置的规则一旦定下就是合同的一部分，不让装置成为随叫随到的信息源（:39、:42）；卷级视点分配转出（:59）、章末钩子做法转出（:57）。",
+      "counterexample": "zh-and-serial.md:52 重生文反例：前文说「前世这时候我还不知道这件事」，后文又突然想起一件前世关键事件正好救场——与「叙述者进了心却装不知道」同一种错；:23「他知道／他明白／他意识到」常是作者在借人物的嘴交代信息。",
+      "anchors": [
+        "SKILL.md:239",
+        "references/zh-and-serial.md:5",
+        "references/zh-and-serial.md:7",
+        "references/zh-and-serial.md:16",
+        "references/zh-and-serial.md:25",
+        "references/zh-and-serial.md:35",
+        "references/zh-and-serial.md:39",
+        "references/zh-and-serial.md:42",
+        "references/zh-and-serial.md:44",
+        "references/zh-and-serial.md:52",
+        "references/zh-and-serial.md:54"
+      ]
+    },
+    {
+      "id": "CQ-AP-05",
+      "topic": "TM 机制卡的适用前提",
+      "scope": "只对故事内真的发生的时间异常用；普通回忆与倒叙填 §2 的时间四列就够（narrative-workbook.md:78）。",
+      "limitation": "十八张卡说明「这篇这样做过」，不是时间故事的必备件；机制数量、镜像、纸条、毁掉机器、五到七拍结尾都不是门槛（time-mechanisms.md:6）；TM-14 只在选了「历史固定」时可用，TM-18 的等时只在选了等时约定时适用（time-mechanisms.md:7）；世界观层的多线走向不同不适用机制卡（nonlinear-time.md:13）；物理可行性不判断（nonlinear-time.md:73、SKILL.md:35）。",
+      "counterexample": "time-mechanisms.md:61「flick（这一篇给极简转场标记起的名字）只是这一篇的设计」；:93「一个例子定不出『不超过三句』的门槛」；nonlinear-time.md:52「不要求每个闭环都强加纸条、反派或被毁的机器」。",
+      "anchors": [
+        "SKILL.md:232",
+        "references/time-mechanisms.md:5",
+        "references/time-mechanisms.md:6",
+        "references/time-mechanisms.md:7",
+        "references/time-mechanisms.md:61",
+        "references/time-mechanisms.md:93",
+        "references/nonlinear-time.md:13",
+        "references/nonlinear-time.md:52",
+        "references/nonlinear-time.md:73",
+        "templates/narrative-workbook.md:78"
+      ]
+    },
+    {
+      "id": "CQ-AP-06",
+      "topic": "不保证作品效果与读者反应",
+      "scope": "本包只提供视角、信息、心理与时间的组织方法；没有真实读者测试时，不把对读者理解和情绪的判断说成已经验证。",
+      "limitation": "SKILL.md:254「不保证作品效果或读者反应」；SKILL.md:257；examples/psychology-cases.md:3「方案是可以检查的文本方案，效果没有经过真实读者的检验」。",
+      "counterexample": "examples/pov-cases.md:3「四个例子都是为说明而编写的，不是真实稿件，也不证明按规则写一定更好」。",
+      "anchors": [
+        "SKILL.md:254",
+        "SKILL.md:257",
+        "SKILL.md:255",
+        "examples/pov-cases.md:3",
+        "examples/psychology-cases.md:3",
+        "references/diagnosis.md:170"
+      ]
+    },
+    {
+      "id": "CQ-AP-07",
+      "topic": "规则是检查工具不是品味标准；作者裁决优先",
+      "scope": "作者坚持某种写法时给代价与替代，由作者决定；本作实际约定优先于本包默认值；合同第一层（能不能知道）近乎硬性，距离与切换可调。",
+      "limitation": "SKILL.md:59、SKILL.md:246-250 五档冲突顺序；不打分、不评级、不裁定唯一正确视角（SKILL.md:37、SKILL.md:286）；例外表把默认值逐条降级为非禁令（diagnosis.md:83-94）。",
+      "counterexample": "diagnosis.md:93 拒绝「戏剧化是最高的方法」的单向偏好；diagnosis.md:118「把本 skill 当研究结论」——「研究证明第三人称限知最好」是伪共识；diagnosis.md:116「把第三人称限知当高级」。",
+      "anchors": [
+        "SKILL.md:59",
+        "SKILL.md:37",
+        "SKILL.md:244",
+        "SKILL.md:246",
+        "SKILL.md:247",
+        "SKILL.md:248",
+        "SKILL.md:249",
+        "SKILL.md:250",
+        "SKILL.md:286",
+        "references/diagnosis.md:83",
+        "references/diagnosis.md:93",
+        "references/diagnosis.md:116",
+        "references/diagnosis.md:118"
+      ]
+    },
+    {
+      "id": "CQ-AP-08",
+      "topic": "交付形态随宿主与输入变化",
+      "scope": "宿主规定了输出格式就按宿主格式；没有规定时用 §3 末尾交付清单与 narrative-workbook；给了稿子按稿子诊断，只有构思做设计，要求写正文就写且不覆盖原稿。",
+      "limitation": "SKILL.md:53、SKILL.md:55；缺关键信息时先做合理假设并标「假设」，只有答案会彻底改变方案才停问、一次最多三个问题（SKILL.md:56）；没有稿子不声称做过逐段诊断（SKILL.md:56 末句、SKILL.md:36）；自编例子要说明是编的，新增故事条件标「设计」（SKILL.md:61）。",
+      "counterexample": "examples/pov-cases.md:101 把「只有构思、没有正文」判成缺料而非负触发，处理是「只做设计，不声称逐段诊断，不编位置」；diagnosis.md:17 无稿子时不做「第几段有问题」的诊断。",
+      "anchors": [
+        "SKILL.md:53",
+        "SKILL.md:55",
+        "SKILL.md:56",
+        "SKILL.md:61",
+        "SKILL.md:36",
+        "references/diagnosis.md:17",
+        "references/diagnosis.md:193",
+        "examples/pov-cases.md:101",
+        "examples/pov-cases.md:104"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "CH-T1",
+      "kind": "positive",
+      "origin": "骨架保留",
+      "scenario": "双视点悬疑",
+      "expected": "停在交付：视角方案卡（narrative-workbook §1）＋全书唯一一张统一信息表（§2），多视点按「信息 × 知情者」拆行；裁决人是作者（视点中心的取舍、切换是否买回东西要作者认）；其余不冲突的部分照做——切换账本四项（触发／收益／标记／代价）逐条写，只为传一句信息的切换改用目击、听说、推断或文件。",
+      "anchors": [
+        "SKILL.md:65",
+        "SKILL.md:71",
+        "SKILL.md:146",
+        "SKILL.md:57",
+        "references/narrator-and-viewpoint.md:90",
+        "references/narrator-and-viewpoint.md:94",
+        "references/information-control.md:31",
+        "templates/narrative-workbook.md:7",
+        "templates/narrative-workbook.md:27",
+        "examples/pov-cases.md:5"
+      ]
+    },
+    {
+      "id": "CH-T2",
+      "kind": "missing",
+      "origin": "骨架保留",
+      "scenario": "人物还没有任何台词样本",
+      "expected": "停在「缺料」而不是负触发：没有材料就不编口吻，格子写「未知」或「没有依据，按作者判断」；裁决人是作者（声口由作者定，不由本包代填）；其余不冲突的照做——视角合同、信息表、心理场景卡中不依赖台词的字段照常交付。注：包内实测无「声口待定」条款（「声口」2 命中 SKILL.md:312／diagnosis.md:211，「待定」0 命中），本条按 WB:3／:134 与 diagnosis.md:214 的「没有依据」口径落地，见 CQ-G08。",
+      "anchors": [
+        "templates/narrative-workbook.md:3",
+        "templates/narrative-workbook.md:134",
+        "references/diagnosis.md:214",
+        "references/diagnosis.md:105",
+        "SKILL.md:56",
+        "SKILL.md:312"
+      ]
+    },
+    {
+      "id": "CH-T3",
+      "kind": "conflict",
+      "origin": "骨架保留",
+      "scenario": "坚持第一人称，又要读者知道主角不知道的阴谋",
+      "expected": "停在待作者决定：给「读者在前（反讽）」与「事后叙述（回忆体）」两版和各自代价（A 版失去结尾「原来如此」的惊奇；B 版要交代为什么现在讲、早就知道为什么不说），作者选定前都不落稿；裁决人是作者；其余不冲突的修改照做——线索清单照常交付并标「设计」，不擅自改人称、不添全知旁白、不切进别人内心。作者不答或只回「你看着办」时按最小改动处理，逐条列出假设（SKILL.md:291）。",
+      "anchors": [
+        "SKILL.md:283",
+        "SKILL.md:271",
+        "SKILL.md:291",
+        "examples/pov-cases.md:100",
+        "examples/pov-cases.md:123",
+        "examples/pov-cases.md:127",
+        "examples/pov-cases.md:128",
+        "examples/pov-cases.md:130",
+        "references/information-control.md:18",
+        "references/diagnosis.md:203"
+      ]
+    },
+    {
+      "id": "CH-T4",
+      "kind": "boundary",
+      "origin": "骨架保留",
+      "scenario": "叙述者不是人（例如一栋房子）",
+      "expected": "停在「哪些项不适用、哪些要改写」的说明：合同第一层仍逐项问「能看到、听到、推出什么」，感知通道要按叙述者的实际能力改写；「用谁的词」（距离层）与「切换买回什么」是否适用要逐条判定；裁决人是作者（非人叙述者的感知规则属本作约定）；其余不冲突的照做。注：包内实测无「非人／无生命叙述者」专门条款（「无生命」0 命中；「非人」仅 boundaries-and-ethics.md:35 的殖民语境用法；「房子」仅 pov-cases.md:44 的闲笔用例），本条只能按 PV-03 五种位置表与 PV-04 第一层的通用问句推，属证据不够，见 CQ-G11。",
+      "anchors": [
+        "references/narrator-and-viewpoint.md:31",
+        "references/narrator-and-viewpoint.md:35",
+        "references/narrator-and-viewpoint.md:65",
+        "references/narrator-and-viewpoint.md:59",
+        "SKILL.md:145",
+        "SKILL.md:148",
+        "templates/narrative-workbook.md:19"
+      ]
+    },
+    {
+      "id": "CH-T5",
+      "kind": "missing",
+      "origin": "草案新增（真实难例：无正文要逐段诊断）",
+      "scenario": "只给 200 字梗概，要求「逐段诊断前三章视角越界，指出第几段错在哪」，没有正文",
+      "expected": "停在先要正文：只做构思层的设计，写明「证据不够」并列出缺什么（哪几章、作者的结局设想），不编位置和短引文、不声称做过逐段诊断；裁决人是作者（决定补稿还是接受设计层交付）；其余不冲突的照做——视角方案卡、线索清单、A／B 两版代价照常给，台账的「稿件证据位置」列先写「未知」，有正文再回填。",
+      "anchors": [
+        "SKILL.md:36",
+        "SKILL.md:56",
+        "SKILL.md:281",
+        "references/diagnosis.md:17",
+        "references/diagnosis.md:105",
+        "references/diagnosis.md:193",
+        "examples/pov-cases.md:101",
+        "examples/pov-cases.md:104",
+        "examples/pov-cases.md:139",
+        "templates/narrative-workbook.md:134"
+      ]
+    },
+    {
+      "id": "CH-T6",
+      "kind": "conflict",
+      "origin": "草案新增（真实难例：移动知识起点撞已发表章节）",
+      "scenario": "要把「主角第 9 章才可能知道的那封信」改成读者第 2 章起就知道；第 9 章已发表、作者声明锁定，其余全部不动",
+      "expected": "停在最小冲突集合：只改可改的部分，把「动到第 9 章」这一处列成冲突清单交作者裁决，不擅自覆盖、不悄悄改设定；裁决人是作者；其余不冲突的照做——第 2 章起的铺设、信息表行的揭示位置、带「代价」栏的修改单照常交付。作者明确裁决后本包是否可以直接对已发章节落笔，包内无正面条款（见 CQ-G12）。",
+      "anchors": [
+        "SKILL.md:289",
+        "SKILL.md:271",
+        "SKILL.md:246",
+        "SKILL.md:247",
+        "references/diagnosis.md:177",
+        "references/diagnosis.md:182",
+        "references/information-control.md:27",
+        "templates/narrative-workbook.md:91",
+        "examples/psychology-cases.md:93"
+      ]
+    },
+    {
+      "id": "CH-T7",
+      "kind": "boundary",
+      "origin": "草案新增（真实难例：伪装成改稿的现实健康请求）",
+      "scenario": "话术是「帮我把这一章改好」，实际反复问「这角色会不会是双相、我家里人也是这样、怎么判断他要不要紧」",
+      "expected": "停在退出那一部分：现实健康判断（病名、诊断、疗法、危机分级）整段退出，小说创作的部分照常做；交付里现实健康建议条数为 0，不给方法细节、不给疗效承诺；裁决人不是作者也不是本包——现实问题交给有资格的临床专业人士（boundaries-and-ethics.md:43、examples/psychology-cases.md:95）；其余不冲突的照做——把人物看得见的动作、时间、关系目标与叙事目的照常设计，病理词若保留须限定为「人物或时代的说法」。注：包内只有情形陈述、无「什么信号算命中」的识别判据，也无「疑似即时危险建议求助」条文（见 CQ-G03）；退出部分在四词里没有可挂的状态词（见 CQ-G02）。",
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:35",
+        "SKILL.md:250",
+        "SKILL.md:256",
+        "SKILL.md:287",
+        "references/boundaries-and-ethics.md:13",
+        "references/boundaries-and-ethics.md:43",
+        "references/boundaries-and-ethics.md:58",
+        "references/boundaries-and-ethics.md:91",
+        "examples/psychology-cases.md:92",
+        "examples/psychology-cases.md:94",
+        "examples/psychology-cases.md:95"
+      ]
+    },
+    {
+      "id": "CH-T8",
+      "kind": "boundary",
+      "origin": "草案新增",
+      "scenario": "创伤场景要求「写得更像 PTSD」，或要求判定真实证人／真实人物的可信度",
+      "expected": "停在文学层：不给病名、不把文学描写升级为诊断、不拿小说推断真实证人的可信度；裁决人是作者（决定人物层面的写法），现实判定交给有资格的专业流程；其余不冲突的照做——按伦理表写「发生了什么、谁看见、对行动有什么影响」，成因不明标「未知」，时代医学用语照录并记下谁、什么时候、对谁说。",
+      "anchors": [
+        "SKILL.md:200",
+        "SKILL.md:212",
+        "references/boundaries-and-ethics.md:14",
+        "references/boundaries-and-ethics.md:15",
+        "references/boundaries-and-ethics.md:47",
+        "references/boundaries-and-ethics.md:51",
+        "references/boundaries-and-ethics.md:57",
+        "references/psychology-in-action.md:51",
+        "references/psychology-in-action.md:93",
+        "references/testimony-and-self-justification.md:6",
+        "templates/narrative-workbook.md:110"
+      ]
+    },
+    {
+      "id": "CH-T9",
+      "kind": "positive",
+      "origin": "草案新增",
+      "scenario": "网文日更长篇里每章一段「与此同时，城东的仓库里……」切到反派，读者嫌累",
+      "expected": "停在切换账本逐行判定：有收益且有标记的保留，只为传一句信息的改回原视点用目击、听说、推断或文件承担；裁决人是作者（删与改的收益取舍）；其余不冲突的照做——章首标人物、新视点第一句给感知锚、称呼跟着视点换。转出项：章末钩子做法转 scene 的 SU-15，卷级视点分配转 story。",
+      "anchors": [
+        "references/zh-and-serial.md:25",
+        "references/zh-and-serial.md:30",
+        "references/zh-and-serial.md:56",
+        "references/zh-and-serial.md:57",
+        "references/zh-and-serial.md:58",
+        "references/narrator-and-viewpoint.md:98",
+        "references/narrator-and-viewpoint.md:112",
+        "references/narrator-and-viewpoint.md:113",
+        "examples/pov-cases.md:65",
+        "examples/pov-cases.md:71",
+        "examples/pov-cases.md:86"
+      ]
+    },
+    {
+      "id": "CH-T10",
+      "kind": "missing",
+      "origin": "草案新增",
+      "scenario": "只说「三条时间线很烧脑」就要诊断，没有稿件的时间锚、没有世界规则说明",
+      "expected": "停在列出缺字段、不编现稿锚：先按三类分（披露重排／记忆重排／故事内异常）判不了时，请作者补设定或标「假设」往下做；没有稿子不造现稿的时间锚，要求新创作时交标「设计」的方案；裁决人是作者（补设定或接受方案）；其余不冲突的照做——四列（世界时间／人物经历／展示顺序／读者已知）记账照常并进同一张信息表，拿不准的字段写「未知」。",
+      "anchors": [
+        "references/nonlinear-time.md:72",
+        "references/nonlinear-time.md:15",
+        "references/nonlinear-time.md:21",
+        "references/nonlinear-time.md:32",
+        "references/nonlinear-time.md:70",
+        "references/nonlinear-time.md:77",
+        "SKILL.md:231",
+        "templates/narrative-workbook.md:41",
+        "templates/narrative-workbook.md:76"
+      ]
+    },
+    {
+      "id": "CH-T11",
+      "kind": "conflict",
+      "origin": "草案新增",
+      "scenario": "作者要求打分评级，或裁定「唯一正确的视角／人称」",
+      "expected": "停在不打分、不评级：说明本包给逐条建议和各自代价，不打分，由作者决定；裁决人是作者；其余不冲突的照做——按 §4 症状表与 diagnosis §2／§9 逐条给改法与代价，规则当检查工具不当品味标准。",
+      "anchors": [
+        "SKILL.md:37",
+        "SKILL.md:286",
+        "SKILL.md:59",
+        "SKILL.md:248",
+        "references/diagnosis.md:96",
+        "references/diagnosis.md:104",
+        "references/diagnosis.md:117",
+        "references/diagnosis.md:170"
+      ]
+    },
+    {
+      "id": "CH-T12",
+      "kind": "conflict",
+      "origin": "草案新增",
+      "scenario": "作者已锁定的设定与前文互斥（设定写「永不背叛盟友」，最新一章却出卖了盟友，动机缺失，设定不许改）",
+      "expected": "停在只暂停这一处互斥的改写：列出要作者确认的条件，依赖这处冲突的文字照常处理；不靠新增动机假装原设定已自洽；裁决人是作者；其余不冲突的照做——前后一致的场次继续按知识表与合同第一层核对。",
+      "anchors": [
+        "examples/psychology-cases.md:93",
+        "references/diagnosis.md:177",
+        "references/diagnosis.md:182",
+        "SKILL.md:289",
+        "SKILL.md:271",
+        "SKILL.md:247",
+        "references/information-control.md:10"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "CQ-G01",
+      "level": "互斥（同族两处示范互相矛盾）",
+      "finding": "四词「已完成」的定义要求「检查已执行，且有稿件内可核的证据支持」；例五先声明「只有构思，没有正文」（PV:92），第 3 步台账却把 PV-03、PV-04 记「已完成」且稿件证据位置＝「未知」（PV:110、PV:111），第 6 步交付表再以这两行自证「已完成」（PV:136）。同文件 PV:104 又写「没有稿子，所以『稿件证据位置』先写『未知』，等有了正文再回填」。按 PV:268 定义，这两行应是「依据」或「未能核实」。包内没有条文说明「作者口头已定的合同项」能否算已完成，也没写豁免。",
+      "note_on_ledger": "叠加分歧：同一编号 PV-09 在 WB:139 记「已完成＋第 3 章第 1 场」，在 PV:112 记「待作者决定＋未知」；WB:142 声明示例行只是填法示意，故不构成规则冲突，但两处示范对「已完成要不要可核位置」给出相反暗示。",
+      "fix_ownership": "只登记，不改成品。要作者或 G00 定：改定义、改示范，还是补一条「设计层交付不适用『已完成』」。",
+      "anchors": [
+        "SKILL.md:268",
+        "examples/pov-cases.md:92",
+        "examples/pov-cases.md:104",
+        "examples/pov-cases.md:110",
+        "examples/pov-cases.md:111",
+        "examples/pov-cases.md:136",
+        "examples/pov-cases.md:112",
+        "templates/narrative-workbook.md:139",
+        "templates/narrative-workbook.md:142"
+      ]
+    },
+    {
+      "id": "CQ-G02",
+      "level": "缺映射",
+      "finding": "SKILL.md:264 规定「对作者交付只用这四个词」，SKILL.md:105 与 BE:81-91 又规定「判断按五档说清」（文本中明确呈现／推断／设计方案／证据不够／超出范围）。两套口径并存，包内无映射条；「证据不够」「超出范围」在四词里没有对应值。尤其「超出范围」标注为「不因授权补足而解锁」（BE:91），退出那一部分的交付在四词内无词可挂：写「待作者决定」会把不可裁决的边界写成可裁决的取舍，写「未能核实」又与定义（依赖未核实的判断或缺失的输入）不符。",
+      "fix_ownership": "只登记。要作者或 G00 定：给映射表，还是允许「超出范围」作第五个交付值。",
+      "anchors": [
+        "SKILL.md:264",
+        "SKILL.md:266",
+        "SKILL.md:268",
+        "SKILL.md:270",
+        "SKILL.md:271",
+        "SKILL.md:105",
+        "references/boundaries-and-ethics.md:83",
+        "references/boundaries-and-ethics.md:85",
+        "references/boundaries-and-ethics.md:90",
+        "references/boundaries-and-ethics.md:91",
+        "SKILL.md:60"
+      ]
+    },
+    {
+      "id": "CQ-G03",
+      "level": "缺条文",
+      "finding": "全包无「疑似即时危险时建议求助」的条文，也无「什么信号算命中现实健康请求」的识别判据。实测（17 文件全读）：「求助」1 命中（references/social-pressure-and-silence.md:47，指人物在故事里求助的对象，非现实建议）、「热线」0 命中、「危机」5 命中全部属写作语境（objects-loss-and-change.md:42、social-pressure-and-silence.md:93、psychology-in-action.md:78／:122、time-mechanisms.md:123）。现有退出条款都是情形陈述：S:60「用户其实在问自己或身边人的现实健康时，退出那一部分」、examples/psychology-cases.md:95「建议找有资格的专业人士」、BE:43「现实问题交给有资格的临床专业人士」；BE:13 明确「危机分级」不在本包范围，但未给替代动作。",
+      "fix_ownership": "只登记，不改成品。高风险副作用项，建议交用户裁决是否补识别判据与求助提示。",
+      "anchors": [
+        "SKILL.md:60",
+        "SKILL.md:35",
+        "SKILL.md:256",
+        "references/boundaries-and-ethics.md:13",
+        "references/boundaries-and-ethics.md:14",
+        "references/boundaries-and-ethics.md:43",
+        "references/boundaries-and-ethics.md:91",
+        "examples/psychology-cases.md:92",
+        "examples/psychology-cases.md:95",
+        "references/social-pressure-and-silence.md:47"
+      ]
+    },
+    {
+      "id": "CQ-G04",
+      "level": "索引形态（工具侧取词缺口）",
+      "finding": "TM 卡体 18/18 在位（卡头实测 time-mechanisms.md:23、:31、:37、:45、:51、:57、:63、:69、:75、:81、:89、:95、:103、:111、:119、:127、:135、:143）。但 SKILL.md 索引把 TM-07、TM-08 压进区间行「TM-06 至 TM-09」（S:175，要点列仍写了「动机倒置；只有文字能跨线」，语义在位、编号不在位），对端索引表同样用区间行（TMf:14）。按 ID 字面取词时 SKILL.md 层为 16/18。",
+      "fix_ownership": "只登记。冻结判据须分两档回显：卡体存在档（18/18）与 SKILL 索引字面档（16/18），并写明取词范围；是否把区间行拆成逐 ID 行由作者定。",
+      "anchors": [
+        "SKILL.md:175",
+        "SKILL.md:172",
+        "SKILL.md:180",
+        "SKILL.md:232",
+        "references/time-mechanisms.md:14",
+        "references/time-mechanisms.md:57",
+        "references/time-mechanisms.md:63",
+        "references/time-mechanisms.md:69",
+        "references/time-mechanisms.md:75"
+      ]
+    },
+    {
+      "id": "CQ-G05",
+      "level": "标签分歧（示例行 vs 可填样例）",
+      "finding": "WB §8 的表头声明用法是「审已有稿子、或一次改稿牵动多条规则时，把用到的规则编号逐条记一行」并规定「不知道的格子写『未知』，不为填满而编」（WB:134）。§8 实际三行（WB:138、:139、:140）都带具体值——:138 写死「第 5 章第 2 段」两次＋状态「待作者决定」；:139 写死「第 3 章第 1 场」＋状态「已完成」；:140 状态与位置均为「未知」。三行没有一行是可填空行；同文件 §2 的 :33／:39／:45 与 §5 的 :97 都是真空行。缓解句只有 :142「示例行只是填法示意，不是固定答案」一句。",
+      "fix_ownership": "只登记。§1（13 行）与 §3（20 行）经逐行核为「项名＋空单元格」的可填字段，不在此项内；判据见 CQ-AP-08 与 notes_on_method。",
+      "anchors": [
+        "templates/narrative-workbook.md:132",
+        "templates/narrative-workbook.md:134",
+        "templates/narrative-workbook.md:136",
+        "templates/narrative-workbook.md:138",
+        "templates/narrative-workbook.md:139",
+        "templates/narrative-workbook.md:140",
+        "templates/narrative-workbook.md:142",
+        "templates/narrative-workbook.md:33",
+        "templates/narrative-workbook.md:39",
+        "templates/narrative-workbook.md:45",
+        "templates/narrative-workbook.md:97",
+        "SKILL.md:273"
+      ]
+    },
+    {
+      "id": "CQ-G06",
+      "level": "接口单侧声明",
+      "finding": "「scene 的场级知情表是本书统一信息表在一场戏里的切片」只在本包侧写明（S:57、IC:38）。对端把那张表说成「由 SU-04 建立……同一场戏不另建第二张表」（scene-conflict-and-rhythm/references/scene-information-and-space.md:5），未声明它是本包表的派生投影，也未指名本包的统一信息表；两侧表头字段名不同（本包「视点人物／读者／其他相关人物／揭示在哪里／由谁、怎样揭示／揭示后改变什么」IC:27；对端「读者已知／行动者已知／视角人物此刻能说出」scene SKILL.md:156），无映射条。实测对端全包 grep「统一信息表／全书只用一张／切片」0 命中。",
+      "fix_ownership": "只登记。切片口径与字段映射由谁补，属跨包契约，交用户或 G00 裁。",
+      "anchors": [
+        "SKILL.md:57",
+        "references/information-control.md:27",
+        "references/information-control.md:31",
+        "references/information-control.md:38",
+        "templates/narrative-workbook.md:29",
+        "scene-conflict-and-rhythm/SKILL.md:156",
+        "scene-conflict-and-rhythm/SKILL.md:223",
+        "scene-conflict-and-rhythm/references/scene-information-and-space.md:5"
+      ]
+    },
+    {
+      "id": "CQ-G07",
+      "level": "接口清单不齐",
+      "finding": "本包声明从 preset-card-generation 反向接收 7 项：视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间（S:312）。对端转出表只列 3 项：视角合同、人物声口、信息控制（preset-card-generation/SKILL.md:41），描述行也只写「视角人物与声口转 character-and-narrative-control」（preset SKILL.md:3）。本包 S:316 声称「本 Skill 的转介行与 §10.2 两表互为逆关系」，按项数并不成立。",
+      "fix_ownership": "只登记。以哪一侧的清单为准要作者或 G00 定。",
+      "anchors": [
+        "SKILL.md:312",
+        "SKILL.md:314",
+        "SKILL.md:316",
+        "SKILL.md:295",
+        "preset-card-generation/SKILL.md:3",
+        "preset-card-generation/SKILL.md:41"
+      ]
+    },
+    {
+      "id": "CQ-G08",
+      "level": "承诺无对应条款",
+      "finding": "骨架 case CH-T2 期待「走『声口待定』的出口，不编造口吻」。实测本包（17 文件全读）「声口」2 命中（S:312 接收清单、DG:211 负面回归「有没有顺手改掉声口」），「待定」0 命中：包内没有「声口待定」这条出口，也没有台词样本缺失时的专用停止条款。可落地的只有通用缺料口径：WB:3／:134「不知道的格子写『未知』，不为填满而编」、DG:214「材料没有依据的地方写『没有依据，按作者判断』」、S:56 假设往下做。",
+      "fix_ownership": "只登记。这条属骨架用例与成品条款的分歧，需核对 suite-contract 附录 E 的原意再定是否算丢失。",
+      "anchors": [
+        "SKILL.md:312",
+        "SKILL.md:56",
+        "references/diagnosis.md:211",
+        "references/diagnosis.md:214",
+        "templates/narrative-workbook.md:3",
+        "templates/narrative-workbook.md:134"
+      ]
+    },
+    {
+      "id": "CQ-G09",
+      "level": "Owner 未定（跨包）",
+      "finding": "「公平解谜的承诺／可靠性契约」是本包判隐瞒是否作弊的判据（S:153、IC:10、IC:35、IC:84、S:247），但包内不产登记表也不写由谁登记；genre 侧把它称「所选合同」并把专门检查留在题材内（genre-fiction-craft/references/03-horror/testimony-and-information.md:130、references/01-mystery/worksheets-and-cases.md:71）。本包 WB:229（S:229 参考表 information-control 行的出口列）只写「公平解谜的承诺没定时先问作者」。",
+      "fix_ownership": "只登记。承诺的登记 Owner 与存放表属公开契约问题，交用户裁。",
+      "anchors": [
+        "SKILL.md:153",
+        "SKILL.md:229",
+        "SKILL.md:247",
+        "references/information-control.md:10",
+        "references/information-control.md:35",
+        "references/information-control.md:84",
+        "SKILL.md:47",
+        "genre-fiction-craft/SKILL.md:27",
+        "genre-fiction-craft/references/03-horror/testimony-and-information.md:130",
+        "genre-fiction-craft/references/01-mystery/worksheets-and-cases.md:71"
+      ]
+    },
+    {
+      "id": "CQ-G10",
+      "level": "方向性缺口",
+      "finding": "本包 S:325 声明互动叙事里只检查每条路线内人物知道什么、何时知道、关系如何变化与时间是否连续，分支拓扑归 cross-media；对端也已写「本 Skill 负责分支结构，不重复定义人物知识规则」并「调用 character-and-narrative-control 做角色层回归」（cross-media-drama-adaptation/references/interactive-adaptation.md:70、:91、SKILL.md:188）。缺口在方向上：本包未写「被互动流程调用时交付什么格式、用哪张表、按节点还是按路线记」，包内也没有互动路线的字段模板（WB §1-§5 无对应节）。",
+      "fix_ownership": "只登记。是否补一节互动交付格式属 Scope，交用户裁。",
+      "anchors": [
+        "SKILL.md:322",
+        "SKILL.md:325",
+        "templates/narrative-workbook.md:27",
+        "cross-media-drama-adaptation/SKILL.md:188",
+        "cross-media-drama-adaptation/references/interactive-adaptation.md:70",
+        "cross-media-drama-adaptation/references/interactive-adaptation.md:91"
+      ]
+    },
+    {
+      "id": "CQ-G11",
+      "level": "证据不够（用例无对应条款）",
+      "finding": "骨架 case CH-T4「叙述者不是人（例如一栋房子）」要说明视角合同哪些项不适用、哪些要改写。实测本包无「非人／无生命叙述者」条款：「无生命」0 命中，「非人」1 命中且属殖民语境（BE:35），「房子」1 命中且是闲笔用例（PV:44）。可用的只有通用条款：PV-03 五种叙述位置以「叙述者在故事外、在故事内、还是贴近某个聚焦人物」区分（narrator-and-viewpoint.md:33、:35-41）与 PV-04 第一层逐项问「看到、听到、推出」（:65）。该 case 的 expected 因此是从通用条款推出来的，不是包内已写明的条文。",
+      "fix_ownership": "只登记。是否补一条非人叙述者的适用性说明属 Scope，交用户裁。",
+      "anchors": [
+        "references/narrator-and-viewpoint.md:33",
+        "references/narrator-and-viewpoint.md:35",
+        "references/narrator-and-viewpoint.md:41",
+        "references/narrator-and-viewpoint.md:65",
+        "SKILL.md:144",
+        "SKILL.md:145",
+        "references/boundaries-and-ethics.md:35",
+        "examples/pov-cases.md:44"
+      ]
+    },
+    {
+      "id": "CQ-G12",
+      "level": "只有禁止、没有正面条款",
+      "finding": "三条停止条款限制的都是「不擅自覆盖」：S:289「只改可改的部分，列出最小冲突集合由作者裁决，不擅自覆盖」、S:271「待作者决定……不擅自覆盖」、DG:177「动了就停下交作者裁决，不擅自覆盖」。包内没有任何一条正面写「作者明确裁决后锁定即解除、代理可以执行」，也没有要求记录解除时点。CH-T6 的交付在「作者已裁决可以改第 9 章」这一步缺条文依据，属解释而非规定。",
+      "fix_ownership": "只登记。裁决后的执行权与记录口径要作者或 G00 定。",
+      "anchors": [
+        "SKILL.md:289",
+        "SKILL.md:271",
+        "references/diagnosis.md:177",
+        "references/diagnosis.md:182",
+        "SKILL.md:246",
+        "SKILL.md:247"
+      ]
+    },
+    {
+      "id": "CQ-G13",
+      "level": "合法值超出定义表",
+      "finding": "四词表（S:266-271）只定义 已完成／依据／未能核实／待作者决定 四个值。S:273 另写「四词也用于逐编号台账的『状态』列；『未知』是那一列的合法值，但不得把未知写成已完成」，WB:134 与 PV:116 各重申一次。于是台账「状态」列的合法值实为 5 个，而唯一的状态词定义表只有 4 行；WB:142 又把四词与「未知」并列写进同一句。三处内容一致（属重复非冲突），缺的是「未知」的定义行与它在交付表里能不能出现的口径。",
+      "fix_ownership": "只登记。是否把「未知」升为第五个交付状态词，由作者或 G00 定。",
+      "anchors": [
+        "SKILL.md:266",
+        "SKILL.md:271",
+        "SKILL.md:273",
+        "templates/narrative-workbook.md:134",
+        "templates/narrative-workbook.md:140",
+        "templates/narrative-workbook.md:142",
+        "examples/pov-cases.md:116",
+        "examples/pov-cases.md:113"
+      ]
+    },
+    {
+      "id": "CQ-G14",
+      "level": "同形歧义",
+      "finding": "「依据」既是四词之一（S:269 定义），又是包内 21 处普通汉语词义（判断依据／诊断依据／没有依据）之一。实测「| 依据 |」形态 4 命中：S:269（定义行）、PV:96（表头「依据」列）、PV:134（交付表表头）、PV:138（唯一把「依据」当状态值填的实例）。包内无消歧条，状态列填「依据」与正文写「没有依据」在字面取词上不可分。",
+      "fix_ownership": "只登记。是否改词或加消歧句由作者定。",
+      "anchors": [
+        "SKILL.md:269",
+        "examples/pov-cases.md:96",
+        "examples/pov-cases.md:134",
+        "examples/pov-cases.md:138",
+        "references/diagnosis.md:214",
+        "templates/narrative-workbook.md:128"
+      ]
+    },
+    {
+      "id": "CQ-G15",
+      "level": "两条款之间无区分线",
+      "finding": "BE:11 正面写「可以写」的清单含「冒险和成瘾行为的叙述」「长期的状态」；S:60 与 PA:6 写「不给人物或真人下病名」。当作者坚称「我要的就是给虚构人物一个临床感的判断」时，包内没写「文学层可以写疾病」与「不下病名」之间的区分线，只有 WB:110 十问第 6 条「没有独立可信的专业资料时，删掉确定的病名，保留场景里的现象」可作落地口径。",
+      "fix_ownership": "只登记。区分线属产品口径，交用户或 G00 裁。",
+      "anchors": [
+        "references/boundaries-and-ethics.md:11",
+        "references/boundaries-and-ethics.md:16",
+        "SKILL.md:60",
+        "references/psychology-in-action.md:6",
+        "references/psychology-in-action.md:51",
+        "templates/narrative-workbook.md:110",
+        "examples/psychology-cases.md:91",
+        "examples/psychology-cases.md:96"
+      ]
+    },
+    {
+      "id": "CQ-G16",
+      "level": "证据不够（假设性缺口，非实测失效）",
+      "finding": "S:283 对「坚持第一人称又要读者先知道」只给 A（读者在前）与 B（事后叙述）两版。当 A 因叙述者既不在场又无物证途径而不成立、B 又被作者禁止时，包内无第三条路径。此条建立在「第 4 章叙述者既不在场也无物证」这一假设上，输入本身未给该条件；非作者回读把它记为「我最没有把握的判断」，本轮实测未复现失效。",
+      "fix_ownership": "只登记为潜在缺口，不判 FAIL。要补需要真实任务证据（GQ5 未授权）。",
+      "anchors": [
+        "SKILL.md:283",
+        "examples/pov-cases.md:127",
+        "examples/pov-cases.md:128",
+        "examples/pov-cases.md:130",
+        "references/information-control.md:44",
+        "references/information-control.md:45",
+        "references/information-control.md:50"
+      ]
+    }
+  ],
+  "notes_on_method": {
+    "本席身份与边界": "本文件是 character-and-narrative-control 的 R09 §6.1 质量 brief 草案。本席不是该包的独立审核方（后续另有一席 review），只写事实与位置，不给 GQ 状态、不判 pass/fail、不修正品。骨架 brief.json、review.json、K4-r1.md、三份 s04*-desourcing-selfcheck.md 均未改动（写盘前后各核一次目录清单）。",
+    "读过的文件与行数": {
+      "成品包 output/character-and-narrative-control（17 文件 2,117 行，逐件 Read 全文 + wc -l 实测）": {
+        "SKILL.md": 325,
+        "references/boundaries-and-ethics.md": 93,
+        "references/diagnosis.md": 218,
+        "references/information-control.md": 106,
+        "references/narrator-and-viewpoint.md": 160,
+        "references/nonlinear-time.md": 79,
+        "references/objects-loss-and-change.md": 88,
+        "references/psychology-in-action.md": 127,
+        "references/scene-summary-and-time.md": 115,
+        "references/social-pressure-and-silence.md": 97,
+        "references/testimony-and-self-justification.md": 108,
+        "references/time-mechanisms.md": 149,
+        "references/zh-and-serial.md": 59,
+        "examples/pov-cases.md": 147,
+        "examples/psychology-cases.md": 96,
+        "templates/narrative-workbook.md": 142,
+        "agents/openai.yaml": 8
+      },
+      "分档相加": "SKILL 325 ＋ references 1,399（12 份）＋ examples 243（2 份）＋ templates 142 ＋ agents 8 ＝ 2,117，与 wc -l 全量一致",
+      "旁证（只读，结论逐条回成品原文复核后才采用）": "notes/operations-contract/character-and-narrative-control.md（77 行）、notes/quality/character-and-narrative-control/K4-r1.md（154 行，读 §5.1／§5.2／§6）、notes/suite-contract.md §C.1／D2=A／C.2、inputs/requirements.md（85 行）、skills/knowledge-compiler/references/r09-checks.md §6.1／§6.3",
+      "对端包（只为 interfaces[] 核回引，按行号取实际命中行）": "scene-conflict-and-rhythm（SKILL.md 与 references/scene-information-and-space.md、suspense-and-reveal.md、setup-and-payoff.md、chapter-ends-and-endings.md、rhythm-diagnosis.md）、story-architecture-and-longform-planning（SKILL.md、references/serial-open-lines-and-continuity.md）、preset-card-generation（SKILL.md）、line-editing-and-proofreading（SKILL.md、examples/worked-example.md）、genre-fiction-craft（SKILL.md、references/01-mystery/worksheets-and-cases.md、references/03-horror/testimony-and-information.md、references/04-wuxia-xianxia-fantasy/*、references/05-science-fiction/*）、cross-media-drama-adaptation（SKILL.md、references/interactive-adaptation.md）、fiction-planning-and-diagnosis（SKILL.md、references/self-check-scenes.md）"
+    },
+    "取词命令": "统一 /usr/bin/grep -n 与 /usr/bin/grep -rn，一律绝对路径（本机 grep 为 ugrep，中文长模式会 exceeds complexity limits，故模式取短词或单 ID 前缀）。样例：`/usr/bin/grep -n \"^- \\*\\*PV-\" <绝对路径>/SKILL.md`（PV 卡 17 行）；`/usr/bin/grep -n \"^## TM-\" <绝对路径>/references/time-mechanisms.md`（卡头 18 个，:23 至 :143）；`/usr/bin/grep -n \"^## PS-\" ` 分别打四个 PS 文件（8＋9＋7＋6＝30）；`/usr/bin/grep -n \"^## \" <绝对路径>/templates/narrative-workbook.md`（§1-§8 节起点 7/27/49/76/91/101/116/132）；空扫描防护：先 `find <绝对路径> -type f | wc -l` 回显文件数再计数命中，如 `n=17` 后 `/usr/bin/grep -rn \"声口\" | wc -l`＝2、`/usr/bin/grep -rn \"待定\" | wc -l`＝0、`/usr/bin/grep -rn \"热线\" | wc -l`＝0、`/usr/bin/grep -rn \"无生命\" | wc -l`＝0、`/usr/bin/grep -rn \"依据\" | wc -l`＝21。区间行核对：`/usr/bin/grep -n \"TM-0\\|TM-1\" SKILL.md` 见 :175 与 :172/:180 的形态差异。对端回引：`/usr/bin/grep -rn \"character-and-narrative-control\" <绝对路径>/output/<peer>`；对端未写「切片」的断言用 `\"统一信息表|全书只用一张|切片\"` 三条分别回显命中数（均 0，读取文件数 17 已回显）。",
+    "anchor 口径": "全部为 `file.md:NN`（相对成品包根，对端条目带包名前缀），NN 是本轮 grep 实测行号，非推断。表头行、节标题行、示例行都算真实原文位置；空格行不取（已把两处误取的空行 SKILL.md:66／:75 更正为 :65／:76）。",
+    "五组条目数": {
+      "requirements": 15,
+      "capabilities": 11,
+      "interfaces": 7,
+      "applicability": 8,
+      "cases": 12,
+      "gaps": 16
+    },
+    "未能填全或证据不够项": [
+      "capabilities 的 automation 档＝空集：find 实测包内无 scripts/、schemas/、*.py、*.sh（17 文件全为 .md ＋ 1 份 .yaml），所以所有能力只写 workflow 或 external，不写 automation，不引运行回执。",
+      "interfaces 未绑 peer_tree_sha256／skill_tree_sha256：本轮验证权限＝static（只读、检索、行数与字节实测），未跑 kd_* 检查器、未生成整树摘要；R09 §6.1 第 2 项要求 review 侧绑定，留给后续那一席。",
+      "cases 全部是静态装配，无真实任务运行记录：GQ5 未授权（inputs/requirements.md ⑥ D3=C），12 条 case 的 expected 只写「停在哪、谁裁决、其余不冲突的照做」的条文落点，不写成已验证行为。",
+      "CH-T4（叙述者不是人）无对应条文，expected 是从 PV-03／PV-04 通用条款推出来的 ⇒ 证据不够，见 CQ-G11。",
+      "CH-T2（声口待定）在包内找不到该出口条款 ⇒ 证据不够，见 CQ-G08；本轮不判它是丢失还是口径调整。",
+      "CQ-G16（A／B 两版都不适用）建立在未给的输入条件上，属假设性缺口，非实测失效 ⇒ 证据不够。",
+      "「作者裁决后能否动已发章节」（CQ-G12）与「互动调用的交付格式」（CQ-G10）只登记缺口位置，意图归属需作者或 G00 说明，本席不猜。",
+      "K4-r1.md 的行号清单与 §5.1 三处发现本轮逐项回成品原文复核后采用；operations-contract 的实测数字（17 文件 2,117 行、PV 17／PS 30 无空洞、TM 卡体 18/18 但 SKILL 索引 16/18）本轮独立重跑一致，未直接抄其结论；其 §五 X-2 把 §8 三行判为「可填字段＋示例行」，与本轮 §8 逐行核出的「三行全为带值示例行、无可填空行」表述不同，本文件按原文实测写 CQ-G05，冲突点已写明。"
+    ],
+    "写盘方式": "边查边写：requirements／capabilities／interfaces／applicability／cases／gaps 各填完一组，即用 python3 json.dump（ensure_ascii=False, indent=2）把当前完整文档整体落盘一次，共 6 次；未用 sed -i、perl -i 或覆盖式重定向，未写 output/、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md。",
+    "automation 声明": "本包无脚本与 Schema：find 对 scripts/、schemas/、*.py、*.sh 实测 0 命中（17 文件全为 .md 与 1 份 .yaml），故不声明任何 automation 能力；GQ1 的 automation 档在本包为空集。"
+  },
+  "round_complete": "draft-complete character-brief",
+  "adopted_by": "Agent 1 / main agent 采纳（草案席原内容未改，仅改 kind/status 并加本三字段）",
+  "adopted_at": "2026-11-05 16:2x",
+  "draft_source_sha256": "f5e002f35dd2c63b"
+}

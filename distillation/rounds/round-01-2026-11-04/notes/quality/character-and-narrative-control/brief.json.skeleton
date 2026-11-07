@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skill": "character-and-narrative-control",
+  "status": "skeleton",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "requirements": [],
+  "capabilities": [],
+  "interfaces": [],
+  "applicability": [],
+  "cases": [
+    {
+      "id": "CH-T1",
+      "kind": "positive",
+      "scenario": "双视点悬疑",
+      "expected": "交付视角合同和统一信息表"
+    },
+    {
+      "id": "CH-T2",
+      "kind": "missing",
+      "scenario": "人物还没有任何台词样本",
+      "expected": "走「声口待定」的出口，不编造口吻"
+    },
+    {
+      "id": "CH-T3",
+      "kind": "conflict",
+      "scenario": "坚持第一人称，又要读者知道主角不知道的阴谋",
+      "expected": "列出补光、换视点、事后叙述等选项和各自代价"
+    },
+    {
+      "id": "CH-T4",
+      "kind": "boundary",
+      "scenario": "叙述者不是人（例如一栋房子）",
+      "expected": "说明视角合同哪些项不适用、哪些要改写"
+    }
+  ],
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "kind": "draft",
+  "skill": "line-editing-and-proofreading",
+  "status": "draft",
+  "assembled_by": "R09 §6.1 质量 brief 草案（成品盘点，非独立审核方）",
+  "assembled_at": "2026-11-05",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）；本草案在骨架 4 条上补足至 8 条",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "草案：只写事实与位置，不给通过结论、不写 GQ 状态。锚点相对成品包根目录 output/line-editing-and-proofreading/；跨包锚点带包名前缀。所有行号写入前用 /usr/bin/grep -n 或等价的逐行取数实测。骨架 note 原文保留在 notes/quality/line-editing-and-proofreading/brief.json，未被改动。",
+  "artifact_inventory": {
+    "files": 10,
+    "lines_total": 1303,
+    "per_file_lines": {
+      "SKILL.md": 206,
+      "agents/openai.yaml": 8,
+      "examples/worked-example.md": 147,
+      "references/en-mechanics-and-punctuation.md": 133,
+      "references/en-paragraph-and-emphasis.md": 98,
+      "references/en-sentence-revision.md": 133,
+      "references/en-word-choice-and-concision.md": 96,
+      "references/workflow.md": 134,
+      "references/zh-mechanics.md": 143,
+      "references/zh-sentence-and-wording.md": 205
+    },
+    "sum_check": "逐件回显相加 206+8+147+133+98+133+96+134+143+205＝1303，与 wc -l 合计 1303 一致；文件数 find -type f＝10，与 ls 列举的 10 条一致",
+    "rule_id_universe": {
+      "SR": "SR-01 至 SR-16，唯一 16 个，两端连续无缺号",
+      "EN": "EN-01 至 EN-40，唯一 40 个，两端连续无缺号",
+      "total_unique": 56,
+      "form": "两位零填充编号（SR-01…／EN-01…）；EN-34 至 EN-40 为补排段，附在各英文文件末尾",
+      "definition_sites": "SR 定义：SKILL.md:78-108 的 16 条粗体条目（实测计数 16）＋ zh-sentence-and-wording.md 的 13 个二级标题（SR-01…SR-12、SR-16）＋ zh-mechanics.md 的 2 个二级标题（SR-13 在 :13、SR-15 在 :72）；SR-14 无独立二级标题，作三级标题挂在 zh-mechanics.md:27",
+      "other_id_like_tokens": "全包另见 1 处非 SR/EN 形态编号：en-word-choice-and-concision.md:60 的 L-2（全包唯一一次出现，包内无该编号定义）"
+    },
+    "scripts": "全包 0 个脚本、0 个 templates/ 目录；非 md/yaml 文件数 0；无自动化执行声明。可执行形态只有文本规则、路由表、台账模板与示范",
+    "automation_note": "capabilities 全部记为 workflow／external，不记 automation。成品内出现「批量」3 处均为拒绝自动执行的出口条款（SKILL.md:29、SKILL.md:127、SKILL.md:165、workflow.md:134），agents/openai.yaml:8 为 allow_implicit_invocation: false"
+  },
+  "requirements": [
+    {
+      "id": "LQ-R01",
+      "text": "句子层定位：只处理句子、段落、用词、标点、拼写与校对，让文字更清楚、更有力、更统一；剧情、人物、视角、结构不在这里改。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:11", "SKILL.md:201", "SKILL.md:27", "SKILL.md:177"]
+    },
+    {
+      "id": "LQ-R02",
+      "text": "触发与负触发：五类接（润色／精修／校对／查错别字标点／体例不一），七类不接且须先转介或停下（改剧情结构、只给梗概、打分评级与批量替换、整段重写、外部事实核实、预设卡与三轴审章、作者保留的口语方言意识流）。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:19", "SKILL.md:20", "SKILL.md:21", "SKILL.md:22", "SKILL.md:23", "SKILL.md:27", "SKILL.md:28", "SKILL.md:29", "SKILL.md:30", "SKILL.md:31", "SKILL.md:32", "SKILL.md:33", "SKILL.md:35", "SKILL.md:37", "SKILL.md:43", "references/workflow.md:102", "examples/worked-example.md:83", "examples/worked-example.md:95"]
+    },
+    {
+      "id": "LQ-R03",
+      "text": "第 0 轮先定三件事：改到什么程度（只改错／句级精修／段级调整／作者划更窄范围）、按什么体例（宿主或作者体例优先，否则稿内多数统一，人名专名先问作者）、哪些不能动（声口与刻意破格）。三件事不清但确定错误可改时先改确定错误。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:51", "SKILL.md:55", "SKILL.md:56", "SKILL.md:57", "SKILL.md:59", "references/workflow.md:16", "references/workflow.md:18", "references/workflow.md:19", "references/workflow.md:20", "references/workflow.md:33"]
+    },
+    {
+      "id": "LQ-R04",
+      "text": "分层逐轮精修：第 1–6 轮（段落→句子骨架→强调与节奏→简洁与用词→机械校对→誊清复核），从大到小、一层只改一类，可跳轮但要说明原因。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:61", "SKILL.md:63", "SKILL.md:67", "SKILL.md:68", "SKILL.md:69", "SKILL.md:70", "SKILL.md:71", "SKILL.md:72", "references/workflow.md:10", "references/workflow.md:13", "references/workflow.md:35", "references/workflow.md:43", "references/workflow.md:53", "references/workflow.md:59", "references/workflow.md:67", "references/workflow.md:74"]
+    },
+    {
+      "id": "LQ-R05",
+      "text": "中文句子与段落细则：一段一事、对白换人另起段、修饰语与主语对齐、成分齐全搭配得当、语序与副词辖域、被动按段落主语选择、句末强调、同型句轮换、并列外形一致、删无功能词、具体化不添事实、套话整句重写。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:76", "SKILL.md:78", "SKILL.md:80", "SKILL.md:82", "SKILL.md:84", "SKILL.md:86", "SKILL.md:88", "SKILL.md:90", "SKILL.md:92", "SKILL.md:94", "SKILL.md:96", "SKILL.md:98", "SKILL.md:100", "references/zh-sentence-and-wording.md:18", "references/zh-sentence-and-wording.md:59", "references/zh-sentence-and-wording.md:71", "references/zh-sentence-and-wording.md:89", "references/zh-sentence-and-wording.md:138", "references/zh-sentence-and-wording.md:154"]
+    },
+    {
+      "id": "LQ-R06",
+      "text": "中文标点与体例（SR-13）：全角半角分工、引号套层级、省略号与破折号占位、顿号与相邻概数、问号叹号、书名号与间隔号、括号与连接号；按 GB/T 15834-2011 通行要点写，并声明出版社或平台体例优先、让渡只到体例层。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:102", "references/zh-mechanics.md:5", "references/zh-mechanics.md:7", "references/zh-mechanics.md:9", "references/zh-mechanics.md:13", "references/zh-mechanics.md:17", "references/zh-mechanics.md:18", "references/zh-mechanics.md:22", "references/zh-mechanics.md:43", "references/zh-mechanics.md:46", "references/zh-mechanics.md:53", "references/zh-mechanics.md:61", "references/zh-mechanics.md:65", "references/zh-mechanics.md:68"]
+    },
+    {
+      "id": "LQ-R07",
+      "text": "对白格式（SR-14）：提示语在前／中／后与动作插入共五种写法成表，连续多段引号规则、内心独白与电话书信处理，选定一种全稿统一。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:104", "references/zh-mechanics.md:27", "references/zh-mechanics.md:29", "references/zh-mechanics.md:34", "references/zh-mechanics.md:35", "references/zh-mechanics.md:37", "references/zh-mechanics.md:38", "references/zh-mechanics.md:39", "references/zh-sentence-and-wording.md:31", "references/zh-sentence-and-wording.md:41"]
+    },
+    {
+      "id": "LQ-R08",
+      "text": "错别字与词形（SR-15）：的地得三分、汉字与阿拉伯数字分工、易错字与常见错别字清单、成语误用只标不改、异形词按推荐写法、年份〇与简写规则。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:106", "references/zh-mechanics.md:72", "references/zh-mechanics.md:74", "references/zh-mechanics.md:83", "references/zh-mechanics.md:87", "references/zh-mechanics.md:91", "references/zh-mechanics.md:96", "references/zh-mechanics.md:111", "references/zh-mechanics.md:113", "references/zh-mechanics.md:123", "references/zh-mechanics.md:127"]
+    },
+    {
+      "id": "LQ-R09",
+      "text": "全稿校对与一致性：长稿先建体例表（人名专名／数字／对白标点／内心独白／外文），前后不一致先列各写法位置，一般体例项按稿内多数写入表，人名专名不适用稿内多数须问作者；「只是体例不同」单列不算错误。",
+      "status": "已成文（表列名与逐条清单列名在不同文件不一致，见 GAP-02）",
+      "anchors": ["SKILL.md:56", "SKILL.md:164", "references/zh-mechanics.md:129", "references/zh-mechanics.md:131", "references/zh-mechanics.md:133", "references/zh-mechanics.md:141", "references/zh-mechanics.md:143", "references/workflow.md:67", "references/workflow.md:69", "references/workflow.md:72", "references/workflow.md:132"]
+    },
+    {
+      "id": "LQ-R10",
+      "text": "英文 mechanics 与标点句法（EN-01 至 EN-10、EN-34、EN-35）：插入语边界、限制性与非限制性从句、逗号拼接、句子片段、并列结构、所有格、列表逗号、引号与直接间接引语、拼写与断词、标点回读、并列连词前逗号、括注标点。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:110", "SKILL.md:116", "SKILL.md:121", "references/en-mechanics-and-punctuation.md:3", "references/en-mechanics-and-punctuation.md:5", "references/en-mechanics-and-punctuation.md:7", "references/en-mechanics-and-punctuation.md:29", "references/en-mechanics-and-punctuation.md:84", "references/en-mechanics-and-punctuation.md:106", "references/en-mechanics-and-punctuation.md:113", "references/en-mechanics-and-punctuation.md:124"]
+    },
+    {
+      "id": "LQ-R11",
+      "text": "英文句子、段落与用词（EN-11 至 EN-33、EN-36 至 EN-40）：悬垂修饰、嵌套被动、肯定与否定、代词指代、强调位置、句子修订回归、时态与时间标记、冠词、主谓一致、限定词辖域、摘要时态、松散句连排；段落中心、长度、过渡、单句段、对话分段、强调排版、段落回归、主题句与段末两处理；删冗、固定冗语、抽象与具体、陈词整句重写、词义搭配、历史用法、简洁回归。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:114", "SKILL.md:117", "SKILL.md:118", "SKILL.md:119", "references/en-sentence-revision.md:5", "references/en-sentence-revision.md:7", "references/en-sentence-revision.md:62", "references/en-sentence-revision.md:69", "references/en-sentence-revision.md:102", "references/en-paragraph-and-emphasis.md:5", "references/en-paragraph-and-emphasis.md:71", "references/en-paragraph-and-emphasis.md:78", "references/en-paragraph-and-emphasis.md:89", "references/en-word-choice-and-concision.md:5", "references/en-word-choice-and-concision.md:7", "references/en-word-choice-and-concision.md:80", "references/en-word-choice-and-concision.md:91"]
+    },
+    {
+      "id": "LQ-R12",
+      "text": "AI 味文本的具体改法：套话整句重写不换同义词；神态／气氛／情绪直陈／比喻堆叠／段尾升华／程式化起句六类成表并各给处理；英文按 EN-27 换观察角度而非事实清单；具体化不能补写事实；对白里的套话可能是人物性格，不清则只标。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:21", "SKILL.md:100", "references/zh-sentence-and-wording.md:169", "references/zh-sentence-and-wording.md:171", "references/zh-sentence-and-wording.md:173", "references/zh-sentence-and-wording.md:182", "references/zh-sentence-and-wording.md:184", "references/en-word-choice-and-concision.md:52", "references/en-word-choice-and-concision.md:58", "references/en-word-choice-and-concision.md:65", "references/en-word-choice-and-concision.md:66", "references/workflow.md:64", "examples/worked-example.md:27"]
+    },
+    {
+      "id": "LQ-R13",
+      "text": "改写不改变叙事不变量：语言建议不得改事实、人物立场、叙述权限与作者保留的声口；改动会改人物声音／叙述权限／视角时暂停该处并转交确认；默认不改情节、人物目标、时间结构。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:173", "SKILL.md:197", "SKILL.md:201", "SKILL.md:202", "SKILL.md:203", "SKILL.md:33", "references/zh-sentence-and-wording.md:10", "references/zh-sentence-and-wording.md:12", "references/zh-sentence-and-wording.md:14", "references/zh-sentence-and-wording.md:192", "references/en-word-choice-and-concision.md:5"]
+    },
+    {
+      "id": "LQ-R14",
+      "text": "可回退一致性检查表：逐编号台账（编号｜值｜状态｜稿件证据位置），编号独占一行、允许「未知」、表格必须有分隔行、证据位置只指用户当前稿件；诊断→修订→复查六项闭环；负面回归四项；交付只用已完成／依据／未能核实／待作者决定四词，不得把未知写成已完成。",
+      "status": "部分成文（「每个编号独占一行」与例三同号两行并存，见 GAP-03；台账列名与改动清单列名口径不一，见 GAP-02）",
+      "anchors": ["SKILL.md:108", "SKILL.md:141", "SKILL.md:145", "SKILL.md:152", "references/workflow.md:21", "references/workflow.md:25", "references/workflow.md:27", "references/workflow.md:28", "references/workflow.md:29", "references/workflow.md:30", "references/workflow.md:110", "references/workflow.md:112", "references/workflow.md:114", "references/workflow.md:116", "references/workflow.md:117", "references/workflow.md:118", "examples/worked-example.md:103", "examples/worked-example.md:105", "examples/worked-example.md:115", "examples/worked-example.md:132"]
+    },
+    {
+      "id": "LQ-R15",
+      "text": "交付形态与宿主优先：宿主规定格式时按宿主格式；否则两类交付——改后文本＋改动说明，或逐条清单（位置到段句词）；缺原文不编造，只给一句先改确定错误并写「缺上下文」；作者不回话按最小改动并列出假设。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:47", "SKILL.md:133", "SKILL.md:137", "SKILL.md:138", "SKILL.md:139", "SKILL.md:154", "SKILL.md:160", "SKILL.md:167", "references/workflow.md:9", "references/workflow.md:76", "references/workflow.md:79", "references/workflow.md:123", "references/workflow.md:127", "references/workflow.md:128", "agents/openai.yaml:6", "agents/openai.yaml:8"]
+    },
+    {
+      "id": "LQ-R16",
+      "text": "事实与评分边界：规则是编辑检查工具不是评分标准，是否采纳由作者决定；不替作者核实外部事实，涉医疗法律科技考据而真实性拿不准时一律按疑点标出转核查，宁可多标；本包不声称已写盘或已授权。",
+      "status": "已成文",
+      "anchors": ["SKILL.md:171", "SKILL.md:172", "SKILL.md:32", "SKILL.md:42", "SKILL.md:29", "references/workflow.md:133", "references/workflow.md:134", "agents/openai.yaml:2", "agents/openai.yaml:8"]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "LE-C01",
+      "name": "逐句精修（中文段落·句子·用词的六轮执行）",
+      "kind": "workflow",
+      "rule_ids": ["SR-01", "SR-02", "SR-03", "SR-04", "SR-05", "SR-06", "SR-07", "SR-08", "SR-09", "SR-10", "SR-11", "SR-12"],
+      "anchors": ["SKILL.md:63", "SKILL.md:67", "SKILL.md:68", "SKILL.md:69", "SKILL.md:70", "references/workflow.md:35", "references/workflow.md:43", "references/workflow.md:53", "references/workflow.md:59", "references/zh-sentence-and-wording.md:18", "references/zh-sentence-and-wording.md:45", "references/zh-sentence-and-wording.md:71", "references/zh-sentence-and-wording.md:100", "references/zh-sentence-and-wording.md:138", "references/zh-sentence-and-wording.md:169", "examples/worked-example.md:25", "examples/worked-example.md:38"],
+      "limit": "一层只改一类，跳轮须说明（SKILL.md:63、workflow.md:10、workflow.md:13）；网文短段与单句段停顿不合并（zh-sentence-and-wording.md:27）；口语省略与意识流断裂不是病句（zh-sentence-and-wording.md:55、:67）；不设字数上限、不删限定词（zh-sentence-and-wording.md:148、:150）；「三句」只是扫描提示不是规定（zh-sentence-and-wording.md:122）。",
+      "counterexample_ref": ["references/zh-sentence-and-wording.md:23", "references/zh-sentence-and-wording.md:50", "references/zh-sentence-and-wording.md:64", "references/zh-sentence-and-wording.md:79", "references/zh-sentence-and-wording.md:83", "references/zh-sentence-and-wording.md:105", "references/zh-sentence-and-wording.md:119", "references/zh-sentence-and-wording.md:131", "references/zh-sentence-and-wording.md:141", "references/zh-sentence-and-wording.md:159"]
+    },
+    {
+      "id": "LE-C02",
+      "name": "体例与标点（错误与体例差异分开，全稿统一与体例让渡）",
+      "kind": "workflow",
+      "rule_ids": ["SR-13", "SR-14", "SR-15", "EN-07", "EN-08", "EN-09", "EN-22"],
+      "anchors": ["SKILL.md:102", "SKILL.md:104", "SKILL.md:106", "SKILL.md:164", "references/zh-mechanics.md:7", "references/zh-mechanics.md:9", "references/zh-mechanics.md:13", "references/zh-mechanics.md:27", "references/zh-mechanics.md:72", "references/workflow.md:69", "references/workflow.md:72", "references/workflow.md:132", "references/en-mechanics-and-punctuation.md:73", "references/en-mechanics-and-punctuation.md:84", "references/en-paragraph-and-emphasis.md:60"],
+      "limit": "外部体例只改变「同一类写法选哪种」，不覆盖错别字、引文原貌与事实层面的错误（zh-mechanics.md:7）；无体例时按稿内多数统一，各半分不出多数先不改（SKILL.md:164、workflow.md:132）；人名与专名不适用稿内多数，一律先问作者（SKILL.md:56、workflow.md:132）；列表逗号与引号位置属体例差异不判错（en-mechanics-and-punctuation.md:78、:86，worked-example.md:67）。",
+      "counterexample_ref": ["references/en-mechanics-and-punctuation.md:79", "references/en-mechanics-and-punctuation.md:90", "references/en-mechanics-and-punctuation.md:101", "references/zh-mechanics.md:43", "references/zh-mechanics.md:46", "references/zh-mechanics.md:61", "examples/worked-example.md:67"]
+    },
+    {
+      "id": "LE-C03",
+      "name": "校对与一致性（机械校对轮、逐编号台账、体例表、负面回归、四词交付）",
+      "kind": "workflow",
+      "rule_ids": ["SR-13", "SR-14", "SR-15", "SR-16", "EN-10", "EN-16", "EN-23", "EN-30"],
+      "anchors": ["SKILL.md:71", "SKILL.md:72", "SKILL.md:135", "SKILL.md:137", "SKILL.md:138", "SKILL.md:141", "SKILL.md:145", "SKILL.md:152", "references/workflow.md:16", "references/workflow.md:21", "references/workflow.md:67", "references/workflow.md:74", "references/workflow.md:76", "references/workflow.md:110", "references/workflow.md:112", "references/workflow.md:114", "references/workflow.md:121", "references/zh-mechanics.md:129", "references/zh-mechanics.md:131", "examples/worked-example.md:103", "examples/worked-example.md:132", "examples/worked-example.md:143"],
+      "limit": "台账只指向用户当前稿件，不写来源编号或包外路径（workflow.md:29）；「未知」是合法值但不得写成已完成（SKILL.md:152、workflow.md:28）；表格缺分隔行视为交付格式不合要求（workflow.md:30）；四词之外不写审计词或状态码（SKILL.md:143、worked-example.md:141）；本能力无任何自动扫描或批量执行，一致性检查靠逐轮人工读与逐条列表（SKILL.md:29）。",
+      "counterexample_ref": ["SKILL.md:138", "references/workflow.md:118", "examples/worked-example.md:109", "examples/worked-example.md:115"]
+    },
+    {
+      "id": "LE-C04",
+      "name": "英文 mechanics：标点与句法清晰度诊断",
+      "kind": "workflow",
+      "rule_ids": ["EN-01", "EN-02", "EN-03", "EN-04", "EN-05", "EN-06", "EN-07", "EN-08", "EN-09", "EN-10", "EN-34", "EN-35"],
+      "anchors": ["SKILL.md:110", "SKILL.md:116", "SKILL.md:121", "references/en-mechanics-and-punctuation.md:5", "references/en-mechanics-and-punctuation.md:7", "references/en-mechanics-and-punctuation.md:18", "references/en-mechanics-and-punctuation.md:29", "references/en-mechanics-and-punctuation.md:40", "references/en-mechanics-and-punctuation.md:51", "references/en-mechanics-and-punctuation.md:62", "references/en-mechanics-and-punctuation.md:73", "references/en-mechanics-and-punctuation.md:84", "references/en-mechanics-and-punctuation.md:95", "references/en-mechanics-and-punctuation.md:106", "references/en-mechanics-and-punctuation.md:113", "references/en-mechanics-and-punctuation.md:124", "references/workflow.md:51", "references/workflow.md:71"],
+      "limit": "只提供诊断方法，不替代项目英式／美式规范、出版社 style sheet 或作者有意的文学形式（en-mechanics-and-punctuation.md:3）；对白的停顿不当作非限制性信号（:23）；文学碎句、诗歌、对白、口语记录要结合体裁判断（:34）；不把过时拼写强加给现代稿（:100）；两种体例各半或专名查不到时保留原稿并列待核（:71、:82）。",
+      "counterexample_ref": ["references/en-mechanics-and-punctuation.md:13", "references/en-mechanics-and-punctuation.md:24", "references/en-mechanics-and-punctuation.md:35", "references/en-mechanics-and-punctuation.md:46", "references/en-mechanics-and-punctuation.md:57", "references/en-mechanics-and-punctuation.md:68", "references/en-mechanics-and-punctuation.md:79", "references/en-mechanics-and-punctuation.md:90", "references/en-mechanics-and-punctuation.md:101", "references/en-mechanics-and-punctuation.md:119", "references/en-mechanics-and-punctuation.md:130"]
+    },
+    {
+      "id": "LE-C05",
+      "name": "中文 mechanics：标点·对白·数字·错别字·词形细则",
+      "kind": "workflow",
+      "rule_ids": ["SR-13", "SR-14", "SR-15"],
+      "anchors": ["references/zh-mechanics.md:15", "references/zh-mechanics.md:20", "references/zh-mechanics.md:27", "references/zh-mechanics.md:41", "references/zh-mechanics.md:49", "references/zh-mechanics.md:57", "references/zh-mechanics.md:63", "references/zh-mechanics.md:74", "references/zh-mechanics.md:85", "references/zh-mechanics.md:94", "references/zh-mechanics.md:109", "references/zh-mechanics.md:113", "references/zh-mechanics.md:125", "references/zh-mechanics.md:129"],
+      "limit": "国家标准只写通行要点，未逐条对照标准原文（zh-mechanics.md:7）；出版社或平台体例优先（:7）；「地」全写成「的」属个人体例，全稿一致时保留（:83）；成语误用只标出来请作者确认，不直接改（:113、:123）；异形词拿不准时不强行改，只保证全稿一致（:127）；小说正文尽量少用括号（:67）。",
+      "counterexample_ref": ["references/zh-mechanics.md:61", "references/zh-mechanics.md:90", "references/zh-mechanics.md:98", "references/zh-mechanics.md:111", "references/zh-mechanics.md:115", "references/zh-mechanics.md:121", "examples/worked-example.md:28", "examples/worked-example.md:33"]
+    },
+    {
+      "id": "LE-C06",
+      "name": "改写不改变叙事不变量的边界（声口、事实、视角、可回退）",
+      "kind": "workflow",
+      "rule_ids": ["SR-16", "EN-16", "EN-23", "EN-30", "EN-10", "EN-12", "EN-13", "EN-26", "EN-27"],
+      "anchors": ["SKILL.md:108", "SKILL.md:163", "SKILL.md:173", "SKILL.md:197", "SKILL.md:201", "SKILL.md:202", "references/zh-sentence-and-wording.md:188", "references/zh-sentence-and-wording.md:191", "references/zh-sentence-and-wording.md:192", "references/zh-sentence-and-wording.md:194", "references/workflow.md:12", "references/workflow.md:110", "references/workflow.md:112", "references/workflow.md:116", "references/workflow.md:117", "references/en-sentence-revision.md:62", "references/en-sentence-revision.md:64", "references/en-paragraph-and-emphasis.md:71", "references/en-paragraph-and-emphasis.md:73", "references/en-word-choice-and-concision.md:91", "references/en-word-choice-and-concision.md:93", "examples/worked-example.md:71"],
+      "limit": "整段重写超出本包，须作者单独授权且只做点名范围（SKILL.md:31）；不能证明语义等价时只列建议，不静默替换（en-sentence-revision.md:64）；拆嵌套被动不等于全改主动、不能凭空指定施事（en-sentence-revision.md:23、:25）；否定改肯定要过两项测试（:33）；具体化不能补写事实（en-word-choice-and-concision.md:5、:65）；触碰人物声音／叙述权限／视角时暂停该处转交确认（SKILL.md:197、:202）。",
+      "counterexample_ref": ["references/en-sentence-revision.md:24", "references/en-sentence-revision.md:35", "references/en-word-choice-and-concision.md:13", "references/en-word-choice-and-concision.md:47", "references/en-word-choice-and-concision.md:58", "references/en-word-choice-and-concision.md:66", "references/zh-sentence-and-wording.md:163", "examples/worked-example.md:145", "examples/worked-example.md:146"]
+    },
+    {
+      "id": "LE-C07",
+      "name": "英文句子、段落与用词修订（含时态、冠词、主谓一致等英文专属检查）",
+      "kind": "workflow",
+      "rule_ids": ["EN-11", "EN-12", "EN-13", "EN-14", "EN-15", "EN-17", "EN-18", "EN-19", "EN-20", "EN-21", "EN-22", "EN-24", "EN-25", "EN-26", "EN-27", "EN-28", "EN-29", "EN-31", "EN-32", "EN-33", "EN-36", "EN-37", "EN-38", "EN-39", "EN-40"],
+      "anchors": ["SKILL.md:117", "SKILL.md:118", "SKILL.md:119", "references/en-sentence-revision.md:7", "references/en-sentence-revision.md:18", "references/en-sentence-revision.md:29", "references/en-sentence-revision.md:40", "references/en-sentence-revision.md:51", "references/en-sentence-revision.md:69", "references/en-sentence-revision.md:80", "references/en-sentence-revision.md:91", "references/en-sentence-revision.md:102", "references/en-sentence-revision.md:113", "references/en-sentence-revision.md:124", "references/en-paragraph-and-emphasis.md:5", "references/en-paragraph-and-emphasis.md:16", "references/en-paragraph-and-emphasis.md:27", "references/en-paragraph-and-emphasis.md:38", "references/en-paragraph-and-emphasis.md:49", "references/en-paragraph-and-emphasis.md:60", "references/en-paragraph-and-emphasis.md:78", "references/en-paragraph-and-emphasis.md:89", "references/en-word-choice-and-concision.md:7", "references/en-word-choice-and-concision.md:18", "references/en-word-choice-and-concision.md:41", "references/en-word-choice-and-concision.md:52", "references/en-word-choice-and-concision.md:69", "references/en-word-choice-and-concision.md:80", "references/workflow.md:51"],
+      "limit": "小说段落可按声音、节奏、视角、情绪组织，不必每段有显式主题句（en-paragraph-and-emphasis.md:10）；不设句数与词数指标（:21、en-word-choice-and-concision.md:12）；有意时态切换、对白与内心独白可有自己的时间基准（en-sentence-revision.md:74）；历史词形只作校勘候选，现代稿按项目当代词典与 style sheet（en-word-choice-and-concision.md:82，workflow.md:65）；补主题句需要作者未给的结论时停下不代作者立论（en-paragraph-and-emphasis.md:87）。",
+      "counterexample_ref": ["references/en-sentence-revision.md:13", "references/en-sentence-revision.md:46", "references/en-sentence-revision.md:57", "references/en-sentence-revision.md:75", "references/en-sentence-revision.md:86", "references/en-sentence-revision.md:97", "references/en-sentence-revision.md:108", "references/en-sentence-revision.md:119", "references/en-sentence-revision.md:130", "references/en-paragraph-and-emphasis.md:11", "references/en-paragraph-and-emphasis.md:22", "references/en-paragraph-and-emphasis.md:33", "references/en-paragraph-and-emphasis.md:44", "references/en-paragraph-and-emphasis.md:55", "references/en-paragraph-and-emphasis.md:66", "references/en-paragraph-and-emphasis.md:84", "references/en-paragraph-and-emphasis.md:95", "references/en-word-choice-and-concision.md:24", "references/en-word-choice-and-concision.md:87"]
+    },
+    {
+      "id": "LE-C08",
+      "name": "交付与宿主接口（宿主格式优先、两类交付、四词状态、界面声明）",
+      "kind": "external",
+      "rule_ids": ["SR-16"],
+      "anchors": ["SKILL.md:47", "SKILL.md:133", "SKILL.md:135", "SKILL.md:137", "SKILL.md:138", "SKILL.md:143", "SKILL.md:145", "references/workflow.md:79", "references/workflow.md:123", "agents/openai.yaml:3", "agents/openai.yaml:4", "agents/openai.yaml:6", "agents/openai.yaml:8"],
+      "limit": "宿主规定了输出格式时本包的表格与字段只在未规定时使用（SKILL.md:47）；交付只给文本与清单，不声称已写盘（workflow.md:9）；openai.yaml 声明不授予权限、不承诺自动执行，实际能力受宿主与授权限制（agents/openai.yaml:2、:3），且 allow_implicit_invocation: false（:8）；界面字段是否被宿主加载以宿主为准（:1）。",
+      "counterexample_ref": ["SKILL.md:139", "SKILL.md:160", "SKILL.md:167", "references/workflow.md:128"]
+    },
+    {
+      "id": "LE-C09",
+      "name": "转介与协作边界（七个兄弟包的转出与接收）",
+      "kind": "external",
+      "rule_ids": [],
+      "anchors": ["SKILL.md:27", "SKILL.md:30", "SKILL.md:35", "SKILL.md:37", "SKILL.md:43", "SKILL.md:166", "SKILL.md:175", "SKILL.md:179", "SKILL.md:183", "SKILL.md:190", "SKILL.md:192", "SKILL.md:193", "SKILL.md:195", "SKILL.md:197", "SKILL.md:199", "examples/worked-example.md:87", "examples/worked-example.md:90", "examples/worked-example.md:93"],
+      "limit": "负触发必须先判再接，判不出就停在问题清单（workflow.md:100、:102）；产物是卡或审查框架是三轴一律转 preset-card-generation（SKILL.md:30、:192）；本包只标事实疑点不核实（SKILL.md:32、:172）；转介是文本层约定，没有任何跨包自动调用或脚本（全包 0 脚本）。",
+      "counterexample_ref": ["examples/worked-example.md:85", "examples/worked-example.md:95", "SKILL.md:29"]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "LE-IF-01",
+      "peer": "character-and-narrative-control",
+      "topic": "人物声口与视角约束由对端给出；本包只改句子，不改视角与叙述权限",
+      "provider": "character-and-narrative-control（人物声音、叙述权限、视角、人物知识边界）",
+      "consumer": "line-editing-and-proofreading（本包）",
+      "fields": "对端侧＝视角合同三层「能不能知道／距离／切换记账」（对端 SKILL.md:70、SKILL.md:145）与人物声口项（对端 SKILL.md:312）；本包侧＝第 0 轮不碰区（SKILL.md:57、workflow.md:20）、声口判定三问（zh-sentence-and-wording.md:10、:12、:14）、只作建议的边界（zh-sentence-and-wording.md:192）",
+      "anchors": ["SKILL.md:39", "SKILL.md:163", "SKILL.md:197", "SKILL.md:201", "SKILL.md:202", "SKILL.md:57", "SKILL.md:33", "references/workflow.md:20", "references/zh-sentence-and-wording.md:10", "references/zh-sentence-and-wording.md:192"],
+      "peer_anchors": ["../character-and-narrative-control/SKILL.md:3", "../character-and-narrative-control/SKILL.md:28", "../character-and-narrative-control/SKILL.md:46", "../character-and-narrative-control/SKILL.md:70", "../character-and-narrative-control/SKILL.md:145", "../character-and-narrative-control/SKILL.md:305", "../character-and-narrative-control/SKILL.md:323", "../character-and-narrative-control/references/diagnosis.md:126"],
+      "bidirectional": "本包 SKILL.md:39 转出行 ↔ 对端 SKILL.md:28、SKILL.md:46 接收行；本包 SKILL.md:202「暂停该处并转交确认」↔ 对端 SKILL.md:323「本 Skill 提供人物声音与视角约束，不替代逐句编辑」；对端 references/diagnosis.md:126「问题其实是句子和语感：转 line-editing-and-proofreading」为反向接收行。两侧均为实体行，不只提名字。",
+      "missing_field_branch": "对端没给声口与视角约束：本包按 SKILL.md:57 与 zh-sentence-and-wording.md:12 自行判定，判不清停在建议（zh-sentence-and-wording.md:14、SKILL.md:161）；请求实为改视角或信息安排时判负触发（SKILL.md:27、workflow.md:102），只停该处，其余句子层修改照做（workflow.md:91）。"
+    },
+    {
+      "id": "LE-IF-02",
+      "peer": "scene-conflict-and-rhythm",
+      "topic": "对白措辞与标点归本包，对白的场面功能与信息强度归对端",
+      "provider": "scene-conflict-and-rhythm（场面功能、对白内容、铺垫、悬念与节奏）",
+      "consumer": "line-editing-and-proofreading（本包）",
+      "fields": "对端侧＝「对白像背景手册」判据 SC-06、SC-07（对端 SKILL.md:114）与层判定行「句子措辞转 line-editing」（对端 references/rhythm-diagnosis.md:58）；本包侧＝SR-02 对白换人另起段（SKILL.md:80）、SR-14 对白提示语格式（SKILL.md:104）、只改措辞不改对白信息内容（SKILL.md:11、SKILL.md:38）",
+      "anchors": ["SKILL.md:27", "SKILL.md:38", "SKILL.md:11", "SKILL.md:80", "SKILL.md:104", "SKILL.md:186", "examples/worked-example.md:90", "references/workflow.md:102"],
+      "peer_anchors": ["../scene-conflict-and-rhythm/SKILL.md:3", "../scene-conflict-and-rhythm/SKILL.md:26", "../scene-conflict-and-rhythm/SKILL.md:41", "../scene-conflict-and-rhythm/SKILL.md:114", "../scene-conflict-and-rhythm/SKILL.md:284", "../scene-conflict-and-rhythm/references/rhythm-diagnosis.md:58"],
+      "bidirectional": "本包 SKILL.md:38 转出行 ↔ 对端 SKILL.md:26、SKILL.md:41 接收行；本包 SKILL.md:186「节奏拖」分法（单元内归对端、跨章跨卷归 story-architecture）↔ 对端 SKILL.md:284「去 AI 味」分法与对端 references/rhythm-diagnosis.md:58 层判定，两处均把「句子措辞」交回本包。",
+      "missing_field_branch": "对端未给场面功能或张力目标：本包只做第 0 轮划定的句子层（SKILL.md:55），「更有力」若指节奏或张力判负触发转介（examples/worked-example.md:90、SKILL.md:27）；本包不判场景强度，也不为「有力」补动作或反应（en-word-choice-and-concision.md:66）。"
+    },
+    {
+      "id": "LE-IF-03",
+      "peer": "preset-card-generation",
+      "topic": "「去 AI 味」写成约束卡 ⇒ 转出；改具体稿子的 AI 腔留在本包",
+      "provider": "双向：preset-card-generation（卡与三轴框架）／line-editing-and-proofreading（改好的文本）",
+      "consumer": "双向",
+      "fields": "对端侧＝推进模式卡／文风卡／表达约束卡三类产物（对端 SKILL.md:23、SKILL.md:54、SKILL.md:55）与病灶表及表达约束卡格式（对端 SKILL.md:141）；本包侧＝SR-12 套话整句重写（SKILL.md:100）、六类 AI 腔处理表（zh-sentence-and-wording.md:173、:175、:182）、EN-27 整句重写（en-word-choice-and-concision.md:52）",
+      "anchors": ["SKILL.md:30", "SKILL.md:43", "SKILL.md:166", "SKILL.md:183", "SKILL.md:192", "SKILL.md:193", "references/zh-sentence-and-wording.md:169", "references/en-word-choice-and-concision.md:52", "examples/worked-example.md:93"],
+      "peer_anchors": ["../preset-card-generation/SKILL.md:3", "../preset-card-generation/SKILL.md:23", "../preset-card-generation/SKILL.md:39", "../preset-card-generation/SKILL.md:54", "../preset-card-generation/SKILL.md:55", "../preset-card-generation/SKILL.md:82", "../preset-card-generation/SKILL.md:143", "../preset-card-generation/SKILL.md:183"],
+      "bidirectional": "本包 SKILL.md:192 转出（产物是卡或三轴一律转回）↔ 对端 SKILL.md:39「改具体稿子去 AI 味（产物是改好的文本，不是约束卡）→ line-editing-and-proofreading」与对端 SKILL.md:82、SKILL.md:143 的转出句；本包 SKILL.md:193 写明从对端接收什么。判据两侧一致：产物是文本还是卡（本包 SKILL.md:183 ↔ 对端 SKILL.md:183）。",
+      "missing_field_branch": "只说「去 AI 味」未说产物形态：按 SKILL.md:183 判据先问一句「要改好的文本还是要卡」；判不出时停在待作者决定（SKILL.md:150），不同时产出文本与卡；要卡时整单转出（SKILL.md:30、SKILL.md:166），本包不落卡格式。对端未给文风卡或病灶表而只改稿子时，本包按 zh-sentence-and-wording.md:173 的六类自判，只处理重复出现已失去意义的项（zh-sentence-and-wording.md:184）。"
+    },
+    {
+      "id": "LE-IF-04",
+      "peer": "fiction-planning-and-diagnosis",
+      "topic": "整体诊断、起草与外部事实核验归对端；句子层细则归本包",
+      "provider": "fiction-planning-and-diagnosis（成稿诊断、读者反馈、事实核查流程）",
+      "consumer": "line-editing-and-proofreading（本包）",
+      "fields": "对端侧＝FC-15「句子平、力度不够或华丽过头」转出（对端 SKILL.md:154）、语言层自检在第 0 轮后转本包（对端 references/self-check-language.md:48）、日更定稿与 AI 初稿场景转出（对端 references/self-check-modern-and-zh.md:20、:33）、CL 测试不覆盖语言层的提醒（对端 references/self-check-diagnosis.md:70）；本包侧＝疑点标出转核查（SKILL.md:32、SKILL.md:42、SKILL.md:172）、不用润色掩盖结构问题（SKILL.md:203）",
+      "anchors": ["SKILL.md:32", "SKILL.md:40", "SKILL.md:42", "SKILL.md:163", "SKILL.md:172", "SKILL.md:185", "SKILL.md:203", "references/workflow.md:133"],
+      "peer_anchors": ["../fiction-planning-and-diagnosis/SKILL.md:3", "../fiction-planning-and-diagnosis/SKILL.md:31", "../fiction-planning-and-diagnosis/SKILL.md:43", "../fiction-planning-and-diagnosis/SKILL.md:154", "../fiction-planning-and-diagnosis/SKILL.md:356", "../fiction-planning-and-diagnosis/references/self-check-language.md:48", "../fiction-planning-and-diagnosis/references/self-check-diagnosis.md:70", "../fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:20", "../fiction-planning-and-diagnosis/references/self-check-modern-and-zh.md:33"],
+      "bidirectional": "本包 SKILL.md:40、SKILL.md:42 转出行 ↔ 对端 SKILL.md:31 归属表行与对端 SKILL.md:356「本 Skill 给出结构与内容层面的修订目标，不替代逐句编辑」；对端 references/self-check-language.md:48 明确中文句子层细则「在完成第 0 轮以后转 line-editing-and-proofreading」，与本包 SKILL.md:51 的第 0 轮前置一致。",
+      "missing_field_branch": "没给正文只问「这一章怎么样」：停在要文字（SKILL.md:139、workflow.md:127），不代做整体诊断，也不凭空列稿子里的错；涉医疗法律科技考据而真实性拿不准：只标疑点与待核问题，不下结论（SKILL.md:172），核实部分转对端流程（SKILL.md:42）。"
+    },
+    {
+      "id": "LE-IF-05",
+      "peer": "genre-fiction-craft",
+      "topic": "题材固定说法与读者期待归对端约束；通用措辞与校对归本包",
+      "provider": "genre-fiction-craft（题材约束与题材写法）",
+      "consumer": "line-editing-and-proofreading（本包）",
+      "fields": "对端侧＝归属表「句子和对白的措辞、标点、校对 → line-editing-and-proofreading」（对端 SKILL.md:28）；本包侧＝类型小说固定说法不一律清除（zh-sentence-and-wording.md:184）、通俗陈述节奏保留（zh-sentence-and-wording.md:165）、题材写法与动作写法分法（SKILL.md:188）",
+      "anchors": ["SKILL.md:41", "SKILL.md:188", "SKILL.md:11", "references/zh-sentence-and-wording.md:165", "references/zh-sentence-and-wording.md:184"],
+      "peer_anchors": ["../genre-fiction-craft/SKILL.md:3", "../genre-fiction-craft/SKILL.md:28"],
+      "bidirectional": "本包 SKILL.md:41「某一题材的写法 → genre-fiction-craft」↔ 对端 SKILL.md:28 与对端 SKILL.md:3 description 的「措辞与校对转 line-editing-and-proofreading」；两侧互为逆关系，符合本包 SKILL.md:195 的双向对照承诺。",
+      "missing_field_branch": "对端未给题材约束或本包判不出是否题材性写法：按通用语言规则处理，题材性固定说法保留不删（zh-sentence-and-wording.md:184），拿不准处列为建议交作者（zh-sentence-and-wording.md:14）；「武侠打斗写不好」这类先题材约束后通用手法的请求整单转出（SKILL.md:188），本包不判题材合法性。"
+    },
+    {
+      "id": "LE-IF-06",
+      "peer": "cross-media-drama-adaptation",
+      "topic": "对白、字幕与界面文本的语言层归本包；选择逻辑、状态条件与分支结果归对端",
+      "provider": "cross-media-drama-adaptation（媒介转换与互动分支逻辑）",
+      "consumer": "line-editing-and-proofreading（本包）",
+      "fields": "对端侧＝职责交接行「line-editing-and-proofreading 负责对白、字幕和界面文本的语言编辑，不改选择逻辑」（对端 references/interactive-adaptation.md:91）、对端 SKILL.md:191 与对端 SKILL.md:38；本包侧＝SKILL.md:204 可编辑范围与三个不改（选择逻辑／状态条件／分支结果）、剧本格式不适用 SR-02 的例外（zh-sentence-and-wording.md:41）",
+      "anchors": ["SKILL.md:41", "SKILL.md:27", "SKILL.md:163", "SKILL.md:204", "references/zh-sentence-and-wording.md:41", "references/en-paragraph-and-emphasis.md:54"],
+      "peer_anchors": ["../cross-media-drama-adaptation/SKILL.md:3", "../cross-media-drama-adaptation/SKILL.md:38", "../cross-media-drama-adaptation/SKILL.md:191", "../cross-media-drama-adaptation/references/interactive-adaptation.md:91"],
+      "bidirectional": "本包 SKILL.md:41「改编成剧本或分场稿 → cross-media」与 SKILL.md:204 的让渡范围 ↔ 对端 references/interactive-adaptation.md:91 的交接句和对端 SKILL.md:191「对白、字幕和界面文本的语言修订交给 line-editing-and-proofreading」；对端 SKILL.md:38 归属表行同样把「句子、对白、标点和校对」交回本包。",
+      "missing_field_branch": "对端未给分支表或状态契约：只改文本语言层，不推断分支条件与变量名；发现必须改选择逻辑或分支结果才能通顺时，停该处并转回对端（SKILL.md:204、workflow.md:133），其余文本修改照做（workflow.md:91）。剧本与聊天记录的分段规则不适用 SR-02（zh-sentence-and-wording.md:41、en-paragraph-and-emphasis.md:54）。"
+    }
+  ],
+  "applicability": [
+    {
+      "id": "LE-AP-01",
+      "text": "宿主给格式时以宿主为准：本包的表格、字段、四词状态与逐条清单只在宿主未规定输出格式时使用；宿主字段是否被加载与采用以宿主实际行为为准。",
+      "anchors": ["SKILL.md:47", "SKILL.md:135", "SKILL.md:143", "agents/openai.yaml:1", "agents/openai.yaml:2"]
+    },
+    {
+      "id": "LE-AP-02",
+      "text": "非叙事文本：英文族规则显式覆盖说明、论辩、报告、评论、摘要与网页屏幕文字，并区分技术写作的结论先行；中文族以小说叙述为主要语境，说明性段落才默认主题句。合同、法律与技术文本里的精确限定与范围词不作冗词删除。",
+      "anchors": ["references/en-paragraph-and-emphasis.md:8", "references/en-paragraph-and-emphasis.md:10", "references/en-paragraph-and-emphasis.md:21", "references/en-paragraph-and-emphasis.md:80", "references/en-sentence-revision.md:56", "references/en-sentence-revision.md:113", "references/en-word-choice-and-concision.md:12", "references/en-word-choice-and-concision.md:23", "references/zh-sentence-and-wording.md:27", "references/workflow.md:39"]
+    },
+    {
+      "id": "LE-AP-03",
+      "text": "中文没有时态变化：EN-31 的时态一致与 EN-32／EN-33 的冠词、主谓一致只适用英文稿；中文替代检查是时间标记（了、着、过与时间词）前后是否让读者弄错先后。叙述距离与视角距离属对端职责，不在本包改；本包在英文代词与专名取舍时只把它当作需要考虑的因素。",
+      "anchors": ["references/zh-sentence-and-wording.md:200", "references/zh-sentence-and-wording.md:202", "references/zh-sentence-and-wording.md:203", "references/zh-sentence-and-wording.md:204", "references/zh-sentence-and-wording.md:205", "references/en-sentence-revision.md:45", "SKILL.md:202", "SKILL.md:201"]
+    },
+    {
+      "id": "LE-AP-04",
+      "text": "中英混排的适用条件：中文部分按中文规则，英文引文与专名不改；阿拉伯数字、英文字母与英文引文用半角，英文引文内部标点按英文；体例表单列「外文与字母：半角」一项；先判语言再路由，英文稿走四份英文参考文件。",
+      "anchors": ["SKILL.md:49", "SKILL.md:110", "references/zh-mechanics.md:18", "references/zh-mechanics.md:141", "references/zh-sentence-and-wording.md:3"]
+    },
+    {
+      "id": "LE-AP-05",
+      "text": "不适用即停的范围：没有正文或只有一句、要求打分评级、批量自动替换、裁定唯一正确、写成预设卡或按三轴审章、外部事实核实、整段重写未授权、作者有意保留的口语方言意识流与实验文体。判定顺序是先判负触发再定接不接。",
+      "anchors": ["SKILL.md:15", "SKILL.md:27", "SKILL.md:28", "SKILL.md:29", "SKILL.md:30", "SKILL.md:31", "SKILL.md:32", "SKILL.md:33", "references/workflow.md:100", "references/workflow.md:121", "references/workflow.md:134"]
+    },
+    {
+      "id": "LE-AP-06",
+      "text": "语言与范围前提：本包面向中文与英文小说、散文；其他语种无对应细则（全包规则族只有 SR 中文族与 EN 英文族两套）。宿主语言与目标读者未给时按 SKILL.md:49 判语言、按 SKILL.md:56 定体例，不另立体例。",
+      "anchors": ["SKILL.md:3", "SKILL.md:49", "SKILL.md:56", "agents/openai.yaml:5", "SKILL.md:76"]
+    }
+  ],
+  "cases": [
+    {
+      "id": "LE-T1",
+      "kind": "positive",
+      "scenario": "一段约 800 字的中文小说正文，要求精修句子和标点，保留口吻",
+      "expected": "先定第 0 轮的三件事，再按层次改，交付改后文本和逐条说明"
+    },
+    {
+      "id": "LE-T2",
+      "kind": "missing",
+      "scenario": "只有一句「帮我润色」，不说用途、体例和读者",
+      "expected": "先问；用户不答时按最小改动处理，并列出所做的假设"
+    },
+    {
+      "id": "LE-T3",
+      "kind": "conflict",
+      "scenario": "要求「每句都更有力」，同时要求保留方言口语和意识流段落",
+      "expected": "先判负触发：口语和意识流段不改，冲突列给作者选"
+    },
+    {
+      "id": "LE-T4",
+      "kind": "boundary",
+      "scenario": "英文对白稿，只要拼写和标点校对",
+      "expected": "只做机械层，不碰风格"
+    },
+    {
+      "id": "LE-T5",
+      "kind": "positive",
+      "scenario": "中文叙述里夹英文专名和一句英文引文，要求统一标点与体例",
+      "expected": "停在语言判定：中文部分按中文规则，英文引文与专名不改，数字与字母用半角（SKILL.md:49、zh-mechanics.md:18、zh-mechanics.md:141）；混排体例取舍由作者裁决（SKILL.md:56）；其余中文句子层精修照做（SKILL.md:59）。",
+      "anchors": ["SKILL.md:49", "SKILL.md:56", "references/zh-mechanics.md:18", "references/zh-mechanics.md:141"]
+    },
+    {
+      "id": "LE-T6",
+      "kind": "positive",
+      "scenario": "3000 字章节，作者给了平台 style sheet，只要求机械校对，不动句子",
+      "expected": "停在第 5 轮并说明跳过的轮次（SKILL.md:71、workflow.md:67、workflow.md:13）；按作者给的体例统一，外部体例只改「同一类写法选哪种」，不覆盖错别字与事实（zh-mechanics.md:7）；「只是体例不同」的项单列不算错误（workflow.md:72）；人名与专名不一致由作者裁决（zh-mechanics.md:143）；其余确定错误照改。",
+      "anchors": ["SKILL.md:71", "references/workflow.md:67", "references/workflow.md:72", "references/workflow.md:13", "references/zh-mechanics.md:7", "references/zh-mechanics.md:143"]
+    },
+    {
+      "id": "LE-T7",
+      "kind": "missing",
+      "scenario": "给一段 1200 字稿子要求「润色」，稿内有 20 个自造术语与两种译名写法，但没有给要保留的术语表",
+      "expected": "停在体例分歧出口：先列出各写法出现的位置与体例选项（SKILL.md:164、workflow.md:132、zh-mechanics.md:143）；术语与专名由作者裁决以哪个为准，本包不按稿内多数改掉全部（SKILL.md:56）；不碰区未划出时按声口三问自判（zh-sentence-and-wording.md:10），判不清只列建议（zh-sentence-and-wording.md:14）；确定错别字、标点和明显病句照改（SKILL.md:59）。",
+      "anchors": ["SKILL.md:164", "SKILL.md:56", "references/workflow.md:132", "references/zh-mechanics.md:143", "references/zh-sentence-and-wording.md:10", "references/zh-sentence-and-wording.md:14"]
+    },
+    {
+      "id": "LE-T8",
+      "kind": "conflict",
+      "scenario": "要求「把这段改成从她来看」，同时说「这只是改句子，不用管别的」",
+      "expected": "停在负触发判定：视角与信息安排不在句子层（SKILL.md:27、workflow.md:102、examples/worked-example.md:92），该处转 character-and-narrative-control 裁决（SKILL.md:39、SKILL.md:202）；本包把该处停在待作者决定不落稿（SKILL.md:163、workflow.md:91）；其余句子的语病与标点照改（SKILL.md:59）。",
+      "anchors": ["SKILL.md:27", "SKILL.md:39", "SKILL.md:163", "SKILL.md:202", "references/workflow.md:102", "references/workflow.md:91", "examples/worked-example.md:92"]
+    },
+    {
+      "id": "LE-T9",
+      "kind": "conflict",
+      "scenario": "要求「把全稿所有『然后』『接着』一次性替换成别的词」并直接改文件",
+      "expected": "停在批量替换出口：批量自动替换不接，只对确定的错别字和标点做并先列替换清单（SKILL.md:29、SKILL.md:165、workflow.md:134）；连接词重复属句式单调，按 SR-08／EN-38 只换其中几句（SKILL.md:92、en-sentence-revision.md:129），是否全稿统一由作者裁决（SKILL.md:108）；写盘与覆盖需宿主与作者授权，本包只交文本与清单（workflow.md:9、agents/openai.yaml:2）；其余逐条修改照做。",
+      "anchors": ["SKILL.md:29", "SKILL.md:92", "SKILL.md:108", "SKILL.md:165", "references/workflow.md:9", "references/workflow.md:134", "references/en-sentence-revision.md:129", "agents/openai.yaml:2"]
+    },
+    {
+      "id": "LE-T10",
+      "kind": "boundary",
+      "scenario": "只给一句英文台词，要求「改得像母语者写的」，没给目标变体或人物口吻",
+      "expected": "停在「只有一句」出口：先改这一句能确定的错误，依赖上下文的判断写明「缺上下文」（SKILL.md:139、workflow.md:128）；语域与英式／美式变体由作者给体例后裁决，不静默替换（en-mechanics-and-punctuation.md:93、en-word-choice-and-concision.md:78）；对白口吻属人物声音，触碰时转 character-and-narrative-control 确认（SKILL.md:202）；确定的拼写与标点照改。",
+      "anchors": ["SKILL.md:139", "SKILL.md:202", "references/workflow.md:128", "references/en-mechanics-and-punctuation.md:93", "references/en-word-choice-and-concision.md:78"]
+    },
+    {
+      "id": "LE-T11",
+      "kind": "boundary",
+      "scenario": "要求「把反 AI 味的要求写成一张表达约束卡」，同批还附了一段要改的正文",
+      "expected": "停在产物判定：产物是卡一律转 preset-card-generation（SKILL.md:30、SKILL.md:166、SKILL.md:183、SKILL.md:192），卡字段与病灶表不由本包产出；改正文那部分留本包照做（SKILL.md:193、SKILL.md:100）；两部分的裁决都是作者，本包不代作者定卡内容。",
+      "anchors": ["SKILL.md:30", "SKILL.md:100", "SKILL.md:166", "SKILL.md:183", "SKILL.md:192", "SKILL.md:193"]
+    },
+    {
+      "id": "LE-T12",
+      "kind": "missing",
+      "scenario": "要求「润色这段，并确认宋代官员能不能穿黄袍为真」",
+      "expected": "停在事实核查出口：本包只标疑点与待核问题，真伪由 fiction-planning-and-diagnosis 的核查流程与作者裁决（SKILL.md:32、SKILL.md:42、SKILL.md:172、workflow.md:133）；语言层润色照做（SKILL.md:59）；不得为显得可信把待核断言改成更肯定的说法（SKILL.md:173、en-word-choice-and-concision.md:34）。",
+      "anchors": ["SKILL.md:32", "SKILL.md:42", "SKILL.md:172", "SKILL.md:173", "references/workflow.md:133", "references/en-sentence-revision.md:34"]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP-01",
+      "topic": "整树扫描 #6「英文原句」命中（旁证转来）",
+      "position": ["references/en-mechanics-and-punctuation.md:92"],
+      "fact": "复扫命令实测全包该模式命中 1 处，位置在 EN-08「引号与直接／间接引语」的自拟例行；同一规则的反例行 en-mechanics-and-punctuation.md:90 与文件头声明 examples 自创的 :5 行同为英文。旁证记录把这条判为允许并写了理由（notes/quality/line-editing-and-proofreading/s01-desourcing-selfcheck.md:37）。",
+      "disposition": "建议记允许理由：该件主题即英文标点与引号规范，示范必须用英文才承载功能；登记口径可用「主题语言与例句语言一致」＋自拟例声明（:5）。不建议改成品：改成无引号形式会丢掉 EN-08 的示范功能。本草案不改文件、不判合格。"
+    },
+    {
+      "id": "GAP-02",
+      "topic": "整树扫描 #10「删除后残迹」的空括号命中",
+      "position": ["references/zh-mechanics.md:17"],
+      "fact": "实测全包「（）」形态仅此 1 处，位于 SR-13 全角标点符号枚举行内部（同一行依次列出 ，。？！：；“”‘’（）《》——……），是被列举的符号本身而不是留空占位；同文件的体例表空位用的是空表格单元（:133、:136、:137），不含空括号。旁证记录同样把这处归为标点用法列举（s01-desourcing-selfcheck.md:45）。",
+      "disposition": "建议判为示例样板／符号枚举并记例外（与「讲标点用法时列举的《》符号本身」同类），不改成品正文；若为降低复扫噪声，可在台账侧加白名单条目，位置写明 zh-mechanics.md:17。是否属样板由扫描归口方裁，本草案只给事实。"
+    },
+    {
+      "id": "GAP-03",
+      "topic": "编号全集实测与非 SR/EN 形态 token",
+      "position": ["SKILL.md:112", "SKILL.md:76", "references/zh-mechanics.md:27", "references/en-word-choice-and-concision.md:60"],
+      "fact": "实测唯一编号集为 SR-01…SR-16（16 个）与 EN-01…EN-40（40 个），合计 56，两端连续无缺号；形态为两位零填充，EN-34…EN-40 是补排段附在英文文件末尾（en-mechanics-and-punctuation.md:113、:124，en-sentence-revision.md:102、:113、:124，en-paragraph-and-emphasis.md:78、:89）。SR-14 没有二级标题，只挂在三级标题 zh-mechanics.md:27。全包另见 1 处孤立 token：en-word-choice-and-concision.md:60 的「示范（自创，L-2）」，全包仅此一次出现，包内无 L-2 定义；旁证 s01 记录把「L0–L4 类修改级别」列为本包内部编号（s01-desourcing-selfcheck.md:54），但成品实测没有出现 L0／L1／L3／L4 任何一处。",
+      "disposition": "建议 L-2 按遗留标记处理：要么在交付说明里改写成不带编号的说法，要么补一行定义；不修正品，只登记。编号全集事实与已采纳合同的 56 计数一致（notes/operations-contract/line-editing-and-proofreading.md:80）。"
+    },
+    {
+      "id": "GAP-04",
+      "topic": "逐条清单列名多套并存",
+      "position": ["SKILL.md:138", "references/workflow.md:77", "examples/worked-example.md:25", "examples/worked-example.md:63", "examples/worked-example.md:119"],
+      "fact": "同一「逐条清单」在成品内有四种列名写法：SKILL.md:138 为「位置｜原文｜改后｜依据｜风险或需作者确认」；workflow.md:77 为「位置｜原文｜改后｜理由」四列；worked-example.md:25 与 :63 两处表格为「位置｜问题｜改法｜依据｜风险或需作者确认」；worked-example.md:119 内联写「位置｜原文｜改后｜依据｜复查」。成品内没有一行说明哪一种用于哪一种交付物，SKILL.md:125 的路由表也未区分。已采纳合同把同类现象记为一致性缺口（notes/operations-contract/line-editing-and-proofreading.md:90）。",
+      "disposition": "只登记不修正品。建议归口方先定「一种清单一种列名」的对应关系（改稿附说明用哪套、审阅清单用哪套），再决定是否需要动成品；本草案不提改动方案细节。"
+    },
+    {
+      "id": "GAP-05",
+      "topic": "「每个编号独占一行」与同号多行并存",
+      "position": ["references/workflow.md:21", "references/workflow.md:27", "examples/worked-example.md:105", "examples/worked-example.md:109", "examples/worked-example.md:110"],
+      "fact": "workflow.md:21 写「每个编号独占一行」，workflow.md:27 补充为「编号与规则一一对应，不合为一行」，worked-example.md:105 重复「每个编号独占一行」；但例三台账实表在 :109 与 :110 让 SR-10 占了两行（两条不同待办）。按字面读，示例违反自身措辞；按「一编号一行」实现则示例要合并。合同侧同样记为措辞歧义（notes/operations-contract/line-editing-and-proofreading.md:93）。",
+      "disposition": "登记为口径歧义，交归口方裁决要哪种读法；本草案不改成品。盘点时把 :109、:110 视为「同号多待办」实例。"
+    },
+    {
+      "id": "GAP-06",
+      "topic": "编号入口颗粒度：五个 EN 编号只到文件级路由",
+      "position": ["SKILL.md:67", "SKILL.md:114", "SKILL.md:116", "SKILL.md:117", "SKILL.md:118", "SKILL.md:119", "references/workflow.md:51", "references/workflow.md:71"],
+      "fact": "六轮表（SKILL.md:67 至 :72）「主要规则」列只列 SR 编号，不列 EN 编号。文本实测有 13 个 EN 编号只出现在自己的定义文件里：EN-02、EN-03、EN-06、EN-08、EN-09、EN-13、EN-19、EN-22、EN-28、EN-30、EN-36、EN-37、EN-39。其中 EN-02／03／06／08／09 落在 workflow.md:51「EN-01–EN-04」与 :71「EN-01–EN-10」的区间写法内，EN-36／37／39 落在 SKILL.md:121「EN-34 至 EN-40」区间内；剩下 EN-13、EN-19、EN-22、EN-28、EN-30 五个只有 SKILL.md:114 至 :119 的文件级入口，无逐编号点名。",
+      "disposition": "登记为入口颗粒度事实（区间写法覆盖 vs 逐条点名缺失）。盘点按文件级路由计能力，不把这五个判成不可达；是否在六轮表补 EN 对应列交归口方定，本草案不动成品。"
+    },
+    {
+      "id": "GAP-07",
+      "topic": "无可填写模板与无脚本",
+      "position": ["references/workflow.md:21", "references/workflow.md:25", "references/zh-mechanics.md:131", "references/zh-mechanics.md:133", "agents/openai.yaml:8"],
+      "fact": "包内 10 个文件全是 md 与 yaml，0 个脚本、无 templates/ 目录；逐编号台账模板内嵌在 workflow.md:21 至 :30，全稿体例表模板内嵌在 zh-mechanics.md:131 至 :141。已采纳合同据此未为本包建交付前检查条目并说明理由（notes/operations-contract/line-editing-and-proofreading.md:95）。",
+      "disposition": "capabilities 因此全部记 workflow／external，不记 automation。若作者要可填写的独立模板件，另立项处理，本草案不新建文件。"
+    },
+    {
+      "id": "GAP-08",
+      "topic": "外部规范符合性未逐条对照（包内自述）",
+      "position": ["references/zh-mechanics.md:7", "examples/worked-example.md:73", "references/en-word-choice-and-concision.md:82"],
+      "fact": "zh-mechanics.md:7 自述「下面是这些标准的通行要点，没有逐条对照标准原文」，即 GB/T 15834-2011 与 GB/T 15835-2011 的逐条符合性未核；worked-example.md:73 自述「此示范未验证目标出版方的具体 house style」；en-word-choice-and-concision.md:82 把历史词形限定为校勘候选、现代稿按项目当代词典与 style sheet。",
+      "disposition": "登记为未核面（属外部标准与项目体例，本包只给通行要点与让渡规则）。是否补逐条对照需外部文本与授权，本草案不做该判断。"
+    },
+    {
+      "id": "GAP-09",
+      "topic": "状态取值集合在两处口径不完全对齐",
+      "position": ["SKILL.md:145", "SKILL.md:152", "references/workflow.md:25", "examples/worked-example.md:107", "examples/worked-example.md:115"],
+      "fact": "SKILL.md:145 至 :150 的四词表只定义「已完成／依据／未能核实／待作者决定」，「未知」靠 SKILL.md:152 的补句说明；workflow.md:25 的台账模板把五值（含「未知」）并列写进同一格；例三台账 :107 至 :115 实际用到四词加「未知」。宿主格式若自带状态列，两套取值需按 SKILL.md:47 让位宿主，成品未写明让位时的取值映射。",
+      "disposition": "登记为宿主格式与内部取值的映射空白（与 LE-AP-01 相关）。裁决归属：宿主格式优先这一条已定，映射细节交归口方，本草案不补写。"
+    },
+    {
+      "id": "GAP-10",
+      "topic": "骨架未冻结状态与旁证 SHA",
+      "position": ["notes/quality/line-editing-and-proofreading/brief.json:14", "notes/quality/line-editing-and-proofreading/brief.json:15", "notes/quality/line-editing-and-proofreading/brief.json:18"],
+      "fact": "骨架 brief.json 的 note 自述为「W3 第 1 批骨架，未冻结」，requirements／capabilities／interfaces／applicability 四组为空（:15 至 :18）；本草案只补这五组与 gaps，未改 brief.json 任何字节。旁证记录仍把两个 SHA 记为 null（notes/operations-contract/line-editing-and-proofreading.md:102）。",
+      "disposition": "本草案不是审核结论：冻结、GQ 状态与 SHA 由既定归口方另行处理；本文件保持 kind=draft，不替代 brief.json。"
+    }
+  ],
+  "notes_on_method": {
+    "scope_statement": "本文件是 R09 §6.1 质量 brief 草案：只做成品盘点与位置登记，不作独立审核，不给通过结论，不写 GQ 状态。骨架的 gq5 块原样保留，未改写其判定。",
+    "commands": [
+      "find . -type f | sort 与 wc -l 合计 → 10 文件／1303 行；逐件 grep -c '' 回显相加 206+8+147+133+98+133+96+134+143+205＝1303（两路一致）",
+      "/usr/bin/grep -oh 'SR-[0-9][0-9]' 与 'EN-[0-9][0-9]' 分别 sort -u → SR 16 个、EN 40 个、合计 56；再用 '\\b[A-Z]{1,4}-[0-9]{1,3}\\b' 全形态扫一遍，额外只有 L-2 一处",
+      "/usr/bin/grep -n '^## EN-' 与 '^## SR-' → 编号定义位点表（SR-14 无二级标题）",
+      "/usr/bin/grep -rnE '英文原句模式' 全包 → 命中 1 处（references/en-mechanics-and-punctuation.md:92），与旁证计数一致",
+      "逐行取数（Read 与按行打印）核对全部锚点：320 条 → 全部在行数范围内且非空行；对端锚点另按 grep -rn 'line-editing-and-proofreading' 取实际行号",
+      "相对链接检查：全包 8 条 ](...) 链接，解析后 0 断链",
+      "非 md/yaml 文件计数 0；templates/ 目录不存在；grep -rniE 'automat|脚本|script' 无自动化执行声明"
+    ],
+    "files_read": {
+      "成品包全文读": ["SKILL.md (206)", "references/workflow.md (134)", "references/zh-sentence-and-wording.md (205)", "references/zh-mechanics.md (143)", "references/en-mechanics-and-punctuation.md (133)", "references/en-sentence-revision.md (133)", "references/en-paragraph-and-emphasis.md (98)", "references/en-word-choice-and-concision.md (96)", "examples/worked-example.md (147)", "agents/openai.yaml (8)"],
+      "旁证读": ["notes/operations-contract/line-editing-and-proofreading.md (105，本套第一份已采纳合同，只引位置不抄结论)", "notes/quality/line-editing-and-proofreading/brief.json (49，骨架)", "notes/quality/line-editing-and-proofreading/s01-desourcing-selfcheck.md (83，P4 命中旁证)"],
+      "对端包读到的行": ["character-and-narrative-control/SKILL.md:3,28,46,70,145,305,312,323 与 references/diagnosis.md:126", "scene-conflict-and-rhythm/SKILL.md:3,26,41,114,284 与 references/rhythm-diagnosis.md:58", "preset-card-generation/SKILL.md:3,23,39,54,55,82,141,143,183", "fiction-planning-and-diagnosis/SKILL.md:3,31,43,154,356 与 references/self-check-language.md:48、self-check-diagnosis.md:70、self-check-modern-and-zh.md:20,33", "genre-fiction-craft/SKILL.md:3,28", "cross-media-drama-adaptation/SKILL.md:3,38,191 与 references/interactive-adaptation.md:91", "story-architecture-and-longform-planning/SKILL.md:30,51（仅在扫描转出名单里读到，本草案 interfaces 未单列该包，任务点名的是六个包）"]
+    },
+    "conventions": "锚点格式 file.md:NN，相对成品包根 output/line-editing-and-proofreading/；跨包锚点加 ../<peer>/ 前缀；notes 侧锚点写全相对 ROOT 的路径。",
+    "groups_filled": {
+      "requirements": 16,
+      "capabilities": 9,
+      "interfaces": 6,
+      "applicability": 6,
+      "cases": 12,
+      "gaps": 10
+    },
+    "groups_not_complete": [
+      "interfaces：六个对端只核到「双向都有实体行」这一层，未验证宿主是否真的把字段传起来（无运行授权），字段名取自两侧成品原文行号。story-architecture-and-longform-planning 与 review／诊断入口在本包 SKILL.md:37、SKILL.md:187 有转出行，任务未要求单列，故未成为第七个 interface 条目。",
+      "cases：expected 只写成品规定的停手点、裁决归属与「其余照做」依据，均为静态文本对应；没有真实任务回执，不能当作用例已执行。",
+      "applicability：其他语种一项是基于「全包规则族只有 SR 与 EN 两套」的实测缺席得出，成品内没有显式的「不支持其他语种」声明行。"
+    ],
+    "verification_authority": "static：只读、检索、计数与文本核对；未运行任何测试、构建、基准或模型真实执行，未启动应用；未写 output/、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md，也未改同目录 brief.json／review.json／s01-desourcing-selfcheck.md／两份 agent1-s01-*；未使用 sed -i 或 perl -i。",
+    "conflict_rule": "合同与成品表述不一致时以成品原文为准，本草案的锚点全部指向成品行；合同侧只作为位置旁证出现在 gaps 与 files_read。"
+  },
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  },
+  "round_complete": "draft-complete lineediting-brief"
+}

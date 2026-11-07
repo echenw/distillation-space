@@ -1,0 +1,886 @@
+{
+  "version": 1,
+  "kind": "draft",
+  "skill": "preset-card-generation",
+  "status": "draft",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "drafted_by": "R09 §6.1 草案代笔（非该包独立审核方，只记事实与位置，不给通过结论）",
+  "drafted_at": "2026-11-05",
+  "case_source": "notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）",
+  "kind_mapping": {
+    "positive": "正常",
+    "missing": "缺料",
+    "conflict": "冲突",
+    "boundary": "边界"
+  },
+  "note": "W3 第 1 批骨架，未冻结。cases 已按 notes/suite-contract.md 第六节（附录 E 用例装配，全部自创）装配；requirements / capabilities / interfaces / applicability 由 W4 依最终 Skill 承诺完整盘点后补齐，不得留空冻结、不得删难实现需求制造全绿（R09 §6.1）。",
+  "scope_note": "本文件是 brief.json 的平行草案，不覆盖 brief.json，不作 GQ 判定。anchor 一律为相对包根的 file.md:NN，全部经 /usr/bin/grep -n 在 output/preset-card-generation/ 实测。status 取值口径：anchored＝包内有原文承载且行号已实测；anchored-partial＝包内有承载但只覆盖需求的一部分；no-anchor＝包内未找到承载。anchored 不等于合格，也不等于已执行。",
+  "artifact_inventory": {
+    "file_count": 11,
+    "line_count_total": 1344,
+    "per_file_lines": {
+      "SKILL.md": 218,
+      "agents/openai.yaml": 8,
+      "references/card-diagnosis.md": 109,
+      "references/card-method.md": 119,
+      "references/card-pitfalls.md": 180,
+      "references/expression.md": 146,
+      "references/planning.md": 68,
+      "references/progression.md": 183,
+      "references/revision.md": 59,
+      "references/style.md": 172,
+      "references/writing.md": 82
+    },
+    "sum_check": "218+8+109+119+180+146+68+183+59+172+82=1344",
+    "directories": [
+      "references/",
+      "agents/"
+    ],
+    "absent": [
+      "templates/（find -type d 实测无此目录）",
+      "scripts/／schemas/（无脚本类文件，find 仅命中 agents/openai.yaml 一个非 md 文件）⇒ capabilities[].kind 不得报 automation",
+      "examples/（本包无此目录）",
+      "workflow.md／worked-example.md（find 实测 0 个）",
+      "包内枚举编号：PC-[0-9]+ 与 SR-[0-9]+ 经 grep -hoE 实测均零命中"
+    ]
+  },
+  "requirements": [
+    {
+      "id": "PQ-R01",
+      "text": "生成推进模式卡：写出读者追的是什么、小／大循环与跨度终点、开局三章、加码台阶、每章落点、崩点栏；把已定的规划或结构写成给模型用的推进卡同样归本包。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:24",
+        "SKILL.md:53",
+        "SKILL.md:92",
+        "references/progression.md:7",
+        "references/progression.md:115",
+        "references/progression.md:124",
+        "references/planning.md:68"
+      ]
+    },
+    {
+      "id": "PQ-R02",
+      "text": "生成文风卡：八个维度定一种文风，卡体为定位加七个固定顺序小节，正文 600 到 750 字，示例为原创四到八行。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:54",
+        "references/style.md:3",
+        "references/style.md:7",
+        "references/style.md:90",
+        "references/style.md:99",
+        "references/style.md:101"
+      ]
+    },
+    {
+      "id": "PQ-R03",
+      "text": "生成表达约束卡（含反 AI 味的约束卡）：一张卡只管一种通病，正文不超过 300 字，第一句以「正文」二字开头声明只管小说正文。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:55",
+        "references/expression.md:3",
+        "references/expression.md:87",
+        "references/expression.md:95",
+        "references/expression.md:96",
+        "references/expression.md:104"
+      ]
+    },
+    {
+      "id": "PQ-R04",
+      "text": "诊断、修订、审校这类已有卡，包含一次审校一组卡片；只要求诊断时给建议不改写文件，要求修订时交付完整的卡。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:23",
+        "SKILL.md:52",
+        "SKILL.md:58",
+        "references/card-diagnosis.md:3",
+        "references/card-diagnosis.md:5",
+        "references/card-diagnosis.md:10",
+        "references/card-diagnosis.md:104"
+      ]
+    },
+    {
+      "id": "PQ-R05",
+      "text": "按「推进／文风／表达」三轴给一章做诊断，交付按对读者影响排序的问题清单与改法，不改写成新文本。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:25",
+        "SKILL.md:56",
+        "SKILL.md:75",
+        "SKILL.md:79",
+        "SKILL.md:82",
+        "references/revision.md:5",
+        "references/revision.md:11",
+        "references/revision.md:59"
+      ]
+    },
+    {
+      "id": "PQ-R06",
+      "text": "用户已有文风卡或推进卡作为输入时，据卡写这一章或核对这一章（卡片作为其他 skill／其他流程的输入接口）；写完逐条对照卡核对。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:26",
+        "SKILL.md:57",
+        "SKILL.md:84",
+        "SKILL.md:87",
+        "SKILL.md:90",
+        "references/writing.md:5",
+        "references/writing.md:14"
+      ]
+    },
+    {
+      "id": "PQ-R07",
+      "text": "双向转介接口：只接产物是「给模型的卡」或审查框架是三轴的请求；不写成卡、也不用三轴时按 §1 转给表七个兄弟 skill 转出，转出为深化路径不是前提。",
+      "status": "anchored-partial",
+      "anchors": [
+        "SKILL.md:3",
+        "SKILL.md:31",
+        "SKILL.md:33",
+        "SKILL.md:37",
+        "SKILL.md:40",
+        "SKILL.md:45",
+        "SKILL.md:60",
+        "SKILL.md:171",
+        "SKILL.md:187",
+        "SKILL.md:199"
+      ],
+      "partial_reason": "本包侧七个转出行齐全，但接收侧只有按请求形态的五条（SKILL.md:191-195），没有按兄弟包逐行的接收条；genre 一侧在对方包内实测零提及（见 gaps PQ-G02）。"
+    },
+    {
+      "id": "PQ-R08",
+      "text": "负触发：给图片生成模型、视频模型写提示词卡或分镜提示词不接，判为负触发并说明不适用。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:30",
+        "SKILL.md:3"
+      ],
+      "single_carrier_note": "图像／视频提示词的负触发在包内只有 SKILL.md:30 一处（grep -rn 图像｜视频 实测：全包仅命中该行）；agents/openai.yaml:5 的 short_description 只复述「只接产物是给模型用的卡或按三轴做的诊断」，未带这一条。"
+    },
+    {
+      "id": "PQ-R09",
+      "text": "交付前检查分两套：正文类四条、卡片类五条；卡片类交付前逐条过高风险缺陷目录。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:71",
+        "SKILL.md:116",
+        "SKILL.md:118",
+        "SKILL.md:126",
+        "SKILL.md:128",
+        "SKILL.md:132",
+        "references/card-diagnosis.md:31",
+        "references/card-pitfalls.md:3"
+      ]
+    },
+    {
+      "id": "PQ-R10",
+      "text": "缺料不臆造、冲突交作者裁决、效果未经测试不记通过：交付只用已完成／依据／未能核实／待作者决定四个状态词并逐项给依据。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:148",
+        "SKILL.md:150",
+        "SKILL.md:157",
+        "SKILL.md:159",
+        "SKILL.md:161",
+        "SKILL.md:165",
+        "SKILL.md:166",
+        "SKILL.md:167",
+        "SKILL.md:172",
+        "SKILL.md:174",
+        "references/card-method.md:11"
+      ]
+    },
+    {
+      "id": "PQ-R11",
+      "text": "通用原则七条：保留用户设定、判断落在稿面、先推进后文风再表达、改根因不换词、防过度纠正、示例原创、不确定写明。",
+      "status": "anchored",
+      "anchors": [
+        "SKILL.md:106",
+        "SKILL.md:108",
+        "SKILL.md:109",
+        "SKILL.md:110",
+        "SKILL.md:112",
+        "SKILL.md:113",
+        "SKILL.md:114"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "PQ-C01",
+      "text": "生成推进模式卡（含把规划、结构写成卡）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R01",
+        "PQ-R07"
+      ],
+      "anchors": [
+        "SKILL.md:51",
+        "SKILL.md:64",
+        "SKILL.md:92",
+        "references/progression.md:7",
+        "references/progression.md:119",
+        "references/planning.md:1"
+      ],
+      "limit": "宿主／用户格式优先于包内默认列形（references/progression.md:121「用户指定了格式时以用户为准」）；包内默认列形是五小节固定顺序（references/progression.md:124），无空白模板文件，复用需从散文与围栏示例手抄；推进卡不放场景示例（references/progression.md:126）。",
+      "counterexample_ref": "references/card-pitfalls.md:36 第 4 条「配额被机械执行」；references/card-pitfalls.md:42 规律：数字门槛在推进卡中容易适得其反；references/card-pitfalls.md:128 第 16 条「内容不专属」"
+    },
+    {
+      "id": "PQ-C02",
+      "text": "生成文风卡（含模仿一段文字的口气）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R02",
+        "PQ-R08"
+      ],
+      "anchors": [
+        "SKILL.md:54",
+        "references/style.md:7",
+        "references/style.md:58",
+        "references/style.md:90",
+        "references/style.md:94"
+      ],
+      "limit": "用户格式优先（references/style.md:96）；固定字数 600 到 750 字（references/style.md:101）；卡上不写生成／改写／审阅的操作规则，不布置剧情任务（references/style.md:102-103）。",
+      "counterexample_ref": "references/style.md:69-87 表右列「冒名形态」即逐风格反例；references/card-pitfalls.md:161 第 21 条「以排版代替文风」；references/card-pitfalls.md:22 第 2 条「感受词充当判据」"
+    },
+    {
+      "id": "PQ-C03",
+      "text": "生成表达约束卡（反 AI 味）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R03",
+        "PQ-R11"
+      ],
+      "anchors": [
+        "SKILL.md:55",
+        "references/expression.md:5",
+        "references/expression.md:17",
+        "references/expression.md:87",
+        "references/expression.md:100",
+        "references/expression.md:113"
+      ],
+      "limit": "用户格式优先（references/expression.md:93）；正文不超过 300 字（references/expression.md:96）；六项结构是写卡时的检查顺序、不是卡上的标签（references/expression.md:111）；常用词不入禁用词表（references/expression.md:115）。",
+      "counterexample_ref": "references/expression.md:25-71 病灶表每行第四列「不可改成」；references/card-pitfalls.md:69 第 8 条「禁令范围过大，误伤正常写法」；references/card-pitfalls.md:90 第 11 条「替代写法变成新套路」"
+    },
+    {
+      "id": "PQ-C04",
+      "text": "修订与审校卡（单卡／一组卡片）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R04",
+        "PQ-R10"
+      ],
+      "anchors": [
+        "SKILL.md:52",
+        "references/card-diagnosis.md:10",
+        "references/card-diagnosis.md:15",
+        "references/card-diagnosis.md:104"
+      ],
+      "limit": "只要求诊断时给建议、不改写文件；要求修订时才交付完整的卡（references/card-diagnosis.md:10）；互相冲突的批评按 references/card-pitfalls.md:172-180 的裁定顺序处理，第 1 条是用户指定的格式和契约优先（references/card-pitfalls.md:176）。",
+      "counterexample_ref": "references/card-pitfalls.md:155 第 20 条「同义重复与无效尾句」；references/card-diagnosis.md:96 outline-pollution.template-residue 模板残留"
+    },
+    {
+      "id": "PQ-C05",
+      "text": "诊断一张卡为什么不起作用（五类根因＋缺陷目录）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R04"
+      ],
+      "anchors": [
+        "SKILL.md:58",
+        "references/card-diagnosis.md:5",
+        "references/card-diagnosis.md:7",
+        "references/card-diagnosis.md:8",
+        "references/card-diagnosis.md:17",
+        "references/card-diagnosis.md:42"
+      ],
+      "limit": "先分清三种情况（条款缺陷／正文没照做／批评本身不可靠），第三种不盲改（references/card-diagnosis.md:8）；缺陷标识（如 specificity.no-countable-threshold）是归组名，不构成本包的枚举需求 ID。",
+      "counterexample_ref": "references/card-diagnosis.md:94 voice.promotional-self-praise（「烧脑体验优秀」是给自己打分 → 删除）；references/card-diagnosis.md:100-102 写不出可照做条款的卡"
+    },
+    {
+      "id": "PQ-C06",
+      "text": "按三轴给章节做诊断（推进／文风／表达三层顺序）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R05",
+        "PQ-R07"
+      ],
+      "anchors": [
+        "SKILL.md:75",
+        "SKILL.md:77",
+        "SKILL.md:79",
+        "references/revision.md:5",
+        "references/revision.md:43",
+        "references/revision.md:48"
+      ],
+      "limit": "只交付问题清单和改法，改成改后文本的请求转 line-editing-and-proofreading（SKILL.md:82、references/revision.md:59）；推进层涉及改情节时先报告不自行改故事（references/revision.md:11）；只有梗概时只做梗概层判断（SKILL.md:166）。",
+      "counterexample_ref": "SKILL.md:80 与 references/revision.md:22 的过度纠正形态（一串碎句、人人说谜语、没有任何情绪、流水账）；references/card-pitfalls.md:97 第 12 条「护栏压制了本卡的核心效果」"
+    },
+    {
+      "id": "PQ-C07",
+      "text": "按已有卡写这一章并逐条对照核对",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R06",
+        "PQ-R09"
+      ],
+      "anchors": [
+        "SKILL.md:84",
+        "SKILL.md:86",
+        "SKILL.md:87",
+        "references/writing.md:5",
+        "references/writing.md:63",
+        "references/writing.md:72"
+      ],
+      "limit": "缺项先从上下文找，找不到的关键项说明假设、不为此中断（references/writing.md:14）；假设会彻底改变方案时按 SKILL.md:142 停下问；没有卡作输入的起草请求转 fiction-planning-and-diagnosis（SKILL.md:90）。",
+      "counterexample_ref": "references/writing.md:19 说不出变化的章回到规划去解决，不靠文笔填充；references/writing.md:76 不引入此前没有的设定／人物／规则来解旧问题"
+    },
+    {
+      "id": "PQ-C08",
+      "text": "卡片交付格式承载（默认列形＋用户格式优先＋状态词交付）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R02",
+        "PQ-R03",
+        "PQ-R01",
+        "PQ-R10"
+      ],
+      "anchors": [
+        "SKILL.md:73",
+        "SKILL.md:150",
+        "references/progression.md:121",
+        "references/style.md:96",
+        "references/expression.md:93",
+        "references/card-pitfalls.md:176"
+      ],
+      "limit": "包内无 templates/ 目录、无空白模板、无枚举 ID（find／grep 实测：PC-[0-9]+ 与 SR-[0-9]+ 零命中）⇒「格式」只有散文条目＋围栏示例两种承载；固定字数上下限与「字数在格式规定之内」（SKILL.md:132）共同构成数值硬门。",
+      "counterexample_ref": "references/card-method.md:98 「不靠标签区分正反」与 references/expression.md:111 「不是卡上的标签」⇒ 卡面不出现字段名，可编辑字段只能靠小节标题承载（references/style.md:115-154、references/progression.md:140-163）"
+    },
+    {
+      "id": "PQ-C09",
+      "text": "稿面判据体系（能数／能查／能判／能演，禁令五部件）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R09",
+        "PQ-R11"
+      ],
+      "anchors": [
+        "SKILL.md:67",
+        "SKILL.md:68",
+        "references/card-method.md:23",
+        "references/card-method.md:27",
+        "references/card-method.md:41",
+        "references/card-method.md:54"
+      ],
+      "limit": "字数紧张时五部件前三个不可省（references/card-method.md:56）；五部件名与表达约束卡的六项名、病灶表四列名之间无逐词映射（见 gaps PQ-G06）。",
+      "counterexample_ref": "references/card-pitfalls.md:22 第 2 条（感受词充当判据）、references/card-pitfalls.md:29 第 3 条（计量单位未定义）、references/card-pitfalls.md:60 第 7 条（豁免架空禁令）"
+    },
+    {
+      "id": "PQ-C10",
+      "text": "交付前高风险缺陷自查（22 条目录＋冲突批评裁定顺序）",
+      "kind": "workflow",
+      "rule_ids": [
+        "PQ-R09",
+        "PQ-R10"
+      ],
+      "anchors": [
+        "SKILL.md:71",
+        "references/card-pitfalls.md:3",
+        "references/card-pitfalls.md:10",
+        "references/card-pitfalls.md:12",
+        "references/card-pitfalls.md:141",
+        "references/card-pitfalls.md:172"
+      ],
+      "limit": "自查靠散文条目逐条读，没有机器可校验形态（包内无 scripts/）；缺陷标识可跨文件归组（references/card-diagnosis.md:46-70 的第一部分映射），但映射只到条号、不到需求 ID。",
+      "counterexample_ref": "references/card-pitfalls.md:14-171 每条的「病灶示例」即反例集；references/card-pitfalls.md:180 越出本卡职责的批评不照改"
+    },
+    {
+      "id": "PQ-C11",
+      "text": "跨包转介路由（七个兄弟包的转出与接收）",
+      "kind": "external",
+      "rule_ids": [
+        "PQ-R07",
+        "PQ-R08"
+      ],
+      "anchors": [
+        "SKILL.md:33",
+        "SKILL.md:37",
+        "SKILL.md:43",
+        "SKILL.md:187",
+        "SKILL.md:191",
+        "SKILL.md:199"
+      ],
+      "limit": "外部依赖：转出能否落地取决于对方包内是否有对应接收行，本包管不到；genre-fiction-craft 一侧实测零提及本包（gaps PQ-G02），该行没有可对接的 provider。外部声明为 workflow 也不等于对侧已接。",
+      "counterexample_ref": "SKILL.md:30 图像／视频提示词卡判负触发；SKILL.md:45 声明转介是深化路径不是前提，本包可独立使用"
+    },
+    {
+      "id": "PQ-C12",
+      "text": "宿主界面信息与调用控制（display_name／short_description／default_prompt／allow_implicit_invocation）",
+      "kind": "external",
+      "rule_ids": [
+        "PQ-R08",
+        "PQ-R10"
+      ],
+      "anchors": [
+        "agents/openai.yaml:1",
+        "agents/openai.yaml:2",
+        "agents/openai.yaml:5",
+        "agents/openai.yaml:6",
+        "agents/openai.yaml:8"
+      ],
+      "limit": "agents/openai.yaml:1 自陈「宿主是否加载、采用哪些字段，以实际宿主为准」，agents/openai.yaml:2 自陈不授予权限也不承诺自动执行 ⇒ 本条只有静态设计，无任何宿主加载或调用回执；default_prompt 的「最多问三个问题」（agents/openai.yaml:6）与 allow_implicit_invocation: false（agents/openai.yaml:8）未经真实宿主验证。",
+      "counterexample_ref": "SKILL.md:172 三项关键输入全缺时改交问题清单（与 default_prompt 的先问口径一致，但包内未说明两处谁优先）"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "PQ-IF0",
+      "type": "口径说明",
+      "text": "本组 anchor 口径：本包侧一律相对 output/preset-card-generation/（SKILL.md:NN、references/xxx.md:NN、agents/openai.yaml:NN）；对方包侧的 peer_refs 与 peer_receiving_refs 数组、以及正文里写成「该包 SKILL.md:NN」的引用，一律相对对方包根 output/<peer>/；凡显式写成 output/<peer>/SKILL.md:NN 的可直接按仓库根解析。对方包侧行号全部由 /usr/bin/grep -rn \"preset-card\" 于各兄弟包实测取得，本包侧每个 NN 都用 grep -n 打印过行首。字段「present」只陈述原文行在不在，不给接口合格结论。",
+      "rule_ids": ["PQ-R07"],
+      "anchors": ["SKILL.md:33", "SKILL.md:187", "SKILL.md:199"]
+    },
+    {
+      "id": "PQ-IF1",
+      "peer": "character-and-narrative-control",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（视角合同、人物声口、信息控制）⇒ 转回该包",
+        "this_refs": ["SKILL.md:41", "SKILL.md:3"],
+        "peer_receiving_refs": ["SKILL.md:312"],
+        "present": "两侧都有：本包 SKILL.md:41 转出行；该包 SKILL.md:312 明写「preset-card-generation → 本 Skill：……请求不写成卡、也不用三轴」"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:34", "SKILL.md:49", "SKILL.md:290", "SKILL.md:302", "SKILL.md:303", "SKILL.md:304", "SKILL.md:305", "SKILL.md:311", "examples/pov-cases.md:102"],
+        "this_receiving_refs": ["SKILL.md:191", "SKILL.md:193", "SKILL.md:195"],
+        "present": "两侧都有：该包九行按卡／三轴转出；本包 §9.2 只有按请求形态的接收行（无按包行）"
+      },
+      "missing": "本包侧没有一条点名 character 的接收行；双向闭合靠该包自己的 SKILL.md:311-312。",
+      "rule_ids": ["PQ-R07"],
+      "anchors": ["SKILL.md:41", "SKILL.md:191"]
+    },
+    {
+      "id": "PQ-IF2",
+      "peer": "scene-conflict-and-rhythm",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（单场设计、强度节奏、章末钩子）⇒ 转回该包",
+        "this_refs": ["SKILL.md:42", "SKILL.md:90"],
+        "peer_receiving_refs": ["SKILL.md:294"],
+        "present": "两侧都有：本包 SKILL.md:42 转出行＋SKILL.md:90 单场设计转出；该包 SKILL.md:294 有接收句"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:27", "SKILL.md:44", "SKILL.md:273", "SKILL.md:284", "SKILL.md:285", "SKILL.md:286", "SKILL.md:293", "references/rhythm-diagnosis.md:100", "examples/scene-cases.md:82"],
+        "this_receiving_refs": ["SKILL.md:191", "SKILL.md:192", "SKILL.md:193"],
+        "present": "两侧都有：该包九行（含 reference 与 example 各一处）；本包接收行按形态承载"
+      },
+      "missing": "本包侧无点名 scene 的接收行；「把单场设计写成推进卡」在 SKILL.md:192 只写了「规划、结构或改编安排」，未含场景层措辞。",
+      "rule_ids": ["PQ-R07"],
+      "anchors": ["SKILL.md:42", "SKILL.md:90", "SKILL.md:192"]
+    },
+    {
+      "id": "PQ-IF3",
+      "peer": "story-architecture-and-longform-planning",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（单本结构、分卷、排章纲，产物是规划文档）⇒ 转回该包",
+        "this_refs": ["SKILL.md:38", "SKILL.md:104", "references/planning.md:1", "references/planning.md:68"],
+        "peer_receiving_refs": ["SKILL.md:43"],
+        "present": "两侧都有：本包四处声明规划文档归该包；该包 SKILL.md:43「从 preset-card-generation 转入本 skill 的：单本结构、分卷、排章纲……」"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:33", "SKILL.md:40"],
+        "this_receiving_refs": ["SKILL.md:53", "SKILL.md:192"],
+        "present": "两侧都有：该包两行；本包有专门任务入口行 SKILL.md:53 与接收行 SKILL.md:192"
+      },
+      "missing": "该包侧只有 SKILL.md 两行，未覆盖本包 §9.1 的「规划一卷／排章纲」判断依据之外的组合（如把卷纲写成文风卡）。",
+      "rule_ids": ["PQ-R07", "PQ-R01"],
+      "anchors": ["SKILL.md:38", "SKILL.md:53", "SKILL.md:104", "SKILL.md:192"]
+    },
+    {
+      "id": "PQ-IF4",
+      "peer": "fiction-planning-and-diagnosis",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（一般新作规划、定赛道、成稿诊断）⇒ 转回该包",
+        "this_refs": ["SKILL.md:37", "SKILL.md:90"],
+        "peer_receiving_refs": ["SKILL.md:45"],
+        "present": "两侧都有：本包 SKILL.md:37 转出行＋SKILL.md:90 无卡起草转出；该包 SKILL.md:45「从 preset-card-generation 转入本 skill 的：一般性的新作规划、定赛道、成稿诊断……」"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:34", "SKILL.md:40", "SKILL.md:41", "SKILL.md:42", "SKILL.md:43"],
+        "this_receiving_refs": ["SKILL.md:191", "SKILL.md:193", "SKILL.md:195"],
+        "present": "两侧都有：该包五行（含「审这一章」「写这一章」「去 AI 味」三条重叠判断）；本包接收行按形态承载"
+      },
+      "missing": "本包侧无点名 fiction-planning 的接收行；两包都声称能做「成稿诊断」，分流只靠 SKILL.md:185「用户指定按三轴审时归本 Skill」这一句判断依据。",
+      "rule_ids": ["PQ-R07", "PQ-R05"],
+      "anchors": ["SKILL.md:37", "SKILL.md:90", "SKILL.md:185"]
+    },
+    {
+      "id": "PQ-IF5",
+      "peer": "line-editing-and-proofreading",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（改具体稿子去 AI 味，产物是改好的文本）⇒ 转回该包",
+        "this_refs": ["SKILL.md:39", "SKILL.md:82", "references/revision.md:59", "SKILL.md:143"],
+        "peer_receiving_refs": ["SKILL.md:193"],
+        "present": "两侧都有：本包四处声明改后文本归该包；该包 SKILL.md:193「preset-card-generation → 本 Skill：改具体稿子去 AI 味……」"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:30", "SKILL.md:43", "SKILL.md:166", "SKILL.md:183", "SKILL.md:184", "SKILL.md:185", "SKILL.md:192", "examples/worked-example.md:93"],
+        "this_receiving_refs": ["SKILL.md:191", "SKILL.md:194"],
+        "present": "两侧都有：该包八行；本包 SKILL.md:194「写反 AI 味的约束卡」为专门接收行"
+      },
+      "missing": "本包侧无点名 line-editing 的接收行；「同一章既出约束卡又出改后文本」的组合在本包只有逐条转出（SKILL.md:39），没有把两件事拆成两轮的过程规定。",
+      "rule_ids": ["PQ-R07", "PQ-R03"],
+      "anchors": ["SKILL.md:39", "SKILL.md:82", "SKILL.md:194"]
+    },
+    {
+      "id": "PQ-IF6",
+      "peer": "genre-fiction-craft",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（题材规则、机制、混合题材）⇒ 转回该包",
+        "this_refs": ["SKILL.md:40", "SKILL.md:3"],
+        "peer_receiving_refs": [],
+        "present": "只有本包一侧：该包全包 101 个文件实测「preset」命中 0（grep -rc 逐文件回显全为 0），「预设卡／三轴／推进模式卡／文风卡／约束卡」在该包 SKILL.md 亦 0 命中 ⇒ 无接收行"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": [],
+        "this_receiving_refs": ["SKILL.md:191", "SKILL.md:192"],
+        "present": "缺该包一侧：无转出行。本包接收行也只有按形态的通卡型条目，未点名题材"
+      },
+      "missing": "两侧都缺（唯一未闭合的组合）：本包 SKILL.md:40 单方面把题材规则转给 genre，genre 侧既不转出也不接收，违反本包自设的 SKILL.md:199「A 说转给 B，B 都要说接收什么」。另见 Owner 重叠：本包 references/progression.md:55 与 references/progression.md:69 承载 37 个类型的机制，genre 侧 output/genre-fiction-craft/references/03-horror/mechanism-and-causality.md:1 以 HO-01–HO-18 承载同题材机制，而 output/genre-fiction-craft/SKILL.md:18 与 output/genre-fiction-craft/SKILL.md:49 声明「其他题材只补机制」⇒ 同一张「机制卡」两包都有承载，包间无成对契约可裁。",
+      "rule_ids": ["PQ-R07", "PQ-R01"],
+      "anchors": ["SKILL.md:40", "SKILL.md:199"]
+    },
+    {
+      "id": "PQ-IF7",
+      "peer": "cross-media-drama-adaptation",
+      "note": "简报点名的是六个包；本包 SKILL.md:43 实际有第七个转出对象，一并实测，避免盘点漏项。",
+      "direction_this_to_peer": {
+        "claim": "不写成卡、也不用三轴（改编为舞台／影视／音频／互动）⇒ 转回该包",
+        "this_refs": ["SKILL.md:43", "SKILL.md:3"],
+        "peer_receiving_refs": ["SKILL.md:232"],
+        "present": "两侧都有：本包 SKILL.md:43 转出行（写「不写成卡的部分」）；该包 SKILL.md:232 有接收句"
+      },
+      "direction_peer_to_this": {
+        "claim": "产物是给模型的卡／审查框架是三轴 ⇒ 转本包",
+        "peer_refs": ["SKILL.md:28", "SKILL.md:39", "SKILL.md:217", "SKILL.md:231"],
+        "this_receiving_refs": ["SKILL.md:192"],
+        "present": "两侧都有：该包四行含「把改编方案写成给模型用的卡」；本包 SKILL.md:192 明写含改编安排"
+      },
+      "missing": "本包侧无点名 cross-media 的接收行，靠 SKILL.md:192 的括号承载。",
+      "rule_ids": ["PQ-R07"],
+      "anchors": ["SKILL.md:43", "SKILL.md:192"]
+    },
+    {
+      "id": "PQ-IF8",
+      "type": "组合级缺项汇总",
+      "text": "缺反向接收条形的组合：一、genre-fiction-craft 两侧全缺（对方包内零提及，实测 0 命中）。二、七个兄弟包在本包 §9.2 都没有按包逐行的接收条——SKILL.md:191-195 是按请求形态组织的五行，不含任何包名（实测该五行无包名字符串），而 SKILL.md:199 声明「§1 的转给表与 9.2 的接收表互为逆关系，逐行可对上」；7 行转给表（SKILL.md:37-43）对 5 行接收表，按包维度对不上。三、本包 §9.1 的四行重叠请求（SKILL.md:182-185）与 §1 转给表内容重复承载，未声明谁是唯一权威。",
+      "missing": ["genre-fiction-craft：两侧均无（唯一未闭合）", "character-and-narrative-control／scene-conflict-and-rhythm／story-architecture-and-longform-planning／fiction-planning-and-diagnosis／line-editing-and-proofreading／cross-media-drama-adaptation：本包侧缺按包接收行（该包侧接收行均在）"],
+      "rule_ids": ["PQ-R07"],
+      "anchors": ["SKILL.md:37", "SKILL.md:43", "SKILL.md:182", "SKILL.md:191", "SKILL.md:195", "SKILL.md:199"]
+    }
+  ],
+  "applicability": [
+    {
+      "id": "PQ-A01",
+      "scope": "卡片消费条件：包内一切「每一条都会被执行」的规则前提，依赖宿主真把卡喂给模型。宿主是否加载 openai.yaml 字段、是否调用本 skill 均无运行回执 ⇒ 本盘点只作静态设计。",
+      "limitation": "静态行号能证明原文写了什么，不能证明宿主读过、模型执行过；本包无 scripts/，无任何自动化回执。",
+      "counterexample": "references/card-method.md:11 自陈「下列前提尚未经过本 Skill 的生成测试验证」，即包内承认前提未证。",
+      "rule_ids": ["PQ-R10"],
+      "anchors": ["agents/openai.yaml:1", "agents/openai.yaml:2", "SKILL.md:159", "SKILL.md:174", "references/card-method.md:9", "references/card-method.md:11"]
+    },
+    {
+      "id": "PQ-A02",
+      "scope": "外部格式对齐：宿主或用户指定格式时优先于包内默认列形（三卡默认格式各写一句「用户指定了格式时以用户为准」）。",
+      "limitation": "包内没写「宿主格式与固定字数／小节顺序冲突时谁让步」的过程条款，只有 references/card-pitfalls.md:176 裁定顺序第 1 条「用户指定的格式和契约优先」承担该判断；默认列形无空白模板文件承载（实测包内无 templates/）。",
+      "counterexample": "SKILL.md:132「字数在格式规定之内」与 references/style.md:101「600 到 750 字」构成下限硬门；宿主只给单行字段时的取舍包内无条文。",
+      "rule_ids": ["PQ-R02", "PQ-R03", "PQ-R01"],
+      "anchors": ["SKILL.md:73", "references/progression.md:121", "references/style.md:96", "references/expression.md:93", "references/card-pitfalls.md:176"]
+    },
+    {
+      "id": "PQ-A03",
+      "scope": "非叙事文本不适用：本包只处理小说创作用的预设卡；图像／视频提示词卡判负触发；产物是规划文档或改好文本、审查框架不是三轴的请求一律转出。",
+      "limitation": "包内对「非小说／散文／公文等非叙事文本」没有一般性排除条款（grep -rn 散文｜非小说｜非叙事 实测零命中），不适用只靠 SKILL.md:30 的图像视频一条与 §1 转给表推断；「公文」二字仅出现在误伤豁免列举里（references/expression.md:35、references/card-method.md:61），不是适用范围声明。",
+      "counterexample": "SKILL.md:30 给图片生成模型、视频模型写提示词卡或分镜提示词＝负触发，说明不适用。",
+      "rule_ids": ["PQ-R08", "PQ-R07"],
+      "anchors": ["SKILL.md:30", "SKILL.md:31", "SKILL.md:37", "SKILL.md:38", "SKILL.md:39", "agents/openai.yaml:5"]
+    },
+    {
+      "id": "PQ-A04",
+      "scope": "真实模型效果不可由静态检查证明：卡的格式、字数、样文比对可逐项核对；卡能不能改善生成结果属真实任务测试，未授权。",
+      "limitation": "本包所有能力条目均为静态承载，无一次真实生成回执；GQ5 记 NOT_PROVEN 不等于能力失败。",
+      "counterexample": "references/card-diagnosis.md:94 voice.promotional-self-praise 把「烧脑体验优秀」列为给自己打分，改法是删除——包内禁止卡片自评。",
+      "rule_ids": ["PQ-R10"],
+      "anchors": ["SKILL.md:159", "SKILL.md:174", "SKILL.md:206", "references/card-method.md:11"]
+    },
+    {
+      "id": "PQ-A05",
+      "scope": "数量判据的适用范围：数字门槛在文风卡和表达约束卡中有效，在推进卡中容易适得其反；推进卡的力量来自机制条款。",
+      "limitation": "同一判据（能数）在三个卡种的适用性不同，写卡时须按卡种取舍，包内未给出跨卡种的统一判定表。",
+      "counterexample": "references/card-pitfalls.md:38 病灶示例：「小循环三章一圈」跑到三百章照样合规；「一段不超过两句」叠「单句成段常见」连写三十章成电报体。",
+      "rule_ids": ["PQ-R01", "PQ-R09"],
+      "anchors": ["references/card-pitfalls.md:42", "references/card-pitfalls.md:36", "references/card-pitfalls.md:38", "SKILL.md:128", "references/progression.md:27"]
+    },
+    {
+      "id": "PQ-A06",
+      "scope": "条件化做法适用范围：references/card-method.md:102-119 的十二条做法或仅适用部分题材、或依据尚单薄，确有需要才采用，不作每张卡的固定要求。",
+      "limitation": "「依据尚单薄」是包内自陈（references/card-method.md:104），未逐项写明哪几条依据单薄到什么程度；采用与否由写卡者判断。",
+      "counterexample": "references/card-method.md:119 允许写明不确定，仅适用专业、纪实类卡。",
+      "rule_ids": ["PQ-R11"],
+      "anchors": ["references/card-method.md:102", "references/card-method.md:104", "references/card-method.md:119"]
+    },
+    {
+      "id": "PQ-A07",
+      "scope": "三轴诊断一章的输入条件：必须有正文；只有梗概时只做梗概层判断并列出还需哪些正文。",
+      "limitation": "梗概层能判的范围包内未定义边界，只给「不编造章内问题」的禁令。",
+      "counterexample": "SKILL.md:166 只有梗概、没有正文却要按三轴诊断时的出口。",
+      "rule_ids": ["PQ-R05", "PQ-R10"],
+      "anchors": ["SKILL.md:25", "SKILL.md:166", "SKILL.md:77", "references/revision.md:5", "references/revision.md:11"]
+    },
+    {
+      "id": "PQ-A08",
+      "scope": "卡种职责边界：文风卡不布置剧情任务、不重复表达约束已管的通病；表达约束卡只管正文、不管规划大纲分析文字；推进卡不规定句子怎么写。",
+      "limitation": "三条边界分散在三个卡种文件与缺陷目录里，SKILL.md 未集中声明；跨卡互斥的机器可检形式不存在。",
+      "counterexample": "references/card-pitfalls.md:131 成因：文风卡布置剧情任务、推进卡规定句式、表达约束管到规划文字；references/card-pitfalls.md:180 越出本卡职责的批评不照改。",
+      "rule_ids": ["PQ-R01", "PQ-R02", "PQ-R03"],
+      "anchors": ["references/style.md:103", "references/style.md:104", "references/expression.md:95", "references/expression.md:116", "references/progression.md:3", "references/card-pitfalls.md:131", "references/card-pitfalls.md:180"]
+    },
+    {
+      "id": "PQ-A09",
+      "scope": "交付状态词的适用范围：对作者交付只用已完成／依据／未能核实／待作者决定四个词并逐项给依据，不把未验证项写成通过。",
+      "limitation": "四词是本包口径，与其他七个兄弟包的同一口径靠 notes/suite-contract.md 第二节统一，包内不互相引用；无外部标准背书。",
+      "counterexample": "SKILL.md:156 未能核实的定义：检查已执行但结论依赖未核实的判断、设计假设或缺失输入，不能记作已完成；SKILL.md:157 待作者决定：存在冲突、取舍或锁定内容矛盾时由作者裁决，不擅自覆盖。",
+      "rule_ids": ["PQ-R10", "PQ-R09"],
+      "anchors": ["SKILL.md:148", "SKILL.md:150", "SKILL.md:154", "SKILL.md:156", "SKILL.md:157", "SKILL.md:159"]
+    }
+  ],
+  "cases": [
+    {
+      "id": "PC-T1",
+      "kind": "positive",
+      "scenario": "为一部都市异能连载生成推进模式卡",
+      "expected": "交付推进卡，并通过交付前检查",
+      "anchors": ["SKILL.md:51", "SKILL.md:64", "SKILL.md:126", "SKILL.md:128", "references/progression.md:119", "references/progression.md:124"]
+    },
+    {
+      "id": "PC-T2",
+      "kind": "missing",
+      "scenario": "要文风卡，但没给样文，也没描述",
+      "expected": "先要样文；先给几种候选文风让作者选",
+      "anchors": ["SKILL.md:165", "SKILL.md:140", "references/style.md:65", "references/style.md:69"]
+    },
+    {
+      "id": "PC-T3",
+      "kind": "conflict",
+      "scenario": "已锁定的文风卡要求短句，新的表达约束卡写「不要碎句」",
+      "expected": "走版本和锁定内容的冲突出口，不擅自覆盖已锁定的卡",
+      "anchors": ["SKILL.md:167", "SKILL.md:157", "SKILL.md:108", "references/card-pitfalls.md:46", "references/card-pitfalls.md:176"]
+    },
+    {
+      "id": "PC-T4",
+      "kind": "boundary",
+      "scenario": "要给图片生成模型写提示词卡（不是小说）",
+      "expected": "判为负触发，说明不适用",
+      "anchors": ["SKILL.md:30", "SKILL.md:3", "SKILL.md:171"]
+    },
+    {
+      "id": "PC-T5",
+      "kind": "missing",
+      "scenario": "要求产卡，但只给一章梗概，没有正文也没有样文",
+      "expected": "停在缺料出口：文风卡缺样文时先要样文并给候选文风（SKILL.md:165），只有梗概的三轴判断只做梗概层（SKILL.md:166）；推进卡可依据梗概起草小节但标明假设与待决项（references/planning.md:68）；缺的是「卡要管哪段正文」这类关键输入时由作者补并裁决（SKILL.md:172）；其余照做——能依据梗概成立的条款先出，不能的列成问题清单。",
+      "anchors": ["SKILL.md:165", "SKILL.md:166", "SKILL.md:172", "references/planning.md:68", "references/style.md:65"]
+    },
+    {
+      "id": "PC-T6",
+      "kind": "positive",
+      "scenario": "作者已有一张文风卡作为输入，要求据此写这一章",
+      "expected": "不停在本包外：成品原文把这一步判为内（SKILL.md:26、SKILL.md:57、SKILL.md:84、SKILL.md:195），按卡写正文并逐条对照核对（SKILL.md:87）、核对连续性（SKILL.md:88）；同一请求里若还要单场设计或把改后正文交付，那部分才按 SKILL.md:90 转 scene-conflict-and-rhythm、按 SKILL.md:39 转 line-editing-and-proofreading；转不转由作者决定，其余照做。",
+      "brief_conflict": "上游简报把本条标为「转出」。以成品原文为准：SKILL.md:26/:57/:84 与 §9.2 SKILL.md:195 都把它写成本包职责，只有缺卡输入的起草才转 fiction-planning（SKILL.md:90）。",
+      "anchors": ["SKILL.md:26", "SKILL.md:57", "SKILL.md:84", "SKILL.md:87", "SKILL.md:88", "SKILL.md:90", "SKILL.md:195", "references/writing.md:5"]
+    },
+    {
+      "id": "PC-T7",
+      "kind": "positive",
+      "scenario": "作者指定按「推进／文风／表达」三轴审一章正文",
+      "expected": "不停在本包外：三轴诊断是本包职责（SKILL.md:25、SKILL.md:56、SKILL.md:75、SKILL.md:193），交付按对读者影响排序的问题清单与改法（references/revision.md:48）；推进层要改情节时先报告不自行改故事（references/revision.md:11），是否改由作者裁决；若同一请求还要改后文本，那一条转 line-editing-and-proofreading（SKILL.md:82）；其余照做。",
+      "brief_conflict": "上游简报把本条标为「转出」。以成品原文为准：SKILL.md:25/:56/:75 与 §9.2 SKILL.md:193 明写按三轴审章节由本包接，只有框架不是三轴时才转 fiction-planning（SKILL.md:185）。",
+      "anchors": ["SKILL.md:25", "SKILL.md:56", "SKILL.md:75", "SKILL.md:79", "SKILL.md:82", "SKILL.md:193", "references/revision.md:5", "references/revision.md:48", "references/revision.md:59"]
+    },
+    {
+      "id": "PC-T8",
+      "kind": "boundary",
+      "scenario": "要求给这张卡打分评级（例如「打个 8 分」或按 A 到 D 定级），并据此判断卡好不好",
+      "expected": "停在交付口径：包内只有已完成／依据／未能核实／待作者决定四个状态词且要逐项给依据（SKILL.md:150），没有分数或等级机制；卡片自评与被评都属缺陷（references/card-diagnosis.md:38、references/card-diagnosis.md:94）；由作者决定是否接受四词交付与缺陷清单；其余照做——按 references/card-pitfalls.md 逐条给命中的缺陷标识、位置与改法，不给总分，也不把未经生成测试的效果写成保证（SKILL.md:159）。",
+      "anchors": ["SKILL.md:148", "SKILL.md:150", "SKILL.md:159", "references/card-diagnosis.md:38", "references/card-diagnosis.md:94", "references/revision.md:48"]
+    },
+    {
+      "id": "PC-T9",
+      "kind": "conflict",
+      "scenario": "作者要「规则怪谈流的机制卡」，genre-fiction-craft 与本包都声称拥有这张卡的 Owner：本包把类型机制写进推进模式卡，genre 包把同类机制写成题材规则",
+      "expected": "停在两包无成对契约可裁：本包按「产物是不是卡」自证归本包（SKILL.md:53、SKILL.md:192、references/progression.md:55、references/progression.md:69、references/progression.md:92），genre 侧既无转出也无接收行（该包 101 个文件实测「preset」零命中），而 output/genre-fiction-craft/references/03-horror/mechanism-and-causality.md:1 与 output/genre-fiction-craft/SKILL.md:18、output/genre-fiction-craft/SKILL.md:49 确实主张题材机制归它；裁决者是套件合同的 Owner 口径与作者（唯一权威承载在 notes/suite-contract.md 第一节 C.1，属包外记录，不进成品），本包不擅自合并两案也不替作者改判（SKILL.md:169）；其余照做——先按本包格式交付推进模式卡本体，纯题材规则与反例仍按 SKILL.md:40 指回 genre。",
+      "anchors": ["SKILL.md:40", "SKILL.md:53", "SKILL.md:169", "SKILL.md:192", "SKILL.md:199", "references/progression.md:55", "references/progression.md:69", "references/progression.md:92"]
+    },
+    {
+      "id": "PC-T10",
+      "kind": "missing",
+      "scenario": "只丢来一句「把卡弄好」，卡的目标、要管的正文范围、锁定状态三项都没说",
+      "expected": "停在整条路径无法判定的出口：改为交付问题清单和需要补的输入，不擅自出卡或改卡（SKILL.md:172）；宿主界面层的先问口径是最多问三个问题（agents/openai.yaml:6），由作者回答后裁决；其余照做——逐条写明三项各会改变卡的哪一节（如范围决定表达约束卡第一句、锁定状态决定能否覆盖旧卡）。",
+      "anchors": ["SKILL.md:172", "SKILL.md:86", "references/writing.md:14", "agents/openai.yaml:6"]
+    },
+    {
+      "id": "PC-T11",
+      "kind": "conflict",
+      "scenario": "同一张卡有两个版本，文件名相近，作者说「按最新版改，但别改坏之前定过的东西」，没指明基准版本",
+      "expected": "停在版本基准未定：先请作者确认基准版本，确认不了就列出各版差异和影响并标「待作者决定」（SKILL.md:168）；涉及已锁定内容与新约束冲突时裁决前两版都不落稿（SKILL.md:167）；作者不回话或只回「你看着办」时按最小改动处理并逐条列出假设（SKILL.md:170）；裁决者是作者；其余照做——把两版的条款差集列成可逐项回答的清单。",
+      "anchors": ["SKILL.md:167", "SKILL.md:168", "SKILL.md:170", "SKILL.md:157"]
+    },
+    {
+      "id": "PC-T12",
+      "kind": "boundary",
+      "scenario": "宿主字段只容得下一段不分行的纯文本，要求把 300 字的表达约束卡压成一行",
+      "expected": "停在格式冲突：按「用户指定格式时以用户为准」（SKILL.md:73、references/expression.md:93）与裁定顺序第 1 条「用户指定的格式和契约优先」（references/card-pitfalls.md:176）让步，仍出卡但放弃「分行书写，一条一件事」（references/expression.md:98）与「超过三环的链条分行书写」（references/card-pitfalls.md:147）；由作者确认是否接受失去分行判据后带来的可读性与逐条可改性（references/card-method.md:94 的「作者只看行首」前提失效）；其余照做——条款文字与判据保持不变，用句号分隔并在卡外说明放弃了哪两条。",
+      "anchors": ["SKILL.md:73", "references/expression.md:93", "references/expression.md:98", "references/card-pitfalls.md:143", "references/card-pitfalls.md:147", "references/card-pitfalls.md:176", "references/card-method.md:94"]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "PQ-G01",
+      "source": "合同 P-1（notes/operations-contract/preset-card-generation.md:89）",
+      "text": "三类卡都没有空白模板文件，默认格式靠散文条目＋围栏示例承载：文风卡七小节在示例卡里有独立 ## 标题可逐项编辑，推进模式卡五小节与表达约束卡六项只在散文里串行声明，复用要手抄。同时「字数在格式规定之内」（SKILL.md:132）与文风卡 600 到 750 字（references/style.md:101）、推进卡 500 到 700 字（references/progression.md:125）、表达约束卡不超过 300 字（references/expression.md:96）共同构成数值硬门，材料只够下限时有注水诱导。",
+      "anchors": ["SKILL.md:132", "references/style.md:99", "references/style.md:101", "references/progression.md:124", "references/progression.md:125", "references/expression.md:96", "references/expression.md:104"],
+      "action": "只登记，不修正品。"
+    },
+    {
+      "id": "PQ-G02",
+      "source": "合同 P-2（notes/operations-contract/preset-card-generation.md:91）",
+      "text": "双向转介在 genre-fiction-craft 一侧未闭合：本包把「题材规则、机制、混合题材」转给 genre（SKILL.md:40），genre 包内没有任何对应转出或接收行。本轮独立复核结果与合同一致：genre 包 101 个文件逐文件 grep -c「preset」全为 0，genre SKILL.md 对「预设卡／三轴／推进模式卡／文风卡／约束卡」也零命中；其余六个兄弟包（含第七个 cross-media）实测两侧都有行。",
+      "anchors": ["SKILL.md:40", "SKILL.md:199"],
+      "peer_evidence": "output/genre-fiction-craft/SKILL.md:18、output/genre-fiction-craft/SKILL.md:49、output/genre-fiction-craft/references/03-horror/mechanism-and-causality.md:1（对方对「机制」的自有承载，均未提本包）",
+      "action": "只登记，不修正品；归口见合同 P-2（genre SKILL.md 定稿时补接收行）。"
+    },
+    {
+      "id": "PQ-G03",
+      "source": "合同 P-3（notes/operations-contract/preset-card-generation.md:94）",
+      "text": "本包没有任何枚举编号体系，故按 R18 §6 不为其建 delivery-preflight-spec 条目。本轮实测复核：包内 grep -hoE 对 PC-[0-9]+ 与 SR-[0-9]+ 均零命中，无 templates/、无 examples/ 目录；卡面字段是「小节名」而非 ID。",
+      "anchors": ["references/style.md:99", "references/progression.md:124", "references/expression.md:104"],
+      "action": "只登记，不修正品。若将来把三类卡编号化，须先冻结 ID 全集再补 spec，顺序不可颠倒（合同 P-3）。"
+    },
+    {
+      "id": "PQ-G04",
+      "source": "上游简报与本包成品／本合同的冲突",
+      "text": "简报把本包合同的三处缺口写成「SKILL.md:138／workflow.md:77／worked-example.md:119 三套列名无说明」和「每个编号独占一行 vs 编号与规则一一对应在例三第 3 步 SR-10 冲突」。实测：本包没有 workflow.md 与 worked-example.md（find 命中 0），包内 SR-、PC- 编号零命中，本包合同文件里「workflow」「worked」「SR-」「列名」「独占」「:138」六个模式各自 grep 均无输出。这三处缺口实际属于 notes/operations-contract/line-editing-and-proofreading.md（workflow.md:77、worked-example.md:119、SR-10 在该文件命中；「独占一行」在 cross-media、line-editing、character 三份合同命中）。本包合同的三处缺口是 P-1／P-2／P-3。",
+      "anchors": ["SKILL.md:138"],
+      "action": "以本包成品与本包合同原文为准登记冲突，不套用别包的缺口。"
+    },
+    {
+      "id": "PQ-G05",
+      "source": "SKILL.md:138 实际内容",
+      "text": "简报点名的 SKILL.md:138 在本包是 §6 参考文件表的 planning.md 行（行首「| [planning.md](references/planning.md) | 定位、人物、台账、分卷、章纲……」），不是列名说明；§6 表整体在 SKILL.md:136-146。",
+      "anchors": ["SKILL.md:136", "SKILL.md:138", "SKILL.md:146"],
+      "action": "只登记。"
+    },
+    {
+      "id": "PQ-G06",
+      "source": "本轮实测：本包的「多套列名」到底有几套、谁在消费",
+      "text": "并存四套同类命名：① 禁令五部件（病灶具名并定位／原词少而准／同位替代／封闭豁免／反向护栏，references/card-method.md:58-62，SKILL.md:68 复述）；② 表达约束卡六项（范围与主张／病灶／判据／替代／放行范围／护栏，references/expression.md:104-109）；③ 病灶表四列（病灶与识别信号／判据／同位替代／不可改成，references/expression.md:23，五张子表同一列名 references/expression.md:32/:41/:50/:61）；④ 缺陷文档条内栏名（病灶示例／成因／自查／改法，references/card-pitfalls.md:16-20 起）与缺陷目录三列（缺陷标识／症状与示例／修改方向，references/card-diagnosis.md:78）。同一语义多名而无映射：封闭豁免（references/card-method.md:61）＝放行范围（references/expression.md:108）；反向护栏（references/card-method.md:62）＝护栏（references/expression.md:109）＝不可改成（references/expression.md:23）。包内没有一处把这几套名逐词对上（grep 各词命中位置互不重叠，只有「同位替代」在 references/card-method.md:60 与 references/expression.md:23 同名）。",
+      "consumer_test": "消费者实测：③ 病灶表有按名消费者——SKILL.md:141、references/revision.md:35、references/writing.md:69 三处点名「病灶表」取行；其列中「判据」「同位替代」被 references/revision.md:21 与 references/expression.md:19 直接使用，「不可改成」无按名引用（推断由 references/revision.md:22、references/writing.md:70 的过度纠正复查消费，包内未点名，证据不够）。② 六项按 references/expression.md:111 自陈「不是卡上的标签」，示例卡 references/expression.md:124-134 确实无标签 ⇒ 六项与 ① 五部件的稿面消费者为零，消费者是写卡流程（SKILL.md:68）。真正落到卡面、可逐项编辑的小节名只有两组：文风卡七小节（references/style.md:99 声明，示例卡以 ## 承载：references/style.md:115/:120/:126/:132/:138/:144/:154）与推进卡五小节（references/progression.md:124 声明，示例卡 references/progression.md:140/:145/:151/:157/:163）；表达约束卡没有任何小节标题承载。④ 的栏名消费者是审校归组（SKILL.md:71、references/card-diagnosis.md:44）。",
+      "anchors": ["SKILL.md:68", "SKILL.md:141", "references/card-method.md:58", "references/card-method.md:61", "references/card-method.md:62", "references/expression.md:23", "references/expression.md:104", "references/expression.md:108", "references/expression.md:109", "references/expression.md:111", "references/expression.md:124", "references/revision.md:21", "references/revision.md:35", "references/writing.md:69", "references/card-diagnosis.md:78", "references/card-pitfalls.md:16"],
+      "action": "只登记实测结果，不修正品、不判定是否须统一命名。"
+    },
+    {
+      "id": "PQ-G07",
+      "source": "本包自设承诺与自身结构不符",
+      "text": "SKILL.md:199 声明「§1 的转给表与本节 9.2 的接收表互为逆关系，逐行可对上」。实测：转给表 7 行（SKILL.md:37-43，每行点名一个包），9.2 接收表 5 行（SKILL.md:191-195，每行是一种请求形态，不含任何包名）；7 对 5 且维度不同，按包维度无法逐行对上。此外 §9.1 的四行重叠请求（SKILL.md:182-185）与 §1 转给表内容重复承载，包内未声明谁是唯一权威。",
+      "anchors": ["SKILL.md:37", "SKILL.md:43", "SKILL.md:182", "SKILL.md:185", "SKILL.md:191", "SKILL.md:195", "SKILL.md:199"],
+      "action": "只登记，不修正品。"
+    },
+    {
+      "id": "PQ-G08",
+      "source": "上游简报与成品原文的口径冲突（已落进 cases）",
+      "text": "简报把「已有文风卡作输入要写这一章」和「按三轴审章节」标为转出。成品原文把这一步写成本包接：SKILL.md:26 与 SKILL.md:57 及最短路径 SKILL.md:84（按已有卡写这一章）；SKILL.md:25 与 SKILL.md:56 及 SKILL.md:75（按三轴诊断一章）；§9.2 的 SKILL.md:193 与 SKILL.md:195 是这两类请求的接收行。只有「没有卡作输入的起草」才转 fiction-planning（SKILL.md:90）、「框架不是三轴的诊断」才转 fiction-planning（SKILL.md:185）。本草案以原文为准，冲突点写在 PC-T6、PC-T7 的 brief_conflict 字段。",
+      "anchors": ["SKILL.md:25", "SKILL.md:26", "SKILL.md:56", "SKILL.md:57", "SKILL.md:75", "SKILL.md:84", "SKILL.md:90", "SKILL.md:185", "SKILL.md:193", "SKILL.md:195"],
+      "action": "以成品原文为准登记，不改 cases 之外的内容。"
+    },
+    {
+      "id": "PQ-G09",
+      "source": "合同数字与当前树不符",
+      "text": "合同记本包「SKILL.md 208 行」（合同 :5 与 :78），本轮 wc -l 实测 218 行，总行数 1344（11 文件逐件相加）。合同的文件数 11 与 agents 8 行、9 份 references 仍与实测一致。凡引用合同的行数结论须按 218 重核。",
+      "anchors": ["SKILL.md:1"],
+      "action": "只登记。"
+    },
+    {
+      "id": "PQ-G10",
+      "source": "能力形态申报口径",
+      "text": "包内没有 scripts/ 也没有 schemas/：find 实测非 md 文件只有 agents/openai.yaml 一个。故 capabilities[].kind 只出现 workflow 与 external，无 automation；界面字段能否生效取决于宿主（agents/openai.yaml:1 自陈「宿主是否加载、采用哪些字段，以实际宿主为准」，agents/openai.yaml:2 自陈不授予权限也不承诺自动执行），本轮无任何宿主加载或调用回执。",
+      "anchors": ["agents/openai.yaml:1", "agents/openai.yaml:2", "agents/openai.yaml:8"],
+      "action": "只登记，防止后续 review 把 Markdown 承诺当自动实现。"
+    },
+    {
+      "id": "PQ-G11",
+      "source": "默认文风口径两处承载无回链",
+      "text": "references/writing.md:12 规定未指定文风时按「一句一件事、按发生顺序写、谁在哪里做什么一读即明」写，与 references/style.md:71「清楚利落」行的辨识点逐字相同，但没回链该行右列的冒名形态（流水账；一串碎句；清楚到没有口气）；同时 references/style.md:15 要求默认文风同样需要定位并写明它不做什么。包内未说明 references/writing.md:12 的默认是否就是「清楚利落」这一风格，两处同一口径无相互引用。",
+      "anchors": ["references/writing.md:12", "references/style.md:15", "references/style.md:71"],
+      "action": "只登记，不判定是否缺陷。"
+    },
+    {
+      "id": "PQ-G12",
+      "source": "同一规则三处承载",
+      "text": "「只审不改、改后文本归 line-editing」在三处各自承载：SKILL.md:82、SKILL.md:143 的出口列、references/revision.md:59。修订其一时须同步三处，包内未声明唯一权威位置；同类重复还有 SKILL.md:39 与 SKILL.md:82。",
+      "anchors": ["SKILL.md:39", "SKILL.md:82", "SKILL.md:143", "references/revision.md:59"],
+      "action": "只登记，不修正品。"
+    }
+  ],
+  "notes_on_method": {
+    "commands": [
+      "find <ROOT>/output/preset-card-generation -type f（11 个文件，全部列出并回显）",
+      "find ... -type f | xargs wc -l（逐件行数回显并相加：218+8+109+119+180+146+68+183+59+172+82=1344）",
+      "find ... -type d（. ／references ／agents，无 templates、无 scripts）",
+      "grep -hoE 'PC-[0-9]+' 与 'SR-[0-9]+'（零命中，回显空）",
+      "grep -rn 'preset-card' 于六个兄弟包 output/<peer>/（取对方侧行号；genre 全 0）",
+      "grep -rc 'preset' 于 genre 的 101 个文件（逐文件回显全为 0）",
+      "grep -n '三轴|推进模式卡|文风卡|约束卡' genre-fiction-craft/SKILL.md（均无输出）",
+      "grep -n 于本包逐条 anchor（SKILL.md 与 9 份 references 的每个 file.md:NN 都打印行首核对；两处初稿行号对不上已改：SKILL.md:157 实为 SKILL.md:156「未能核实」行；另一处原按笔记记忆写成缺陷目录条内空行位置，实测该行内容为空，改引 references/expression.md:35 与 references/card-method.md:61）",
+      "anchor 自检：脚本把本草案内 681 处 file.md:NN 逐条按所属包根解析并要求行存在且非空；报出的 20 条提示里，除刻意引用的 workflow.md:77、worked-example.md:119（本包不存在，正是 PQ-G04 的登记对象）与上一行的「已改前位置」说明外，其余为正则只截到多段路径尾所致，已用 grep -n 逐条打印对方包行首复核（15 处对方包行号全部命中且非空）",
+      "grep -rn '图像|视频'（全包仅 SKILL.md:30 一处，据此收窄 PQ-R08 的 anchor）",
+      "grep -rn '散文|非小说|非叙事'（零命中，写入 PQ-A03 的 limitation）",
+      "grep -n 于 notes/operations-contract/preset-card-generation.md 与 line-editing-and-proofreading.md（核对简报所述锚点归属）",
+      "python3 -c 'json.load' 仅用于校验本草案自身是合法 JSON（不执行被审 skill、不跑仓库脚本与测试）"
+    ],
+    "files_read": "本包 11 个文件全部完整读过并计入行数（合计 1344）：SKILL.md 218、agents/openai.yaml 8、references/ 下 card-diagnosis.md 109、card-method.md 119、card-pitfalls.md 180、expression.md 146、planning.md 68、progression.md 183、revision.md 59、style.md 172、writing.md 82。旁证读过：notes/operations-contract/preset-card-generation.md（wc -l 实测 104 行）、notes/suite-contract.md 第一节与第六节（268 行，只取第 9-62 与 194-265 段）、distillation/requirements.md（84 行）、skills/knowledge-compiler/references/r09-checks.md §6 至 §6.4、六个兄弟包加 cross-media 的 preset-card 命中行（只取行号与该行文字，未抄对方结论）。",
+    "not_read": "checklist.md（125905 字节）与 notes/desourcing-ledger.md、notes/w4-review-queue.md 未读：本组交付只需成品原文与合同原文，读了也不改变 anchor；且三个文件属禁写清单，读与不读都不影响盘点。brief.json 与 review.json、s07-desourcing-selfcheck.md 只读了 brief.json（骨架），未读另两个，结论不受其影响。",
+    "groups_not_complete": [
+      "requirements：11 条，覆盖三卡、反 AI 味约束卡、三轴审章、卡作输入、双向转介、负触发、交付前检查、状态词与失败出口、通用原则。未拆出「按已有卡核对这一章」为独立需求——它与 PQ-R06 同一批原文（SKILL.md:26、SKILL.md:87），拆开会出现同一句 anchor 两处占位，判据不够独立。",
+      "interfaces：点名六包齐全，另加第七包 cross-media（PQ-IF7）与一条汇总（PQ-IF8）。每包的「本包侧按包接收行」都缺，这是结构事实而不是我未查到；已用 grep 逐行核过 9.2 五行不含包名。",
+      "证据不够（写明，不编）：一、宿主是否加载并执行 agents/openai.yaml 的字段与 allow_implicit_invocation——无任何运行回执，只能记静态设计。二、卡的实际生成效果——GQ5 未授权，包内 SKILL.md:159 与 references/card-method.md:11 自己也声明未测。三、「不可改成」这一列的真实消费者——只能从 references/revision.md:22、references/writing.md:70 的过度纠正复查推断，包内没有按名引用。四、genre 侧接收行是否会补——genre 的 SKILL.md 属 G00／W4 未定稿范围，本轮不能预判。五、简报所述「三套列名」若确指 workflow.md:77 与 worked-example.md:119，那两个文件在本包不存在，只能按本包实际存在的四套命名重做实测（PQ-G06、PQ-G04）。",
+      "gaps：12 条，含合同三处（P-1／P-2／P-3 对应 PQ-G01／G02／G03）、列名消费者实测（PQ-G06）、四处与简报或合同的冲突点（PQ-G04／G05／G08／G09）、结构自相矛盾（PQ-G07）、能力形态口径（PQ-G10）、两处同语义多承载（PQ-G11／G12）。全部只登记位置，未修改任何成品文件。"
+    ],
+    "isolation": "只新建并写本文件；brief.json、review.json、s07-desourcing-selfcheck.md、output/、checklist.md、log.md、notes/desourcing-ledger.md、notes/w4-review-queue.md 一律未写；未使用 sed -i 或 perl -i；验证权限＝static，未跑脚本、测试与构建。",
+    "authority_note": "本草案不是审核结论：不给 GQ 状态、不判 pass/fail，也不把本包当成已冻结的 brief。冻结与独立 review 由非作者按 R09 §6.1 第 2、3 条另做。"
+  },
+  "sibling_file_note": "本席只写本文件。同目录 brief.json 在我写作期间（约 16:2x）由主代理采纳：五组内容（requirements／capabilities／interfaces／applicability／cases）与 gaps 与本草案逐字相同，只把 kind 改为 frozen-for-review、status 改为 adopted-for-review-not-final，并多出 adopted_by／adopted_at／draft_source_sha256（记为 1807caa9cb49b3e9）三个字段；artifact_inventory、scope_note、kind_mapping、gq5 等其余键两边一致。采纳发生在我补写 anchor 自检两行之前，故 brief.json 的 notes_on_method.commands 比本草案少这两行（差异已逐键比对）。两份文件现 SHA 不同（本草案自引用会随写入变动，故不记自身摘要；brief.json sha256 前缀 fe7671c2、67385 字节），差别仅为上述状态字段与那两行自检记录。",
+  "counts": {
+    "requirements": 11,
+    "capabilities": 12,
+    "interfaces": 9,
+    "applicability": 9,
+    "cases": 12,
+    "cases_by_kind": {
+      "positive": 3,
+      "missing": 3,
+      "conflict": 3,
+      "boundary": 3
+    },
+    "gaps": 12
+  },
+  "gq5": {
+    "status": "NOT_PROVEN",
+    "note": "无真实任务测试（GQ5 未授权）"
+  },
+  "round_complete": "draft-complete presetcard-brief"
+}

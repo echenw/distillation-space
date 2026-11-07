@@ -1,0 +1,1261 @@
+{
+  "version": 1,
+  "skill": "character-and-narrative-control",
+  "static_only": true,
+  "static_only_note": "本轮 Verification Authority = static：只读、检索、行数与字节实测、整树摘要实测。未跑宿主与真实任务，GQ5 与作品效果一律 NOT_PROVEN，不得写成通过。",
+  "status": "review-independent-r1",
+  "producer": "W4 质量 brief 草案席（非独立审核方；结论留给后续 review 席位）",
+  "reviewer": "RV-character（只读子代理，非作者）",
+  "review_stance": "D3-C 独立质量复核；只读成品包 17 件与 brief/review.v0 契约模板、notes/suite-contract.md、/tmp/k5-bindings-2026-11-05.tsv。未读本包 K4-r1.md、s04*-desourcing-selfcheck.md、notes/w4*、notes/operations-contract/*、log.md、checklist.md、git 历史、测试文件。review.json.v0 只作契约模板，五组状态与 GQ 全部独立重判，未抄其状态。",
+  "brief_sha256": "012e356f3982b20510c630f85bc4b8133cad5bc60c37996ab91a32f4da8aa978",
+  "skill_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa",
+  "tree_files": 17,
+  "tree_bytes": 193531,
+  "bound_to_tree_sha": true,
+  "binding_method": {
+    "skill_tree_sha256": "按唯一权威算法自算：递归枚举 output/character-and-narrative-control/ 全部普通文件（17 件，无符号链接）→ 取相对包根路径 → 按路径字节序升序（Python key=lambda r: r[0].encode('utf-8')）→ 逐行拼 \"<relpath>\\t<sha256(文件原始字节)>\\n\"（拼接串 1633 字节）→ 对该串再取 sha256。",
+    "brief_sha256": "notes/quality/character-and-narrative-control/brief.json 原始字节 sha256（99540 字节）。",
+    "comparison": "与 /tmp/k5-bindings-2026-11-05.tsv 的 character-and-narrative-control 行整串比对：brief_sha256、tree_sha256、files=17、bytes=193531 四项全等，无差异，故继续本轮。",
+    "line_count_crosscheck": "wc -l 实测 17 件共 2117 行，与 brief.note 声称一致（SKILL.md 325、references 12 份 1399、examples 2 份 243、templates 142、agents 8）。"
+  },
+  "freeze_note": "本 review 绑定 skill_tree_sha256=f32f4dca…、tree_files=17、tree_bytes=193531 与 brief_sha256=012e356f…。此后 output/character-and-narrative-control/ 任一文件再被改动、增删，或 brief.json 改动，本 review 的全部状态与回执即失效，须重算绑定并重做。",
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "STATIC_CHECKED",
+      "rationale": "11 条能力逐 ID 核到成品原文：PV-01 至 PV-08（SKILL.md:142-149 ＋ narrator-and-viewpoint §1-§8）、PV-09/10/11/16（SKILL.md:153-156 ＋ information-control §3-§8）、PV-12/13/14/15/17（SKILL.md:160-164 ＋ scene-summary-and-time）、TM 卡体 18/18（time-mechanisms 卡头实测 :23/:31/:37/:45/:51/:57/:63/:69/:75/:81/:89/:95/:103/:111/:119/:127/:135/:143）、PS 卡 30/30 无空洞（testimony :30-:100 八张、psychology-in-action :31-:118 九张、social-pressure :29-:89 七张、objects-loss :28-:80 六张），每条能力均有可区分分支、limit 排除条件、counterexample_ref 与真实 reference；kind 分档 workflow 9／external 2／automation 0（find 实测包内无 scripts/、schemas/、*.py、*.sh，17 件全为 .md 与 1 份 .yaml，故 automation 为空集）。判定为 STATIC_CHECKED 而非 FAIL：能力清单本身为真、可指到原文；发现的矛盾落在语义与接口，记入 GQ2／GQ3。",
+      "evidence_ref": {
+        "path": "output/character-and-narrative-control/references/time-mechanisms.md",
+        "sha256": "9bc7e4eb5e07b5913c802ca8e804015b012576ccdd33079d5e094557e037e862"
+      }
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "FAIL",
+      "rationale": "三处跨文件自相矛盾，各有两处不同真实文本可引，且都在包内无消歧条：(1) SKILL.md:268 定义「已完成」为「检查已执行，且有稿件内可核的证据支持」，而包内唯一逐编号台账示范在只有构思、没有正文时把 PV-03／PV-04 记「已完成」且稿件证据位置＝「未知」（pov-cases.md:110、:111），第 6 步交付表再以这两行自证「已完成」（:136），同文件 :104 又写「没有稿子，所以『稿件证据位置』先写『未知』」；(2) narrative-workbook.md:142「状态只用四词」与同文件 :134／:140（状态列填「未知」）及 SKILL.md:273「『未知』是那一列的合法值」直接对立；(3) 四词交付口径与五档判断口径并存无映射，「超出范围」在四词内无可挂状态词。故本轮不能记 STATIC_CHECKED。",
+      "evidence_ref": {
+        "path": "output/character-and-narrative-control/examples/pov-cases.md",
+        "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+      }
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "FAIL",
+      "rationale": "7 条接口双向绑定全部实测（peer_tree_sha256 用同一算法对 7 个对端包整树实测，落盘前复测并与 tsv 当前行全等；genre-fiction-craft 在两次实测之间被并发改动，后一实测值与 tsv 同步行一致，详见 IF-05.peer_tree_drift 与 limits）。4 条通过（IF-02 story／IF-04 line-editing／IF-06 cross-media／IF-07 fiction-planning：两侧原文都在位、Owner 语句同构、无冲突）。3 条判 fail 并引两侧原文：IF-01「切片」关系只在本包侧声明，对端把同一张表说成由 SU-04 建立、不提本包表名，两侧表头字段名不同且无映射（本包 SKILL.md:57／information-control.md:38 对 对端 scene-information-and-space.md:5；对端整包 17 件 grep「统一信息表／全书只用一张／切片」实测 0 命中）；IF-03 本包声明从 preset-card 接收 7 项（SKILL.md:312）而对端转出表只列 3 项（preset-card/SKILL.md:41），本包 SKILL.md:316 声称「两表互为逆关系」按项数不成立；IF-05「公平解谜的承诺」两侧都当判据用但都没有唯一登记 Owner（本包 SKILL.md:153／:229 对 genre-fiction-craft/references/03-horror/testimony-and-information.md:130）。",
+      "evidence_ref": {
+        "path": "output/preset-card-generation/SKILL.md",
+        "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+      }
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "STATIC_CHECKED",
+      "rationale": "8 条 applicability 全部含 scope／limitation／counterexample／真实锚，逐条回原文核对成立：阈值降级条在位（数字一律起点：SKILL.md:58、narrative-workbook §7 七行表 :118-:128、scene-summary-and-time.md:25「超出区间完全可能是正确选择；不得仅凭比例判定作品好坏」、time-mechanisms.md:6-7 十八张卡非必备件）；反例成体系（boundaries-and-ethics §4 十二反例 :66-:77 逐条撤回一种过度推断、§3 伦理表 8 行各带「出口」列 :51-:58、diagnosis §5 例外表 6 行 :89-:94、§7 误用表 10 行 :111-:120）；成品不提来源、例子自创（pov-cases.md:3、psychology-cases.md:1/:3、nonlinear-time.md:77「（编的）」、narrator-and-viewpoint.md:3、information-control.md:3）。本轮独立窄口径复扫套件 §五 与 §二：硬规则／用户明确要求／融合版／旧版／本版／更正／分档词／作家类／《》作品名／审计词（NOT_PROVEN 等 14 项）／包外路径 全部 0 命中。判 STATIC_CHECKED 而非 pass：适用性条本身成立，但安全边界缺识别判据（F-07）、两条边界只能由通用条款推（F-08／F-17），是否补条目属 Scope，交作者裁。",
+      "evidence_ref": {
+        "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+        "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+      }
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "NOT_PROVEN",
+      "rationale": "本轮未跑宿主、未授权真实任务测试（D3=C）。12 条 case 的 mode 只允许 manual／synthetic，无任何运行回执；静态交付不等于效果已验证。",
+      "evidence_ref": null
+    }
+  ],
+  "sections": {
+    "requirements": [
+      {
+        "id": "CQ-R01",
+        "status": "pass",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "note": "PV-04 三层与视角方案卡字段逐行对得上：「谁在讲／从谁的眼睛看／此刻能不能知道／能进谁的意识」分别落 SKILL.md:70、narrator-and-viewpoint.md:55/:65、narrative-workbook.md:19-21。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/narrator-and-viewpoint.md",
+          "sha256": "d0a60675f28c9cb2914b32a6d06964c240ce270f1f472757125f77340770cd63"
+        }
+      },
+      {
+        "id": "CQ-R02",
+        "status": "pass",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "note": "贴身／中距／远距三档在 narrator-and-viewpoint.md:131-133，「一场之内保持一个距离为起点；要变，在段落或场景的边界变」:135，中文无时态距离控制 zh-and-serial.md:16-23。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/narrator-and-viewpoint.md",
+          "sha256": "d0a60675f28c9cb2914b32a6d06964c240ce270f1f472757125f77340770cd63"
+        }
+      },
+      {
+        "id": "CQ-R03",
+        "status": "pass",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "note": "知识表、五种合法隐瞒、不可靠四类证据、侧写、揭示三查、全书单一信息表逐条在位（information-control §1-§9 节起点 :7/:12/:23/:40/:52/:67/:82/:88/:97，SKILL.md:57「全书只维护…知识表」）。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/information-control.md",
+          "sha256": "731bec255898834b26496ed36e32c0ce233910601e8f9442a48ebb194402956c"
+        }
+      },
+      {
+        "id": "CQ-R04",
+        "status": "pass",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "note": "证词四列「谁说／何时说／对谁说／外证与反证」表体在 testimony-and-self-justification.md:10-15，「把更晚、更坦白的一版自动当真」列为防的错（:13），narrative-workbook.md:35-39 有空表。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/testimony-and-self-justification.md",
+          "sha256": "327bcb365de9b3f2144243270515d6abec5c7c59c6e3b95b503375c108b0af5c"
+        }
+      },
+      {
+        "id": "CQ-R05",
+        "status": "pass",
+        "anchors_checked": 7,
+        "anchors_supporting": 7,
+        "note": "心理落到动作／身体／沉默／物件／关系由 PS-09 至 PS-30 四文件承接；「文学写法不等于临床知识」在四个文件各自的 :6 行与 SKILL.md:60。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/psychology-in-action.md",
+          "sha256": "2bb8a74d2d2ec88d4b035560ce14f5951defef825f04cc5bde9efefea0bfcc28"
+        }
+      },
+      {
+        "id": "CQ-R06",
+        "status": "pass",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "三类分法 nonlinear-time.md:9-12、四列并进同一张信息表 :21-32、机制不可互相代替 :48-56、TM 卡体 18/18（见 F-11 索引形态条）。SKILL.md:232「TM-01 至 TM-18」为字面区间声明。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/nonlinear-time.md",
+          "sha256": "f8ea6c7a55d6b6a21d22632d9387fae69aeb4dc775dcc3374eab34b7dc539ec6"
+        }
+      },
+      {
+        "id": "CQ-R07",
+        "status": "pass",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "三种叙述单位、概述三种正职、跨越先写日子、可选配比试算不作门槛逐条落原文；配比表 5 行 :29-:33 且 :25 明示非门槛。锚「suite-contract:17」指 notes/ 元数据的 Owner 责任行，非成品路径，按本轮口径不计缺陷。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/scene-summary-and-time.md",
+          "sha256": "a2d181231ea787c959dfeff3fcad081305f8cfd51b46ede39448b80aa1d06359"
+        }
+      },
+      {
+        "id": "CQ-R08",
+        "status": "pass",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "note": "五张卡＝narrative-workbook §1/:7、§2/:27、§3/:49、§4/:76、§5/:91，加 §6 十问/:101、§7 起点值/:116、§8 逐编号台账/:132；「未知」缺省口径在 :3 与 :134。§8 三行全为带值示例行（见 F-12），不影响字段可填性与三列齐全。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+        }
+      },
+      {
+        "id": "CQ-R09",
+        "status": "pass",
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "note": "SKILL.md §9.2 失败出口表 :281-:291 共 11 行，缺料／冲突／越界（:284）／要打分（:286）／要真实诊断（:287）／锁定内容冲突（:289）／作者不答（:291）各有停法；:279 表头行为该表定位锚，越界与打分两行落在已锚定的 :279-:291 表区间内，计支撑。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"
+        }
+      },
+      {
+        "id": "CQ-R10",
+        "status": "pass",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "该条文本所列四项承诺全部在位且有原文：不给真人下病名（SKILL.md:250、boundaries-and-ethics.md:14）、不提供自伤方法细节（SKILL.md:250、boundaries-and-ethics.md:58「不提供方法细节，不写疗效或解脱的承诺」）、不把文学结局说成现实疗效（SKILL.md:60/:250、objects-loss-and-change.md:6/:88）、现实判断退出后小说部分照常做（SKILL.md:60/:287、psychology-cases.md:95）。判 pass 仅指条文存在；退出触发缺识别判据、无「疑似即时危险建议求助」条，另记 F-07（中）。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+          "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+        }
+      },
+      {
+        "id": "CQ-R11",
+        "status": "fail",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "8 处锚本身全部落点正确，但条文级互斥：SKILL.md:268 把「已完成」定义为需要「稿件内可核的证据支持」，包内唯一逐编号示范却在无正文时记「已完成＋稿件证据位置＝未知」（pov-cases.md:110、:111）并在交付表自证（:136）；同文件 :104 反说位置先写未知后回填。另四词（SKILL.md:264）与五档（SKILL.md:105、boundaries-and-ethics.md:83-91）并存无映射，「超出范围」在四词内无落位。见 semantics S1/S2/S3、F-01/F-02/F-03。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+        }
+      },
+      {
+        "id": "CQ-R12",
+        "status": "pass",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "诊断九步（diagnosis.md:7-15：范围→主体→视点→合同→信息→场景与概述→时间→世界边界→人物心理）与 SKILL.md:99 同序；闭环「诊断 → 修订 → 复查 → 不通过就回退」diagnosis.md:198-203；连续性回归三问 :162-170、另核五项 :172-182、负面回归四问 :205-214 全部在位。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/diagnosis.md",
+          "sha256": "01fe5da0adfd415e32788672b2faf69781b35c73b8ac0380cc8395e078d3e384"
+        }
+      },
+      {
+        "id": "CQ-R13",
+        "status": "pass",
+        "anchors_checked": 7,
+        "anchors_supporting": 7,
+        "note": "五类迁移条款齐全：称呼即视点 zh-and-serial §1（:7-14）、无时态距离 §2（:16-23）、常见视角做法 §3（:25-33）、文件类装置 §4（:35-42）、重生文时间合同 §5（:44-52）、日更视角 §6（:54-59）。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/zh-and-serial.md",
+          "sha256": "61a901c5a190284af28ac18130c962c7f826ce1a64a350711bf266726ce39207"
+        }
+      },
+      {
+        "id": "CQ-R14",
+        "status": "fail",
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "note": "触发／负触发（10 条，SKILL.md:28-37）／转介表（7 行，:43-49）／重叠请求分法（§10.1 七行，:301-307）与双向转介文字（§10.2 :311-312）均在位；11 处锚全部支撑。判 fail 的原因是该条明列的「双向对照」不变量不成立：SKILL.md:316 声称「A 说转给 B 的地方，B 都要说接收什么；本 Skill 的转介行与 §10.2 两表互为逆关系」，但对端转出表只列 3 项（preset-card-generation/SKILL.md:41）对本包声明的 7 项（SKILL.md:312），且「切片」关系只在本包侧声明。见 IF-01／IF-03、semantics S4/S5。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"
+        }
+      },
+      {
+        "id": "CQ-R15",
+        "status": "pass",
+        "anchors_checked": 7,
+        "anchors_supporting": 7,
+        "note": "本轮独立复扫（find 先回显 n=17）：「出处」「原著」「页码」「来源行」各 0 命中；《[^》]+》作品名 0 命中；「notes/|results/|/home/|materials/|rounds/」包外路径 0 命中；作家／小说家／评论家／大师／名著／经典作品 各 0 命中；14 个审计词全 0 命中。自创标明在位：pov-cases.md:3、psychology-cases.md:1 标题「（编的）」与 :3、nonlinear-time.md:77、narrator-and-viewpoint.md:3、information-control.md:3。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/psychology-cases.md",
+          "sha256": "f9ba3b3e07ddd841397d56155d91045bc45f4461f338b6c9b41b40ca34926d83"
+        }
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "CQ-CAP-01",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 26,
+        "anchors_supporting": 26,
+        "note": "PV-01 至 PV-08 八张卡在 SKILL.md §5 与 narrator-and-viewpoint §1-§8 双处对应，交付视角方案卡＝narrative-workbook §1（13 行可填字段，逐项带 PV 编号）。limit 与 7 处反例全部落原文。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+        }
+      },
+      {
+        "id": "CQ-CAP-02",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 24,
+        "anchors_supporting": 23,
+        "note": "能力本身成立。1 处 counterexample_ref 不支撑：references/information-control.md:100 落在 Markdown 表格分隔行（整行原文「|---|---|---|」），无主张内容；该表反例实体在 :101-:106，同族另两个锚（:99 表头、:101、:102、:106）成立。",
+        "non_supporting": [
+          "references/information-control.md:100  ::  |---|---|---|"
+        ],
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/information-control.md",
+          "sha256": "731bec255898834b26496ed36e32c0ce233910601e8f9442a48ebb194402956c"
+        }
+      },
+      {
+        "id": "CQ-CAP-03",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 21,
+        "anchors_supporting": 21,
+        "note": "PV-12/13/14/15/17 与 scene-summary-and-time §1-§9 一一对应；配比试算与核心兑现时刻清单均标「可选」，:43/:97 为真空行可填。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/scene-summary-and-time.md",
+          "sha256": "a2d181231ea787c959dfeff3fcad081305f8cfd51b46ede39448b80aa1d06359"
+        }
+      },
+      {
+        "id": "CQ-CAP-04",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 40,
+        "anchors_supporting": 39,
+        "note": "三类分法＋四列＋五类问题＋18 张机制卡逐 ID 实测在位，卡头 18 个行号与 brief 所列为集合恒等。1 处 anchors 不支撑：references/nonlinear-time.md:26 为表格分隔行（整行原文「|---|---|---|」），四列内容实体在 :27-:30 与 :32。",
+        "non_supporting": [
+          "references/nonlinear-time.md:26  ::  |---|---|---|"
+        ],
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/time-mechanisms.md",
+          "sha256": "9bc7e4eb5e07b5913c802ca8e804015b012576ccdd33079d5e094557e037e862"
+        }
+      },
+      {
+        "id": "CQ-CAP-05",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 84,
+        "anchors_supporting": 84,
+        "note": "PS-01 至 PS-30 三十张卡逐个卡头行号实测（testimony :30/:40/:50/:60/:70/:80/:90/:100；psychology-in-action :31/:43/:53/:63/:73/:85/:95/:108/:118；social-pressure :29/:39/:49/:59/:69/:79/:89；objects-loss :28/:38/:48/:58/:70/:80），与 SKILL.md §5 的 PS 行号 30 条一一对应，无缺号无重复；十二反例 :66-:77 逐条在位。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/objects-loss-and-change.md",
+          "sha256": "74a553f00d4a57cf0f504f97ea79b02817b008d31eae66f9e878a3d036576d85"
+        }
+      },
+      {
+        "id": "CQ-CAP-06",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 26,
+        "anchors_supporting": 26,
+        "note": "横切能力：九步顺序、回看三件事、连续性三问、另核五项、负面回归四问、回退条款均指到 diagnosis 实文；修改单「代价」栏在 SKILL.md:104、diagnosis.md:69、narrative-workbook.md:93 三处重申。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/diagnosis.md",
+          "sha256": "01fe5da0adfd415e32788672b2faf69781b35c73b8ac0380cc8395e078d3e384"
+        }
+      },
+      {
+        "id": "CQ-CAP-07",
+        "kind": "workflow",
+        "status": "fail",
+        "anchors_checked": 19,
+        "anchors_supporting": 18,
+        "note": "模板半区成立（§1-§8 节起点 :7/:27/:49/:76/:91/:101/:116/:132 齐全，§2/:33、:39、:45 与 §5/:97 为真空行可填）；状态词半区不能算真实能力：SKILL.md:268 的定义与 pov-cases.md:110/:111/:136 的示范互斥，narrative-workbook.md:142「状态只用四词」与同文件 :134/:140 及 SKILL.md:273「『未知』是那一列的合法值」相互否定。1 处 anchors 为跨 ID 重复引用（templates/narrative-workbook.md:134 在本条内出现两次），计 uniq 18。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+        }
+      },
+      {
+        "id": "CQ-CAP-08",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 14,
+        "anchors_supporting": 14,
+        "note": "zh-and-serial §1-§6 齐全，:5 自述「是创作操作建议，不是平台统计或读者行为结论」，:57 与 :59 分别把章末钩子做法与卷级视点分配转出。计 uniq 13（references/zh-and-serial.md:58 同条内被 anchors 与 counterexample_ref 各引一次）。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/zh-and-serial.md",
+          "sha256": "61a901c5a190284af28ac18130c962c7f826ce1a64a350711bf266726ce39207"
+        }
+      },
+      {
+        "id": "CQ-CAP-09",
+        "kind": "workflow",
+        "status": "pass",
+        "anchors_checked": 21,
+        "anchors_supporting": 21,
+        "note": "「可以写／不在本 Skill 里做」两栏（boundaries-and-ethics :11／:13-:17）、四个争议（§2.1-§2.4 :21/:27/:33/:39）、伦理表 8 行各带出口列（:49-:58）、十二反例（:66-:77）、五档可信度 5 行（:87-:91）齐备。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+          "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+        }
+      },
+      {
+        "id": "CQ-CAP-10",
+        "kind": "external",
+        "status": "pass",
+        "anchors_checked": 23,
+        "anchors_supporting": 23,
+        "note": "external 档判「转出与接收的文字层声明在位」：负触发 10 条（SKILL.md:28-37）、转介表 7 行（:43-49）、§10.1 七行（:301-307）、§10.2 双向（:311/:312）、协作边界四行＋互动条（:320-:325）全部指到实文。其「互为逆关系」不变量不成立一事归 GQ3／IF-03／R14，按单一 Owner 计一次，不在本条重复判负。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"
+        }
+      },
+      {
+        "id": "CQ-CAP-11",
+        "kind": "external",
+        "status": "pass",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "note": "agents/openai.yaml 实测 8 行：display_name :4、short_description :5、default_prompt :6、allow_implicit_invocation: false :8；:1-2 自陈「宿主是否加载、采用哪些字段以实际宿主为准」「不授予权限，也不承诺自动执行」。宿主加载本轮未实测，文件本身也未声称已加载，故按声明计 pass。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/agents/openai.yaml",
+          "sha256": "9f9b36db99cfc722f759cd329e3225850b72af1800f8162d7db14023b6c17af6"
+        }
+      }
+    ],
+    "interfaces": [
+      {
+        "id": "CQ-IF-01",
+        "peer": "scene-conflict-and-rhythm",
+        "status": "fail",
+        "provider_ref": {
+          "path": "output/character-and-narrative-control/references/information-control.md",
+          "sha256": "731bec255898834b26496ed36e32c0ce233910601e8f9442a48ebb194402956c",
+          "anchor": "references/information-control.md:38"
+        },
+        "consumer_ref": {
+          "path": "output/scene-conflict-and-rhythm/references/scene-information-and-space.md",
+          "sha256": "1d861d20f4bde92afc4a973a28db1e8bdcc203c4aca3ad5c619771b68f7e69bb",
+          "anchor": "scene-conflict-and-rhythm/references/scene-information-and-space.md:5"
+        },
+        "peer_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+        "peer_tree_files": 17,
+        "peer_tree_bytes": 168166,
+        "anchors_checked": 18,
+        "anchors_supporting": 18,
+        "reason": "单侧声明。本包侧原文：SKILL.md:57「`scene-conflict-and-rhythm` 里一场戏的知情表，是这张表在一场戏里的切片。」与 information-control.md:38「…一场戏的知情表（SC-06），是这张表在一场戏里的切片。」对端侧原文（scene-information-and-space.md:5）：「**只用一张知情表。** 这张表由 SU-04 建立（读者、人物各知道什么，选哪种悬念方式）。…同一场戏不另建第二张表。」——对端只把自己的表归给 SU-04，不提本包表名、不认派生关系。本轮实测对端整包（find 回显 n=17）grep「统一信息表」「全书只用一张」「切片」各 0 命中。两侧字段名亦不对齐且无映射：本包 information-control.md:27 表头为 7 列「信息｜视点人物｜读者｜其他相关人物｜揭示在哪里｜由谁、怎样揭示｜揭示后改变什么」，narrative-workbook.md:31 为 8 列（多一列「编号」），对端 SKILL.md:156 为「读者已知／行动者已知／视角人物此刻能说出」三层。",
+        "record_ref": {
+          "path": "output/scene-conflict-and-rhythm/SKILL.md",
+          "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1"
+        }
+      },
+      {
+        "id": "CQ-IF-02",
+        "peer": "story-architecture-and-longform-planning",
+        "status": "pass",
+        "provider_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8",
+          "anchor": "SKILL.md:295／references/zh-and-serial.md:59"
+        },
+        "consumer_ref": {
+          "path": "output/story-architecture-and-longform-planning/SKILL.md",
+          "sha256": "1f87001f760054a1210e3be1d64c82e0266f8892314d43ba37099def32a84d26",
+          "anchor": "story-architecture-and-longform-planning/SKILL.md:62"
+        },
+        "peer_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07",
+        "peer_tree_files": 21,
+        "peer_tree_bytes": 283891,
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "reason": "两侧分工句互认且不重叠：对端 SKILL.md:62「`character-and-narrative-control` 负责人物心理、叙述者、单场视角许可和全篇信息控制；本 Skill 只在卷表记录视点线的加入/退出，不裁决单场 POV」；serial-open-lines-and-continuity.md:60「**视点线**（多视点作品）：每条视点线在哪卷加入、哪卷收；单场视角问题转 `character-and-narrative-control`」；本包 SKILL.md:295 与 zh-and-serial.md:59 反向转出。未发现条文冲突。缺一条「卷表条目缺失时谁补」的显式分支，两侧都没有，记为低危不动状态。",
+        "record_ref": {
+          "path": "output/story-architecture-and-longform-planning/references/serial-open-lines-and-continuity.md",
+          "sha256": "5bd315aba852d076e21eb7e78cddfd9128ed6356a4cbe38a06f36f03ada88df2"
+        }
+      },
+      {
+        "id": "CQ-IF-03",
+        "peer": "preset-card-generation",
+        "status": "fail",
+        "provider_ref": {
+          "path": "output/preset-card-generation/SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9",
+          "anchor": "preset-card-generation/SKILL.md:41"
+        },
+        "consumer_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8",
+          "anchor": "SKILL.md:312／:316"
+        },
+        "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94",
+        "peer_tree_files": 11,
+        "peer_tree_bytes": 113900,
+        "anchors_checked": 14,
+        "anchors_supporting": 14,
+        "reason": "清单不齐且本包作出了不成立的等价断言。本包侧原文 SKILL.md:312「`preset-card-generation` → 本 Skill：视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间——请求不写成卡、也不用三轴时，转回来做角色层的设计与诊断。」（7 项）；SKILL.md:316「A 说转给 B 的地方，B 都要说接收什么；本 Skill 的转介行与 §10.2 两表互为逆关系。」对端侧原文 preset-card-generation/SKILL.md:41「| 视角合同、人物声口、信息控制 | `character-and-narrative-control` |」（3 项，本轮实测该文件内指向本包的转出行仅此一行），description（:3）亦只写「视角人物与声口转character-and-narrative-control」。按项数「互为逆关系」不成立。另两侧都没有「同一请求既要卡又要视角裁决」的分单规则；本包 SKILL.md:316 只给不变量级处置。",
+        "record_ref": {
+          "path": "output/preset-card-generation/SKILL.md",
+          "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+        }
+      },
+      {
+        "id": "CQ-IF-04",
+        "peer": "line-editing-and-proofreading",
+        "status": "pass",
+        "provider_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8",
+          "anchor": "SKILL.md:323"
+        },
+        "consumer_ref": {
+          "path": "output/line-editing-and-proofreading/SKILL.md",
+          "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436",
+          "anchor": "line-editing-and-proofreading/SKILL.md:202"
+        },
+        "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1",
+        "peer_tree_files": 10,
+        "peer_tree_bytes": 114211,
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "reason": "Owner 语句同构、双向都在：本包 SKILL.md:323「`line-editing-and-proofreading` 拥有句子、段落和校对层面的语言编辑；本 Skill 提供人物声音与视角约束，不替代逐句编辑。」对端 SKILL.md:202「`character-and-narrative-control` 拥有人物声音、叙述权限、视角和人物知识边界；发现语言修改会改变这些不变量时，暂停该处并转交确认。」对端另有实例分支 examples/worked-example.md:92「| 「更有力」若指人物动机或视角 | 负触发，转介 | 人物与视角不变量不在句子层 | 转 `character-and-narrative-control` |」。缺料出口「声口待定」不在本接口范围，归 case CH-T2 与 F-08。",
+        "record_ref": {
+          "path": "output/line-editing-and-proofreading/examples/worked-example.md",
+          "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65"
+        }
+      },
+      {
+        "id": "CQ-IF-05",
+        "peer": "genre-fiction-craft",
+        "status": "fail",
+        "provider_ref": {
+          "path": "output/genre-fiction-craft/references/03-horror/testimony-and-information.md",
+          "sha256": "c6450002d2e042f82cac51ccf16062f9f2ed5bc01f585baa8d7728b1e1faebc4",
+          "anchor": "genre-fiction-craft/references/03-horror/testimony-and-information.md:130"
+        },
+        "consumer_ref": {
+          "path": "output/character-and-narrative-control/references/information-control.md",
+          "sha256": "731bec255898834b26496ed36e32c0ce233910601e8f9442a48ebb194402956c",
+          "anchor": "references/information-control.md:35／SKILL.md:153"
+        },
+        "peer_tree_sha256": "07d638e59555471fae831e2941466184b3c4c6da9fe752a736f7579ae49bd4ca",
+        "peer_tree_files": 101,
+        "peer_tree_bytes": 1058179,
+        "peer_tree_drift": "本席第一次实测该对端包时为 59ffd6abb9e4c3537d945ea115621e2aa30cabfa0314bde3b60d53b343789352（101 件／1053170 字节），与当时 tsv 行一致；复核落盘前重测得 07d638e5…（101 件／1058179 字节），tsv 同步行亦改为 07d638e5…（genre-fiction-craft/SKILL.md mtime 2026-11-05 19:51:47，tsv mtime 19:56:50）。取本席最后一次实测值入档。本接口引用的两侧原文（genre-fiction-craft/SKILL.md:27、references/03-horror/testimony-and-information.md:130、01-mystery/worksheets-and-cases.md:71 与题材内 4 处转介行）改动后逐行重取，文字与判定时恒等，03-horror 文件摘要未变（c6450002…），故 IF-05 判负不受该次并发改动影响。",
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "reason": "路由双向齐全（本包 SKILL.md:31/:47/:307；对端 genre-fiction-craft/SKILL.md:27 及题材内 4 处「人物动机／群像转 character」实测在位：04-wuxia…/cultivation-and-jianghu.md:121、04-wuxia…/templates-and-cases.md:258、05-science-fiction/subgenres-and-worldbuilding.md:85、05-science-fiction/examples.md:151）。判 fail 的是 Owner：同一语义「公平解谜的承诺／可靠性契约」由本包当判据用却不登记——SKILL.md:153「…但要与作品的公平和可靠性契约一致」、SKILL.md:229 出口只写「公平解谜的承诺没定时先问作者」；对端 03-horror/testimony-and-information.md:130 写「公平解谜的伏笔责任来自所选合同…需要专门检查谜题时转推理题材」，把登记留在题材内。两侧都没有该契约项的唯一登记 Owner 与存放表，按「同一业务语义只有一个 Owner」判负。",
+        "record_ref": {
+          "path": "output/genre-fiction-craft/SKILL.md",
+          "sha256": "c36f1f5ddf3b07f28e5b0b14fa1c51d81d4e6c3fc7171e9699e384e058816f65"
+        }
+      },
+      {
+        "id": "CQ-IF-06",
+        "peer": "cross-media-drama-adaptation",
+        "status": "pass",
+        "provider_ref": {
+          "path": "output/cross-media-drama-adaptation/references/interactive-adaptation.md",
+          "sha256": "172054144c1252d064db15d97a2ab182421ff30276815c538ac01a9f95a79f9c",
+          "anchor": "cross-media-drama-adaptation/references/interactive-adaptation.md:70"
+        },
+        "consumer_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8",
+          "anchor": "SKILL.md:325"
+        },
+        "peer_tree_sha256": "77269b545209332319277fb20b110a7ee8808d1e830c3e61820ca49b93b52cf5",
+        "peer_tree_files": 13,
+        "peer_tree_bytes": 76222,
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "reason": "分界唯一且不重复定义：本包 SKILL.md:325「互动叙事中，本 Skill 只检查每条路线内人物知道什么、何时知道、关系如何变化以及时间是否连续；玩家选择、状态变量和分支拓扑由 `cross-media-drama-adaptation` 负责。」对端 interactive-adaptation.md:70「…涉及视角、叙述权限、关系变化或时间连续性时，调用 `character-and-narrative-control` 做角色层回归；本 Skill 负责分支结构，不重复定义人物知识规则。」并在 :91 职责交接、SKILL.md:188（AD-39）复述。人物知识规则 Owner 归本包，两侧一致。缺口是方向性的（本包未写被调用时交付什么格式，narrative-workbook §1-§8 无互动路线节），记 F-09 低危。",
+        "record_ref": {
+          "path": "output/cross-media-drama-adaptation/SKILL.md",
+          "sha256": "7e18e9a55790759006c6335e33a8abbde16a7dfc588165cde321539cc6f95b3d"
+        }
+      },
+      {
+        "id": "CQ-IF-07",
+        "peer": "fiction-planning-and-diagnosis",
+        "status": "pass",
+        "provider_ref": {
+          "path": "output/fiction-planning-and-diagnosis/SKILL.md",
+          "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826",
+          "anchor": "fiction-planning-and-diagnosis/SKILL.md:193／:354"
+        },
+        "consumer_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8",
+          "anchor": "SKILL.md:320"
+        },
+        "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8",
+        "peer_tree_files": 27,
+        "peer_tree_bytes": 348056,
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "reason": "双向且对端按 ID 回引：对端 SKILL.md:193「**FC-11 视角：信息合同、距离稳定、切换代价**…细则转 `character-and-narrative-control`。」、SKILL.md:354「…不替代人物层的视角、知识权限或时间线核对。」、SKILL.md:143 症状行与 :30 转介行指向本包；references/self-check-scenes.md:23 按 ID 引本包 PV-12、PV-13（本轮实测两 ID 在 SKILL.md:160/:161 在位）。本包 SKILL.md:320 认其对入口与整体诊断所有权。未发现冲突；两侧未写「两者都接的诊断请求」的分单顺序，属低危。",
+        "record_ref": {
+          "path": "output/fiction-planning-and-diagnosis/references/self-check-scenes.md",
+          "sha256": "be38971ce0b18a9344f37ed0edeace6ed450c4b63984156a405522e245d0894b"
+        }
+      }
+    ],
+    "applicability": [
+      {
+        "id": "CQ-AP-01",
+        "status": "pass",
+        "scope": "全部 PS 卡与证词卡只在文学人物与叙述设计层生效；现实医疗、科学、司法判断不从文学案例推出。",
+        "limitation": "不给真人下病名、不提供自伤方法细节、不把文学结局说成现实疗效；现实事实需独立核验；超出范围不因授权补足而解锁。",
+        "counterexample": "boundaries-and-ethics.md:72「手发抖，可能是冷、累或受了伤：不是解离或神经疾病的诊断（PS-14）」；:66「侦探细看帽子，可能是在职业取证：观察细节不一定是焦虑（PS-13）」",
+        "ref": "SKILL.md:60／SKILL.md:250／SKILL.md:256／boundaries-and-ethics.md:5/:11/:13/:47/:93／psychology-in-action.md:6／psychology-cases.md:3",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+          "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+        }
+      },
+      {
+        "id": "CQ-AP-02",
+        "status": "pass",
+        "scope": "创伤题材伦理表 8 行除「可以做的创作处理」「不支持的推论」外各带一列「出口」，规定成因不明或没有依据时停在哪。",
+        "limitation": "出口列只给写作层停法（标未知、限定为人物或时代的说法、不给方法细节与疗效承诺），不给现实处置动作。",
+        "counterexample": "boundaries-and-ethics.md:58 行「高度危险的行为（自杀、自毁）」出口＝「不提供方法细节，不写疗效或解脱的承诺」；:51「没有原因时标“未知”」；:57「限定为人物或时代的说法」",
+        "ref": "boundaries-and-ethics.md:45/:47/:49/:51/:52/:57/:58／SKILL.md:237",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "实测 :51-:58 共 8 行数据行、表头 :49 四列齐全，与「8 行各带出口」一致。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+          "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+        }
+      },
+      {
+        "id": "CQ-AP-03",
+        "status": "pass",
+        "scope": "包内数量、比例、拍数、次数一律按起点或例子使用，按篇幅与体裁调整。",
+        "limitation": "narrative-workbook §7 用 7 行表把每个数字绑回对应场景或文本证据位置；scene-summary-and-time.md:25 明确不得仅凭比例判定作品好坏。",
+        "counterexample": "diagnosis.md:117「| 把操作默认值当硬门 | 用“一到三个主视点”“两三个侧影”“四拍节律”这类起点值评判稿子，合理的结构被判违规 |」；narrative-workbook.md:122 复调时可换成几句话或关系图",
+        "ref": "SKILL.md:58／narrative-workbook.md:116/:118/:122/:123/:126/:128／diagnosis.md:117／scene-summary-and-time.md:25／time-mechanisms.md:6",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "note": "§7 数据行实测 :122-:128 恰为 7 行，与声称一致。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+        }
+      },
+      {
+        "id": "CQ-AP-04",
+        "status": "pass",
+        "scope": "把 PV／PS／TM 规则落到无时态中文与连载载体：称呼即视点、无时态距离控制、文件类装置、重生文时间合同、日更锚定与漂移抽查。",
+        "limitation": "文件自述为创作操作建议非平台统计；装置规则一旦定下即属合同；卷级视点分配与章末钩子做法转出。",
+        "counterexample": "zh-and-serial.md:52 重生文反例（前文说「前世这时候我还不知道这件事」，后文又想起前世关键事件正好救场）；:23「「他知道」「他明白」「他意识到」：中文稿里这类词常常是作者在借人物的嘴交代信息」",
+        "ref": "SKILL.md:239／zh-and-serial.md:5/:7/:16/:25/:35/:39/:42/:44/:52/:54",
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/zh-and-serial.md",
+          "sha256": "61a901c5a190284af28ac18130c962c7f826ce1a64a350711bf266726ce39207"
+        }
+      },
+      {
+        "id": "CQ-AP-05",
+        "status": "pass",
+        "scope": "TM 机制卡只对故事内真的发生的时间异常用；普通回忆与倒叙填 §2 时间四列即够。",
+        "limitation": "十八张卡是「这篇这样做过」的归纳非必备件；TM-14 只在选了「历史固定」时可用、TM-18 的等时只在选了等时约定时适用；世界观层多线走向不套机制卡；物理可行性不判断。",
+        "counterexample": "time-mechanisms.md:61「flick（这一篇给极简转场标记起的名字，切线时的一个短记号）只是这一篇的设计」；:93「一个例子定不出“不超过三句”的门槛」；nonlinear-time.md:52「不要求每个闭环都强加纸条、反派或被毁的机器」",
+        "ref": "SKILL.md:232／time-mechanisms.md:5/:6/:7/:61/:93／nonlinear-time.md:13/:52/:73／narrative-workbook.md:78",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/time-mechanisms.md",
+          "sha256": "9bc7e4eb5e07b5913c802ca8e804015b012576ccdd33079d5e094557e037e862"
+        }
+      },
+      {
+        "id": "CQ-AP-06",
+        "status": "pass",
+        "scope": "本包只提供视角、信息、心理与时间的组织方法；没有真实读者测试时不把读者理解与情绪判断说成已验证。",
+        "limitation": "SKILL.md:254 不保证作品效果或读者反应；:257 没有真实读者测试时不说已验证；psychology-cases.md:3「方案是可以检查的文本方案，效果没有经过真实读者的检验」。",
+        "counterexample": "pov-cases.md:3「四个例子都是为说明而编写的，不是真实稿件，也不证明按规则写一定更好」；diagnosis.md:170「三问是定位方法，不是保证作品效果的评分表」",
+        "ref": "SKILL.md:254/:255/:257／pov-cases.md:3／psychology-cases.md:3／diagnosis.md:170",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "record_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"
+        }
+      },
+      {
+        "id": "CQ-AP-07",
+        "status": "pass",
+        "scope": "规则是检查工具不是品味标准；作者坚持时给代价与替代由作者决定；本作实际约定优先于默认值；合同第一层近乎硬性，距离与切换可调。",
+        "limitation": "SKILL.md:246-250 五级冲突顺序；:37/:286 不打分不评级不裁定唯一正确视角；diagnosis §5 例外表把默认值逐条降级为非禁令。",
+        "counterexample": "diagnosis.md:93「| 戏剧化是最高的方法 | 纯戏剧之作极少… | 本 skill 不采纳“越戏剧化越好”的单向偏好…|」；:118「把本 skill 当研究结论 | …「研究证明第三人称限知最好」是伪共识」；:116「把第三人称限知当高级」",
+        "ref": "SKILL.md:59/:37/:244-:250/:286／diagnosis.md:83/:93/:116/:118",
+        "anchors_checked": 13,
+        "anchors_supporting": 13,
+        "note": "§5 例外表数据行实测 :89-:94 共 6 行，均在「默认／例外／处理」三列结构内。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/diagnosis.md",
+          "sha256": "01fe5da0adfd415e32788672b2faf69781b35c73b8ac0380cc8395e078d3e384"
+        }
+      },
+      {
+        "id": "CQ-AP-08",
+        "status": "pass",
+        "scope": "交付形态随宿主与输入变化：宿主有格式按宿主格式；给稿子按稿子诊断，只有构思做设计，要求写正文就写且不覆盖原稿。",
+        "limitation": "SKILL.md:53/:55/:56；缺关键信息先做合理假设并标「假设」，只有答案会彻底改变方案才停问、一次最多三个；没有稿子不声称做过逐段诊断；自编例子说明是编的，新增故事条件标「设计」（:61）。",
+        "counterexample": "pov-cases.md:101「| 只有构思、没有正文 | 停下（缺料，不是负触发） | 没有稿子不能做逐段诊断（diagnosis §1） | 只做设计，不声称逐段诊断，不编位置 |」；diagnosis.md:17 无稿子时不做「第几段有问题」的诊断",
+        "ref": "SKILL.md:36/:53/:55/:56/:61／diagnosis.md:17/:193／pov-cases.md:101/:104",
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+        }
+      }
+    ],
+    "cases": [
+      {
+        "id": "CH-T1",
+        "kind": "positive",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "note": "条文落点齐：视角方案卡 narrative-workbook §1（:7）、全书一张统一信息表并按「信息 × 知情者」拆行（narrative-workbook.md:29、information-control.md:31）、切换账本四项（narrator-and-viewpoint.md:94 表头、SKILL.md:146）、只为传一句信息的切换改用目击／听说／推断／文件（narrator-and-viewpoint.md:101）。裁决人归作者见 SKILL.md:59/:248。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+        }
+      },
+      {
+        "id": "CH-T2",
+        "kind": "missing",
+        "mode": "manual",
+        "status": "fail",
+        "anchors_checked": 6,
+        "anchors_supporting": 6,
+        "note": "6 处锚本身全部落点正确（通用缺料口径 WB:3/:134、DG:214/:105、SKILL:56 均在位），但套件合同附录 E 对本例的原始 expected 是「走「声口待定」的出口，不编造口吻」（notes/suite-contract.md:223 原文）。本轮实测全包（n=17）「待定」0 命中、「声口」2 命中（SKILL.md:312 接收清单、diagnosis.md:211 负面回归），包内既无「声口待定」出口条款，也无「台词样本缺失」专用停止条款。故相对套件契约判 fail；「不编造口吻」那一半成立。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/diagnosis.md",
+          "sha256": "01fe5da0adfd415e32788672b2faf69781b35c73b8ac0380cc8395e078d3e384"
+        }
+      },
+      {
+        "id": "CH-T3",
+        "kind": "conflict",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 10,
+        "anchors_supporting": 9,
+        "note": "A／B 两版与各自代价、两版都不落稿停在待作者决定、作者不答按最小改动并逐条列假设，全部在位（SKILL.md:283/:271/:291、pov-cases.md:123/:127/:128/:130、diagnosis.md:203）。1 处锚不支撑（见 non_supporting）。",
+        "non_supporting": [
+          "references/information-control.md:18  ::  | 人物在前 | 知 | 不知 | 悬疑、揭示：“他到底知道什么” |"
+        ],
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+        }
+      },
+      {
+        "id": "CH-T4",
+        "kind": "boundary",
+        "mode": "manual",
+        "status": "not_proven",
+        "anchors_checked": 7,
+        "anchors_supporting": 7,
+        "note": "7 处锚全部落点正确，但都是通用条款（PV-03 五种位置、PV-04 三层与第一层逐项问、WB §1 字段）。本轮独立实测：「无生命」0 命中、「非人」仅 boundaries-and-ethics.md:35 的殖民语境用法、「房子」仅 pov-cases.md:44 的闲笔，包内确无「非人／无生命叙述者」专门条款。expected「说明视角合同哪些项不适用、哪些要改写」既不能被证明可由条文直接产出（通用条款以「看到、听到、推出」设问，未覆盖非人感知通道改写），也不能被证明失败——静态无法判定，故记 not_proven 而非 fail，是否补一条适用性说明属 Scope，交作者裁。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/narrator-and-viewpoint.md",
+          "sha256": "d0a60675f28c9cb2914b32a6d06964c240ce270f1f472757125f77340770cd63"
+        }
+      },
+      {
+        "id": "CH-T5",
+        "kind": "missing",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 10,
+        "anchors_supporting": 10,
+        "note": "与场景逐字对应的条文在位：SKILL.md:36 与 :281「只给梗概…先要正文…不编位置和短引文」、diagnosis.md:17/:193、pov-cases.md:101（把「只有构思、没有正文」判成缺料而非负触发）、:104 与 :139（位置先写未知、逐段诊断记「未能核实」）。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+        }
+      },
+      {
+        "id": "CH-T6",
+        "kind": "conflict",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "note": "SKILL.md:289 直接命中场景（「已锁定的设定或已发章节与新方案冲突 | 只改可改的部分，列出最小冲突集合由作者裁决，不擅自覆盖」），diagnosis.md:177/:182、psychology-cases.md:93 与修改单代价栏（WB §5）齐。裁决后能否对已发章节落笔无正面条款（F-10），不改变本例 expected 的落点。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8"
+        }
+      },
+      {
+        "id": "CH-T7",
+        "kind": "boundary",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 12,
+        "anchors_supporting": 12,
+        "note": "退出条文可核：SKILL.md:60/:35/:250/:256/:287、boundaries-and-ethics.md:13/:14/:43/:58/:91、psychology-cases.md:92/:94/:95；病理词限定为「人物或时代的说法」在 BE:57 与 SKILL.md:200。缺「什么信号算命中现实健康请求」的识别判据与「疑似即时危险建议求助」条（F-07）；「超出范围」在四词内无落位（F-03）。本例判 pass 只指退出处方存在且小说部分照常做有条文，不指该出口在真实请求下能稳定命中。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/psychology-cases.md",
+          "sha256": "f9ba3b3e07ddd841397d56155d91045bc45f4461f338b6c9b41b40ca34926d83"
+        }
+      },
+      {
+        "id": "CH-T8",
+        "kind": "boundary",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "note": "「不拿小说去推断真实证人的可信度」为 boundaries-and-ethics.md:15 原文；「不把时代医学用语当现实诊断结论输出」psychology-in-action.md:93；「胸闷就是惊恐发作…不成立」:51；十问第 6 条 WB:110；成因不明标「未知」BE:51。伦理表「写发生了什么、谁看见、对行动有什么影响」BE:51 逐字在位。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/psychology-in-action.md",
+          "sha256": "2bb8a74d2d2ec88d4b035560ce14f5951defef825f04cc5bde9efefea0bfcc28"
+        }
+      },
+      {
+        "id": "CH-T9",
+        "kind": "positive",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 11,
+        "anchors_supporting": 11,
+        "note": "场景在包内有逐字对应：zh-and-serial.md:30「| “与此同时，千里之外……”切到反派或配角 | PV-05 | 这是一次切换，要有收益。只为告诉读者“反派在谋划”的切换，常常可以改为主角收到的情报 |」，pov-cases.md:65-:86 例四整例演示同一场景，:56 章首重锚、:57 转出 SU-15、:59 转出 story。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+        }
+      },
+      {
+        "id": "CH-T10",
+        "kind": "missing",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 9,
+        "anchors_supporting": 9,
+        "note": "nonlinear-time.md:72 逐字命中「只收到“三条时间线很烧脑”却要求诊断时，不编造现稿的时间锚，列出缺的字段」；:15 给「请作者补必要的设定／标“假设”往下做」；:21/:32 四列记账、:70 拿不准写「未知」、WB:41 时间四列空表在位。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/nonlinear-time.md",
+          "sha256": "f8ea6c7a55d6b6a21d22632d9387fae69aeb4dc775dcc3374eab34b7dc539ec6"
+        }
+      },
+      {
+        "id": "CH-T11",
+        "kind": "conflict",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 8,
+        "anchors_supporting": 8,
+        "note": "SKILL.md:37 与 :286 两处均明写不打分、由作者决定；diagnosis.md:104「规则是诊断工具，不是法令」、:117 把默认值当硬门列为误用、:170 三问非评分表，与「规则当检查工具不当品味标准」一致。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/references/diagnosis.md",
+          "sha256": "01fe5da0adfd415e32788672b2faf69781b35c73b8ac0380cc8395e078d3e384"
+        }
+      },
+      {
+        "id": "CH-T12",
+        "kind": "conflict",
+        "mode": "manual",
+        "status": "pass",
+        "anchors_checked": 7,
+        "anchors_supporting": 7,
+        "note": "psychology-cases.md:93 与本例场景逐字相同（含「只暂停这一处互斥的改写…不靠新增的动机假装原设定已经自洽」），另有 diagnosis.md:177/:182、SKILL.md:289/:271/:247 支撑「列出要作者确认的条件、依赖这处冲突的文字照常处理」。",
+        "record_ref": {
+          "path": "output/character-and-narrative-control/examples/psychology-cases.md",
+          "sha256": "f9ba3b3e07ddd841397d56155d91045bc45f4461f338b6c9b41b40ca34926d83"
+        }
+      }
+    ]
+  },
+  "semantics": [
+    {
+      "id": "S1",
+      "topic": "交付状态词「已完成」的定义与包内唯一示范互斥",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 268,
+          "text": "| 已完成 | 检查已执行，且有稿件内可核的证据支持 |"
+        },
+        {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "line": 110,
+          "text": "| PV-03 | 第一人称限知，叙述者只报告自己的所见所想 | 已完成 | 未知 |"
+        },
+        {
+          "path": "output/character-and-narrative-control/examples/pov-cases.md",
+          "line": 136,
+          "text": "| 视角合同（能不能知道、能进谁的意识） | 已完成 | 上面的台账 PV-03、PV-04 两行 |"
+        }
+      ],
+      "conflict": "定义要求「稿件内可核的证据支持」，示范在 :92 已声明「只有构思，没有正文」、:104 声明位置列先写「未知」，却在 :110/:111 把状态记「已完成」且位置＝未知，:136 再以这两行自证「已完成」。按 :268 定义这两行应为「依据」或「未能核实」。包内无「作者口头已定的合同项是否算已完成」的条文或豁免。",
+      "severity": "高",
+      "owner": "作者或 G00：改定义、改示范，或补一条「设计层交付不适用『已完成』」；本席只登记不改成品。",
+      "record_ref": {
+        "path": "output/character-and-narrative-control/examples/pov-cases.md",
+        "sha256": "a7b4180dbb4a0d7840edc074ce8c62f1b71cc4e6ad7a3993d43d94a28f4dda7d"
+      }
+    },
+    {
+      "id": "S2",
+      "topic": "逐编号台账「状态」列的合法值：四词还是五值（本席独立新增）",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "line": 142,
+          "text": "状态只用四词：已完成 / 依据 / 未能核实 / 待作者决定（见 [SKILL.md](../SKILL.md) §9.1）。示例行只是填法示意，不是固定答案；写完按 [pov-cases.md](../examples/pov-cases.md) 例五第 7 步做负面回归。"
+        },
+        {
+          "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+          "line": 140,
+          "text": "| PV-14 | 跨越前是否写了日子 | 未知 | 未知 |"
+        },
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 273,
+          "text": "四词也用于逐编号台账的「状态」列（[narrative-workbook.md](templates/narrative-workbook.md) §8）；「未知」是那一列的合法值，但不得把未知写成已完成。修改单的「代价」一栏必须写。"
+        }
+      ],
+      "conflict": "WB §8 同一节内，:134 允许状态格填「未知」、:140 实例状态列就是「未知」，:142 却断言「状态只用四词」；SKILL.md:273 明确「未知」是该列合法值。§8 的这条规则与 §9.1 的扩展口径互斥，填表者按 WB 就地读法会拒绝一个 SKILL 允许的合法值。注：brief 的 CQ-G13 把 :142 描述为「把四词与「未知」并列写进同一句」，与该行实际文本不符（该行无「未知」二字），见 F-14/F-16。",
+      "severity": "高",
+      "owner": "作者或 G00：把「未知」定义为第五个合法状态值并限定只用于台账列，或统一为四词。",
+      "record_ref": {
+        "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+        "sha256": "84194218fc7b0384b3cdcb64f351e592aa5da5b67ad62d0da3016741fbb997dd"
+      }
+    },
+    {
+      "id": "S3",
+      "topic": "四词交付口径与五档判断口径并存无映射，「超出范围」无落位",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 264,
+          "text": "对作者交付只用这四个词，逐项给依据，不写内部状态码："
+        },
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 105,
+          "text": "- 判断按五档说清：作品里写了、推断、设计方案、证据不够、超出范围（boundaries-and-ethics §5）。"
+        },
+        {
+          "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+          "line": 91,
+          "text": "| 超出范围 | 临床、法律、现实病因——这些不因授权补足而解锁；或创作、改写所需的授权不够。说明需要哪种专业核验或用户设定 |"
+        }
+      ],
+      "conflict": "同一交付里两套口径并列且无映射表：五档里的「证据不够」「超出范围」在四词中无对应值。「超出范围」被标为「不因授权补足而解锁」，属不可裁决边界；写「待作者决定」（SKILL.md:271 定义为存在可由作者裁决的冲突取舍）会把不可裁决的边界写成可裁决的取舍，写「未能核实」（:270 定义为检查已执行但结论依赖缺失输入）又不符合该情形（本 skill 明确不执行这项检查）。",
+      "severity": "中",
+      "owner": "作者或 G00：给映射表，或允许「超出范围」作为第五个交付值。",
+      "record_ref": {
+        "path": "output/character-and-narrative-control/references/boundaries-and-ethics.md",
+        "sha256": "112d7c0aba186064a976c0a707cb920dca1d8303f1a722137b7cce7ab019ac3d"
+      }
+    },
+    {
+      "id": "S4",
+      "topic": "场级知情表与全书统一信息表的「切片」关系只在一侧声明",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 57,
+          "text": "- **一张信息表**：全书只维护 [information-control.md](references/information-control.md) §3 的知识表。涉及证词和自辩，加“谁说、何时说、对谁说、外证与反证”四列；涉及时间错位，加“世界时间、人物经历、展示顺序、读者已知”四列。空表在 `templates/narrative-workbook.md` §2。`scene-conflict-and-rhythm` 里一场戏的知情表，是这张表在一场戏里的切片。"
+        },
+        {
+          "path": "output/scene-conflict-and-rhythm/references/scene-information-and-space.md",
+          "line": 5,
+          "text": "**只用一张知情表。** 这张表由 SU-04 建立（读者、人物各知道什么，选哪种悬念方式）。SC-06 给它加一列“视角人物此刻能说出什么”；误认时按 SU-07 加必要字段；动作场面里按 AF-06 记录感官范围，按 AF-13 记录转述通道。同一场戏不另建第二张表。"
+        }
+      ],
+      "conflict": "派生投影关系单侧声明：本包称对端表是自己那张表的切片，对端把自己的表归给 SU-04 建立、不指名本包表。缓存／投影未声明来源与失效责任，两侧各成一张权威表；字段名不同（本包 7／8 列对 对端三层）且无映射条。实测对端整包 17 件 grep「统一信息表」「全书只用一张」「切片」各 0 命中。",
+      "severity": "中",
+      "owner": "跨包契约，交用户或 G00 裁：切片口径与字段映射由哪一侧补。",
+      "record_ref": {
+        "path": "output/scene-conflict-and-rhythm/references/scene-information-and-space.md",
+        "sha256": "1d861d20f4bde92afc4a973a28db1e8bdcc203c4aca3ad5c619771b68f7e69bb"
+      }
+    },
+    {
+      "id": "S5",
+      "topic": "「两表互为逆关系」不变量与 preset-card 接收清单项数冲突",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 316,
+          "text": "A 说转给 B 的地方，B 都要说接收什么；本 Skill 的转介行与 §10.2 两表互为逆关系。发现改动会改变人物声音、叙述权限或视角等不变量时，暂停该处并转交确认。"
+        },
+        {
+          "path": "output/preset-card-generation/SKILL.md",
+          "line": 41,
+          "text": "| 视角合同、人物声口、信息控制 | `character-and-narrative-control` |"
+        },
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 312,
+          "text": "- `preset-card-generation` → 本 Skill：视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间——请求不写成卡、也不用三轴时，转回来做角色层的设计与诊断。"
+        }
+      ],
+      "conflict": "本包对 :316 提出的等价断言按其自身清单并不成立：接收侧 7 项（:312）对转出侧 3 项（对端 :41，且实测该文件指向本包的转出行只有这一行）。同时两侧均未写「同一请求既要卡又要视角裁决」时的分单规则，:316 只给不变量级处置。套件合同 §一「双向对照」要求逐行双向核，本条未过。",
+      "severity": "中",
+      "owner": "以哪一侧清单为准，交作者或 G00 定。",
+      "record_ref": {
+        "path": "output/preset-card-generation/SKILL.md",
+        "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9"
+      }
+    },
+    {
+      "id": "S6",
+      "topic": "「公平解谜的承诺」在本包与 genre 侧都无唯一登记 Owner",
+      "refs": [
+        {
+          "path": "output/character-and-narrative-control/SKILL.md",
+          "line": 229,
+          "text": "| `references/information-control.md` | PV-09 至 PV-11、PV-16：四种信息结构、知识表、五种合法的隐瞒、不可靠叙述、侧写、揭示三查 | 反转、秘密、误会、悲剧反讽 | 知识表的多视点拆行口径、五种隐瞒各自的风险（含「不一致地关＝截断」）、揭示三查、常见错误表 | 进了心却要藏关键念头时按 §4 修法依次试；公平解谜的承诺没定时先问作者 |"
+        },
+        {
+          "path": "output/genre-fiction-craft/references/03-horror/testimony-and-information.md",
+          "line": 130,
+          "text": "一环薄弱只削弱依赖该环的主张；不把整份材料所有独立观察一并归零。公平解谜的伏笔责任来自所选合同，人为犯罪故事也可以不承诺读者提前定案；需要专门检查谜题时转推理题材，同时完成本册能处理的恐惧与关系部分。"
+        }
+      ],
+      "conflict": "同一业务语义（本作是否向读者承诺公平解谜／可靠性契约）被两侧同时当判据使用：本包用它判隐瞒是否作弊（SKILL.md:153、information-control.md:35/:84、SKILL.md:247），genre 侧称「所选合同」并把专门检查留在题材内。两边都不产登记表、都不声明存放位置，唯一落地口是「没定时先问作者」，等于把权威状态悬空。",
+      "severity": "中",
+      "owner": "公开契约问题，交用户裁登记 Owner 与存放表。",
+      "record_ref": {
+        "path": "output/genre-fiction-craft/references/03-horror/testimony-and-information.md",
+        "sha256": "c6450002d2e042f82cac51ccf16062f9f2ed5bc01f585baa8d7728b1e1faebc4"
+      }
+    }
+  ],
+  "anchor_census": {
+    "scope": "brief 五组 ID（requirements／capabilities／interfaces／applicability／cases）的 anchors、anchors_own、anchors_peer、counterexample_ref 四个字段全部锚；gaps 的锚不在本档计数内（另在 findings 逐条复核）。",
+    "total_refs": 690,
+    "unique_anchors": 480,
+    "per_group_refs": {
+      "requirements": 119,
+      "capabilities": 304,
+      "interfaces": 80,
+      "applicability": 77,
+      "cases": 110
+    },
+    "resolvable": 480,
+    "unsupported": 3,
+    "unresolvable": 0,
+    "supporting": 477,
+    "method": "逐 ID 打开锚所指文件、读该行及其上下文判支撑；解址先按包根拼路径，带包名前缀的按跨包路径拼，全部读实际文本比对，未用正则机械解址即下结论。",
+    "note_blank_line_anchors": 0,
+    "unsupported_detail": [
+      {
+        "anchor": "references/information-control.md:100",
+        "owner_ids": [
+          "CQ-CAP-02"
+        ],
+        "field": "counterexample_ref",
+        "full_line": "|---|---|---|",
+        "why": "该行是 Markdown 表格分隔行，不含任何主张内容；brief 自设口径只承认「表头行、节标题行、示例行」算真实原文位置，分隔行不在其列。该表反例实体在 :101-:106。"
+      },
+      {
+        "anchor": "references/nonlinear-time.md:26",
+        "owner_ids": [
+          "CQ-CAP-04"
+        ],
+        "field": "anchors",
+        "full_line": "|---|---|---|",
+        "why": "同上，四列表的分隔行；四列内容实体在 :27-:30，记账规则在 :32。"
+      },
+      {
+        "anchor": "references/information-control.md:18",
+        "owner_ids": [
+          "CH-T3"
+        ],
+        "field": "anchors",
+        "full_line": "| 人物在前 | 知 | 不知 | 悬疑、揭示：“他到底知道什么” |",
+        "why": "主张为「读者在前（反讽）」，该行是同一张四种信息结构表里的「人物在前」行；读者在前是 :17。锚位差一行，不支撑该具体主张。"
+      }
+    ]
+  },
+  "addressing_defects": {
+    "count": 3,
+    "scope_note": "只报数与形态，不替作者改判。全部 3 处均属「锚可解址、文件与行号都真实在位，但落点与该条主张不对位」；本轮未发现缺 references/ 等目录前缀导致解错的裸文件名（本 brief 包内锚一律带目录前缀），未发现指向不存在文件（0 条），未发现把 notes/、inputs/ 元数据当成品锚（CQ-R07 文本里的 suite-contract:17 是 notes 责任行，按本轮口径不计缺陷）。跨包锚以所在 JSON 字符串里出现的包名为准解址，7 个对端包 80 条 anchors_peer／引用全部命中。",
+    "forms": [
+      {
+        "form": "锚位落在 GFM 表格分隔行（整行无内容）",
+        "count": 2,
+        "instances": [
+          "references/information-control.md:100",
+          "references/nonlinear-time.md:26"
+        ]
+      },
+      {
+        "form": "锚位落在同一表格的相邻行（差一行，行主题与主张不符）",
+        "count": 1,
+        "instances": [
+          "references/information-control.md:18（主张「读者在前」，应为 :17）"
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "高",
+      "位置": "output/character-and-narrative-control/SKILL.md:268 与 examples/pov-cases.md:110、:111、:136（另 :92、:104）",
+      "原文引用": "SKILL.md:268「| 已完成 | 检查已执行，且有稿件内可核的证据支持 |」／pov-cases.md:110「| PV-03 | 第一人称限知，叙述者只报告自己的所见所想 | 已完成 | 未知 |」／pov-cases.md:136「| 视角合同（能不能知道、能进谁的意识） | 已完成 | 上面的台账 PV-03、PV-04 两行 |」",
+      "理由": "成品唯一的逐编号台账示范把需要「稿件内可核证据」的状态值用在「没有正文、位置＝未知」的行上，且交付表用这两行自证；消费者照示范填即产出一条违反定义的回执。定义侧与示范侧都没有豁免条款，属权威状态口径无唯一 Owner。见 semantics S1。"
+    },
+    {
+      "id": "F-02",
+      "severity": "高",
+      "位置": "templates/narrative-workbook.md:134、:140、:142 与 SKILL.md:273",
+      "原文引用": "narrative-workbook.md:142「状态只用四词：已完成 / 依据 / 未能核实 / 待作者决定（见 [SKILL.md](../SKILL.md) §9.1）。」／narrative-workbook.md:140「| PV-14 | 跨越前是否写了日子 | 未知 | 未知 |」／SKILL.md:273「四词也用于逐编号台账的「状态」列…；「未知」是那一列的合法值，但不得把未知写成已完成。」",
+      "理由": "本席独立新增。§8 就地规则「状态只用四词」与其自身实例（:140 状态列即「未知」）、同节 :134 及 SKILL.md:273 的合法值扩展相互否定；按节内读法会拒收合法值，按 SKILL 读法会违 §8 规则。brief 的 CQ-G13 只记成「合法值超出定义表」，并把 :142 描述为「把四词与「未知」并列写进同一句」——该行实无「未知」二字，属对成品文本的误述。"
+    },
+    {
+      "id": "F-03",
+      "severity": "中",
+      "位置": "SKILL.md:264 与 SKILL.md:105、boundaries-and-ethics.md:83-:91",
+      "原文引用": "SKILL.md:105「- 判断按五档说清：作品里写了、推断、设计方案、证据不够、超出范围（boundaries-and-ethics §5）。」／boundaries-and-ethics.md:91「| 超出范围 | 临床、法律、现实病因——这些不因授权补足而解锁；或创作、改写所需的授权不够。…」",
+      "理由": "四词交付与五档判断并存无映射；「超出范围」这类不可裁决边界在四词里没有可挂状态词，硬挂「待作者决定」会把边界写成可裁决取舍。见 semantics S3。"
+    },
+    {
+      "id": "F-04",
+      "severity": "中",
+      "位置": "SKILL.md:312、:316 与 output/preset-card-generation/SKILL.md:41",
+      "原文引用": "preset-card-generation/SKILL.md:41「| 视角合同、人物声口、信息控制 | `character-and-narrative-control` |」",
+      "理由": "接收清单 7 项对转出清单 3 项，本包自述的「两表互为逆关系」按项数不成立；套件合同 §一 双向对照要求逐行双向核，此处未过。缺「既要卡又要视角裁决」的分单规则。见 IF-03／semantics S5。"
+    },
+    {
+      "id": "F-05",
+      "severity": "中",
+      "位置": "SKILL.md:57、references/information-control.md:38 与 output/scene-conflict-and-rhythm/references/scene-information-and-space.md:5",
+      "原文引用": "scene-information-and-space.md:5「**只用一张知情表。** 这张表由 SU-04 建立…同一场戏不另建第二张表。」",
+      "理由": "「切片＝全书表的投影」只在单侧声明，对端另有自己的权威表且字段名不同、无映射；实测对端整包（17 件）对「统一信息表／全书只用一张／切片」0 命中。两张表谁是权威来源、何时失效无人负责。见 IF-01／semantics S4。"
+    },
+    {
+      "id": "F-06",
+      "severity": "中",
+      "位置": "SKILL.md:153、:229、:247、references/information-control.md:35、:84 与 output/genre-fiction-craft/references/03-horror/testimony-and-information.md:130",
+      "原文引用": "SKILL.md:247「2. **本作实际的约定优先于本 skill 的默认值**：作品明确选了公平解谜、某种情感的兑现或某种速度，就按它；不从“推理”“言情”的标签推定全部约定。」",
+      "理由": "「公平解谜承诺／可靠性契约」是本包判隐瞒是否作弊的判据，但两侧都不登记、不声明存放位置，唯一口径是「没定时先问作者」。跨包同一语义无唯一 Owner。见 IF-05／semantics S6。"
+    },
+    {
+      "id": "F-07",
+      "severity": "中",
+      "位置": "SKILL.md:60、:35 与 references/boundaries-and-ethics.md:13-:14",
+      "原文引用": "boundaries-and-ethics.md:14「- 真实个人的精神状态、诊断标准、病因、药物、治疗方案或危机分级：本 skill 没有专业资格，也没有现代医学的证据。」",
+      "理由": "退出条款只有情形陈述（SKILL.md:60「用户其实在问自己或身边人的现实健康时，退出那一部分」），无「什么信号算命中」的识别判据；本轮实测（n=17）「热线」0 命中、「求助」1 命中且指故事内求助对象（social-pressure-and-silence.md:47），包内无「疑似即时危险时建议求助」条文，BE:14 又明把危机分级划到范围外而不给替代动作。高风险副作用项，交用户裁决是否补。"
+    },
+    {
+      "id": "F-08",
+      "severity": "中",
+      "位置": "notes/suite-contract.md:223（契约侧）对 output/character-and-narrative-control/ 全包（成品侧）",
+      "原文引用": "suite-contract.md:223「    {\"id\":\"CH-T2\",\"kind\":\"missing\",\"scenario\":\"人物还没有任何台词样本\",\"expected\":\"走「声口待定」的出口，不编造口吻\"},」",
+      "理由": "附录 E 用例承诺的具名出口「声口待定」在成品内不存在（「待定」0 命中；「声口」仅 SKILL.md:312 接收清单与 diagnosis.md:211 负面回归两处，均非出口条款）；成品只有通用缺料口径 WB:3／:134、DG:214。属用例契约与成品条款分歧，需核对附录 E 原意，本席不判它是丢失还是口径调整。"
+    },
+    {
+      "id": "F-09",
+      "severity": "低",
+      "位置": "SKILL.md:325 与 narrative-workbook §1-§8",
+      "原文引用": "SKILL.md:325「互动叙事中，本 Skill 只检查每条路线内人物知道什么、何时知道、关系如何变化以及时间是否连续；玩家选择、状态变量和分支拓扑由 `cross-media-drama-adaptation` 负责。」",
+      "理由": "本包侧未写被互动流程调用时交付什么格式、用哪张表、按节点还是按路线记；narrative-workbook 八节无对应模板。方向性缺口，是否补一节属 Scope。"
+    },
+    {
+      "id": "F-10",
+      "severity": "低",
+      "位置": "SKILL.md:289、:271 与 references/diagnosis.md:177、:182",
+      "原文引用": "diagnosis.md:177「2. **作者硬设定：** 有没有动到作者已经定死、不许改的设定；动了就停下交作者裁决，不擅自覆盖。」",
+      "理由": "三条停止条款全是禁止式，包内没有一条正面写「作者明确裁决后锁定即解除、代理可执行」，也不要求记录解除时点。CH-T6 在「作者已裁决可改第 9 章」这一步缺条文依据，属解释而非规定。"
+    },
+    {
+      "id": "F-11",
+      "severity": "低",
+      "位置": "SKILL.md:175（另 :172、:180、:232 与 references/time-mechanisms.md:14）",
+      "原文引用": "SKILL.md:175「| TM-06 至 TM-09 | 两条平行线 | 重复的锚点保证可读；动机倒置；只有文字能跨线；振荡的悬置 |」",
+      "理由": "本轮实测：卡体 18/18 齐全（卡头行号集合与 brief 所列恒等），但 SKILL.md 索引层用区间行承载 TM-06 至 TM-09，逐 ID 字面在 SKILL.md 层为 16/18，缺 TM-07、TM-08；对端索引表（time-mechanisms.md:14）同样用区间行。语义在位、编号字面不在位，冻结判据须分两档回显，是否拆行由作者定。"
+    },
+    {
+      "id": "F-12",
+      "severity": "低",
+      "位置": "templates/narrative-workbook.md:138、:139、:140（对照 :33、:39、:45、:97）",
+      "原文引用": "narrative-workbook.md:139「| PV-09 | 寄存单被人换过，读者早段起知道 | 已完成 | 第 3 章第 1 场 |」",
+      "理由": "§8 三行全为带具体值的示例行、无一行可填空（同文件 §2 与 §5 都留有真空行），标签与用法冲突：表头声明「把用到的规则编号逐条记一行」却未给空行；缓解句只有 :142「示例行只是填法示意」。§1（13 行）与 §3（20 行）经逐行核为可填字段，不在此项内。"
+    },
+    {
+      "id": "F-13",
+      "severity": "低",
+      "位置": "SKILL.md:269 与 examples/pov-cases.md:96、:134、:138",
+      "原文引用": "pov-cases.md:138「| 线索清单 | 依据 | 上面的修订段，均为本例自创、标「设计」 |」",
+      "理由": "「依据」既是状态词（SKILL.md:269 定义）又是包内普通汉语词。本轮实测「依据」全 21 处、其中「| 依据 |」形态 4 命中（定义行 1 处、表头 2 处、当状态值填的实例 1 处），无消歧条，字面取词不可分状态列与正文。"
+    },
+    {
+      "id": "F-14",
+      "severity": "低",
+      "位置": "notes/quality/character-and-narrative-control/brief.json 的 CQ-G03 与 CQ-R10.partial_reason（指向成品 references/ 三处）",
+      "原文引用": "boundaries-and-ethics.md:64「前八条是为说明而提炼的情形；第 9 条写压制和危机中的反应，…」／testimony-and-self-justification.md:34「…**写法**：当叙述者在物理或处境上被高度孤立…到危机高潮，叙述者通过反锁房门…」",
+      "理由": "brief 称「「危机」5 命中全部属写作语境」并列出 5 个位置；本轮实测命中 8 行，多出 boundaries-and-ethics.md:14、:64 与 testimony-and-self-justification.md:34。结论方向不受影响（均属写作语境、且无现实求助条），但计数为计量错误。同条把「危机分级不在范围」的位置写成 BE:13，实为 BE:14（:13 是「不在本 Skill 里做」的引导行）。"
+    },
+    {
+      "id": "F-15",
+      "severity": "低",
+      "位置": "brief.json CQ-IF-01.fields 对 references/information-control.md:27 与 templates/narrative-workbook.md:31",
+      "原文引用": "information-control.md:27「| 信息 | 视点人物 | 读者 | 其他相关人物 | 揭示在哪里 | 由谁、怎样揭示 | 揭示后改变什么 |」",
+      "理由": "brief 写「统一信息表 7 列「编号｜信息｜视点人物｜读者｜其他相关人物｜揭示在哪里｜由谁、怎样揭示｜揭示后改变什么」」，引号内实为 8 个列名。IC:27 为 7 列（无「编号」），WB:31 为 8 列（含「编号」）。两引两处文件混读致列数表述不一致；不影响接口判负，但取词者按字面对表会错一列。"
+    },
+    {
+      "id": "F-16",
+      "severity": "低",
+      "位置": "见 anchor_census.unsupported_detail 与 addressing_defects",
+      "原文引用": "references/nonlinear-time.md:26「|---|---|---|」",
+      "理由": "480 条去重锚中 3 条落点与主张不对位（2 条表格分隔行、1 条同表相邻行）。0 条无法解址、0 条指向空行；本包锚一律带目录前缀，未出现裸文件名解址问题。此为 brief 侧锚位精度问题，非成品缺陷。"
+    },
+    {
+      "id": "F-17",
+      "severity": "低",
+      "位置": "examples/pov-cases.md:44 与 references/boundaries-and-ethics.md:35 对 CH-T4",
+      "原文引用": "pov-cases.md:44「…当时是一个“他很熟悉这栋房子”的闲笔（伏笔的细节接着用 `scene-conflict-and-rhythm`）。」",
+      "理由": "CH-T4（叙述者是一栋房子）在包内无对应条文：brief 列举的三个词本轮实测命中情况一致（「无生命」0；「非人」仅 BE:35 殖民语境；「房子」仅 PV:44 闲笔）。该 case 的 expected 只能由 PV-03／PV-04 通用问句推出，静态无法判其能否落地，故本席记 cases 行为 not_proven 而非 fail。"
+    },
+    {
+      "id": "F-18",
+      "severity": "低",
+      "位置": "notes/quality/character-and-narrative-control/brief.json 顶层 draft_source_sha256",
+      "原文引用": "\"draft_source_sha256\": \"f5e002f35dd2c63b\"",
+      "理由": "该字段只有 16 个十六进制字符，不是完整 sha256（64 字符），无法与草案源文件比对，也无法证否。属 brief 元数据形态问题，不指向成品；本轮不据此判 brief 链失效，仅登记不可核。"
+    }
+  ],
+  "status_value_domain_check": {
+    "allowed": [
+      "pass",
+      "fail",
+      "not_proven"
+    ],
+    "observed": [
+      "pass",
+      "fail",
+      "not_proven"
+    ],
+    "fourth_tier_found": "none",
+    "note": "brief 自身使用的 covered／partial 属其内部词表，本轮全部三态重判后未沿用；未出现 partial、不适用、待审等第四档。"
+  },
+  "counts": {
+    "requirements": {
+      "total": 15,
+      "pass": 13,
+      "fail": 2,
+      "not_proven": 0
+    },
+    "capabilities": {
+      "total": 11,
+      "pass": 10,
+      "fail": 1,
+      "not_proven": 0
+    },
+    "interfaces": {
+      "total": 7,
+      "pass": 4,
+      "fail": 3,
+      "not_proven": 0
+    },
+    "applicability": {
+      "total": 8,
+      "pass": 8,
+      "fail": 0,
+      "not_proven": 0
+    },
+    "cases": {
+      "total": 12,
+      "pass": 10,
+      "fail": 1,
+      "not_proven": 1
+    },
+    "semantics": 6,
+    "findings": 18,
+    "all_rows": {
+      "total": 53,
+      "pass": 45,
+      "fail": 7,
+      "not_proven": 1
+    }
+  },
+  "limits": [
+    "GQ5 与作品效果未验证：本轮未启动宿主、未跑真实任务，12 条 case 全部 manual，无一条 host 运行回执，也未生成任何运行记录。",
+    "未做套件 §4.2 附录 B 全 19 条子模式的逐类正则复扫（且 suite-contract §4.2bis 自陈 19 条中 13 条「检测有效性未证」）。本轮只按 §五 措辞禁用＋§二 审计词＋书名号／包外路径／作者名人词做了窄口径复扫，全部 0 命中；这不等于全包去来源已证。",
+    "未读本包 K4-r1.md、s04a-a1／s04a-a2／s04b 三份去来源自检、notes/w4*、notes/operations-contract/*、log.md、checklist.md、git 历史与测试文件（隔离要求）。因此「K4 已发现的问题是否已在成品中修掉」这一层未核；本轮全部状态都是从当前 17 件成品独立重判，不继承旧席结论。",
+    "未读 inputs/requirements.md 与 skills/knowledge-compiler/references/r09-checks.md（不在本轮允许读取清单），GQ 名称与判据口径以 review.json.v0 模板原文与 notes/suite-contract.md 为准。",
+    "对端包：为满足契约的 peer_tree_sha256 与「单向声明判 fail 并引两侧原文」，只对 7 个对端包做了整树摘要实测和 anchors_peer／正文所引行号的定点取文（共 19 个文件、约 40 行），未评审对端包自身质量，也不据此给对端包任何状态；这是隔离令与接口契约冲突处的最小必要取读，已在此明示。",
+    "semantics 6 组覆盖「我判定为互斥／无映射／单侧声明」的六处，未穷举 17 件 × 全部规则对的交叉一致性（组合量超出本轮静态可完成范围）；抽样口径＝五组 ID 逐条声称的规则 ＋ 逐文件通读时独立发现的冲突（F-02 即新增）。",
+    "IF-02 与 IF-07 的对端 references 回执已按实际文件补全真实摘要（serial-open-lines-and-continuity.md＝5bd315ab…、self-check-scenes.md＝be38971c…），无空摘要回执，全档 77 处 {path,sha256} 回执逐条复算与磁盘一致。",
+    "共享工作树并发：本轮复核落盘前重测对端包 genre-fiction-craft 整树，摘要由首次实测的 59ffd6ab… 变为 07d638e5…（101 件／1058179 字节，SKILL.md mtime 2026-11-05 19:51:47，tsv 同步行 19:56:50 同步改动），说明有其他席位正在并发改对端包。IF-05 已改取后一实测值并附 peer_tree_drift 说明，所引两侧原文改动后逐行重取仍恒等，判负不受影响；其余 6 个对端包两次实测摘要恒等。对象包 output/character-and-narrative-control/ 全程未变（SKILL.md mtime 2026-11-04 22:27:44），brief_sha256、skill_tree_sha256、17 件、193531 四项在落盘后复算仍与 tsv 全等，本 review 的绑定成立。",
+    "未验证宿主是否加载 agents/openai.yaml、采用哪些字段；CAP-11 的 pass 只指文件内容与自述可核。",
+    "未运行本包任何枚举模板的填写演练（套件 §三 的编号独占一行、三列齐全、允许「未知」）：只做了文本与结构核对，字段实际可填性与「稿件证据位置」定位能力未经运行验证。",
+    "brief.draft_source_sha256 为 16 位截断串，无法核验草案来源链（F-18）。",
+    "本轮只读唯一落盘为 notes/quality/character-and-narrative-control/review.json；中途为记录 peer 摘要在 /tmp 临时生成过一个 json，已即时删除并改为直接内联，最终无第二处写入，output/ 未被写入。"
+  ],
+  "round_complete": "K5-rv-character"
+}

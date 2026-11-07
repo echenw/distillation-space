@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "kind": "review-draft",
+  "skill": "scene-conflict-and-rhythm",
+  "status": "draft-not-frozen",
+  "reviewer": "K5 质量审查席（scene-conflict-and-rhythm 成品包 review 草案）·非作者：本席未参与本包 SKILL.md／references／templates／examples／agents、brief.json 与 K4-r1.md 的任何编写，本轮只读 output 包 17 个文件全文与 brief.json，全部状态由本席独立取证得出；K4-r1.md 只作线索，未沿用其任何结论",
+  "reviewed_at": "2026-11-05",
+  "brief_sha256": "239610b5eaec78fd23f85cdd8e2e678d689a716251740bcf95ca38e04a238d71",
+  "skill_tree_sha256": "b00f59d12d6d5bbbd641e13ca4d1c90df89c7c57a78ea447759f506df3c3ce67",
+  "tree_hash_method": "对 output/scene-conflict-and-rhythm/ 递归枚举全部文件（含 agents/、templates/、examples/、references/），按相对路径字节序升序，逐文件拼 \"<relpath>\\t<sha256(该文件原始字节)>\\n\"，再对整串取 sha256",
+  "tree_inventory": {
+    "files": 17,
+    "total_bytes": 168166,
+    "per_file_sha256": [
+      { "path": "SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1" },
+      { "path": "agents/openai.yaml", "sha256": "b1369d3d20715c35d053d04c50da4026d240ce5e1c2d12fb56f9589a974fbd1b" },
+      { "path": "examples/refrain-case.md", "sha256": "89ad3cef34d7741e591f300ee0d2c2e47ec41ec2e3e6acf45701cf2dc1e31506" },
+      { "path": "examples/scene-cases.md", "sha256": "9b5066b2d42b2d2d0ba704989a78b8bf1faacf982161e5ad37afc9a64fed732f" },
+      { "path": "examples/suspense-and-hooks.md", "sha256": "171d005b88cb827adf099da09bee51b6575f3a452c07cb945270fdce382cd2fc" },
+      { "path": "references/action-and-fight.md", "sha256": "b65b93881b56c1958bb74a70d7d38addf0f056d2b1002a3f712fb975f3125b10" },
+      { "path": "references/chapter-ends-and-endings.md", "sha256": "b002e80f24fdc71727529dd2aeb85422839791aebc8acab49922a366977286aa" },
+      { "path": "references/intensity-and-rhythm.md", "sha256": "f258bfd979efc70c0c1aea20c97399ce7a9e2e4bd9c0d115904da945eadc2e7c" },
+      { "path": "references/rhythm-diagnosis.md", "sha256": "cdee1cf3cfd84793b91ce3dd1336690d7848444ad3e2d3143e25eda0f5b81fe9" },
+      { "path": "references/scene-and-action-diagnosis.md", "sha256": "d20613ce322b2fc5aa5fff9954c19a5ac92584a4c950a5d134003f346e03c7e8" },
+      { "path": "references/scene-information-and-space.md", "sha256": "1d861d20f4bde92afc4a973a28db1e8bdcc203c4aca3ad5c619771b68f7e69bb" },
+      { "path": "references/scene-units.md", "sha256": "ab11796c07e148e29041614b9e26724b889029be77e32cae6a722f1014d60bdf" },
+      { "path": "references/scope-and-conflicts.md", "sha256": "e0b365c00eb406321d3a2f5626bc1e7b03b174224db2bf03b64a60d8f4bf8cf6" },
+      { "path": "references/setup-and-payoff.md", "sha256": "5bcea17865d183ae3dd8db98bb96374dea7c96d7ee7ab619c0016f8c035a8247" },
+      { "path": "references/suspense-and-reveal.md", "sha256": "4bcea05cc0146f8079f334a89d10743f5d438b829e369a1000fff1b8f19ca3f4" },
+      { "path": "templates/action-checklist.md", "sha256": "4c490750d747478a5ed3bf2f3325f78c4399eb1e1f5df32acccf02fe5fa120de" },
+      { "path": "templates/scene-workbook.md", "sha256": "b60aab2a7d28e7b3ea51a475015d0f11732267ee510326d3888a8038fd852e59" }
+    ]
+  },
+  "method": {
+    "verification_authority": "static：只读、检索、diff、文本统计与哈希；未跑测试／lint／构建／宿主加载，未执行任何成品脚本，未写 output/ 与正式账本",
+    "files_read_in_full": "本包 17 个文件全部逐行读完（SKILL.md 299 行、10 个 references、2 个 templates、3 个 examples、agents/openai.yaml 8 行）",
+    "anchor_recheck": "brief 五组加 gaps 的全部锚点 676 条逐条重取：文件存在＋行号在范围内＋该行非空，实测 676/676 命中，0 条越界或空行；brief 正文散文内嵌的 path:行 令牌另测 614 条，除 12 条为 peer 包路径（已按对端包根复核）外全部命中本包真实行",
+    "card_census": "本包唯一编号 51 个（SC 14、SU 19、AF 18）；卡体 48 张（SC 14＋SU 19＋AF 15）；AF-01／AF-09／AF-15 无卡体，仅在 references/action-and-fight.md:5 作并入说明",
+    "table_census": "全包 Markdown 表格 39 张，逐张核首行后紧跟分隔行且含数据行：缺陷 0 处",
+    "peer_reads": "只读取被 interfaces 引用的对端行（13 个对端文件的指定行及其上下文），未整读任何对端包"
+  },
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "pass",
+      "evidence_ref": [
+        { "path": "SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1" },
+        { "path": "references/intensity-and-rhythm.md", "sha256": "f258bfd979efc70c0c1aea20c97399ce7a9e2e4bd9c0d115904da945eadc2e7c" },
+        { "path": "references/rhythm-diagnosis.md", "sha256": "cdee1cf3cfd84793b91ce3dd1336690d7848444ad3e2d3143e25eda0f5b81fe9" },
+        { "path": "references/action-and-fight.md", "sha256": "b65b93881b56c1958bb74a70d7d38addf0f056d2b1002a3f712fb975f3125b10" },
+        { "path": "templates/action-checklist.md", "sha256": "4c490750d747478a5ed3bf2f3325f78c4399eb1e1f5df32acccf02fe5fa120de" },
+        { "path": "examples/scene-cases.md", "sha256": "9b5066b2d42b2d2d0ba704989a78b8bf1faacf982161e5ad37afc9a64fed732f" }
+      ],
+      "note": "15 条 capability 逐条核过：每条都落在真实存在且本席逐行读过的 reference／template 文件上（anchors 100% 命中），都有可区分分支（用于／用在、例外、判断边界、什么时候不改）与反证或排除条件，都有修后复验路径（卡级 检查／回看 行，或 templates/action-checklist.md:32-36 C 组回看、references/rhythm-diagnosis.md:40-48 三项回归、:83-88 负面回归）。没有「只有名字没有分支」的能力。三类分法分对：实测全包 17 个文件只有 .md×16 与 .yaml×1（agents/openai.yaml 是入口描述），无 scripts／schemas 目录、无运行回执，automation 为空；SC-C13／SC-C14 取 external、其余 13 条取 workflow。两处保留：SC-C13 的核实动作未写明执行者（见该 ID 行为 not_proven），AF 族 15 张卡与 SC 族 12 张卡卡体没有自带收口句、靠全局表兜（findings/F-03）。"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "fail",
+      "evidence_ref": [
+        { "path": "SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1" },
+        { "path": "references/rhythm-diagnosis.md", "sha256": "cdee1cf3cfd84793b91ce3dd1336690d7848444ad3e2d3143e25eda0f5b81fe9" },
+        { "path": "references/intensity-and-rhythm.md", "sha256": "f258bfd979efc70c0c1aea20c97399ce7a9e2e4bd9c0d115904da945eadc2e7c" },
+        { "path": "references/chapter-ends-and-endings.md", "sha256": "b002e80f24fdc71727529dd2aeb85422839791aebc8acab49922a366977286aa" },
+        { "path": "references/scene-information-and-space.md", "sha256": "1d861d20f4bde92afc4a973a28db1e8bdcc203c4aca3ad5c619771b68f7e69bb" },
+        { "path": "references/setup-and-payoff.md", "sha256": "5bcea17865d183ae3dd8db98bb96374dea7c96d7ee7ab619c0016f8c035a8247" }
+      ],
+      "note": "三组独立取证的自洽缺陷，任一组都足以判 fail。①交付状态四词：SKILL.md:255-258 与 references/rhythm-diagnosis.md:76-79 四行判据逐字相同（本席按 strip 后逐行比较，4/4 全等），是同一规则的两个完整承载处；表外说明已分叉——SKILL.md:260 多出台账「状态」列与「未知」合法值条款，rhythm 侧 :81 只有禁令句，且 rhythm §6「状态词」小节（:70-:81）全文无「§9」或「SKILL.md」回指（本席对该 12 行扫描命中 False）；只读 rhythm 单文件的消费者拿不到「四词也用于台账列」。②「单元」在三处不同值且同文件自相矛盾：SKILL.md:177 短篇＝全篇、长篇＝章或场景（无卷）；references/intensity-and-rhythm.md:28 单位＝场、章、卷或整篇（含卷）；同文件 :3 又写「卷级安排见 story-architecture-and-longform-planning」；references/chapter-ends-and-endings.md:9 单元＝场、章、幕。同一条 SU-02 的跨章峰值比较（第 6 章 vs 第 10 章，examples/scene-cases.md:67 用例 5）按 SKILL.md:177 越出单元、按 :28 在单元内，包内无一条裁决句。③SC-07 长谈三问缺「题材／信息交代」一支：references/scene-information-and-space.md:28-30 三问只问改变设计／语体相称／服务情感，而 SKILL.md:114 与 references/scene-and-action-diagnosis.md:41 把「对白像背景手册」的症状与修法都判给 SC-07；承担该判断的原文落在 :37 的「怎么做」第 3 步，不在判据里。另有④入口层声明与卡体不符：SKILL.md:224 声称 setup-and-payoff.md 每条有「用于／不用／反例／检查／出口」，实测该文件这六个字段各只有 3 行（SU-01／SU-06／SU-08），SU-07 卡体（:47-:57）六项全缺；⑤「已发表／已锁定」全包没有要求先核对外部事实的规则句（见 semantics/S-03）。复验方式见 findings 与 unproven。"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "not_proven",
+      "evidence_ref": [
+        { "path": "SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1" },
+        { "path": "references/scene-units.md", "sha256": "ab11796c07e148e29041614b9e26724b889029be77e32cae6a722f1014d60bdf" },
+        { "path": "references/chapter-ends-and-endings.md", "sha256": "b002e80f24fdc71727529dd2aeb85422839791aebc8acab49922a366977286aa" },
+        { "path": "story-architecture-and-longform-planning/SKILL.md", "sha256": "1f87001f760054a1210e3be1d64c82e0266f8892314d43ba37099def32a84d26" },
+        { "path": "story-architecture-and-longform-planning/references/serial-chapters-and-installments.md", "sha256": "4423b122fff71505293d75f14f52bfc9c057971a14b65bd629e9690de8498ead" },
+        { "path": "character-and-narrative-control/SKILL.md", "sha256": "624bc448aa406c2396347d789230cc4c0d13e0f480ab9521031526480cd9fcf8" },
+        { "path": "character-and-narrative-control/references/information-control.md", "sha256": "731bec255898834b26496ed36e32c0ce233910601e8f9442a48ebb194402956c" },
+        { "path": "preset-card-generation/SKILL.md", "sha256": "a2db7bd86ae4c699e76f632200f32f7f1255ba76412cdd295cb1c09f8370b2d9" },
+        { "path": "line-editing-and-proofreading/SKILL.md", "sha256": "b336406b2759e9c77fbe46148ee86502cd9adf575178a44c53ea05f5ad53b436" },
+        { "path": "line-editing-and-proofreading/examples/worked-example.md", "sha256": "932b4488ce2bd06d6d78cc7c864b28ad30256774270879b1d05a1a0e96015c65" },
+        { "path": "genre-fiction-craft/SKILL.md", "sha256": "a97b86f2e56a6d491ecbd7935c5ed4ee36b7e7ec230cb867bec85978fb1e8ca5" },
+        { "path": "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md", "sha256": "d630a60e9e0d0169bb19c0aac2421bb6edece732b789da8beea00424a30caaaa" },
+        { "path": "cross-media-drama-adaptation/SKILL.md", "sha256": "9a3ccfe249d0975c33646bf1c99ad98a1b97ce576e780d60ba29f60bbcac64b4" },
+        { "path": "fiction-planning-and-diagnosis/SKILL.md", "sha256": "993ccde495c359e977db8cd6702c029d0a2b94045f98dab015b851592f6a8826" }
+      ],
+      "peer_tree_sha256": [
+        { "skill": "story-architecture-and-longform-planning", "tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07", "files": 21 },
+        { "skill": "character-and-narrative-control", "tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa", "files": 17 },
+        { "skill": "preset-card-generation", "tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94", "files": 11 },
+        { "skill": "line-editing-and-proofreading", "tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1", "files": 10 },
+        { "skill": "genre-fiction-craft", "tree_sha256": "bc6e91756cb13bc2c6777c3ac0c4973b81ad036e48d3ba4e64d49b491eb444ce", "files": 101 },
+        { "skill": "cross-media-drama-adaptation", "tree_sha256": "973bda3056356a83ed7e3407381989fc9ff3164d3d9a1e43cb095adce1bde624", "files": 13 },
+        { "skill": "fiction-planning-and-diagnosis", "tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8", "files": 27 }
+      ],
+      "note": "7 条接口的两侧实际引用行本席逐条重取并读过原文：本包侧与对端侧行号全部在范围内、内容确与 provider／consumer 陈述对应（例：SQ-IF01 对端 serial-chapters-and-installments.md:5 给出同一分界的反向表述；SQ-IF03 对端 preset-card-generation/SKILL.md:42 为接收行；SQ-IF07 对端 fiction-planning-and-diagnosis/SKILL.md:145、:155 按 SU-17／SU-15 点名单包）。缺什么：①字段口径——交接只到规则编号与一句转出方向，两包都没有字段名、类型、版本或输出落点；②缺字段分支——转出后回传什么、由谁确认已接，全包无原文（/usr/bin/grep -rn \"回执\\|回传\" 本包 0 命中）；③仲裁者——SKILL.md:298 只写「暂停该处并转交确认」，未指定裁决者；跨包冲突时无优先级句（/usr/bin/grep -rn \"裁决者\\|仲裁\\|优先级\" 本包命中仅 examples/scene-cases.md:61 与 references/suspense-and-reveal.md:28，均非接口仲裁）。故 7 条一律判 not_proven，不判 pass，也不判 fail（两侧引用行确实存在，缺的是包内未写的收口）。附带口径修正见 findings/F-02 与 findings/F-07。"
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "pass",
+      "evidence_ref": [
+        { "path": "references/scope-and-conflicts.md", "sha256": "e0b365c00eb406321d3a2f5626bc1e7b03b174224db2bf03b64a60d8f4bf8cf6" },
+        { "path": "references/chapter-ends-and-endings.md", "sha256": "b002e80f24fdc71727529dd2aeb85422839791aebc8acab49922a366977286aa" },
+        { "path": "templates/scene-workbook.md", "sha256": "b60aab2a7d28e7b3ea51a475015d0f11732267ee510326d3888a8038fd852e59" },
+        { "path": "examples/refrain-case.md", "sha256": "89ad3cef34d7741e591f300ee0d2c2e47ec41ec2e3e6acf45701cf2dc1e31506" },
+        { "path": "examples/scene-cases.md", "sha256": "9b5066b2d42b2d2d0ba704989a78b8bf1faacf982161e5ad37afc9a64fed732f" }
+      ],
+      "note": "18 条 applicability 全部有 scope（text）＋limitation（limit）＋ref（anchors 实测全部命中真实行），10 条 cases 全部有 scenario＋expected＋可定位承载文本（T1–T4 的 brief 条目没有 anchors 字段，本席自行定位到 SKILL.md:66-72、SKILL.md:267、examples/scene-cases.md:67-132、references/action-and-fight.md:121-152，见 sections.cases 的 refs）。反例一律自创：全包 19 行「反例」标记逐行带（自创）／（编的）或写在自创声明下；书名号「《」实测 0 命中，「来源是／出自／某书」0 命中；SKILL.md:59、examples/scene-cases.md:3、examples/refrain-case.md:3、四个 SU reference 文件的 :5 都声明例子自创不混同稿件。数字没有写成测量：1–5 的相对自评限定句实测在 SKILL.md:57／references/intensity-and-rhythm.md:7、:15、:32／references/suspense-and-reveal.md:58／references/rhythm-diagnosis.md:30 逐处出现；操作起点数字（练习值、两千到八千字、三到五句）在 templates/scene-workbook.md:51-55 自限定为「不是统计阈值、行业标准或质量门槛」；examples/refrain-case.md:27、:43 与 :55-61 把自评与百分比明确写成计划与「还不能声称的」。保留项：SQ-A03（诗）在本包只有 references/scope-and-conflicts.md:53 一行，无专门限制句也无反例，该 ID 判 not_proven；SKILL.md:180／scope:56 与 refrain-case:31 对中文语音的处置是限制而非反例。"
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "not_proven",
+      "evidence_ref": [
+        { "path": "SKILL.md", "sha256": "6aa24f46b10194c2cec1eac8fa80143bdbc3ac1077070d057108bf9c2ca296c1" }
+      ],
+      "note": "无真实模型任务回执，宿主加载未测。"
+    }
+  ],
+  "sections": {
+    "requirements": [
+      { "id": "SQ-R01", "status": "pass", "refs": [{ "path": "SKILL.md:142" }, { "path": "references/intensity-and-rhythm.md:21" }, { "path": "references/scene-units.md:67" }, { "path": "references/action-and-fight.md:175" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R02", "status": "pass", "refs": [{ "path": "SKILL.md:59" }, { "path": "references/setup-and-payoff.md:5" }, { "path": "examples/scene-cases.md:3" }, { "path": "examples/refrain-case.md:3" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-R03", "status": "pass", "refs": [{ "path": "SKILL.md:262" }, { "path": "SKILL.md:274" }, { "path": "references/scene-and-action-diagnosis.md:143" }, { "path": "references/rhythm-diagnosis.md:90" }], "record_ref": "findings/F-03" },
+      { "id": "SQ-R04", "status": "pass", "refs": [{ "path": "SKILL.md:29" }, { "path": "SKILL.md:267" }, { "path": "references/rhythm-diagnosis.md:8" }, { "path": "references/scene-and-action-diagnosis.md:44" }, { "path": "examples/scene-cases.md:41" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R05", "status": "pass", "refs": [{ "path": "SKILL.md:268" }, { "path": "SKILL.md:269" }, { "path": "references/intensity-and-rhythm.md:24" }, { "path": "examples/scene-cases.md:110" }], "record_ref": "findings/F-04" },
+      { "id": "SQ-R06", "status": "pass", "refs": [{ "path": "SKILL.md:274" }, { "path": "references/rhythm-diagnosis.md:99" }, { "path": "examples/scene-cases.md:116" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R07", "status": "pass", "refs": [{ "path": "references/scene-and-action-diagnosis.md:153" }, { "path": "references/scene-and-action-diagnosis.md:156" }, { "path": "SKILL.md:105" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R08", "status": "pass", "refs": [{ "path": "templates/action-checklist.md:38" }, { "path": "references/scene-and-action-diagnosis.md:136" }, { "path": "SKILL.md:269" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R09", "status": "pass", "refs": [{ "path": "SKILL.md:142" }, { "path": "references/scene-units.md:18" }, { "path": "references/scope-and-conflicts.md:37" }, { "path": "references/scope-and-conflicts.md:43" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R10", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:47" }, { "path": "references/scope-and-conflicts.md:53" }, { "path": "references/scope-and-conflicts.md:56" }], "record_ref": "sections/applicability/SQ-A03" },
+      { "id": "SQ-R11", "status": "pass", "refs": [{ "path": "SKILL.md:48" }, { "path": "references/scope-and-conflicts.md:62" }, { "path": "references/scope-and-conflicts.md:66" }, { "path": "references/action-and-fight.md:108" }], "record_ref": "sections/capabilities/SC-C13" },
+      { "id": "SQ-R12", "status": "pass", "refs": [{ "path": "SKILL.md:57" }, { "path": "templates/scene-workbook.md:51" }, { "path": "templates/scene-workbook.md:55" }, { "path": "references/rhythm-diagnosis.md:30" }], "record_ref": "findings/F-06" },
+      { "id": "SQ-R13", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:79" }, { "path": "references/scope-and-conflicts.md:82" }, { "path": "references/scope-and-conflicts.md:83" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-R14", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:39" }, { "path": "references/scope-and-conflicts.md:85" }, { "path": "references/scope-and-conflicts.md:95" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-R15", "status": "pass", "refs": [{ "path": "templates/scene-workbook.md:59" }, { "path": "templates/scene-workbook.md:63" }, { "path": "templates/scene-workbook.md:66" }, { "path": "examples/scene-cases.md:94" }], "record_ref": "findings/F-08" },
+      { "id": "SQ-R16", "status": "pass", "refs": [{ "path": "templates/scene-workbook.md:67" }, { "path": "SKILL.md:235" }, { "path": "examples/scene-cases.md:102" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R17", "status": "pass", "refs": [{ "path": "templates/scene-workbook.md:68" }, { "path": "templates/scene-workbook.md:8" }, { "path": "templates/action-checklist.md:8" }], "record_ref": "method/table_census" },
+      { "id": "SQ-R18", "status": "not_proven", "refs": [{ "path": "templates/action-checklist.md:10" }, { "path": "templates/action-checklist.md:24" }, { "path": "templates/scene-workbook.md:16" }, { "path": "templates/scene-workbook.md:63" }], "record_ref": "unproven/U-03" },
+      { "id": "SQ-R19", "status": "pass", "refs": [{ "path": "templates/scene-workbook.md:5" }, { "path": "templates/scene-workbook.md:21" }, { "path": "templates/scene-workbook.md:41" }, { "path": "SKILL.md:52" }], "record_ref": "sections/capabilities/SC-C12" },
+      { "id": "SQ-R20", "status": "pass", "refs": [{ "path": "templates/action-checklist.md:5" }, { "path": "templates/action-checklist.md:19" }, { "path": "templates/action-checklist.md:30" }, { "path": "SKILL.md:90" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R21", "status": "pass", "refs": [{ "path": "references/scene-units.md:7" }, { "path": "references/scene-units.md:104" }, { "path": "references/scene-information-and-space.md:9" }, { "path": "references/scene-and-action-diagnosis.md:143" }], "record_ref": "findings/F-03" },
+      { "id": "SQ-R22", "status": "pass", "refs": [{ "path": "references/setup-and-payoff.md:7" }, { "path": "references/suspense-and-reveal.md:7" }, { "path": "references/intensity-and-rhythm.md:9" }, { "path": "references/chapter-ends-and-endings.md:7" }, { "path": "references/rhythm-diagnosis.md:24" }], "record_ref": "findings/F-01" },
+      { "id": "SQ-R23", "status": "pass", "refs": [{ "path": "references/action-and-fight.md:5" }, { "path": "references/action-and-fight.md:189" }, { "path": "SKILL.md:192" }], "record_ref": "method/card_census" },
+      { "id": "SQ-R24", "status": "pass", "refs": [{ "path": "references/intensity-and-rhythm.md:16" }, { "path": "references/intensity-and-rhythm.md:17" }, { "path": "references/intensity-and-rhythm.md:24" }, { "path": "SKILL.md:176" }], "record_ref": "unproven/U-02" },
+      { "id": "SQ-R25", "status": "pass", "refs": [{ "path": "SKILL.md:249" }, { "path": "SKILL.md:260" }, { "path": "templates/scene-workbook.md:63" }, { "path": "templates/scene-workbook.md:66" }], "record_ref": "semantics/S-01" },
+      { "id": "SQ-R26", "status": "pass", "refs": [{ "path": "SKILL.md:22" }, { "path": "SKILL.md:31" }, { "path": "SKILL.md:32" }, { "path": "examples/scene-cases.md:81" }], "record_ref": "sections/capabilities/SC-C15" },
+      { "id": "SQ-R27", "status": "pass", "refs": [{ "path": "SKILL.md:220" }, { "path": "SKILL.md:229" }, { "path": "SKILL.md:236" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R28", "status": "pass", "refs": [{ "path": "SKILL.md:27" }, { "path": "SKILL.md:293" }, { "path": "SKILL.md:294" }, { "path": "preset-card-generation/SKILL.md:42" }], "record_ref": "sections/interfaces/SQ-IF03" },
+      { "id": "SQ-R29", "status": "pass", "refs": [{ "path": "SKILL.md:46" }, { "path": "SKILL.md:187" }, { "path": "references/scene-units.md:90" }, { "path": "references/chapter-ends-and-endings.md:50" }], "record_ref": "sections/interfaces/SQ-IF01" },
+      { "id": "SQ-R30", "status": "fail", "refs": [{ "path": "SKILL.md:46" }, { "path": "SKILL.md:298" }, { "path": "references/scene-units.md:90" }, { "path": "references/rhythm-diagnosis.md:58" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-R31", "status": "pass", "refs": [{ "path": "SKILL.md:108" }, { "path": "SKILL.md:112" }, { "path": "SKILL.md:138" }, { "path": "references/scene-and-action-diagnosis.md:54" }], "record_ref": "findings/F-02" },
+      { "id": "SQ-R32", "status": "pass", "refs": [{ "path": "SKILL.md:30" }, { "path": "SKILL.md:54" }, { "path": "references/scene-and-action-diagnosis.md:31" }, { "path": "references/rhythm-diagnosis.md:38" }], "record_ref": "sections/applicability/SQ-A01" },
+      { "id": "SQ-R33", "status": "pass", "refs": [{ "path": "SKILL.md:95" }, { "path": "references/rhythm-diagnosis.md:22" }, { "path": "references/scene-and-action-diagnosis.md:164" }, { "path": "templates/scene-workbook.md:43" }], "record_ref": "sections/capabilities/SC-C09" },
+      { "id": "SQ-R34", "status": "pass", "refs": [{ "path": "references/rhythm-diagnosis.md:50" }, { "path": "references/rhythm-diagnosis.md:64" }, { "path": "references/rhythm-diagnosis.md:68" }, { "path": "references/rhythm-diagnosis.md:83" }], "record_ref": "sections/capabilities/SC-C10" },
+      { "id": "SQ-R35", "status": "pass", "refs": [{ "path": "examples/scene-cases.md:73" }, { "path": "examples/scene-cases.md:92" }, { "path": "examples/scene-cases.md:108" }, { "path": "examples/scene-cases.md:116" }, { "path": "examples/scene-cases.md:127" }], "record_ref": "gq/GQ1" },
+      { "id": "SQ-R36", "status": "pass", "refs": [{ "path": "agents/openai.yaml:2" }, { "path": "agents/openai.yaml:8" }], "record_ref": "findings/F-09" },
+      { "id": "SQ-R37", "status": "pass", "refs": [{ "path": "SKILL.md:101" }, { "path": "SKILL.md:55" }, { "path": "templates/scene-workbook.md:3" }], "record_ref": "sections/capabilities/SC-C11" },
+      { "id": "SQ-R38", "status": "pass", "refs": [{ "path": "SKILL.md:58" }, { "path": "SKILL.md:246" }, { "path": "references/action-and-fight.md:152" }, { "path": "examples/refrain-case.md:55" }], "record_ref": "sections/capabilities/SC-C14" },
+      { "id": "SQ-R39", "status": "fail", "refs": [{ "path": "references/scene-and-action-diagnosis.md:147" }, { "path": "SKILL.md:264" }, { "path": "SKILL.md:215" }], "record_ref": "gq/GQ1" }
+    ],
+    "capabilities": [
+      { "id": "SC-C01", "status": "pass", "refs": [{ "path": "SKILL.md:64" }, { "path": "references/scene-units.md:7" }, { "path": "references/scene-units.md:67" }, { "path": "references/scene-units.md:98" }, { "path": "templates/scene-workbook.md:5" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C02", "status": "pass", "refs": [{ "path": "SKILL.md:156" }, { "path": "references/scene-information-and-space.md:5" }, { "path": "references/scene-information-and-space.md:44" }, { "path": "templates/scene-workbook.md:21" }], "record_ref": "semantics/S-04" },
+      { "id": "SC-C03", "status": "pass", "refs": [{ "path": "SKILL.md:162" }, { "path": "references/setup-and-payoff.md:22" }, { "path": "references/setup-and-payoff.md:42" }, { "path": "references/setup-and-payoff.md:73" }], "record_ref": "findings/F-01" },
+      { "id": "SC-C04", "status": "pass", "refs": [{ "path": "SKILL.md:169" }, { "path": "references/suspense-and-reveal.md:17" }, { "path": "references/suspense-and-reveal.md:46" }, { "path": "references/suspense-and-reveal.md:77" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C05", "status": "pass", "refs": [{ "path": "SKILL.md:176" }, { "path": "references/intensity-and-rhythm.md:7" }, { "path": "references/intensity-and-rhythm.md:21" }, { "path": "references/intensity-and-rhythm.md:100" }], "record_ref": "semantics/S-02" },
+      { "id": "SC-C06", "status": "pass", "refs": [{ "path": "references/intensity-and-rhythm.md:16" }, { "path": "references/intensity-and-rhythm.md:17" }, { "path": "references/intensity-and-rhythm.md:21" }, { "path": "examples/scene-cases.md:110" }], "record_ref": "findings/F-04" },
+      { "id": "SC-C07", "status": "pass", "refs": [{ "path": "SKILL.md:185" }, { "path": "references/chapter-ends-and-endings.md:26" }, { "path": "references/chapter-ends-and-endings.md:69" }, { "path": "references/chapter-ends-and-endings.md:85" }], "record_ref": "sections/interfaces/SQ-IF01" },
+      { "id": "SC-C08", "status": "pass", "refs": [{ "path": "references/action-and-fight.md:3" }, { "path": "references/action-and-fight.md:5" }, { "path": "references/action-and-fight.md:175" }, { "path": "templates/action-checklist.md:32" }], "record_ref": "findings/F-02" },
+      { "id": "SC-C09", "status": "pass", "refs": [{ "path": "references/scene-and-action-diagnosis.md:39" }, { "path": "references/scene-and-action-diagnosis.md:44" }, { "path": "references/scene-and-action-diagnosis.md:54" }, { "path": "references/scene-and-action-diagnosis.md:164" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C10", "status": "pass", "refs": [{ "path": "references/rhythm-diagnosis.md:50" }, { "path": "references/rhythm-diagnosis.md:56" }, { "path": "references/rhythm-diagnosis.md:68" }, { "path": "references/rhythm-diagnosis.md:87" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C11", "status": "pass", "refs": [{ "path": "SKILL.md:249" }, { "path": "SKILL.md:260" }, { "path": "templates/scene-workbook.md:63" }, { "path": "examples/scene-cases.md:118" }], "record_ref": "semantics/S-01" },
+      { "id": "SC-C12", "status": "pass", "refs": [{ "path": "templates/scene-workbook.md:5" }, { "path": "templates/scene-workbook.md:57" }, { "path": "templates/scene-workbook.md:63" }, { "path": "templates/action-checklist.md:5" }], "record_ref": "findings/F-08" },
+      { "id": "SC-C13", "status": "not_proven", "refs": [{ "path": "SKILL.md:48" }, { "path": "references/scope-and-conflicts.md:62" }, { "path": "references/scope-and-conflicts.md:66" }, { "path": "references/scene-and-action-diagnosis.md:116" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C14", "status": "pass", "refs": [{ "path": "SKILL.md:58" }, { "path": "SKILL.md:246" }, { "path": "references/setup-and-payoff.md:36" }, { "path": "examples/refrain-case.md:55" }], "record_ref": "gq/GQ1" },
+      { "id": "SC-C15", "status": "pass", "refs": [{ "path": "SKILL.md:22" }, { "path": "SKILL.md:291" }, { "path": "SKILL.md:296" }, { "path": "agents/openai.yaml:8" }], "record_ref": "sections/interfaces/SQ-IF03" }
+    ],
+    "interfaces": [
+      { "id": "SQ-IF01", "status": "not_proven", "peer_skill": "story-architecture-and-longform-planning", "peer_tree_sha256": "ce69b3b217beb6a1f88104a78c958645fd7283015afb8655142f0977cb29fd07", "refs": [{ "path": "SKILL.md:46" }, { "path": "references/scene-units.md:90" }, { "path": "references/chapter-ends-and-endings.md:33" }, { "path": "story-architecture-and-longform-planning/references/serial-chapters-and-installments.md:5" }, { "path": "story-architecture-and-longform-planning/SKILL.md:61" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-IF02", "status": "not_proven", "peer_skill": "character-and-narrative-control", "peer_tree_sha256": "f32f4dca6b350f1b425f7a7426168d63b4143c6f9ff62997fc0f9871651f09aa", "refs": [{ "path": "SKILL.md:24" }, { "path": "references/scene-information-and-space.md:5" }, { "path": "character-and-narrative-control/SKILL.md:57" }, { "path": "character-and-narrative-control/references/information-control.md:38" }], "record_ref": "semantics/S-05" },
+      { "id": "SQ-IF03", "status": "not_proven", "peer_skill": "preset-card-generation", "peer_tree_sha256": "be89d163835377756f5f7e0046a91d629b3b3a190c6ebfecbd99825756c90c94", "refs": [{ "path": "SKILL.md:27" }, { "path": "SKILL.md:293" }, { "path": "SKILL.md:294" }, { "path": "preset-card-generation/SKILL.md:42" }, { "path": "preset-card-generation/SKILL.md:90" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-IF04", "status": "not_proven", "peer_skill": "line-editing-and-proofreading", "peer_tree_sha256": "63d89e5fe5b64d55d8347bac4bbbedce8250670f7b27abd8c29e38306a4b56d1", "refs": [{ "path": "SKILL.md:26" }, { "path": "SKILL.md:284" }, { "path": "references/rhythm-diagnosis.md:58" }, { "path": "line-editing-and-proofreading/SKILL.md:38" }, { "path": "line-editing-and-proofreading/examples/worked-example.md:90" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-IF05", "status": "not_proven", "peer_skill": "genre-fiction-craft", "peer_tree_sha256": "bc6e91756cb13bc2c6777c3ac0c4973b81ad036e48d3ba4e64d49b491eb444ce", "refs": [{ "path": "SKILL.md:42" }, { "path": "SKILL.md:289" }, { "path": "references/scope-and-conflicts.md:55" }, { "path": "genre-fiction-craft/SKILL.md:26" }, { "path": "genre-fiction-craft/references/04-wuxia-xianxia-fantasy/cultivation-and-jianghu.md:93" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-IF06", "status": "not_proven", "peer_skill": "cross-media-drama-adaptation", "peer_tree_sha256": "973bda3056356a83ed7e3407381989fc9ff3164d3d9a1e43cb095adce1bde624", "refs": [{ "path": "SKILL.md:31" }, { "path": "SKILL.md:32" }, { "path": "references/scene-units.md:51" }, { "path": "references/scope-and-conflicts.md:13" }, { "path": "cross-media-drama-adaptation/SKILL.md:36" }], "record_ref": "gq/GQ3" },
+      { "id": "SQ-IF07", "status": "not_proven", "peer_skill": "fiction-planning-and-diagnosis", "peer_tree_sha256": "2d07177a1312206829d3d36d54f5442806bb0c0cc7bdea2f0b0813cdf81477b8", "refs": [{ "path": "SKILL.md:25" }, { "path": "SKILL.md:40" }, { "path": "fiction-planning-and-diagnosis/SKILL.md:145" }, { "path": "fiction-planning-and-diagnosis/SKILL.md:155" }], "record_ref": "findings/F-07" }
+    ],
+    "applicability": [
+      { "id": "SQ-A01", "status": "pass", "refs": [{ "path": "SKILL.md:30" }, { "path": "SKILL.md:215" }, { "path": "references/scene-and-action-diagnosis.md:31" }, { "path": "references/scene-and-action-diagnosis.md:148" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A02", "status": "pass", "refs": [{ "path": "references/chapter-ends-and-endings.md:19" }, { "path": "references/chapter-ends-and-endings.md:23" }, { "path": "references/chapter-ends-and-endings.md:24" }, { "path": "SKILL.md:185" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A03", "status": "not_proven", "refs": [{ "path": "references/scope-and-conflicts.md:47" }, { "path": "references/scope-and-conflicts.md:53" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A04", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:54" }, { "path": "references/chapter-ends-and-endings.md:76" }, { "path": "references/chapter-ends-and-endings.md:84" }, { "path": "SKILL.md:188" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A05", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:55" }, { "path": "references/chapter-ends-and-endings.md:80" }, { "path": "references/setup-and-payoff.md:70" }], "record_ref": "sections/interfaces/SQ-IF05" },
+      { "id": "SQ-A06", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:56" }, { "path": "SKILL.md:180" }, { "path": "examples/refrain-case.md:31" }, { "path": "templates/scene-workbook.md:54" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A07", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:72" }, { "path": "references/scope-and-conflicts.md:73" }, { "path": "references/action-and-fight.md:162" }, { "path": "references/action-and-fight.md:164" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A08", "status": "pass", "refs": [{ "path": "SKILL.md:48" }, { "path": "references/scope-and-conflicts.md:63" }, { "path": "references/scope-and-conflicts.md:66" }, { "path": "references/scene-and-action-diagnosis.md:116" }], "record_ref": "sections/capabilities/SC-C13" },
+      { "id": "SQ-A09", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:35" }, { "path": "references/scope-and-conflicts.md:37" }, { "path": "references/scene-units.md:18" }, { "path": "references/intensity-and-rhythm.md:20" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A10", "status": "pass", "refs": [{ "path": "references/intensity-and-rhythm.md:20" }, { "path": "references/intensity-and-rhythm.md:36" }, { "path": "references/intensity-and-rhythm.md:3" }, { "path": "SKILL.md:177" }], "record_ref": "semantics/S-02" },
+      { "id": "SQ-A11", "status": "pass", "refs": [{ "path": "references/scene-units.md:40" }, { "path": "references/scene-units.md:47" }, { "path": "references/scene-units.md:51" }, { "path": "references/scope-and-conflicts.md:13" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A12", "status": "pass", "refs": [{ "path": "references/setup-and-payoff.md:59" }, { "path": "references/setup-and-payoff.md:71" }, { "path": "references/setup-and-payoff.md:74" }, { "path": "examples/refrain-case.md:37" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A13", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:39" }, { "path": "references/scope-and-conflicts.md:41" }, { "path": "templates/scene-workbook.md:51" }, { "path": "templates/scene-workbook.md:55" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A14", "status": "pass", "refs": [{ "path": "references/suspense-and-reveal.md:16" }, { "path": "references/chapter-ends-and-endings.md:25" }, { "path": "references/chapter-ends-and-endings.md:27" }, { "path": "references/intensity-and-rhythm.md:40" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A15", "status": "pass", "refs": [{ "path": "references/suspense-and-reveal.md:65" }, { "path": "references/suspense-and-reveal.md:73" }, { "path": "references/suspense-and-reveal.md:77" }], "record_ref": "gq/GQ4" },
+      { "id": "SQ-A16", "status": "pass", "refs": [{ "path": "SKILL.md:31" }, { "path": "SKILL.md:32" }], "record_ref": "sections/interfaces/SQ-IF06" },
+      { "id": "SQ-A17", "status": "pass", "refs": [{ "path": "SKILL.md:29" }, { "path": "SKILL.md:266" }, { "path": "references/rhythm-diagnosis.md:8" }, { "path": "examples/scene-cases.md:35" }], "record_ref": "semantics/S-04" },
+      { "id": "SQ-A18", "status": "pass", "refs": [{ "path": "references/scope-and-conflicts.md:43" }, { "path": "references/scene-units.md:82" }, { "path": "references/scene-units.md:117" }, { "path": "examples/scene-cases.md:52" }], "record_ref": "gq/GQ4" }
+    ],
+    "cases": [
+      { "id": "SC-T1", "status": "pass", "refs": [{ "path": "SKILL.md:66" }, { "path": "SKILL.md:71" }, { "path": "references/scene-units.md:7" }, { "path": "references/scene-information-and-space.md:9" }, { "path": "examples/scene-cases.md:9" }], "record_ref": "unproven/U-07" },
+      { "id": "SC-T2", "status": "pass", "refs": [{ "path": "SKILL.md:267" }, { "path": "references/rhythm-diagnosis.md:8" }, { "path": "references/scene-and-action-diagnosis.md:44" }, { "path": "examples/scene-cases.md:35" }], "record_ref": "unproven/U-07" },
+      { "id": "SC-T3", "status": "pass", "refs": [{ "path": "examples/scene-cases.md:67" }, { "path": "examples/scene-cases.md:110" }, { "path": "references/intensity-and-rhythm.md:24" }, { "path": "SKILL.md:268" }], "record_ref": "findings/F-04" },
+      { "id": "SC-T4", "status": "pass", "refs": [{ "path": "references/action-and-fight.md:121" }, { "path": "references/action-and-fight.md:131" }, { "path": "references/scene-information-and-space.md:58" }, { "path": "references/scene-and-action-diagnosis.md:103" }], "record_ref": "unproven/U-07" },
+      { "id": "SC-T5", "status": "pass", "refs": [{ "path": "SKILL.md:84" }, { "path": "SKILL.md:89" }, { "path": "references/action-and-fight.md:73" }, { "path": "references/action-and-fight.md:23" }], "record_ref": "gq/GQ4" },
+      { "id": "SC-T6", "status": "pass", "refs": [{ "path": "examples/suspense-and-hooks.md:5" }, { "path": "references/setup-and-payoff.md:9" }, { "path": "references/suspense-and-reveal.md:22" }, { "path": "SKILL.md:59" }], "record_ref": "gq/GQ4" },
+      { "id": "SC-T7", "status": "pass", "refs": [{ "path": "references/intensity-and-rhythm.md:24" }, { "path": "templates/scene-workbook.md:57" }, { "path": "SKILL.md:29" }, { "path": "SKILL.md:105" }], "record_ref": "gq/GQ4" },
+      { "id": "SC-T8", "status": "pass", "refs": [{ "path": "references/scene-information-and-space.md:25" }, { "path": "references/scene-information-and-space.md:36" }, { "path": "references/scene-and-action-diagnosis.md:129" }, { "path": "references/scene-and-action-diagnosis.md:154" }], "record_ref": "semantics/S-04" },
+      { "id": "SC-T9", "status": "pass", "refs": [{ "path": "references/intensity-and-rhythm.md:20" }, { "path": "references/scope-and-conflicts.md:37" }, { "path": "SKILL.md:240" }, { "path": "SKILL.md:269" }], "record_ref": "gq/GQ4" },
+      { "id": "SC-T10", "status": "pass", "refs": [{ "path": "references/scene-units.md:82" }, { "path": "references/scene-units.md:47" }, { "path": "examples/scene-cases.md:45" }, { "path": "SKILL.md:70" }], "record_ref": "gq/GQ4" }
+    ]
+  },
+  "semantics": [
+    {
+      "id": "S-01",
+      "topic": "交付状态四词的承载处与外说明",
+      "refs": [
+        { "path": "SKILL.md:255", "note": "已完成＝检查已执行，且有稿件内可核的证据支持" },
+        { "path": "SKILL.md:258", "note": "待作者决定＝存在冲突、取舍或锁定内容矛盾，由作者裁决，不擅自覆盖" },
+        { "path": "SKILL.md:260", "note": "四词也用于逐编号台账的「状态」列；「未知」是合法值" },
+        { "path": "references/rhythm-diagnosis.md:76", "note": "与 SKILL.md:255 逐字相同的四行之首行" },
+        { "path": "references/rhythm-diagnosis.md:79", "note": "与 SKILL.md:258 逐字相同的末行" },
+        { "path": "references/rhythm-diagnosis.md:81", "note": "rhythm 侧唯一的表外说明，只有一条禁令，无台账列与「未知」条款" },
+        { "path": "templates/scene-workbook.md:63", "note": "台账「状态」列枚举四词＋「未知」，依赖 SKILL.md:260 的定义" }
+      ],
+      "record_ref": "gq/GQ2",
+      "verdict": "同一规则两个完整承载处且外说明分叉。复验：本席把 SKILL.md 第 255-258 行与 references/rhythm-diagnosis.md 第 76-79 行 strip 后逐行比较，4/4 全等；对 rhythm 第 70-81 行扫描「§9」「SKILL.md」回指，命中 False。反例（消费后果）：只读 references/rhythm-diagnosis.md 的执行者按 §6 步骤 3 建逐编号台账（:64）、按 §6 状态词交付（:64 步骤 7），但 §6 状态词小节没写四词也用于台账「状态」列，也不写「未知」合法——该条款只在 SKILL.md:260 与 templates/scene-workbook.md:66 承载。复验方式：静态文本比较＋回指扫描，不需运行成品。修法建议（交作者裁，本席不改成品）：只留 SKILL.md §9 为定义权威，rhythm §6 状态词小节改成一行指针。"
+    },
+    {
+      "id": "S-02",
+      "topic": "「单元」的定义值域",
+      "refs": [
+        { "path": "SKILL.md:177", "note": "短篇的单元是全篇，长篇是章或场景（无卷）" },
+        { "path": "references/intensity-and-rhythm.md:28", "note": "读者当前阅读的单位（场、章、卷或整篇），含卷" },
+        { "path": "references/intensity-and-rhythm.md:3", "note": "同文件文件头写「卷级安排见 story-architecture-and-longform-planning」" },
+        { "path": "references/intensity-and-rhythm.md:11", "note": "单峰设计里高潮是「全篇强度的标尺」" },
+        { "path": "references/chapter-ends-and-endings.md:9", "note": "场景或章节单元（场、章、幕），卷级收束不由本卡裁决" },
+        { "path": "examples/scene-cases.md:67", "note": "用例 5 的跨章峰值比较（第 6 章 vs 第 10 章）以「全书高潮」为前提" }
+      ],
+      "record_ref": "gq/GQ2",
+      "verdict": "三处不同值＋一处同文件内部矛盾。冲突解释：SKILL.md:177 的单元值域是 {全篇, 章, 场景}；intensity-and-rhythm.md:28 是 {场, 章, 卷, 整篇}；chapter-ends-and-endings.md:9 是 {场, 章, 幕}。卷 只在 :28 合法，而同一文件 :3 又把卷级安排转出——同文件两处对「卷是不是本包的处理单位」给出相反答案。反例（消费后果）：SC-T3／用例 5 的第 6 章 vs 第 10 章比较，按 SKILL.md:177 属跨单元（须与 story-architecture-and-longform-planning 同看，见 examples/scene-cases.md:111），按 intensity-and-rhythm.md:28 属单元内（本包直接做）。复验：本席逐行取上述 6 行原文并集比对值域，未做任何裁决性推断；包内无「以某条为准」的权威句（/usr/bin/grep -rn \"以哪|权威版本|优先级\" 在本包对该语义 0 命中）。"
+    },
+    {
+      "id": "S-03",
+      "topic": "「已发表／已锁定」是外部事实还是作者声明",
+      "refs": [
+        { "path": "examples/scene-cases.md:69", "note": "作者自陈「第 1–6 章已经发出去，锁定，不能动」" },
+        { "path": "examples/scene-cases.md:80", "note": "负触发判定的输入行：「第 1–6 章锁定，不能动」→ 已锁定内容不能擅自覆盖" },
+        { "path": "SKILL.md:258", "note": "「待作者决定」的触发条件写成「锁定内容矛盾」" },
+        { "path": "SKILL.md:268", "note": "失败出口：不擅自改已锁定章节" },
+        { "path": "references/rhythm-diagnosis.md:60", "note": "复杂操作判断标准：已锁定的章节与新判断冲突算冲突" },
+        { "path": "references/scene-and-action-diagnosis.md:29", "note": "包内唯一处理「外部要求」的规则句，对象是格式惯例而非发行事实" }
+      ],
+      "record_ref": "gq/GQ2",
+      "verdict": "全包没有要求先核对外部事实的规则句。复现命令：/usr/bin/grep -rn \"发表\" output/scene-conflict-and-rhythm → 退出码 1、0 命中；/usr/bin/grep -rn \"已锁定\" → 8 行命中，全部把「锁定」当作作者当场声明（examples/scene-cases.md:69、:80、:116、:130），无一条写「已发表＝不可回退的发行约束」或「须先向作者确认发布状态」。相邻的唯一外部事实口径是 references/scene-and-action-diagnosis.md:29（外部格式要求要写明「这是外部要求」），作用对象是格式不是发行。冲突解释：已发表与否决定 A 版（降级前文）能不能落稿，属外部不可见事实；包内靠作者自陈，自陈缺位时按哪条走没有分支句。"
+    },
+    {
+      "id": "S-04",
+      "topic": "SC-07 三问的判据支数与两张症状表的归属",
+      "refs": [
+        { "path": "references/scene-information-and-space.md:28", "note": "三问之一：改变一项设计" },
+        { "path": "references/scene-information-and-space.md:29", "note": "三问之二：语体和说话人相称" },
+        { "path": "references/scene-information-and-space.md:30", "note": "三问之三：服务本作要制造的情感" },
+        { "path": "references/scene-information-and-space.md:37", "note": "信息交代只在「怎么做」第 3 步承载，不在三问里" },
+        { "path": "SKILL.md:114", "note": "症状「对白像背景手册」→ 先看 SC-06、SC-07，常见原因＝信息不在做决定／隐瞒／试探的时刻出现" },
+        { "path": "references/scene-and-action-diagnosis.md:41", "note": "同一症状的改法写「把信息移到做决定、隐瞒或试探的时刻（SC-07）」" }
+      ],
+      "record_ref": "gq/GQ2",
+      "verdict": "SC-07 缺「题材／信息交代」一支。两处入口文本把「对白像背景手册」的判定与改法都归给 SC-07，而 SC-07 的三条判据里没有「信息交代是否发生在做决定、隐瞒或试探的时刻」这一支；承担它的原文是同文件 :37 的一条操作步（且反向引用 SC-12，不是三问之一）。后果：按三问逐条走的执行者会对信息量大的对白给出「三问都过，不因长而删」（SKILL.md:157），而该症状的成因句恰在三问之外。SC-T8 用例（brief cases 第 8 条）要求先过长谈三问再判删短，同样落在这个缺口上。"
+    },
+    {
+      "id": "S-05",
+      "topic": "「一张表」在本包与对端包的作用域",
+      "refs": [
+        { "path": "references/scene-information-and-space.md:5", "note": "只用一张知情表，由 SU-04 建立，同一场戏不另建第二张" },
+        { "path": "templates/scene-workbook.md:21", "note": "本包 §2 知情表表体（全场共用）" },
+        { "path": "character-and-narrative-control/SKILL.md:57", "note": "对端：全书只维护一张知识表" },
+        { "path": "character-and-narrative-control/references/information-control.md:38", "note": "对端原文：scene-conflict-and-rhythm 里一场戏的知情表（SC-06），是这张表在一场戏里的切片" }
+      ],
+      "record_ref": "sections/interfaces/SQ-IF02",
+      "verdict": "brief 记为「两包均未写同场并存时以哪张为准」，本席独立取证后修正为：对端已写（character-and-narrative-control/SKILL.md:57 与 references/information-control.md:38 两处，且 :38 点名 SC-06），本包未写。本包侧 references/scene-information-and-space.md:5 只限定同一场不另建第二张，不含与全书表的切片关系与失效时机。缺什么：本包侧一行回指＋合并／失效责任，属 GQ3 字段口径未证的组成部分。"
+    },
+    {
+      "id": "S-06",
+      "topic": "SU-19 审计表列位与入口层清单",
+      "refs": [
+        { "path": "SKILL.md:216", "note": "SU-19 清单六项：主峰／阶梯每级升了什么／母题次数与语境／钩子兑现章／结尾还写多少／暗线出现一次" },
+        { "path": "references/rhythm-diagnosis.md:26", "note": "审计表 7 列表头" },
+        { "path": "references/rhythm-diagnosis.md:34", "note": "自述：三项在表内没有对应列，按清单逐项另数" },
+        { "path": "references/rhythm-diagnosis.md:32", "note": "象征／暗线检查写在表下" },
+        { "path": "references/chapter-ends-and-endings.md:86", "note": "同一象征检查在 SU-18 卡体再写一遍，并指回 rhythm §3" },
+        { "path": "SKILL.md:97", "note": "回看句只指向「§3 表下的象征检查」" }
+      ],
+      "record_ref": "sections/capabilities/SC-C10",
+      "verdict": "表与清单不同构，靠 :34 的自述兜住；本席确认该自述存在且能覆盖三项缺列，故不判矛盾。登记此处是为了标明 GQ1 的「修后复验」判定依据：SC-C10 的复验路径来自 rhythm §3 列位分工＋§5 三项回归＋§6 负面回归，而不是 SU-19 卡体自带的检查行（SU-19 卡体无 用于／不用／出口 字段）。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-01",
+      "title": "SU-07 卡体缺六个自述字段，且 SKILL.md §6 对入口层的字段承诺落空",
+      "severity": "high",
+      "evidence": [
+        "references/setup-and-payoff.md:5 自述「每条规则按『规则 / 用于 / 怎么做 / 不用 / 反例 / 检查 / 自拟例 / 出口』写」",
+        "references/setup-and-payoff.md:47-:57 的 SU-07 卡体只有 规则／怎么做（4 步）／边界，六项字段全无",
+        "实测计数：该文件 **用于** 命中 3 行（:10、:30、:62）、**不用** 3 行（:17、:37、:68）、**反例** 3 行（:22、:42、:73）、**检查** 3 行（:23、:43、:74）、**自拟例** 3 行（:24、:44、:75）、**出口** 3 行（:25、:45、:76）；SU 族应为 4 条（SU-01、SU-06、SU-07、SU-08）",
+        "SKILL.md:224 声称本文件「每条的『用于／不用／反例／检查／出口』」，与卡体不符"
+      ],
+      "command": "/usr/bin/grep -n '^\\- \\*\\*出口\\*\\*' output/scene-conflict-and-rhythm/references/setup-and-payoff.md",
+      "output_summary": "3 行命中（25、45、76），SU-07 无出口行；同法测 用于／不用／反例／检查／自拟例 各 3 行",
+      "note": "K4-r1.md 未整读 references/setup-and-payoff.md（其 §0 自陈只整读了 13 个文件），旧报告与 brief 的 SC-G06 只写「SU-07 无反例行」，未报六字段全缺与入口层声明落空。"
+    },
+    {
+      "id": "F-02",
+      "title": "brief SC-G12 关于 AF-13 的入口层结论不成立，真正缺入口指向的只有 AF-16、AF-17",
+      "severity": "medium",
+      "evidence": [
+        "SKILL.md:88 主卡选择行原文含「转述用 AF-13」（AF-13 在 SKILL.md 命中行实测为 :88 与 :204）",
+        "brief SC-G12 写「AF-13、AF-16、AF-17 三张卡在入口层没有指向」，与其自列的「主卡选择行未列 AF-16、AF-17」自相矛盾",
+        "实测 §4 症状速查 27 数据行（SKILL.md:112-:138）出现的 AF 编号为 AF-02、03、04、05、06、07、08、10、11、12、14、18；无 AF-13、AF-16、AF-17"
+      ],
+      "command": "/usr/bin/grep -n 'AF-13' output/scene-conflict-and-rhythm/SKILL.md",
+      "output_summary": "2 行命中：88（主卡选择行）、204（规则清单）",
+      "note": "主代理若沿用 SC-G12 会多修一处、并把 AF-08／AF-10 的入口（SKILL.md:89 后果步）漏在计数外。"
+    },
+    {
+      "id": "F-03",
+      "title": "失败出口在卡级只由 SU 族承载：48 张卡中 19 张带收口句（AF 族 0/15）",
+      "severity": "medium",
+      "evidence": [
+        "本席对全包卡体（48 张，含 SU-19 在 references/rhythm-diagnosis.md:24 的表体）逐卡扫描 出口／什么时候不改／失败出口／按 SC-14／转给对应 skill／问作者",
+        "分族实测：AF 15 张命中 0；SC 14 张命中 2（SC-02、SC-12 的「什么时候不改」列）；SU 19 张命中 17（缺 SU-07、SU-19）",
+        "无收口句的 29 张：AF-02…AF-18（15 张，无 AF-01/09/15）、SC-01、SC-03…SC-11（9 张）、SC-13、SC-14、SU-07、SU-19"
+      ],
+      "command": "python3 /tmp/k5_tables.py（卡级扫描段）",
+      "output_summary": "family [cards, with-exit]: {'AF': [15, 0], 'SC': [14, 2], 'SU': [19, 17]}；cards total 48",
+      "note": "不判 SQ-R03 fail 的理由：操作层的失败出口在 SKILL.md §10（9 行）与 references/rhythm-diagnosis.md §7（7 行）成表承载，AF 族另有 templates/action-checklist.md:38 的局部转出口。但「每条操作自带收口」在卡级只有一半承载，作者若要按卡级验收需知道这个分布。"
+    },
+    {
+      "id": "F-04",
+      "title": "SU-02 峰值冲突「两条路由」同文五处承载，其中两处逐字相同",
+      "severity": "medium",
+      "evidence": [
+        "SKILL.md:176（SU-02 卡）、SKILL.md:268（§10 失败出口行）",
+        "references/rhythm-diagnosis.md:96（§7 失败出口行）与 SKILL.md:268 strip 后逐字全等（本席比较结果 True）",
+        "references/intensity-and-rhythm.md:24（SU-02 出口，同义另写）、examples/scene-cases.md:84 与 :110-:112（示例承载）",
+        "实测「两条路由／降级前文」命中：SKILL.md 6 行（:77、:124、:176、:226、:229、:268）、rhythm-diagnosis.md 1 行（:96）、intensity-and-rhythm.md 2 行（:23、:24）、scene-cases.md 9 行"
+      ],
+      "command": "/usr/bin/grep -rn '两条路由\\|降级前文' output/scene-conflict-and-rhythm",
+      "output_summary": "18 行命中，分布于 4 个文件；SKILL.md:268 与 references/rhythm-diagnosis.md:96 文本全等",
+      "note": "单一 Owner 违规的一个实例：改判据（例如把三路由 A/B/C 写回两条）要同步 5 处，brief 的 SC-G02 只报了失败出口表的 9 对 7 行差。"
+    },
+    {
+      "id": "F-05",
+      "title": "示例交付表把「已完成」用在只读场次梗概的判定上，与四词定义不同口径",
+      "severity": "medium",
+      "evidence": [
+        "SKILL.md:255 定义 已完成＝检查已执行，且有稿件内可核的证据支持",
+        "examples/scene-cases.md:122 行「峰值冲突定位｜第 6 章与第 10 章同为 5 分候选｜已完成｜作者给的场次日与 SU-02 相对自评」",
+        "examples/scene-cases.md:90 同用例自陈「读过的部分：作者给的……场次梗概；其余按场次日，不声称逐段读过」",
+        "examples/scene-cases.md:124 另一行（降级后因果是否保留）标 未能核实，说明作者区分得出两种状态"
+      ],
+      "command": "/usr/bin/grep -n '已完成' output/scene-conflict-and-rhythm/examples/scene-cases.md",
+      "output_summary": "命中 :102、:122、:131；:122 的依据列为「作者给的场次日与 SU-02 相对自评」",
+      "note": "这是示范件本身与它所示范的定义之间的口径差；按定义该行的证据不来自稿件内部。作者若认为场次日属稿件可核位置，需在 SKILL.md:255 或示例里写一句界定，否则示范会教出宽的「已完成」。"
+    },
+    {
+      "id": "F-06",
+      "title": "伏笔线索数量的下限句与同文件「不设门槛」自限定并存",
+      "severity": "low",
+      "evidence": [
+        "references/setup-and-payoff.md:41 「不设『每个揭晓必须几处伏笔』的硬门槛；数字只用来发现问题」",
+        "references/setup-and-payoff.md:35 「揭晓后，前文至少两处获得新的意义」、:43 检查项「每个揭晓都能在前文找到至少一处可定位的伏笔」＋「揭晓后至少两处前文获得新意义」",
+        "SKILL.md:163 卡摘要重复「揭晓后，前文至少有两处获得新的意义」",
+        "对照写法：references/suspense-and-reveal.md:33 同型句子后面补「每次揭晓至少改变表里的一栏，并让前文至少两处获得新意义」，peer 包同层写法是 character-and-narrative-control/references/information-control.md:34 与 :84，两处都另加「（这是起点，不是条数要求）」／「『一两处』是起点，不是条数要求」"
+      ],
+      "command": "/usr/bin/grep -rn '至少两处\\|至少一处' output/scene-conflict-and-rhythm",
+      "output_summary": "本包 4 处命中且均无「起点／不是条数要求」限定；对端包同型句自带限定",
+      "note": "与 SQ-R12「数字只作相对自评或练习值」不冲突（这里是证据充分性下限，不是质量门槛），但本包少了与对端一致的那句限定，读起来像硬下限。属可选修。"
+    },
+    {
+      "id": "F-07",
+      "title": "SQ-IF07 的 payload 写了对端内部编号 FC-08／FC-10，本包零命中",
+      "severity": "medium",
+      "evidence": [
+        "brief interfaces SQ-IF07 的 payload_or_ids ＝ [SU-15, SU-17, FC-08, FC-10]",
+        "本包实测不含 FC 编号"
+      ],
+      "command": "/usr/bin/grep -rn 'FC-0\\|FC-1' output/scene-conflict-and-rhythm",
+      "output_summary": "退出码 1，0 命中（对照：/usr/bin/grep -rno 'SV-0[0-9]\\|PL-1[0-9]' 在本包命中 PL-11、SV-04、SV-05、SV-08）",
+      "note": "对端 fiction-planning-and-diagnosis/SKILL.md:145、:155 确实按 SU-17／SU-15 点名本包（本席读过原文），所以接口真实存在；不对的是把 FC 编号记成双向 payload。这条属 brief 侧口径修正，采纳前请主代理复核该字段。"
+    },
+    {
+      "id": "F-08",
+      "title": "台账「三列」措辞与四列表头并存，计数口径未定",
+      "severity": "low",
+      "evidence": [
+        "templates/scene-workbook.md:61 表头为 4 列：编号｜值｜状态｜稿件证据位置",
+        "templates/scene-workbook.md:59 「每个编号独占一行，三列齐全，允许填『未知』」，:65 「三列每行都在」",
+        "examples/scene-cases.md:102 「每个编号独占一行；三列都在」，而其表体（:94-:100）实际是四列",
+        "brief SQ-R15 的表述是「值／状态／稿件证据位置三列」，即编号列不计入"
+      ],
+      "command": "/usr/bin/grep -n '三列' output/scene-conflict-and-rhythm/templates/scene-workbook.md output/scene-conflict-and-rhythm/examples/scene-cases.md",
+      "output_summary": "4 行命中（scene-workbook.md:59、:65；scene-cases.md:102；brief 侧另计），均未界定编号列",
+      "note": "本席按 brief SQ-R15 的读法判 SQ-R15 pass（三列指值／状态／证据位置）。作者若要防误读，把 :59、:65 改成「除编号列外三列」即可。"
+    },
+    {
+      "id": "F-09",
+      "title": "agents 入口提示未承载本包两条硬闸，且包内无 SKILL 与 agents 的优先级句",
+      "severity": "low",
+      "evidence": [
+        "agents/openai.yaml:6 default_prompt 只写「材料不全时给出标明『假设』的草案，最多问我三个问题」",
+        "本包硬闸：SKILL.md:29「没有稿子却要求逐段诊断：不出定位式结论」、SKILL.md:56 末句「没有稿子时，不声称做过逐段诊断」、SKILL.md:249-:260 四词状态",
+        "agents/openai.yaml 全文 8 行不含「稿子／诊断／状态词／未能核实」任一词",
+        "SKILL.md 全文不含「授权」二字（见 findings 关联的 SQ-R39 复现），也未写 agents 文件与正文冲突时以哪份为准"
+      ],
+      "command": "/usr/bin/grep -c '稿子\\|诊断\\|未能核实' output/scene-conflict-and-rhythm/agents/openai.yaml",
+      "output_summary": "0",
+      "note": "延伸而非重复旧报告：旧记录只说 yaml 与 SKILL.md:267 方向不同，本席补的是「入口件缺硬闸」与「缺优先级句」这两项，属同一根因。"
+    },
+    {
+      "id": "F-10",
+      "title": "intensity-and-rhythm.md 文件头与 SU-10 规则体对「卷」给出相反答案（同文件内部矛盾）",
+      "severity": "high",
+      "evidence": [
+        "references/intensity-and-rhythm.md:3 「本文件处理场景/阅读单元的强度……；卷级安排见 story-architecture-and-longform-planning」",
+        "references/intensity-and-rhythm.md:28 「先确定读者当前阅读的单位（场、章、卷或整篇）」",
+        "references/intensity-and-rhythm.md:36 不用行「连载钩子和卷级悬念转交长篇规划 Skill」",
+        "对照 examples/scene-cases.md:111（跨章重排越出单元内须与长篇包同看）与 SKILL.md:177（单元＝章或场景，无卷）"
+      ],
+      "command": "/usr/bin/sed -n '3p;28p;36p' output/scene-conflict-and-rhythm/references/intensity-and-rhythm.md",
+      "output_summary": ":3 与 :36 把卷级转出、:28 把卷列为本文件可用的阅读单位",
+      "note": "旧记录与 brief SC-G03 只报跨文件三口径；本席补的是同一文件内的自相矛盾，它比跨文件差异更好修（改 :28 的值域或加一句「卷只作定位，不作裁决」）。"
+    }
+  ],
+  "unproven": [
+    { "id": "U-01", "item": "GQ5 全项", "detail": "无真实模型任务回执、宿主加载未测；本轮验证权限＝static，未跑任何成品、未发起真实任务。不得写成通过。" },
+    { "id": "U-02", "item": "requirements 的需求出处", "detail": "brief 的 requirements text 多处标 inputs/requirements.md 行号、notes/suite-contract.md 行号与 R18／R09 条款口径；inputs/ 与其它 notes/ 在本席禁读面内，故「需求原文是否如此、是否漏承接历史需求」无法取证。本席的 sections.requirements 状态只回答「包内有没有承住这条行为」，不回答上游需求映射。受影响 ID：SQ-R01、R02、R03、R11、R15、R24、R27、R28、R36（以及 R18 的判据原文）。" },
+    { "id": "U-03", "item": "SQ-R18 模板行内编号是否达标", "detail": "实测行内带真实编号的比例：templates/action-checklist.md 5/18 行（:10、:12、:16、:24、:25 中含编号者为 A2、A4、A8、B2、B3）、templates/scene-workbook.md 2/16 行（:16、:63）。判据原文（R18 §2a 反向验证）不可读，无法判定「够不够」，故判 not_proven 而非 pass／fail。" },
+    { "id": "U-04", "item": "对端包是否另有承接段落", "detail": "本席只取被 interfaces 引用的 13 个对端文件的指定行及上下文（story-architecture-and-longform-planning 2 档、character-and-narrative-control 4 档、preset-card-generation 1 档、line-editing-and-proofreading 2 档、genre-fiction-craft 2 档、cross-media-drama-adaptation 1 档、fiction-planning-and-diagnosis 1 档），未整读对端包。SQ-IF05（对端 2 行）与 SQ-IF06（对端 1 行）的「对端薄」是否属实、以及是否存在未点名的接收段，无法证明。" },
+    { "id": "U-05", "item": "编号计数的旁证差异", "detail": "brief SC-G07 引 notes/operations-contract/scene-conflict-and-rhythm.md:66 的「53 个编号」，该文件属其它 notes，禁读面内未核。本席独立实测：唯一编号 51（SC 14＋SU 19＋AF 18）、卡体 48（SC 14＋SU 19＋AF 15）。差异只在旁证侧，不涉成品文本。" },
+    { "id": "U-06", "item": "跨包冲突的裁决者", "detail": "本包与六个对端包之间没有任何一处写接口仲裁者或版本（/usr/bin/grep -rn '回执|回传' 本包 0 命中；'裁决者|仲裁|优先级' 仅 2 处且均非接口层）。缺的是原文本身，不是本席的检索能力，故 7 条 interfaces 一律 not_proven。" },
+    { "id": "U-07", "item": "cases 的 ref 要素", "detail": "brief 的 SC-T1…SC-T4 条目没有 anchors 字段（本席按字段枚举实测：cases 组仅有 id/kind/scenario/expected/rule_ids/note）。本席为这四条自行定位了承载文本并写进 sections.cases.refs，但「清单条目本身缺 ref」这一事实无法由审查席替作者补齐，需作者采纳时在 brief 侧加锚。" },
+    { "id": "U-08", "item": "静态测量的边界", "detail": "两个 SHA、卡数、表数、字段命中数与逐字比较结果都是静态文本测量，不证明宿主加载、模型执行或读者效果。brief_sha256 与 skill_tree_sha256 由本席对原始字节实测，未自造。" }
+  ],
+  "round_complete": "review-draft-complete scene"
+}

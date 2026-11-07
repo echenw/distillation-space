@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "_freeze_note": "field_ids 仍未冻结（W4-09 不能销账，W4-r2 已判定 2026-11-06）：独立非作者判定席 QF 按 inputs/requirements.md 判定 8 族／99 个 field_ids＝A 真要求逐项可填 3 族／46、B 占位行即合法可填面 1 族／3（作者裁决 #3A）、C 未能核实 4 族／50。不能冻结的硬理由：C 类 50 个未决；DR 前缀跨包同名异指（story DR-01…10 与 fiction DR-01…12，DR-03/04/09/10 语义不同）而本 JSON 的 field_ids 不带包路径；requirements.md:11/13 只泛引 R18 §2a–2d 与「模板字段」，未枚举 N 项；INDEX.md:30/37 的占位行（W4-11/79）与「同上」（W4-70）仍交作者。整树 SHA 已于 2026-11-06 冻结为 d86672d4497c03b64b3861ef3750a600f82075c56d370219f26fe4d45de8df2c（217 件／2,361,511 B），冻结前提已具备，但判定结论为「不能冻结」，故 W4-09 保持未冻结、不提前造绿。8 条 templates／99 个 field_ids 原样未改。判定报告见 notes/quality/field-ids-verdict-2026-11-06.md；8 包修复后件数／字节依 k5-bindings-2026-11-06.tsv 与现树实测，见 INDEX.md「K5 冻结回填（2026-11-06）」。 ‖ 2026-11-07 r3 修复批重冻结（brief-repair 席追加）：`output/` 整树两级 SHA-256＝1fd053fe1fc83d51b4ce8edc82d759ccd53307f8304fccf3a2ff3bcc2e05eafd（217 件／2,363,926 B），8 包逐包绑定见 `notes/k5-bindings-2026-11-07.tsv`；上文 2026-11-06 冻结值 d86672d4… 为上一冻结时点历史记录。W4-09（field_ids）状态不变：仍未冻结。本句为行内追加，templates／field_ids 原样未改。",
+  "templates": [
+    {
+      "path": "output/story-architecture-and-longform-planning/templates/plot-canvas.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "PA-01",
+        "PA-02",
+        "PA-03",
+        "PA-04",
+        "PA-05",
+        "PA-06",
+        "PA-07",
+        "PA-08",
+        "PA-09",
+        "PA-10",
+        "PA-11",
+        "PA-12"
+      ]
+    },
+    {
+      "path": "output/story-architecture-and-longform-planning/templates/plot-diagnosis-report.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "DR-01",
+        "DR-02",
+        "DR-03",
+        "DR-04",
+        "DR-05",
+        "DR-06",
+        "DR-07",
+        "DR-08",
+        "DR-09",
+        "DR-10"
+      ]
+    },
+    {
+      "path": "output/story-architecture-and-longform-planning/templates/plot-scene-table.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "ST-01",
+        "ST-02",
+        "ST-03",
+        "ST-04",
+        "ST-05",
+        "ST-06",
+        "ST-07",
+        "ST-08",
+        "ST-09",
+        "ST-10",
+        "ST-11",
+        "ST-12",
+        "ST-13",
+        "ST-14",
+        "ST-15",
+        "ST-16",
+        "ST-17",
+        "ST-18",
+        "ST-19",
+        "ST-20",
+        "ST-21",
+        "ST-22",
+        "ST-23",
+        "ST-24"
+      ]
+    },
+    {
+      "path": "output/character-and-narrative-control/templates/narrative-workbook.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "PV-04",
+        "PV-09",
+        "PV-14"
+      ]
+    },
+    {
+      "path": "output/fiction-planning-and-diagnosis/templates/diagnosis-report.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "DR-01",
+        "DR-02",
+        "DR-03",
+        "DR-04",
+        "DR-05",
+        "DR-06",
+        "DR-07",
+        "DR-08",
+        "DR-09",
+        "DR-10",
+        "DR-11",
+        "DR-12"
+      ]
+    },
+    {
+      "path": "output/fiction-planning-and-diagnosis/templates/novel-plan.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "NP-01",
+        "NP-02",
+        "NP-03",
+        "NP-04",
+        "NP-05",
+        "NP-06",
+        "NP-07",
+        "NP-08",
+        "NP-09",
+        "NP-10",
+        "NP-11",
+        "NP-12",
+        "NP-13",
+        "NP-14"
+      ]
+    },
+    {
+      "path": "output/fiction-planning-and-diagnosis/templates/revision-sheet.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "RV-01",
+        "RV-02",
+        "RV-03",
+        "RV-04",
+        "RV-05",
+        "RV-06",
+        "RV-07",
+        "RV-08",
+        "RV-09",
+        "RV-10",
+        "RV-11",
+        "RV-12"
+      ]
+    },
+    {
+      "path": "output/fiction-planning-and-diagnosis/templates/scene-plan.md",
+      "format": "markdown-table",
+      "field_ids": [
+        "SP-01",
+        "SP-02",
+        "SP-03",
+        "SP-04",
+        "SP-05",
+        "SP-06",
+        "SP-07",
+        "SP-08",
+        "SP-09",
+        "SP-10",
+        "SP-11",
+        "SP-12"
+      ]
+    }
+  ]
+}

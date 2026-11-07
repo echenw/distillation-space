@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "skill": "genre-fiction-craft",
+  "status": "skeleton_not_frozen",
+  "assembled_by": "Agent 1（W3 第 1 批，规范维护）",
+  "assembled_at": "2026-11-04",
+  "brief_sha256": null,
+  "skill_tree_sha256": null,
+  "producer": null,
+  "reviewer": null,
+  "note": "W3 第 1 批骨架，未冻结。GQ1–GQ4 只放待填状态与证据位，状态一律 not_proven，未填任何通过；GQ5 = NOT_PROVEN（无真实任务测试）。本文件不得用于 kd_artifact_quality.py 预检，也不构成独立 review。W4 须由独立于作者的只读审查子代理（D3-C）按真实产物重做，绑定实际 brief/Skill 树 SHA 与真实回执。",
+  "sha_placeholders": {
+    "brief_sha256": "待 W4 按实际 brief.json 原始字节计算（不得自造）",
+    "skill_tree_sha256": "待 W4 按最终 output/<skill>/ 整树计算（R09 §6.1，不得自造）",
+    "producer": "待填：该 skill 的作者 Worker",
+    "reviewer": "待 W4 另派只读审查子代理（独立于作者，D3-C）"
+  },
+  "gq": [
+    {
+      "id": "GQ1",
+      "name": "功能真实性",
+      "status": "not_proven",
+      "evidence_ref": null,
+      "todo": "逐项列能力 ID，核对可区分分支、反证/排除条件、修后复验与真实 reference；区分 workflow/automation/external"
+    },
+    {
+      "id": "GQ2",
+      "name": "语义自洽",
+      "status": "not_proven",
+      "evidence_ref": null,
+      "todo": "独立逐节检查 SKILL.md 与所有 reference/模板的跨文件规则，逐组登记 A/B 原文、冲突或解释、反例及复验"
+    },
+    {
+      "id": "GQ3",
+      "name": "跨 Skill 接口",
+      "status": "not_proven",
+      "evidence_ref": null,
+      "todo": "核实 Owner、provider/consumer、字段/类型/版本/路径、缺字段分支、仲裁与双方实际引用；绑定两份 Skill 当前树 SHA"
+    },
+    {
+      "id": "GQ4",
+      "name": "适用性与反例",
+      "status": "not_proven",
+      "evidence_ref": null,
+      "todo": "每个重要规则/阈值记录适用条件、限制、反例及采纳/改写理由；成品不提来源、例子自创"
+    },
+    {
+      "id": "GQ5",
+      "name": "最终版真实任务",
+      "status": "NOT_PROVEN",
+      "note": "无真实任务测试（GQ5 未授权）",
+      "evidence_ref": null
+    }
+  ],
+  "sections": {
+    "requirements": [],
+    "capabilities": [],
+    "interfaces": [],
+    "applicability": [],
+    "cases": [],
+    "semantics": []
+  },
+  "sections_todo": "W4 须把 brief 五组 ID（requirements/capabilities/interfaces/applicability/cases）逐一列全；每行状态只允许 pass/fail/not_proven；semantics[] 至少一项，引用两处不同真实文本 refs[] 与 record_ref；interfaces[] 含 provider_ref/consumer_ref 与 peer_tree_sha256 中 provider/consumer 的真实树摘要、record_ref；applicability[] 含 scope/limitation/counterexample/ref/record_ref；cases[] 有 mode:host/manual/synthetic 与 record_ref。所有回执形如 {\"path\":\"<真实文件>\",\"sha256\":\"<实际文件摘要>\"}，不得填自造值。",
+  "static_only": true,
+  "static_only_note": "静态交付可达成本轮约定；GQ5 与效果仍 NOT_PROVEN，不得写成通过。"
+}
