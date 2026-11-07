@@ -15,7 +15,7 @@
 | 感情线节奏、心动戏、糖刀搭配、误会和情敌、连载推进 | [tropes-and-serial.md](tropes-and-serial.md) RO-40–44 | 阶段表、糖刀分布、误会卡 |
 | 男女主人设、强势人设的边界、女性成长线、CP 群像、结局 | [tropes-and-serial.md](tropes-and-serial.md) RO-45–50 | 人设卡、双线表、结局对照、诊断表 |
 | 现代连载的完整例子 | [examples.md](examples.md) RO-E17（职场先婚后爱） | 协议条款、阶段表、糖刀安排和人设边界的填法 |
-| 事实分层与引用边界 | [rules.md](rules.md) RO-01 | 谁说、谁信、谁反驳；不冒称读过没给的正文，不把书内设定当现实事实 |
+| 事实分层与引用边界 | [rules.md](rules.md) RO-01 | 谁说、谁信、谁反驳；不冒称读过没给的正文，不把故事内设定当现实事实 |
 | 构思人物与障碍 | [rules.md](rules.md) RO-02–08；[mechanisms.md](mechanisms.md) | 人物目标、阻力条件、选择与资源表 |
 | 误会、信件、秘密与中间人 | [rules.md](rules.md) RO-09–13、RO-17–24 | 信息分配、证据路线与场景卡 |
 | 告白、拒绝、强迫与修复 | [rules.md](rules.md) RO-14–16、RO-26–28 | 看得懂的回应、边界和关系后果 |
