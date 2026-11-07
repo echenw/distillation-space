@@ -288,7 +288,7 @@ distillation/
 ### P2 套件合同
 - **Owner 与转介矩阵**：8 个 skill 谁负责什么、相近请求转给谁。preset-card 的边界按 D2 定。
 - **description 与转介**：description 写全相关兄弟 skill 名，“适用与转介”节要包含 preset-card-generation。
-- **交付状态词**：统一用“已完成 / 依据 / 未能核实 / 待作者决定”，替换运行文本里的 NOT_PROVEN、VERIFIED 等审计词。
+- **交付状态词**：统一用“已完成 / 未能核实 / 待作者决定”三个词，替换运行文本里的 NOT_PROVEN、VERIFIED 等审计词；“依据”不是状态词，作附件逐项附上证据或可核位置。（2026-11-07 用户决定：原定的第四个词“依据”改为附件，八个 skill 按 preset-card-generation §7 的写法统一。）
 - **去来源检查清单**（R18 §2b）：
   - 书名号作品名、作者和人名；
   - 来源编号，包括 `-NNNN` 这类残片；
@@ -362,6 +362,40 @@ distillation/
 - 冻结 `output/`，记录整树 SHA。
 - 按 D1 应用到 `skills/`。
 - checklist 改为“状态：已完成 / 验收范围：静态交付”，log 写明验收依据。
+
+### 6.1 执行组织：6 个子代理 × 多轮派发
+
+- **6 个子代理是并发派发单位，多轮是依赖的解决方式**。同一轮内并行，跨轮按放行条件推进；附录 F 表中的顺序是依赖顺序，不是逐片串行。K0/K1/K2 是全体执行组的输入，K4/K5 是全体执行组的输出，G00 要等 14 类题材全部完成，这几段不能和其他分片同轮。P3 的 S01 校准也要先单独完成再放行其余分片。
+- 本节只分派**目录所有权**，不改附录 C 的语义 Owner 矩阵（仍由 P2 定稿），也不改第 4 节的工作区结构。每个代理只写自己独占范围内的文件。
+
+| 代理 | 分片 | 独占写入范围 |
+|---|---|---|
+| Agent 1 规范与门禁 | K0、K1、K2、K4、K5 | 公共记录（requirements、checklist、log、raw 表、notes 汇总、quality、desourcing-ledger）、`output/` 冻结与 SHA、`genre/SKILL.md` 定稿 |
+| Agent 2 语言与场景 | S01、S03a、S03b | `output/line-editing-and-proofreading/`、`output/scene-conflict-and-rhythm/` 及对应分片记录 |
+| Agent 3 人物与长篇 | S04a、S04b、S05a1–a2、S05b1–b2 | character、story 两个 skill 的 output 及对应分片记录 |
+| Agent 4 策划、改编、卡片 | S02、S06a1–a3、S06b、S06c、S07 | fiction-planning、cross-media、preset-card 三个 skill 的 output 及对应分片记录 |
+| Agent 5 热门与幻想题材 | G02、G04、G05、G06、G13 | `genre/references/` 下 02、04、05、06、13 五个题材目录 |
+| Agent 6 悬疑现实与类型 | G01、G03、G07–G12、G14、G00 草案 | 其余 9 个题材目录、`genre/SKILL.md` 草案 |
+
+- **补齐两个漏项**：K1（附录 F 分片表，P1 机械盘点出 7 份 raw 表）归 Agent 1，是 Worker 定向精读的输入；G05 科幻（附录 F 分片表，343 KB）归 Agent 5，与 G02 同属机制卡题材——2.3 节记 `05-science-fiction/mechanisms.md` 32.4→20.4 KB，P3 第 8 条把它排在热门三类，附录 E 的 genre 边界用例是「科幻、言情、悬疑混合」。W1 盘点证实 G02 是删卡（RO-K121–166 共 46 张，v2 166→v3 120），G05 是逐卡压缩（SF-K001–102 在 v2/v3 均连续、未删卡），两者不是同一种丢失，W3 分别处理。Agent 6 实际是 9 类题材 + G00 草案，不是 10 类。
+- **公共文件不并发写**：Worker 的分片记录先写各自独占文件（只追加，文件名带分片号），K4 由 Agent 1 汇总进 `notes/loss-inventory/<skill>.md`；genre 的 14 类同属一个 skill，按题材编号分文件记账，最终汇总成一份。`genre/SKILL.md` 由 Agent 6 出草案、Agent 1 在 W4 定稿。
+
+| 轮 | 放行条件 | 本轮 6 个代理的工作 |
+|---|---|---|
+| W1 前置 | 第 9 节 D1–D5 裁决 + 执行授权 | Agent 1 做 K0（工作区、requirements、checklist、inputs/manifest.yaml 与 SHA-256）、K1（7 份 raw 表）、K2（附录 C 定稿、状态词、模板规范、附录 E 用例装配）；其余 5 个只做**只读准备**：按第 5 节谱系表核对本代理的 v0 路径与目录边界，出分片清单草稿，不写 `output/`、不写正式 loss-inventory |
+| W2 校准 | K0/K1/K2 完成 | Agent 2 单做 S01（P3 的校准方法），产出校准样例与写法口径；Agent 1 维护规范与附录 E 用例装配、只读巡检；其余 4 个只读校对 raw 表在自己分片的覆盖，等样例回传。本轮只有 1 个代理产出成品，其余不抢跑 |
+| W3 主体 | S01 校准样例回传 | Agent 2–6 按上表分片并行落笔；Agent 1 维护规范、装配 `brief.json`/`review.json` 骨架、只读巡检 |
+| W4 收口 | 全部 S/G 分片交付 | Agent 1 汇总 K4 回读结果（独立回读按 D3 由另派的只读子代理执行）、整理 `desourcing-ledger.md`、出 GQ1–GQ4、K5 冻结 SHA 与 checklist、G00 定稿；其余 5 个跑附录 B 全 11 类正则 + B.3 自检，并交叉复核他人成品（只读、只提问题，不改对方文件） |
+
+- **每片完成标准仍是附录 F 的四条**：决定齐全、恢复/合并已写入 `output/`、跑过附录 B 扫描、`log.md` 追加一行。raw 表按 A.3 只追加不覆盖，重生成另起带日期文件名；中断后从 `log.md` 最后一行接着做。
+- **交付物不缩减**：除各 skill 的成品目录，还要有 `log.md`、`notes/loss-inventory/raw/`、`source-synthesis/<skill>.md`、`operations-contract/<skill>.md`、R18 §4 六问表、`delivery-preflight-spec/`、`quality/<skill>/{brief.json,review.json}`、`desourcing-ledger.md`、`inputs/manifest.yaml` 与 SHA-256、`output/` 冻结整树 SHA。
+- **口径约束**（随派发说明下发）：
+  - 缩减幅度是盘点信号，不是应补回的量；按 P1「以下情况不算丢失」的三类逐条排除。言情 RO-K121–166 按 2.3 节逐卡决定、纯来源观察不恢复、恢复部分沿用 RO-K121 起编号并与 RO-K001–120 去重；SU-02 按 2.3 节补回四样（含「降级只降强度、篇幅、修辞，不降因果必要性、信息量、人物动机」），不是三样。
+  - 附录 B 跑全 11 类正则 + B.3 的人工判断。P4 的独立审查者按 D3 裁决：采用 D3-C 时由 Agent 1 在 W4 另派只读审查子代理（不看 notes），Agent 1 只汇总与出门禁，不自审自过；未裁决时只做默认静态检查。GQ5 无真实任务时记 NOT_PROVEN，静态通过不写成效果已证明。
+  - G01/G07/G10 的盘点阈值按 5.1 节收紧到 20%（非默认 30%）。
+  - 附录 H 按 H.18 的「skill + 建议编号 1–72」映射，不按 H.x 章节切：fiction-planning / cross-media / preset-card → Agent 4，story / character → Agent 3，scene / line-editing → Agent 2，genre → Agent 5 与 Agent 6（按题材），H.1、H.11、H.12、H.15、H.18 的共用项与冲突裁决 → Agent 1；一条建议落两个 skill 时只在主 skill 写、另一个写转介。**D5 未采纳前，附录 H 不作正式任务。**
+  - 「战力通胀控制、冒名证据链」这类未经 P1 盘点确认的机制名只作线索，不直接写进成品；材料没有依据的地方按第 8 节写「没有依据，按作者判断」。
+- **授权边界**：本节只定义派发组织，不改变第 9 节五个决策的待确认状态，也不授权执行。D1–D5 裁决并另行授权前，不建 `distillation/`、不写 `output/`、不跑 `kd_*` 与真实任务、不动 `skills/`、不 commit / push。
 
 ## 7. 验收
 
@@ -656,7 +690,7 @@ distillation/
 | K4 | P4 全套隔离回读 | — |
 | K5 | P5 质量门禁、冻结、落地 | — |
 
-顺序就是表中顺序，genre 内按 D4 的优先级排列。每片相对独立，中断后从 log.md 记的片名接着做。
+表中顺序是**依赖顺序**，不是逐片串行：同一轮内没有依赖的分片并行，跨轮按放行条件推进；分片归属（含 K1 与 G05）、轮次表和授权边界见 §6.1。genre 内按 D4 的优先级排列。每片相对独立，中断后从 log.md 记的片名接着做。
 
 ## 附录 G：notes 里另外三种记录的格式
 
