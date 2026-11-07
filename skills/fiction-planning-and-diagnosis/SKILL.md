@@ -30,7 +30,7 @@ metadata:
 | 谁来讲、视角越界与切换、信息控制、场景与概述、跨越时间、人物心理的呈现 | `character-and-narrative-control` |
 | 句子、用词、标点、对白格式、校对 | `line-editing-and-proofreading` |
 | 推理、恐怖、言情等题材的契约和专项技法 | `genre-fiction-craft` |
-| 改成舞台方案、分场稿、镜头 | `cross-media-drama-adaptation` |
+| 改成舞台方案、分场稿、镜头；既有文本改成互动叙事 | `cross-media-drama-adaptation`（本 skill 仍可诊断原作结构，不出玩家选择、状态变量或分支拓扑） |
 | 预设卡（推进模式卡、文风卡、表达约束卡）的生成、诊断、审校、修订；按推进／文风／表达三轴审章节 | `preset-card-generation` |
 
 重叠请求的归属：
@@ -322,13 +322,8 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 
 ### 适用范围外的转交判据
 
-当任务的主要决策超出本 Skill 的策划/诊断范围时，应明确转交，而不是用通用诊断替代专业结论：
+任务的主要决策落在 §1 转介表的某一行时，按表转交，不用通用诊断替代专项结论。表里没有的情形：
 
-- 故事结构、长篇/连载架构成为主要问题时，转交 `story-architecture-and-longform-planning`。
-- 场景动作、冲突推进或节奏设计成为主要问题时，转交 `scene-conflict-and-rhythm`。
-- 人物心理、关系变化或叙事信息控制成为主要问题时，转交 `character-and-narrative-control`。
-- 需要逐句润色、校对或风格统一时，转交 `line-editing-and-proofreading`。
-- 题材专属规则超出当前能力时转 `genre-fiction-craft`，媒介改编转 `cross-media-drama-adaptation`；外部事实核验超出当前能力时，说明边界，本 Skill 不提供专业意见。
 - 全文逐段改写没有对应的外部 Owner：即使作者明确授权，也不交付“可直接发布的完整新稿”；按 `references/revision.md` 的介入级别分解执行（L4 结构重排方案 → L3 整场重写 → 分层修订），每一级对照授权，原稿不覆盖。
 
 **不交付清单：**不把策划意见包装成市场销量保证、法律意见、医学/心理诊断、事实核验报告、抄袭判定或完整代写成品；除非作者明确授权，不擅自替换整篇正文。
@@ -356,12 +351,3 @@ FC 规则的细则、反例、依据和可信度在四个 `rules-` 文件里，�
 ```
 
 历史版本的检查结论只适用于当时实际检查的输入和版本，不自动继承到当前文本；只要文本、范围或依赖发生变化，就必须重新执行受影响的检查。内容修改、素材替换、结构重排或工具版本变化后，必须重新评估受影响的检查项。
-
-## 与其他 Skill 的协作边界
-
-- 本 Skill 拥有原创小说的前提与赛道定位、单元规划、整体诊断和修订方案；单本结构、分卷与章纲由 `story-architecture-and-longform-planning` 负责，章末钩子与场内节奏由 `scene-conflict-and-rhythm` 负责。不替代人物层的视角、知识权限或时间线核对。
-- `character-and-narrative-control` 拥有人物目标、叙述权限、视角、关系变化、人物知识边界和时间连续性；本 Skill 负责故事结构与整体诊断。
-- `cross-media-drama-adaptation` 拥有既有文本改编为舞台、影视或互动叙事的媒介转换；本 Skill 不设计改编分支、目标媒介结构或游戏系统。
-- `line-editing-and-proofreading` 拥有句子、段落和校对层面的语言编辑；本 Skill 给出结构与内容层面的修订目标，不替代逐句编辑。
-
-既有文本改编为互动叙事时，转交 `cross-media-drama-adaptation`；本 Skill 可继续提供原作结构诊断，但不输出玩家选择、状态变量或分支拓扑。

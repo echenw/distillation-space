@@ -20,11 +20,7 @@ metadata:
 - 连载的章末钩子和兑现日志。
 
 不接（负触发，先转介或停下）：
-- 全书主线、分卷、卷末收与接、跨卷伏笔、容量与排期 → 转 `story-architecture-and-longform-planning`。
-- 全篇视角越界、全篇信息控制、非线性时间（全篇级）、人物动机与心理、创伤 → 转 `character-and-narrative-control`；本 skill 只用到“这一场谁知道什么”，单场内的视角标记、知情差与倒叙场仍按本 skill 处理。
-- 选题、读者契约、资料核验、读者反馈、不确定用哪个 skill → 转 `fiction-planning-and-diagnosis`。
-- 句子、对白的措辞、标点、校对 → 转 `line-editing-and-proofreading`。
-- 生成／修订／诊断预设卡、写“反 AI 味的约束卡”、按推进／文风／表达三轴审章节 → 转 `preset-card-generation`。
+- 问题落在下面转介表的任何一行：不在本 skill 做，按表转介。
 - 要打分、评级、批量自动替换，或裁定“唯一正确”：本 skill 给逐条建议，不打分。
 - 没有稿子却要求逐段诊断：不出定位式结论，先要正文，或改做设计路径。
 - 作者已达成目标的选择、实验文体和非写实契约：按 SC-01 保留，不因为不合惯例去“纠正”。
@@ -41,7 +37,7 @@ metadata:
 | 句子、对白的措辞、标点、校对 | `line-editing-and-proofreading` |
 | 推理的线索公平、恐怖与言情等题材契约、武侠仙侠的武打体系 | `genre-fiction-craft` |
 | 改成舞台方案、分场稿、镜头 | `cross-media-drama-adaptation` |
-| 生成或修订推进模式卡、文风卡、表达约束卡，按三轴审章节 | `preset-card-generation` |
+| 生成、修订或诊断推进模式卡、文风卡、表达约束卡，写“反 AI 味的约束卡”，按推进／文风／表达三轴审章节 | `preset-card-generation` |
 
 从 `genre-fiction-craft` 转入本 skill 的：一场戏怎么写、冲突、伏笔、悬念、节奏、章末。
 从 `character-and-narrative-control` 转入本 skill 的：伏笔怎么埋和回收、悬念强度、章末钩子、松紧节奏、一场戏的进出、打斗；对白里塞满背景和设定、一场戏里的对白怎样排布和交锋（SC-07、SC-15）。

@@ -26,13 +26,7 @@ metadata:
 
 ### 1.2 负触发（不接，先转介或停下）
 
-- 要改句子措辞、对白标点、语感、错别字、体例或全稿校对：转 `line-editing-and-proofreading`。
-- 伏笔位置与回收、悬念强度、章末钩子、一场戏的进出、动作打斗：转 `scene-conflict-and-rhythm`。
-- 主线、多线、因果、删场、分卷和连载排产：转 `story-architecture-and-longform-planning`。
-- 题材规则、机制、混合题材：转 `genre-fiction-craft`。
-- 改编成舞台、影视、音频或互动形式：转 `cross-media-drama-adaptation`。
-- 新作规划入口、成稿整体诊断、读者反馈、事实核验、不确定用哪个 skill：转 `fiction-planning-and-diagnosis`。
-- 生成／修订／诊断推进模式卡、文风卡、表达约束卡；写「反 AI 味的约束卡」；按推进／文风／表达三轴审章节；已有文风卡或推进卡作为输入：产物是「给模型的卡」或审查框架是三轴，转 `preset-card-generation`。
+- 问题落在 1.3 表里的任何一行（句子与校对、单场与伏笔节奏、结构与连载、题材契约、改编、规划诊断与核验、预设卡与三轴审读）：不在本 skill 做，按 1.3 表转介。
 - 真实的病名、诊断和疗法，真实证人的可信度：不在本 skill 的范围（[boundaries-and-ethics.md](references/boundaries-and-ethics.md) §1），退出那一部分；时间旅行在物理上可不可行，也不判断（[nonlinear-time.md](references/nonlinear-time.md) §5）。
 - 只给梗概或只有构思，却要求逐段诊断、逐句定位：先要正文；只做构思层的设计，写明「证据不够」，不编位置和短引文。
 - 要打分、评级，或裁定「唯一正确的视角／人称」：本 skill 给逐条建议和各自代价，不打分，由作者决定。
@@ -42,16 +36,20 @@ metadata:
 | 问题 | 转给 |
 |---|---|
 | 伏笔怎么埋和回收、悬念强度、章末钩子、松紧节奏、一场戏的进出、打斗 | `scene-conflict-and-rhythm`（本 skill 只决定谁知道、谁能看见） |
-| 主线、多线、因果、删场、分卷和连载的规划 | `story-architecture-and-longform-planning` |
-| 选题、读者契约、资料核验、读者反馈、不确定用哪个 skill | `fiction-planning-and-diagnosis` |
-| 句子、对白的措辞、标点、语感、校对 | `line-editing-and-proofreading` |
-| 推理的公平线索、恐怖与言情等题材的契约 | `genre-fiction-craft`（题材契约以它为准；本 skill 只核对视角和信息有没有守住契约） |
-| 改成舞台方案、分场稿、镜头 | `cross-media-drama-adaptation` |
+| 主线、多线、因果、删场、分卷和连载的规划与排产 | `story-architecture-and-longform-planning` |
+| 新作规划入口、选题、读者契约、成稿整体诊断、资料与事实核验、读者反馈、不确定用哪个 skill | `fiction-planning-and-diagnosis` |
+| 句子、对白的措辞、标点、语感、错别字、体例、全稿校对 | `line-editing-and-proofreading` |
+| 题材规则与机制、混合题材；推理的公平线索、恐怖与言情等题材的契约 | `genre-fiction-craft`（题材契约以它为准；本 skill 只核对视角和信息有没有守住契约） |
+| 改编成舞台、影视、音频或互动形式；分场稿、镜头 | `cross-media-drama-adaptation` |
 | 生成／修订／诊断推进模式卡、文风卡、表达约束卡；写反 AI 味的约束卡；按三轴审章节；已有文风卡或推进卡作为输入 | `preset-card-generation`（产物是「给模型的卡」或审查框架是三轴时转回） |
 
 从 `genre-fiction-craft` 转入本 skill 的：全篇的人物动机、谁来讲、视角越界、时间模型。
 
 从 `preset-card-generation` 转入本 skill 的：不写成卡、也不按三轴审的视角合同、人物声口、信息控制、叙述距离、人物知识边界、场景与概述、非线性时间。
+
+从 `cross-media-drama-adaptation` 转入本 skill 的：改编稿里人物知识、视角和时间线的角色层回归。互动叙事中只查每条路线内人物知道什么、何时知道、关系怎样变化、时间是否连续；玩家选择、状态变量和分支拓扑归 `cross-media-drama-adaptation`。
+
+从 `line-editing-and-proofreading` 转入本 skill 的：语言修改会改变人物声口、叙述权限或视角的地方；本 skill 判断后交作者确认。
 
 ## 2. 使用方式
 
@@ -320,12 +318,3 @@ metadata:
 | 已锁定的设定或已发章节与新方案冲突 | 只改可改的部分，列出最小冲突集合由作者裁决，不擅自覆盖 |
 | 生成／修订预设卡、按三轴审章节 | 转 `preset-card-generation` |
 | 作者不答或只回「你看着办」 | 按最小改动处理，逐条列出所做的假设，不擅自扩大改动范围 |
-
-## 与其他 Skill 的协作边界
-
-- `fiction-planning-and-diagnosis` 拥有原创故事的前提、结构、单元规划与整体诊断；本 Skill 不替它决定故事是否成立。
-- 本 Skill 拥有人物目标、叙述权限、视角、关系变化、人物知识边界和时间连续性的检查；不负责把既有文本转换成舞台、影视或互动媒介结构。
-- `cross-media-drama-adaptation` 拥有既有文本的媒介转换与互动分支结构；涉及人物知识、视角或时间线时，调用本 Skill 做角色层回归。
-- `line-editing-and-proofreading` 拥有句子、段落和校对层面的语言编辑；本 Skill 提供人物声音与视角约束，不替代逐句编辑。语言修改会改变人物声音、叙述权限或视角时，它停在那一处转来本 Skill；本 Skill 判断后交作者确认。
-
-互动叙事中，本 Skill 只检查每条路线内人物知道什么、何时知道、关系如何变化以及时间是否连续；玩家选择、状态变量和分支拓扑由 `cross-media-drama-adaptation` 负责。

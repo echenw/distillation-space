@@ -25,7 +25,7 @@ metadata:
 - 按平台算法或流量数据调节奏、做运营优化：本 Skill 按作品承诺和媒介条件设计，不按流量指标设计。
 - 只要市场预测、票房或流量判断，不要文本分析：给不了；依据只能来自当前文本的分析和标明的设计假设。
 - 照抄某个现成改编版、借用受保护的具体表达：按 AD-29 和 `examples/adaptation-cases.md` 用例 D 处理，可继续分析其结构功能，不直接复制。
-- 生成／修订／诊断预设卡（推进卡、文风卡、表达约束卡），或把改编方案写成给模型用的卡 → 转 `preset-card-generation`。
+- 问题落在下面“转给其他 Skill”表的任何一行：不在本 Skill 做，按表转介。
 
 转给其他 Skill：
 
@@ -37,7 +37,7 @@ metadata:
 | 人物动机、叙述视角、信息控制和时间模型 | `character-and-narrative-control` |
 | 某类题材的成立条件、读者预期和桥段取舍（这类题材里该不该兑现、禁忌怎么处理） | `genre-fiction-craft` |
 | 句子、对白、标点和校对 | `line-editing-and-proofreading` |
-| 生成或修订推进模式卡、文风卡、表达约束卡，按三轴审章节，把改编方案写成给模型用的卡 | `preset-card-generation` |
+| 生成、修订或诊断推进模式卡、文风卡、表达约束卡，按三轴审章节，把改编方案写成给模型用的卡 | `preset-card-generation` |
 
 从其他 skill 转入本 skill 的：`character-and-narrative-control` 转来的改成舞台方案、分场稿、镜头；`genre-fiction-craft` 转来的把作品改成舞台方案、分场稿或其他媒介形态（对方只给题材规则）；`preset-card-generation` 转来的改成舞台、影视、音频、互动形式的请求（不写成卡，也不按三轴审）。产物是改编文档（改编合同、分场表、载体方案、裁决备忘）时留在本 skill，产物是给模型用的卡时转 `preset-card-generation`。
 
